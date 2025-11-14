@@ -12,7 +12,7 @@
     <meta property="og:description" content="7+ years enterprise software development experience. Expert in Java, Spring Boot, Cloud Architecture.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://cv.aiwaverider.com">
-    <meta property="og:image" content="https://cv.aiwaverider.com/assets/profilepic.jpg">
+    <meta property="og:image" content="./assets/profilepic.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
@@ -32,7 +32,7 @@
                 line-height: 1.3 !important;
             }
             .no-print { display: none !important; }
-            .hero, .nav, .download-buttons { display: none !important; }
+            .hero, .nav, .download-buttons, .social-sidebar { display: none !important; }
             .cv-section {
                 box-shadow: none !important;
                 border-radius: 0 !important;
@@ -71,6 +71,17 @@
             overflow-x: hidden;
         }
         
+        /* Particle Background Canvas */
+        #particleCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+        
         /* Navigation */
         .nav {
             position: fixed;
@@ -101,22 +112,34 @@
         .logo {
             font-size: 1.5em;
             font-weight: 700;
-            color: var(--primary-blue);
+            background: linear-gradient(135deg, var(--primary-blue), var(--secondary-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
             text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .logo::before {
+            content: '👨‍💻';
+            -webkit-text-fill-color: initial;
         }
         
         .nav-links {
             display: flex;
             list-style: none;
             gap: 30px;
+            align-items: center;
         }
         
         .nav-links a {
             text-decoration: none;
             color: var(--text-dark);
             font-weight: 500;
-            transition: color 0.3s ease;
+            transition: all 0.3s ease;
             position: relative;
+            padding: 5px 10px;
         }
         
         .nav-links a:hover {
@@ -126,8 +149,9 @@
         .nav-links a::after {
             content: '';
             position: absolute;
-            bottom: -5px;
-            left: 0;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
             width: 0;
             height: 2px;
             background: var(--secondary-blue);
@@ -135,7 +159,7 @@
         }
         
         .nav-links a:hover::after {
-            width: 100%;
+            width: 80%;
         }
         
         /* Mobile Menu */
@@ -148,10 +172,62 @@
             cursor: pointer;
         }
         
-        /* Hero Section */
+        /* Social Sidebar */
+        .social-sidebar {
+            position: fixed;
+            left: 30px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 100;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .social-link {
+            width: 50px;
+            height: 50px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: var(--text-dark);
+            font-size: 1.3em;
+        }
+        
+        .social-link:hover {
+            transform: translateX(5px) scale(1.1);
+            box-shadow: 0 6px 25px rgba(43, 119, 230, 0.3);
+        }
+        
+        .social-link.github {
+            background: linear-gradient(135deg, #24292e, #000);
+            color: white;
+        }
+        
+        .social-link.linkedin {
+            background: linear-gradient(135deg, #0077b5, #00a0dc);
+            color: white;
+        }
+        
+        .social-link.email {
+            background: linear-gradient(135deg, var(--secondary-blue), var(--accent-blue));
+            color: white;
+        }
+        
+        .social-link.website {
+            background: linear-gradient(135deg, var(--green), #48bb78);
+            color: white;
+        }
+        
+        /* Hero Section with Advanced Animations */
         .hero {
             min-height: 100vh;
-            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--secondary-blue) 100%);
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             display: flex;
             align-items: center;
             color: white;
@@ -160,20 +236,75 @@
             padding-top: 80px;
         }
         
+        /* Animated Gradient Overlay */
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-            animation: float 20s infinite;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(45deg, 
+                rgba(102, 126, 234, 0.3),
+                rgba(118, 75, 162, 0.3),
+                rgba(43, 119, 230, 0.3));
+            animation: gradientShift 15s ease infinite;
+            opacity: 0.6;
+        }
+        
+        @keyframes gradientShift {
+            0%, 100% { transform: translate(0, 0) scale(1); }
+            50% { transform: translate(-20px, 20px) scale(1.1); }
+        }
+        
+        /* Floating Geometric Shapes */
+        .geometric-bg {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .shape {
+            position: absolute;
+            opacity: 0.1;
+            animation: float 20s infinite ease-in-out;
+        }
+        
+        .shape.circle {
+            width: 300px;
+            height: 300px;
+            border: 3px solid white;
+            border-radius: 50%;
+            top: 20%;
+            left: 10%;
+            animation-delay: 0s;
+        }
+        
+        .shape.square {
+            width: 250px;
+            height: 250px;
+            border: 3px solid white;
+            transform: rotate(45deg);
+            top: 60%;
+            right: 15%;
+            animation-delay: 3s;
+        }
+        
+        .shape.triangle {
+            width: 0;
+            height: 0;
+            border-left: 150px solid transparent;
+            border-right: 150px solid transparent;
+            border-bottom: 260px solid white;
+            top: 10%;
+            right: 20%;
+            animation-delay: 6s;
         }
         
         @keyframes float {
-            0%, 100% { transform: rotate(0deg) translate(-50px, -50px); }
-            50% { transform: rotate(180deg) translate(50px, 50px); }
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            50% { transform: translateY(-30px) rotate(10deg); }
         }
         
         .hero-container {
@@ -189,17 +320,42 @@
         }
         
         .hero-content h1 {
-            font-size: 3.5em;
+            font-size: 4em;
             margin-bottom: 20px;
             font-weight: 700;
             line-height: 1.2;
+            background: linear-gradient(135deg, #fff, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: titleGlow 3s ease-in-out infinite;
         }
         
-        .hero-content .tagline {
-            font-size: 1.3em;
+        @keyframes titleGlow {
+            0%, 100% { filter: brightness(1); }
+            50% { filter: brightness(1.2); }
+        }
+        
+        .hero-content .typing-effect {
+            font-size: 1.5em;
             margin-bottom: 30px;
             opacity: 0.9;
             font-weight: 300;
+            min-height: 60px;
+            color: #fff;
+        }
+        
+        .typing-cursor {
+            display: inline-block;
+            width: 3px;
+            height: 1.2em;
+            background-color: var(--accent-blue);
+            margin-left: 5px;
+            animation: blink 1s infinite;
+        }
+        
+        @keyframes blink {
+            0%, 49% { opacity: 1; }
+            50%, 100% { opacity: 0; }
         }
         
         .hero-content p {
@@ -216,40 +372,76 @@
         }
         
         .btn {
-            padding: 15px 30px;
-            border-radius: 30px;
+            padding: 15px 35px;
+            border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
-            transition: all 0.3s ease;
+            transition: all 0.4s ease;
             display: inline-flex;
             align-items: center;
             gap: 10px;
             border: none;
             cursor: pointer;
             font-size: 1em;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .btn::before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            border-radius: 50%;
+            background: rgba(255,255,255,0.3);
+            transform: translate(-50%, -50%);
+            transition: width 0.6s, height 0.6s;
+        }
+        
+        .btn:hover::before {
+            width: 300px;
+            height: 300px;
+        }
+        
+        .btn span {
+            position: relative;
+            z-index: 1;
         }
         
         .btn-primary {
-            background: white;
-            color: var(--primary-blue);
-            box-shadow: 0 8px 25px rgba(255,255,255,0.3);
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
         }
         
         .btn-primary:hover {
             transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(255,255,255,0.4);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.6);
         }
         
         .btn-secondary {
-            background: rgba(255,255,255,0.1);
+            background: transparent;
             color: white;
-            border: 2px solid rgba(255,255,255,0.3);
+            border: 2px solid rgba(255,255,255,0.5);
             backdrop-filter: blur(10px);
         }
         
         .btn-secondary:hover {
-            background: rgba(255,255,255,0.2);
-            border-color: rgba(255,255,255,0.5);
+            background: rgba(255,255,255,0.1);
+            border-color: white;
+            transform: translateY(-3px);
+        }
+        
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border: 2px solid var(--accent-blue);
+        }
+        
+        .btn-outline:hover {
+            background: var(--accent-blue);
             transform: translateY(-3px);
         }
         
@@ -262,17 +454,28 @@
         
         .stat-box {
             text-align: center;
-            padding: 20px;
-            background: rgba(255,255,255,0.1);
-            border-radius: 12px;
+            padding: 25px;
+            background: rgba(255,255,255,0.05);
+            border-radius: 15px;
             backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .stat-box:hover {
+            transform: translateY(-5px);
+            background: rgba(255,255,255,0.1);
+            border-color: rgba(255,255,255,0.3);
         }
         
         .stat-number {
-            font-size: 2.5em;
+            font-size: 3em;
             font-weight: 700;
             display: block;
             margin-bottom: 5px;
+            background: linear-gradient(135deg, #fff, var(--accent-blue));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
         
         .stat-label {
@@ -280,36 +483,173 @@
             opacity: 0.8;
         }
         
+        /* 3D Profile Card */
         .hero-visual {
             display: flex;
             justify-content: center;
             align-items: center;
             position: relative;
+            perspective: 1000px;
+        }
+        
+        .profile-card-3d {
+            width: 400px;
+            height: 500px;
+            position: relative;
+            transform-style: preserve-3d;
+            transition: transform 0.6s;
+            cursor: pointer;
+        }
+        
+        .profile-card-3d:hover {
+            transform: rotateY(10deg) rotateX(5deg);
+        }
+        
+        .profile-card-inner {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.1), rgba(255,255,255,0.05));
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.2);
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .profile-card-inner::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255,255,255,0.1), transparent);
+            transform: rotate(45deg);
+            animation: shine 3s infinite;
+        }
+        
+        @keyframes shine {
+            0% { transform: translateX(-100%) translateY(-100%) rotate(45deg); }
+            100% { transform: translateX(100%) translateY(100%) rotate(45deg); }
         }
         
         .profile-showcase {
-            width: 350px;
-            height: 350px;
+            width: 250px;
+            height: 250px;
             background: rgba(255,255,255,0.1);
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            font-size: 150px;
+            font-size: 120px;
             backdrop-filter: blur(10px);
-            border: 8px solid rgba(255,255,255,0.2);
-            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
-            transition: transform 0.3s ease;
+            border: 5px solid rgba(255,255,255,0.3);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            margin-bottom: 30px;
         }
         
-        .profile-showcase:hover {
-            transform: scale(1.05) rotate(5deg);
+        .profile-showcase img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        
+        .profile-showcase:empty::after {
+            
+            font-size: 120px;
+        }
+        
+        .profile-name {
+            font-size: 1.8em;
+            font-weight: 700;
+            margin-bottom: 10px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        .profile-role {
+            font-size: 1em;
+            opacity: 0.8;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+        
+        /* Tech Stack Floating Icons */
+        .tech-floating {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .tech-icon {
+            position: absolute;
+            font-size: 2em;
+            opacity: 0.2;
+            animation: floatTech 20s infinite ease-in-out;
+        }
+        
+        .tech-icon:nth-child(1) { top: 10%; left: 5%; animation-delay: 0s; }
+        .tech-icon:nth-child(2) { top: 20%; right: 10%; animation-delay: 2s; }
+        .tech-icon:nth-child(3) { bottom: 15%; left: 15%; animation-delay: 4s; }
+        .tech-icon:nth-child(4) { bottom: 25%; right: 8%; animation-delay: 6s; }
+        .tech-icon:nth-child(5) { top: 50%; left: 3%; animation-delay: 8s; }
+        .tech-icon:nth-child(6) { top: 60%; right: 5%; animation-delay: 10s; }
+        
+        @keyframes floatTech {
+            0%, 100% { transform: translateY(0px) rotate(0deg); opacity: 0.2; }
+            50% { transform: translateY(-20px) rotate(180deg); opacity: 0.4; }
+        }
+        
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            animation: bounce 2s infinite;
+            cursor: pointer;
+            z-index: 10;
+        }
+        
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateX(-50%) translateY(0); }
+            40% { transform: translateX(-50%) translateY(-10px); }
+            60% { transform: translateX(-50%) translateY(-5px); }
+        }
+        
+        .scroll-text {
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            opacity: 0.7;
+        }
+        
+        .scroll-arrow {
+            font-size: 2em;
         }
         
         /* CV Section */
         .cv-section {
             background: var(--gray-light);
             padding: 100px 20px;
+            position: relative;
         }
         
         .cv-container {
@@ -368,6 +708,14 @@
             cursor: pointer;
             transition: all 0.3s ease;
             backdrop-filter: blur(10px);
+            overflow: hidden;
+        }
+        
+        .profile-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
         }
         
         .profile-image:hover {
@@ -691,6 +1039,9 @@
             font-weight: 600;
             box-shadow: 0 8px 25px rgba(43, 119, 230, 0.3);
             transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
         .btn-download:hover {
@@ -701,14 +1052,40 @@
         
         /* Footer */
         .footer {
-            background: var(--primary-blue);
+            background: linear-gradient(135deg, var(--primary-blue), #0f0c29);
             color: white;
             text-align: center;
-            padding: 30px 20px;
+            padding: 40px 20px;
         }
         
         .footer p {
             opacity: 0.8;
+            margin-bottom: 20px;
+        }
+        
+        .footer-social {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .footer-social a {
+            width: 40px;
+            height: 40px;
+            background: rgba(255,255,255,0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .footer-social a:hover {
+            background: rgba(255,255,255,0.2);
+            transform: translateY(-3px);
         }
         
         /* Animations */
@@ -730,8 +1107,9 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: var(--primary-blue);
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             z-index: 9999;
@@ -744,12 +1122,20 @@
         }
         
         .spinner {
-            width: 50px;
-            height: 50px;
-            border: 3px solid rgba(255,255,255,0.3);
-            border-top: 3px solid white;
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(255,255,255,0.2);
+            border-top: 4px solid var(--accent-blue);
             border-radius: 50%;
             animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+        
+        .loading-text {
+            color: white;
+            font-size: 1.2em;
+            font-weight: 600;
+            opacity: 0.8;
         }
         
         @keyframes spin {
@@ -809,6 +1195,10 @@
                 display: flex;
             }
             
+            .social-sidebar {
+                display: none;
+            }
+            
             .hero-container {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -823,10 +1213,19 @@
                 grid-template-columns: 1fr;
             }
             
+            .profile-card-3d {
+                width: 300px;
+                height: 400px;
+            }
+            
             .profile-showcase {
-                width: 250px;
-                height: 250px;
-                font-size: 100px;
+                width: 180px;
+                height: 180px;
+                font-size: 80px;
+            }
+            
+            .tech-floating {
+                display: none;
             }
             
             .skills-grid {
@@ -847,7 +1246,7 @@
             }
             
             .scroll-top {
-                bottom: 20px;
+                bottom: 90px;
                 left: 20px;
             }
             
@@ -865,7 +1264,11 @@
     <!-- Loading Screen -->
     <div class="loading" id="loading">
         <div class="spinner"></div>
+        <div class="loading-text">Loading Amazing Portfolio...</div>
     </div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
 
     <!-- Navigation -->
     <nav class="nav no-print" id="navbar">
@@ -882,39 +1285,96 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
+    <!-- Social Sidebar -->
+    <div class="social-sidebar no-print">
+        <a href="https://github.com/sakhrNab" target="_blank" class="social-link github" title="GitHub">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+        </a>
+        <a href="www.linkedin.com/in/sakhr-nabil-al-absi" target="_blank" class="social-link linkedin" title="LinkedIn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+        </a>
+        <a href="mailto:sakhr270@gmail.com" class="social-link email" title="Email">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M0 3v18h24v-18h-24zm21.518 2l-9.518 7.713-9.518-7.713h19.036zm-19.518 14v-11.817l10 8.104 10-8.104v11.817h-20z"/>
+            </svg>
+        </a>
+        <a href="https://www.aiwaverider.com" target="_blank" class="social-link website" title="AI Waverider">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 16.057v-3.057h2.994c-.059 1.143-.212 2.24-.456 3.279-.823-.12-1.674-.188-2.538-.222zm1.957 2.162c-.499 1.33-1.159 2.497-1.957 3.456v-3.62c.666.028 1.319.081 1.957.164zm-1.957-7.219v-3.015c.868-.034 1.721-.103 2.548-.224.238 1.027.389 2.111.446 3.239h-2.994zm0-5.014v-3.661c.806.969 1.471 2.15 1.971 3.496-.642.084-1.3.137-1.971.165zm2.703-3.267c1.237.496 2.354 1.228 3.29 2.146-.642.234-1.311.442-2.019.607-.344-.992-.775-1.91-1.271-2.753zm-7.241 13.56c-.244-1.039-.398-2.136-.456-3.279h2.994v3.057c-.865.034-1.714.102-2.538.222zm2.538 1.776v3.62c-.798-.959-1.458-2.126-1.957-3.456.638-.083 1.291-.136 1.957-.164zm-2.994-7.055c.057-1.128.207-2.212.446-3.239.827.121 1.68.19 2.548.224v3.015h-2.994zm1.024-5.179c.5-1.346 1.165-2.527 1.97-3.496v3.661c-.671-.028-1.329-.081-1.97-.165zm-2.005-.35c-.708-.165-1.377-.373-2.018-.607.937-.918 2.053-1.65 3.29-2.146-.496.844-.927 1.762-1.272 2.753zm-.549 1.918c-.264 1.151-.434 2.36-.492 3.611h-3.933c.165-1.658.739-3.197 1.617-4.518.88.361 1.816.67 2.808.907zm.009 9.262c-.988.236-1.92.542-2.797.9-.89-1.328-1.471-2.879-1.637-4.551h3.934c.058 1.265.231 2.488.5 3.651zm.553 1.917c.342.976.768 1.881 1.257 2.712-1.223-.49-2.326-1.211-3.256-2.115.636-.229 1.299-.435 1.999-.597zm9.924 0c.7.163 1.362.367 1.999.597-.931.903-2.034 1.625-3.257 2.116.489-.832.915-1.737 1.258-2.713zm.553-1.917c.27-1.163.442-2.386.501-3.651h3.934c-.167 1.672-.748 3.223-1.638 4.551-.877-.358-1.81-.664-2.797-.9zm.501-5.651c-.058-1.251-.229-2.46-.492-3.611.992-.237 1.929-.546 2.809-.907.877 1.321 1.451 2.86 1.616 4.518h-3.933z"/>
+            </svg>
+        </a>
+    </div>
+
+    <!-- Hero Section with Advanced Animations -->
     <section class="hero no-print" id="home">
+        <!-- Geometric Background -->
+        <div class="geometric-bg">
+            <div class="shape circle"></div>
+            <div class="shape square"></div>
+            <div class="shape triangle"></div>
+        </div>
+        
+        <!-- Floating Tech Icons -->
+        <div class="tech-floating">
+            <div class="tech-icon">☁️</div>
+            <div class="tech-icon">⚛️</div>
+            <div class="tech-icon">🐍</div>
+            <div class="tech-icon">☕</div>
+            <div class="tech-icon">🤖</div>
+            <div class="tech-icon">🚀</div>
+        </div>
+        
         <div class="hero-container">
             <div class="hero-content">
                 <h1>Senior Software Engineer</h1>
-                <p class="tagline">Transforming Ideas into Scalable Enterprise Solutions</p>
-                <p>With 7+ years of experience in enterprise software development, I specialize in building robust microservices architectures, cloud-native solutions, and AI integrations for Fortune 500 clients in finance and automotive sectors.</p>
+                <div class="typing-effect" id="typingText"></div>
+                <p>With 7+ years of experience in enterprise software development, I architect scalable solutions that power Fortune 500 companies. From microservices to AI integration, I transform complex challenges into elegant, production-ready systems.</p>
                 <div class="hero-cta">
                     <a href="#cv" class="btn btn-primary">
-                        📄 View Full CV
+                        <span>📄 Explore My Journey</span>
                     </a>
                     <button onclick="window.print()" class="btn btn-secondary">
-                        💾 Download PDF
+                        <span>💾 Download CV</span>
                     </button>
+                    <a href="https://www.aiwaverider.com" target="_blank" class="btn btn-outline">
+                        <span>🚀 Visit AI Waverider</span>
+                    </a>
                 </div>
                 <div class="hero-stats">
                     <div class="stat-box">
-                        <span class="stat-number">7+</span>
+                        <span class="stat-number" data-target="7">0</span>
                         <span class="stat-label">Years Experience</span>
                     </div>
                     <div class="stat-box">
-                        <span class="stat-number">50+</span>
+                        <span class="stat-number" data-target="20">0</span>
                         <span class="stat-label">Projects Delivered</span>
                     </div>
                     <div class="stat-box">
-                        <span class="stat-number">3</span>
-                        <span class="stat-label">Countries</span>
+                        <span class="stat-number" data-target="5600">0</span>
+                        <span class="stat-label">AI Agents Built</span>
                     </div>
                 </div>
             </div>
             <div class="hero-visual">
-                <div class="profile-showcase">👨‍💻</div>
+                <div class="profile-card-3d">
+                    <div class="profile-card-inner">
+                        <div class="profile-showcase" id="heroProfileImage">
+                            <!-- Profile image will be loaded here -->
+                        </div>
+                        <div class="profile-name">Sakhr AL-Absi</div>
+                        <div class="profile-role">Software Engineer & GenAI Solutions Arhcitect</div>
+                    </div>
+                </div>
             </div>
+        </div>
+        
+        <div class="scroll-indicator" onclick="document.getElementById('cv').scrollIntoView({behavior: 'smooth'})">
+            <span class="scroll-text">Scroll Down</span>
+            <span class="scroll-arrow">↓</span>
         </div>
     </section>
 
@@ -924,7 +1384,9 @@
             <div class="cv-header">
                 <div class="profile-container">
                     <div class="profile-image-container">
-                        <div class="profile-image" id="profileImage">👤</div>
+                        <div class="profile-image" id="profileImage">
+                            <img src="./assets/profilepic.jpg" alt="Sakhr AL-Absi" onerror="this.parentElement.innerHTML='👤'">
+                        </div>
                         <div class="upload-overlay no-print">
                             <div class="upload-text">Click to<br>Upload Photo</div>
                         </div>
@@ -940,15 +1402,15 @@
                             </div>
                             <div class="contact-item">
                                 <span>📱</span>
-                                <span>+995 558 950 430</span>
+                                <span>+491 5906 4554 76</span>
                             </div>
                             <div class="contact-item">
                                 <span>🌐</span>
-                                <a href="https://www.aiwaverider.com" target="_blank" class="contact-link">www.aiwaverider.com</a>
+                                <a href="https://www.aiwaverider.com" target="_blank" class="contact-link">aiwaverider.com</a>
                             </div>
                             <div class="contact-item">
                                 <span>📍</span>
-                                <span>Tbilisi, Georgia</span>
+                                <span>Berlin, Germany</span>
                             </div>
                         </div>
                     </div>
@@ -973,7 +1435,7 @@
                         <div class="date">August 2022 - Present</div>
                         
                         <div class="client-highlight">
-                            🏦 <strong>Major Finance Sector Clients:</strong> Led critical digital transformation projects for top-tier German financial institutions
+                            🏦 <strong>Major Finance Sector Clients:</strong> Led critical digital transformation projects for top-tier German financial institutions in the banking sector.
                         </div>
                         
                         <div class="client-highlight">
@@ -984,7 +1446,7 @@
                             <h4 style="color: #2b77e6; margin-bottom: 8px;">Finance Sector Achievements:</h4>
                             <ul>
                                 <li>Architected and deployed cloud-native microservices using <strong>Spring Boot 3.x</strong> and <strong>Java 17</strong> for high-volume financial transactions</li>
-                                <li>Implemented enterprise-grade solutions on <strong>OpenShift</strong>, <strong>Azure Cloud</strong>, and <strong>Google Cloud Platform</strong></li>
+                                <li>Implemented enterprise-grade solutions on <strong>OpenShift</strong>, and <strong>Google Cloud Platform</strong></li>
                                 <li>Managed secure file transfers and deployments using <strong>WinSCP</strong> and <strong>TeamCity</strong> CI/CD pipelines</li>
                                 <li>Delivered real-time payment processing systems handling millions of transactions daily</li>
                                 <li>Ensured compliance with financial regulations (PCI-DSS, SOX) and data protection standards</li>
@@ -1039,51 +1501,19 @@
                                 <li>Maintained critical company IT infrastructure with 99.8% uptime</li>
                                 <li>Managed EasyJob, Azure Active Directory, FortiClient VPN, and Sophos security systems</li>
                                 <li>Led software and hardware rollout projects, including Windows 10 migration</li>
-                                <li>Provided technical leadership and mentored team members</li>
                             </ul>
                         </div>
                     </div>
 
                     <div class="experience-item">
-                        <h3>Global IT Support Specialist - Level I</h3>
-                        <div class="company">BMG Rights and Management GmbH, Berlin</div>
+                        <h3>Global IT Support Specialist</h3>
+                        <div class="company">BMG Rights and Management GmbH</div>
                         <div class="date">July 2018 - January 2020</div>
                         <div class="description">
                             <ul>
-                                <li>Provided international technical support via phone across multiple regions (USA, UK, Spain, Sweden, Netherlands, France)</li>
-                                <li>Delivered on-site technical support and workstation optimization</li>
-                                <li>Executed system administration tasks and advanced troubleshooting procedures</li>
-                                <li>Managed enterprise tools: SCCM, SilverMonkey, Active Directory, OKTA, JIRA, Confluence, RDC</li>
-                                <li>Successfully led large-scale software and hardware deployment projects</li>
-                                <li>Maintained detailed documentation and knowledge base for international teams</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="experience-item">
-                        <h3>Technical Migration Specialist</h3>
-                        <div class="company">Axel Springer SE, Berlin</div>
-                        <div class="date">November 2017 - February 2018</div>
-                        <div class="description">
-                            <ul>
-                                <li>Led enterprise-wide Windows 10 migration project and MS Office synchronization</li>
-                                <li>Provided specialized technical support during critical system transitions</li>
-                                <li>Ensured zero data loss during migration processes for 500+ workstations</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="experience-item">
-                        <h3>Multilingual Customer Experience Specialist</h3>
-                        <div class="company">Bosch Service Solutions, Berlin</div>
-                        <div class="date">September 2016 - September 2017</div>
-                        <div class="description">
-                            <ul>
-                                <li>Delivered exceptional multilingual customer support (Arabic, English, German)</li>
-                                <li>Handled critical emergency calls and coordinated with rescue services</li>
-                                <li>Managed high-priority customer inquiries for Remote and Concierge services</li>
-                                <li>Analyzed complex customer problems and provided comprehensive solutions</li>
-                                <li>Maintained 98% customer satisfaction rating across all language services</li>
+                                <li>Provided international technical support across USA, UK, Spain, Sweden, Netherlands, France</li>
+                                <li>Managed enterprise tools: SCCM, Active Directory, OKTA, JIRA, Confluence</li>
+                                <li>Led large-scale software and hardware deployment projects</li>
                             </ul>
                         </div>
                     </div>
@@ -1111,35 +1541,24 @@
                         <div class="description">
                             <strong>Focus Areas:</strong> Advanced Mechanical Engineering and Business Administration
                             <br><strong>Key Subjects:</strong> Engineering Mathematics, Thermodynamics, Materials Science, Operations Research
-                            <br><strong>Status:</strong> Successfully transferred to HTW Berlin to complete specialized Computer Science degree
-                        </div>
-                    </div>
-
-                    <div class="education-item">
-                        <h3>Foundation Year (Studienkolleg)</h3>
-                        <div class="institution">Saarland University</div>
-                        <div class="date">July 2011 - August 2012</div>
-                        <div class="description">
-                            <strong>Intensive Subjects:</strong> Advanced Chemistry, German Language, Higher Mathematics, Physics
-                            <br><strong>Achievement:</strong> Successfully completed Feststellungsprüfung (FSP) with distinction
                         </div>
                     </div>
                 </div>
 
                 <div class="section" id="certifications">
-                    <h2>🏆 Certifications & Professional Development</h2>
+                    <h2>🏆 Certifications</h2>
                     
                     <div class="cert-grid">
                         <div class="cert-item">
                             <h4>🌟 Google Associate Cloud Engineer</h4>
                             <div class="date">December 2024</div>
-                            <div class="description">Cloud Architecture, Security, Storage, Compute Engine, GKE, GCP, IAM, Infrastructure as Code, Advanced Networking, Pub/Sub, Cloud SQL</div>
+                            <div class="description">Cloud Architecture, GCP, Kubernetes, Security, Networking</div>
                         </div>
                         
                         <div class="cert-item">
                             <h4>🚀 Accenture Jump Start Program</h4>
                             <div class="date">August 2022</div>
-                            <div class="description">Enterprise Applications, Modern Frameworks, Web Architecture, Advanced Persistence, SQL & NoSQL Optimization</div>
+                            <div class="description">Enterprise Applications, Modern Frameworks, Advanced Architecture</div>
                         </div>
                         
                         <div class="cert-item">
@@ -1149,51 +1568,15 @@
                         </div>
                         
                         <div class="cert-item">
-                            <h4>🧪 Test-Driven Development with Django</h4>
+                            <h4>🧪 Test-Driven Development</h4>
                             <div class="date">May 2021</div>
                             <div class="description">Advanced testing methodologies and practices</div>
-                        </div>
-                        
-                        <div class="cert-item">
-                            <h4>💼 Professional Portfolio Development</h4>
-                            <div class="date">April 2021</div>
-                            <div class="description">Building enterprise-grade portfolio applications</div>
-                        </div>
-                        
-                        <div class="cert-item">
-                            <h4>🌐 HTML5 & Modern Web Standards</h4>
-                            <div class="date">March 2021</div>
-                            <div class="description">Advanced HTML5, CSS3, and responsive design</div>
-                        </div>
-                        
-                        <div class="cert-item">
-                            <h4>♿ UX Foundations: Accessibility</h4>
-                            <div class="date">March 2021</div>
-                            <div class="description">Inclusive design and accessibility standards</div>
-                        </div>
-                        
-                        <div class="cert-item">
-                            <h4>🎨 User Experience for Web Design</h4>
-                            <div class="date">March 2021</div>
-                            <div class="description">Advanced UX/UI design principles</div>
                         </div>
                         
                         <div class="cert-item">
                             <h4>💻 Full Stack Web Development</h4>
                             <div class="date">February 2021</div>
                             <div class="description">Comprehensive full-stack development mastery</div>
-                        </div>
-                        
-                        <div class="cert-item">
-                            <h4>🎯 Web Programming Foundations</h4>
-                            <div class="date">February 2021</div>
-                            <div class="description">Core web development principles and best practices</div>
-                        </div>
-                        
-                        <div class="cert-item">
-                            <h4>🎬 Advanced Video Production</h4>
-                            <div class="date">April 2018</div>
-                            <div class="description">Professional video creation and editing</div>
                         </div>
                         
                         <div class="cert-item">
@@ -1215,8 +1598,6 @@
                                 <span class="skill-tag">JavaScript ES6+</span>
                                 <span class="skill-tag">TypeScript</span>
                                 <span class="skill-tag">C++</span>
-                                <span class="skill-tag">C#</span>
-                                <span class="skill-tag">HTML5/CSS3</span>
                                 <span class="skill-tag">SQL</span>
                             </div>
                         </div>
@@ -1229,10 +1610,7 @@
                                 <span class="skill-tag">Django</span>
                                 <span class="skill-tag">Vue.js 3</span>
                                 <span class="skill-tag">React.js</span>
-                                <span class="skill-tag">Node.js</span>
                                 <span class="skill-tag">Hibernate</span>
-                                <span class="skill-tag">Maven</span>
-                                <span class="skill-tag">JPA</span>
                             </div>
                         </div>
                         
@@ -1244,7 +1622,6 @@
                                 <span class="skill-tag">MongoDB</span>
                                 <span class="skill-tag">Redis</span>
                                 <span class="skill-tag">Oracle DB</span>
-                                <span class="skill-tag">SQL Server</span>
                             </div>
                         </div>
                         
@@ -1257,7 +1634,6 @@
                                 <span class="skill-tag">Docker</span>
                                 <span class="skill-tag">Kubernetes</span>
                                 <span class="skill-tag">TeamCity</span>
-                                <span class="skill-tag">Jenkins</span>
                             </div>
                         </div>
                         
@@ -1265,14 +1641,10 @@
                             <h4>🛠️ Development Tools</h4>
                             <div class="skill-list">
                                 <span class="skill-tag">IntelliJ IDEA</span>
-                                <span class="skill-tag">VS Code</span>
-                                <span class="skill-tag">PyCharm</span>
                                 <span class="skill-tag">Git/GitHub</span>
                                 <span class="skill-tag">JIRA</span>
-                                <span class="skill-tag">Confluence</span>
                                 <span class="skill-tag">SonarQube</span>
                                 <span class="skill-tag">JFrog</span>
-                                <span class="skill-tag">WinSCP</span>
                             </div>
                         </div>
                         
@@ -1283,32 +1655,7 @@
                                 <span class="skill-tag">Azure OpenAI</span>
                                 <span class="skill-tag">n8n Workflows</span>
                                 <span class="skill-tag">Make.com</span>
-                                <span class="skill-tag">Voice AI</span>
-                                <span class="skill-tag">ML Models</span>
                                 <span class="skill-tag">TensorFlow</span>
-                                <span class="skill-tag">Hugging Face</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h4>🎨 Design & Productivity</h4>
-                            <div class="skill-list">
-                                <span class="skill-tag">Figma</span>
-                                <span class="skill-tag">Adobe XD</span>
-                                <span class="skill-tag">Photoshop</span>
-                                <span class="skill-tag">Office 365</span>
-                                <span class="skill-tag">Postman</span>
-                                <span class="skill-tag">Swagger</span>
-                            </div>
-                        </div>
-                        
-                        <div class="skill-category">
-                            <h4>💻 Operating Systems</h4>
-                            <div class="skill-list">
-                                <span class="skill-tag">Windows 10/11</span>
-                                <span class="skill-tag">Ubuntu Linux</span>
-                                <span class="skill-tag">macOS</span>
-                                <span class="skill-tag">CentOS</span>
                             </div>
                         </div>
                     </div>
@@ -1337,9 +1684,24 @@
 
     <!-- Footer -->
     <footer class="footer no-print">
-        <div class="container">
-            <p>&copy; 2025 Sakhr AL-Absi. All rights reserved. Built with passion and modern web technologies.</p>
+        <div class="footer-social">
+            <a href="https://github.com/sakhrNav" target="_blank" title="GitHub">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                </svg>
+            </a>
+            <a href="https://linkedin.com/in/sakhr-al-absi" target="_blank" title="LinkedIn">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+            </a>
+            <a href="https://www.aiwaverider.com" target="_blank" title="AI Waverider">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm1 16.057v-3.057h2.994c-.059 1.143-.212 2.24-.456 3.279-.823-.12-1.674-.188-2.538-.222zm1.957 2.162c-.499 1.33-1.159 2.497-1.957 3.456v-3.62c.666.028 1.319.081 1.957.164zm-1.957-7.219v-3.015c.868-.034 1.721-.103 2.548-.224.238 1.027.389 2.111.446 3.239h-2.994zm0-5.014v-3.661c.806.969 1.471 2.15 1.971 3.496-.642.084-1.3.137-1.971.165zm2.703-3.267c1.237.496 2.354 1.228 3.29 2.146-.642.234-1.311.442-2.019.607-.344-.992-.775-1.91-1.271-2.753zm-7.241 13.56c-.244-1.039-.398-2.136-.456-3.279h2.994v3.057c-.865.034-1.714.102-2.538.222zm2.538 1.776v3.62c-.798-.959-1.458-2.126-1.957-3.456.638-.083 1.291-.136 1.957-.164zm-2.994-7.055c.057-1.128.207-2.212.446-3.239.827.121 1.68.19 2.548.224v3.015h-2.994zm1.024-5.179c.5-1.346 1.165-2.527 1.97-3.496v3.661c-.671-.028-1.329-.081-1.97-.165zm-2.005-.35c-.708-.165-1.377-.373-2.018-.607.937-.918 2.053-1.65 3.29-2.146-.496.844-.927 1.762-1.272 2.753zm-.549 1.918c-.264 1.151-.434 2.36-.492 3.611h-3.933c.165-1.658.739-3.197 1.617-4.518.88.361 1.816.67 2.808.907zm.009 9.262c-.988.236-1.92.542-2.797.9-.89-1.328-1.471-2.879-1.637-4.551h3.934c.058 1.265.231 2.488.5 3.651zm.553 1.917c.342.976.768 1.881 1.257 2.712-1.223-.49-2.326-1.211-3.256-2.115.636-.229 1.299-.435 1.999-.597zm9.924 0c.7.163 1.362.367 1.999.597-.931.903-2.034 1.625-3.257 2.116.489-.832.915-1.737 1.258-2.713zm.553-1.917c.27-1.163.442-2.386.501-3.651h3.934c-.167 1.672-.748 3.223-1.638 4.551-.877-.358-1.81-.664-2.797-.9zm.501-5.651c-.058-1.251-.229-2.46-.492-3.611.992-.237 1.929-.546 2.809-.907.877 1.321 1.451 2.86 1.616 4.518h-3.933z"/>
+                </svg>
+            </a>
         </div>
+        <p>&copy; 2025 Sakhr AL-Absi. Crafted with passion and cutting-edge technology.</p>
     </footer>
 
     <!-- Scroll to Top Button -->
@@ -1347,16 +1709,154 @@
 
     <!-- Download Buttons -->
     <div class="download-buttons no-print">
-        <button class="btn-download" onclick="window.print()">📄 Download PDF</button>
+        <button class="btn-download" onclick="window.print()">
+            📄 Download PDF
+        </button>
     </div>
 
     <script>
+        // Particle Animation
+        const canvas = document.getElementById('particleCanvas');
+        const ctx = canvas.getContext('2d');
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+
+        const particles = [];
+        const particleCount = 100;
+
+        class Particle {
+            constructor() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.speedX = Math.random() * 0.5 - 0.25;
+                this.speedY = Math.random() * 0.5 - 0.25;
+            }
+
+            update() {
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                if (this.x > canvas.width) this.x = 0;
+                if (this.x < 0) this.x = canvas.width;
+                if (this.y > canvas.height) this.y = 0;
+                if (this.y < 0) this.y = canvas.height;
+            }
+
+            draw() {
+                ctx.fillStyle = 'rgba(102, 126, 234, 0.5)';
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+            }
+        }
+
+        function init() {
+            for (let i = 0; i < particleCount; i++) {
+                particles.push(new Particle());
+            }
+        }
+
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            
+            for (let i = 0; i < particles.length; i++) {
+                particles[i].update();
+                particles[i].draw();
+
+                for (let j = i; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const distance = Math.sqrt(dx * dx + dy * dy);
+
+                    if (distance < 100) {
+                        ctx.beginPath();
+                        ctx.strokeStyle = `rgba(102, 126, 234, ${0.2 - distance / 500})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.stroke();
+                    }
+                }
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        init();
+        animate();
+
+        window.addEventListener('resize', () => {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        });
+
         // Loading Animation
         window.addEventListener('load', function() {
             setTimeout(() => {
                 document.getElementById('loading').classList.add('hidden');
-            }, 1000);
+            }, 1500);
         });
+
+        // Typing Effect
+        const phrases = [
+            'Transforming Ideas into Enterprise Solutions',
+            'Building Scalable Cloud Architectures',
+            'Integrating AI into Production Systems',
+            'Leading Digital Transformation Projects'
+        ];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
+        const typingSpeed = 80;
+        const deletingSpeed = 50;
+        const pauseTime = 2000;
+
+        function typeText() {
+            const currentPhrase = phrases[phraseIndex];
+            const typingElement = document.getElementById('typingText');
+
+            if (isDeleting) {
+                typingElement.innerHTML = currentPhrase.substring(0, charIndex - 1) + '<span class="typing-cursor"></span>';
+                charIndex--;
+            } else {
+                typingElement.innerHTML = currentPhrase.substring(0, charIndex + 1) + '<span class="typing-cursor"></span>';
+                charIndex++;
+            }
+
+            let timeout = isDeleting ? deletingSpeed : typingSpeed;
+
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                timeout = pauseTime;
+                isDeleting = true;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+            }
+
+            setTimeout(typeText, timeout);
+        }
+
+        setTimeout(typeText, 1000);
+
+        // Animated Stats Counter
+        function animateStats() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            statNumbers.forEach(stat => {
+                const target = parseInt(stat.getAttribute('data-target'));
+                let current = 0;
+                const increment = target / 50;
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        stat.textContent = target >= 20 ? target + '+' : target;
+                        clearInterval(timer);
+                    } else {
+                        stat.textContent = Math.floor(current);
+                    }
+                }, 30);
+            });
+        }
 
         // Navbar Scroll Effect
         window.addEventListener('scroll', function() {
@@ -1387,7 +1887,6 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
-                    // Close mobile menu if open
                     document.getElementById('navLinks').classList.remove('active');
                 }
             });
@@ -1419,20 +1918,65 @@
             observer.observe(el);
         });
 
-        // Profile Image Upload
+        // Trigger stats animation when hero is visible
+        const heroSection = document.querySelector('.hero');
+        const statsObserver = new IntersectionObserver(function(entries) {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateStats();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (heroSection) {
+            statsObserver.observe(heroSection);
+        }
+
+        // Profile Image Upload and Loading
         const fileInput = document.getElementById('fileInput');
         const profileImage = document.getElementById('profileImage');
+        const heroProfileImage = document.getElementById('heroProfileImage');
 
+        // Try to load profile image from assets folder
+        function loadProfileImage() {
+            const img = new Image();
+            img.src = './assets/profilepic.jpg';
+            img.onload = function() {
+                // Image loaded successfully
+                if (profileImage) {
+                    profileImage.innerHTML = `<img src="./assets/profilepic.jpg" alt="Sakhr AL-Absi">`;
+                }
+                if (heroProfileImage) {
+                    heroProfileImage.style.backgroundImage = `url('./assets/profilepic.jpg')`;
+                    heroProfileImage.style.backgroundSize = 'cover';
+                    heroProfileImage.style.backgroundPosition = 'center';
+                    heroProfileImage.textContent = '';
+                }
+            };
+            img.onerror = function() {
+                // Image not found, keep default emoji
+                console.log('Profile image not found, using default emoji');
+            };
+        }
+
+        loadProfileImage();
+
+        // File input for custom upload
         if (fileInput && profileImage) {
             fileInput.addEventListener('change', function(e) {
                 const file = e.target.files[0];
                 if (file) {
                     const reader = new FileReader();
                     reader.onload = function(e) {
-                        profileImage.style.backgroundImage = `url(${e.target.result})`;
-                        profileImage.style.backgroundSize = 'cover';
-                        profileImage.style.backgroundPosition = 'center';
-                        profileImage.textContent = '';
+                        const imageUrl = e.target.result;
+                        profileImage.innerHTML = `<img src="${imageUrl}" alt="Sakhr AL-Absi">`;
+                        if (heroProfileImage) {
+                            heroProfileImage.style.backgroundImage = `url(${imageUrl})`;
+                            heroProfileImage.style.backgroundSize = 'cover';
+                            heroProfileImage.style.backgroundPosition = 'center';
+                            heroProfileImage.textContent = '';
+                        }
                     };
                     reader.readAsDataURL(file);
                 }
@@ -1451,38 +1995,26 @@
             }
         });
 
-        // Stats Animation
-        function animateStats() {
-            const statNumbers = document.querySelectorAll('.stat-number');
-            statNumbers.forEach(stat => {
-                const target = parseInt(stat.textContent.replace('+', ''));
-                let current = 0;
-                const increment = target / 50;
-                const timer = setInterval(() => {
-                    current += increment;
-                    if (current >= target) {
-                        stat.textContent = target + (stat.textContent.includes('+') ? '+' : '');
-                        clearInterval(timer);
-                    } else {
-                        stat.textContent = Math.floor(current) + (stat.textContent.includes('+') ? '+' : '');
-                    }
-                }, 30);
+        // 3D Card Tilt Effect
+        const profileCard = document.querySelector('.profile-card-3d');
+        if (profileCard) {
+            profileCard.addEventListener('mousemove', function(e) {
+                const rect = this.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+                
+                const rotateX = (y - centerY) / 10;
+                const rotateY = (centerX - x) / 10;
+                
+                this.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`;
             });
-        }
-
-        // Trigger stats animation when hero is visible
-        const heroSection = document.querySelector('.hero');
-        const statsObserver = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    animateStats();
-                    statsObserver.unobserve(entry.target);
-                }
+            
+            profileCard.addEventListener('mouseleave', function() {
+                this.style.transform = 'perspective(1000px) rotateX(0) rotateY(0)';
             });
-        }, { threshold: 0.3 });
-
-        if (heroSection) {
-            statsObserver.observe(heroSection);
         }
     </script>
 </body>
