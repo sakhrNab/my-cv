@@ -1875,7 +1875,7 @@ padding: 100px;
                                 <span>📱</span>
                                 <div class="phone-number-wrapper">
                                     <a href="https://wa.me/4915906455476?text=Hello%20Sakhr,%20I%20reached%20out%20from%20your%20CV%20website." target="_blank" class="contact-link phone-link" title="Click to open WhatsApp">
-                                        +491 5906 4554 76
+                                        +49 1590 6455476
                                     </a>
                                     <button class="copy-phone-btn" onclick="copyPhoneNumber(event)" title="Copy phone number">
                                         <i class="fas fa-copy"></i>
@@ -3262,7 +3262,8 @@ padding: 100px;
             text = text.replace(/[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+/g, '');
             
             // Remove phone numbers
-            text = text.replace(/\+491\s?5906\s?4554\s?76/gi, '');
+            text = text.replace(/\+49\s?1\s?590\s?6455476/gi, '');
+            text = text.replace(/\+491\s?5906\s?4554\s?76/gi, ''); // Old format for backwards compatibility
             text = text.replace(/\+?\d{1,4}[\s-]?\d{1,4}[\s-]?\d{1,9}[\s-]?\d{1,9}/g, '');
             
             // Remove LinkedIn URLs and mentions
@@ -3518,7 +3519,7 @@ Best regards,
             doc.text("Senior Software Engineer & AI Solutions Architect", 20, 30);
 
             doc.setFontSize(10);
-            doc.text("Berlin, Germany | sakhr270@gmail.com | +491 5906 4554 76", 20, 38);
+            doc.text("Berlin, Germany | sakhr270@gmail.com | +49 1590 6455476", 20, 38);
 
             // 3. Add Profile Image (Safe Fallback to Colored Rect if blocked)
             try {
@@ -3880,7 +3881,7 @@ Best regards,
         function copyPhoneNumber(event) {
             event.preventDefault();
             event.stopPropagation();
-            const phoneNumber = '+491 5906 4554 76';
+            const phoneNumber = '+49 1590 6455476';
             
             // Try modern clipboard API first
             if (navigator.clipboard && navigator.clipboard.writeText) {
