@@ -13,13 +13,10 @@ RUN npm ci --only=production
 # Copy application files
 COPY . .
 
-# Expose port (Coolify will handle port mapping)
-EXPOSE 3000
-
-# Health check - use PORT env var or default to 3000
-HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
-  CMD node -e "const port = process.env.PORT || 3000; require('http').get(`http://localhost:${port}`, (r) => {process.exit(r.statusCode === 200 ? 0 : 1)}).on('error', () => process.exit(1))"
+# Expose port (Coolify will handle port mapping automatically)
+EXPOSE 3011
 
 # Start the application
+# Server binds to 0.0.0.0 and uses PORT env var (set by Coolify)
 CMD ["node", "server.js"]
 
