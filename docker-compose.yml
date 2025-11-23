@@ -1,0 +1,28 @@
+
+services:
+  cv-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: sakhr-cv
+    ports:
+      - "${PORT:-3000}:3000"
+    environment:
+      - PORT=3000
+      - OPENAPI_KEY=${OPENAPI_KEY}
+      - NODE_ENV=production
+    env_file:
+      - .env
+    # Fallback if .env doesn't exist (use environment variables from host)
+    volumes:
+      # Mount assets directory for profile images
+      - ./assets:/app/assets:ro
+    restart: unless-stopped
+
+    healthcheck:
+      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
