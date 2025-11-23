@@ -568,6 +568,10 @@
             position: relative;
             overflow: hidden;
         }
+        /* dark mode */
+        [data-theme="dark"] .cv-header {
+            background: linear-gradient(281deg, #0e2533, var(--secondary-blue));
+        }	
 
         .cv-header::before {
             content: '';
@@ -586,6 +590,11 @@
             text-align: center;
             position: relative;
             z-index: 1;
+            background: transparent;
+        }
+
+        [data-theme="dark"] .profile-container {
+            background: transparent;
         }
 
         .header-content {
@@ -710,6 +719,51 @@
 
         .contact-link:hover {
             text-decoration: underline;
+        }
+
+        .phone-number-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .phone-link {
+            color: white;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            cursor: pointer;
+        }
+
+        .phone-link:hover {
+            text-decoration: underline;
+            color: #25D366; /* WhatsApp green */
+        }
+
+        .copy-phone-btn {
+            background: rgba(255, 255, 255, 0.15);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 4px 8px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 0.85em;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .copy-phone-btn:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: scale(1.1);
+        }
+
+        .copy-phone-btn:active {
+            transform: scale(0.95);
+        }
+
+        .phone-item {
+            position: relative;
         }
 
         .main-content {
@@ -1817,9 +1871,16 @@ padding: 100px;
                                 <span>📧</span>
                                 <a href="mailto:sakhr270@gmail.com?subject=Job%20Opportunity%20Inquiry&body=Dear%20Sakhr%20AL-Absi,%0D%0A%0D%0AI%20came%20across%20your%20CV%20and%20I'm%20impressed%20by%20your%20expertise%20as%20a%20Senior%20Software%20Engineer%20and%20AI%20Solutions%20Architect.%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0APlease%20let%20me%20know%20your%20availability%20for%20a%20conversation.%0D%0A%0D%0ABest%20regards,%0D%0A[Your%20Name]%0D%0A[Your%20Position]%0D%0A[Your%20Company]" class="contact-link">sakhr270@gmail.com</a>
                             </div>
-                            <div class="contact-item">
+                            <div class="contact-item phone-item">
                                 <span>📱</span>
-                                <span>+491 5906 4554 76</span>
+                                <div class="phone-number-wrapper">
+                                    <a href="https://wa.me/4915906455476?text=Hello%20Sakhr,%20I%20reached%20out%20from%20your%20CV%20website." target="_blank" class="contact-link phone-link" title="Click to open WhatsApp">
+                                        +491 5906 4554 76
+                                    </a>
+                                    <button class="copy-phone-btn" onclick="copyPhoneNumber(event)" title="Copy phone number">
+                                        <i class="fas fa-copy"></i>
+                                    </button>
+                                </div>
                             </div>
                             <div class="contact-item">
                                 <span>🌐</span>
@@ -3090,6 +3151,11 @@ padding: 100px;
                     lowerResponse.includes('interview') || lowerResponse.includes('schedule') ||
                     lowerResponse.includes('appointment') || lowerResponse.includes('book') || lowerResponse.includes('meeting');
                 
+                // If contact buttons will be shown, remove contact details from the text
+                if (needsContactButtons) {
+                    aiResponse = removeContactDetails(aiResponse);
+                }
+                
                 // Enhance response with clickable links
                 aiResponse = enhanceResponseWithLinks(aiResponse);
                 
@@ -3133,7 +3199,6 @@ padding: 100px;
                 
                 // Fallback to smart responses
                 let fallbackResponse = getSmartResponse(txt);
-                fallbackResponse = enhanceResponseWithLinks(fallbackResponse);
                 
                 // Check if fallback needs contact buttons
                 const lowerTxt = txt.toLowerCase();
@@ -3144,6 +3209,13 @@ padding: 100px;
                     lowerTxt.includes('whatsapp') || lowerTxt.includes('linkedin') || lowerTxt.includes('connect') ||
                     lowerTxt.includes('hire') || lowerTxt.includes('available') || lowerTxt.includes('opportunity') ||
                     lowerTxt.includes('call') || lowerTxt.includes('talk') || lowerTxt.includes('discuss');
+                
+                // If contact buttons will be shown, remove contact details from the text
+                if (needsContactButtons) {
+                    fallbackResponse = removeContactDetails(fallbackResponse);
+                }
+                
+                fallbackResponse = enhanceResponseWithLinks(fallbackResponse);
                 
                 await typeMessage(fallbackResponse, chatBody);
                 
@@ -3183,6 +3255,40 @@ padding: 100px;
             return div.innerHTML;
         }
 
+        // Remove contact details from response when contact buttons will be shown
+        function removeContactDetails(text) {
+            // Remove email addresses
+            text = text.replace(/sakhr270@gmail\.com/gi, '');
+            text = text.replace(/[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+/g, '');
+            
+            // Remove phone numbers
+            text = text.replace(/\+491\s?5906\s?4554\s?76/gi, '');
+            text = text.replace(/\+?\d{1,4}[\s-]?\d{1,4}[\s-]?\d{1,9}[\s-]?\d{1,9}/g, '');
+            
+            // Remove LinkedIn URLs and mentions
+            text = text.replace(/linkedin\.com\/in\/sakhr-nabil-al-absi/gi, '');
+            text = text.replace(/on\s+LinkedIn/gi, '');
+            text = text.replace(/via\s+LinkedIn/gi, '');
+            text = text.replace(/through\s+LinkedIn/gi, '');
+            text = text.replace(/connect\s+with\s+him\s+on\s+LinkedIn/gi, '');
+            text = text.replace(/Sakhr's\s+LinkedIn/gi, '');
+            
+            // Remove common phrases that include contact info
+            text = text.replace(/via\s+email\s+at\s+[^,\.]+/gi, 'via email');
+            text = text.replace(/through\s+WhatsApp\s+at\s+[^,\.]+/gi, 'through WhatsApp');
+            text = text.replace(/at\s+[a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+/gi, '');
+            text = text.replace(/at\s+\+?\d{1,4}[\s-]?\d{1,4}[\s-]?\d{1,9}[\s-]?\d{1,9}/gi, '');
+            
+            // Clean up extra spaces and punctuation
+            text = text.replace(/\s+/g, ' '); // Multiple spaces to single
+            text = text.replace(/\s*,\s*,/g, ','); // Double commas
+            text = text.replace(/\s*\.\s*\./g, '.'); // Double periods
+            text = text.replace(/\s*,\s*\./g, '.'); // Comma followed by period
+            text = text.replace(/^\s+|\s+$/g, ''); // Trim
+            
+            return text;
+        }
+
         // Generate professional email template
         function getEmailTemplate(subject = 'Job Opportunity Inquiry') {
             const emailBody = `Dear Sakhr AL-Absi,
@@ -3207,7 +3313,7 @@ Best regards,
                 lowerTxt.includes('schedule') || lowerTxt.includes('meet') || lowerTxt.includes('interview') ||
                 lowerTxt.includes('call') || lowerTxt.includes('talk') || lowerTxt.includes('discuss') ||
                 (lowerTxt.includes('help') && (lowerTxt.includes('appointment') || lowerTxt.includes('book') || lowerTxt.includes('schedule') || lowerTxt.includes('meet')))) {
-                return "I'd be happy to help you schedule a meeting with Sakhr! He's available for interviews and discussions about potential opportunities. You can contact him directly using the options below.";
+                return "I'd be happy to help you schedule a meeting with Sakhr! He's available for interviews and discussions about potential opportunities. Contact options will be provided below.";
             }
             
             // Then check other specific topics
@@ -3266,40 +3372,101 @@ Best regards,
         }
         
         function enhanceResponseWithLinks(text) {
-            // Convert URLs to clickable links
-            const urlRegex = /(https?:\/\/[^\s]+)/g;
-            text = text.replace(urlRegex, '<a href="$1" target="_blank" style="color: var(--secondary-blue); text-decoration: underline;">$1</a>');
+            // First, escape any existing HTML to prevent XSS and raw HTML display
+            text = escapeHtml(text);
+            
+            // Helper function to get descriptive link text from URL
+            function getLinkText(url) {
+                try {
+                    const urlObj = new URL(url.startsWith('http') ? url : `https://${url}`);
+                    const hostname = urlObj.hostname.replace('www.', '');
+                    
+                    // Special cases for known services
+                    if (hostname.includes('linkedin.com')) {
+                        return 'LinkedIn';
+                    } else if (hostname.includes('aiwaverider.com')) {
+                        return 'AI Waverider';
+                    } else if (hostname.includes('github.com')) {
+                        return 'GitHub';
+                    } else if (hostname.includes('wa.me') || hostname.includes('whatsapp.com')) {
+                        return 'WhatsApp';
+                    } else {
+                        // Extract domain name as display text
+                        const domain = hostname.split('.')[0];
+                        return domain.charAt(0).toUpperCase() + domain.slice(1);
+                    }
+                } catch (e) {
+                    return 'Visit Link';
+                }
+            }
+            
+            // Convert markdown-style links [text](url) to HTML links FIRST
+            const markdownLinkRegex = /\[([^\]]+)\]\(([^)]+)\)/g;
+            text = text.replace(markdownLinkRegex, (match, linkText, url) => {
+                // Clean up the URL (remove any trailing quotes or malformed parts)
+                const cleanUrl = url.trim().replace(/["']/g, '').split(' ')[0];
+                // Ensure URL has protocol
+                const fullUrl = cleanUrl.startsWith('http') ? cleanUrl : `https://${cleanUrl}`;
+                // Use the provided link text or generate descriptive text
+                const displayText = linkText.trim() || getLinkText(fullUrl);
+                return `<a href="${fullUrl}" target="_blank" style="color: var(--secondary-blue); text-decoration: underline;">${displayText}</a>`;
+            });
+            
+            // Convert plain URLs to clickable links with descriptive text (but skip if already in an <a> tag)
+            const urlRegex = /(https?:\/\/[^\s<>"']+)/g;
+            text = text.replace(urlRegex, (url) => {
+                // Skip if already inside an HTML tag
+                if (text.indexOf(`href="${url}"`) !== -1 || text.indexOf(`href='${url}'`) !== -1) {
+                    return url;
+                }
+                const linkText = getLinkText(url);
+                return `<a href="${url}" target="_blank" style="color: var(--secondary-blue); text-decoration: underline;">${linkText}</a>`;
+            });
             
             // Convert email addresses to mailto links with template for sakhr270@gmail.com
             const emailRegex = /([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/g;
             const emailTemplate = encodeURIComponent(`Dear Sakhr AL-Absi,\n\nI came across your CV and I'm impressed by your expertise as a Senior Software Engineer and AI Solutions Architect. I would like to discuss a potential opportunity with you.\n\nPlease let me know your availability for a conversation.\n\nBest regards,\n[Your Name]\n[Your Position]\n[Your Company]`);
             text = text.replace(emailRegex, (email) => {
-                if (email === 'sakhr270@gmail.com') {
-                    return `<a href="mailto:${email}?subject=${encodeURIComponent('Job Opportunity Inquiry')}&body=${emailTemplate}" style="color: var(--secondary-blue); text-decoration: underline;">${email}</a>`;
+                // Skip if already in a link
+                if (text.indexOf(`mailto:${email}`) !== -1) {
+                    return email;
                 }
-                return `<a href="mailto:${email}" style="color: var(--secondary-blue); text-decoration: underline;">${email}</a>`;
+                if (email === 'sakhr270@gmail.com') {
+                    return `<a href="mailto:${email}?subject=${encodeURIComponent('Job Opportunity Inquiry')}&body=${emailTemplate}" style="color: var(--secondary-blue); text-decoration: underline;">Email Sakhr</a>`;
+                }
+                return `<a href="mailto:${email}" style="color: var(--secondary-blue); text-decoration: underline;">Email</a>`;
             });
             
-            // Convert phone numbers to WhatsApp links
+            // Convert phone numbers to WhatsApp links (but skip if already in a link)
             const phoneRegex = /(\+?\d{1,4}[\s-]?\d{1,4}[\s-]?\d{1,9}[\s-]?\d{1,9})/g;
             text = text.replace(phoneRegex, (match) => {
+                // Skip if already in a link
+                if (text.indexOf(`wa.me`) !== -1 && text.indexOf(match) !== -1) {
+                    return match;
+                }
                 const cleanPhone = match.replace(/[\s-]/g, '');
-                return `<a href="https://wa.me/${cleanPhone}" target="_blank" style="color: var(--secondary-blue); text-decoration: underline;">${match}</a>`;
+                return `<a href="https://wa.me/${cleanPhone}" target="_blank" style="color: var(--secondary-blue); text-decoration: underline;">WhatsApp</a>`;
             });
             
-            // Convert mentions of AI Waverider to link
-            text = text.replace(/AI Waverider/gi, '<a href="https://www.aiwaverider.com" target="_blank" style="color: var(--secondary-blue); text-decoration: underline;">AI Waverider</a>');
+            // Convert mentions of AI Waverider to link (but skip if already linked)
+            if (text.indexOf('href="https://www.aiwaverider.com"') === -1) {
+                text = text.replace(/AI Waverider/gi, '<a href="https://www.aiwaverider.com" target="_blank" style="color: var(--secondary-blue); text-decoration: underline;">AI Waverider</a>');
+            }
             
-            // Convert mentions of LinkedIn to link
-            text = text.replace(/LinkedIn/gi, '<a href="https://www.linkedin.com/in/sakhr-nabil-al-absi" target="_blank" style="color: var(--secondary-blue); text-decoration: underline;">LinkedIn</a>');
+            // Convert mentions of LinkedIn to link (but skip if already linked)
+            if (text.indexOf('href="https://www.linkedin.com/in/sakhr-nabil-al-absi"') === -1) {
+                text = text.replace(/LinkedIn/gi, '<a href="https://www.linkedin.com/in/sakhr-nabil-al-absi" target="_blank" style="color: var(--secondary-blue); text-decoration: underline;">LinkedIn</a>');
+            }
             
             return text;
         }
 
         function formatMessage(text) {
             // Convert markdown-like formatting to HTML
+            // Note: text should already be processed by enhanceResponseWithLinks
             return text
                 .replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>')
+                .replace(/\*(.*?)\*/g, '<em>$1</em>')
                 .replace(/\n/g, '<br>')
                 .replace(/✅/g, '<span style="color: var(--green);">✅</span>')
                 .replace(/🚀/g, '<span>🚀</span>')
@@ -3667,24 +3834,33 @@ Best regards,
                 doc.text(`Page ${i} of ${pageCount} - Sakhr AL-Absi CV`, 105, 290, { align: "center" });
             }
 
+            // Define PDF filename
+            const pdfFilename = "Sakhr_AL_Absi_Full_CV.pdf";
+            
             // Save and open in new window
             const pdfBlob = doc.output('blob');
             const pdfUrl = URL.createObjectURL(pdfBlob);
             const pdfWindow = window.open(pdfUrl, '_blank');
             
-            // Set title after window loads
+            // Set title immediately to match PDF filename
             if (pdfWindow) {
-                pdfWindow.addEventListener('load', function() {
-                    try {
-                        pdfWindow.document.title = 'Sakhr_AL_Absi_Full_CV.pdf';
-                    } catch(e) {
-                        // PDF viewer may not allow title change
-                    }
-                });
+                // Try to set title immediately
+                try {
+                    pdfWindow.document.title = pdfFilename;
+                } catch(e) {
+                    // If immediate access fails, wait for load
+                    pdfWindow.addEventListener('load', function() {
+                        try {
+                            pdfWindow.document.title = pdfFilename;
+                        } catch(err) {
+                            // PDF viewer may not allow title change
+                        }
+                    });
+                }
             }
             
-            // Also trigger download
-            doc.save("Sakhr_AL_Absi_Full_CV.pdf");
+            // Also trigger download with the same filename
+            doc.save(pdfFilename);
             
             if (btn && originalContent) {
                 btn.innerHTML = originalContent;
@@ -3699,6 +3875,55 @@ Best regards,
         document.getElementById('mobileMenuBtn').addEventListener('click', function () {
             document.querySelector('.nav-links').classList.toggle('active');
         });
+
+        // Copy Phone Number Function
+        function copyPhoneNumber(event) {
+            event.preventDefault();
+            event.stopPropagation();
+            const phoneNumber = '+491 5906 4554 76';
+            
+            // Try modern clipboard API first
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+                navigator.clipboard.writeText(phoneNumber).then(() => {
+                    showCopyFeedback(event.target);
+                }).catch(err => {
+                    console.error('Failed to copy:', err);
+                    fallbackCopy(phoneNumber, event.target);
+                });
+            } else {
+                // Fallback for older browsers
+                fallbackCopy(phoneNumber, event.target);
+            }
+        }
+
+        function fallbackCopy(text, button) {
+            const textArea = document.createElement('textarea');
+            textArea.value = text;
+            textArea.style.position = 'fixed';
+            textArea.style.left = '-999999px';
+            document.body.appendChild(textArea);
+            textArea.select();
+            try {
+                document.execCommand('copy');
+                showCopyFeedback(button);
+            } catch (err) {
+                console.error('Fallback copy failed:', err);
+            }
+            document.body.removeChild(textArea);
+        }
+
+        function showCopyFeedback(button) {
+            const originalHTML = button.innerHTML;
+            button.innerHTML = '<i class="fas fa-check"></i>';
+            button.style.background = 'rgba(37, 211, 102, 0.3)'; // WhatsApp green
+            button.style.borderColor = '#25D366';
+            
+            setTimeout(() => {
+                button.innerHTML = originalHTML;
+                button.style.background = '';
+                button.style.borderColor = '';
+            }, 2000);
+        }
 
         // Profile Image Upload and Loading
         const fileInput = document.getElementById('fileInput');
