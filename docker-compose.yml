@@ -1,3 +1,6 @@
+# Note: For Coolify, it's recommended to use Dockerfile mode instead of docker-compose
+# This file is provided for local development or if you specifically use docker-compose mode in Coolify
+# In Coolify: Use "Dockerfile" build pack, not "Docker Compose"
 
 services:
   cv-app:
@@ -5,22 +8,22 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: sakhr-cv
-    ports:
-      - "${PORT:-3000}:3000"
+    # Coolify handles port mapping automatically - don't specify ports here
+    # ports:
+    #   - "${PORT:-3000}:3000"
     environment:
-      - PORT=3000
+      - PORT=${PORT:-3000}
       - OPENAPI_KEY=${OPENAPI_KEY}
       - NODE_ENV=production
-    env_file:
-      - .env
-    # Fallback if .env doesn't exist (use environment variables from host)
+    # Don't use env_file in Coolify - set env vars in Coolify UI instead
+    # env_file:
+    #   - .env
     volumes:
-      # Mount assets directory for profile images
+      # Mount assets directory for profile images (if needed)
       - ./assets:/app/assets:ro
     restart: unless-stopped
-
     healthcheck:
-      test: ["CMD", "node", "-e", "require('http').get('http://localhost:3000', (r) => {process.exit(r.statusCode === 200 ? 0 : 1)})"]
+      test: ["CMD", "node", "-e", "const port = process.env.PORT || 3000; require('http').get(`http://localhost:${port}`, (r) => {process.exit(r.statusCode === 200 ? 0 : 1)}).on('error', () => process.exit(1))"]
       interval: 30s
       timeout: 10s
       retries: 3
