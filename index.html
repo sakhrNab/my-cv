@@ -11,7 +11,7 @@
     <!-- Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+    <!-- Segoe UI is a system font, no need to load from Google Fonts -->
 
     <style>
         /* --- VARIABLES & THEME --- */
@@ -81,6 +81,7 @@
             top: 0;
             width: 100%;
             background: rgba(255, 255, 255, 0.9);
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             z-index: 1000;
             padding: 15px 0;
@@ -149,6 +150,20 @@
             display: flex;
             align-items: center;
             gap: 10px;
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            background: none;
+            border: none;
+            color: var(--text-dark);
+            font-size: 1.5em;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        [data-theme="dark"] .mobile-menu-btn {
+            color: var(--text-dark);
         }
 
         .nav-links {
@@ -227,6 +242,7 @@
 
         .stat-card {
             background: rgba(255, 255, 255, 0.08);
+            -webkit-backdrop-filter: blur(20px);
             backdrop-filter: blur(20px);
             border-radius: 20px;
             padding: 30px 20px;
@@ -377,6 +393,7 @@
             height: 280px;
             background: rgba(255, 255, 255, 0.05);
             border-radius: 20px;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             display: flex;
@@ -633,6 +650,7 @@
             color: rgba(255, 255, 255, 0.7);
             cursor: pointer;
             transition: all 0.3s ease;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             overflow: hidden;
         }
@@ -701,6 +719,7 @@
             background: rgba(255, 255, 255, 0.1);
             padding: 8px 16px;
             border-radius: 25px;
+            -webkit-backdrop-filter: blur(10px);
             backdrop-filter: blur(10px);
             border: 1px solid rgba(255, 255, 255, 0.2);
             transition: all 0.3s ease;
@@ -1074,6 +1093,10 @@
             flex: 1;
             background: linear-gradient(180deg, #000428 0%, #004e92 100%);
             cursor: none;
+            touch-action: none;
+            /* Responsive sizing */
+            width: 100%;
+            height: 100%;
         }
 
         #gameOverScreen {
@@ -1176,6 +1199,11 @@
         .ai-btn-pulse:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 20px rgba(118, 75, 162, 0.6);
+        }
+
+        @keyframes fadeOut {
+            0% { opacity: 1; transform: translateX(-50%) translateY(0); }
+            100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
         }
 
         @keyframes pulse {
@@ -1526,7 +1554,133 @@
            ========================================= */
 
         /* 1. Mobile (Under 768px) */
+        /* Mobile game controls */
+        .mobile-controls {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3001;
+            gap: 20px;
+            flex-direction: row;
+        }
+        
+        .mobile-control-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: rgba(0, 255, 255, 0.2);
+            border: 2px solid #0ff;
+            color: #0ff;
+            font-size: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            user-select: none;
+            transition: all 0.2s;
+            backdrop-filter: blur(10px);
+        }
+        
+        .mobile-control-btn:active {
+            background: rgba(0, 255, 255, 0.5);
+            transform: scale(0.9);
+        }
+        
         @media (max-width: 768px) {
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .mobile-controls {
+                display: flex;
+            }
+            
+            #gameCanvas {
+                cursor: default;
+            }
+
+            /* Game responsive fixes */
+            .game-overlay {
+                padding: 0;
+            }
+
+            .game-container {
+                flex-direction: column;
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .game-container > div:first-child {
+                padding: 8px 5px !important;
+                flex-wrap: wrap;
+                gap: 8px;
+            }
+
+            .game-container > div:first-child > div:first-child {
+                flex: 1 1 100%;
+                font-size: 12px !important;
+                margin-bottom: 5px;
+            }
+
+            .game-container > div:first-child > div:first-child span {
+                display: block;
+                margin: 2px 0;
+                font-size: 11px !important;
+            }
+
+            .game-container > div:nth-child(2) {
+                padding: 8px 5px !important;
+                font-size: 11px !important;
+            }
+
+            .game-container > div:nth-child(2) #gameQuestion {
+                font-size: 14px !important;
+            }
+
+            #gameCanvas {
+                height: calc(100vh - 220px) !important;
+                min-height: 300px;
+                max-height: calc(100vh - 220px);
+            }
+            
+            .game-header {
+                padding: 6px 5px !important;
+            }
+            
+            .game-header-left > div:first-child {
+                font-size: 12px !important;
+            }
+            
+            .game-header-left > div:last-child {
+                font-size: 11px !important;
+                gap: 6px !important;
+            }
+            
+            .game-question-area {
+                padding: 6px 5px !important;
+            }
+            
+            .game-question-area #gameQuestion {
+                font-size: 13px !important;
+            }
+            
+            .game-controls-info {
+                padding: 6px 5px !important;
+                font-size: 9px !important;
+            }
+
+            .game-container > div:last-child {
+                padding: 8px 5px !important;
+                font-size: 10px !important;
+            }
+
+            .mobile-controls {
+                bottom: 10px;
+                z-index: 10000;
+            }
+
             .hero-container {
                 grid-template-columns: 1fr;
                 text-align: center;
@@ -1547,10 +1701,12 @@
                 flex-direction: column;
                 padding: 20px;
                 box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+                z-index: 1001;
+                border-top: 1px solid var(--gray-medium);
             }
 
             .nav-links.active {
-                display: flex;
+                display: flex !important;
             }
 
             .social-sidebar {
@@ -1683,40 +1839,105 @@ padding: 100px;
     <!-- GAME OVERLAY -->
     <div class="game-overlay" id="gameOverlay">
         <div class="game-container">
-            <div style="border-bottom: 1px solid #0f0; padding: 10px; display:flex; justify-content:space-between; align-items:center; background: rgba(0,0,0,0.8);">
-                <div>
-                    <span style="color:#0f0; font-weight:bold;">🚀 SAKHR FIT ASSESSMENT GAME</span>
-                    <span style="color:#fff; margin-left:20px;">Score: <span id="gameScore">0</span></span>
+            <div class="game-header" style="border-bottom: 1px solid #0ff; padding: 8px; display:flex; justify-content:space-between; align-items:center; background: rgba(0,0,0,0.95); box-shadow: 0 4px 20px rgba(0,255,255,0.3); flex-wrap: wrap; gap: 8px;">
+                <div class="game-header-left" style="flex: 1 1 100%; min-width: 0;">
+                    <div style="color:#0ff; font-weight:bold; font-size:14px; text-shadow: 0 0 10px #0ff; margin-bottom:5px;">🚀 SAKHR'S LEGENDARY BATTLE</div>
+                    <div style="display:flex; flex-wrap:wrap; gap:8px; font-size:12px;">
+                        <span style="color:#ffd700; font-weight:bold;">⭐ Score: <span id="gameScore">0</span></span>
+                        <span style="color:#ff00ff; font-weight:bold;">🎯 Level: <span id="gameLevel">1</span>/<span id="totalLevels">6</span></span>
+                        <span style="color:#00ff00; font-weight:bold;">⚡ Upgrades: <span id="upgradeCount">0</span></span>
+                    </div>
                 </div>
-                <div style="display:flex; align-items:center; gap:15px;">
-                    <div style="color:#fff;">
+                <div class="game-header-right" style="display:flex; align-items:center; gap:8px; flex-wrap:wrap;">
+                    <div style="color:#fff; font-size:11px;">
                         Health: 
-                        <div style="width:200px; height:20px; background:#333; border:2px solid #0f0; display:inline-block; margin-left:10px; position:relative;">
-                            <div id="healthBar" style="width:100%; height:100%; background:linear-gradient(90deg, #0f0, #0a0); transition:width 0.3s;"></div>
-                            <span id="healthText" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:#000; font-weight:bold; font-size:12px;">100%</span>
+                        <div style="width:120px; height:18px; background:#333; border:2px solid #0ff; display:inline-block; margin-left:5px; position:relative; border-radius:5px; overflow:hidden; box-shadow: 0 0 15px rgba(0,255,255,0.5);">
+                            <div id="healthBar" style="width:100%; height:100%; background:linear-gradient(90deg, #00ff00, #00ffaa); transition:width 0.3s; box-shadow: inset 0 0 10px rgba(255,255,255,0.5);"></div>
+                            <span id="healthText" style="position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); color:#000; font-weight:bold; font-size:10px; text-shadow: 0 0 5px #fff;">100%</span>
                         </div>
                     </div>
-                    <button onclick="toggleGame()" style="background:#f00; border:none; color:#fff; cursor:pointer; padding:5px 15px; border-radius:5px;">[X] CLOSE</button>
+                    <button onclick="toggleGame()" title="Close game" aria-label="Close game" style="background:linear-gradient(135deg, #f00, #a00); border:none; color:#fff; cursor:pointer; padding:5px 12px; border-radius:5px; font-weight:bold; font-size:11px; box-shadow: 0 4px 15px rgba(255,0,0,0.5); transition: all 0.3s; white-space:nowrap;">[X]</button>
                 </div>
             </div>
-            <div style="padding:15px; background:rgba(0,20,0,0.5); border-bottom:1px solid #0f0;">
-                <div id="gameQuestion" style="color:#0f0; font-size:16px; font-weight:bold; text-align:center;">
+            <div class="game-question-area" style="padding:10px; background:linear-gradient(135deg, rgba(0,20,40,0.95), rgba(0,40,80,0.95)); border-bottom:2px solid #0ff; box-shadow: 0 4px 20px rgba(0,255,255,0.2);">
+                <div id="gameQuestion" style="color:#0ff; font-size:16px; font-weight:bold; text-align:center; text-shadow: 0 0 15px #0ff, 0 0 30px #0ff; margin-bottom:5px;">
                     Question will appear here...
                 </div>
-                <div style="color:#fff; font-size:12px; text-align:center; margin-top:5px; opacity:0.8;">
-                    Hit the <span style="color:#0f0;">GREEN</span> words (correct answers) | Avoid <span style="color:#f00;">RED</span> words (wrong answers)
+                <div style="color:#fff; font-size:11px; text-align:center; margin-top:5px; opacity:0.9;">
+                    Hit <span style="color:#0f0; font-weight:bold; text-shadow: 0 0 8px #0f0;">GREEN</span> | Avoid <span style="color:#f00; font-weight:bold; text-shadow: 0 0 8px #f00;">RED</span>
+                </div>
+                <div id="upgradeBar" style="margin-top:8px; display:flex; gap:8px; justify-content:center; flex-wrap:wrap; font-size:10px;">
+                    <!-- Upgrades will be dynamically added here -->
+                </div>
+                <div style="margin-top:5px; text-align:center; font-size:10px; color:#0ff;">
+                    <span>💎 Collect falling upgrades!</span>
                 </div>
             </div>
-            <canvas id="gameCanvas" style="display:block; background:linear-gradient(180deg, #000428 0%, #004e92 100%); width:100%; height:calc(100vh - 180px); cursor:none; touch-action:none;"></canvas>
-            <div style="padding:10px; background:rgba(0,0,0,0.8); border-top:1px solid #0f0; color:#fff; font-size:12px;">
-                <strong>Controls:</strong> Arrow Keys / A/D to move | Space / Click to shoot | Mouse to aim
+            <canvas id="gameCanvas" style="display:block; background:linear-gradient(180deg, #000428 0%, #004e92 100%); width:100%; height:calc(100vh - 180px); min-height:300px; cursor:none; touch-action:none;"></canvas>
+            <div class="game-controls-info" style="padding:8px; background:rgba(0,0,0,0.9); border-top:2px solid #0ff; color:#fff; font-size:10px; box-shadow: 0 -4px 20px rgba(0,255,255,0.2);">
+                <div class="desktop-controls" style="margin-bottom:3px;"><strong style="color:#0ff;">Controls:</strong> ← → or A/D | SPACE/CLICK to shoot</div>
+                <div style="color:#ffd700; font-size:9px;">💎 Upgrades: ⚡ ⚡ ⚡ | ❤️ | 🛸</div>
             </div>
-            <div id="gameOverScreen" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:rgba(0,0,0,0.95); padding:40px; border:3px solid #f00; border-radius:10px; text-align:center; z-index:1000;">
-                <h2 style="color:#f00; margin-bottom:20px;">GAME OVER</h2>
-                <p style="color:#fff; margin-bottom:20px;">Final Score: <span id="finalScore">0</span></p>
-                <p style="color:#fff; margin-bottom:20px; font-size:14px;">You couldn't convince HR that Sakhr is a good fit!</p>
-                <button onclick="restartGame()" style="background:#0f0; color:#000; border:none; padding:10px 30px; font-size:16px; font-weight:bold; cursor:pointer; border-radius:5px; margin-right:10px;">Restart</button>
-                <button onclick="toggleGame()" style="background:#666; color:#fff; border:none; padding:10px 30px; font-size:16px; cursor:pointer; border-radius:5px;">Close</button>
+            <!-- Mobile Controls -->
+            <div class="mobile-controls">
+                <button class="mobile-control-btn" id="mobileLeft">◀</button>
+                <button class="mobile-control-btn" id="mobileShoot">🔥</button>
+                <button class="mobile-control-btn" id="mobileRight">▶</button>
+            </div>
+            <div id="levelCompleteScreen" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:linear-gradient(135deg, rgba(0,50,0,0.98), rgba(0,100,50,0.98)); padding:40px; border:3px solid #0ff; border-radius:15px; text-align:center; z-index:1001; box-shadow: 0 0 50px rgba(0,255,255,0.8), inset 0 0 30px rgba(0,255,0,0.3); min-width:400px;">
+                <h2 style="color:#ffd700; margin-bottom:20px; text-shadow: 0 0 20px #ffd700; font-size:32px;">🏆 LEVEL COMPLETE! 🏆</h2>
+                <p style="color:#0ff; margin-bottom:15px; font-size:20px; font-weight:bold;">Level <span id="completedLevel">1</span></p>
+                <p style="color:#fff; margin-bottom:10px; font-size:18px;">Score: <span id="levelScore" style="color:#ffd700;">0</span></p>
+                <p style="color:#fff; margin-bottom:20px; font-size:18px;">Upgrades Collected: <span id="levelUpgrades" style="color:#00ff00;">0</span> ⚡</p>
+                <div id="levelReward" style="margin:20px 0; padding:20px; background:rgba(0,0,0,0.4); border-radius:10px; border:2px solid #ffd700;">
+                    <h3 style="color:#ffd700; margin-bottom:10px;">🎁 REWARD UNLOCKED!</h3>
+                    <p id="rewardText" style="color:#0ff; font-size:16px; font-weight:bold;"></p>
+                </div>
+                <button onclick="nextLevel()" title="Continue to next level" aria-label="Continue to next level" style="background:linear-gradient(135deg, #00ff00, #00aa00); color:#000; border:none; padding:15px 40px; font-size:18px; font-weight:bold; cursor:pointer; border-radius:10px; margin-right:10px; box-shadow: 0 4px 20px rgba(0,255,0,0.6); transition: all 0.3s;">Next Level ➡️</button>
+            </div>
+            <div id="gameOverScreen" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:linear-gradient(135deg, rgba(100,0,0,0.98), rgba(50,0,0,0.98)); padding:40px; border:3px solid #f00; border-radius:15px; text-align:center; z-index:1000; box-shadow: 0 0 50px rgba(255,0,0,0.8), inset 0 0 30px rgba(255,0,0,0.3);">
+                <h2 style="color:#f00; margin-bottom:20px; text-shadow: 0 0 20px #f00; font-size:32px;">💀 GAME OVER 💀</h2>
+                <p style="color:#fff; margin-bottom:10px; font-size:18px;">Final Score: <span id="finalScore" style="color:#ffd700;">0</span></p>
+                <p style="color:#fff; margin-bottom:20px; font-size:14px; opacity:0.9;">You need to be faster to work with Sakhr! 😄</p>
+                <button onclick="restartGame()" title="Restart game" aria-label="Restart game" style="background:linear-gradient(135deg, #0ff, #0aa); color:#000; border:none; padding:12px 35px; font-size:16px; font-weight:bold; cursor:pointer; border-radius:8px; margin-right:10px; box-shadow: 0 4px 15px rgba(0,255,255,0.5);">🔄 Restart</button>
+                <button onclick="toggleGame()" title="Close game" aria-label="Close game" style="background:linear-gradient(135deg, #666, #333); color:#fff; border:none; padding:12px 35px; font-size:16px; cursor:pointer; border-radius:8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">❌ Close</button>
+            </div>
+            <div id="shopScreen" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:linear-gradient(135deg, rgba(0,50,100,0.98), rgba(0,100,150,0.98)); padding:30px; border:3px solid #ffd700; border-radius:15px; text-align:center; z-index:1003; box-shadow: 0 0 50px rgba(255,215,0,0.8); min-width:400px; max-width:90vw;">
+                <h2 style="color:#ffd700; margin-bottom:20px; text-shadow: 0 0 20px #ffd700; font-size:28px;">🛒 UPGRADE SHOP</h2>
+                <p style="color:#fff; margin-bottom:15px; font-size:18px;">Coins: <span id="shopCoins" style="color:#ffd700; font-weight:bold;">0</span> 💰</p>
+                <div style="display:flex; flex-direction:column; gap:15px; margin-bottom:20px;">
+                    <button onclick="buyUpgrade('fireRate')" id="btnFireRate" style="background:linear-gradient(135deg, #0066cc, #004499); color:#fff; border:none; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; border-radius:8px; box-shadow: 0 4px 15px rgba(0,102,204,0.5);">
+                        ⚡ Faster Shooting (Level <span id="fireRateLevel">1</span>) - <span id="fireRateCost">50</span>💰
+                    </button>
+                    <button onclick="buyUpgrade('health')" id="btnHealth" style="background:linear-gradient(135deg, #00cc00, #009900); color:#fff; border:none; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; border-radius:8px; box-shadow: 0 4px 15px rgba(0,204,0,0.5);">
+                        ❤️ Health Boost (+25 HP) - <span id="healthCost">75</span>💰
+                    </button>
+                    <button onclick="buyUpgrade('support')" id="btnSupport" style="background:linear-gradient(135deg, #cc00cc, #990099); color:#fff; border:none; padding:12px 20px; font-size:16px; font-weight:bold; cursor:pointer; border-radius:8px; box-shadow: 0 4px 15px rgba(204,0,204,0.5);">
+                        🛸 Support Drones - <span id="supportCost">100</span>💰
+                    </button>
+                </div>
+                <button onclick="toggleShop()" style="background:linear-gradient(135deg, #666, #333); color:#fff; border:none; padding:10px 30px; font-size:16px; cursor:pointer; border-radius:8px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">Close (S)</button>
+            </div>
+            <div id="finalCelebrationScreen" style="display:none; position:absolute; top:50%; left:50%; transform:translate(-50%, -50%); background:linear-gradient(135deg, rgba(255,215,0,0.98), rgba(255,165,0,0.98)); padding:50px; border:5px solid #ffd700; border-radius:20px; text-align:center; z-index:1002; box-shadow: 0 0 100px rgba(255,215,0,0.8), inset 0 0 50px rgba(255,255,255,0.3); min-width:500px; max-width:90vw;">
+                <div style="font-size:80px; margin-bottom:20px; animation: bounce 1s infinite;">🏆</div>
+                <h2 style="color:#000; margin-bottom:15px; text-shadow: 0 0 20px #fff; font-size:36px; font-weight:bold;">🎉 CONGRATULATIONS! 🎉</h2>
+                <p style="color:#000; margin-bottom:10px; font-size:24px; font-weight:bold;">You've Proven You Can Work With Sakhr!</p>
+                <p style="color:#000; margin-bottom:20px; font-size:18px;">All <span id="finalLevelCount">6</span> Levels Completed!</p>
+                <div style="background:rgba(255,255,255,0.3); padding:20px; border-radius:10px; margin:20px 0;">
+                    <p style="color:#000; margin-bottom:10px; font-size:20px; font-weight:bold;">Final Score: <span id="finalCelebrationScore" style="color:#ff0000;">0</span></p>
+                    <p style="color:#000; margin-bottom:10px; font-size:20px; font-weight:bold;">Coins Collected: <span id="finalCelebrationCoins" style="color:#0066cc;">0</span> 💰</p>
+                </div>
+                <p style="color:#000; margin-bottom:30px; font-size:16px; font-weight:bold;">Ready to work together? Download Sakhr's CV!</p>
+                <button onclick="generatePDF(); toggleGame();" title="Download CV" aria-label="Download CV" style="background:linear-gradient(135deg, #0066cc, #004499); color:#fff; border:none; padding:20px 50px; font-size:22px; font-weight:bold; cursor:pointer; border-radius:12px; margin-right:15px; box-shadow: 0 6px 25px rgba(0,102,204,0.6); transition: all 0.3s;">
+                    📥 Download CV & Work With Sakhr!
+                </button>
+                <button onclick="toggleGame()" title="Close" aria-label="Close" style="background:linear-gradient(135deg, #666, #333); color:#fff; border:none; padding:15px 40px; font-size:18px; cursor:pointer; border-radius:10px; box-shadow: 0 4px 15px rgba(0,0,0,0.5);">Close</button>
+                <style>
+                    @keyframes bounce {
+                        0%, 100% { transform: translateY(0); }
+                        50% { transform: translateY(-20px); }
+                    }
+                </style>
             </div>
         </div>
     </div>
@@ -1727,15 +1948,15 @@ padding: 100px;
     <nav class="nav">
         <div class="nav-container">
             <a href="#home" class="logo">Sakhr AL-Absi</a>
-            <button class="theme-toggle" onclick="document.querySelector('.nav-links').classList.toggle('active')"
-                style="display: none;" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
+            <button class="theme-toggle mobile-menu-btn"
+                id="mobileMenuBtn" title="Toggle mobile menu" aria-label="Toggle mobile navigation menu"><i class="fas fa-bars"></i></button>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#education">Education</a></li>
-                <li><button onclick="toggleTheme()" class="theme-toggle">🌙</button></li>
-                <li><button onclick="generatePDF()" class="nav-download-btn">
+                <li><button onclick="toggleTheme()" class="theme-toggle" title="Toggle dark/light theme" aria-label="Toggle dark and light theme">🌙</button></li>
+                <li><button onclick="generatePDF()" class="nav-download-btn" title="Download CV as PDF" aria-label="Download CV as PDF file">
                     <i class="fas fa-file-pdf"></i> <span>Download CV</span>
                 </button></li>
             </ul>
@@ -1788,7 +2009,7 @@ padding: 100px;
                         class="btn btn-primary">
                         <i class="fas fa-briefcase"></i> View Work
                     </button>
-                    <button onclick="generatePDF()" class="btn btn-outline">
+                    <button onclick="generatePDF()" class="btn btn-outline" title="Download full CV as PDF" aria-label="Download full CV as PDF file">
                         <i class="fas fa-file-download"></i> Download Full CV
                     </button>
                     <a href="https://www.aiwaverider.com" target="_blank" class="btn btn-outline">
@@ -1834,7 +2055,7 @@ padding: 100px;
                         <div>> type "gem" for a hidden gem.</div>
                         <div>> Type 'help' for available commands.</div>
                     </div>
-                    <div class="cmd-line"><span>$</span><input type="text" id="termInput" class="cmd-input"></div>
+                    <div class="cmd-line"><span>$</span><input type="text" id="termInput" name="terminalInput" class="cmd-input" placeholder="Type a command (e.g., 'help', 'play', 'download')" title="Terminal command input" aria-label="Terminal command input"></div>
                 </div>
             </div>
         </div>
@@ -1861,7 +2082,7 @@ padding: 100px;
                         <div class="upload-overlay no-print">
                             <div class="upload-text">Click to<br>Upload Photo</div>
                         </div>
-                        <input type="file" class="file-input no-print" id="fileInput" accept="image/*">
+                        <input type="file" class="file-input no-print" id="fileInput" name="profileImage" accept="image/*" title="Upload profile picture" aria-label="Upload profile picture">
                     </div>
                     <div class="header-content">
                         <h1>Sakhr AL-Absi</h1>
@@ -2109,7 +2330,7 @@ padding: 100px;
                 <!-- Skills -->
                 <div class="section" id="skills">
                     <h2>💡 Technical Expertise</h2>
-                    <input type="text" class="skill-filter" placeholder="🔍 Filter skills..."
+                    <input type="text" class="skill-filter" name="skillFilter" placeholder="🔍 Filter skills..." title="Filter skills by keyword" aria-label="Filter skills by keyword"
                         onkeyup="filterSkills(this.value)">
                     <div class="skills-grid">
                         <div class="skill-category">
@@ -2119,20 +2340,25 @@ padding: 100px;
                                 <span class="skill-tag">Python 3.x</span>
                                 <span class="skill-tag">JavaScript ES6+</span>
                                 <span class="skill-tag">TypeScript</span>
+                                <span class="skill-tag">Node.js</span>
                                 <span class="skill-tag">C++</span>
                                 <span class="skill-tag">SQL</span>
                             </div>
                         </div>
 
                         <div class="skill-category">
-                            <h4>🏗️ Enterprise Frameworks</h4>
+                            <h4>🏗️ Enterprise Frameworks & Architecture</h4>
                             <div class="skill-list">
                                 <span class="skill-tag">Spring Boot 3.x</span>
                                 <span class="skill-tag">Microservices</span>
+                                <span class="skill-tag">Monolithic Architecture</span>
+                                <span class="skill-tag">System Architecture</span>
                                 <span class="skill-tag">Django</span>
                                 <span class="skill-tag">Vue.js 3</span>
                                 <span class="skill-tag">React.js</span>
                                 <span class="skill-tag">Hibernate</span>
+                                <span class="skill-tag">Full-stack Development</span>
+                                <span class="skill-tag">API Design</span>
                             </div>
                         </div>
 
@@ -2157,12 +2383,19 @@ padding: 100px;
                                 <span class="skill-tag">Cloud Run</span>
                                 <span class="skill-tag">Digital Ocean</span>
                                 <span class="skill-tag">OpenShift</span>
+                                <span class="skill-tag">Coolify</span>
+                                <span class="skill-tag">Railway</span>
                                 <span class="skill-tag">Docker</span>
                                 <span class="skill-tag">Docker Compose</span>
                                 <span class="skill-tag">Kubernetes</span>
+                                <span class="skill-tag">CI/CD</span>
+                                <span class="skill-tag">Continuous Integration</span>
+                                <span class="skill-tag">Continuous Deployment</span>
                                 <span class="skill-tag">TeamCity</span>
                                 <span class="skill-tag">Bamboo</span>
                                 <span class="skill-tag">Ubuntu</span>
+                                <span class="skill-tag">DevOps</span>
+                                <span class="skill-tag">Infrastructure</span>
                             </div>
                         </div>
 
@@ -2170,7 +2403,10 @@ padding: 100px;
                             <h4>🛠️ Development Tools</h4>
                             <div class="skill-list">
                                 <span class="skill-tag">IntelliJ IDEA</span>
-                                <span class="skill-tag">Git/GitHub</span>
+                                <span class="skill-tag">Eclipse IDE</span>
+                                <span class="skill-tag">VS Code</span>
+                                <span class="skill-tag">Cursor AI IDE</span>
+                                <span class="skill-tag">Git/GitHub/GitLab/Bitbucket</span>
                                 <span class="skill-tag">JIRA</span>
                                 <span class="skill-tag">Confluence</span>
                                 <span class="skill-tag">Bamboo</span>
@@ -2184,6 +2420,7 @@ padding: 100px;
                             <div class="skill-list">
                                 <span class="skill-tag">Figma</span>
                                 <span class="skill-tag">Adobe XD</span>
+                                <span class="skill-tag">Draw.io</span>
                             </div>
                         </div>
 
@@ -2194,11 +2431,54 @@ padding: 100px;
                                 <span class="skill-tag">Azure OpenAI</span>
                                 <span class="skill-tag">Claude API</span>
                                 <span class="skill-tag">Deepseek API</span>
+                                <span class="skill-tag">AI Solutions</span>
+                                <span class="skill-tag">AI Agents</span>
                                 <span class="skill-tag">Prompting</span>
                                 <span class="skill-tag">Fine-tuning</span>
                                 <span class="skill-tag">RAGs</span>
                                 <span class="skill-tag">Agentic Development</span>
                                 <span class="skill-tag">n8n Workflows</span>
+                                <span class="skill-tag">Automations</span>
+                                <span class="skill-tag">N8N Workflows</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>💼 Domain Expertise</h4>
+                            <div class="skill-list">
+                                <span class="skill-tag">Finance</span>
+                                <span class="skill-tag">Banking</span>
+                                <span class="skill-tag">Transaction Processing</span>
+                                <span class="skill-tag">Automotive</span>
+                                <span class="skill-tag">Vehicle Management Systems</span>
+                                <span class="skill-tag">Music & Entertainment</span>
+                                <span class="skill-tag">Rights Management</span>
+                                <span class="skill-tag">Marketing & Advertising</span>
+                                <span class="skill-tag">Global Marketing</span>
+                                <span class="skill-tag">Security</span>
+                                <span class="skill-tag">Compliance</span>
+                                <span class="skill-tag">Enterprise Solutions</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h4>👥 Leadership & Methodology</h4>
+                            <div class="skill-list">
+                                <span class="skill-tag">Leadership</span>
+                                <span class="skill-tag">Scrum Master</span>
+                                <span class="skill-tag">Agile</span>
+                                <span class="skill-tag">Project Management</span>
+                                <span class="skill-tag">Process Optimization</span>
+                                <span class="skill-tag">Quality Assurance</span>
+                                <span class="skill-tag">Stakeholder Management</span>
+                                <span class="skill-tag">Performance Metrics</span>
+                                <span class="skill-tag">Risk Management</span>
+                                <span class="skill-tag">Strategic Planning</span>
+                                <span class="skill-tag">Cross-functional Teams</span>
+                                <span class="skill-tag">Mentoring</span>
+                                <span class="skill-tag">Team Management</span>
+                                <span class="skill-tag">Offshore Team Coordination</span>
+                                <span class="skill-tag">International Collaboration</span>
                             </div>
                         </div>
                     </div>
@@ -2209,13 +2489,13 @@ padding: 100px;
                     <h2>🌍 Languages</h2>
                     <div class="languages">
                         <div class="language">
-                            <strong>🇩🇪 German:</strong> Fluent (C1)
+                            <strong>🇩🇪 German:</strong> Fluent
                         </div>
                         <div class="language">
-                            <strong>🇬🇧 English:</strong> Fluent (C1)
+                            <strong>🇬🇧 English:</strong> Fluent
                         </div>
                         <div class="language">
-                            <strong>🇸🇦 Arabic:</strong> Native Speaker
+                            <strong>🇸🇦 Arabic:</strong> Fluent
                         </div>
                         <div class="language">
                             <strong>🇪🇸 Spanish:</strong> Conversational (B1)
@@ -2276,30 +2556,30 @@ padding: 100px;
                 </div>
             </div>
             <div class="chat-suggestions" id="chatSuggestions">
-                <button class="suggestion-btn" onclick="handleSuggestion('recommendations')">
+                <button class="suggestion-btn" onclick="handleSuggestion('recommendations')" title="Check recommendations" aria-label="Check recommendations about Sakhr">
                     <i class="fas fa-check-circle"></i>
                     <span>Check Recommendations</span>
                 </button>
-                <button class="suggestion-btn" onclick="handleSuggestion('ask')">
+                <button class="suggestion-btn" onclick="handleSuggestion('ask')" title="Ask about Sakhr" aria-label="Ask a question about Sakhr">
                     <i class="fas fa-question-circle"></i>
                     <span>Ask About Sakhr</span>
                 </button>
-                <button class="suggestion-btn" onclick="handleSuggestion('interview')">
+                <button class="suggestion-btn" onclick="handleSuggestion('interview')" title="Book an interview" aria-label="Book an interview with Sakhr">
                     <i class="fas fa-calendar-check"></i>
                     <span>Book Interview</span>
                 </button>
             </div>
             <div class="chat-input-container">
                 <div class="chat-input-wrapper">
-                    <input type="text" id="aiInput" class="chat-input" placeholder="Ask about Sakhr's expertise..."
+                    <input type="text" id="aiInput" name="aiMessage" class="chat-input" placeholder="Ask about Sakhr's expertise..." title="AI chat input" aria-label="Ask a question about Sakhr's expertise"
                         onkeypress="if(event.key==='Enter' && !event.shiftKey) { event.preventDefault(); sendAIMessage(); }">
-                    <button onclick="sendAIMessage()" id="sendBtn" class="chat-send-btn">
+                    <button onclick="sendAIMessage()" id="sendBtn" class="chat-send-btn" title="Send message" aria-label="Send message to AI assistant">
                         <i class="fas fa-paper-plane"></i>
                     </button>
                 </div>
             </div>
         </div>
-        <button class="ai-btn-pulse" onclick="toggleAI()"><i class="fas fa-comment-dots"></i></button>
+        <button class="ai-btn-pulse" onclick="toggleAI()" title="Toggle AI chat assistant" aria-label="Open or close AI chat assistant"><i class="fas fa-comment-dots"></i></button>
     </div>
 
     <script>
@@ -2426,54 +2706,183 @@ padding: 100px;
             });
         }
 
+        /* --- SOUND EFFECTS --- */
+        const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+        
+        function playSound(frequency, duration, type = 'sine', volume = 0.1) {
+            try {
+                const oscillator = audioContext.createOscillator();
+                const gainNode = audioContext.createGain();
+                
+                oscillator.connect(gainNode);
+                gainNode.connect(audioContext.destination);
+                
+                oscillator.frequency.value = frequency;
+                oscillator.type = type;
+                
+                gainNode.gain.setValueAtTime(volume, audioContext.currentTime);
+                gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
+                
+                oscillator.start(audioContext.currentTime);
+                oscillator.stop(audioContext.currentTime + duration);
+            } catch (e) {
+                // Silently fail if audio context is not available
+            }
+        }
+        
+        function playCoinSound() {
+            playSound(800, 0.1, 'sine', 0.15);
+            setTimeout(() => playSound(1000, 0.1, 'sine', 0.1), 50);
+        }
+        
+        function playShootSound() {
+            playSound(300, 0.05, 'square', 0.1);
+        }
+        
+        function playHitSound() {
+            playSound(400, 0.1, 'sine', 0.12);
+        }
+        
+        function playEnemyHitSound() {
+            playSound(200, 0.15, 'sawtooth', 0.15);
+        }
+        
+        function playEnemyDestroySound() {
+            playSound(150, 0.2, 'sawtooth', 0.2);
+            setTimeout(() => playSound(100, 0.2, 'sawtooth', 0.15), 100);
+        }
+        
+        function playLevelCompleteSound() {
+            // Ascending notes
+            playSound(523, 0.15, 'sine', 0.2); // C
+            setTimeout(() => playSound(659, 0.15, 'sine', 0.2), 150); // E
+            setTimeout(() => playSound(784, 0.15, 'sine', 0.2), 300); // G
+            setTimeout(() => playSound(1047, 0.3, 'sine', 0.25), 450); // C (high)
+        }
+        
+        function playGameOverSound() {
+            playSound(200, 0.3, 'sawtooth', 0.2);
+            setTimeout(() => playSound(150, 0.3, 'sawtooth', 0.2), 200);
+        }
+
         /* --- INTERACTIVE GAME LOGIC --- */
         let gameState = {
             running: false,
             score: 0,
+            coins: 0,
             health: 100,
             currentQuestion: null,
             questionIndex: 0,
+            level: 1,
+            correctHits: 0,
+            requiredHits: 15, // Hits needed to complete level
             spaceship: { x: 0, y: 0, width: 40, height: 30 },
             fallingWords: [],
             enemies: [],
             bullets: [],
+            particles: [],
+            fallingUpgrades: [],
+            boss: null,
             keys: {},
             lastWordSpawn: 0,
             lastEnemySpawn: 0,
+            lastUpgradeSpawn: 0,
+            lastShot: 0,
+            gameStartTime: 0,
+            baseWordSpawnRate: 2000,
+            baseEnemySpawnRate: 5000,
+            baseUpgradeSpawnRate: 3000,
             wordSpawnRate: 2000,
-            enemySpawnRate: 5000
+            enemySpawnRate: 5000,
+            upgradeSpawnRate: 3000,
+            speedMultiplier: 1,
+            // Upgrade system
+            upgrades: {
+                fireRate: 1, // Level 1-5 (faster shooting)
+                dualGuns: false, // Level 2 reward
+                spreadShot: false, // Level 3 reward
+                laserGun: false, // Level 4 reward
+                tripleGuns: false, // Level 5 reward
+                rapidFire: false, // Level 6 reward
+                // Shop upgrades (purchased with coins)
+                shopFireRate: 0, // Can buy up to 3 levels
+                shopHealth: 0, // Can buy health boosts
+                shopSupport: false // Support drones
+            },
+            fireRateDelay: 150,
+            supportDrones: []
         };
+        
+        // Particle system for visual effects (game particles)
+        class GameParticle {
+            constructor(x, y, color, size = 3) {
+                this.x = x;
+                this.y = y;
+                this.vx = (Math.random() - 0.5) * 4;
+                this.vy = (Math.random() - 0.5) * 4;
+                this.color = color;
+                this.size = size;
+                this.life = 1;
+                this.decay = 0.02;
+            }
+            
+            update() {
+                this.x += this.vx;
+                this.y += this.vy;
+                this.life -= this.decay;
+                return this.life > 0;
+            }
+            
+            draw(ctx) {
+                ctx.save();
+                ctx.globalAlpha = this.life;
+                ctx.fillStyle = this.color;
+                ctx.shadowBlur = 10;
+                ctx.shadowColor = this.color;
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fill();
+                ctx.restore();
+            }
+        }
 
         const gameQuestions = [
             {
-                question: "Why is Sakhr a good fit for a microservices project?",
-                correct: ["Java", "Spring Boot", "Microservices", "Docker", "Kubernetes", "Cloud", "Architecture", "Enterprise"],
-                incorrect: ["PHP", "WordPress", "Legacy", "Monolithic", "Outdated"]
+                question: "Why is Sakhr a good fit for your project?",
+                correct: ["Java", "Spring Boot", "Microservices", "Monolithic", "Docker", "Coolify", "Railway", "Digital Ocean", "N8N", "Openshift", "Cloud", "Architecture", "AI Affinity", "Enterprise",
+                    "Claude", "OpenAI", "Automations", "RAGs", "Fine-tuning", "Prompting", "AI Solutions", "AI Agents", "Eager to Learn", "Open Source Projects"
+                ],
+                incorrect: ["WordPress", "Legacy", "Outdated", "Unexperienced", "Traditional", "Still don't know how to use AI", "Unadabtable", "Unprofessional", "Unreliable", "Unscalable", "Unefficient"]
             },
             {
                 question: "What makes Sakhr suitable for AI integration projects?",
-                correct: ["OpenAI", "Azure OpenAI", "Claude", "AI", "Machine Learning", "Automation", "RAGs", "Fine-tuning"],
+                correct: ["OpenAI", "Azure OpenAI", "Claude", "AI", "Automation", "RAGs", "Fine-tuning", "Prompting", "Agentic Development", "N8N Workflows"],
                 incorrect: ["No AI", "Basic", "Simple", "Limited", "Traditional"]
             },
             {
                 question: "Why choose Sakhr for cloud migration?",
-                correct: ["GCP", "Azure", "Cloud", "Kubernetes", "Docker", "DevOps", "Scalable", "Infrastructure"],
+                correct: ["GCP", "Azure", "Cloud", "Openshift", "Docker", "Docker Compose", "Coolify", "Railway", "Digital Ocean", "TeamCity", "Bamboo", "Ubuntu",
+                 "N8N", "DevOps", "Scalable", "Infrastructure", "CI/CD", "Continuous Delivery", "Continuous Integration", "Continuous Deployment", "Continuous Testing", "Continuous Monitoring", "Continuous Logging", "Continuous Tracing", "Continuous Debugging", 
+                 "Continuous Refactoring", "Continuous Optimization", "Continuous Improvement", "Different Cloud Providers"],
                 incorrect: ["On-premise", "Legacy", "Old", "Limited", "Basic"]
             },
             {
                 question: "What demonstrates Sakhr's leadership capabilities?",
-                correct: ["Team", "Leadership", "Agile", "Cross-functional", "Mentoring", "Coordination", "Management", "Experience"],
-                incorrect: ["Solo", "Isolated", "Limited", "Basic", "Junior"]
+                correct: ["Team", "Worked with Offshore Teams in India", "Worked with different Nationalities in Germany for European Projects", 
+                "Did Scrum Master role", "Leadership", "Agile", "Organized", "Goal & Results Oriented", "Speaks More multiple Languages Fluently", "Cross-functional", "Mentoring", "Coordination", "Management", "Experience"],
+                incorrect: ["Solo", "Isolated", "Limited", "Basic", "Junior", "Unorganized", "Unfocused", "Unmotivated", "Unreliable", "Unscalable", "Unefficient"]
             },
             {
                 question: "Why is Sakhr ideal for finance sector projects?",
-                correct: ["Finance", "Banking", "Security", "Compliance", "PCI-DSS", "SOX", "Enterprise", "Reliable"],
-                incorrect: ["Startup", "Unstable", "Risky", "Unproven", "Basic"]
+                correct: ["Finance", "Banking", "Security", "Compliance", "PCI-DSS", "Enterprise", "Reliable", "Payment Processing", "Transaction Processing", "Scalibility", "Efficiency"],
+                incorrect: ["Unstable", "Risky", "Unproven", "Basic", "Lazy", "Slow", "Basic", "Unreliable", "Unscalable", "Unefficient"]
             },
+
             {
                 question: "What shows Sakhr's full-stack expertise?",
-                correct: ["Java", "Python", "JavaScript", "React", "Vue", "Full-stack", "Frontend", "Backend"],
-                incorrect: ["Limited", "Single", "Basic", "Narrow", "Simple"]
+                correct: ["Java", "NodeJS", "Python", "JavaScript", "React", "Vue", "Full-stack", 
+                "Frontend", "Backend", "Database", "API", "Microservices", "Architecture"],
+                incorrect: ["Limited", "Single", "Basic", "Narrow", "Simple", "Unexperienced", "Junior"]
             }
         ];
 
@@ -2488,7 +2897,7 @@ padding: 100px;
             }
         }
 
-        function initGame() {
+        function initGame(resetLevel = true) {
             const canvas = document.getElementById('gameCanvas');
             if (!canvas) return;
             
@@ -2507,43 +2916,155 @@ padding: 100px;
             resizeCanvas();
             window.addEventListener('resize', resizeCanvas);
 
-            // Reset game state
-            gameState = {
-                running: true,
-                score: 0,
-                health: 100,
-                currentQuestion: gameQuestions[0],
-                questionIndex: 0,
-                spaceship: { x: canvas.width / 2 - 20, y: canvas.height - 60, width: 40, height: 30 },
-                fallingWords: [],
-                enemies: [],
-                bullets: [],
-                keys: {},
-                lastWordSpawn: Date.now(),
-                lastEnemySpawn: Date.now(),
-                wordSpawnRate: 2000,
-                enemySpawnRate: 5000
-            };
+            // Calculate difficulty multipliers based on level
+            const levelMultiplier = 1 + (gameState.level - 1) * 0.25;
+            const baseWordSpeed = 2;
+            const baseEnemySpeed = 1;
+
+            // Reset or continue game state
+            if (resetLevel) {
+                gameState.running = true;
+                gameState.score = 0;
+                gameState.coins = 0;
+                gameState.health = 100;
+                gameState.level = 1;
+                gameState.questionIndex = 0;
+                gameState.correctHits = 0;
+                gameState.upgrades = {
+                    fireRate: 1,
+                    dualGuns: false,
+                    spreadShot: false,
+                    laserGun: false,
+                    tripleGuns: false,
+                    rapidFire: false,
+                    shopFireRate: 0,
+                    shopHealth: 0,
+                    shopSupport: false
+                };
+                gameState.supportDrones = [];
+                gameState.boss = null;
+            } else {
+                gameState.running = true;
+                gameState.health = 100;
+                gameState.correctHits = 0;
+            }
+            
+            gameState.currentQuestion = gameQuestions[gameState.questionIndex];
+            gameState.spaceship = { x: canvas.width / 2 - 20, y: canvas.height - 60, width: 40, height: 30 };
+            gameState.fallingWords = [];
+            gameState.enemies = [];
+            gameState.bullets = [];
+            gameState.particles = [];
+            gameState.fallingUpgrades = [];
+            gameState.boss = null;
+            if (!resetLevel) {
+                // Keep support drones between levels
+            } else {
+                gameState.supportDrones = [];
+            }
+            gameState.keys = {};
+            gameState.lastWordSpawn = Date.now();
+            gameState.lastEnemySpawn = Date.now();
+            gameState.lastUpgradeSpawn = Date.now();
+            gameState.lastShot = 0;
+            gameState.gameStartTime = Date.now();
+            gameState.speedMultiplier = 1;
+            
+            // Base spawn rates for each level (reset each level)
+            gameState.baseWordSpawnRate = Math.max(1200, 2500 - (gameState.level - 1) * 200);
+            gameState.baseEnemySpawnRate = Math.max(3000, 6000 - (gameState.level - 1) * 400);
+            gameState.baseUpgradeSpawnRate = Math.max(3000, 5000 - (gameState.level - 1) * 300); // Upgrades spawn less frequently
+            
+            gameState.wordSpawnRate = gameState.baseWordSpawnRate;
+            gameState.enemySpawnRate = gameState.baseEnemySpawnRate;
+            gameState.upgradeSpawnRate = gameState.baseUpgradeSpawnRate;
+            
+            // Fire rate based on upgrades
+            gameState.fireRateDelay = Math.max(50, 150 - (gameState.upgrades.fireRate - 1) * 20);
+            if (gameState.upgrades.rapidFire) gameState.fireRateDelay = 50;
 
             updateQuestion();
             updateHealthBar();
             updateScore();
+            updateLevel();
+            updateCoins();
+            updateUpgradeBar();
+            
+            // Initialize total levels display
+            document.getElementById('totalLevels').textContent = gameQuestions.length;
             
             // Event listeners
+            window.removeEventListener('keydown', handleKeyDown);
+            window.removeEventListener('keyup', handleKeyUp);
             window.addEventListener('keydown', handleKeyDown);
             window.addEventListener('keyup', handleKeyUp);
+            canvas.removeEventListener('mousemove', handleMouseMove);
+            canvas.removeEventListener('click', handleShoot);
             canvas.addEventListener('mousemove', handleMouseMove);
             canvas.addEventListener('click', handleShoot);
             
-            // Auto-shoot on spacebar hold
-            setInterval(() => {
-                if (gameState.running && gameState.keys[' ']) {
-                    handleShoot();
-                }
-            }, 150);
+            // Touch controls for canvas
+            canvas.removeEventListener('touchmove', handleTouchMove);
+            canvas.removeEventListener('touchstart', handleTouchShoot);
+            canvas.addEventListener('touchmove', handleTouchMove, { passive: false });
+            canvas.addEventListener('touchstart', handleTouchShoot, { passive: false });
+            
+            // Mobile control buttons
+            setupMobileControls();
 
             // Start game loop
+            if (gameState.running) {
             gameLoop();
+            }
+        }
+        
+        function setupMobileControls() {
+            const leftBtn = document.getElementById('mobileLeft');
+            const rightBtn = document.getElementById('mobileRight');
+            const shootBtn = document.getElementById('mobileShoot');
+            
+            if (leftBtn) {
+                leftBtn.addEventListener('touchstart', (e) => {
+                    e.preventDefault();
+                    gameState.keys['ArrowLeft'] = true;
+                }, { passive: false });
+                leftBtn.addEventListener('touchend', () => {
+                    gameState.keys['ArrowLeft'] = false;
+                }, { passive: true });
+            }
+            
+            if (rightBtn) {
+                rightBtn.addEventListener('touchstart', (e) => {
+                    e.preventDefault();
+                    gameState.keys['ArrowRight'] = true;
+                }, { passive: false });
+                rightBtn.addEventListener('touchend', () => {
+                    gameState.keys['ArrowRight'] = false;
+                }, { passive: true });
+            }
+            
+            if (shootBtn) {
+                shootBtn.addEventListener('touchstart', (e) => {
+                    e.preventDefault();
+                    gameState.keys[' '] = true;
+                }, { passive: false });
+                shootBtn.addEventListener('touchend', () => {
+                    gameState.keys[' '] = false;
+                }, { passive: true });
+            }
+        }
+        
+        function handleTouchMove(e) {
+            e.preventDefault();
+            const canvas = document.getElementById('gameCanvas');
+            const rect = canvas.getBoundingClientRect();
+            const touch = e.touches[0];
+            gameState.spaceship.x = touch.clientX - rect.left - gameState.spaceship.width / 2;
+        }
+        
+        function handleTouchShoot(e) {
+            e.preventDefault();
+            handleShoot();
         }
 
         function stopGame() {
@@ -2571,13 +3092,16 @@ padding: 100px;
                 healthBar.style.width = gameState.health + '%';
                 healthText.textContent = Math.max(0, Math.round(gameState.health)) + '%';
                 
-                // Change color based on health
+                // Change color based on health with enhanced gradients
                 if (gameState.health > 60) {
-                    healthBar.style.background = 'linear-gradient(90deg, #0f0, #0a0)';
+                    healthBar.style.background = 'linear-gradient(90deg, #00ff00, #00ffaa)';
+                    healthBar.style.boxShadow = 'inset 0 0 10px rgba(255,255,255,0.5), 0 0 10px rgba(0,255,0,0.5)';
                 } else if (gameState.health > 30) {
-                    healthBar.style.background = 'linear-gradient(90deg, #ff0, #aa0)';
+                    healthBar.style.background = 'linear-gradient(90deg, #ffff00, #ffaa00)';
+                    healthBar.style.boxShadow = 'inset 0 0 10px rgba(255,255,255,0.5), 0 0 10px rgba(255,255,0,0.5)';
                 } else {
-                    healthBar.style.background = 'linear-gradient(90deg, #f00, #a00)';
+                    healthBar.style.background = 'linear-gradient(90deg, #ff0000, #aa0000)';
+                    healthBar.style.boxShadow = 'inset 0 0 10px rgba(255,255,255,0.5), 0 0 10px rgba(255,0,0,0.5)';
                 }
             }
         }
@@ -2585,12 +3109,54 @@ padding: 100px;
         function updateScore() {
             document.getElementById('gameScore').textContent = gameState.score;
         }
+        
+        function updateLevel() {
+            document.getElementById('gameLevel').textContent = gameState.level;
+            document.getElementById('totalLevels').textContent = gameQuestions.length;
+        }
+        
+        function updateCoins() {
+            // Count total upgrades collected
+            let upgradeCount = gameState.upgrades.shopFireRate;
+            if (gameState.upgrades.shopSupport) upgradeCount += 1;
+            document.getElementById('upgradeCount').textContent = upgradeCount;
+        }
+        
+        function updateUpgradeBar() {
+            const upgradeBar = document.getElementById('upgradeBar');
+            const upgrades = [];
+            
+            // Level rewards
+            if (gameState.upgrades.dualGuns) upgrades.push('<span style="color:#ffd700; font-size:11px; padding:4px 8px; background:rgba(0,0,0,0.6); border-radius:5px; border:1px solid #ffd700;">⚡ Dual Guns</span>');
+            if (gameState.upgrades.spreadShot) upgrades.push('<span style="color:#ff00ff; font-size:11px; padding:4px 8px; background:rgba(0,0,0,0.6); border-radius:5px; border:1px solid #ff00ff;">🌟 Spread Shot</span>');
+            if (gameState.upgrades.laserGun) upgrades.push('<span style="color:#0ff; font-size:11px; padding:4px 8px; background:rgba(0,0,0,0.6); border-radius:5px; border:1px solid #0ff;">⚡ Laser Gun</span>');
+            if (gameState.upgrades.tripleGuns) upgrades.push('<span style="color:#00ff00; font-size:11px; padding:4px 8px; background:rgba(0,0,0,0.6); border-radius:5px; border:1px solid #00ff00;">💥 Triple Guns</span>');
+            if (gameState.upgrades.rapidFire) upgrades.push('<span style="color:#ff4500; font-size:11px; padding:4px 8px; background:rgba(0,0,0,0.6); border-radius:5px; border:1px solid #ff4500;">🔥 Rapid Fire</span>');
+            if (gameState.upgrades.fireRate > 1) upgrades.push(`<span style="color:#00aaff; font-size:11px; padding:4px 8px; background:rgba(0,0,0,0.6); border-radius:5px; border:1px solid #00aaff;">⏩ Fire Rate ${gameState.upgrades.fireRate}</span>`);
+            
+            // Collected upgrades
+            if (gameState.upgrades.shopFireRate > 0) upgrades.push(`<span style="color:#0066cc; font-size:11px; padding:4px 8px; background:rgba(0,0,0,0.6); border-radius:5px; border:1px solid #0066cc;">⚡ Speed ${gameState.upgrades.shopFireRate}/3</span>`);
+            if (gameState.upgrades.shopSupport) upgrades.push('<span style="color:#cc00cc; font-size:11px; padding:4px 8px; background:rgba(0,0,0,0.6); border-radius:5px; border:1px solid #cc00cc;">🛸 Drones</span>');
+            
+            upgradeBar.innerHTML = upgrades.join('');
+        }
 
         function handleKeyDown(e) {
+            // Escape key exits the game
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                toggleGame();
+                return;
+            }
+            
             gameState.keys[e.key] = true;
             if (e.key === ' ') {
                 e.preventDefault();
                 handleShoot();
+            }
+            if (e.key === 's' || e.key === 'S') {
+                e.preventDefault();
+                toggleShop();
             }
         }
 
@@ -2606,44 +3172,267 @@ padding: 100px;
 
         function handleShoot() {
             if (!gameState.running) return;
+            
+            const now = Date.now();
+            if (now - gameState.lastShot < gameState.fireRateDelay) return;
+            gameState.lastShot = now;
+            
+            playShootSound(); // Sound effect
+            
+            const shipCenterX = gameState.spaceship.x + gameState.spaceship.width / 2;
+            const shipY = gameState.spaceship.y;
+            
+            // Determine bullet properties
+            const bulletWidth = gameState.upgrades.laserGun ? 8 : 4;
+            const bulletHeight = gameState.upgrades.laserGun ? 20 : 10;
+            const bulletSpeed = gameState.upgrades.laserGun ? 12 : 8;
+            const bulletColor = gameState.upgrades.laserGun ? '#ff00ff' : '#0ff';
+            
+            // Center bullet
             gameState.bullets.push({
-                x: gameState.spaceship.x + gameState.spaceship.width / 2,
-                y: gameState.spaceship.y,
-                width: 4,
-                height: 10,
-                speed: 8
+                x: shipCenterX,
+                y: shipY,
+                width: bulletWidth,
+                height: bulletHeight,
+                speed: bulletSpeed,
+                color: bulletColor,
+                isLaser: gameState.upgrades.laserGun
             });
+            
+            // Dual guns (side bullets)
+            if (gameState.upgrades.dualGuns || gameState.upgrades.tripleGuns) {
+                gameState.bullets.push({
+                    x: shipCenterX - 15,
+                    y: shipY,
+                    width: bulletWidth,
+                    height: bulletHeight,
+                    speed: bulletSpeed,
+                    color: bulletColor,
+                    isLaser: gameState.upgrades.laserGun
+                });
+                gameState.bullets.push({
+                    x: shipCenterX + 15,
+                    y: shipY,
+                    width: bulletWidth,
+                    height: bulletHeight,
+                    speed: bulletSpeed,
+                    color: bulletColor,
+                    isLaser: gameState.upgrades.laserGun
+                });
+            }
+            
+            // Triple guns (extra side bullets)
+            if (gameState.upgrades.tripleGuns) {
+                gameState.bullets.push({
+                    x: shipCenterX - 25,
+                    y: shipY + 5,
+                    width: bulletWidth,
+                    height: bulletHeight,
+                    speed: bulletSpeed,
+                    color: bulletColor,
+                    isLaser: gameState.upgrades.laserGun
+                });
+                gameState.bullets.push({
+                    x: shipCenterX + 25,
+                    y: shipY + 5,
+                    width: bulletWidth,
+                    height: bulletHeight,
+                    speed: bulletSpeed,
+                    color: bulletColor,
+                    isLaser: gameState.upgrades.laserGun
+                });
+            }
+            
+            // Spread shot (angled bullets)
+            if (gameState.upgrades.spreadShot) {
+                for (let angle = -30; angle <= 30; angle += 15) {
+                    if (angle === 0) continue; // Skip center
+                    const rad = (angle * Math.PI) / 180;
+                    gameState.bullets.push({
+                        x: shipCenterX,
+                        y: shipY,
+                        width: bulletWidth * 0.7,
+                        height: bulletHeight * 0.7,
+                        speed: bulletSpeed,
+                        vx: Math.sin(rad) * bulletSpeed * 0.5,
+                        vy: -Math.cos(rad) * bulletSpeed,
+                        color: '#ff00ff',
+                        isSpread: true
+                    });
+                }
+            }
+            
+            // Add muzzle flash particles
+            for (let i = 0; i < 5; i++) {
+                gameState.particles.push(new GameParticle(shipCenterX, shipY, bulletColor, 2));
+            }
         }
 
         function spawnWord() {
             if (!gameState.currentQuestion) return;
             
             const canvas = document.getElementById('gameCanvas');
-            const isCorrect = Math.random() > 0.4; // 60% correct words
+            const isCorrect = Math.random() > 0.35; // 65% correct words
             const wordList = isCorrect ? gameState.currentQuestion.correct : gameState.currentQuestion.incorrect;
             const word = wordList[Math.floor(Math.random() * wordList.length)];
             
+            // Base speed increases with level, then multiplied by progressive difficulty
+            const baseSpeed = 2 + Math.random() * 1.5;
+            const levelSpeedBonus = (gameState.level - 1) * 0.3;
+            const finalSpeed = (baseSpeed + levelSpeedBonus) * gameState.speedMultiplier;
+            
             gameState.fallingWords.push({
                 text: word,
-                x: Math.random() * (canvas.width - 100) + 50,
+                x: Math.random() * (canvas.width - 150) + 75,
                 y: -30,
-                speed: 2 + Math.random() * 2,
+                speed: finalSpeed,
                 isCorrect: isCorrect,
                 width: word.length * 10,
                 height: 25
             });
         }
+        
+        function spawnUpgrade() {
+            const canvas = document.getElementById('gameCanvas');
+            
+            // Upgrades fall at moderate speed
+            const baseSpeed = 2.5 + Math.random() * 1;
+            const levelSpeedBonus = (gameState.level - 1) * 0.2;
+            const finalSpeed = (baseSpeed + levelSpeedBonus) * gameState.speedMultiplier;
+            
+            // Random upgrade type
+            const upgradeTypes = ['fireRate', 'health', 'support'];
+            const weights = [0.5, 0.3, 0.2]; // Fire rate more common, support rare
+            let rand = Math.random();
+            let upgradeType = 'fireRate';
+            if (rand > 0.5 && rand <= 0.8) upgradeType = 'health';
+            else if (rand > 0.8) upgradeType = 'support';
+            
+            // Don't spawn support if already have it
+            if (upgradeType === 'support' && gameState.upgrades.shopSupport) {
+                upgradeType = Math.random() > 0.5 ? 'fireRate' : 'health';
+            }
+            
+            gameState.fallingUpgrades.push({
+                x: Math.random() * (canvas.width - 60) + 30,
+                y: -30,
+                speed: finalSpeed,
+                type: upgradeType,
+                size: 35,
+                rotation: 0
+            });
+        }
 
         function spawnEnemy() {
             const canvas = document.getElementById('gameCanvas');
+            
+            // Base speed increases with level, then multiplied by progressive difficulty
+            const baseSpeed = 1 + Math.random() * 0.4;
+            const levelSpeedBonus = (gameState.level - 1) * 0.15;
+            const finalSpeed = (baseSpeed + levelSpeedBonus) * gameState.speedMultiplier;
+            const enemyHealth = 2 + Math.floor((gameState.level - 1) / 2);
+            
             gameState.enemies.push({
                 x: Math.random() * (canvas.width - 40),
                 y: -40,
-                width: 30,
-                height: 30,
-                speed: 1 + Math.random() * 0.5,
-                health: 2
+                width: 30 + gameState.level * 2,
+                height: 30 + gameState.level * 2,
+                speed: finalSpeed,
+                health: enemyHealth,
+                maxHealth: enemyHealth
             });
+        }
+        
+        function spawnBoss() {
+            const canvas = document.getElementById('gameCanvas');
+            const bossSize = 80 + gameState.level * 10;
+            const bossHealth = 20 + gameState.level * 10;
+            
+            gameState.boss = {
+                x: canvas.width / 2 - bossSize / 2,
+                y: -bossSize - 20,
+                width: bossSize,
+                height: bossSize,
+                speed: 1 * gameState.speedMultiplier,
+                health: bossHealth,
+                maxHealth: bossHealth,
+                phase: 0,
+                lastShot: Date.now()
+            };
+            
+            // Boss warning sound
+            playSound(150, 0.3, 'sawtooth', 0.2);
+            setTimeout(() => playSound(200, 0.3, 'sawtooth', 0.2), 300);
+        }
+        
+        function toggleShop() {
+            const shop = document.getElementById('shopScreen');
+            if (shop) {
+                const isOpen = shop.style.display === 'block';
+                shop.style.display = isOpen ? 'none' : 'block';
+                if (!isOpen) {
+                    updateShopUI();
+                }
+            }
+        }
+        
+        function updateShopUI() {
+            document.getElementById('shopCoins').textContent = gameState.coins;
+            const fireRateLevel = gameState.upgrades.shopFireRate;
+            document.getElementById('fireRateLevel').textContent = fireRateLevel + 1;
+            const fireRateCost = 50 + (fireRateLevel * 25);
+            document.getElementById('fireRateCost').textContent = fireRateCost;
+            document.getElementById('btnFireRate').disabled = fireRateLevel >= 3 || gameState.coins < fireRateCost;
+            
+            const healthCost = 75;
+            document.getElementById('healthCost').textContent = healthCost;
+            document.getElementById('btnHealth').disabled = gameState.coins < healthCost;
+            
+            const supportCost = 100;
+            document.getElementById('supportCost').textContent = supportCost;
+            document.getElementById('btnSupport').disabled = gameState.upgrades.shopSupport || gameState.coins < supportCost;
+        }
+        
+        function applyUpgrade(type) {
+            if (type === 'fireRate') {
+                if (gameState.upgrades.shopFireRate < 3) {
+                    gameState.upgrades.shopFireRate++;
+                    gameState.fireRateDelay = Math.max(30, 150 - (gameState.upgrades.fireRate - 1) * 20 - (gameState.upgrades.shopFireRate * 15));
+                    updateUpgradeBar();
+                    // Show upgrade message
+                    showUpgradeMessage('⚡ Faster Shooting!');
+                }
+            } else if (type === 'health') {
+                gameState.health = Math.min(100, gameState.health + 25);
+                updateHealthBar();
+                showUpgradeMessage('❤️ Health Boost +25!');
+            } else if (type === 'support') {
+                if (!gameState.upgrades.shopSupport) {
+                    gameState.upgrades.shopSupport = true;
+                    // Spawn 2 support drones
+                    const canvas = document.getElementById('gameCanvas');
+                    gameState.supportDrones = [
+                        { x: gameState.spaceship.x - 30, y: gameState.spaceship.y - 20, angle: 0 },
+                        { x: gameState.spaceship.x + gameState.spaceship.width + 30, y: gameState.spaceship.y - 20, angle: 0 }
+                    ];
+                    updateUpgradeBar();
+                    showUpgradeMessage('🛸 Support Drones Activated!');
+                }
+            }
+        }
+        
+        function showUpgradeMessage(text) {
+            // Create temporary upgrade message
+            const msg = document.createElement('div');
+            msg.textContent = text;
+            msg.style.cssText = 'position:fixed; top:20%; left:50%; transform:translateX(-50%); background:rgba(0,0,0,0.8); color:#0ff; padding:15px 30px; border:2px solid #0ff; border-radius:10px; font-size:20px; font-weight:bold; z-index:10000; animation:fadeOut 2s forwards;';
+            document.body.appendChild(msg);
+            setTimeout(() => msg.remove(), 2000);
+        }
+        
+        function buyUpgrade(type) {
+            // Shop still works for manual purchases if needed
+            applyUpgrade(type);
         }
 
         function gameLoop() {
@@ -2652,19 +3441,41 @@ padding: 100px;
             const canvas = document.getElementById('gameCanvas');
             const ctx = canvas.getContext('2d');
             
-            // Clear canvas
-            ctx.fillStyle = 'rgba(0, 4, 40, 0.3)';
+            // Clear canvas with fade effect
+            ctx.fillStyle = 'rgba(0, 4, 40, 0.4)';
             ctx.fillRect(0, 0, canvas.width, canvas.height);
 
-            // Draw stars background
+            // Draw enhanced stars background
             drawStars(ctx, canvas);
 
-            // Handle spaceship movement
+            // Update and draw particles
+            gameState.particles = gameState.particles.filter(p => {
+                const alive = p.update();
+                if (alive) p.draw(ctx);
+                return alive;
+            });
+            
+            // Progressive speed increase over time (resets each level) - MUCH FASTER
+            const timePlaying = (Date.now() - gameState.gameStartTime) / 1000; // seconds
+            gameState.speedMultiplier = 1 + (timePlaying / 10) * 0.3; // +30% speed every 10 seconds (much faster!)
+            
+            // Update spawn rates based on speed multiplier
+            gameState.wordSpawnRate = gameState.baseWordSpawnRate / gameState.speedMultiplier;
+            gameState.enemySpawnRate = gameState.baseEnemySpawnRate / gameState.speedMultiplier;
+            gameState.upgradeSpawnRate = gameState.baseUpgradeSpawnRate / gameState.speedMultiplier;
+
+            // Handle spaceship movement - EVEN FASTER!
+            const moveSpeed = 15; // Increased from 10 to 15 (2.5x original speed!)
             if (gameState.keys['ArrowLeft'] || gameState.keys['a'] || gameState.keys['A']) {
-                gameState.spaceship.x = Math.max(0, gameState.spaceship.x - 5);
+                gameState.spaceship.x = Math.max(0, gameState.spaceship.x - moveSpeed);
             }
             if (gameState.keys['ArrowRight'] || gameState.keys['d'] || gameState.keys['D']) {
-                gameState.spaceship.x = Math.min(canvas.width - gameState.spaceship.width, gameState.spaceship.x + 5);
+                gameState.spaceship.x = Math.min(canvas.width - gameState.spaceship.width, gameState.spaceship.x + moveSpeed);
+            }
+
+            // Auto-shoot when holding space
+            if (gameState.keys[' ']) {
+                handleShoot();
             }
 
             // Spawn words
@@ -2673,11 +3484,107 @@ padding: 100px;
                 gameState.lastWordSpawn = Date.now();
             }
 
-            // Spawn enemies if health is low or wrong words hit
+            // Spawn enemies
             if (Date.now() - gameState.lastEnemySpawn > gameState.enemySpawnRate) {
                 spawnEnemy();
                 gameState.lastEnemySpawn = Date.now();
             }
+            
+            // Spawn upgrades
+            if (Date.now() - gameState.lastUpgradeSpawn > gameState.upgradeSpawnRate) {
+                spawnUpgrade();
+                gameState.lastUpgradeSpawn = Date.now();
+            }
+
+            // Update and draw falling upgrades
+            if (!gameState.fallingUpgrades) gameState.fallingUpgrades = [];
+            gameState.fallingUpgrades = gameState.fallingUpgrades.filter(upgrade => {
+                upgrade.y += upgrade.speed;
+                upgrade.rotation += 0.1;
+                
+                // Check if upgrade reached bottom
+                if (upgrade.y > canvas.height + 50) {
+                    return false;
+                }
+                
+                // Check collision with spaceship
+                const shipLeft = gameState.spaceship.x;
+                const shipRight = gameState.spaceship.x + gameState.spaceship.width;
+                const shipTop = gameState.spaceship.y;
+                const shipBottom = gameState.spaceship.y + gameState.spaceship.height;
+                
+                if (upgrade.x + upgrade.size > shipLeft && upgrade.x < shipRight &&
+                    upgrade.y + upgrade.size > shipTop && upgrade.y < shipBottom) {
+                    // Collected upgrade! Apply immediately
+                    applyUpgrade(upgrade.type);
+                    playCoinSound(); // Sound effect
+                    
+                    // Upgrade collection particles
+                    const colors = {
+                        'fireRate': '#0066cc',
+                        'health': '#00ff00',
+                        'support': '#cc00cc'
+                    };
+                    for (let j = 0; j < 15; j++) {
+                        gameState.particles.push(new GameParticle(
+                            upgrade.x + upgrade.size/2, 
+                            upgrade.y + upgrade.size/2, 
+                            colors[upgrade.type] || '#ffd700', 
+                            4
+                        ));
+                    }
+                    
+                    return false;
+                }
+                
+                // Draw upgrade based on type
+                ctx.save();
+                ctx.translate(upgrade.x + upgrade.size/2, upgrade.y + upgrade.size/2);
+                ctx.rotate(upgrade.rotation);
+                
+                const colors = {
+                    'fireRate': { main: '#0066cc', glow: '#00aaff', icon: '⚡' },
+                    'health': { main: '#00ff00', glow: '#00ffaa', icon: '❤️' },
+                    'support': { main: '#cc00cc', glow: '#ff00ff', icon: '🛸' }
+                };
+                const upgradeColor = colors[upgrade.type] || colors['fireRate'];
+                
+                // Strong glow effect
+                ctx.shadowBlur = 30;
+                ctx.shadowColor = upgradeColor.glow;
+                
+                // Outer glow ring
+                ctx.fillStyle = upgradeColor.glow + '80'; // 50% opacity
+                ctx.beginPath();
+                ctx.arc(0, 0, upgrade.size/2 + 8, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Main circle
+                ctx.fillStyle = upgradeColor.main;
+                ctx.beginPath();
+                ctx.arc(0, 0, upgrade.size/2, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Inner circle
+                ctx.fillStyle = upgradeColor.glow;
+                ctx.beginPath();
+                ctx.arc(0, 0, upgrade.size/3, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Icon/Text
+                ctx.fillStyle = '#fff';
+                ctx.font = `bold ${upgrade.size/1.8}px Arial`;
+                ctx.textAlign = 'center';
+                ctx.textBaseline = 'middle';
+                ctx.strokeStyle = '#000';
+                ctx.lineWidth = 2;
+                ctx.strokeText(upgradeColor.icon, 0, 0);
+                ctx.fillText(upgradeColor.icon, 0, 0);
+                
+                ctx.restore();
+                
+                return true;
+            });
 
             // Update and draw falling words
             gameState.fallingWords = gameState.fallingWords.filter(word => {
@@ -2694,13 +3601,17 @@ padding: 100px;
                     return false;
                 }
 
-                // Draw word
+                // Draw word with glow
+                ctx.save();
+                ctx.shadowBlur = 15;
+                ctx.shadowColor = word.isCorrect ? '#0f0' : '#f00';
                 ctx.fillStyle = word.isCorrect ? '#0f0' : '#f00';
                 ctx.font = 'bold 16px monospace';
                 ctx.fillText(word.text, word.x, word.y);
+                ctx.restore();
                 
                 // Draw word background
-                ctx.fillStyle = word.isCorrect ? 'rgba(0, 255, 0, 0.2)' : 'rgba(255, 0, 0, 0.2)';
+                ctx.fillStyle = word.isCorrect ? 'rgba(0, 255, 0, 0.15)' : 'rgba(255, 0, 0, 0.15)';
                 ctx.fillRect(word.x - 5, word.y - 20, word.width + 10, word.height);
 
                 return true;
@@ -2708,18 +3619,29 @@ padding: 100px;
 
             // Update and draw bullets
             gameState.bullets = gameState.bullets.filter(bullet => {
+                // Move bullet
+                if (bullet.isSpread) {
+                    bullet.x += bullet.vx;
+                    bullet.y += bullet.vy;
+                } else {
                 bullet.y -= bullet.speed;
+                }
                 
-                if (bullet.y < 0) return false;
+                if (bullet.y < -50 || bullet.x < 0 || bullet.x > canvas.width) return false;
 
-                // Draw bullet
-                ctx.fillStyle = '#0ff';
-                ctx.fillRect(bullet.x, bullet.y, bullet.width, bullet.height);
+                // Draw bullet with glow
+                ctx.save();
+                ctx.fillStyle = bullet.color || '#0ff';
+                ctx.shadowBlur = bullet.isLaser ? 20 : 10;
+                ctx.shadowColor = bullet.color || '#0ff';
+                ctx.fillRect(bullet.x - bullet.width/2, bullet.y, bullet.width, bullet.height);
+                ctx.restore();
+
+                let hitSomething = false;
 
                 // Check collision with words
                 for (let i = gameState.fallingWords.length - 1; i >= 0; i--) {
                     const word = gameState.fallingWords[i];
-                    // Better collision detection
                     const wordLeft = word.x - 5;
                     const wordRight = word.x + word.width + 5;
                     const wordTop = word.y - word.height;
@@ -2728,15 +3650,37 @@ padding: 100px;
                     if (bullet.x + bullet.width > wordLeft && bullet.x < wordRight &&
                         bullet.y < wordBottom && bullet.y + bullet.height > wordTop) {
                         
+                        // Explosion particles
+                        for (let j = 0; j < 8; j++) {
+                            gameState.particles.push(new GameParticle(
+                                word.x + word.width/2, 
+                                word.y - word.height/2, 
+                                word.isCorrect ? '#0f0' : '#f00', 
+                                4
+                            ));
+                        }
+                        
                         if (word.isCorrect) {
                             // Hit correct word
                             gameState.score += 10;
+                            gameState.correctHits++;
                             updateScore();
+                            playHitSound(); // Sound effect
                             
-                            // Check if we should move to next question (after hitting several correct words)
-                            const remainingCorrect = gameState.fallingWords.filter(w => w.isCorrect && w !== word).length;
-                            if (remainingCorrect === 0 && gameState.fallingWords.length <= 1) {
-                                setTimeout(() => nextQuestion(), 500);
+                            // Check if boss should spawn (at 80% of required hits)
+                            if (!gameState.boss && gameState.correctHits >= gameState.requiredHits * 0.8) {
+                                spawnBoss();
+                            }
+                            
+                            // Check if level complete
+                            if (gameState.correctHits >= gameState.requiredHits) {
+                                // Boss must be defeated first
+                                if (gameState.boss && gameState.boss.health > 0) {
+                                    // Boss still alive, can't complete level
+                                } else {
+                                    completeLevel();
+                                    return false;
+                                }
                             }
                         } else {
                             // Hit wrong word - spawn enemy
@@ -2746,50 +3690,137 @@ padding: 100px;
                         }
                         
                         gameState.fallingWords.splice(i, 1);
-                        return false;
+                        hitSomething = true;
+                        if (!bullet.isLaser) return false; // Laser penetrates
+                        break;
                     }
                 }
 
-                return true;
+                // Check collision with enemies
+                for (let i = gameState.enemies.length - 1; i >= 0; i--) {
+                    const enemy = gameState.enemies[i];
+                    if (bullet.x + bullet.width > enemy.x && bullet.x < enemy.x + enemy.width &&
+                        bullet.y < enemy.y + enemy.height && bullet.y + bullet.height > enemy.y) {
+                        
+                        enemy.health--;
+                        playEnemyHitSound(); // Sound effect
+                        
+                        // Enemy hit particles
+                        for (let j = 0; j < 5; j++) {
+                            gameState.particles.push(new GameParticle(
+                                enemy.x + enemy.width/2, 
+                                enemy.y + enemy.height/2, 
+                                '#f00', 
+                                3
+                            ));
+                        }
+                        
+                        if (enemy.health <= 0) {
+                            gameState.score += 20;
+                            updateScore();
+                            playEnemyDestroySound(); // Sound effect
+                            
+                            // Big explosion
+                            for (let j = 0; j < 15; j++) {
+                                gameState.particles.push(new GameParticle(
+                                    enemy.x + enemy.width/2, 
+                                    enemy.y + enemy.height/2, 
+                                    ['#f00', '#ff0', '#f80'][Math.floor(Math.random()*3)], 
+                                    5
+                                ));
+                            }
+                            
+                            gameState.enemies.splice(i, 1);
+                        }
+                        
+                        hitSomething = true;
+                        if (!bullet.isLaser) return false;
+                        break;
+                    }
+                }
+                
+                // Check collision with boss
+                if (gameState.boss) {
+                    const boss = gameState.boss;
+                    if (bullet.x + bullet.width > boss.x && bullet.x < boss.x + boss.width &&
+                        bullet.y < boss.y + boss.height && bullet.y + bullet.height > boss.y) {
+                        boss.health--;
+                        playEnemyHitSound();
+                        
+                        // Boss hit particles
+                        for (let j = 0; j < 10; j++) {
+                            gameState.particles.push(new GameParticle(
+                                bullet.x, bullet.y, '#ff00ff', 5
+                            ));
+                        }
+                        
+                        if (boss.health <= 0) {
+                            // Boss destroyed!
+                            gameState.score += 500;
+                            updateScore();
+                            playEnemyDestroySound();
+                            
+                            // Massive explosion
+                            for (let j = 0; j < 50; j++) {
+                                gameState.particles.push(new GameParticle(
+                                    boss.x + boss.width/2, 
+                                    boss.y + boss.height/2, 
+                                    ['#ff00ff', '#ff0000', '#ffff00', '#00ffff'][Math.floor(Math.random()*4)], 
+                                    8
+                                ));
+                            }
+                            
+                            gameState.boss = null;
+                            // Check if level can complete now
+                            if (gameState.correctHits >= gameState.requiredHits) {
+                                setTimeout(() => completeLevel(), 500);
+                            }
+                        }
+                        
+                        hitSomething = true;
+                        if (!bullet.isLaser) return false;
+                    }
+                }
+
+                return !hitSomething || bullet.isLaser;
             });
 
             // Update and draw enemies
             gameState.enemies = gameState.enemies.filter(enemy => {
-                // Move toward player (but also fall down)
+                // Move toward player
                 const dx = gameState.spaceship.x + gameState.spaceship.width / 2 - (enemy.x + enemy.width / 2);
                 const dy = gameState.spaceship.y - enemy.y;
                 const distance = Math.sqrt(dx * dx + dy * dy);
                 
                 if (distance > 0) {
-                    enemy.x += (dx / distance) * enemy.speed * 0.7; // Horizontal movement
-                    enemy.y += Math.max(enemy.speed * 0.5, (dy / distance) * enemy.speed * 0.3); // Always fall down
+                    enemy.x += (dx / distance) * enemy.speed * 0.7;
+                    enemy.y += Math.max(enemy.speed * 0.5, (dy / distance) * enemy.speed * 0.3);
                 }
 
                 // Check collision with player
-                const shipLeft = gameState.spaceship.x;
-                const shipRight = gameState.spaceship.x + gameState.spaceship.width;
-                const shipTop = gameState.spaceship.y;
-                const shipBottom = gameState.spaceship.y + gameState.spaceship.height;
-                
-                const enemyLeft = enemy.x;
-                const enemyRight = enemy.x + enemy.width;
-                const enemyTop = enemy.y;
-                const enemyBottom = enemy.y + enemy.height;
-                
-                if (enemyRight > shipLeft && enemyLeft < shipRight &&
-                    enemyBottom > shipTop && enemyTop < shipBottom) {
+                if (enemy.x + enemy.width > gameState.spaceship.x && 
+                    enemy.x < gameState.spaceship.x + gameState.spaceship.width &&
+                    enemy.y + enemy.height > gameState.spaceship.y && 
+                    enemy.y < gameState.spaceship.y + gameState.spaceship.height) {
                     gameState.health = Math.max(0, gameState.health - 10);
                     updateHealthBar();
-                    return false;
+                    
+                    // Collision particles
+                    for (let j = 0; j < 10; j++) {
+                        gameState.particles.push(new GameParticle(enemy.x + enemy.width/2, enemy.y + enemy.height/2, '#f00', 4));
                 }
                 
-                // Remove if off screen
-                if (enemy.y > canvas.height + 50) {
                     return false;
                 }
 
-                // Draw enemy
+                // Remove if off screen
+                if (enemy.y > canvas.height + 50) return false;
+
+                // Draw enemy with enhanced visuals
+                ctx.save();
                 ctx.fillStyle = '#f00';
+                ctx.shadowBlur = 15;
+                ctx.shadowColor = '#f00';
                 ctx.beginPath();
                 ctx.moveTo(enemy.x + enemy.width / 2, enemy.y);
                 ctx.lineTo(enemy.x, enemy.y + enemy.height);
@@ -2797,14 +3828,139 @@ padding: 100px;
                 ctx.closePath();
                 ctx.fill();
 
-                // Draw enemy glow
-                ctx.shadowBlur = 10;
-                ctx.shadowColor = '#f00';
-                ctx.fill();
-                ctx.shadowBlur = 0;
+                // Health bar for enemies
+                if (enemy.health < enemy.maxHealth) {
+                    ctx.fillStyle = '#333';
+                    ctx.fillRect(enemy.x, enemy.y - 8, enemy.width, 4);
+                    ctx.fillStyle = '#0f0';
+                    ctx.fillRect(enemy.x, enemy.y - 8, (enemy.health / enemy.maxHealth) * enemy.width, 4);
+                }
+                
+                ctx.restore();
 
                 return true;
             });
+            
+            // Update and draw boss
+            if (gameState.boss) {
+                const boss = gameState.boss;
+                
+                // Move boss down
+                if (boss.y < canvas.height * 0.3) {
+                    boss.y += boss.speed;
+                } else {
+                    // Boss in position, move side to side
+                    boss.phase += 0.02;
+                    boss.x = canvas.width / 2 - boss.width / 2 + Math.sin(boss.phase) * (canvas.width / 2 - boss.width);
+                }
+                
+                // Boss shoots periodically
+                if (Date.now() - boss.lastShot > 2000) {
+                    boss.lastShot = Date.now();
+                    // Boss shoots at player
+                    const dx = gameState.spaceship.x + gameState.spaceship.width / 2 - (boss.x + boss.width / 2);
+                    const dy = gameState.spaceship.y - (boss.y + boss.height);
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+                    if (dist > 0) {
+                        gameState.enemies.push({
+                            x: boss.x + boss.width / 2 - 10,
+                            y: boss.y + boss.height,
+                            width: 20,
+                            height: 20,
+                            speed: 3 * gameState.speedMultiplier,
+                            health: 1,
+                            maxHealth: 1,
+                            isBossBullet: true
+                        });
+                    }
+                }
+                
+                // Boss collision with bullets is handled in bullet section
+                
+                // Draw boss
+                ctx.save();
+                ctx.fillStyle = '#ff00ff';
+                ctx.shadowBlur = 30;
+                ctx.shadowColor = '#ff00ff';
+                
+                // Boss body (large triangle)
+                ctx.beginPath();
+                ctx.moveTo(boss.x + boss.width / 2, boss.y);
+                ctx.lineTo(boss.x, boss.y + boss.height);
+                ctx.lineTo(boss.x + boss.width, boss.y + boss.height);
+                ctx.closePath();
+                ctx.fill();
+                
+                // Boss eyes
+                ctx.fillStyle = '#fff';
+                ctx.beginPath();
+                ctx.arc(boss.x + boss.width * 0.3, boss.y + boss.height * 0.4, 8, 0, Math.PI * 2);
+                ctx.arc(boss.x + boss.width * 0.7, boss.y + boss.height * 0.4, 8, 0, Math.PI * 2);
+                ctx.fill();
+                
+                // Boss health bar
+                ctx.fillStyle = '#333';
+                ctx.fillRect(boss.x, boss.y - 15, boss.width, 8);
+                ctx.fillStyle = '#ff00ff';
+                ctx.fillRect(boss.x, boss.y - 15, (boss.health / boss.maxHealth) * boss.width, 8);
+                ctx.fillStyle = '#fff';
+                ctx.font = 'bold 12px Arial';
+                ctx.textAlign = 'center';
+                ctx.fillText('BOSS', boss.x + boss.width / 2, boss.y - 18);
+                
+                ctx.restore();
+                
+                // Check boss collision with player
+                if (boss.x + boss.width > gameState.spaceship.x && 
+                    boss.x < gameState.spaceship.x + gameState.spaceship.width &&
+                    boss.y + boss.height > gameState.spaceship.y && 
+                    boss.y < gameState.spaceship.y + gameState.spaceship.height) {
+                    gameState.health = Math.max(0, gameState.health - 15);
+                    updateHealthBar();
+                }
+            }
+            
+            // Update and draw support drones
+            if (gameState.upgrades.shopSupport && gameState.supportDrones.length > 0) {
+                gameState.supportDrones.forEach((drone, index) => {
+                    // Follow spaceship
+                    const targetX = gameState.spaceship.x + (index === 0 ? -30 : gameState.spaceship.width + 30);
+                    const targetY = gameState.spaceship.y - 20;
+                    
+                    drone.x += (targetX - drone.x) * 0.1;
+                    drone.y += (targetY - drone.y) * 0.1;
+                    drone.angle += 0.1;
+                    
+                    // Drones shoot automatically
+                    if (Date.now() % 1000 < 50) { // Shoot every second
+                        gameState.bullets.push({
+                            x: drone.x,
+                            y: drone.y,
+                            width: 3,
+                            height: 8,
+                            speed: 6,
+                            color: '#00ff00',
+                            isSupport: true
+                        });
+                    }
+                    
+                    // Draw drone
+                    ctx.save();
+                    ctx.translate(drone.x, drone.y);
+                    ctx.rotate(drone.angle);
+                    ctx.fillStyle = '#00ff00';
+                    ctx.shadowBlur = 10;
+                    ctx.shadowColor = '#00ff00';
+                    ctx.beginPath();
+                    ctx.arc(0, 0, 8, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.fillStyle = '#0f0';
+                    ctx.beginPath();
+                    ctx.arc(0, 0, 4, 0, Math.PI * 2);
+                    ctx.fill();
+                    ctx.restore();
+                });
+            }
 
             // Draw spaceship
             drawSpaceship(ctx, gameState.spaceship);
@@ -2819,7 +3975,18 @@ padding: 100px;
         }
 
         function drawSpaceship(ctx, ship) {
-            ctx.fillStyle = '#0ff';
+            ctx.save();
+            
+            // Main ship body with gradient
+            const gradient = ctx.createLinearGradient(ship.x, ship.y, ship.x, ship.y + ship.height);
+            gradient.addColorStop(0, '#0ff');
+            gradient.addColorStop(0.5, '#00aaff');
+            gradient.addColorStop(1, '#0066ff');
+            
+            ctx.fillStyle = gradient;
+            ctx.shadowBlur = 20;
+            ctx.shadowColor = '#0ff';
+            
             ctx.beginPath();
             ctx.moveTo(ship.x + ship.width / 2, ship.y);
             ctx.lineTo(ship.x, ship.y + ship.height);
@@ -2828,57 +3995,170 @@ padding: 100px;
             ctx.closePath();
             ctx.fill();
 
-            // Glow effect
+            // Wings glow
+            ctx.strokeStyle = '#fff';
+            ctx.lineWidth = 2;
+            ctx.shadowBlur = 25;
+            ctx.stroke();
+            
+            // Cockpit
             ctx.shadowBlur = 15;
-            ctx.shadowColor = '#0ff';
+            ctx.fillStyle = '#fff';
+            ctx.beginPath();
+            ctx.arc(ship.x + ship.width / 2, ship.y + 10, 4, 0, Math.PI * 2);
             ctx.fill();
-            ctx.shadowBlur = 0;
+            
+            // Engine thrusters
+            ctx.shadowBlur = 20;
+            ctx.shadowColor = '#ff00ff';
+            ctx.fillStyle = '#ff00ff';
+            ctx.fillRect(ship.x + 5, ship.y + ship.height - 5, 5, 8);
+            ctx.fillRect(ship.x + ship.width - 10, ship.y + ship.height - 5, 5, 8);
+            
+            // Engine particles
+            if (Math.random() > 0.5) {
+                gameState.particles.push(new GameParticle(ship.x + 7, ship.y + ship.height + 3, '#ff00ff', 2));
+                gameState.particles.push(new GameParticle(ship.x + ship.width - 7, ship.y + ship.height + 3, '#ff00ff', 2));
+            }
+            
+            ctx.restore();
         }
 
         function drawStars(ctx, canvas) {
+            ctx.save();
             ctx.fillStyle = '#fff';
-            for (let i = 0; i < 50; i++) {
+            for (let i = 0; i < 100; i++) {
                 const x = (i * 37) % canvas.width;
                 const y = (i * 53 + Date.now() / 50) % canvas.height;
-                ctx.fillRect(x, y, 2, 2);
+                const size = Math.random() * 2;
+                ctx.globalAlpha = Math.random() * 0.5 + 0.5;
+                ctx.fillRect(x, y, size, size);
             }
+            ctx.restore();
         }
 
-        function nextQuestion() {
-            gameState.questionIndex++;
-            if (gameState.questionIndex >= gameQuestions.length) {
-                // All questions answered - win!
-                gameState.score += 100;
-                updateScore();
-                gameState.questionIndex = 0; // Restart questions
+        function completeLevel() {
+            gameState.running = false;
+            playLevelCompleteSound(); // Sound effect
+            
+            // Calculate rewards
+            gameState.score += 100 * gameState.level;
+            
+            // Count upgrades collected this level
+            const upgradesCollected = gameState.upgrades.shopFireRate + (gameState.upgrades.shopSupport ? 1 : 0);
+            
+            // Update UI
+            document.getElementById('completedLevel').textContent = gameState.level;
+            document.getElementById('levelScore').textContent = gameState.score;
+            document.getElementById('levelUpgrades').textContent = upgradesCollected;
+            
+            // Award upgrades based on level
+            const rewards = {
+                1: { text: '🎯 Dual Guns Unlocked!', upgrade: 'dualGuns' },
+                2: { text: '🌟 Spread Shot Unlocked!', upgrade: 'spreadShot' },
+                3: { text: '⚡ Laser Gun Unlocked!', upgrade: 'laserGun' },
+                4: { text: '💥 Triple Guns Unlocked!', upgrade: 'tripleGuns' },
+                5: { text: '🔥 Rapid Fire Unlocked!', upgrade: 'rapidFire' },
+                6: { text: '👑 LEGENDARY STATUS ACHIEVED!', upgrade: 'master' }
+            };
+            
+            const reward = rewards[gameState.level];
+            if (reward) {
+                document.getElementById('rewardText').textContent = reward.text;
+                if (reward.upgrade && reward.upgrade !== 'master') {
+                    gameState.upgrades[reward.upgrade] = true;
+                }
             }
-            updateQuestion();
-            gameState.fallingWords = []; // Clear remaining words
+            
+            document.getElementById('levelCompleteScreen').style.display = 'block';
+            updateScore();
+            updateCoins();
+            updateUpgradeBar();
+        }
+
+        function nextLevel() {
+            document.getElementById('levelCompleteScreen').style.display = 'none';
+            
+            gameState.level++;
+            if (gameState.level > gameQuestions.length) {
+                // Game complete! Show final celebration
+                gameState.level = gameQuestions.length;
+                showFinalCelebration();
+                return;
+            }
+            
+            gameState.questionIndex = gameState.level - 1;
+            gameState.requiredHits = 15 + (gameState.level - 1) * 5; // More hits required each level
+            
+            // Continue game with new level
+            initGame(false);
+        }
+        
+        function showFinalCelebration() {
+            gameState.running = false;
+            const celebrationScreen = document.getElementById('finalCelebrationScreen');
+            if (celebrationScreen) {
+                // Update final stats
+                document.getElementById('finalCelebrationScore').textContent = gameState.score;
+                document.getElementById('finalCelebrationCoins').textContent = gameState.coins;
+                document.getElementById('finalLevelCount').textContent = gameQuestions.length;
+                
+                celebrationScreen.style.display = 'block';
+                
+                // Add confetti/particles effect
+                const canvas = document.getElementById('gameCanvas');
+                if (canvas) {
+                    for (let i = 0; i < 200; i++) {
+                        setTimeout(() => {
+                            const x = Math.random() * canvas.width;
+                            const y = Math.random() * canvas.height;
+                            const colors = ['#ffd700', '#ff6b6b', '#4ecdc4', '#45b7d1', '#f9ca24', '#ff00ff', '#00ff00'];
+                            const color = colors[Math.floor(Math.random() * colors.length)];
+                            gameState.particles.push(new GameParticle(x, y, color, 6));
+                        }, i * 30);
+                    }
+                }
+            }
         }
 
         function gameOver() {
             gameState.running = false;
+            playGameOverSound(); // Sound effect
             document.getElementById('finalScore').textContent = gameState.score;
             document.getElementById('gameOverScreen').style.display = 'block';
         }
 
         function restartGame() {
             document.getElementById('gameOverScreen').style.display = 'none';
-            initGame();
+            document.getElementById('levelCompleteScreen').style.display = 'none';
+            initGame(true);
         }
 
-        // Terminal Input Handler - Wait for DOM
-        document.addEventListener('DOMContentLoaded', function() {
+        // Terminal Input Handler - Works even if DOM already loaded
+        function initTerminal() {
             const termInput = document.getElementById('termInput');
             const terminalBody = document.getElementById('terminalBody');
             
+            console.log('Initializing terminal...', termInput, terminalBody);
+            
             if (termInput && terminalBody) {
+                console.log('Terminal elements found, adding listeners...');
+                
+                // Simple approach - just add the listener directly
                 termInput.addEventListener('keypress', function(e) {
+                    console.log('Key pressed:', e.key);
                     if (e.key === 'Enter') {
+                        e.preventDefault();
                         const cmd = this.value.trim().toLowerCase();
+                        const displayCmd = this.value.trim(); // Keep original case for display
                         this.value = '';
                         
-                        if (cmd === 'gem' || cmd === 'g') {
+                        console.log('Command entered:', cmd);
+                        
+                        // Display the command
+                        terminalBody.innerHTML += `<br><span style="color:#0ff;">$</span> ${displayCmd}`;
+                        
+                        if (cmd === 'gem' || cmd === 'g' || cmd === 'play' || cmd === 'p') {
                             toggleGame();
                             terminalBody.innerHTML += `<br>> Starting game...`;
                         } else if (cmd === 'download' || cmd === 'pdf' || cmd === 'cv') {
@@ -2906,13 +4186,13 @@ padding: 100px;
                             }
                         } else if (cmd === 'help' || cmd === 'h') {
                             terminalBody.innerHTML += `<br>> Available commands:`;
-                            terminalBody.innerHTML += `<br>>   play / p - Start the game`;
+                            terminalBody.innerHTML += `<br>>   play / gem / g / p - Start the game`;
                             terminalBody.innerHTML += `<br>>   download / pdf / cv - Download CV as PDF`;
                             terminalBody.innerHTML += `<br>>   chat [message] / ai [message] - Chat with AI`;
                             terminalBody.innerHTML += `<br>>   help / h - Show this help`;
                             terminalBody.innerHTML += `<br>>   clear / c - Clear terminal`;
                         } else if (cmd === 'clear' || cmd === 'c') {
-                            terminalBody.innerHTML = `<div>> initializing portfolio... OK</div><div>> type "play" to fix prod DB.</div>`;
+                            terminalBody.innerHTML = `<div>> initializing portfolio... OK</div><div>> type "play" to prove Sakhr is a good fit ;)</div>`;
                         } else if (cmd === 'cmd') {
                             terminalBody.innerHTML += `<br>> Command prompt activated. Type 'help' for commands.`;
                         } else if (cmd) {
@@ -2920,11 +4200,33 @@ padding: 100px;
                         }
                         
                         // Auto-scroll to bottom
+                        setTimeout(() => {
                         terminalBody.scrollTop = terminalBody.scrollHeight;
+                        }, 10);
                     }
                 });
+                
+                // Make sure it's focusable
+                termInput.addEventListener('click', function() {
+                    this.focus();
+                });
+                
+                console.log('Terminal initialized successfully');
+            } else {
+                console.error('Terminal elements not found!');
             }
-        });
+        }
+        
+        // Initialize terminal when DOM is ready
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initTerminal);
+        } else {
+            // DOM already loaded
+            initTerminal();
+        }
+        
+        // Also try to initialize after a short delay in case elements aren't ready yet
+        setTimeout(initTerminal, 500);
 
         /* --- AI LOGIC --- */
         function toggleAI() { 
@@ -3873,8 +5175,39 @@ Best regards,
         }
 
         // Mobile Menu
-        document.getElementById('mobileMenuBtn').addEventListener('click', function () {
-            document.querySelector('.nav-links').classList.toggle('active');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        if (mobileMenuBtn) {
+            mobileMenuBtn.addEventListener('click', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                const navLinks = document.querySelector('.nav-links');
+                if (navLinks) {
+                    navLinks.classList.toggle('active');
+                    console.log('Menu toggled, active:', navLinks.classList.contains('active'));
+                }
+            });
+        }
+        
+        // Close menu when clicking outside or on a link
+        document.addEventListener('click', function(e) {
+            const navLinks = document.querySelector('.nav-links');
+            const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+            if (navLinks && mobileMenuBtn && 
+                !navLinks.contains(e.target) && 
+                !mobileMenuBtn.contains(e.target) &&
+                navLinks.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+        
+        // Close menu when clicking on a nav link (mobile)
+        const navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                if (window.innerWidth <= 768) {
+                    document.querySelector('.nav-links').classList.remove('active');
+                }
+            });
         });
 
         // Copy Phone Number Function
