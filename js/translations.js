@@ -7,8 +7,11 @@ async function loadTranslation(lang) {
     try {
         const response = await fetch(`translations/${lang}.json`);
         if (!response.ok) throw new Error(`Translation file not found: ${lang}.json`);
-        translations = await response.json();
+        translations[lang] = await response.json();
         currentLanguage = lang;
+        // Update global references
+        window.currentLanguage = currentLanguage;
+        window.translations = translations;
         applyTranslations();
         return true;
     } catch (error) {
@@ -24,7 +27,9 @@ async function loadTranslation(lang) {
 // Get translation by key path (e.g., "hero.headline" or "nav.home" or "skills.tags.programming.0")
 function t(key, params = {}) {
     const keys = key.split('.');
-    let value = translations[currentLanguage] || translations['en'];
+    // Use current language translations, fallback to English
+    const currentTranslations = translations[currentLanguage] || translations['en'] || {};
+    let value = currentTranslations;
     
     for (const k of keys) {
         if (value && typeof value === 'object') {
@@ -35,7 +40,8 @@ function t(key, params = {}) {
                 value = value[k];
             } else {
                 // Fallback to English
-                value = translations['en'];
+                const enTranslations = translations['en'] || {};
+                value = enTranslations;
                 for (const fk of keys) {
                     if (value && typeof value === 'object') {
                         if (!isNaN(fk) && Array.isArray(value)) {
@@ -305,4 +311,6 @@ window.t = t;
 window.changeLanguage = changeLanguage;
 window.loadTranslation = loadTranslation;
 window.toggleLangDropdown = toggleLangDropdown;
+window.currentLanguage = currentLanguage;
+window.translations = translations;
 

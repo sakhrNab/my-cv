@@ -97,7 +97,18 @@
     "downloadCertifications": "تحميل الشهادات",
     "gcpCloudEngineer": "GCP Cloud Engineer",
     "accentureProgram": "برنامج Accenture",
-    "allCerts": "جميع الشهادات (ZIP)"
+    "allCerts": "جميع الشهادات (ZIP)",
+    "highlights": {
+      "title": "النقاط الرئيسية",
+      "germanCitizen": "مواطن ألماني مع 15+ سنة في ألمانيا، متعلم في TU Berlin و HTW Berlin",
+      "founder": "مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider — 5,600+ سير عمل أتمتة ذكاء اصطناعي",
+      "corporate": "7+ سنوات خبرة مؤسسية في Accenture، BMG Rights Management، Innocean Europe",
+      "apps": "11 تطبيق مبني من الصفر هذا العام أثناء العمل بدوام كامل",
+      "hackathon": "فاز بمسابقة ذكاء اصطناعي عالمية من خلال دمج Azure OpenAI",
+      "languages": "ثلاثي اللغات: ألماني (C1)، إنجليزي (C1)، عربي (أصلي)",
+      "available": "متاح Q1 2026 | مفتوح لـ: دوام كامل، عقد، هجين"
+    },
+    "footer": "صفحة {page}/{total} | صخر العبسي | مواطن ألماني | مؤسس/الرئيس التنفيذي/الرئيس التقني AI Waverider | Q1 2026"
   },
   "vision": {
     "title": "رؤيتي وفلسفتي",

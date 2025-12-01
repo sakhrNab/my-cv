@@ -97,7 +97,18 @@
     "downloadCertifications": "Zertifikate herunterladen",
     "gcpCloudEngineer": "GCP Cloud Engineer",
     "accentureProgram": "Accenture Programm",
-    "allCerts": "Alle Zertifikate (ZIP)"
+    "allCerts": "Alle Zertifikate (ZIP)",
+    "highlights": {
+      "title": "WICHTIGE HIGHLIGHTS",
+      "germanCitizen": "Deutscher Staatsbürger mit 15+ Jahren in Deutschland, ausgebildet an TU Berlin und HTW Berlin",
+      "founder": "Gründer, CEO & CTO von AI Waverider — 5.600+ KI-Automatisierungsworkflows",
+      "corporate": "7+ Jahre Unternehmenserfahrung bei Accenture, BMG Rights Management, Innocean Europe",
+      "apps": "11 Anwendungen von Grund auf gebaut dieses Jahr während Vollzeitbeschäftigung",
+      "hackathon": "Gewann globalen KI-Hackathon durch Integration von Azure OpenAI",
+      "languages": "Dreisprachig: Deutsch (C1), Englisch (C1), Arabisch (Muttersprache)",
+      "available": "Verfügbar Q1 2026 | Offen für: Vollzeit, Vertrag, Hybrid"
+    },
+    "footer": "Seite {page}/{total} | Sakhr AL-Absi | Deutscher Staatsbürger | Gründer/CEO/CTO AI Waverider | Q1 2026"
   },
   "vision": {
     "title": "Meine Vision & Philosophie",
