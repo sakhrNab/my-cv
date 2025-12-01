@@ -9,7 +9,7 @@ document.getElementById('mobileMenuBtn')?.addEventListener('click', function(e) 
 });
 
 // Typing Effect
-const texts = ["Java Architect", "Spring Boot Expert", "AI Innovator"];
+const texts = ["AI Solutions Architect", "Senior Software Engineer", "Full-Stack Java Expert", "Enterprise System Builder"];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
