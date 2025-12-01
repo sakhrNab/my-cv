@@ -9,14 +9,24 @@ document.getElementById('mobileMenuBtn')?.addEventListener('click', function(e) 
 });
 
 // Typing Effect
-const texts = ["AI Solutions Architect", "Senior Software Engineer", "Full-Stack Java Expert", "Enterprise System Builder"];
+let texts = ["AI Solutions Architect", "Senior Software Engineer", "Full-Stack Java Expert", "Enterprise System Builder"];
 let textIndex = 0;
 let charIndex = 0;
 let isDeleting = false;
 
+// Update typing texts from translations if available
+if (window.typingTexts && Array.isArray(window.typingTexts)) {
+    texts = window.typingTexts;
+}
+
 function typeEngine() {
     const typingElement = document.getElementById('typing');
     if (!typingElement) return;
+
+    // Update texts if translations loaded
+    if (window.typingTexts && Array.isArray(window.typingTexts)) {
+        texts = window.typingTexts;
+    }
 
     const currentText = texts[textIndex];
     if (isDeleting) {

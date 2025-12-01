@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "title": "Sakhr AL-Absi | Deutscher Staatsbürger → Dubai | Senior Software Engineer & Gründer",
+    "description": "Deutscher Staatsbürger & Senior Software Engineer mit 15+ Jahren in Deutschland. Gründer von AI Waverider. 7+ Jahre Unternehmenserfahrung. Verlegt nach Dubai."
+  },
+  "nav": {
+    "logo": "Sakhr AL-Absi",
+    "home": "Startseite",
+    "vision": "Vision",
+    "experience": "Erfahrung",
+    "skills": "Fähigkeiten",
+    "certs": "Zertifikate",
+    "downloadCV": "Lebenslauf herunterladen"
+  },
+  "game": {
+    "title": "🚀 SAKHRS FÄHIGKEITS-HERAUFORDERUNG",
+    "score": "⭐",
+    "level": "🎯 Level",
+    "hits": "✓",
+    "weapon": "🔫",
+    "basic": "Basis",
+    "close": "✕ Schließen",
+    "question": "Warum Sakhr einstellen?",
+    "hint": "Schieße auf <span class=\"correct\">GRÜNE</span> Fähigkeiten | Vermeide <span class=\"wrong\">ROTE</span> | Sammle ⭐ für Upgrades!",
+    "controls": "← → oder A/D zum Bewegen | LEERTASTE oder KLICK zum Schießen",
+    "tips": "💡 Jedes Level schaltet Waffen-Upgrades frei!",
+    "levelComplete": "🏆 LEVEL GESCHAFFT!",
+    "levelCleared": "Level {level} geschafft!",
+    "scoreLabel": "Punkte:",
+    "weaponUpgraded": "🎁 Waffe verbessert!",
+    "nextLevel": "Nächstes Level →",
+    "gameOver": "💀 SPIEL VORBEI",
+    "finalScore": "Endpunktzahl:",
+    "tryAgain": "Versuche es erneut, um Sakhrs Fähigkeiten zu meistern!",
+    "restart": "🔄 Neustart",
+    "close": "Schließen",
+    "victory": "GLÜCKWUNSCH!",
+    "masteredSkills": "Du hast alle Fähigkeiten gemeistert!",
+    "downloadCV": "📥 Lebenslauf herunterladen"
+  },
+  "terminal": {
+    "title": "sakhr@dubai ~ bash",
+    "close": "✕",
+    "closeTitle": "Terminal schließen",
+    "whoami": "whoami",
+    "whoamiOutput": "🇩🇪 Deutscher Staatsbürger | Senior Software Engineer | Gründer, CEO & CTO",
+    "catExperience": "cat experience.txt",
+    "experience1": "→ <span class=\"terminal-highlight\">15+ Jahre</span> in Deutschland",
+    "experience2": "→ <span class=\"terminal-highlight\">7+ Jahre</span> Unternehmen (Accenture, BMG, Innocean)",
+    "experience3": "→ Fortune 500 Kunden: Deutsche Banken & Auto-OEMs",
+    "lsAchievements": "ls achievements/",
+    "achievements": "ai_waverider_founder/ 11_apps_built_2024/ global_hackathon_winner/",
+    "catAiwaverider": "cat aiwaverider.txt",
+    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Gründer, CEO & CTO</span> | 5.600+ KI-Agenten",
+    "echoLanguages": "echo $LANGUAGES",
+    "languagesOutput": "Deutsch (C1) | Englisch (C1) | Arabisch (Muttersprache) | Spanisch (B1)",
+    "catStatus": "cat status.txt",
+    "statusOutput": "✓ Verfügbar Q1 2026 | Bereit für Dubai 🇦🇪",
+    "placeholder": "Tippe 'help' für Befehle...",
+    "heroInitializing": "> Portfolio wird initialisiert... OK",
+    "heroPlay": "> tippe \"play\" für ein verstecktes Spiel",
+    "heroStatus": "> Status: <span style=\"color:#4ade80\">Verfügbar Q1 2026</span>",
+    "prompt": "sakhr@dubai:~$"
+  },
+  "hero": {
+    "journeyText": "Berlin → Dubai",
+    "headline": "Deutscher Ingenieur.",
+    "headlineHighlight": "Baue die Zukunft in Dubai.",
+    "staticRoleTitle": "KI-Lösungsarchitekt & Senior Software Engineer",
+    "tagline": "<strong>Deutsche Präzision</strong> • <strong>Arabisches Erbe</strong> • <strong>Englische Sprachgewandtheit</strong>",
+    "downloadCV": "Lebenslauf herunterladen",
+    "aiWaverider": "🚀 AI Waverider",
+    "trustedBy": "Vertraut von",
+    "accenture": "ACCENTURE",
+    "bmgRights": "BMG RIGHTS",
+    "innocean": "INNOCEAN",
+    "banks": "BANKEN",
+    "profileName": "Sakhr AL-Absi",
+    "profileRole": "Full Stack Architekt",
+    "scrollDown": "NACH UNTEN SCROLLEN",
+    "stats": {
+      "yearsGermany": "Jahre in<br>Deutschland",
+      "corporateExcellence": "Unternehmens-<br>Exzellenz",
+      "appsBuilt": "Apps gebaut<br>dieses Jahr",
+      "aiAgents": "KI-Agenten<br>kuratiert"
+    }
+  },
+  "cv": {
+    "name": "Sakhr AL-Absi",
+    "title": "Senior Software Engineer & KI-Lösungsarchitekt | Gründer, CEO & CTO",
+    "badges": {
+      "germanCitizen": "🇩🇪 Deutscher Staatsbürger",
+      "yearsGermany": "15+ Jahre in Deutschland",
+      "relocating": "✈️ Verlegt nach Dubai"
+    },
+    "uploadPhoto": "Foto<br>hochladen",
+    "downloadCertifications": "Zertifikate herunterladen",
+    "gcpCloudEngineer": "GCP Cloud Engineer",
+    "accentureProgram": "Accenture Programm",
+    "allCerts": "Alle Zertifikate (ZIP)"
+  },
+  "vision": {
+    "title": "Meine Vision & Philosophie",
+    "quote1": "<strong>\"Die Ära des traditionellen Programmierens ist vorbei.\"</strong> Wir sind über das stundenlange Recherchieren von Fehlern auf Stack Overflow hinausgewachsen. Heute ist Geschwindigkeit der ultimative Unterscheidungsfaktor—eine Idee kann innerhalb von Minuten mit KI-Tools programmiert werden.",
+    "paragraph1": "Genau wie Excel Papier-Tabellenkalkulationen eliminiert hat, transformiert KI die Softwareentwicklung. Diejenigen, die diese Tools beherrschen, werden die nächste Innovationswelle anführen. Mit <strong>7+ Jahren Unternehmenserfahrung</strong> kombiniert mit meinem dualen Hintergrund in Informatik und Wirtschaftsingenieurwesen von der <span class=\"vision-emphasis\">TU Berlin & HTW Berlin</span>—Deutschlands renommiertesten technischen Universitäten—war ich einer der Ersten, der KI nutzte, um Ziele schneller und effektiver zu erreichen.",
+    "paragraph2": "Als <strong>deutscher Staatsbürger, der über 15 Jahre in Deutschland gelebt hat</strong>, bringe ich europäische Ingenieursstandards und Arbeitsethos mit. Kombiniert mit meinem arabischen Erbe und englischsprachiger Ausbildung biete ich eine einzigartige Brücke zwischen Kulturen—<span class=\"vision-emphasis\">deutsche Präzision, arabisches kulturelles Verständnis und englische Geschäftssprachgewandtheit</span>.",
+    "quote2": "<strong>Warum Dubai?</strong> Ich positioniere mich unter den klügsten Köpfen in einem der am schnellsten wachsenden Tech-Hubs der Welt. Ich komme in die VAE, um mit innovativen Denkern zu arbeiten, von den Besten zu lernen und gemeinsam außergewöhnliche Lösungen zu entwickeln.",
+    "achievementsTitle": "Diesjährige Erfolge (Während Vollzeitbeschäftigung bei Accenture)",
+    "achievements": {
+      "apps": "<strong>11 Anwendungen</strong> von Grund auf gebaut",
+      "waverider": "<strong>AI Waverider</strong> — Gegründet & gebaut",
+      "agents": "<strong>5.600+ KI-Agenten</strong> erstellt",
+      "fortune500": "<strong>Fortune 500</strong> Kunden geliefert"
+    }
+  },
+  "summary": {
+    "title": "Berufliche Zusammenfassung",
+    "paragraph1": "<strong>Deutscher Staatsbürger</strong> und Senior Software Engineer mit 7+ Jahren in der Unternehmensentwicklung, spezialisiert auf Microservices, Cloud-Technologien und KI-Integration. Ausgebildet an Deutschlands Top-Universitäten (TU Berlin, HTW Berlin) mit nachgewiesener Erfolgsbilanz für Fortune 500 Finanz- und Automobilkunden.",
+    "paragraph2": "Bekannt für <strong>außergewöhnliche Ressourcen</strong>—11 Anwendungen dieses Jahr gebaut, während ich Vollzeit bei Accenture arbeitete. Koordinierte Offshore-Teams über 3 Zeitzonen. Derzeit <strong>Gründer, CEO & CTO</strong> von <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>—eine Plattform mit 5.600+ KI-Agenten und Automatisierungsworkflows.",
+    "paragraph3": "<strong>Einzigartiger Wert:</strong> Deutsche Präzision + arabisches Erbe + englische Sprachgewandtheit. Dreisprachig (Deutsch C1, Englisch C1, Arabisch Muttersprache) verbindet europäische und nahöstliche Kulturen."
+  },
+  "experience": {
+    "title": "Berufserfahrung",
+    "founder": {
+      "role": "Gründer, CEO & CTO",
+      "company": "AI Waverider — KI-Automatisierungsplattform",
+      "date": "2024 - Heute",
+      "highlight": "🚀 <strong>5.600+ KI-Agenten & Automatisierungsworkflows</strong> | Globale Nutzerbasis | Von Grund auf gebaut",
+      "description": "Gründete und baute eine KI-gestützte Automatisierungsplattform von Grund auf, während ich Vollzeit bei Accenture beschäftigt war, was außergewöhnliches Zeitmanagement und unternehmerischen Antrieb demonstriert.",
+      "points": {
+        "vision": "<strong>Produktvision & Strategie:</strong> Konzipiert, entworfen und eine Plattform gestartet, die 5.600+ kostenlose KI-Automatisierungsworkflows und n8n-Vorlagen für Unternehmen weltweit anbietet",
+        "development": "<strong>Full-Stack-Entwicklung:</strong> Architekturiert und die gesamte Plattform allein gebaut—Frontend (React/Vue), Backend (Node.js/Python), Datenbank (PostgreSQL/Supabase) und Cloud-Infrastruktur (GCP, Docker, Coolify)",
+        "ai": "<strong>KI-Integration:</strong> Integrierte OpenAI GPT-4, Claude AI, LangChain, RAGs und Vektordatenbanken für intelligente Automatisierungsagenten",
+        "operations": "<strong>Geschäftsbetrieb:</strong> Behandelte alle Aspekte: rechtliche Compliance (FTC-Vorschriften), Zahlungsabwicklung (Paddle), Marketingstrategie, Nutzerakquise und Kundensupport",
+        "growth": "<strong>Wachstum:</strong> Organisches Wachstum durch Content-Marketing, SEO-Optimierung und Aufbau von Social-Media-Präsenz erreicht",
+        "techStack": "<strong>Tech-Stack:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS"
+      }
+    },
+    "accenture": {
+      "role": "Senior Software Developer & Digital Transformation Consultant",
+      "company": "Accenture GmbH, Deutschland",
+      "date": "August 2022 - Heute",
+      "highlight": "🏦 <strong>Fortune 500 Kunden:</strong> Große deutsche Banken (Echtzeit-Zahlungssysteme) & Premium-Automobil-OEMs (Lieferketten-Digitalisierung)",
+      "description": "Führe Digitalisierungsinitiativen für Deutschlands renommierteste Finanzinstitute und Automobilhersteller, liefere Unternehmenslösungen, die Millionen von Transaktionen verarbeiten.",
+      "points": {
+        "architecture": "<strong>Cloud-native Architektur:</strong> Architekturiert und implementiert Microservices mit Spring Boot 3.x, Java 17/21 für hochvolumige Echtzeit-Zahlungsverarbeitungssysteme mit 100K+ täglichen Transaktionen",
+        "platform": "<strong>Plattform-Engineering:</strong> Bereitgestellt und verwaltet Anwendungen auf OpenShift & Google Cloud Platform mit 99,9% Uptime-SLA, implementierte umfassende CI/CD-Pipelines mit Jenkins und GitLab",
+        "modernization": "<strong>Legacy-Modernisierung:</strong> Führte Monolith-zu-Microservices-Migration für Bankkunden durch, reduzierte Bereitstellungszeit um 60% und ermöglichte kontinuierliche Lieferpraktiken",
+        "automotive": "<strong>Automobil-Digitalisierung:</strong> Optimierte Lieferkettenmanagementsysteme für Premium-OEM, steigerte operative Effizienz um 35% durch intelligente Automatisierung",
+        "ai": "<strong>KI-Innovation:</strong> Gewann globalen Accenture KI-Hackathon durch Integration von Azure OpenAI-Diensten in Unternehmensworkflows, demonstrierte praktische KI-Anwendungen für Fortune 500 Kunden",
+        "coordination": "<strong>Globale Koordination:</strong> Verwaltete Offshore-Entwicklungsteams über 3 Zeitzonen (Deutschland, Indien, UK), gewährleistete nahtlose Zusammenarbeit und pünktliche Lieferung",
+        "leadership": "<strong>Technische Führung:</strong> Betreute Junior-Entwickler, führte Code-Reviews durch und etablierte Best Practices für Microservices-Entwicklung"
+      }
+    },
+    "scopeland": {
+      "role": "Anwendungsentwickler",
+      "company": "Scopeland Technology GmbH, Deutschland",
+      "date": "Mai 2022 - Juli 2022",
+      "description": "Entwickelte Unternehmensanwendungen mit Low-Code-Plattformen für schnelle Bereitstellung von Geschäftslösungen.",
+      "points": {
+        "sql": "<strong>SQL-Optimierung:</strong> Analysierte und optimierte komplexe Datenbankabfragen, erreichte 40% Leistungsverbesserung bei Datenabrufvorgängen",
+        "lowCode": "<strong>Low-Code-Entwicklung:</strong> Baute dynamische Geschäftsanwendungen mit proprietärer Low-Code-Plattform, beschleunigte Entwicklungszyklen um 50%",
+        "database": "<strong>Datenbankdesign:</strong> Entwarf effiziente Datenbankschemata und implementierte gespeicherte Prozeduren für komplexe Geschäftslogik",
+        "collaboration": "<strong>Kundenkooperation:</strong> Arbeitete direkt mit Kunden zusammen, um Anforderungen zu sammeln und Geschäftsbedürfnisse in technische Lösungen zu übersetzen"
+      }
+    },
+    "innocean": {
+      "role": "IT-Infrastruktur-Spezialist",
+      "company": "Innocean Worldwide Europe GmbH, Deutschland",
+      "date": "März 2020 - März 2022",
+      "description": "Verwaltete komplette IT-Infrastruktur für europäische Zentrale der globalen Werbeagentur, gewährleistete nahtlose Betriebe für 89 Mitarbeiter über mehrere Abteilungen.",
+      "points": {
+        "infrastructure": "<strong>Infrastrukturmanagement:</strong> Vollverantwortung für IT-Betriebe für 89 Mitarbeiter, Aufrechterhaltung von 99,8% Systemverfügbarkeit",
+        "windows": "<strong>Windows-Migration:</strong> Führte erfolgreiche Windows 10 Unternehmensmigration mit umfassender Sicherheitshärtung und null Geschäftsunterbrechung durch",
+        "ad": "<strong>Active Directory:</strong> Verwaltete AD-Umgebung einschließlich Benutzerverwaltung, Gruppenrichtlinien und Sicherheitskonfigurationen",
+        "network": "<strong>Netzwerkadministration:</strong> Verwaltete Netzwerkinfrastruktur, VPN-Konfigurationen und Firewall-Regeln für sicheren Remote-Zugriff",
+        "vendor": "<strong>Lieferantenmanagement:</strong> Koordinierte mit externen Lieferanten für Hardwarebeschaffung, Softwarelizenzierung und Supportverträge",
+        "documentation": "<strong>Dokumentation:</strong> Erstellte umfassende IT-Dokumentation und Benutzerhandbücher, reduzierte Support-Tickets um 30%"
+      }
+    },
+    "bmg": {
+      "role": "Globaler IT-Support-Spezialist",
+      "company": "BMG Rights Management GmbH, Deutschland",
+      "date": "Juli 2018 - Januar 2020",
+      "description": "Bereitgestellt Unternehmens-IT-Support für globales Musikrechteverwaltungsunternehmen, unterstützte Benutzer über 6 Länder und mehrere Zeitzonen.",
+      "points": {
+        "international": "<strong>Internationaler Support:</strong> Bereitgestellt IT-Support über 6 Länder (USA, UK, Spanien, Schweden, Niederlande, Frankreich) auf Englisch und Deutsch",
+        "enterprise": "<strong>Unternehmenssysteme:</strong> Verwaltete SCCM für Softwarebereitstellung, verwaltete Active Directory für 500+ Benutzer über globale Büros",
+        "identity": "<strong>Identitätsmanagement:</strong> Implementiert und verwaltete OKTA SSO-Integration, optimierte Authentifizierung über 20+ Unternehmensanwendungen",
+        "collaboration": "<strong>Kollaborationstools:</strong> Verwaltete JIRA, Confluence und Office 365 Umgebungen, optimierte Workflows für kreative und Geschäftsteams",
+        "training": "<strong>Benutzerschulung:</strong> Durchgeführt Schulungssitzungen für neue Systeme und Tools, verbesserte Benutzerakzeptanzraten um 40%",
+        "incident": "<strong>Incident-Management:</strong> Verwaltete ServiceNow-Ticket-System, erreichte 95% Erstkontakt-Lösungsrate"
+      }
+    }
+  },
+  "education": {
+    "title": "Bildung (Deutsche Universitäten)",
+    "htw": {
+      "degree": "B.Sc. Angewandte Informatik",
+      "institution": "HTW Berlin - Hochschule für Technik und Wirtschaft",
+      "date": "2017 - 2022",
+      "thesis": "<strong>Thesis:</strong> \"Design und Implementierung einer Microservices-Architektur für Gesundheitsanwendungen\" — Entwickelte eine skalierbare Gesundheitsplattform mit Docker-Containerisierung, RESTful APIs, Django-Backend und PostgreSQL-Datenbank. Implementierte HIPAA-konforme Sicherheitsmaßnahmen und automatisierte Test-Pipelines.",
+      "grade": "<strong>Note:</strong> 2,4 (Gut) | <strong>Schwerpunkte:</strong> Software Engineering, Datenbanksysteme, Web-Technologien, Cloud Computing"
+    },
+    "tu": {
+      "degree": "Wirtschaftsingenieurwesen",
+      "institution": "Technische Universität Berlin (TU Berlin)",
+      "date": "2012 - 2017",
+      "description1": "Die TU Berlin ist ein <strong>TU9-Mitglied</strong>—Deutschlands Allianz führender technischer Universitäten, rangiert unter den Top-Ingenieursschulen in Europa.",
+      "description2": "<strong>Fokus:</strong> Ingenieursgrundlagen kombiniert mit Betriebswirtschaft, Operations Research und Produktionsmanagement. Diese duale Perspektive ermöglicht es mir, sowohl technische Implementierung als auch Geschäftswert zu verstehen."
+    }
+  },
+  "certifications": {
+    "title": "Zertifikate",
+    "gcp": {
+      "name": "🌟 Google Associate Cloud Engineer",
+      "date": "Dezember 2024",
+      "description": "Validierte Expertise in GCP-Diensten einschließlich Compute Engine, Kubernetes Engine, Cloud Storage, IAM-Sicherheitsrichtlinien und Überwachung mit Cloud Operations Suite"
+    },
+    "accenture": {
+      "name": "🚀 Accenture Jump Start Programm",
+      "date": "August 2022",
+      "description": "Intensives Unternehmensarchitektur- und Beratungsmethodik-Training. Fokus auf Kundenengagement, Lösungsdesign und Lieferungsexzellenz"
+    },
+    "django": {
+      "name": "🐍 Erweiterte Django-Entwicklung",
+      "date": "Mai 2021",
+      "description": "Full-Stack Python-Entwicklung mit Django REST Framework, Authentifizierungssystemen, Datenbankoptimierung und Bereitstellungsstrategien"
+    },
+    "tdd": {
+      "name": "🧪 Testgetriebene Entwicklung",
+      "date": "Mai 2021",
+      "description": "TDD-Methodik, Unit-Testing-Best-Practices, Integrationstests und Continuous-Integration-Pipeline-Setup"
+    },
+    "fullstack": {
+      "name": "💻 Full Stack Web-Entwicklung",
+      "date": "Februar 2021",
+      "description": "Umfassendes Training in React.js, Node.js, Express, MongoDB und modernen JavaScript-Entwicklungspraktiken"
+    },
+    "sql": {
+      "name": "🗄️ Erweiterte SQL-Programmierung",
+      "date": "März 2018",
+      "description": "Komplexe Abfrageoptimierung, gespeicherte Prozeduren, Datenbankdesign-Muster und Leistungstuning"
+    }
+  },
+  "skills": {
+    "title": "Technische Expertise",
+    "filterPlaceholder": "🔍 Fähigkeiten filtern (versuche: Java, Cloud, KI...)",
+    "categories": {
+      "programming": "Programmiersprachen",
+      "frameworks": "Frameworks & Bibliotheken",
+      "cloud": "Cloud & DevOps",
+      "ai": "KI & Automatisierung",
+      "databases": "Datenbanken & Speicher",
+      "domain": "Bereich & Führung"
+    },
+    "tags": {
+      "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
+      "frameworks": ["Spring Boot 3.x", "Microservices", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
+      "cloud": ["GCP (Zertifiziert)", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
+      "ai": ["OpenAI GPT", "Claude AI", "Azure OpenAI", "n8n Workflows", "RAGs", "KI-Agenten", "LangChain"],
+      "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "Vektor-DBs"],
+      "domain": ["Finanzen & Bankwesen", "Automobil", "Agile/Scrum", "Teamführung", "Offshore-Koordination", "Beratung"]
+    }
+  },
+  "languages": {
+    "title": "Sprachen",
+    "hint": "<i class=\"fas fa-mouse-pointer\"></i> Klicken Sie auf eine Sprache, um die Website-Sprache zu ändern",
+    "german": {
+      "name": "Deutsch",
+      "level": "Fließend • 15+ Jahre"
+    },
+    "english": {
+      "name": "Englisch",
+      "level": "Fließend • Geschäftssprache"
+    },
+    "arabic": {
+      "name": "Arabisch",
+      "level": "Fließend • Muttersprache"
+    },
+    "spanish": {
+      "name": "Spanisch",
+      "level": "Konversation (B1)"
+    }
+  },
+  "footer": {
+    "text": "© 2025 Sakhr AL-Absi | 🇩🇪 Deutscher Staatsbürger • 15+ Jahre in Deutschland | Gründer, CEO & CTO von AI Waverider | Bereit für Dubai 🇦🇪"
+  },
+  "aiChat": {
+    "title": "Fragen Sie über Sakhr",
+    "close": "✕",
+    "welcome": "👋 <strong>Hallo!</strong> Ich kann Ihnen über Sakhr erzählen—ein <strong>deutscher Staatsbürger</strong>, <strong>Gründer/CEO/CTO von AI Waverider</strong>, mit 15+ Jahren in Deutschland, verlegt nach Dubai.<br><br>Fragen Sie nach seinen Fähigkeiten oder nutzen Sie <strong>Job Match</strong>!",
+    "suggestions": {
+      "background": "Hintergrund",
+      "founder": "AI Waverider",
+      "dubai": "Warum Dubai?",
+      "contact": "Kontakt",
+      "jobMatch": "Job Match"
+    },
+    "placeholder": "Fragen Sie über Sakhr...",
+    "responses": {
+      "background": {
+        "user": "Erzählen Sie mir über Sakhrs Hintergrund",
+        "bot": "<strong>Deutscher Staatsbürger & Gründer</strong><br><br>🇩🇪 <strong>15+ Jahre</strong> in Deutschland<br>🎓 <strong>TU Berlin & HTW Berlin</strong> Absolvent<br>💼 <strong>7+ Jahre</strong> bei Accenture, BMG, Innocean<br>🚀 <strong>Gründer, CEO & CTO</strong> von AI Waverider<br>🌍 Zusammenarbeit mit 25+ Ländern<br><br><strong>Einzigartiger Wert:</strong> Deutsche Präzision + arabisches Erbe + englische Sprachgewandtheit"
+      },
+      "founder": {
+        "user": "Erzählen Sie mir über AI Waverider",
+        "bot": "<strong>AI Waverider — Gegründet & gebaut von Sakhr</strong><br><br>🚀 <strong>5.600+ KI-Agenten</strong> & Automatisierungsworkflows<br>👨‍💼 <strong>Gründer, CEO & CTO</strong><br>💻 <strong>Vollständig von Grund auf</strong> gebaut während Vollzeitbeschäftigung<br>🔧 Full-Stack: React, Node.js, Python, GCP, Docker<br>📈 Wachsende organische Nutzerbasis global<br><br>Besuchen: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+      },
+      "dubai": {
+        "user": "Warum zieht Sakhr nach Dubai?",
+        "bot": "<strong>Warum Dubai?</strong><br><br>🚀 <strong>Schnellst wachsender Tech-Hub</strong> der Welt<br>🌍 Perfekte Brücke zwischen <strong>europäischen & nahöstlichen</strong> Märkten<br>💡 Suche nach <strong>innovativen Unternehmen</strong> zum Aufbau<br>🏆 Bringt <strong>Fortune 500</strong> Unternehmenserfahrung mit<br>🗣️ Dreisprachig: Deutsch, Arabisch & Englisch<br><br>Bereit, zur digitalen Transformation der VAE beizutragen!"
+      },
+      "interview": {
+        "user": "Wie kann ich Sakhr kontaktieren?",
+        "bot": "<strong>Lass uns verbinden!</strong><br><br>📅 Verfügbar <strong>Q1 2025</strong><br>✅ Offen für: Vollzeit, Vertrag, Hybrid"
+      }
+    },
+    "jobMatch": {
+      "title": "🎯 KI Job Match",
+      "description": "Fügen Sie eine Stellenbeschreibung ein, um zu sehen, wie gut Sakhr passt:",
+      "placeholder": "Stellenanforderungen hier einfügen...",
+      "analyze": "Match analysieren",
+      "error": "Bitte fügen Sie zuerst eine Stellenbeschreibung ein.",
+      "matchedSkills": "Gepasste Fähigkeiten ({count}):",
+      "highlyRecommended": "✓ Sehr empfohlener Kandidat!"
+    },
+    "localResponses": {
+      "founder": "<strong>Gründer, CEO & CTO von AI Waverider</strong><br><br>Gebaut 5.600+ KI-Agenten & Automatisierungsworkflows während Vollzeitbeschäftigung bei Accenture. Full-Stack-Plattform: React, Node.js, Python, GCP.",
+      "german": "<strong>Deutscher Staatsbürger</strong> mit 15+ Jahren in Deutschland. Ausgebildet an TU Berlin & HTW Berlin. 7+ Jahre Unternehmenserfahrung.",
+      "dubai": "Verlegt nach Dubai, um dem Tech-Ökosystem der VAE beizutreten. Deutsche Präzision + arabisches Erbe + englische Sprachgewandtheit = einzigartige Brücke.",
+      "ai": "Gewann globalen KI-Hackathon. Baute AI Waverider mit 5.600+ Agenten. Experte in OpenAI, Claude, n8n, RAGs, LangChain.",
+      "available": "<strong>Verfügbar Q1 2025</strong>. Offen für Vollzeit, Vertrag, Hybrid in Dubai.",
+      "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
+      "default": "Ich kann Ihnen über Sakhrs deutschen Hintergrund, sein AI Waverider Startup (er ist Gründer/CEO/CTO), technische Fähigkeiten, Dubai-Pläne erzählen oder bei Job-Matching helfen!"
+    }
+  },
+  "terminalCommands": {
+    "help": "Befehle: help, play, chat, skills, contact, experience, education, aiwaverider, founder, download, clear<br>Tippe \"chat [Nachricht]\" um mit KI zu sprechen",
+    "play": "Spiel startet...",
+    "chat": "KI-Chat öffnet...",
+    "clear": "",
+    "notFound": "Befehl nicht gefunden: {cmd}. Tippe 'help' für verfügbare Befehle.",
+    "chatWithMessage": "KI-Chat öffnet mit: \"{query}\"...",
+    "heroHelp": "> Befehle: play, chat, clear, help<br>> Tippe 'chat' um mit KI-Assistenten zu sprechen",
+    "heroPlay": "> Spiel startet...",
+    "heroChat": "> KI-Chat öffnet...",
+    "heroNotFound": "> Befehl nicht gefunden. Tippe 'help' für Befehle."
+  },
+  "typing": {
+    "texts": ["KI-Lösungsarchitekt", "Senior Software Engineer", "Full-Stack Java Experte", "Unternehmenssystem-Builder"]
+  },
+  "email": {
+    "subject": "Stellenangebot-Anfrage",
+    "body": "Sehr geehrter Sakhr AL-Absi,\n\nIch bin auf Ihren Lebenslauf gestoßen und bin beeindruckt von Ihrer Expertise als Senior Software Engineer und KI-Lösungsarchitekt. Ich würde gerne eine mögliche Gelegenheit mit Ihnen besprechen.\n\nBitte lassen Sie mich Ihre Verfügbarkeit für ein Gespräch wissen.\n\nMit freundlichen Grüßen,\n[Ihr Name]\n[Ihre Position]\n[Ihr Unternehmen]"
+  }
+}
+

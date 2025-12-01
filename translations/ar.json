@@ -1,0 +1,358 @@
+{
+  "meta": {
+    "title": "صخر العبسي | مواطن ألماني → دبي | مهندس برمجيات أول ومؤسس",
+    "description": "مواطن ألماني ومهندس برمجيات أول مع 15+ سنة في ألمانيا. مؤسس AI Waverider. 7+ سنوات خبرة مؤسسية. الانتقال إلى دبي."
+  },
+  "nav": {
+    "logo": "صخر العبسي",
+    "home": "الرئيسية",
+    "vision": "الرؤية",
+    "experience": "الخبرة",
+    "skills": "المهارات",
+    "certs": "الشهادات",
+    "downloadCV": "تحميل السيرة الذاتية"
+  },
+  "game": {
+    "title": "🚀 تحدي مهارات صخر",
+    "score": "⭐",
+    "level": "🎯 المستوى",
+    "hits": "✓",
+    "weapon": "🔫",
+    "basic": "أساسي",
+    "close": "✕ إغلاق",
+    "question": "لماذا توظف صخر؟",
+    "hint": "اطلق على المهارات <span class=\"correct\">الخضراء</span> | تجنب <span class=\"wrong\">الحمراء</span> | اجمع ⭐ للترقيات!",
+    "controls": "← → أو A/D للتحرك | SPACE أو CLICK لإطلاق النار",
+    "tips": "💡 كل مستوى يفتح ترقيات الأسلحة!",
+    "levelComplete": "🏆 اكتمل المستوى!",
+    "levelCleared": "تم إكمال المستوى {level}!",
+    "scoreLabel": "النقاط:",
+    "weaponUpgraded": "🎁 تم ترقية السلاح!",
+    "nextLevel": "المستوى التالي →",
+    "gameOver": "💀 انتهت اللعبة",
+    "finalScore": "النقاط النهائية:",
+    "tryAgain": "حاول مرة أخرى لإتقان مهارات صخر!",
+    "restart": "🔄 إعادة التشغيل",
+    "close": "إغلاق",
+    "victory": "تهانينا!",
+    "masteredSkills": "لقد أتقنت جميع المهارات!",
+    "downloadCV": "📥 تحميل السيرة الذاتية"
+  },
+  "terminal": {
+    "title": "sakhr@dubai ~ bash",
+    "close": "✕",
+    "closeTitle": "إغلاق الطرفية",
+    "whoami": "whoami",
+    "whoamiOutput": "🇩🇪 مواطن ألماني | مهندس برمجيات أول | مؤسس، الرئيس التنفيذي والرئيس التقني",
+    "catExperience": "cat experience.txt",
+    "experience1": "→ <span class=\"terminal-highlight\">15+ سنة</span> في ألمانيا",
+    "experience2": "→ <span class=\"terminal-highlight\">7+ سنوات</span> مؤسسية (Accenture، BMG، Innocean)",
+    "experience3": "→ عملاء Fortune 500: البنوك الألمانية وشركات السيارات",
+    "lsAchievements": "ls achievements/",
+    "achievements": "ai_waverider_founder/ 11_apps_built_2024/ global_hackathon_winner/",
+    "catAiwaverider": "cat aiwaverider.txt",
+    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">مؤسس، الرئيس التنفيذي والرئيس التقني</span> | 5,600+ وكيل ذكاء اصطناعي",
+    "echoLanguages": "echo $LANGUAGES",
+    "languagesOutput": "ألماني (C1) | إنجليزي (C1) | عربي (أصلي) | إسباني (B1)",
+    "catStatus": "cat status.txt",
+    "statusOutput": "✓ متاح Q1 2026 | جاهز لدبي 🇦🇪",
+    "placeholder": "اكتب 'help' للأوامر...",
+    "heroInitializing": "> تهيئة المحفظة... OK",
+    "heroPlay": "> اكتب \"play\" للعبة مخفية",
+    "heroStatus": "> الحالة: <span style=\"color:#4ade80\">متاح Q1 2026</span>",
+    "prompt": "sakhr@dubai:~$"
+  },
+  "hero": {
+    "journeyText": "برلين → دبي",
+    "headline": "مهندس ألماني.",
+    "headlineHighlight": "بناء المستقبل في دبي.",
+    "staticRoleTitle": "مهندس حلول الذكاء الاصطناعي ومهندس برمجيات أول",
+    "tagline": "<strong>الدقة الألمانية</strong> • <strong>التراث العربي</strong> • <strong>الطلاقة الإنجليزية</strong>",
+    "downloadCV": "تحميل السيرة الذاتية",
+    "aiWaverider": "🚀 AI Waverider",
+    "trustedBy": "موثوق من قبل",
+    "accenture": "ACCENTURE",
+    "bmgRights": "BMG RIGHTS",
+    "innocean": "INNOCEAN",
+    "banks": "البنوك",
+    "profileName": "صخر العبسي",
+    "profileRole": "مهندس Full Stack",
+    "scrollDown": "التمرير للأسفل",
+    "stats": {
+      "yearsGermany": "سنوات في<br>ألمانيا",
+      "corporateExcellence": "التميز<br>المؤسسي",
+      "appsBuilt": "تطبيقات مبنية<br>هذا العام",
+      "aiAgents": "وكلاء ذكاء اصطناعي<br>منتقيين"
+    }
+  },
+  "cv": {
+    "name": "صخر العبسي",
+    "title": "مهندس برمجيات أول ومهندس حلول الذكاء الاصطناعي | مؤسس، الرئيس التنفيذي والرئيس التقني",
+    "badges": {
+      "germanCitizen": "🇩🇪 مواطن ألماني",
+      "yearsGermany": "15+ سنة في ألمانيا",
+      "relocating": "✈️ الانتقال إلى دبي"
+    },
+    "uploadPhoto": "رفع<br>صورة",
+    "downloadCertifications": "تحميل الشهادات",
+    "gcpCloudEngineer": "GCP Cloud Engineer",
+    "accentureProgram": "برنامج Accenture",
+    "allCerts": "جميع الشهادات (ZIP)"
+  },
+  "vision": {
+    "title": "رؤيتي وفلسفتي",
+    "quote1": "<strong>\"انتهى عصر البرمجة التقليدية.\"</strong> لقد تجاوزنا قضاء ساعات في البحث عن الأخطاء على Stack Overflow. اليوم، السرعة هي المميز النهائي—يمكن برمجة فكرة في دقائق باستخدام أدوات الذكاء الاصطناعي.",
+    "paragraph1": "تماماً كما ألغى Excel جداول البيانات الورقية، يتحول الذكاء الاصطناعي في تطوير البرمجيات. أولئك الذين يتقنون هذه الأدوات سيقودون الموجة التالية من الابتكار. مع <strong>7+ سنوات من الخبرة المؤسسية</strong> مجتمعة مع خلفيتي المزدوجة في علوم الكمبيوتر والهندسة الصناعية من <span class=\"vision-emphasis\">TU Berlin و HTW Berlin</span>—أعرق الجامعات التقنية في ألمانيا—كنت من بين الأوائل الذين استفادوا من الذكاء الاصطناعي لتحقيق الأهداف بشكل أسرع وأكثر فعالية.",
+    "paragraph2": "كـ <strong>مواطن ألماني عاش في ألمانيا لأكثر من 15 سنة</strong>، أجلب معايير الهندسة الأوروبية وأخلاقيات العمل. مجتمعة مع تراثي العربي وتعليمي باللغة الإنجليزية، أقدم جسراً فريداً بين الثقافات—<span class=\"vision-emphasis\">الدقة الألمانية، البصيرة الثقافية العربية، والطلاقة التجارية الإنجليزية</span>.",
+    "quote2": "<strong>لماذا دبي؟</strong> أنا أضع نفسي بين ألمع العقول في أحد أسرع مراكز التكنولوجيا نمواً في العالم. أنا قادم إلى الإمارات للعمل مع المفكرين المبتكرين، التعلم من الأفضل، وبناء حلول استثنائية معاً.",
+    "achievementsTitle": "إنجازات هذا العام (أثناء العمل بدوام كامل في Accenture)",
+    "achievements": {
+      "apps": "<strong>11 تطبيق</strong> مبني من الصفر",
+      "waverider": "<strong>AI Waverider</strong> — تأسس وتم بناؤه",
+      "agents": "<strong>5,600+ وكيل ذكاء اصطناعي</strong> تم إنشاؤه",
+      "fortune500": "عملاء <strong>Fortune 500</strong> تم تسليمهم"
+    }
+  },
+  "summary": {
+    "title": "الملخص المهني",
+    "paragraph1": "<strong>مواطن ألماني</strong> ومهندس برمجيات أول مع 7+ سنوات في التطوير المؤسسي، متخصص في الخدمات المصغرة، تقنيات السحابة، وتكامل الذكاء الاصطناعي. متعلم في أفضل الجامعات الألمانية (TU Berlin، HTW Berlin) مع سجل حافل في التسليم لعملاء Fortune 500 في المالية والautomotive.",
+    "paragraph2": "معروف بـ <strong>البراعة الاستثنائية</strong>—بنيت 11 تطبيق هذا العام أثناء العمل بدوام كامل في Accenture. نسقت فرقاً خارجية عبر 3 مناطق زمنية. حالياً <strong>المؤسس، الرئيس التنفيذي والرئيس التقني</strong> لـ <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>—منصة مع 5,600+ وكيل ذكاء اصطناعي وسير عمل الأتمتة.",
+    "paragraph3": "<strong>القيمة الفريدة:</strong> الدقة الألمانية + التراث العربي + الطلاقة الإنجليزية. ثلاثي اللغات (ألماني C1، إنجليزي C1، عربي أصلي) يربط الثقافات الأوروبية والشرق أوسطية."
+  },
+  "experience": {
+    "title": "الخبرة المهنية",
+    "founder": {
+      "role": "مؤسس، الرئيس التنفيذي والرئيس التقني",
+      "company": "AI Waverider — منصة أتمتة الذكاء الاصطناعي",
+      "date": "2024 - الحاضر",
+      "highlight": "🚀 <strong>5,600+ وكيل ذكاء اصطناعي وسير عمل الأتمتة</strong> | قاعدة مستخدمين عالمية | مبني من الصفر",
+      "description": "أسست وبنيت منصة أتمتة مدعومة بالذكاء الاصطناعي من الصفر مع الحفاظ على التوظيف بدوام كامل في Accenture، مما يظهر إدارة وقت استثنائية ودفع ريادي.",
+      "points": {
+        "vision": "<strong>رؤية المنتج والاستراتيجية:</strong> تصورت، صممت، وأطلقت منصة تقدم 5,600+ سير عمل أتمتة ذكاء اصطناعي مجانية وقوالب n8n للشركات في جميع أنحاء العالم",
+        "development": "<strong>التطوير Full-Stack:</strong> هندست وبنيت المنصة بأكملها وحدي—الواجهة الأمامية (React/Vue)، الخلفية (Node.js/Python)، قاعدة البيانات (PostgreSQL/Supabase)، والبنية التحتية السحابية (GCP، Docker، Coolify)",
+        "ai": "<strong>تكامل الذكاء الاصطناعي:</strong> دمجت OpenAI GPT-4، Claude AI، LangChain، RAGs، وقواعد البيانات المتجهة لوكلاء الأتمتة الذكية",
+        "operations": "<strong>العمليات التجارية:</strong> تعاملت مع جميع الجوانب: الامتثال القانوني (لوائح FTC)، معالجة المدفوعات (Paddle)، استراتيجية التسويق، اكتساب المستخدمين، ودعم العملاء",
+        "growth": "<strong>النمو:</strong> حققت نمواً عضوياً من خلال تسويق المحتوى، تحسين SEO، وبناء وجود على وسائل التواصل الاجتماعي",
+        "techStack": "<strong>المكدس التقني:</strong> React، Vue.js، Node.js، Python، PostgreSQL، Supabase، n8n، Docker، GCP، Coolify، Nginx، Linux VPS"
+      }
+    },
+    "accenture": {
+      "role": "مطور برمجيات أول ومستشار تحول رقمي",
+      "company": "Accenture GmbH، ألمانيا",
+      "date": "أغسطس 2022 - الحاضر",
+      "highlight": "🏦 <strong>عملاء Fortune 500:</strong> البنوك الألمانية الكبرى (أنظمة الدفع في الوقت الفعلي) وشركات السيارات المميزة (رقمنة سلسلة التوريد)",
+      "description": "أقود مبادرات التحول الرقمي لأعرق المؤسسات المالية ومصنعي السيارات في ألمانيا، وأسلم حلولاً على مستوى المؤسسات تعالج ملايين المعاملات.",
+      "points": {
+        "architecture": "<strong>البنية السحابية الأصلية:</strong> هندست ونفذت خدمات مصغرة باستخدام Spring Boot 3.x، Java 17/21 لأنظمة معالجة الدفع في الوقت الفعلي عالية الحجم التي تتعامل مع 100K+ معاملة يومية",
+        "platform": "<strong>هندسة المنصة:</strong> نشرت وأدارت التطبيقات على OpenShift و Google Cloud Platform مع SLA وقت تشغيل 99.9%، ونفذت خطوط أنابيب CI/CD شاملة مع Jenkins و GitLab",
+        "modernization": "<strong>التحديث التقليدي:</strong> قادت هجرة من monolith إلى خدمات مصغرة لعميل مصرفي، مما قلل وقت النشر بنسبة 60% ومكن ممارسات التسليم المستمر",
+        "automotive": "<strong>رقمنة السيارات:</strong> حسنت أنظمة إدارة سلسلة التوريد لشركة سيارات مميزة، مما زاد الكفاءة التشغيلية بنسبة 35% من خلال الأتمتة الذكية",
+        "ai": "<strong>ابتكار الذكاء الاصطناعي:</strong> فزت بمسابقة Accenture العالمية للذكاء الاصطناعي من خلال دمج خدمات Azure OpenAI في سير العمل المؤسسية، مما يظهر تطبيقات عملية للذكاء الاصطناعي لعملاء Fortune 500",
+        "coordination": "<strong>التنسيق العالمي:</strong> أدارت فرق تطوير خارجية عبر 3 مناطق زمنية (ألمانيا، الهند، UK)، مما يضمن التعاون السلس والتسليم في الوقت المحدد",
+        "leadership": "<strong>القيادة التقنية:</strong> رشدة المطورين المبتدئين، أجرت مراجعات الكود، وأنشأت أفضل الممارسات لتطوير الخدمات المصغرة"
+      }
+    },
+    "scopeland": {
+      "role": "مطور تطبيقات",
+      "company": "Scopeland Technology GmbH، ألمانيا",
+      "date": "مايو 2022 - يوليو 2022",
+      "description": "طورت تطبيقات مؤسسية باستخدام منصات Low Code للتسليم السريع للحلول التجارية.",
+      "points": {
+        "sql": "<strong>تحسين SQL:</strong> حللت وحسنت استعلامات قاعدة البيانات المعقدة، مما حقق تحسين أداء بنسبة 40% في عمليات استرجاع البيانات",
+        "lowCode": "<strong>تطوير Low Code:</strong> بنيت تطبيقات تجارية ديناميكية باستخدام منصة Low Code مملوكة، مما سرع دورات التطوير بنسبة 50%",
+        "database": "<strong>تصميم قاعدة البيانات:</strong> صممت مخططات قاعدة بيانات فعالة ونفذت الإجراءات المخزنة للمنطق التجاري المعقد",
+        "collaboration": "<strong>تعاون العملاء:</strong> عملت مباشرة مع العملاء لجمع المتطلبات وترجمة الاحتياجات التجارية إلى حلول تقنية"
+      }
+    },
+    "innocean": {
+      "role": "أخصائي بنية تحتية IT",
+      "company": "Innocean Worldwide Europe GmbH، ألمانيا",
+      "date": "مارس 2020 - مارس 2022",
+      "description": "أدارت البنية التحتية IT الكاملة للمقر الأوروبي لوكالة إعلانية عالمية، مما يضمن عمليات سلسة لـ 89 موظف عبر أقسام متعددة.",
+      "points": {
+        "infrastructure": "<strong>إدارة البنية التحتية:</strong> المسؤولية الكاملة لعمليات IT التي تخدم 89 موظف، والحفاظ على وقت تشغيل النظام 99.8%",
+        "windows": "<strong>هجرة Windows:</strong> قادت هجرة Windows 10 المؤسسية الناجحة مع تقوية أمنية شاملة وصفر انقطاع تجاري",
+        "ad": "<strong>Active Directory:</strong> أدارت بيئة AD بما في ذلك إدارة المستخدمين، سياسات المجموعة، وتكوينات الأمان",
+        "network": "<strong>إدارة الشبكة:</strong> أدارت بنية تحتية للشبكة، تكوينات VPN، وقواعد جدار الحماية للوصول الآمن عن بُعد",
+        "vendor": "<strong>إدارة البائعين:</strong> نسقت مع البائعين الخارجيين لشراء الأجهزة، ترخيص البرمجيات، وعقود الدعم",
+        "documentation": "<strong>التوثيق:</strong> أنشأت توثيق IT شامل وأدلة المستخدم، مما قلل تذاكر الدعم بنسبة 30%"
+      }
+    },
+    "bmg": {
+      "role": "أخصائي دعم IT عالمي",
+      "company": "BMG Rights Management GmbH، ألمانيا",
+      "date": "يوليو 2018 - يناير 2020",
+      "description": "قدمت دعم IT مؤسسي لشركة إدارة حقوق موسيقية عالمية، ودعمت المستخدمين عبر 6 بلدان ومناطق زمنية متعددة.",
+      "points": {
+        "international": "<strong>الدعم الدولي:</strong> قدمت دعم IT عبر 6 بلدان (USA، UK، إسبانيا، السويد، هولندا، فرنسا) بالإنجليزية والألمانية",
+        "enterprise": "<strong>الأنظمة المؤسسية:</strong> أدارت SCCM لنشر البرمجيات، أدارت Active Directory لـ 500+ مستخدم عبر المكاتب العالمية",
+        "identity": "<strong>إدارة الهوية:</strong> نفذت وأدارت تكامل OKTA SSO، مما يبسط المصادقة عبر 20+ تطبيق مؤسسي",
+        "collaboration": "<strong>أدوات التعاون:</strong> أدارت بيئات JIRA، Confluence، و Office 365، مما يحسن سير العمل للفرق الإبداعية والتجارية",
+        "training": "<strong>تدريب المستخدمين:</strong> أجرت جلسات تدريبية للأنظمة والأدوات الجديدة، مما يحسن معدلات اعتماد المستخدمين بنسبة 40%",
+        "incident": "<strong>إدارة الحوادث:</strong> أدارت نظام تذاكر ServiceNow، مما يحقق معدل حل في المكالمة الأولى 95%"
+      }
+    }
+  },
+  "education": {
+    "title": "التعليم (الجامعات الألمانية)",
+    "htw": {
+      "degree": "بكالوريوس علوم الكمبيوتر التطبيقية (Angewandte Informatik)",
+      "institution": "HTW Berlin - جامعة العلوم التطبيقية",
+      "date": "2017 - 2022",
+      "thesis": "<strong>الأطروحة:</strong> \"تصميم وتنفيذ بنية خدمات مصغرة لتطبيقات الرعاية الصحية\" — طورت منصة رعاية صحية قابلة للتوسع باستخدام containerization Docker، RESTful APIs، خلفية Django، وقاعدة بيانات PostgreSQL. نفذت تدابير أمنية متوافقة مع HIPAA وخطوط أنابيب اختبار آلية.",
+      "grade": "<strong>الدرجة:</strong> 2.4 (جيد) | <strong>مجالات التركيز:</strong> هندسة البرمجيات، أنظمة قواعد البيانات، تقنيات الويب، الحوسبة السحابية"
+    },
+    "tu": {
+      "degree": "الهندسة الصناعية (Wirtschaftsingenieurwesen)",
+      "institution": "الجامعة التقنية في برلين (TU Berlin)",
+      "date": "2012 - 2017",
+      "description1": "TU Berlin هي <strong>عضو TU9</strong>—تحالف ألمانيا للجامعات التقنية الرائدة، مصنفة بين أفضل مدارس الهندسة في أوروبا.",
+      "description2": "<strong>التركيز:</strong> أساسيات الهندسة مجتمعة مع إدارة الأعمال، بحوث العمليات، وإدارة الإنتاج. هذه المنظور المزدوج يمكنني من فهم كل من التنفيذ التقني والقيمة التجارية."
+    }
+  },
+  "certifications": {
+    "title": "الشهادات",
+    "gcp": {
+      "name": "🌟 Google Associate Cloud Engineer",
+      "date": "ديسمبر 2024",
+      "description": "خبرة معتمدة في خدمات GCP بما في ذلك Compute Engine، Kubernetes Engine، Cloud Storage، سياسات أمان IAM، والمراقبة مع Cloud Operations Suite"
+    },
+    "accenture": {
+      "name": "🚀 برنامج Accenture Jump Start",
+      "date": "أغسطس 2022",
+      "description": "تدريب مكثف في البنية المؤسسية ومنهجية الاستشارات. التركيز على مشاركة العملاء، تصميم الحلول، وتميز التسليم"
+    },
+    "django": {
+      "name": "🐍 تطوير Django المتقدم",
+      "date": "مايو 2021",
+      "description": "تطوير Python full-stack مع Django REST Framework، أنظمة المصادقة، تحسين قاعدة البيانات، واستراتيجيات النشر"
+    },
+    "tdd": {
+      "name": "🧪 التطوير الموجه بالاختبار",
+      "date": "مايو 2021",
+      "description": "منهجية TDD، أفضل ممارسات اختبار الوحدة، اختبار التكامل، وإعداد خط أنابيب التكامل المستمر"
+    },
+    "fullstack": {
+      "name": "💻 تطوير الويب Full Stack",
+      "date": "فبراير 2021",
+      "description": "تدريب شامل في React.js، Node.js، Express، MongoDB، وممارسات تطوير JavaScript الحديثة"
+    },
+    "sql": {
+      "name": "🗄️ برمجة SQL المتقدمة",
+      "date": "مارس 2018",
+      "description": "تحسين الاستعلامات المعقدة، الإجراءات المخزنة، أنماط تصميم قاعدة البيانات، وضبط الأداء"
+    }
+  },
+  "skills": {
+    "title": "الخبرة التقنية",
+    "filterPlaceholder": "🔍 تصفية المهارات (جرب: Java، Cloud، AI...)",
+    "categories": {
+      "programming": "لغات البرمجة",
+      "frameworks": "الأطر والمكتبات",
+      "cloud": "السحابة و DevOps",
+      "ai": "الذكاء الاصطناعي والأتمتة",
+      "databases": "قواعد البيانات والتخزين",
+      "domain": "المجال والقيادة"
+    },
+    "tags": {
+      "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
+      "frameworks": ["Spring Boot 3.x", "الخدمات المصغرة", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
+      "cloud": ["GCP (معتمد)", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
+      "ai": ["OpenAI GPT", "Claude AI", "Azure OpenAI", "سير عمل n8n", "RAGs", "وكلاء الذكاء الاصطناعي", "LangChain"],
+      "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "قواعد البيانات المتجهة"],
+      "domain": ["المالية والبنوك", "السيارات", "Agile/Scrum", "قيادة الفريق", "التنسيق الخارجي", "الاستشارات"]
+    }
+  },
+  "languages": {
+    "title": "اللغات",
+    "hint": "<i class=\"fas fa-mouse-pointer\"></i> انقر على لغة لتغيير لغة الموقع",
+    "german": {
+      "name": "الألمانية",
+      "level": "طلاقة • 15+ سنة"
+    },
+    "english": {
+      "name": "الإنجليزية",
+      "level": "طلاقة • أعمال"
+    },
+    "arabic": {
+      "name": "العربية",
+      "level": "طلاقة • أصلي"
+    },
+    "spanish": {
+      "name": "الإسبانية",
+      "level": "محادثة (B1)"
+    }
+  },
+  "footer": {
+    "text": "© 2025 صخر العبسي | 🇩🇪 مواطن ألماني • 15+ سنة في ألمانيا | مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider | جاهز لدبي 🇦🇪"
+  },
+  "aiChat": {
+    "title": "اسأل عن صخر",
+    "close": "✕",
+    "welcome": "👋 <strong>مرحباً!</strong> يمكنني أن أخبرك عن صخر—<strong>مواطن ألماني</strong>، <strong>مؤسس/الرئيس التنفيذي/الرئيس التقني لـ AI Waverider</strong>، مع 15+ سنة في ألمانيا، ينتقل إلى دبي.<br><br>اسأل عن مهاراته أو استخدم <strong>Job Match</strong>!",
+    "suggestions": {
+      "background": "الخلفية",
+      "founder": "AI Waverider",
+      "dubai": "لماذا دبي؟",
+      "contact": "اتصل",
+      "jobMatch": "Job Match"
+    },
+    "placeholder": "اسأل عن صخر...",
+    "responses": {
+      "background": {
+        "user": "أخبرني عن خلفية صخر",
+        "bot": "<strong>مواطن ألماني ومؤسس</strong><br><br>🇩🇪 <strong>15+ سنة</strong> يعيش في ألمانيا<br>🎓 خريج <strong>TU Berlin و HTW Berlin</strong><br>💼 <strong>7+ سنوات</strong> في Accenture، BMG، Innocean<br>🚀 <strong>مؤسس، الرئيس التنفيذي والرئيس التقني</strong> لـ AI Waverider<br>🌍 تعاون مع 25+ بلد<br><br><strong>القيمة الفريدة:</strong> الدقة الألمانية + التراث العربي + الطلاقة الإنجليزية"
+      },
+      "founder": {
+        "user": "أخبرني عن AI Waverider",
+        "bot": "<strong>AI Waverider — تأسس وبناه صخر</strong><br><br>🚀 <strong>5,600+ وكيل ذكاء اصطناعي</strong> وسير عمل الأتمتة<br>👨‍💼 <strong>مؤسس، الرئيس التنفيذي والرئيس التقني</strong><br>💻 مبني <strong>بالكامل من الصفر</strong> أثناء العمل بدوام كامل<br>🔧 Full-stack: React، Node.js، Python، GCP، Docker<br>📈 قاعدة مستخدمين عضوية متنامية عالمياً<br><br>زر: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+      },
+      "dubai": {
+        "user": "لماذا ينتقل صخر إلى دبي؟",
+        "bot": "<strong>لماذا دبي؟</strong><br><br>🚀 <strong>أسرع مركز تكنولوجيا نمواً</strong> في العالم<br>🌍 جسر مثالي بين الأسواق <strong>الأوروبية والشرق أوسطية</strong><br>💡 يسعى <strong>لشركات مبتكرة</strong> للبناء معها<br>🏆 يجلب خبرة مؤسسية <strong>Fortune 500</strong><br>🗣️ ثلاثي اللغات: ألماني، عربي وإنجليزي<br><br>جاهز للمساهمة في التحول الرقمي للإمارات!"
+      },
+      "interview": {
+        "user": "كيف يمكنني الاتصال بصخر؟",
+        "bot": "<strong>دعنا نتصل!</strong><br><br>📅 متاح <strong>Q1 2025</strong><br>✅ مفتوح لـ: دوام كامل، عقد، هجين"
+      }
+    },
+    "jobMatch": {
+      "title": "🎯 Job Match بالذكاء الاصطناعي",
+      "description": "الصق وصف الوظيفة لترى مدى تطابق صخر:",
+      "placeholder": "الصق متطلبات الوظيفة هنا...",
+      "analyze": "تحليل التطابق",
+      "error": "يرجى لصق وصف الوظيفة أولاً.",
+      "matchedSkills": "المهارات المتطابقة ({count}):",
+      "highlyRecommended": "✓ مرشح موصى به بشدة!"
+    },
+    "localResponses": {
+      "founder": "<strong>مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider</strong><br><br>بنيت 5,600+ وكيل ذكاء اصطناعي وسير عمل الأتمتة أثناء العمل بدوام كامل في Accenture. منصة full-stack: React، Node.js، Python، GCP.",
+      "german": "<strong>مواطن ألماني</strong> مع 15+ سنة في ألمانيا. متعلم في TU Berlin و HTW Berlin. 7+ سنوات خبرة مؤسسية.",
+      "dubai": "ينتقل إلى دبي للانضمام إلى النظام البيئي التكنولوجي للإمارات. الدقة الألمانية + التراث العربي + الطلاقة الإنجليزية = جسر فريد.",
+      "ai": "فزت بمسابقة الذكاء الاصطناعي العالمية. بنيت AI Waverider مع 5,600+ وكيل. خبير في OpenAI، Claude، n8n، RAGs، LangChain.",
+      "available": "<strong>متاح Q1 2025</strong>. مفتوح لـ دوام كامل، عقد، هجين في دبي.",
+      "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
+      "default": "يمكنني أن أخبرك عن خلفية صخر الألمانية، شركته الناشئة AI Waverider (هو مؤسس/الرئيس التنفيذي/الرئيس التقني)، المهارات التقنية، خطط دبي، أو المساعدة في job matching!"
+    }
+  },
+  "terminalCommands": {
+    "help": "الأوامر: help، play، chat، skills، contact، experience، education، aiwaverider، founder، download، clear<br>اكتب \"chat [رسالة]\" للتحدث مع الذكاء الاصطناعي",
+    "play": "بدء اللعبة...",
+    "chat": "فتح دردشة الذكاء الاصطناعي...",
+    "clear": "",
+    "notFound": "الأمر غير موجود: {cmd}. اكتب 'help' للأوامر المتاحة.",
+    "chatWithMessage": "فتح دردشة الذكاء الاصطناعي مع: \"{query}\"...",
+    "heroHelp": "> الأوامر: play، chat، clear، help<br>> اكتب 'chat' للتحدث مع مساعد الذكاء الاصطناعي",
+    "heroPlay": "> بدء اللعبة...",
+    "heroChat": "> فتح دردشة الذكاء الاصطناعي...",
+    "heroNotFound": "> الأمر غير موجود. اكتب 'help' للأوامر."
+  },
+  "typing": {
+    "texts": ["مهندس حلول الذكاء الاصطناعي", "مهندس برمجيات أول", "خبير Java Full-Stack", "باني أنظمة مؤسسية"]
+  },
+  "email": {
+    "subject": "استفسار فرصة عمل",
+    "body": "عزيزي صخر العبسي،\n\nصادفت سيرتك الذاتية وأنا معجب بخبرتك كمهندس برمجيات أول ومهندس حلول الذكاء الاصطناعي. أود مناقشة فرصة محتملة معك.\n\nيرجى إعلامي بمدى توفرك لمحادثة.\n\nمع أطيب التحيات،\n[اسمك]\n[منصبك]\n[شركتك]"
+  }
+}
+

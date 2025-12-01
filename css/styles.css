@@ -284,6 +284,48 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: 
 .language:hover { transform: translateY(-4px); border-color: var(--gold); }
 .language .flag { font-size: 2.5em; margin-bottom: 10px; display: block; line-height: 1; font-family: 'Apple Color Emoji', 'Segoe UI Emoji', 'Noto Color Emoji', sans-serif; }
 .language .flag img { width: 60px; height: auto; display: block; margin: 0 auto; border-radius: 6px; box-shadow: 0 3px 10px rgba(0,0,0,0.15); }
+.language.clickable-lang { cursor: pointer; position: relative; }
+.language.clickable-lang:hover { transform: translateY(-6px) scale(1.02); border-color: var(--gold); box-shadow: 0 8px 25px rgba(201,162,39,0.3); }
+.language.clickable-lang.active { border-color: var(--gold); background: linear-gradient(135deg, rgba(201,162,39,0.1), var(--gray-light)); box-shadow: 0 4px 15px rgba(201,162,39,0.2); }
+[data-theme="dark"] .language.clickable-lang.active { background: linear-gradient(135deg, rgba(201,162,39,0.15), #1e293b); }
+.lang-click-indicator { position: absolute; top: 10px; right: 10px; color: var(--gold); font-size: 0.9em; opacity: 0.6; transition: 0.3s; }
+.language.clickable-lang:hover .lang-click-indicator { opacity: 1; transform: scale(1.2); }
+.lang-hint { font-size: 0.85em; color: var(--text-light); margin-bottom: 15px; font-style: italic; }
+.lang-hint i { margin-right: 5px; color: var(--gold); }
+
+/* Language Switcher in Nav */
+.lang-switcher-container { position: relative; }
+.lang-switcher-btn { display: flex; align-items: center; gap: 6px; padding: 6px 14px; border: 1px solid var(--gray-medium); border-radius: 20px; font-size: 0.85em; transition: 0.3s; text-decoration: none; color: var(--text-dark) !important; background: var(--card); cursor: pointer; }
+.lang-switcher-btn:hover { border-color: var(--secondary); background: rgba(43,119,230,0.05); color: var(--secondary) !important; }
+.lang-switcher-btn i.fa-chevron-down { font-size: 0.7em; transition: 0.3s; }
+.lang-switcher-container.active .lang-switcher-btn i.fa-chevron-down { transform: rotate(180deg); }
+.lang-dropdown { position: absolute; top: calc(100% + 10px); right: 0; background: var(--card); border: 1px solid var(--gray-medium); border-radius: 12px; box-shadow: 0 8px 25px rgba(0,0,0,0.15); min-width: 180px; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: 0.3s; z-index: 1000; overflow: hidden; }
+.lang-dropdown.show { opacity: 1; visibility: visible; transform: translateY(0); }
+.lang-option { display: flex; align-items: center; gap: 10px; padding: 12px 16px; color: var(--text-dark); text-decoration: none; transition: 0.3s; border-bottom: 1px solid var(--gray-medium); }
+.lang-option:last-child { border-bottom: none; }
+.lang-option:hover { background: rgba(43,119,230,0.1); color: var(--secondary); }
+.lang-option.active { background: rgba(201,162,39,0.1); color: var(--gold); font-weight: 600; }
+.lang-flag { font-size: 1.2em; }
+[dir="rtl"] { direction: rtl; }
+[dir="rtl"] .lang-switcher-container { direction: ltr; }
+[dir="rtl"] .hero-content { text-align: right; }
+[dir="rtl"] .hero-headline h1 { text-align: right; }
+[dir="rtl"] .hero-tagline { text-align: right; }
+[dir="rtl"] .flag-journey { direction: ltr; }
+[dir="rtl"] .trust-bar { align-items: flex-end; }
+[dir="rtl"] .mega-stats { direction: ltr; }
+[dir="rtl"] .nav-links { direction: ltr; }
+[dir="rtl"] .section h2 { text-align: right; }
+[dir="rtl"] .experience-item, [dir="rtl"] .education-item { text-align: right; }
+[dir="rtl"] .experience-item:hover, [dir="rtl"] .education-item:hover { transform: translateX(-6px); }
+[dir="rtl"] .cert-item:hover { transform: translateX(-5px); }
+[dir="rtl"] .vision-content { text-align: right; }
+[dir="rtl"] .current-business { text-align: right; }
+[dir="rtl"] .skill-category { text-align: right; }
+[dir="rtl"] .language { text-align: center; }
+[dir="rtl"] .footer { direction: ltr; }
+[dir="rtl"] .terminal-window { direction: ltr; }
+[dir="rtl"] .ai-chat-box { direction: ltr; }
 .language .lang-name { font-weight: 700; color: var(--text-dark); font-size: 1.1em; display: block; }
 .language .lang-level { font-size: 0.9em; color: var(--text-light); margin-top: 5px; display: block; }
 

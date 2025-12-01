@@ -3,58 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sakhr AL-Absi | German Citizen → Dubai | Senior Software Engineer & Founder</title>
+    <title data-i18n="meta.title">Sakhr AL-Absi | German Citizen → Dubai | Senior Software Engineer & Founder</title>
     <meta name="description" content="German citizen & Senior Software Engineer with 15+ years in Germany. Founder of AI Waverider. 7+ years enterprise experience. Relocating to Dubai.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <script src="js/translations.js"></script>
 </head>
 <body>
 <!-- GAME OVERLAY -->
 <div class="game-overlay" id="gameOverlay">
     <div class="game-header">
         <div>
-            <div class="game-title">🚀 SAKHR'S SKILL CHALLENGE</div>
+            <div class="game-title" data-i18n="game.title">🚀 SAKHR'S SKILL CHALLENGE</div>
             <div class="game-stats">
-                <div class="game-stat score">⭐ <span id="gameScore">0</span></div>
-                <div class="game-stat level">🎯 Level <span id="gameLevel">1</span>/<span id="totalLevels">5</span></div>
-                <div class="game-stat hits">✓ <span id="gameHits">0</span>/<span id="requiredHits">10</span></div>
-                <div class="game-stat weapon">🔫 <span id="weaponLevel">Basic</span></div>
+                <div class="game-stat score"><span data-i18n="game.score">⭐</span> <span id="gameScore">0</span></div>
+                <div class="game-stat level"><span data-i18n="game.level">🎯 Level</span> <span id="gameLevel">1</span>/<span id="totalLevels">5</span></div>
+                <div class="game-stat hits"><span data-i18n="game.hits">✓</span> <span id="gameHits">0</span>/<span id="requiredHits">10</span></div>
+                <div class="game-stat weapon"><span data-i18n="game.weapon">🔫</span> <span id="weaponLevel" data-i18n="game.basic">Basic</span></div>
             </div>
         </div>
         <div style="display:flex;align-items:center;gap:14px;">
             <div class="health-bar-container"><div class="health-bar" id="healthBar"></div><span class="health-text" id="healthText">100%</span></div>
-            <button class="close-game-btn" onclick="Game.close()">✕ Close</button>
+            <button class="close-game-btn" onclick="Game.close()" data-i18n="game.close">✕ Close</button>
         </div>
     </div>
     <div class="game-question-bar">
-        <div class="game-question" id="gameQuestion">Why hire Sakhr?</div>
-        <div class="game-hint">Shoot <span class="correct">GREEN</span> skills | Avoid <span class="wrong">RED</span> | Collect ⭐ for upgrades!</div>
+        <div class="game-question" id="gameQuestion" data-i18n="game.question">Why hire Sakhr?</div>
+        <div class="game-hint" data-i18n-html="game.hint">Shoot <span class="correct">GREEN</span> skills | Avoid <span class="wrong">RED</span> | Collect ⭐ for upgrades!</div>
     </div>
     <canvas id="gameCanvas"></canvas>
     <div class="game-controls-bar">
-        <span class="controls">← → or A/D to move | SPACE or CLICK to shoot</span>
-        <span class="tips">💡 Each level unlocks weapon upgrades!</span>
+        <span class="controls" data-i18n="game.controls">← → or A/D to move | SPACE or CLICK to shoot</span>
+        <span class="tips" data-i18n="game.tips">💡 Each level unlocks weapon upgrades!</span>
     </div>
     <div class="mobile-game-controls"><button class="mobile-ctrl-btn" id="mobileLeft">◀</button><button class="mobile-ctrl-btn" id="mobileShoot">🔥</button><button class="mobile-ctrl-btn" id="mobileRight">▶</button></div>
-    <div class="game-screen level-complete" id="levelCompleteScreen"><h2>🏆 LEVEL COMPLETE!</h2><p>Level <span id="completedLevel">1</span> cleared!</p><p>Score: <span id="levelScore" style="color:#ffd700;">0</span></p><div style="margin:18px 0;padding:14px;background:rgba(0,0,0,0.3);border-radius:10px;"><p style="color:#0ff;font-size:1.1em;">🎁 <span id="rewardText">Weapon Upgraded!</span></p></div><button class="game-btn primary" onclick="Game.nextLevel()">Next Level →</button></div>
-    <div class="game-screen game-over" id="gameOverScreen"><h2>💀 GAME OVER</h2><p>Final Score: <span id="finalScore" style="color:#ffd700;">0</span></p><p style="opacity:0.8;">Try again to master Sakhr's skills!</p><div style="margin-top:18px;"><button class="game-btn primary" onclick="Game.restart()">🔄 Restart</button><button class="game-btn secondary" onclick="Game.close()">Close</button></div></div>
-    <div class="game-screen victory" id="victoryScreen"><div style="font-size:50px;margin-bottom:10px;">🏆</div><h2>CONGRATULATIONS!</h2><p><strong>You've mastered all skills!</strong></p><p>Score: <span id="victoryScore" style="color:#1a365d;font-weight:700;">0</span></p><div style="margin-top:18px;"><button class="game-btn gold" onclick="generatePDF();Game.close();">📥 Download CV</button><button class="game-btn secondary" onclick="Game.close()">Close</button></div></div>
+    <div class="game-screen level-complete" id="levelCompleteScreen"><h2 data-i18n="game.levelComplete">🏆 LEVEL COMPLETE!</h2><p><span data-i18n="game.levelCleared">Level {level} cleared!</span></p><p><span data-i18n="game.scoreLabel">Score:</span> <span id="levelScore" style="color:#ffd700;">0</span></p><div style="margin:18px 0;padding:14px;background:rgba(0,0,0,0.3);border-radius:10px;"><p style="color:#0ff;font-size:1.1em;">🎁 <span id="rewardText" data-i18n="game.weaponUpgraded">Weapon Upgraded!</span></p></div><button class="game-btn primary" onclick="Game.nextLevel()" data-i18n="game.nextLevel">Next Level →</button></div>
+    <div class="game-screen game-over" id="gameOverScreen"><h2 data-i18n="game.gameOver">💀 GAME OVER</h2><p><span data-i18n="game.finalScore">Final Score:</span> <span id="finalScore" style="color:#ffd700;">0</span></p><p style="opacity:0.8;" data-i18n="game.tryAgain">Try again to master Sakhr's skills!</p><div style="margin-top:18px;"><button class="game-btn primary" onclick="Game.restart()" data-i18n="game.restart">🔄 Restart</button><button class="game-btn secondary" onclick="Game.close()" data-i18n="game.close">Close</button></div></div>
+    <div class="game-screen victory" id="victoryScreen"><div style="font-size:50px;margin-bottom:10px;">🏆</div><h2 data-i18n="game.victory">CONGRATULATIONS!</h2><p><strong data-i18n="game.masteredSkills">You've mastered all skills!</strong></p><p><span data-i18n="game.scoreLabel">Score:</span> <span id="victoryScore" style="color:#1a365d;font-weight:700;">0</span></p><div style="margin-top:18px;"><button class="game-btn gold" onclick="generatePDF();Game.close();" data-i18n="game.downloadCV">📥 Download CV</button><button class="game-btn secondary" onclick="Game.close()" data-i18n="game.close">Close</button></div></div>
 </div>
 
 <nav class="nav">
     <div class="nav-container">
-        <a href="#home" class="logo">Sakhr AL-Absi</a>
+        <a href="#home" class="logo" data-i18n="nav.logo">Sakhr AL-Absi</a>
         <button class="mobile-menu-btn" id="mobileMenuBtn"><i class="fas fa-bars"></i></button>
         <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#vision">Vision</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="./assets/certs/all-certifications.zip" download class="nav-btn-secondary"><i class="fas fa-certificate"></i> Certs</a></li>
+            <li><a href="#home" data-i18n="nav.home">Home</a></li>
+            <li><a href="#vision" data-i18n="nav.vision">Vision</a></li>
+            <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
+            <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+            <li><a href="./assets/certs/all-certifications.zip" download class="nav-btn-secondary"><i class="fas fa-certificate"></i> <span data-i18n="nav.certs">Certs</span></a></li>
+            <li class="lang-switcher-container">
+                <button class="lang-switcher-btn" id="langSwitcherBtn" onclick="toggleLangDropdown()" title="Change Language">
+                    <i class="fas fa-globe"></i> <span id="currentLangDisplay">EN</span> <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <a href="#" onclick="changeLanguage('en'); return false;" class="lang-option" data-lang="en"><span class="lang-flag">🇬🇧</span> English</a>
+                    <a href="#" onclick="changeLanguage('de'); return false;" class="lang-option" data-lang="de"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+                    <a href="#" onclick="changeLanguage('es'); return false;" class="lang-option" data-lang="es"><span class="lang-flag">🇪🇸</span> Español</a>
+                    <a href="#" onclick="changeLanguage('ar'); return false;" class="lang-option" data-lang="ar"><span class="lang-flag">🇸🇦</span> العربية</a>
+                </div>
+            </li>
             <li><button onclick="toggleTheme()" class="theme-toggle">🌙</button></li>
-            <li><button onclick="generatePDF()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> Download CV</button></li>
+            <li><button onclick="generatePDF()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> <span data-i18n="nav.downloadCV">Download CV</span></button></li>
         </ul>
     </div>
 </nav>
@@ -75,27 +87,27 @@
             <span class="terminal-dot red"></span>
             <span class="terminal-dot yellow"></span>
             <span class="terminal-dot green"></span>
-            <span class="terminal-title">sakhr@dubai ~ bash</span>
-            <button class="terminal-close-btn" onclick="toggleTerminal()" title="Close terminal">✕</button>
+            <span class="terminal-title" data-i18n="terminal.title">sakhr@dubai ~ bash</span>
+            <button class="terminal-close-btn" onclick="toggleTerminal()" data-i18n="terminal.closeTitle" title="Close terminal">✕</button>
         </div>
         <div class="terminal-body" id="terminalBody">
-            <div class="terminal-line"><span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">whoami</span></div>
-            <div class="terminal-line terminal-output">🇩🇪 German Citizen | Senior Software Engineer | Founder, CEO & CTO</div>
-            <div class="terminal-line"><span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">cat experience.txt</span></div>
-            <div class="terminal-line terminal-output">→ <span class="terminal-highlight">15+ years</span> in Germany</div>
-            <div class="terminal-line terminal-output">→ <span class="terminal-highlight">7+ years</span> corporate (Accenture, BMG, Innocean)</div>
-            <div class="terminal-line terminal-output">→ Fortune 500 clients: German banks & auto OEMs</div>
-            <div class="terminal-line"><span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">ls achievements/</span></div>
-            <div class="terminal-line terminal-output">ai_waverider_founder/ 11_apps_built_2024/ global_hackathon_winner/</div>
-            <div class="terminal-line"><span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">cat aiwaverider.txt</span></div>
-            <div class="terminal-line terminal-output">🚀 <span class="terminal-highlight">Founder, CEO & CTO</span> | 5,600+ AI agents</div>
-            <div class="terminal-line"><span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">echo $LANGUAGES</span></div>
-            <div class="terminal-line terminal-output">German (C1) | English (C1) | Arabic (Native) | Spanish (B1)</div>
-            <div class="terminal-line"><span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">cat status.txt</span></div>
-            <div class="terminal-line terminal-output" style="color:#0f0;">✓ Available Q1 2026 | Ready for Dubai 🇦🇪</div>
+            <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@dubai:~$</span> <span class="terminal-command" data-i18n="terminal.whoami">whoami</span></div>
+            <div class="terminal-line terminal-output" data-i18n-html="terminal.whoamiOutput">🇩🇪 German Citizen | Senior Software Engineer | Founder, CEO & CTO</div>
+            <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@dubai:~$</span> <span class="terminal-command" data-i18n="terminal.catExperience">cat experience.txt</span></div>
+            <div class="terminal-line terminal-output" data-i18n-html="terminal.experience1">→ <span class="terminal-highlight">15+ years</span> in Germany</div>
+            <div class="terminal-line terminal-output" data-i18n-html="terminal.experience2">→ <span class="terminal-highlight">7+ years</span> corporate (Accenture, BMG, Innocean)</div>
+            <div class="terminal-line terminal-output" data-i18n="terminal.experience3">→ Fortune 500 clients: German banks & auto OEMs</div>
+            <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@dubai:~$</span> <span class="terminal-command" data-i18n="terminal.lsAchievements">ls achievements/</span></div>
+            <div class="terminal-line terminal-output" data-i18n="terminal.achievements">ai_waverider_founder/ 11_apps_built_2024/ global_hackathon_winner/</div>
+            <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@dubai:~$</span> <span class="terminal-command" data-i18n="terminal.catAiwaverider">cat aiwaverider.txt</span></div>
+            <div class="terminal-line terminal-output" data-i18n-html="terminal.aiwaveriderOutput">🚀 <span class="terminal-highlight">Founder, CEO & CTO</span> | 5,600+ AI agents</div>
+            <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@dubai:~$</span> <span class="terminal-command" data-i18n="terminal.echoLanguages">echo $LANGUAGES</span></div>
+            <div class="terminal-line terminal-output" data-i18n="terminal.languagesOutput">German (C1) | English (C1) | Arabic (Native) | Spanish (B1)</div>
+            <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@dubai:~$</span> <span class="terminal-command" data-i18n="terminal.catStatus">cat status.txt</span></div>
+            <div class="terminal-line terminal-output" style="color:#0f0;" data-i18n-html="terminal.statusOutput">✓ Available Q1 2026 | Ready for Dubai 🇦🇪</div>
             <div class="terminal-input-line">
-                <span class="terminal-prompt">sakhr@dubai:~$</span>&nbsp;
-                <input type="text" class="terminal-input" id="terminalInput" placeholder="Type 'help' for commands..." onkeypress="handleTerminalInput(event)">
+                <span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@dubai:~$</span>&nbsp;
+                <input type="text" class="terminal-input" id="terminalInput" data-i18n="terminal.placeholder" placeholder="Type 'help' for commands..." onkeypress="handleTerminalInput(event)">
                 <span class="terminal-cursor">▋</span>
             </div>
         </div>
@@ -111,36 +123,36 @@
         <span class="flag"><img src="https://flagcdn.com/w40/de.png" alt="German flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇩🇪';"></span>
         <div class="journey-line"><span class="plane-icon">✈️</span></div>
         <span class="flag"><img src="https://flagcdn.com/w40/ae.png" alt="UAE flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇦🇪';"></span>
-    <div class="journey-text">Berlin → Dubai</div>
+    <div class="journey-text" data-i18n="hero.journeyText">Berlin → Dubai</div>
     </div>
 
             <!-- Headline -->
     <div class="hero-headline">
-        <h1>German Engineer.<br><span class="highlight">Building the Future in Dubai.</span></h1>
+        <h1><span data-i18n="hero.headline">German Engineer.</span><br><span class="highlight" data-i18n="hero.headlineHighlight">Building the Future in Dubai.</span></h1>
             </div>
 
-            <h2 class="static-role-title">AI Solutions Architect & Senior Software Engineer</h2>
+            <h2 class="static-role-title" data-i18n="hero.staticRoleTitle">AI Solutions Architect & Senior Software Engineer</h2>
 
             <!-- Typing Text (Design 2) -->
             <span class="typing-text" id="typing"></span>
 
             <!-- Tagline -->
-        <p class="hero-tagline"><strong>German Precision</strong> • <strong>Arabic Heritage</strong> • <strong>English Fluency</strong></p>
+        <p class="hero-tagline" data-i18n-html="hero.tagline"><strong>German Precision</strong> • <strong>Arabic Heritage</strong> • <strong>English Fluency</strong></p>
 
             <!-- CTA Buttons -->
             <div class="hero-cta">
-                <button onclick="generatePDF()" class="btn btn-primary"><i class="fas fa-file-download"></i> Download CV</button>
-                <a href="https://www.aiwaverider.com" target="_blank" class="btn btn-outline">🚀 AI Waverider</a>
+                <button onclick="generatePDF()" class="btn btn-primary"><i class="fas fa-file-download"></i> <span data-i18n="hero.downloadCV">Download CV</span></button>
+                <a href="https://www.aiwaverider.com" target="_blank" class="btn btn-outline"><span data-i18n="hero.aiWaverider">🚀 AI Waverider</span></a>
     </div>
 
             <!-- Trust Bar (Moved here) -->
     <div class="trust-bar">
-        <span class="trust-bar-label">Trusted by</span>
+        <span class="trust-bar-label" data-i18n="hero.trustedBy">Trusted by</span>
         <div class="trust-logos">
-            <div class="trust-logo"><span class="trust-logo-icon">🏢</span><span class="trust-logo-name">ACCENTURE</span></div>
-            <div class="trust-logo"><span class="trust-logo-icon">🎵</span><span class="trust-logo-name">BMG RIGHTS</span></div>
-            <div class="trust-logo"><span class="trust-logo-icon">🚗</span><span class="trust-logo-name">INNOCEAN</span></div>
-                    <div class="trust-logo"><span class="trust-logo-icon">🏦</span><span class="trust-logo-name">BANKS</span></div>
+            <div class="trust-logo"><span class="trust-logo-icon">🏢</span><span class="trust-logo-name" data-i18n="hero.accenture">ACCENTURE</span></div>
+            <div class="trust-logo"><span class="trust-logo-icon">🎵</span><span class="trust-logo-name" data-i18n="hero.bmgRights">BMG RIGHTS</span></div>
+            <div class="trust-logo"><span class="trust-logo-icon">🚗</span><span class="trust-logo-name" data-i18n="hero.innocean">INNOCEAN</span></div>
+                    <div class="trust-logo"><span class="trust-logo-icon">🏦</span><span class="trust-logo-name" data-i18n="hero.banks">BANKS</span></div>
                 </div>
             </div>
         </div>
@@ -151,8 +163,8 @@
                 <div class="profile-showcase" id="heroProfileImage">
                     <img src="./assets/profilepic.jpg" alt="Sakhr" onerror="this.parentElement.innerHTML='👤'">
                 </div>
-                <h3>Sakhr AL-Absi</h3>
-                <span>Full Stack Architect</span>
+                <h3 data-i18n="hero.profileName">Sakhr AL-Absi</h3>
+                <span data-i18n="hero.profileRole">Full Stack Architect</span>
     </div>
 
             <div class="mini-terminal" id="heroTerminal" onclick="document.getElementById('heroTermInput').focus()">
@@ -162,24 +174,24 @@
                     <div class="term-dot green"></div>
                 </div>
                 <div class="term-content" id="heroTermContent">
-                    <div>> initializing portfolio... OK</div>
-                    <div>> type "play" for a hidden game</div>
-                    <div>> status: <span style="color:#4ade80">Available Q1 2026</span></div>
+                    <div data-i18n="terminal.heroInitializing">> initializing portfolio... OK</div>
+                    <div data-i18n="terminal.heroPlay">> type "play" for a hidden game</div>
+                    <div data-i18n-html="terminal.heroStatus">> status: <span style="color:#4ade80">Available Q1 2026</span></div>
                 </div>
-                <div class="cmd-line"><span>sakhr@dubai:~$</span><input type="text" id="heroTermInput" class="cmd-input" autocomplete="off" spellcheck="false"></div>
+                <div class="cmd-line"><span data-i18n="terminal.prompt">sakhr@dubai:~$</span><input type="text" id="heroTermInput" class="cmd-input" autocomplete="off" spellcheck="false"></div>
             </div>
         </div>
     </div>
 
     <!-- Mega Stats (Full Width) -->
     <div class="mega-stats">
-        <div class="mega-stat"><div class="mega-stat-number" data-target="15" data-suffix="+">0</div><div class="mega-stat-label">Years in<br>Germany</div></div>
-        <div class="mega-stat"><div class="mega-stat-number" data-target="7" data-suffix="+">0</div><div class="mega-stat-label">Corporate<br>Excellence</div></div>
-        <div class="mega-stat gold"><div class="mega-stat-number" data-target="11" data-suffix="">0</div><div class="mega-stat-label">Apps Built<br>This Year</div></div>
-        <div class="mega-stat gold"><div class="mega-stat-number" data-target="5600" data-suffix="+">0</div><div class="mega-stat-label">AI Agents<br>Curated</div></div>
+        <div class="mega-stat"><div class="mega-stat-number" data-target="15" data-suffix="+">0</div><div class="mega-stat-label" data-i18n-html="hero.stats.yearsGermany">Years in<br>Germany</div></div>
+        <div class="mega-stat"><div class="mega-stat-number" data-target="7" data-suffix="+">0</div><div class="mega-stat-label" data-i18n-html="hero.stats.corporateExcellence">Corporate<br>Excellence</div></div>
+        <div class="mega-stat gold"><div class="mega-stat-number" data-target="11" data-suffix="">0</div><div class="mega-stat-label" data-i18n-html="hero.stats.appsBuilt">Apps Built<br>This Year</div></div>
+        <div class="mega-stat gold"><div class="mega-stat-number" data-target="5600" data-suffix="+">0</div><div class="mega-stat-label" data-i18n-html="hero.stats.aiAgents">AI Agents<br>Curated</div></div>
     </div>
 
-    <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;"><span>SCROLL DOWN</span><br><i class="fas fa-chevron-down"></i></div>
+    <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;"><span data-i18n="hero.scrollDown">SCROLL DOWN</span><br><i class="fas fa-chevron-down"></i></div>
 </section>
 
 <section class="cv-section">
@@ -188,15 +200,15 @@
             <div class="profile-container">
                 <div class="profile-image-container">
                     <div class="profile-image" id="profileImage"><img src="./assets/profilepic.jpg" alt="Sakhr" onerror="this.parentElement.innerHTML='👤'"></div>
-                    <div class="upload-overlay"><div class="upload-text">Upload<br>Photo</div></div>
+                    <div class="upload-overlay"><div class="upload-text" data-i18n-html="cv.uploadPhoto">Upload<br>Photo</div></div>
                     <input type="file" class="file-input" id="fileInput" accept="image/*">
                 </div>
-                <h1>Sakhr AL-Absi</h1>
-                <div class="title">Senior Software Engineer & AI Solutions Architect | Founder, CEO & CTO</div>
+                <h1 data-i18n="cv.name">Sakhr AL-Absi</h1>
+                <div class="title" data-i18n="cv.title">Senior Software Engineer & AI Solutions Architect | Founder, CEO & CTO</div>
                 <div class="header-badges">
-                    <span class="header-badge">🇩🇪 German Citizen</span>
-                    <span class="header-badge">15+ Years in Germany</span>
-                    <span class="header-badge gold">✈️ Relocating to Dubai</span>
+                    <span class="header-badge" data-i18n="cv.badges.germanCitizen">🇩🇪 German Citizen</span>
+                    <span class="header-badge" data-i18n="cv.badges.yearsGermany">15+ Years in Germany</span>
+                    <span class="header-badge gold" data-i18n="cv.badges.relocating">✈️ Relocating to Dubai</span>
                 </div>
                 <div class="contact-info">
                     <div class="contact-item"><span>📧</span><a href="mailto:sakhr270@gmail.com?subject=Job%20Opportunity%20Inquiry&body=Dear%20Sakhr%20AL-Absi,%0D%0A%0D%0AI%20came%20across%20your%20CV%20and%20I'm%20impressed%20by%20your%20expertise%20as%20a%20Senior%20Software%20Engineer%20and%20AI%20Solutions%20Architect.%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0APlease%20let%20me%20know%20your%20availability%20for%20a%20conversation.%0D%0A%0D%0ABest%20regards,%0D%0A[Your%20Name]%0D%0A[Your%20Position]%0D%0A[Your%20Company]" class="contact-link">sakhr270@gmail.com</a></div>
@@ -204,11 +216,11 @@
                     <div class="contact-item"><span>🌐</span><a href="https://www.aiwaverider.com" target="_blank" class="contact-link">aiwaverider.com</a></div>
                 </div>
                 <div class="certs-download">
-                    <h4><i class="fas fa-certificate"></i> Download Certifications</h4>
+                    <h4><i class="fas fa-certificate"></i> <span data-i18n="cv.downloadCertifications">Download Certifications</span></h4>
                     <div class="cert-btns">
-                        <a href="./assets/certs/gcp-cloud-engineer.pdf" download class="cert-btn"><i class="fab fa-google"></i> GCP Cloud Engineer</a>
-                        <a href="./assets/certs/accenture-jumpstart.pdf" download class="cert-btn"><i class="fas fa-rocket"></i> Accenture Program</a>
-                        <a href="./assets/certs/all-certifications.zip" download class="cert-btn"><i class="fas fa-download"></i> All Certs (ZIP)</a>
+                        <a href="./assets/certs/gcp-cloud-engineer.pdf" download class="cert-btn"><i class="fab fa-google"></i> <span data-i18n="cv.gcpCloudEngineer">GCP Cloud Engineer</span></a>
+                        <a href="./assets/certs/accenture-jumpstart.pdf" download class="cert-btn"><i class="fas fa-rocket"></i> <span data-i18n="cv.accentureProgram">Accenture Program</span></a>
+                        <a href="./assets/certs/all-certifications.zip" download class="cert-btn"><i class="fas fa-download"></i> <span data-i18n="cv.allCerts">All Certs (ZIP)</span></a>
                     </div>
                 </div>
             </div>
@@ -219,24 +231,24 @@
             <div class="vision-section" id="vision">
                 <div class="vision-header">
                     <div class="vision-icon">💡</div>
-                    <h3>My Vision & Philosophy</h3>
+                    <h3 data-i18n="vision.title">My Vision & Philosophy</h3>
                 </div>
                 <div class="vision-content">
-                    <div class="vision-pullquote">
+                    <div class="vision-pullquote" data-i18n-html="vision.quote1">
                         <strong>"The era of traditional coding is over."</strong> We've moved beyond spending hours researching bugs on Stack Overflow. Today, speed is the ultimate differentiator—an idea can be coded within minutes using AI tools.
                     </div>
-                    <p>Just as Excel eliminated paper spreadsheets, AI is transforming software development. Those who master these tools will lead the next wave of innovation. With <strong>7+ years of corporate experience</strong> combined with my dual background in Computer Science and Industrial Engineering from <span class="vision-emphasis">TU Berlin & HTW Berlin</span>—Germany's most prestigious technical universities—I was among the first to leverage AI to achieve goals faster and more effectively.</p>
-                    <p>As a <strong>German citizen who has lived in Germany for over 15 years</strong>, I bring European engineering standards and work ethic. Combined with my Arabic heritage and English-language education, I offer a unique bridge between cultures—<span class="vision-emphasis">German precision, Arabic cultural insight, and English business fluency</span>.</p>
-                    <div class="vision-pullquote">
+                    <p data-i18n-html="vision.paragraph1">Just as Excel eliminated paper spreadsheets, AI is transforming software development. Those who master these tools will lead the next wave of innovation. With <strong>7+ years of corporate experience</strong> combined with my dual background in Computer Science and Industrial Engineering from <span class="vision-emphasis">TU Berlin & HTW Berlin</span>—Germany's most prestigious technical universities—I was among the first to leverage AI to achieve goals faster and more effectively.</p>
+                    <p data-i18n-html="vision.paragraph2">As a <strong>German citizen who has lived in Germany for over 15 years</strong>, I bring European engineering standards and work ethic. Combined with my Arabic heritage and English-language education, I offer a unique bridge between cultures—<span class="vision-emphasis">German precision, Arabic cultural insight, and English business fluency</span>.</p>
+                    <div class="vision-pullquote" data-i18n-html="vision.quote2">
                         <strong>Why Dubai?</strong> I'm positioning myself among the brightest minds in one of the world's fastest-growing tech hubs. I'm coming to the UAE to work with innovative thinkers, learn from the best, and build extraordinary solutions together.
                     </div>
                     <div class="vision-highlight-box">
-                        <h4><i class="fas fa-trophy"></i> This Year's Achievements (While Working Full-Time at Accenture)</h4>
+                        <h4><i class="fas fa-trophy"></i> <span data-i18n="vision.achievementsTitle">This Year's Achievements (While Working Full-Time at Accenture)</span></h4>
                         <div class="vision-stats">
-                            <div class="vision-stat"><i class="fas fa-code"></i> <strong>11 Applications</strong> built from scratch</div>
-                            <div class="vision-stat"><i class="fas fa-rocket"></i> <strong>AI Waverider</strong> — Founded & built</div>
-                            <div class="vision-stat"><i class="fas fa-robot"></i> <strong>5,600+ AI Agents</strong> created</div>
-                            <div class="vision-stat"><i class="fas fa-briefcase"></i> <strong>Fortune 500</strong> clients delivered</div>
+                            <div class="vision-stat"><i class="fas fa-code"></i> <span data-i18n-html="vision.achievements.apps"><strong>11 Applications</strong> built from scratch</span></div>
+                            <div class="vision-stat"><i class="fas fa-rocket"></i> <span data-i18n-html="vision.achievements.waverider"><strong>AI Waverider</strong> — Founded & built</span></div>
+                            <div class="vision-stat"><i class="fas fa-robot"></i> <span data-i18n-html="vision.achievements.agents"><strong>5,600+ AI Agents</strong> created</span></div>
+                            <div class="vision-stat"><i class="fas fa-briefcase"></i> <span data-i18n-html="vision.achievements.fortune500"><strong>Fortune 500</strong> clients delivered</span></div>
                         </div>
                     </div>
                 </div>
@@ -244,105 +256,105 @@
 
             <!-- PROFESSIONAL SUMMARY -->
             <div class="section">
-                <h2><i class="fas fa-user-tie"></i> Professional Summary</h2>
+                <h2><i class="fas fa-user-tie"></i> <span data-i18n="summary.title">Professional Summary</span></h2>
                 <div class="current-business">
-                    <p><strong>German citizen</strong> and Senior Software Engineer with 7+ years in enterprise development, specializing in microservices, cloud technologies, and AI integration. Educated at Germany's top universities (TU Berlin, HTW Berlin) with proven track record delivering for Fortune 500 finance and automotive clients.</p>
-                    <p>Known for <strong>exceptional resourcefulness</strong>—built 11 applications this year while working full-time at Accenture. Coordinated offshore teams across 3 time zones. Currently the <strong>Founder, CEO & CTO</strong> of <a href="https://www.aiwaverider.com" target="_blank" class="business-link">AI Waverider</a>—a platform with 5,600+ AI agents and automation workflows.</p>
-                    <p><strong>Unique Value:</strong> German precision + Arabic heritage + English fluency. Trilingual (German C1, English C1, Arabic Native) bridging European and Middle Eastern cultures.</p>
+                    <p data-i18n-html="summary.paragraph1"><strong>German citizen</strong> and Senior Software Engineer with 7+ years in enterprise development, specializing in microservices, cloud technologies, and AI integration. Educated at Germany's top universities (TU Berlin, HTW Berlin) with proven track record delivering for Fortune 500 finance and automotive clients.</p>
+                    <p data-i18n-html="summary.paragraph2">Known for <strong>exceptional resourcefulness</strong>—built 11 applications this year while working full-time at Accenture. Coordinated offshore teams across 3 time zones. Currently the <strong>Founder, CEO & CTO</strong> of <a href="https://www.aiwaverider.com" target="_blank" class="business-link">AI Waverider</a>—a platform with 5,600+ AI agents and automation workflows.</p>
+                    <p data-i18n-html="summary.paragraph3"><strong>Unique Value:</strong> German precision + Arabic heritage + English fluency. Trilingual (German C1, English C1, Arabic Native) bridging European and Middle Eastern cultures.</p>
                 </div>
             </div>
 
             <!-- PROFESSIONAL EXPERIENCE - WITH FOUNDER/CEO/CTO -->
             <div class="section" id="experience">
-                <h2><i class="fas fa-briefcase"></i> Professional Experience</h2>
+                <h2><i class="fas fa-briefcase"></i> <span data-i18n="experience.title">Professional Experience</span></h2>
                 
                 <!-- FOUNDER/CEO/CTO - AI WAVERIDER -->
                 <div class="experience-item founder">
-                    <h3>Founder, CEO & CTO</h3>
-                    <div class="company">AI Waverider — AI Automation Platform</div>
-                    <div class="date">2024 - Present</div>
-                    <div class="client-highlight">🚀 <strong>5,600+ AI Agents & Automation Workflows</strong> | Global User Base | Built From Scratch</div>
+                    <h3 data-i18n="experience.founder.role">Founder, CEO & CTO</h3>
+                    <div class="company" data-i18n="experience.founder.company">AI Waverider — AI Automation Platform</div>
+                    <div class="date" data-i18n="experience.founder.date">2024 - Present</div>
+                    <div class="client-highlight" data-i18n-html="experience.founder.highlight">🚀 <strong>5,600+ AI Agents & Automation Workflows</strong> | Global User Base | Built From Scratch</div>
                     <div class="description">
-                        <p>Founded and built an AI-powered automation platform from the ground up while maintaining full-time employment at Accenture, demonstrating exceptional time management and entrepreneurial drive.</p>
+                        <p data-i18n="experience.founder.description">Founded and built an AI-powered automation platform from the ground up while maintaining full-time employment at Accenture, demonstrating exceptional time management and entrepreneurial drive.</p>
                         <ul>
-                            <li><strong>Product Vision & Strategy:</strong> Conceived, designed, and launched a platform offering 5,600+ free AI automation workflows and n8n templates for businesses worldwide</li>
-                            <li><strong>Full-Stack Development:</strong> Architected and built the entire platform solo—frontend (React/Vue), backend (Node.js/Python), database (PostgreSQL/Supabase), and cloud infrastructure (GCP, Docker, Coolify)</li>
-                            <li><strong>AI Integration:</strong> Integrated OpenAI GPT-4, Claude AI, LangChain, RAGs, and vector databases for intelligent automation agents</li>
-                            <li><strong>Business Operations:</strong> Handled all aspects: legal compliance (FTC regulations), payment processing (Paddle), marketing strategy, user acquisition, and customer support</li>
-                            <li><strong>Growth:</strong> Achieved organic growth through content marketing, SEO optimization, and social media presence building</li>
-                            <li><strong>Tech Stack:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS</li>
+                            <li data-i18n-html="experience.founder.points.vision"><strong>Product Vision & Strategy:</strong> Conceived, designed, and launched a platform offering 5,600+ free AI automation workflows and n8n templates for businesses worldwide</li>
+                            <li data-i18n-html="experience.founder.points.development"><strong>Full-Stack Development:</strong> Architected and built the entire platform solo—frontend (React/Vue), backend (Node.js/Python), database (PostgreSQL/Supabase), and cloud infrastructure (GCP, Docker, Coolify)</li>
+                            <li data-i18n-html="experience.founder.points.ai"><strong>AI Integration:</strong> Integrated OpenAI GPT-4, Claude AI, LangChain, RAGs, and vector databases for intelligent automation agents</li>
+                            <li data-i18n-html="experience.founder.points.operations"><strong>Business Operations:</strong> Handled all aspects: legal compliance (FTC regulations), payment processing (Paddle), marketing strategy, user acquisition, and customer support</li>
+                            <li data-i18n-html="experience.founder.points.growth"><strong>Growth:</strong> Achieved organic growth through content marketing, SEO optimization, and social media presence building</li>
+                            <li data-i18n-html="experience.founder.points.techStack"><strong>Tech Stack:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- ACCENTURE -->
                 <div class="experience-item">
-                    <h3>Senior Software Developer & Digital Transformation Consultant</h3>
-                    <div class="company">Accenture GmbH, Germany</div>
-                    <div class="date">August 2022 - Present</div>
-                    <div class="client-highlight">🏦 <strong>Fortune 500 Clients:</strong> Major German banks (real-time payment systems) & premium automotive OEMs (supply chain digitalization)</div>
+                    <h3 data-i18n="experience.accenture.role">Senior Software Developer & Digital Transformation Consultant</h3>
+                    <div class="company" data-i18n="experience.accenture.company">Accenture GmbH, Germany</div>
+                    <div class="date" data-i18n="experience.accenture.date">August 2022 - Present</div>
+                    <div class="client-highlight" data-i18n-html="experience.accenture.highlight">🏦 <strong>Fortune 500 Clients:</strong> Major German banks (real-time payment systems) & premium automotive OEMs (supply chain digitalization)</div>
                     <div class="description">
-                        <p>Leading digital transformation initiatives for Germany's most prestigious financial institutions and automotive manufacturers, delivering enterprise-grade solutions that process millions of transactions.</p>
+                        <p data-i18n="experience.accenture.description">Leading digital transformation initiatives for Germany's most prestigious financial institutions and automotive manufacturers, delivering enterprise-grade solutions that process millions of transactions.</p>
                         <ul>
-                            <li><strong>Cloud-Native Architecture:</strong> Architected and implemented microservices using Spring Boot 3.x, Java 17/21 for high-volume real-time payment processing systems handling 100K+ daily transactions</li>
-                            <li><strong>Platform Engineering:</strong> Deployed and managed applications on OpenShift & Google Cloud Platform with 99.9% uptime SLA, implementing comprehensive CI/CD pipelines with Jenkins and GitLab</li>
-                            <li><strong>Legacy Modernization:</strong> Led monolith-to-microservices migration for banking client, reducing deployment time by 60% and enabling continuous delivery practices</li>
-                            <li><strong>Automotive Digitalization:</strong> Optimized supply chain management systems for premium OEM, increasing operational efficiency by 35% through intelligent automation</li>
-                            <li><strong>AI Innovation:</strong> Won global Accenture AI hackathon by integrating Azure OpenAI services into enterprise workflows, demonstrating practical AI applications for Fortune 500 clients</li>
-                            <li><strong>Global Coordination:</strong> Managed offshore development teams across 3 time zones (Germany, India, UK), ensuring seamless collaboration and on-time delivery</li>
-                            <li><strong>Technical Leadership:</strong> Mentored junior developers, conducted code reviews, and established best practices for microservices development</li>
+                            <li data-i18n-html="experience.accenture.points.architecture"><strong>Cloud-Native Architecture:</strong> Architected and implemented microservices using Spring Boot 3.x, Java 17/21 for high-volume real-time payment processing systems handling 100K+ daily transactions</li>
+                            <li data-i18n-html="experience.accenture.points.platform"><strong>Platform Engineering:</strong> Deployed and managed applications on OpenShift & Google Cloud Platform with 99.9% uptime SLA, implementing comprehensive CI/CD pipelines with Jenkins and GitLab</li>
+                            <li data-i18n-html="experience.accenture.points.modernization"><strong>Legacy Modernization:</strong> Led monolith-to-microservices migration for banking client, reducing deployment time by 60% and enabling continuous delivery practices</li>
+                            <li data-i18n-html="experience.accenture.points.automotive"><strong>Automotive Digitalization:</strong> Optimized supply chain management systems for premium OEM, increasing operational efficiency by 35% through intelligent automation</li>
+                            <li data-i18n-html="experience.accenture.points.ai"><strong>AI Innovation:</strong> Won global Accenture AI hackathon by integrating Azure OpenAI services into enterprise workflows, demonstrating practical AI applications for Fortune 500 clients</li>
+                            <li data-i18n-html="experience.accenture.points.coordination"><strong>Global Coordination:</strong> Managed offshore development teams across 3 time zones (Germany, India, UK), ensuring seamless collaboration and on-time delivery</li>
+                            <li data-i18n-html="experience.accenture.points.leadership"><strong>Technical Leadership:</strong> Mentored junior developers, conducted code reviews, and established best practices for microservices development</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- SCOPELAND -->
                 <div class="experience-item">
-                    <h3>Application Developer</h3>
-                    <div class="company">Scopeland Technology GmbH, Germany</div>
-                    <div class="date">May 2022 - July 2022</div>
+                    <h3 data-i18n="experience.scopeland.role">Application Developer</h3>
+                    <div class="company" data-i18n="experience.scopeland.company">Scopeland Technology GmbH, Germany</div>
+                    <div class="date" data-i18n="experience.scopeland.date">May 2022 - July 2022</div>
                     <div class="description">
-                        <p>Developed enterprise applications using Low Code platforms for rapid delivery of business solutions.</p>
+                        <p data-i18n="experience.scopeland.description">Developed enterprise applications using Low Code platforms for rapid delivery of business solutions.</p>
                         <ul>
-                            <li><strong>SQL Optimization:</strong> Analyzed and optimized complex database queries, achieving 40% performance improvement in data retrieval operations</li>
-                            <li><strong>Low Code Development:</strong> Built dynamic business applications using proprietary Low Code platform, accelerating development cycles by 50%</li>
-                            <li><strong>Database Design:</strong> Designed efficient database schemas and implemented stored procedures for complex business logic</li>
-                            <li><strong>Client Collaboration:</strong> Worked directly with clients to gather requirements and translate business needs into technical solutions</li>
+                            <li data-i18n-html="experience.scopeland.points.sql"><strong>SQL Optimization:</strong> Analyzed and optimized complex database queries, achieving 40% performance improvement in data retrieval operations</li>
+                            <li data-i18n-html="experience.scopeland.points.lowCode"><strong>Low Code Development:</strong> Built dynamic business applications using proprietary Low Code platform, accelerating development cycles by 50%</li>
+                            <li data-i18n-html="experience.scopeland.points.database"><strong>Database Design:</strong> Designed efficient database schemas and implemented stored procedures for complex business logic</li>
+                            <li data-i18n-html="experience.scopeland.points.collaboration"><strong>Client Collaboration:</strong> Worked directly with clients to gather requirements and translate business needs into technical solutions</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- INNOCEAN -->
                 <div class="experience-item">
-                    <h3>IT Infrastructure Specialist</h3>
-                    <div class="company">Innocean Worldwide Europe GmbH, Germany</div>
-                    <div class="date">March 2020 - March 2022</div>
+                    <h3 data-i18n="experience.innocean.role">IT Infrastructure Specialist</h3>
+                    <div class="company" data-i18n="experience.innocean.company">Innocean Worldwide Europe GmbH, Germany</div>
+                    <div class="date" data-i18n="experience.innocean.date">March 2020 - March 2022</div>
                     <div class="description">
-                        <p>Managed complete IT infrastructure for European headquarters of global advertising agency, ensuring seamless operations for 89 employees across multiple departments.</p>
+                        <p data-i18n="experience.innocean.description">Managed complete IT infrastructure for European headquarters of global advertising agency, ensuring seamless operations for 89 employees across multiple departments.</p>
                         <ul>
-                            <li><strong>Infrastructure Management:</strong> Full responsibility for IT operations serving 89 employees, maintaining 99.8% system uptime</li>
-                            <li><strong>Windows Migration:</strong> Led successful Windows 10 enterprise migration with comprehensive security hardening and zero business disruption</li>
-                            <li><strong>Active Directory:</strong> Administered AD environment including user management, Group Policies, and security configurations</li>
-                            <li><strong>Network Administration:</strong> Managed network infrastructure, VPN configurations, and firewall rules for secure remote access</li>
-                            <li><strong>Vendor Management:</strong> Coordinated with external vendors for hardware procurement, software licensing, and support contracts</li>
-                            <li><strong>Documentation:</strong> Created comprehensive IT documentation and user guides, reducing support tickets by 30%</li>
+                            <li data-i18n-html="experience.innocean.points.infrastructure"><strong>Infrastructure Management:</strong> Full responsibility for IT operations serving 89 employees, maintaining 99.8% system uptime</li>
+                            <li data-i18n-html="experience.innocean.points.windows"><strong>Windows Migration:</strong> Led successful Windows 10 enterprise migration with comprehensive security hardening and zero business disruption</li>
+                            <li data-i18n-html="experience.innocean.points.ad"><strong>Active Directory:</strong> Administered AD environment including user management, Group Policies, and security configurations</li>
+                            <li data-i18n-html="experience.innocean.points.network"><strong>Network Administration:</strong> Managed network infrastructure, VPN configurations, and firewall rules for secure remote access</li>
+                            <li data-i18n-html="experience.innocean.points.vendor"><strong>Vendor Management:</strong> Coordinated with external vendors for hardware procurement, software licensing, and support contracts</li>
+                            <li data-i18n-html="experience.innocean.points.documentation"><strong>Documentation:</strong> Created comprehensive IT documentation and user guides, reducing support tickets by 30%</li>
                         </ul>
                     </div>
                 </div>
 
                 <!-- BMG -->
                 <div class="experience-item">
-                    <h3>Global IT Support Specialist</h3>
-                    <div class="company">BMG Rights Management GmbH, Germany</div>
-                    <div class="date">July 2018 - January 2020</div>
+                    <h3 data-i18n="experience.bmg.role">Global IT Support Specialist</h3>
+                    <div class="company" data-i18n="experience.bmg.company">BMG Rights Management GmbH, Germany</div>
+                    <div class="date" data-i18n="experience.bmg.date">July 2018 - January 2020</div>
                     <div class="description">
-                        <p>Provided enterprise IT support for global music rights management company, supporting users across 6 countries and multiple time zones.</p>
+                        <p data-i18n="experience.bmg.description">Provided enterprise IT support for global music rights management company, supporting users across 6 countries and multiple time zones.</p>
                         <ul>
-                            <li><strong>International Support:</strong> Delivered IT support across 6 countries (USA, UK, Spain, Sweden, Netherlands, France) in English and German</li>
-                            <li><strong>Enterprise Systems:</strong> Administered SCCM for software deployment, managed Active Directory for 500+ users across global offices</li>
-                            <li><strong>Identity Management:</strong> Implemented and managed OKTA SSO integration, streamlining authentication across 20+ enterprise applications</li>
-                            <li><strong>Collaboration Tools:</strong> Administered JIRA, Confluence, and Office 365 environments, optimizing workflows for creative and business teams</li>
-                            <li><strong>User Training:</strong> Conducted training sessions for new systems and tools, improving user adoption rates by 40%</li>
-                            <li><strong>Incident Management:</strong> Managed ServiceNow ticketing system, achieving 95% first-call resolution rate</li>
+                            <li data-i18n-html="experience.bmg.points.international"><strong>International Support:</strong> Delivered IT support across 6 countries (USA, UK, Spain, Sweden, Netherlands, France) in English and German</li>
+                            <li data-i18n-html="experience.bmg.points.enterprise"><strong>Enterprise Systems:</strong> Administered SCCM for software deployment, managed Active Directory for 500+ users across global offices</li>
+                            <li data-i18n-html="experience.bmg.points.identity"><strong>Identity Management:</strong> Implemented and managed OKTA SSO integration, streamlining authentication across 20+ enterprise applications</li>
+                            <li data-i18n-html="experience.bmg.points.collaboration"><strong>Collaboration Tools:</strong> Administered JIRA, Confluence, and Office 365 environments, optimizing workflows for creative and business teams</li>
+                            <li data-i18n-html="experience.bmg.points.training"><strong>User Training:</strong> Conducted training sessions for new systems and tools, improving user adoption rates by 40%</li>
+                            <li data-i18n-html="experience.bmg.points.incident"><strong>Incident Management:</strong> Managed ServiceNow ticketing system, achieving 95% first-call resolution rate</li>
                         </ul>
                     </div>
                 </div>
@@ -350,142 +362,165 @@
 
             <!-- EDUCATION -->
             <div class="section" id="education">
-                <h2><i class="fas fa-graduation-cap"></i> Education (German Universities)</h2>
+                <h2><i class="fas fa-graduation-cap"></i> <span data-i18n="education.title">Education (German Universities)</span></h2>
                 <div class="education-item">
-                    <h3>B.Sc. Applied Computer Science (Angewandte Informatik)</h3>
-                    <div class="institution">HTW Berlin - University of Applied Sciences</div>
-                    <div class="date">2017 - 2022</div>
+                    <h3 data-i18n="education.htw.degree">B.Sc. Applied Computer Science (Angewandte Informatik)</h3>
+                    <div class="institution" data-i18n="education.htw.institution">HTW Berlin - University of Applied Sciences</div>
+                    <div class="date" data-i18n="education.htw.date">2017 - 2022</div>
                     <div class="description">
-                        <p><strong>Thesis:</strong> "Design and Implementation of a Microservices Architecture for Healthcare Applications" — Developed a scalable healthcare platform using Docker containerization, RESTful APIs, Django backend, and PostgreSQL database. Implemented HIPAA-compliant security measures and automated testing pipelines.</p>
-                        <p><strong>Grade:</strong> 2.4 (Good) | <strong>Focus Areas:</strong> Software Engineering, Database Systems, Web Technologies, Cloud Computing</p>
+                        <p data-i18n-html="education.htw.thesis"><strong>Thesis:</strong> "Design and Implementation of a Microservices Architecture for Healthcare Applications" — Developed a scalable healthcare platform using Docker containerization, RESTful APIs, Django backend, and PostgreSQL database. Implemented HIPAA-compliant security measures and automated testing pipelines.</p>
+                        <p data-i18n-html="education.htw.grade"><strong>Grade:</strong> 2.4 (Good) | <strong>Focus Areas:</strong> Software Engineering, Database Systems, Web Technologies, Cloud Computing</p>
                     </div>
                 </div>
                 <div class="education-item">
-                    <h3>Industrial Engineering (Wirtschaftsingenieurwesen)</h3>
-                    <div class="institution">Technical University Berlin (TU Berlin)</div>
-                    <div class="date">2012 - 2017</div>
+                    <h3 data-i18n="education.tu.degree">Industrial Engineering (Wirtschaftsingenieurwesen)</h3>
+                    <div class="institution" data-i18n="education.tu.institution">Technical University Berlin (TU Berlin)</div>
+                    <div class="date" data-i18n="education.tu.date">2012 - 2017</div>
                     <div class="description">
-                        <p>TU Berlin is a <strong>TU9 member</strong>—Germany's alliance of leading technical universities, ranked among the top engineering schools in Europe.</p>
-                        <p><strong>Focus:</strong> Engineering fundamentals combined with Business Administration, Operations Research, and Production Management. This dual perspective enables me to understand both technical implementation and business value.</p>
+                        <p data-i18n-html="education.tu.description1">TU Berlin is a <strong>TU9 member</strong>—Germany's alliance of leading technical universities, ranked among the top engineering schools in Europe.</p>
+                        <p data-i18n-html="education.tu.description2"><strong>Focus:</strong> Engineering fundamentals combined with Business Administration, Operations Research, and Production Management. This dual perspective enables me to understand both technical implementation and business value.</p>
                     </div>
                 </div>
             </div>
 
             <!-- CERTIFICATIONS -->
             <div class="section" id="certifications">
-                <h2><i class="fas fa-certificate"></i> Certifications</h2>
+                <h2><i class="fas fa-certificate"></i> <span data-i18n="certifications.title">Certifications</span></h2>
                 <div class="cert-grid">
                     <div class="cert-item featured">
-                        <h4>🌟 Google Associate Cloud Engineer</h4>
-                        <div class="date">December 2024</div>
-                        <div class="description">Validated expertise in GCP services including Compute Engine, Kubernetes Engine, Cloud Storage, IAM security policies, and monitoring with Cloud Operations Suite</div>
+                        <h4 data-i18n="certifications.gcp.name">🌟 Google Associate Cloud Engineer</h4>
+                        <div class="date" data-i18n="certifications.gcp.date">December 2024</div>
+                        <div class="description" data-i18n="certifications.gcp.description">Validated expertise in GCP services including Compute Engine, Kubernetes Engine, Cloud Storage, IAM security policies, and monitoring with Cloud Operations Suite</div>
                     </div>
                     <div class="cert-item">
-                        <h4>🚀 Accenture Jump Start Program</h4>
-                        <div class="date">August 2022</div>
-                        <div class="description">Intensive enterprise architecture and consulting methodology training. Focus on client engagement, solution design, and delivery excellence</div>
+                        <h4 data-i18n="certifications.accenture.name">🚀 Accenture Jump Start Program</h4>
+                        <div class="date" data-i18n="certifications.accenture.date">August 2022</div>
+                        <div class="description" data-i18n="certifications.accenture.description">Intensive enterprise architecture and consulting methodology training. Focus on client engagement, solution design, and delivery excellence</div>
                     </div>
                     <div class="cert-item">
-                        <h4>🐍 Advanced Django Development</h4>
-                        <div class="date">May 2021</div>
-                        <div class="description">Full-stack Python development with Django REST Framework, authentication systems, database optimization, and deployment strategies</div>
+                        <h4 data-i18n="certifications.django.name">🐍 Advanced Django Development</h4>
+                        <div class="date" data-i18n="certifications.django.date">May 2021</div>
+                        <div class="description" data-i18n="certifications.django.description">Full-stack Python development with Django REST Framework, authentication systems, database optimization, and deployment strategies</div>
                     </div>
                     <div class="cert-item">
-                        <h4>🧪 Test-Driven Development</h4>
-                        <div class="date">May 2021</div>
-                        <div class="description">TDD methodology, unit testing best practices, integration testing, and continuous integration pipeline setup</div>
+                        <h4 data-i18n="certifications.tdd.name">🧪 Test-Driven Development</h4>
+                        <div class="date" data-i18n="certifications.tdd.date">May 2021</div>
+                        <div class="description" data-i18n="certifications.tdd.description">TDD methodology, unit testing best practices, integration testing, and continuous integration pipeline setup</div>
                     </div>
                     <div class="cert-item">
-                        <h4>💻 Full Stack Web Development</h4>
-                        <div class="date">February 2021</div>
-                        <div class="description">Comprehensive training in React.js, Node.js, Express, MongoDB, and modern JavaScript development practices</div>
+                        <h4 data-i18n="certifications.fullstack.name">💻 Full Stack Web Development</h4>
+                        <div class="date" data-i18n="certifications.fullstack.date">February 2021</div>
+                        <div class="description" data-i18n="certifications.fullstack.description">Comprehensive training in React.js, Node.js, Express, MongoDB, and modern JavaScript development practices</div>
                     </div>
                     <div class="cert-item">
-                        <h4>🗄️ Advanced SQL Programming</h4>
-                        <div class="date">March 2018</div>
-                        <div class="description">Complex query optimization, stored procedures, database design patterns, and performance tuning</div>
+                        <h4 data-i18n="certifications.sql.name">🗄️ Advanced SQL Programming</h4>
+                        <div class="date" data-i18n="certifications.sql.date">March 2018</div>
+                        <div class="description" data-i18n="certifications.sql.description">Complex query optimization, stored procedures, database design patterns, and performance tuning</div>
                     </div>
                 </div>
             </div>
 
             <!-- SKILLS -->
             <div class="section" id="skills">
-                <h2><i class="fas fa-code"></i> Technical Expertise</h2>
-                <input type="text" class="skill-filter" placeholder="🔍 Filter skills (try: Java, Cloud, AI...)" onkeyup="filterSkills(this.value)">
+                <h2><i class="fas fa-code"></i> <span data-i18n="skills.title">Technical Expertise</span></h2>
+                <input type="text" class="skill-filter" data-i18n="skills.filterPlaceholder" data-i18n-placeholder="skills.filterPlaceholder" placeholder="🔍 Filter skills (try: Java, Cloud, AI...)" onkeyup="filterSkills(this.value)">
                 <div class="skills-grid">
                     <div class="skill-category">
-                        <h4>Programming Languages</h4>
-                        <span class="skill-tag">Java 17/21</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">TypeScript</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Bash</span>
+                        <h4 data-i18n="skills.categories.programming">Programming Languages</h4>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.0">Java 17/21</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.1">Python</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.2">JavaScript</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.3">TypeScript</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.4">Node.js</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.5">SQL</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.6">Bash</span>
                     </div>
                     <div class="skill-category">
-                        <h4>Frameworks & Libraries</h4>
-                        <span class="skill-tag">Spring Boot 3.x</span>
-                        <span class="skill-tag">Microservices</span>
-                        <span class="skill-tag">Django</span>
-                        <span class="skill-tag">Vue.js 3</span>
-                        <span class="skill-tag">React.js</span>
-                        <span class="skill-tag">REST APIs</span>
-                        <span class="skill-tag">GraphQL</span>
+                        <h4 data-i18n="skills.categories.frameworks">Frameworks & Libraries</h4>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.0">Spring Boot 3.x</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.1">Microservices</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.2">Django</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.3">Vue.js 3</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.4">React.js</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.5">REST APIs</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.6">GraphQL</span>
                     </div>
                     <div class="skill-category">
-                        <h4>Cloud & DevOps</h4>
-                        <span class="skill-tag">GCP (Certified)</span>
-                        <span class="skill-tag">Azure</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">OpenShift</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">Kubernetes</span>
-                        <span class="skill-tag">CI/CD</span>
-                        <span class="skill-tag">Coolify</span>
-                        <span class="skill-tag">Nginx</span>
-                        <span class="skill-tag">Linux/VPS</span>
+                        <h4 data-i18n="skills.categories.cloud">Cloud & DevOps</h4>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.0">GCP (Certified)</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.1">Azure</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.2">AWS</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.3">OpenShift</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.4">Docker</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.5">Kubernetes</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.6">CI/CD</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.7">Coolify</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.8">Nginx</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.9">Linux/VPS</span>
                     </div>
                     <div class="skill-category gold-border">
-                        <h4>AI & Automation</h4>
-                        <span class="skill-tag ai">OpenAI GPT</span>
-                        <span class="skill-tag ai">Claude AI</span>
-                        <span class="skill-tag ai">Azure OpenAI</span>
-                        <span class="skill-tag ai">n8n Workflows</span>
-                        <span class="skill-tag ai">RAGs</span>
-                        <span class="skill-tag ai">AI Agents</span>
-                        <span class="skill-tag ai">LangChain</span>
+                        <h4 data-i18n="skills.categories.ai">AI & Automation</h4>
+                        <span class="skill-tag ai" data-i18n="skills.tags.ai.0">OpenAI GPT</span>
+                        <span class="skill-tag ai" data-i18n="skills.tags.ai.1">Claude AI</span>
+                        <span class="skill-tag ai" data-i18n="skills.tags.ai.2">Azure OpenAI</span>
+                        <span class="skill-tag ai" data-i18n="skills.tags.ai.3">n8n Workflows</span>
+                        <span class="skill-tag ai" data-i18n="skills.tags.ai.4">RAGs</span>
+                        <span class="skill-tag ai" data-i18n="skills.tags.ai.5">AI Agents</span>
+                        <span class="skill-tag ai" data-i18n="skills.tags.ai.6">LangChain</span>
                     </div>
                     <div class="skill-category">
-                        <h4>Databases & Storage</h4>
-                        <span class="skill-tag">PostgreSQL</span>
-                        <span class="skill-tag">MySQL</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">Redis</span>
-                        <span class="skill-tag">Firebase</span>
-                        <span class="skill-tag">Supabase</span>
-                        <span class="skill-tag">Vector DBs</span>
+                        <h4 data-i18n="skills.categories.databases">Databases & Storage</h4>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.0">PostgreSQL</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.1">MySQL</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.2">MongoDB</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.3">Redis</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.4">Firebase</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.5">Supabase</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.6">Vector DBs</span>
                     </div>
                     <div class="skill-category">
-                        <h4>Domain & Leadership</h4>
-                        <span class="skill-tag">Finance & Banking</span>
-                        <span class="skill-tag">Automotive</span>
-                        <span class="skill-tag">Agile/Scrum</span>
-                        <span class="skill-tag">Team Leadership</span>
-                        <span class="skill-tag">Offshore Coordination</span>
-                        <span class="skill-tag">Consulting</span>
+                        <h4 data-i18n="skills.categories.domain">Domain & Leadership</h4>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.0">Finance & Banking</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.1">Automotive</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.2">Agile/Scrum</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.3">Team Leadership</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.4">Offshore Coordination</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.5">Consulting</span>
                     </div>
                 </div>
             </div>
 
             <!-- LANGUAGES -->
             <div class="section">
-                <h2><i class="fas fa-globe"></i> Languages</h2>
+                <h2><i class="fas fa-globe"></i> <span data-i18n="languages.title">Languages</span></h2>
+                <p class="lang-hint" style="font-size: 0.85em; color: var(--text-light); margin-bottom: 15px; font-style: italic;" data-i18n-html="languages.hint">
+                    <i class="fas fa-mouse-pointer"></i> Click on a language to change the website language
+                </p>
                 <div class="languages">
-                    <div class="language"><div class="flag"><img src="https://flagcdn.com/w40/de.png" alt="German flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇩🇪';"></div><div class="lang-name">German</div><div class="lang-level">Fluent • 15+ years</div></div>
-                    <div class="language"><div class="flag"><img src="https://flagcdn.com/w40/gb.png" alt="English flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇬🇧';"></div><div class="lang-name">English</div><div class="lang-level">Fluent • Business</div></div>
-                    <div class="language"><div class="flag"><img src="https://flagcdn.com/w40/sa.png" alt="Arabic flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇸🇦';"></div><div class="lang-name">Arabic</div><div class="lang-level">Fluent • Native</div></div>
-                    <div class="language"><div class="flag"><img src="https://flagcdn.com/w40/es.png" alt="Spanish flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇪🇸';"></div><div class="lang-name">Spanish</div><div class="lang-level">Conversational (B1)</div></div>
+                    <div class="language clickable-lang" onclick="changeLanguage('de')" data-lang="de" title="Click to switch to German">
+                        <div class="flag"><img src="https://flagcdn.com/w40/de.png" alt="German flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇩🇪';"></div>
+                        <div class="lang-name" data-i18n="languages.german.name">German</div>
+                        <div class="lang-level" data-i18n="languages.german.level">Fluent • 15+ years</div>
+                        <div class="lang-click-indicator"><i class="fas fa-hand-pointer"></i></div>
+                    </div>
+                    <div class="language clickable-lang" onclick="changeLanguage('en')" data-lang="en" title="Click to switch to English">
+                        <div class="flag"><img src="https://flagcdn.com/w40/gb.png" alt="English flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇬🇧';"></div>
+                        <div class="lang-name" data-i18n="languages.english.name">English</div>
+                        <div class="lang-level" data-i18n="languages.english.level">Fluent • Business</div>
+                        <div class="lang-click-indicator"><i class="fas fa-hand-pointer"></i></div>
+                    </div>
+                    <div class="language clickable-lang" onclick="changeLanguage('ar')" data-lang="ar" title="Click to switch to Arabic">
+                        <div class="flag"><img src="https://flagcdn.com/w40/sa.png" alt="Arabic flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇸🇦';"></div>
+                        <div class="lang-name" data-i18n="languages.arabic.name">Arabic</div>
+                        <div class="lang-level" data-i18n="languages.arabic.level">Fluent • Native</div>
+                        <div class="lang-click-indicator"><i class="fas fa-hand-pointer"></i></div>
+                    </div>
+                    <div class="language clickable-lang" onclick="changeLanguage('es')" data-lang="es" title="Click to switch to Spanish">
+                        <div class="flag"><img src="https://flagcdn.com/w40/es.png" alt="Spanish flag" onerror="this.style.display='none'; this.parentElement.innerHTML='🇪🇸';"></div>
+                        <div class="lang-name" data-i18n="languages.spanish.name">Spanish</div>
+                        <div class="lang-level" data-i18n="languages.spanish.level">Conversational (B1)</div>
+                        <div class="lang-click-indicator"><i class="fas fa-hand-pointer"></i></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -499,29 +534,29 @@
         <a href="https://wa.me/4915906455476" target="_blank"><i class="fab fa-whatsapp"></i></a>
         <a href="https://www.aiwaverider.com" target="_blank"><i class="fas fa-globe"></i></a>
     </div>
-    <p>© 2025 Sakhr AL-Absi | 🇩🇪 German Citizen • 15+ Years in Germany | Founder, CEO & CTO of AI Waverider | Ready for Dubai 🇦🇪</p>
+    <p data-i18n="footer.text">© 2025 Sakhr AL-Absi | 🇩🇪 German Citizen • 15+ Years in Germany | Founder, CEO & CTO of AI Waverider | Ready for Dubai 🇦🇪</p>
 </footer>
 
 <!-- AI CHAT WIDGET -->
 <div class="ai-widget-container">
     <div class="ai-chat-box" id="aiChat">
         <div class="chat-header">
-            <div class="chat-header-title"><i class="fas fa-robot"></i> Ask About Sakhr</div>
-            <span class="chat-close" onclick="toggleAI()">✕</span>
+            <div class="chat-header-title"><i class="fas fa-robot"></i> <span data-i18n="aiChat.title">Ask About Sakhr</span></div>
+            <span class="chat-close" onclick="toggleAI()" data-i18n="aiChat.close">✕</span>
         </div>
         <div class="chat-msgs" id="chatBody">
-            <div class="msg-bubble msg-bot welcome-msg">👋 <strong>Hello!</strong> I can tell you about Sakhr—a <strong>German citizen</strong>, <strong>Founder/CEO/CTO of AI Waverider</strong>, with 15+ years in Germany, relocating to Dubai.<br><br>Ask about his skills or use <strong>Job Match</strong>!</div>
+            <div class="msg-bubble msg-bot welcome-msg" data-i18n-html="aiChat.welcome">👋 <strong>Hello!</strong> I can tell you about Sakhr—a <strong>German citizen</strong>, <strong>Founder/CEO/CTO of AI Waverider</strong>, with 15+ years in Germany, relocating to Dubai.<br><br>Ask about his skills or use <strong>Job Match</strong>!</div>
         </div>
         <div class="chat-suggestions" id="chatSuggestions">
-            <button class="suggestion-btn" onclick="handleSuggestion('background')"><i class="fas fa-user"></i> Background</button>
-            <button class="suggestion-btn" onclick="handleSuggestion('founder')"><i class="fas fa-rocket"></i> AI Waverider</button>
-            <button class="suggestion-btn" onclick="handleSuggestion('dubai')"><i class="fas fa-plane"></i> Why Dubai?</button>
-            <button class="suggestion-btn" onclick="handleSuggestion('interview')"><i class="fas fa-calendar"></i> Contact</button>
-            <button class="suggestion-btn special" onclick="showJobMatch()"><i class="fas fa-magic"></i> Job Match</button>
+            <button class="suggestion-btn" onclick="handleSuggestion('background')" data-suggestion="background"><i class="fas fa-user"></i> <span data-i18n="aiChat.suggestions.background">Background</span></button>
+            <button class="suggestion-btn" onclick="handleSuggestion('founder')" data-suggestion="founder"><i class="fas fa-rocket"></i> <span data-i18n="aiChat.suggestions.founder">AI Waverider</span></button>
+            <button class="suggestion-btn" onclick="handleSuggestion('dubai')" data-suggestion="dubai"><i class="fas fa-plane"></i> <span data-i18n="aiChat.suggestions.dubai">Why Dubai?</span></button>
+            <button class="suggestion-btn" onclick="handleSuggestion('interview')" data-suggestion="contact"><i class="fas fa-calendar"></i> <span data-i18n="aiChat.suggestions.contact">Contact</span></button>
+            <button class="suggestion-btn special" onclick="showJobMatch()" data-suggestion="jobMatch"><i class="fas fa-magic"></i> <span data-i18n="aiChat.suggestions.jobMatch">Job Match</span></button>
         </div>
         <div class="chat-input-container">
             <div class="chat-input-wrapper">
-                <input type="text" id="aiInput" class="chat-input" placeholder="Ask about Sakhr..." onkeypress="if(event.key==='Enter')sendAIMessage()">
+                <input type="text" id="aiInput" class="chat-input" data-i18n="aiChat.placeholder" placeholder="Ask about Sakhr..." onkeypress="if(event.key==='Enter')sendAIMessage()">
                 <button onclick="sendAIMessage()" class="chat-send-btn"><i class="fas fa-paper-plane"></i></button>
             </div>
         </div>
@@ -529,6 +564,7 @@
     <button class="ai-btn-pulse" onclick="toggleAI()"><i class="fas fa-comment-dots"></i></button>
 </div>
 
+<script src="js/translations.js"></script>
 <script src="js/utils.js"></script>
 <script src="js/game.js"></script>
 <script src="js/pdf-generator.js"></script>
