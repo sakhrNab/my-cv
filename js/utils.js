@@ -33,7 +33,7 @@ function handleTerminalInput(e) {
     let output = '';
     switch (cmd) {
         case 'help':
-            output = 'Commands: help, skills, contact, experience, education, aiwaverider, founder, download, clear';
+            output = 'Commands: help, play, chat, skills, contact, experience, education, aiwaverider, founder, download, clear<br>Type "chat [message]" to talk with AI';
             break;
         case 'skills':
             output = 'Java • Spring Boot • Python • GCP • Docker • K8s • OpenAI • n8n • React • Vue.js';
@@ -55,11 +55,42 @@ function handleTerminalInput(e) {
             output = 'Generating CV... ✓';
             setTimeout(() => generatePDF(), 500);
             break;
+        case 'play':
+        case 'game':
+            output = 'Starting game...';
+            setTimeout(() => Game.start(), 500);
+            break;
+        case 'chat':
+        case 'ai':
+            output = 'Opening AI chat...';
+            setTimeout(() => {
+                toggleAI();
+                const aiInput = document.getElementById('aiInput');
+                if (aiInput) {
+                    aiInput.focus();
+                    document.getElementById('aiChat').scrollIntoView({behavior: 'smooth', block: 'nearest'});
+                }
+            }, 300);
+            break;
         case 'clear':
             body.innerHTML = `<div class="terminal-input-line"><span class="terminal-prompt">sakhr@dubai:~$</span>&nbsp;<input type="text" class="terminal-input" id="terminalInput" placeholder="Type 'help'..." onkeypress="handleTerminalInput(event)"><span class="terminal-cursor">▋</span></div>`;
             return;
         default:
-            output = `Command not found: ${cmd}. Type 'help' for available commands.`;
+            // Check if it's a chat command with message
+            if (cmd.startsWith('chat ') || cmd.startsWith('ai ')) {
+                const query = cmd.substring(cmd.indexOf(' ') + 1);
+                output = `Opening AI chat with: "${query}"...`;
+                setTimeout(() => {
+                    toggleAI();
+                    const aiInput = document.getElementById('aiInput');
+                    if (aiInput) {
+                        aiInput.value = query;
+                        sendAIMessage();
+                    }
+                }, 500);
+            } else {
+                output = `Command not found: ${cmd}. Type 'help' for available commands.`;
+            }
     }
     const outputDiv = document.createElement('div');
     outputDiv.className = 'terminal-line terminal-output';

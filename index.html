@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sakhr AL-Absi | German Citizen → Dubai | Senior Software Engineer & Founder</title>
     <meta name="description" content="German citizen & Senior Software Engineer with 15+ years in Germany. Founder of AI Waverider. 7+ years enterprise experience. Relocating to Dubai.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -51,6 +52,7 @@
             <li><a href="#vision">Vision</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#skills">Skills</a></li>
+            <li><a href="./assets/certs/all-certifications.zip" download class="nav-btn-secondary"><i class="fas fa-certificate"></i> Certs</a></li>
             <li><button onclick="toggleTheme()" class="theme-toggle">🌙</button></li>
             <li><button onclick="generatePDF()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> Download CV</button></li>
         </ul>
@@ -60,7 +62,7 @@
 <div class="social-sidebar">
     <a href="https://github.com/sakhrNab" target="_blank" class="social-link github"><i class="fab fa-github"></i></a>
     <a href="https://www.linkedin.com/in/sakhr-nabil-al-absi" target="_blank" class="social-link linkedin"><i class="fab fa-linkedin-in"></i></a>
-    <a href="mailto:sakhr270@gmail.com" class="social-link email"><i class="fas fa-envelope"></i></a>
+    <a href="mailto:sakhr270@gmail.com?subject=Job%20Opportunity%20Inquiry&body=Dear%20Sakhr%20AL-Absi,%0D%0A%0D%0AI%20came%20across%20your%20CV%20and%20I'm%20impressed%20by%20your%20expertise%20as%20a%20Senior%20Software%20Engineer%20and%20AI%20Solutions%20Architect.%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0APlease%20let%20me%20know%20your%20availability%20for%20a%20conversation.%0D%0A%0D%0ABest%20regards,%0D%0A[Your%20Name]%0D%0A[Your%20Position]%0D%0A[Your%20Company]" class="social-link email"><i class="fas fa-envelope"></i></a>
     <a href="https://wa.me/4915906455476" target="_blank" class="social-link whatsapp"><i class="fab fa-whatsapp"></i></a>
     <a href="https://www.aiwaverider.com" target="_blank" class="social-link website"><i class="fas fa-globe"></i></a>
 </div>
@@ -74,6 +76,7 @@
             <span class="terminal-dot yellow"></span>
             <span class="terminal-dot green"></span>
             <span class="terminal-title">sakhr@dubai ~ bash</span>
+            <button class="terminal-close-btn" onclick="toggleTerminal()" title="Close terminal">✕</button>
         </div>
         <div class="terminal-body" id="terminalBody">
             <div class="terminal-line"><span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">whoami</span></div>
@@ -89,7 +92,7 @@
             <div class="terminal-line"><span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">echo $LANGUAGES</span></div>
             <div class="terminal-line terminal-output">German (C1) | English (C1) | Arabic (Native) | Spanish (B1)</div>
             <div class="terminal-line"><span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">cat status.txt</span></div>
-            <div class="terminal-line terminal-output" style="color:#0f0;">✓ Available Q1 2025 | Ready for Dubai 🇦🇪</div>
+            <div class="terminal-line terminal-output" style="color:#0f0;">✓ Available Q1 2026 | Ready for Dubai 🇦🇪</div>
             <div class="terminal-input-line">
                 <span class="terminal-prompt">sakhr@dubai:~$</span>&nbsp;
                 <input type="text" class="terminal-input" id="terminalInput" placeholder="Type 'help' for commands..." onkeypress="handleTerminalInput(event)">
@@ -100,54 +103,81 @@
 </div>
 
 <section class="hero" id="home">
-    <!-- Flag Journey with CORRECT UAE flag emoji -->
+    <div class="hero-container">
+        <!-- LEFT: Content -->
+        <div class="hero-content">
+            <!-- Flag Journey -->
     <div class="flag-journey">
         <span class="flag">🇩🇪</span>
         <div class="journey-line"><span class="plane-icon">✈️</span></div>
         <span class="flag">🇦🇪</span>
-    </div>
     <div class="journey-text">Berlin → Dubai</div>
-
-    <!-- German Badge - VISIBLE on dark purple background -->
-    <div class="german-badge">
-        🇩🇪 German Citizen • 15+ Years in Germany
     </div>
 
+            <!-- Headline -->
     <div class="hero-headline">
         <h1>German Engineer.<br><span class="highlight">Building the Future in Dubai.</span></h1>
+            </div>
+
+            <!-- Typing Text (Design 2) -->
+            <span class="typing-text" id="typing"></span>
+
+            <!-- Tagline -->
         <p class="hero-tagline"><strong>German Precision</strong> • <strong>Arabic Heritage</strong> • <strong>English Fluency</strong></p>
+
+            <!-- CTA Buttons -->
+            <div class="hero-cta">
+                <button onclick="generatePDF()" class="btn btn-primary"><i class="fas fa-file-download"></i> Download CV</button>
+                <a href="https://www.aiwaverider.com" target="_blank" class="btn btn-outline">🚀 AI Waverider</a>
     </div>
 
-    <div class="availability-badge">
-        <span class="dot"></span>
-        Available Q1 2025 • Open to Full-time, Contract & Hybrid
-    </div>
-
-    <div class="mega-stats">
-        <div class="mega-stat"><div class="mega-stat-number">15+</div><div class="mega-stat-label">Years in<br>Germany</div></div>
-        <div class="mega-stat"><div class="mega-stat-number">7+</div><div class="mega-stat-label">Corporate<br>Excellence</div></div>
-        <div class="mega-stat gold"><div class="mega-stat-number">11</div><div class="mega-stat-label">Apps Built<br>This Year</div></div>
-        <div class="mega-stat gold"><div class="mega-stat-number">5,600+</div><div class="mega-stat-label">AI Agents<br>Created</div></div>
-    </div>
-
+            <!-- Trust Bar (Moved here) -->
     <div class="trust-bar">
         <span class="trust-bar-label">Trusted by</span>
         <div class="trust-logos">
             <div class="trust-logo"><span class="trust-logo-icon">🏢</span><span class="trust-logo-name">ACCENTURE</span></div>
             <div class="trust-logo"><span class="trust-logo-icon">🎵</span><span class="trust-logo-name">BMG RIGHTS</span></div>
             <div class="trust-logo"><span class="trust-logo-icon">🚗</span><span class="trust-logo-name">INNOCEAN</span></div>
-            <div class="trust-logo"><span class="trust-logo-icon">🏦</span><span class="trust-logo-name">GERMAN BANKS</span></div>
-            <div class="trust-logo"><span class="trust-logo-icon">🚙</span><span class="trust-logo-name">AUTO OEMs</span></div>
+                    <div class="trust-logo"><span class="trust-logo-icon">🏦</span><span class="trust-logo-name">BANKS</span></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- RIGHT: Visual (Design 2) -->
+        <div class="hero-visual">
+            <div class="profile-card-3d">
+                <div class="profile-showcase" id="heroProfileImage">
+                    <img src="./assets/profilepic.jpg" alt="Sakhr" onerror="this.parentElement.innerHTML='👤'">
+                </div>
+                <h3>Sakhr AL-Absi</h3>
+                <span>Full Stack Architect</span>
+    </div>
+
+            <div class="mini-terminal" id="heroTerminal" onclick="document.getElementById('heroTermInput').focus()">
+                <div class="term-header">
+                    <div class="term-dot red"></div>
+                    <div class="term-dot yellow"></div>
+                    <div class="term-dot green"></div>
+                </div>
+                <div class="term-content" id="heroTermContent">
+                    <div>> initializing portfolio... OK</div>
+                    <div>> type "play" for a hidden game</div>
+                    <div>> status: <span style="color:#4ade80">Available Q1 2026</span></div>
+                </div>
+                <div class="cmd-line"><span>sakhr@dubai:~$</span><input type="text" id="heroTermInput" class="cmd-input" autocomplete="off" spellcheck="false"></div>
+            </div>
         </div>
     </div>
 
-    <div class="hero-cta">
-        <button onclick="Game.start()" class="btn btn-gold"><i class="fas fa-gamepad"></i> Play & Discover My Skills</button>
-        <button onclick="generatePDF()" class="btn btn-primary"><i class="fas fa-file-download"></i> Download CV</button>
-        <a href="https://www.aiwaverider.com" target="_blank" class="btn btn-outline">🚀 See AI Waverider</a>
+    <!-- Mega Stats (Full Width) -->
+    <div class="mega-stats">
+        <div class="mega-stat"><div class="mega-stat-number" data-target="15" data-suffix="+">0</div><div class="mega-stat-label">Years in<br>Germany</div></div>
+        <div class="mega-stat"><div class="mega-stat-number" data-target="7" data-suffix="+">0</div><div class="mega-stat-label">Corporate<br>Excellence</div></div>
+        <div class="mega-stat gold"><div class="mega-stat-number" data-target="11" data-suffix="">0</div><div class="mega-stat-label">Apps Built<br>This Year</div></div>
+        <div class="mega-stat gold"><div class="mega-stat-number" data-target="5600" data-suffix="+">0</div><div class="mega-stat-label">AI Agents<br>Created</div></div>
     </div>
 
-    <div class="scroll-indicator"><span>SCROLL DOWN</span><br><i class="fas fa-chevron-down"></i></div>
+    <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior:'smooth'})" style="cursor:pointer;"><span>SCROLL DOWN</span><br><i class="fas fa-chevron-down"></i></div>
 </section>
 
 <section class="cv-section">
@@ -167,7 +197,7 @@
                     <span class="header-badge gold">✈️ Relocating to Dubai</span>
                 </div>
                 <div class="contact-info">
-                    <div class="contact-item"><span>📧</span><a href="mailto:sakhr270@gmail.com" class="contact-link">sakhr270@gmail.com</a></div>
+                    <div class="contact-item"><span>📧</span><a href="mailto:sakhr270@gmail.com?subject=Job%20Opportunity%20Inquiry&body=Dear%20Sakhr%20AL-Absi,%0D%0A%0D%0AI%20came%20across%20your%20CV%20and%20I'm%20impressed%20by%20your%20expertise%20as%20a%20Senior%20Software%20Engineer%20and%20AI%20Solutions%20Architect.%20I%20would%20like%20to%20discuss%20a%20potential%20opportunity%20with%20you.%0D%0A%0D%0APlease%20let%20me%20know%20your%20availability%20for%20a%20conversation.%0D%0A%0D%0ABest%20regards,%0D%0A[Your%20Name]%0D%0A[Your%20Position]%0D%0A[Your%20Company]" class="contact-link">sakhr270@gmail.com</a></div>
                     <div class="contact-item"><span>📱</span><div class="phone-wrapper"><a href="https://wa.me/4915906455476" target="_blank" class="phone-link">+49 1590 6455476</a><button class="copy-btn" onclick="copyPhone(event)"><i class="fas fa-copy"></i></button></div></div>
                     <div class="contact-item"><span>🌐</span><a href="https://www.aiwaverider.com" target="_blank" class="contact-link">aiwaverider.com</a></div>
                 </div>
@@ -450,9 +480,9 @@
             <div class="section">
                 <h2><i class="fas fa-globe"></i> Languages</h2>
                 <div class="languages">
-                    <div class="language"><div class="flag">🇩🇪</div><div class="lang-name">German</div><div class="lang-level">Fluent (C1) • 15+ years</div></div>
-                    <div class="language"><div class="flag">🇬🇧</div><div class="lang-name">English</div><div class="lang-level">Fluent (C1) • Business</div></div>
-                    <div class="language"><div class="flag">🇸🇦</div><div class="lang-name">Arabic</div><div class="lang-level">Native Speaker</div></div>
+                    <div class="language"><div class="flag">🇩🇪</div><div class="lang-name">German</div><div class="lang-level">Fluent • 15+ years</div></div>
+                    <div class="language"><div class="flag">🇬🇧</div><div class="lang-name">English</div><div class="lang-level">Fluent • Business</div></div>
+                    <div class="language"><div class="flag">🇸🇦</div><div class="lang-name">Arabic</div><div class="lang-level">Fluent • Native</div></div>
                     <div class="language"><div class="flag">🇪🇸</div><div class="lang-name">Spanish</div><div class="lang-level">Conversational (B1)</div></div>
                 </div>
             </div>
