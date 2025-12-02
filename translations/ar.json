@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "صخر العبسي | مواطن ألماني → دبي | مهندس برمجيات أول ومؤسس",
-    "description": "مواطن ألماني ومهندس برمجيات أول مع 15+ سنة في ألمانيا. مؤسس AI Waverider. 7+ سنوات خبرة مؤسسية. الانتقال إلى دبي."
+    "title": "صخر العبسي | مواطن ألماني → دبي | مهندس هندسة الأوامر ومهندس حلول الذكاء الاصطناعي",
+    "description": "خبير في هندسة الأوامر (Prompt Engineering) ومهندس برمجيات أول مع 15+ سنة في ألمانيا. مؤسس AI Waverider. 7+ سنوات خبرة مؤسسية. 5,600+ وكيل ذكاء اصطناعي. الانتقال إلى دبي."
   },
   "nav": {
     "logo": "صخر العبسي",
@@ -43,15 +43,15 @@
     "close": "✕",
     "closeTitle": "إغلاق الطرفية",
     "whoami": "whoami",
-    "whoamiOutput": "🇩🇪 مواطن ألماني | مهندس برمجيات أول | مؤسس، الرئيس التنفيذي والرئيس التقني",
+    "whoamiOutput": "🇩🇪 مواطن ألماني | خبير في هندسة الأوامر (Prompt Engineering) | مهندس برمجيات أول | مؤسس، الرئيس التنفيذي والرئيس التقني",
     "catExperience": "cat experience.txt",
     "experience1": "→ <span class=\"terminal-highlight\">15+ سنة</span> في ألمانيا",
     "experience2": "→ <span class=\"terminal-highlight\">7+ سنوات</span> مؤسسية (Accenture، BMG، Innocean)",
     "experience3": "→ عملاء Fortune 500: البنوك الألمانية وشركات السيارات",
     "lsAchievements": "ls achievements/",
-    "achievements": "ai_waverider_founder/ 11_apps_built_2024/ global_hackathon_winner/",
+    "achievements": "ai_waverider_founder/ 11_apps_built_2024/ global_hackathon_winner/ prompt_engineering_expert/",
     "catAiwaverider": "cat aiwaverider.txt",
-    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">مؤسس، الرئيس التنفيذي والرئيس التقني</span> | 5,600+ وكيل ذكاء اصطناعي",
+    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">مؤسس، الرئيس التنفيذي والرئيس التقني</span> | 5,600+ وكيل ذكاء اصطناعي | خبير في هندسة الأوامر",
     "echoLanguages": "echo $LANGUAGES",
     "languagesOutput": "ألماني (C1) | إنجليزي (C1) | عربي (أصلي) | إسباني (B1)",
     "catStatus": "cat status.txt",
@@ -66,7 +66,7 @@
     "journeyText": "برلين → دبي",
     "headline": "مهندس ألماني.",
     "headlineHighlight": "بناء المستقبل في دبي.",
-    "staticRoleTitle": "مهندس حلول الذكاء الاصطناعي ومهندس برمجيات أول",
+    "staticRoleTitle": "مهندس هندسة الأوامر ومهندس حلول الذكاء الاصطناعي",
     "tagline": "<strong>الدقة الألمانية</strong> • <strong>التراث العربي</strong> • <strong>الطلاقة الإنجليزية</strong>",
     "downloadCV": "تحميل السيرة الذاتية",
     "aiWaverider": "🚀 AI Waverider",
@@ -76,7 +76,7 @@
     "innocean": "INNOCEAN",
     "banks": "البنوك",
     "profileName": "صخر العبسي",
-    "profileRole": "مهندس Full Stack",
+    "profileRole": "مهندس هندسة الأوامر ومهندس Full Stack",
     "scrollDown": "التمرير للأسفل",
     "stats": {
       "yearsGermany": "سنوات في<br>ألمانيا",
@@ -87,7 +87,7 @@
   },
   "cv": {
     "name": "صخر العبسي",
-    "title": "مهندس برمجيات أول ومهندس حلول الذكاء الاصطناعي | مؤسس، الرئيس التنفيذي والرئيس التقني",
+    "title": "خبير في هندسة الأوامر ومهندس حلول الذكاء الاصطناعي | مهندس برمجيات أول | مؤسس، الرئيس التنفيذي والرئيس التقني",
     "badges": {
       "germanCitizen": "🇩🇪 مواطن ألماني",
       "yearsGermany": "15+ سنة في ألمانيا",
@@ -142,7 +142,7 @@
       "points": {
         "vision": "<strong>رؤية المنتج والاستراتيجية:</strong> تصورت، صممت، وأطلقت منصة تقدم 5,600+ سير عمل أتمتة ذكاء اصطناعي مجانية وقوالب n8n للشركات في جميع أنحاء العالم",
         "development": "<strong>التطوير Full-Stack:</strong> هندست وبنيت المنصة بأكملها وحدي. الواجهة الأمامية (React/Vue)، الخلفية (Node.js/Python)، قاعدة البيانات (PostgreSQL/Supabase)، والبنية التحتية السحابية (GCP، Docker، Coolify)",
-        "ai": "<strong>تكامل الذكاء الاصطناعي:</strong> دمجت OpenAI GPT-4، Claude AI، LangChain، RAGs، وقواعد البيانات المتجهة لوكلاء الأتمتة الذكية",
+        "ai": "<strong>تكامل الذكاء الاصطناعي وهندسة الأوامر:</strong> دمجت OpenAI GPT-4، Claude AI، LangChain، RAGs، وقواعد البيانات المتجهة. خبير في إنشاء أوامر عالية الأداء لـ 5,600+ وكيل ذكاء اصطناعي في الإنتاج، وتحسين جودة الاستجابة وكفاءة النظام على نطاق واسع",
         "operations": "<strong>العمليات التجارية:</strong> تعاملت مع جميع الجوانب: الامتثال القانوني (لوائح FTC)، معالجة المدفوعات (Paddle)، استراتيجية التسويق، اكتساب المستخدمين، ودعم العملاء",
         "growth": "<strong>النمو:</strong> حققت نمواً عضوياً من خلال تسويق المحتوى، تحسين SEO، وبناء وجود على وسائل التواصل الاجتماعي",
         "techStack": "<strong>المكدس التقني:</strong> React، Vue.js، Node.js، Python، PostgreSQL، Supabase، n8n، Docker، GCP، Coolify، Nginx، Linux VPS"
@@ -159,7 +159,7 @@
         "platform": "<strong>هندسة المنصة:</strong> نشرت وأدارت التطبيقات على OpenShift و Google Cloud Platform مع SLA وقت تشغيل 99.9%، ونفذت خطوط أنابيب CI/CD شاملة مع Jenkins و GitLab",
         "modernization": "<strong>التحديث التقليدي:</strong> قادت هجرة من monolith إلى خدمات مصغرة لعميل مصرفي، مما قلل وقت النشر بنسبة 60% ومكن ممارسات التسليم المستمر",
         "automotive": "<strong>رقمنة السيارات:</strong> حسنت أنظمة إدارة سلسلة التوريد لشركة سيارات مميزة، مما زاد الكفاءة التشغيلية بنسبة 35% من خلال الأتمتة الذكية",
-        "ai": "<strong>ابتكار الذكاء الاصطناعي:</strong> فزت بمسابقة Accenture العالمية للذكاء الاصطناعي من خلال دمج خدمات Azure OpenAI في سير العمل المؤسسية، مما يظهر تطبيقات عملية للذكاء الاصطناعي لعملاء Fortune 500",
+        "ai": "<strong>ابتكار الذكاء الاصطناعي وهندسة الأوامر:</strong> فزت بمسابقة Accenture العالمية للذكاء الاصطناعي من خلال دمج خدمات Azure OpenAI في سير العمل المؤسسية باستخدام تقنيات متقدمة في هندسة الأوامر. أظهرت تطبيقات عملية للذكاء الاصطناعي لعملاء Fortune 500 باستراتيجيات أوامر محسنة",
         "coordination": "<strong>التنسيق العالمي:</strong> أدارت فرق تطوير خارجية عبر 3 مناطق زمنية (ألمانيا، الهند، UK)، مما يضمن التعاون السلس والتسليم في الوقت المحدد",
         "leadership": "<strong>القيادة التقنية:</strong> رشدة المطورين المبتدئين، أجرت مراجعات الكود، وأنشأت أفضل الممارسات لتطوير الخدمات المصغرة"
       }
@@ -317,7 +317,7 @@
       },
       "founder": {
         "user": "أخبرني عن AI Waverider",
-        "bot": "<strong>AI Waverider. تأسس وبناه صخر</strong><br><br>🚀 <strong>5,600+ وكيل ذكاء اصطناعي</strong> وسير عمل الأتمتة<br>👨‍💼 <strong>مؤسس، الرئيس التنفيذي والرئيس التقني</strong><br>💻 مبني <strong>بالكامل من الصفر</strong> أثناء العمل بدوام كامل<br>🔧 Full-stack: React، Node.js، Python، GCP، Docker<br>📈 قاعدة مستخدمين عضوية متنامية عالمياً<br><br>زر: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+        "bot": "<strong>AI Waverider. تأسس وبناه صخر</strong><br><br>🚀 <strong>5,600+ وكيل ذكاء اصطناعي</strong> وسير عمل الأتمتة<br>🎯 <strong>خبير في هندسة الأوامر (Prompt Engineering)</strong> - إنشاء أوامر عالية الأداء على نطاق واسع<br>👨‍💼 <strong>مؤسس، الرئيس التنفيذي والرئيس التقني</strong><br>💻 مبني <strong>بالكامل من الصفر</strong> أثناء العمل بدوام كامل<br>🔧 Full-stack: React، Node.js، Python، GCP، Docker<br>📈 قاعدة مستخدمين عضوية متنامية عالمياً<br><br>زر: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
       },
       "dubai": {
         "user": "لماذا ينتقل صخر إلى دبي؟",
@@ -341,20 +341,20 @@
       "founder": "<strong>مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider</strong><br><br>بنيت 5,600+ وكيل ذكاء اصطناعي وسير عمل الأتمتة أثناء العمل بدوام كامل في Accenture. منصة full-stack: React، Node.js، Python، GCP.",
       "german": "<strong>مواطن ألماني</strong> مع 15+ سنة في ألمانيا. متعلم في TU Berlin و HTW Berlin. 7+ سنوات خبرة مؤسسية.",
       "dubai": "ينتقل إلى دبي للانضمام إلى النظام البيئي التكنولوجي للإمارات. الدقة الألمانية + التراث العربي + الطلاقة الإنجليزية = جسر فريد.",
-      "ai": "فزت بمسابقة الذكاء الاصطناعي العالمية. بنيت AI Waverider مع 5,600+ وكيل. خبير في OpenAI، Claude، n8n، RAGs، LangChain.",
+      "ai": "فزت بمسابقة الذكاء الاصطناعي العالمية. بنيت AI Waverider مع 5,600+ وكيل. <strong>خبير في هندسة الأوامر (Prompt Engineering)</strong>، متخصص في إنشاء أوامر عالية الأداء لأنظمة الذكاء الاصطناعي في الإنتاج. خبير في OpenAI، Claude، n8n، RAGs، LangChain وتقنيات تحسين الأوامر المتقدمة.",
       "available": "<strong>متاح Q1 2025</strong>. مفتوح لـ دوام كامل، عقد، هجين في دبي.",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
-      "default": "يمكنني أن أخبرك عن خلفية صخر الألمانية، شركته الناشئة AI Waverider (هو مؤسس/الرئيس التنفيذي/الرئيس التقني)، المهارات التقنية، خطط دبي، أو المساعدة في job matching!"
+      "default": "يمكنني أن أخبرك عن خلفية صخر الألمانية، خبرته كـ <strong>مهندس هندسة الأوامر (Prompt Engineer)</strong>، شركته الناشئة AI Waverider (هو مؤسس/الرئيس التنفيذي/الرئيس التقني)، المهارات التقنية، خطط دبي، أو المساعدة في job matching!"
     }
   },
   "terminalCommands": {
-    "help": "الأوامر: help، play، chat، skills، contact، experience، education، aiwaverider، founder، download، clear<br>اكتب \"chat [رسالة]\" للتحدث مع الذكاء الاصطناعي",
+    "help": "الأوامر: help، play، chat، skills، prompt، contact، experience، education، aiwaverider، founder، download، clear<br>اكتب \"chat [رسالة]\" للتحدث مع الذكاء الاصطناعي",
     "play": "بدء اللعبة...",
     "chat": "فتح دردشة الذكاء الاصطناعي...",
     "clear": "",
     "notFound": "الأمر غير موجود: {cmd}. اكتب 'help' للأوامر المتاحة.",
     "chatWithMessage": "فتح دردشة الذكاء الاصطناعي مع: \"{query}\"...",
-    "heroHelp": "> الأوامر: play، chat، clear، help<br>> اكتب 'chat' للتحدث مع مساعد الذكاء الاصطناعي",
+    "heroHelp": "> الأوامر: play، chat، prompt، clear، help<br>> اكتب 'chat' للتحدث مع مساعد الذكاء الاصطناعي<br>> اكتب 'prompt' للتعرف على خبرة هندسة الأوامر",
     "heroPlay": "> بدء اللعبة...",
     "heroChat": "> فتح دردشة الذكاء الاصطناعي...",
     "heroNotFound": "> الأمر غير موجود. اكتب 'help' للأوامر."

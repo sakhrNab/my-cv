@@ -38,10 +38,14 @@ function handleTerminalInput(e) {
     let output = '';
     switch (cmd) {
         case 'help':
-            output = 'Commands: help, play, chat, skills, contact, experience, education, aiwaverider, founder, download, clear<br>Type "chat [message]" to talk with AI';
+            output = 'Commands: help, play, chat, skills, prompt, contact, experience, education, aiwaverider, founder, download, clear<br>Type "chat [message]" to talk with AI';
             break;
         case 'skills':
             output = 'Java • Spring Boot • Python • Prompt Engineering • GCP • Docker • K8s • OpenAI • n8n • React • Vue.js';
+            break;
+        case 'prompt':
+        case 'promptengineering':
+            output = '🎯 <span class="terminal-highlight">Expert Prompt Engineer</span><br>→ Crafted prompts for 5,600+ production AI agents<br>→ Optimized prompt strategies for Fortune 500 clients<br>→ Specialized in OpenAI GPT-4, Claude AI, Azure OpenAI<br>→ Advanced techniques: RAGs, LangChain, vector databases<br>→ Won global AI hackathon with prompt engineering excellence';
             break;
         case 'contact':
             output = '📧 sakhr270@gmail.com | 📱 +49 1590 6455476 | 🌐 aiwaverider.com';

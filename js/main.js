@@ -111,7 +111,12 @@ function initHeroTerminal() {
                     setTimeout(() => Game.start(), 800);
                 } else if (cmd === 'help') {
                     const resp = document.createElement('div');
-                    resp.innerHTML = `> Commands: play, chat, clear, help<br>> Type 'chat' to talk with AI assistant`;
+                    resp.innerHTML = `> Commands: play, chat, prompt, clear, help<br>> Type 'chat' to talk with AI assistant<br>> Type 'prompt' to learn about prompt engineering expertise`;
+                    content.appendChild(resp);
+                } else if (cmd === 'prompt' || cmd === 'promptengineering') {
+                    const resp = document.createElement('div');
+                    resp.innerHTML = `> 🎯 Expert Prompt Engineer<br>> → Crafted prompts for 5,600+ production AI agents<br>> → Optimized prompt strategies for Fortune 500 clients<br>> → Specialized in OpenAI GPT-4, Claude AI, Azure OpenAI`;
+                    resp.style.color = '#4ade80';
                     content.appendChild(resp);
                 } else if (cmd === 'chat' || cmd === 'ai') {
                     const resp = document.createElement('div');
