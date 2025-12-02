@@ -41,7 +41,7 @@ function handleTerminalInput(e) {
             output = 'Commands: help, play, chat, skills, contact, experience, education, aiwaverider, founder, download, clear<br>Type "chat [message]" to talk with AI';
             break;
         case 'skills':
-            output = 'Java • Spring Boot • Python • GCP • Docker • K8s • OpenAI • n8n • React • Vue.js';
+            output = 'Java • Spring Boot • Python • Prompt Engineering • GCP • Docker • K8s • OpenAI • n8n • React • Vue.js';
             break;
         case 'contact':
             output = '📧 sakhr270@gmail.com | 📱 +49 1590 6455476 | 🌐 aiwaverider.com';

@@ -110,18 +110,19 @@
     },
     "footer": "Página {page}/{total} | Sakhr AL-Absi | Ciudadano Alemán | Fundador/CEO/CTO AI Waverider | Q1 2026"
   },
-  "vision": {
-    "title": "Mi Visión y Filosofía",
-    "quote1": "<strong>\"La era de la programación tradicional ha terminado.\"</strong> Hemos superado pasar horas investigando errores en Stack Overflow. Hoy, la velocidad es el diferenciador definitivo. Una idea puede ser programada en minutos usando herramientas de IA.",
-    "paragraph1": "Así como Excel eliminó las hojas de cálculo en papel, la IA está transformando el desarrollo de software. Quienes dominen estas herramientas liderarán la próxima ola de innovación. Con <strong>7+ años de experiencia corporativa</strong> combinados con mi doble formación en Ciencias de la Computación e Ingeniería Industrial de <span class=\"vision-emphasis\">TU Berlin y HTW Berlin</span>. Las universidades técnicas más prestigiosas de Alemania. Fui uno de los primeros en aprovechar la IA para lograr objetivos más rápido y efectivamente.",
-    "paragraph2": "Como <strong>ciudadano alemán que ha vivido en Alemania durante más de 15 años</strong>, aporto estándares de ingeniería europeos y ética de trabajo. Combinado con mi herencia árabe y educación en inglés, ofrezco un puente único entre culturas. <span class=\"vision-emphasis\">Precisión alemana, perspicacia cultural árabe y fluidez comercial en inglés</span>.",
-    "quote2": "<strong>¿Por qué Dubai?</strong> Me estoy posicionando entre las mentes más brillantes en uno de los centros tecnológicos de más rápido crecimiento del mundo. Vengo a los EAU para trabajar con pensadores innovadores, aprender de los mejores y construir soluciones extraordinarias juntos.",
-    "achievementsTitle": "Logros de Este Año (Mientras Trabajaba a Tiempo Completo en Accenture)",
-    "achievements": {
-      "apps": "<strong>11 Aplicaciones</strong> construidas desde cero",
-      "waverider": "<strong>AI Waverider</strong>. Fundado y construido",
-      "agents": "<strong>5,600+ Agentes de IA</strong> creados",
-      "fortune500": "Clientes <strong>Fortune 500</strong> entregados"
+  "executiveProfile": {
+    "title": "Perfil Ejecutivo: El Arquitecto AI-First",
+    "hook": "<strong>\"La era de la programación tradicional ha terminado.\"</strong> Combino 15+ años de disciplina de ingeniería alemana con orquestación de IA de vanguardia para construir sistemas empresariales en días, no meses.",
+    "paragraph1": "Soy un <strong>Arquitecto Senior de Soluciones de IA</strong> y <strong>Ciudadano Alemán</strong> reubicándome en Dubai. Con una formación dual en Ciencias de la Computación e Ingeniería Industrial de <strong>TU Berlin y HTW Berlin</strong>, conecto la brecha entre la implementación técnica compleja y el valor comercial.",
+    "paragraph2": "Actualmente, sirvo como Ingeniero de Software Senior en <strong>Accenture Alemania</strong>, entregando para clientes Fortune 500 de banca y automotriz. Simultáneamente, como Fundador de <strong>AI Waverider</strong>, he diseñado una plataforma que sirve a miles de usuarios con más de <strong>5,600+ agentes de IA</strong>, dominando la ingeniería de prompts avanzada a escala.",
+    "paragraph3": "<strong>Mi Ventaja Competitiva:</strong> No solo escribo código. Orquesto soluciones de nivel empresarial. Al aumentar la ingeniería tradicional con IA, reduzco los ciclos de desarrollo en un 70%. Entregando arquitecturas listas para producción más rápido sin sacrificar los estándares de calidad alemanes que sus sistemas requieren. Traigo <strong>precisión alemana, herencia árabe y fluidez comercial en inglés</strong> al mercado de los EAU.",
+    "whyDubai": "<strong>¿Por qué Dubai?</strong> Me estoy posicionando entre las mentes más brillantes en uno de los centros tecnológicos de más rápido crecimiento del mundo. Me estoy reubicando a los EAU para trabajar con pensadores innovadores, aprender de los mejores y construir soluciones extraordinarias juntos.",
+    "impactTitle": "Impacto de un Vistazo",
+    "impact": {
+      "founder": "<strong>Fundador y CTO de AI Waverider</strong>",
+      "apps": "<strong>11 Aplicaciones Empresariales</strong> construidas este año",
+      "agents": "<strong>5,600+ Agentes de IA</strong> desplegados",
+      "trilingual": "<strong>Trilingüe</strong> (DE/EN/AR)"
     }
   },
   "summary": {
@@ -269,7 +270,7 @@
       "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
       "frameworks": ["Spring Boot 3.x", "Microservicios", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
       "cloud": ["GCP (Certificado)", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
-      "ai": ["OpenAI GPT", "Claude AI", "Azure OpenAI", "Flujos de Trabajo n8n", "RAGs", "Agentes de IA", "LangChain"],
+      "ai": ["OpenAI GPT", "Claude AI", "Ingeniería de Prompts", "Azure OpenAI", "Flujos de Trabajo n8n", "RAGs", "Agentes de IA", "LangChain"],
       "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "Bases de Datos Vectoriales"],
       "domain": ["Finanzas y Banca", "Automotriz", "Agile/Scrum", "Liderazgo de Equipo", "Coordinación Offshore", "Consultoría"]
     }
@@ -359,7 +360,7 @@
     "heroNotFound": "> Comando no encontrado. Escribe 'help' para comandos."
   },
   "typing": {
-    "texts": ["Arquitecto de Soluciones de IA", "Ingeniero de Software Senior", "Experto Java Full-Stack", "Constructor de Sistemas Empresariales"]
+    "texts": ["Arquitecto de Soluciones de IA", "Ingeniero de Software Senior", "Experto Java Full-Stack", "Constructor de Sistemas Empresariales", "Experto en Ingeniería de Prompts"]
   },
   "email": {
     "subject": "Consulta de Oportunidad Laboral",

@@ -110,18 +110,19 @@
     },
     "footer": "Page {page}/{total} | Sakhr AL-Absi | German Citizen | Founder/CEO/CTO AI Waverider | Q1 2026"
   },
-  "vision": {
-    "title": "My Vision & Philosophy",
-    "quote1": "<strong>\"The era of traditional coding is over.\"</strong> We've moved beyond spending hours researching bugs on Stack Overflow. Today, speed is the ultimate differentiator. An idea can be coded within minutes using AI tools.",
-    "paragraph1": "Just as Excel eliminated paper spreadsheets, AI is transforming software development. Those who master these tools will lead the next wave of innovation. With <strong>7+ years of corporate experience</strong> combined with my dual background in Computer Science and Industrial Engineering from <span class=\"vision-emphasis\">TU Berlin & HTW Berlin</span>. Germany's most prestigious technical universities. I was among the first to leverage AI to achieve goals faster and more effectively.",
-    "paragraph2": "As a <strong>German citizen who has lived in Germany for over 15 years</strong>, I bring European engineering standards and work ethic. Combined with my Arabic heritage and English-language education, I offer a unique bridge between cultures. <span class=\"vision-emphasis\">German precision, Arabic cultural insight, and English business fluency</span>.",
-    "quote2": "<strong>Why Dubai?</strong> I'm positioning myself among the brightest minds in one of the world's fastest-growing tech hubs. I'm coming to the UAE to work with innovative thinkers, learn from the best, and build extraordinary solutions together.",
-    "achievementsTitle": "This Year's Achievements (While Working Full-Time at Accenture)",
-    "achievements": {
-      "apps": "<strong>11 Applications</strong> built from scratch",
-      "waverider": "<strong>AI Waverider</strong>. Founded & built",
-      "agents": "<strong>5,600+ AI Agents</strong> created",
-      "fortune500": "<strong>Fortune 500</strong> clients delivered"
+  "executiveProfile": {
+    "title": "Executive Profile: The AI-First Architect",
+    "hook": "<strong>\"The era of traditional coding is over.\"</strong> I combine 15+ years of German engineering discipline with cutting-edge AI orchestration to build enterprise systems in days, not months.",
+    "paragraph1": "I am a <strong>Senior AI Solutions Architect</strong> and <strong>German Citizen</strong> relocating to Dubai. With a dual background in Computer Science and Industrial Engineering from <strong>TU Berlin & HTW Berlin</strong>, I bridge the gap between complex technical implementation and business value.",
+    "paragraph2": "Currently, I serve as a Senior Software Engineer at <strong>Accenture Germany</strong>, delivering for Fortune 500 banking and automotive clients. Simultaneously, as the Founder of <strong>AI Waverider</strong>, I have architected a platform serving thousands of users with over <strong>5,600+ AI agents</strong>, mastering advanced prompt engineering at scale.",
+    "paragraph3": "<strong>My Competitive Edge:</strong> I don't just write code; I orchestrate enterprise-grade solutions. By augmenting traditional engineering with AI, I cut development cycles by 70%. Delivering production-ready architectures faster without sacrificing the German quality standards your systems require. I bring <strong>German precision, Arabic heritage, and English business fluency</strong> to the UAE market.",
+    "whyDubai": "<strong>Why Dubai?</strong> I'm positioning myself among the brightest minds in one of the world's fastest-growing tech hubs. I am relocating to the UAE to work with innovative thinkers, learn from the best, and build extraordinary solutions together.",
+    "impactTitle": "Impact at a Glance",
+    "impact": {
+      "founder": "<strong>Founder & CTO of AI Waverider</strong>",
+      "apps": "<strong>11 Enterprise Apps</strong> built this year",
+      "agents": "<strong>5,600+ AI Agents</strong> deployed",
+      "trilingual": "<strong>Trilingual</strong> (DE/EN/AR)"
     }
   },
   "summary": {
@@ -269,7 +270,7 @@
       "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
       "frameworks": ["Spring Boot 3.x", "Microservices", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
       "cloud": ["GCP (Certified)", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
-      "ai": ["OpenAI GPT", "Claude AI", "Azure OpenAI", "n8n Workflows", "RAGs", "AI Agents", "LangChain"],
+      "ai": ["OpenAI GPT", "Claude AI", "Prompt Engineering", "Azure OpenAI", "n8n Workflows", "RAGs", "AI Agents", "LangChain"],
       "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "Vector DBs"],
       "domain": ["Finance & Banking", "Automotive", "Agile/Scrum", "Team Leadership", "Offshore Coordination", "Consulting"]
     }
@@ -359,7 +360,7 @@
     "heroNotFound": "> Command not found. Type 'help' for commands."
   },
   "typing": {
-    "texts": ["AI Solutions Architect", "Senior Software Engineer", "Full-Stack Java Expert", "Enterprise System Builder"]
+    "texts": ["AI Solutions Architect", "Senior Software Engineer", "Full-Stack Java Expert", "Enterprise System Builder", "Expert Prompt Engineer"]
   },
   "email": {
     "subject": "Job Opportunity Inquiry",

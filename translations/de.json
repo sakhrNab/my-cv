@@ -110,18 +110,19 @@
     },
     "footer": "Seite {page}/{total} | Sakhr AL-Absi | Deutscher Staatsbürger | Gründer/CEO/CTO AI Waverider | Q1 2026"
   },
-  "vision": {
-    "title": "Meine Vision & Philosophie",
-    "quote1": "<strong>\"Die Ära des traditionellen Programmierens ist vorbei.\"</strong> Wir sind über das stundenlange Recherchieren von Fehlern auf Stack Overflow hinausgewachsen. Heute ist Geschwindigkeit der ultimative Unterscheidungsfaktor. Eine Idee kann innerhalb von Minuten mit KI-Tools programmiert werden.",
-    "paragraph1": "Genau wie Excel Papier-Tabellenkalkulationen eliminiert hat, transformiert KI die Softwareentwicklung. Diejenigen, die diese Tools beherrschen, werden die nächste Innovationswelle anführen. Mit <strong>7+ Jahren Unternehmenserfahrung</strong> kombiniert mit meinem dualen Hintergrund in Informatik und Wirtschaftsingenieurwesen von der <span class=\"vision-emphasis\">TU Berlin & HTW Berlin</span>. Deutschlands renommiertesten technischen Universitäten. War ich einer der Ersten, der KI nutzte, um Ziele schneller und effektiver zu erreichen.",
-    "paragraph2": "Als <strong>deutscher Staatsbürger, der über 15 Jahre in Deutschland gelebt hat</strong>, bringe ich europäische Ingenieursstandards und Arbeitsethos mit. Kombiniert mit meinem arabischen Erbe und englischsprachiger Ausbildung biete ich eine einzigartige Brücke zwischen Kulturen. <span class=\"vision-emphasis\">Deutsche Präzision, arabisches kulturelles Verständnis und englische Geschäftssprachgewandtheit</span>.",
-    "quote2": "<strong>Warum Dubai?</strong> Ich positioniere mich unter den klügsten Köpfen in einem der am schnellsten wachsenden Tech-Hubs der Welt. Ich komme in die VAE, um mit innovativen Denkern zu arbeiten, von den Besten zu lernen und gemeinsam außergewöhnliche Lösungen zu entwickeln.",
-    "achievementsTitle": "Diesjährige Erfolge (Während Vollzeitbeschäftigung bei Accenture)",
-    "achievements": {
-      "apps": "<strong>11 Anwendungen</strong> von Grund auf gebaut",
-      "waverider": "<strong>AI Waverider</strong>. Gegründet & gebaut",
-      "agents": "<strong>5.600+ KI-Agenten</strong> erstellt",
-      "fortune500": "<strong>Fortune 500</strong> Kunden geliefert"
+  "executiveProfile": {
+    "title": "Executive Profil: Der KI-First Architekt",
+    "hook": "<strong>\"Die Ära des traditionellen Programmierens ist vorbei.\"</strong> Ich kombiniere 15+ Jahre deutsche Ingenieursdisziplin mit modernster KI-Orchestrierung, um Unternehmenssysteme in Tagen statt Monaten zu bauen.",
+    "paragraph1": "Ich bin ein <strong>Senior KI-Lösungsarchitekt</strong> und <strong>deutscher Staatsbürger</strong>, der nach Dubai umzieht. Mit einem dualen Hintergrund in Informatik und Wirtschaftsingenieurwesen von <strong>TU Berlin & HTW Berlin</strong> überbrücke ich die Lücke zwischen komplexer technischer Implementierung und Geschäftswert.",
+    "paragraph2": "Derzeit arbeite ich als Senior Software Engineer bei <strong>Accenture Deutschland</strong> und liefere für Fortune 500 Bank- und Automobilkunden. Gleichzeitig habe ich als Gründer von <strong>AI Waverider</strong> eine Plattform entwickelt, die Tausende von Benutzern mit über <strong>5.600+ KI-Agenten</strong> bedient und fortschrittliches Prompt Engineering im großen Maßstab meistert.",
+    "paragraph3": "<strong>Mein Wettbewerbsvorteil:</strong> Ich schreibe nicht nur Code. Ich orchestriere unternehmensreife Lösungen. Durch die Ergänzung traditionellen Engineerings mit KI reduziere ich Entwicklungszyklen um 70%. Ich liefere produktionsreife Architekturen schneller, ohne die deutschen Qualitätsstandards zu opfern, die Ihre Systeme erfordern. Ich bringe <strong>deutsche Präzision, arabisches Erbe und englische Geschäftssprachgewandtheit</strong> auf den VAE-Markt.",
+    "whyDubai": "<strong>Warum Dubai?</strong> Ich positioniere mich unter den klügsten Köpfen in einem der am schnellsten wachsenden Tech-Hubs der Welt. Ich ziehe in die VAE um, um mit innovativen Denkern zu arbeiten, von den Besten zu lernen und gemeinsam außergewöhnliche Lösungen zu entwickeln.",
+    "impactTitle": "Auswirkungen auf einen Blick",
+    "impact": {
+      "founder": "<strong>Gründer & CTO von AI Waverider</strong>",
+      "apps": "<strong>11 Unternehmens-Apps</strong> dieses Jahr gebaut",
+      "agents": "<strong>5.600+ KI-Agenten</strong> eingesetzt",
+      "trilingual": "<strong>Dreisprachig</strong> (DE/EN/AR)"
     }
   },
   "summary": {
@@ -269,7 +270,7 @@
       "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
       "frameworks": ["Spring Boot 3.x", "Microservices", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
       "cloud": ["GCP (Zertifiziert)", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
-      "ai": ["OpenAI GPT", "Claude AI", "Azure OpenAI", "n8n Workflows", "RAGs", "KI-Agenten", "LangChain"],
+      "ai": ["OpenAI GPT", "Claude AI", "Prompt Engineering", "Azure OpenAI", "n8n Workflows", "RAGs", "KI-Agenten", "LangChain"],
       "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "Vektor-DBs"],
       "domain": ["Finanzen & Bankwesen", "Automobil", "Agile/Scrum", "Teamführung", "Offshore-Koordination", "Beratung"]
     }
@@ -359,7 +360,7 @@
     "heroNotFound": "> Befehl nicht gefunden. Tippe 'help' für Befehle."
   },
   "typing": {
-    "texts": ["KI-Lösungsarchitekt", "Senior Software Engineer", "Full-Stack Java Experte", "Unternehmenssystem-Builder"]
+    "texts": ["KI-Lösungsarchitekt", "Senior Software Engineer", "Full-Stack Java Experte", "Unternehmenssystem-Builder", "Experte für Prompt Engineering"]
   },
   "email": {
     "subject": "Stellenangebot-Anfrage",
