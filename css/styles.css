@@ -216,7 +216,7 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: 
 /* ENHANCED VISION */
 .vision-section { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border-radius: 20px; padding: 40px; margin-bottom: 35px; border-left: 6px solid var(--gold); position: relative; overflow: hidden; }
 [data-theme="dark"] .vision-section { background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%); }
-.vision-section::before { content: '"'; position: absolute; top: -25px; left: 25px; font-size: 140px; color: var(--gold); opacity: 0.12; font-family: Georgia, serif; }
+/* Removed decorative quote mark to avoid visual clutter with icon */
 .vision-header { display: flex; align-items: center; gap: 15px; margin-bottom: 25px; }
 .vision-icon { width: 55px; height: 55px; background: linear-gradient(135deg, var(--gold), var(--gold-light)); border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 1.6em; box-shadow: 0 8px 25px rgba(201,162,39,0.3); }
 .vision-header h3 { color: var(--primary); font-size: 1.4em; }
@@ -248,8 +248,8 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: 
 .description { margin-top: 12px; }
 .description ul { margin-left: 18px; margin-top: 8px; }
 .description li { margin-bottom: 8px; line-height: 1.7; font-size: 0.95em; }
-.current-business { background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%); border-left: 5px solid var(--green); padding: 20px; margin-bottom: 20px; border-radius: 14px; }
-[data-theme="dark"] .current-business { background: linear-gradient(135deg, #1a3a2e 0%, #2d5a4a 100%); }
+.current-business { background: #f8fafc; border-left: 5px solid var(--green); padding: 20px; margin-bottom: 20px; border-radius: 14px; }
+[data-theme="dark"] .current-business { background: #1e293b; border-left: 5px solid var(--green); }
 .current-business p { margin-bottom: 10px; line-height: 1.75; }
 .business-link { color: var(--green); text-decoration: none; font-weight: 700; border-bottom: 2px solid var(--green); }
 .business-link:hover { color: #2d7a5f; }

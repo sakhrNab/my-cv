@@ -13,7 +13,7 @@ function handleSuggestion(type) {
         },
         founder: {
             user: "Tell me about AI Waverider",
-            bot: "<strong>AI Waverider — Founded & Built by Sakhr</strong><br><br>🚀 <strong>5,600+ AI agents</strong> & automation workflows<br>👨‍💼 <strong>Founder, CEO & CTO</strong><br>💻 Built <strong>entirely from scratch</strong> while working full-time<br>🔧 Full-stack: React, Node.js, Python, GCP, Docker<br>📈 Growing organic user base globally<br><br>Visit: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+            bot: "<strong>AI Waverider. Founded & Built by Sakhr</strong><br><br>🚀 <strong>5,600+ AI agents</strong> & automation workflows<br>👨‍💼 <strong>Founder, CEO & CTO</strong><br>💻 Built <strong>entirely from scratch</strong> while working full-time<br>🔧 Full-stack: React, Node.js, Python, GCP, Docker<br>📈 Growing organic user base globally<br><br>Visit: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
         },
         dubai: {
             user: "Why is Sakhr moving to Dubai?",

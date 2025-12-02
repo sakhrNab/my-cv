@@ -101,7 +101,7 @@
     "highlights": {
       "title": "PUNTOS CLAVE",
       "germanCitizen": "Ciudadano alemán con 15+ años en Alemania, educado en TU Berlin y HTW Berlin",
-      "founder": "Fundador, CEO y CTO de AI Waverider — 5,600+ flujos de trabajo de automatización de IA",
+      "founder": "Fundador, CEO y CTO de AI Waverider. 5,600+ flujos de trabajo de automatización de IA",
       "corporate": "7+ años de experiencia corporativa en Accenture, BMG Rights Management, Innocean Europe",
       "apps": "11 aplicaciones construidas desde cero este año mientras trabajaba a tiempo completo",
       "hackathon": "Ganó hackathon global de IA integrando Azure OpenAI",
@@ -112,14 +112,14 @@
   },
   "vision": {
     "title": "Mi Visión y Filosofía",
-    "quote1": "<strong>\"La era de la programación tradicional ha terminado.\"</strong> Hemos superado pasar horas investigando errores en Stack Overflow. Hoy, la velocidad es el diferenciador definitivo—una idea puede ser programada en minutos usando herramientas de IA.",
-    "paragraph1": "Así como Excel eliminó las hojas de cálculo en papel, la IA está transformando el desarrollo de software. Quienes dominen estas herramientas liderarán la próxima ola de innovación. Con <strong>7+ años de experiencia corporativa</strong> combinados con mi doble formación en Ciencias de la Computación e Ingeniería Industrial de <span class=\"vision-emphasis\">TU Berlin y HTW Berlin</span>—las universidades técnicas más prestigiosas de Alemania—fui uno de los primeros en aprovechar la IA para lograr objetivos más rápido y efectivamente.",
-    "paragraph2": "Como <strong>ciudadano alemán que ha vivido en Alemania durante más de 15 años</strong>, aporto estándares de ingeniería europeos y ética de trabajo. Combinado con mi herencia árabe y educación en inglés, ofrezco un puente único entre culturas—<span class=\"vision-emphasis\">precisión alemana, perspicacia cultural árabe y fluidez comercial en inglés</span>.",
+    "quote1": "<strong>\"La era de la programación tradicional ha terminado.\"</strong> Hemos superado pasar horas investigando errores en Stack Overflow. Hoy, la velocidad es el diferenciador definitivo. Una idea puede ser programada en minutos usando herramientas de IA.",
+    "paragraph1": "Así como Excel eliminó las hojas de cálculo en papel, la IA está transformando el desarrollo de software. Quienes dominen estas herramientas liderarán la próxima ola de innovación. Con <strong>7+ años de experiencia corporativa</strong> combinados con mi doble formación en Ciencias de la Computación e Ingeniería Industrial de <span class=\"vision-emphasis\">TU Berlin y HTW Berlin</span>. Las universidades técnicas más prestigiosas de Alemania. Fui uno de los primeros en aprovechar la IA para lograr objetivos más rápido y efectivamente.",
+    "paragraph2": "Como <strong>ciudadano alemán que ha vivido en Alemania durante más de 15 años</strong>, aporto estándares de ingeniería europeos y ética de trabajo. Combinado con mi herencia árabe y educación en inglés, ofrezco un puente único entre culturas. <span class=\"vision-emphasis\">Precisión alemana, perspicacia cultural árabe y fluidez comercial en inglés</span>.",
     "quote2": "<strong>¿Por qué Dubai?</strong> Me estoy posicionando entre las mentes más brillantes en uno de los centros tecnológicos de más rápido crecimiento del mundo. Vengo a los EAU para trabajar con pensadores innovadores, aprender de los mejores y construir soluciones extraordinarias juntos.",
     "achievementsTitle": "Logros de Este Año (Mientras Trabajaba a Tiempo Completo en Accenture)",
     "achievements": {
       "apps": "<strong>11 Aplicaciones</strong> construidas desde cero",
-      "waverider": "<strong>AI Waverider</strong> — Fundado y construido",
+      "waverider": "<strong>AI Waverider</strong>. Fundado y construido",
       "agents": "<strong>5,600+ Agentes de IA</strong> creados",
       "fortune500": "Clientes <strong>Fortune 500</strong> entregados"
     }
@@ -127,20 +127,20 @@
   "summary": {
     "title": "Resumen Profesional",
     "paragraph1": "<strong>Ciudadano alemán</strong> e Ingeniero de Software Senior con 7+ años en desarrollo empresarial, especializado en microservicios, tecnologías en la nube e integración de IA. Educado en las mejores universidades de Alemania (TU Berlin, HTW Berlin) con historial comprobado entregando para clientes Fortune 500 en finanzas y automotriz.",
-    "paragraph2": "Conocido por <strong>excepcional ingenio</strong>—construí 11 aplicaciones este año mientras trabajaba a tiempo completo en Accenture. Coordiné equipos offshore en 3 zonas horarias. Actualmente el <strong>Fundador, CEO y CTO</strong> de <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>—una plataforma con 5,600+ agentes de IA y flujos de trabajo de automatización.",
+    "paragraph2": "Conocido por <strong>excepcional ingenio</strong>. Construí 11 aplicaciones este año mientras trabajaba a tiempo completo en Accenture. Coordiné equipos offshore en 3 zonas horarias. Actualmente el <strong>Fundador, CEO y CTO</strong> de <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. Una plataforma con 5,600+ agentes de IA y flujos de trabajo de automatización.",
     "paragraph3": "<strong>Valor Único:</strong> Precisión alemana + herencia árabe + fluidez en inglés. Trilingüe (Alemán C1, Inglés C1, Árabe Nativo) uniendo culturas europeas y del Medio Oriente."
   },
   "experience": {
     "title": "Experiencia Profesional",
     "founder": {
       "role": "Fundador, CEO y CTO",
-      "company": "AI Waverider — Plataforma de Automatización de IA",
+      "company": "AI Waverider. Plataforma de Automatización de IA",
       "date": "2024 - Presente",
       "highlight": "🚀 <strong>5,600+ Agentes de IA y Flujos de Trabajo de Automatización</strong> | Base de Usuarios Global | Construido Desde Cero",
       "description": "Fundé y construí una plataforma de automatización impulsada por IA desde cero mientras mantenía empleo a tiempo completo en Accenture, demostrando gestión excepcional del tiempo e impulso empresarial.",
       "points": {
         "vision": "<strong>Visión y Estrategia del Producto:</strong> Concebí, diseñé y lancé una plataforma que ofrece 5,600+ flujos de trabajo de automatización de IA gratuitos y plantillas n8n para empresas en todo el mundo",
-        "development": "<strong>Desarrollo Full-Stack:</strong> Arquitecturé y construí toda la plataforma solo—frontend (React/Vue), backend (Node.js/Python), base de datos (PostgreSQL/Supabase) e infraestructura en la nube (GCP, Docker, Coolify)",
+        "development": "<strong>Desarrollo Full-Stack:</strong> Arquitecturé y construí toda la plataforma solo. Frontend (React/Vue), backend (Node.js/Python), base de datos (PostgreSQL/Supabase) e infraestructura en la nube (GCP, Docker, Coolify)",
         "ai": "<strong>Integración de IA:</strong> Integré OpenAI GPT-4, Claude AI, LangChain, RAGs y bases de datos vectoriales para agentes de automatización inteligentes",
         "operations": "<strong>Operaciones Comerciales:</strong> Manejé todos los aspectos: cumplimiento legal (regulaciones FTC), procesamiento de pagos (Paddle), estrategia de marketing, adquisición de usuarios y soporte al cliente",
         "growth": "<strong>Crecimiento:</strong> Logré crecimiento orgánico a través de marketing de contenido, optimización SEO y construcción de presencia en redes sociales",
@@ -210,14 +210,14 @@
       "degree": "B.Sc. Ciencias de la Computación Aplicadas (Angewandte Informatik)",
       "institution": "HTW Berlin - Universidad de Ciencias Aplicadas",
       "date": "2017 - 2022",
-      "thesis": "<strong>Tesis:</strong> \"Diseño e Implementación de una Arquitectura de Microservicios para Aplicaciones de Salud\" — Desarrollé una plataforma de salud escalable usando containerización Docker, APIs RESTful, backend Django y base de datos PostgreSQL. Implementé medidas de seguridad compatibles con HIPAA y pipelines de pruebas automatizadas.",
+      "thesis": "<strong>Tesis:</strong> \"Diseño e Implementación de una Arquitectura de Microservicios para Aplicaciones de Salud\". Desarrollé una plataforma de salud escalable usando containerización Docker, APIs RESTful, backend Django y base de datos PostgreSQL. Implementé medidas de seguridad compatibles con HIPAA y pipelines de pruebas automatizadas.",
       "grade": "<strong>Calificación:</strong> 2.4 (Bueno) | <strong>Áreas de Enfoque:</strong> Ingeniería de Software, Sistemas de Base de Datos, Tecnologías Web, Cloud Computing"
     },
     "tu": {
       "degree": "Ingeniería Industrial (Wirtschaftsingenieurwesen)",
       "institution": "Universidad Técnica de Berlín (TU Berlin)",
       "date": "2012 - 2017",
-      "description1": "TU Berlin es un <strong>miembro TU9</strong>—la alianza de Alemania de universidades técnicas líderes, clasificada entre las mejores escuelas de ingeniería en Europa.",
+      "description1": "TU Berlin es un <strong>miembro TU9</strong>. La alianza de Alemania de universidades técnicas líderes, clasificada entre las mejores escuelas de ingeniería en Europa.",
       "description2": "<strong>Enfoque:</strong> Fundamentos de ingeniería combinados con Administración de Empresas, Investigación de Operaciones y Gestión de Producción. Esta perspectiva dual me permite entender tanto la implementación técnica como el valor comercial."
     }
   },
@@ -300,7 +300,7 @@
   "aiChat": {
     "title": "Pregunta sobre Sakhr",
     "close": "✕",
-    "welcome": "👋 <strong>¡Hola!</strong> Puedo contarte sobre Sakhr—un <strong>ciudadano alemán</strong>, <strong>Fundador/CEO/CTO de AI Waverider</strong>, con 15+ años en Alemania, reubicándose en Dubai.<br><br>¡Pregunta sobre sus habilidades o usa <strong>Job Match</strong>!",
+    "welcome": "👋 <strong>¡Hola!</strong> Puedo contarte sobre Sakhr. Un <strong>ciudadano alemán</strong>, <strong>Fundador/CEO/CTO de AI Waverider</strong>, con 15+ años en Alemania, reubicándose en Dubai.<br><br>¡Pregunta sobre sus habilidades o usa <strong>Job Match</strong>!",
     "suggestions": {
       "background": "Antecedentes",
       "founder": "AI Waverider",
@@ -316,7 +316,7 @@
       },
       "founder": {
         "user": "Cuéntame sobre AI Waverider",
-        "bot": "<strong>AI Waverider — Fundado y Construido por Sakhr</strong><br><br>🚀 <strong>5,600+ agentes de IA</strong> y flujos de trabajo de automatización<br>👨‍💼 <strong>Fundador, CEO y CTO</strong><br>💻 Construido <strong>completamente desde cero</strong> mientras trabajaba a tiempo completo<br>🔧 Full-stack: React, Node.js, Python, GCP, Docker<br>📈 Base de usuarios orgánica creciendo globalmente<br><br>Visita: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+        "bot": "<strong>AI Waverider. Fundado y Construido por Sakhr</strong><br><br>🚀 <strong>5,600+ agentes de IA</strong> y flujos de trabajo de automatización<br>👨‍💼 <strong>Fundador, CEO y CTO</strong><br>💻 Construido <strong>completamente desde cero</strong> mientras trabajaba a tiempo completo<br>🔧 Full-stack: React, Node.js, Python, GCP, Docker<br>📈 Base de usuarios orgánica creciendo globalmente<br><br>Visita: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
       },
       "dubai": {
         "user": "¿Por qué Sakhr se muda a Dubai?",

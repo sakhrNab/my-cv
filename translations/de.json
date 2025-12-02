@@ -101,7 +101,7 @@
     "highlights": {
       "title": "WICHTIGE HIGHLIGHTS",
       "germanCitizen": "Deutscher Staatsbürger mit 15+ Jahren in Deutschland, ausgebildet an TU Berlin und HTW Berlin",
-      "founder": "Gründer, CEO & CTO von AI Waverider — 5.600+ KI-Automatisierungsworkflows",
+      "founder": "Gründer, CEO & CTO von AI Waverider. 5.600+ KI-Automatisierungsworkflows",
       "corporate": "7+ Jahre Unternehmenserfahrung bei Accenture, BMG Rights Management, Innocean Europe",
       "apps": "11 Anwendungen von Grund auf gebaut dieses Jahr während Vollzeitbeschäftigung",
       "hackathon": "Gewann globalen KI-Hackathon durch Integration von Azure OpenAI",
@@ -112,14 +112,14 @@
   },
   "vision": {
     "title": "Meine Vision & Philosophie",
-    "quote1": "<strong>\"Die Ära des traditionellen Programmierens ist vorbei.\"</strong> Wir sind über das stundenlange Recherchieren von Fehlern auf Stack Overflow hinausgewachsen. Heute ist Geschwindigkeit der ultimative Unterscheidungsfaktor—eine Idee kann innerhalb von Minuten mit KI-Tools programmiert werden.",
-    "paragraph1": "Genau wie Excel Papier-Tabellenkalkulationen eliminiert hat, transformiert KI die Softwareentwicklung. Diejenigen, die diese Tools beherrschen, werden die nächste Innovationswelle anführen. Mit <strong>7+ Jahren Unternehmenserfahrung</strong> kombiniert mit meinem dualen Hintergrund in Informatik und Wirtschaftsingenieurwesen von der <span class=\"vision-emphasis\">TU Berlin & HTW Berlin</span>—Deutschlands renommiertesten technischen Universitäten—war ich einer der Ersten, der KI nutzte, um Ziele schneller und effektiver zu erreichen.",
-    "paragraph2": "Als <strong>deutscher Staatsbürger, der über 15 Jahre in Deutschland gelebt hat</strong>, bringe ich europäische Ingenieursstandards und Arbeitsethos mit. Kombiniert mit meinem arabischen Erbe und englischsprachiger Ausbildung biete ich eine einzigartige Brücke zwischen Kulturen—<span class=\"vision-emphasis\">deutsche Präzision, arabisches kulturelles Verständnis und englische Geschäftssprachgewandtheit</span>.",
+    "quote1": "<strong>\"Die Ära des traditionellen Programmierens ist vorbei.\"</strong> Wir sind über das stundenlange Recherchieren von Fehlern auf Stack Overflow hinausgewachsen. Heute ist Geschwindigkeit der ultimative Unterscheidungsfaktor. Eine Idee kann innerhalb von Minuten mit KI-Tools programmiert werden.",
+    "paragraph1": "Genau wie Excel Papier-Tabellenkalkulationen eliminiert hat, transformiert KI die Softwareentwicklung. Diejenigen, die diese Tools beherrschen, werden die nächste Innovationswelle anführen. Mit <strong>7+ Jahren Unternehmenserfahrung</strong> kombiniert mit meinem dualen Hintergrund in Informatik und Wirtschaftsingenieurwesen von der <span class=\"vision-emphasis\">TU Berlin & HTW Berlin</span>. Deutschlands renommiertesten technischen Universitäten. War ich einer der Ersten, der KI nutzte, um Ziele schneller und effektiver zu erreichen.",
+    "paragraph2": "Als <strong>deutscher Staatsbürger, der über 15 Jahre in Deutschland gelebt hat</strong>, bringe ich europäische Ingenieursstandards und Arbeitsethos mit. Kombiniert mit meinem arabischen Erbe und englischsprachiger Ausbildung biete ich eine einzigartige Brücke zwischen Kulturen. <span class=\"vision-emphasis\">Deutsche Präzision, arabisches kulturelles Verständnis und englische Geschäftssprachgewandtheit</span>.",
     "quote2": "<strong>Warum Dubai?</strong> Ich positioniere mich unter den klügsten Köpfen in einem der am schnellsten wachsenden Tech-Hubs der Welt. Ich komme in die VAE, um mit innovativen Denkern zu arbeiten, von den Besten zu lernen und gemeinsam außergewöhnliche Lösungen zu entwickeln.",
     "achievementsTitle": "Diesjährige Erfolge (Während Vollzeitbeschäftigung bei Accenture)",
     "achievements": {
       "apps": "<strong>11 Anwendungen</strong> von Grund auf gebaut",
-      "waverider": "<strong>AI Waverider</strong> — Gegründet & gebaut",
+      "waverider": "<strong>AI Waverider</strong>. Gegründet & gebaut",
       "agents": "<strong>5.600+ KI-Agenten</strong> erstellt",
       "fortune500": "<strong>Fortune 500</strong> Kunden geliefert"
     }
@@ -127,20 +127,20 @@
   "summary": {
     "title": "Berufliche Zusammenfassung",
     "paragraph1": "<strong>Deutscher Staatsbürger</strong> und Senior Software Engineer mit 7+ Jahren in der Unternehmensentwicklung, spezialisiert auf Microservices, Cloud-Technologien und KI-Integration. Ausgebildet an Deutschlands Top-Universitäten (TU Berlin, HTW Berlin) mit nachgewiesener Erfolgsbilanz für Fortune 500 Finanz- und Automobilkunden.",
-    "paragraph2": "Bekannt für <strong>außergewöhnliche Ressourcen</strong>—11 Anwendungen dieses Jahr gebaut, während ich Vollzeit bei Accenture arbeitete. Koordinierte Offshore-Teams über 3 Zeitzonen. Derzeit <strong>Gründer, CEO & CTO</strong> von <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>—eine Plattform mit 5.600+ KI-Agenten und Automatisierungsworkflows.",
+    "paragraph2": "Bekannt für <strong>außergewöhnliche Ressourcen</strong>. 11 Anwendungen dieses Jahr gebaut, während ich Vollzeit bei Accenture arbeitete. Koordinierte Offshore-Teams über 3 Zeitzonen. Derzeit <strong>Gründer, CEO & CTO</strong> von <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. Eine Plattform mit 5.600+ KI-Agenten und Automatisierungsworkflows.",
     "paragraph3": "<strong>Einzigartiger Wert:</strong> Deutsche Präzision + arabisches Erbe + englische Sprachgewandtheit. Dreisprachig (Deutsch C1, Englisch C1, Arabisch Muttersprache) verbindet europäische und nahöstliche Kulturen."
   },
   "experience": {
     "title": "Berufserfahrung",
     "founder": {
       "role": "Gründer, CEO & CTO",
-      "company": "AI Waverider — KI-Automatisierungsplattform",
+      "company": "AI Waverider. KI-Automatisierungsplattform",
       "date": "2024 - Heute",
       "highlight": "🚀 <strong>5.600+ KI-Agenten & Automatisierungsworkflows</strong> | Globale Nutzerbasis | Von Grund auf gebaut",
       "description": "Gründete und baute eine KI-gestützte Automatisierungsplattform von Grund auf, während ich Vollzeit bei Accenture beschäftigt war, was außergewöhnliches Zeitmanagement und unternehmerischen Antrieb demonstriert.",
       "points": {
         "vision": "<strong>Produktvision & Strategie:</strong> Konzipiert, entworfen und eine Plattform gestartet, die 5.600+ kostenlose KI-Automatisierungsworkflows und n8n-Vorlagen für Unternehmen weltweit anbietet",
-        "development": "<strong>Full-Stack-Entwicklung:</strong> Architekturiert und die gesamte Plattform allein gebaut—Frontend (React/Vue), Backend (Node.js/Python), Datenbank (PostgreSQL/Supabase) und Cloud-Infrastruktur (GCP, Docker, Coolify)",
+        "development": "<strong>Full-Stack-Entwicklung:</strong> Architekturiert und die gesamte Plattform allein gebaut. Frontend (React/Vue), Backend (Node.js/Python), Datenbank (PostgreSQL/Supabase) und Cloud-Infrastruktur (GCP, Docker, Coolify)",
         "ai": "<strong>KI-Integration:</strong> Integrierte OpenAI GPT-4, Claude AI, LangChain, RAGs und Vektordatenbanken für intelligente Automatisierungsagenten",
         "operations": "<strong>Geschäftsbetrieb:</strong> Behandelte alle Aspekte: rechtliche Compliance (FTC-Vorschriften), Zahlungsabwicklung (Paddle), Marketingstrategie, Nutzerakquise und Kundensupport",
         "growth": "<strong>Wachstum:</strong> Organisches Wachstum durch Content-Marketing, SEO-Optimierung und Aufbau von Social-Media-Präsenz erreicht",
@@ -210,14 +210,14 @@
       "degree": "B.Sc. Angewandte Informatik",
       "institution": "HTW Berlin - Hochschule für Technik und Wirtschaft",
       "date": "2017 - 2022",
-      "thesis": "<strong>Thesis:</strong> \"Design und Implementierung einer Microservices-Architektur für Gesundheitsanwendungen\" — Entwickelte eine skalierbare Gesundheitsplattform mit Docker-Containerisierung, RESTful APIs, Django-Backend und PostgreSQL-Datenbank. Implementierte HIPAA-konforme Sicherheitsmaßnahmen und automatisierte Test-Pipelines.",
+      "thesis": "<strong>Thesis:</strong> \"Design und Implementierung einer Microservices-Architektur für Gesundheitsanwendungen\". Entwickelte eine skalierbare Gesundheitsplattform mit Docker-Containerisierung, RESTful APIs, Django-Backend und PostgreSQL-Datenbank. Implementierte HIPAA-konforme Sicherheitsmaßnahmen und automatisierte Test-Pipelines.",
       "grade": "<strong>Note:</strong> 2,4 (Gut) | <strong>Schwerpunkte:</strong> Software Engineering, Datenbanksysteme, Web-Technologien, Cloud Computing"
     },
     "tu": {
       "degree": "Wirtschaftsingenieurwesen",
       "institution": "Technische Universität Berlin (TU Berlin)",
       "date": "2012 - 2017",
-      "description1": "Die TU Berlin ist ein <strong>TU9-Mitglied</strong>—Deutschlands Allianz führender technischer Universitäten, rangiert unter den Top-Ingenieursschulen in Europa.",
+      "description1": "Die TU Berlin ist ein <strong>TU9-Mitglied</strong>. Deutschlands Allianz führender technischer Universitäten, rangiert unter den Top-Ingenieursschulen in Europa.",
       "description2": "<strong>Fokus:</strong> Ingenieursgrundlagen kombiniert mit Betriebswirtschaft, Operations Research und Produktionsmanagement. Diese duale Perspektive ermöglicht es mir, sowohl technische Implementierung als auch Geschäftswert zu verstehen."
     }
   },
@@ -300,7 +300,7 @@
   "aiChat": {
     "title": "Fragen Sie über Sakhr",
     "close": "✕",
-    "welcome": "👋 <strong>Hallo!</strong> Ich kann Ihnen über Sakhr erzählen—ein <strong>deutscher Staatsbürger</strong>, <strong>Gründer/CEO/CTO von AI Waverider</strong>, mit 15+ Jahren in Deutschland, verlegt nach Dubai.<br><br>Fragen Sie nach seinen Fähigkeiten oder nutzen Sie <strong>Job Match</strong>!",
+    "welcome": "👋 <strong>Hallo!</strong> Ich kann Ihnen über Sakhr erzählen. Ein <strong>deutscher Staatsbürger</strong>, <strong>Gründer/CEO/CTO von AI Waverider</strong>, mit 15+ Jahren in Deutschland, verlegt nach Dubai.<br><br>Fragen Sie nach seinen Fähigkeiten oder nutzen Sie <strong>Job Match</strong>!",
     "suggestions": {
       "background": "Hintergrund",
       "founder": "AI Waverider",
@@ -316,7 +316,7 @@
       },
       "founder": {
         "user": "Erzählen Sie mir über AI Waverider",
-        "bot": "<strong>AI Waverider — Gegründet & gebaut von Sakhr</strong><br><br>🚀 <strong>5.600+ KI-Agenten</strong> & Automatisierungsworkflows<br>👨‍💼 <strong>Gründer, CEO & CTO</strong><br>💻 <strong>Vollständig von Grund auf</strong> gebaut während Vollzeitbeschäftigung<br>🔧 Full-Stack: React, Node.js, Python, GCP, Docker<br>📈 Wachsende organische Nutzerbasis global<br><br>Besuchen: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+        "bot": "<strong>AI Waverider. Gegründet & gebaut von Sakhr</strong><br><br>🚀 <strong>5.600+ KI-Agenten</strong> & Automatisierungsworkflows<br>👨‍💼 <strong>Gründer, CEO & CTO</strong><br>💻 <strong>Vollständig von Grund auf</strong> gebaut während Vollzeitbeschäftigung<br>🔧 Full-Stack: React, Node.js, Python, GCP, Docker<br>📈 Wachsende organische Nutzerbasis global<br><br>Besuchen: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
       },
       "dubai": {
         "user": "Warum zieht Sakhr nach Dubai?",

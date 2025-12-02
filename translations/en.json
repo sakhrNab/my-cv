@@ -101,7 +101,7 @@
     "highlights": {
       "title": "KEY HIGHLIGHTS",
       "germanCitizen": "German citizen with 15+ years in Germany, educated at TU Berlin and HTW Berlin",
-      "founder": "Founder, CEO & CTO of AI Waverider — 5,600+ AI automation workflows",
+      "founder": "Founder, CEO & CTO of AI Waverider. 5,600+ AI automation workflows",
       "corporate": "7+ years corporate experience at Accenture, BMG Rights Management, Innocean Europe",
       "apps": "Built 11 applications from scratch this year while working full-time",
       "hackathon": "Won global AI hackathon integrating Azure OpenAI",
@@ -112,14 +112,14 @@
   },
   "vision": {
     "title": "My Vision & Philosophy",
-    "quote1": "<strong>\"The era of traditional coding is over.\"</strong> We've moved beyond spending hours researching bugs on Stack Overflow. Today, speed is the ultimate differentiator—an idea can be coded within minutes using AI tools.",
-    "paragraph1": "Just as Excel eliminated paper spreadsheets, AI is transforming software development. Those who master these tools will lead the next wave of innovation. With <strong>7+ years of corporate experience</strong> combined with my dual background in Computer Science and Industrial Engineering from <span class=\"vision-emphasis\">TU Berlin & HTW Berlin</span>—Germany's most prestigious technical universities—I was among the first to leverage AI to achieve goals faster and more effectively.",
-    "paragraph2": "As a <strong>German citizen who has lived in Germany for over 15 years</strong>, I bring European engineering standards and work ethic. Combined with my Arabic heritage and English-language education, I offer a unique bridge between cultures—<span class=\"vision-emphasis\">German precision, Arabic cultural insight, and English business fluency</span>.",
+    "quote1": "<strong>\"The era of traditional coding is over.\"</strong> We've moved beyond spending hours researching bugs on Stack Overflow. Today, speed is the ultimate differentiator. An idea can be coded within minutes using AI tools.",
+    "paragraph1": "Just as Excel eliminated paper spreadsheets, AI is transforming software development. Those who master these tools will lead the next wave of innovation. With <strong>7+ years of corporate experience</strong> combined with my dual background in Computer Science and Industrial Engineering from <span class=\"vision-emphasis\">TU Berlin & HTW Berlin</span>. Germany's most prestigious technical universities. I was among the first to leverage AI to achieve goals faster and more effectively.",
+    "paragraph2": "As a <strong>German citizen who has lived in Germany for over 15 years</strong>, I bring European engineering standards and work ethic. Combined with my Arabic heritage and English-language education, I offer a unique bridge between cultures. <span class=\"vision-emphasis\">German precision, Arabic cultural insight, and English business fluency</span>.",
     "quote2": "<strong>Why Dubai?</strong> I'm positioning myself among the brightest minds in one of the world's fastest-growing tech hubs. I'm coming to the UAE to work with innovative thinkers, learn from the best, and build extraordinary solutions together.",
     "achievementsTitle": "This Year's Achievements (While Working Full-Time at Accenture)",
     "achievements": {
       "apps": "<strong>11 Applications</strong> built from scratch",
-      "waverider": "<strong>AI Waverider</strong> — Founded & built",
+      "waverider": "<strong>AI Waverider</strong>. Founded & built",
       "agents": "<strong>5,600+ AI Agents</strong> created",
       "fortune500": "<strong>Fortune 500</strong> clients delivered"
     }
@@ -127,20 +127,20 @@
   "summary": {
     "title": "Professional Summary",
     "paragraph1": "<strong>German citizen</strong> and Senior Software Engineer with 7+ years in enterprise development, specializing in microservices, cloud technologies, and AI integration. Educated at Germany's top universities (TU Berlin, HTW Berlin) with proven track record delivering for Fortune 500 finance and automotive clients.",
-    "paragraph2": "Known for <strong>exceptional resourcefulness</strong>—built 11 applications this year while working full-time at Accenture. Coordinated offshore teams across 3 time zones. Currently the <strong>Founder, CEO & CTO</strong> of <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>—a platform with 5,600+ AI agents and automation workflows.",
+    "paragraph2": "Known for <strong>exceptional resourcefulness</strong>. Built 11 applications this year while working full-time at Accenture. Coordinated offshore teams across 3 time zones. Currently the <strong>Founder, CEO & CTO</strong> of <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. A platform with 5,600+ AI agents and automation workflows.",
     "paragraph3": "<strong>Unique Value:</strong> German precision + Arabic heritage + English fluency. Trilingual (German C1, English C1, Arabic Native) bridging European and Middle Eastern cultures."
   },
   "experience": {
     "title": "Professional Experience",
     "founder": {
       "role": "Founder, CEO & CTO",
-      "company": "AI Waverider — AI Automation Platform",
+      "company": "AI Waverider. AI Automation Platform",
       "date": "2024 - Present",
       "highlight": "🚀 <strong>5,600+ AI Agents & Automation Workflows</strong> | Global User Base | Built From Scratch",
       "description": "Founded and built an AI-powered automation platform from the ground up while maintaining full-time employment at Accenture, demonstrating exceptional time management and entrepreneurial drive.",
       "points": {
         "vision": "<strong>Product Vision & Strategy:</strong> Conceived, designed, and launched a platform offering 5,600+ free AI automation workflows and n8n templates for businesses worldwide",
-        "development": "<strong>Full-Stack Development:</strong> Architected and built the entire platform solo—frontend (React/Vue), backend (Node.js/Python), database (PostgreSQL/Supabase), and cloud infrastructure (GCP, Docker, Coolify)",
+        "development": "<strong>Full-Stack Development:</strong> Architected and built the entire platform solo. Frontend (React/Vue), backend (Node.js/Python), database (PostgreSQL/Supabase), and cloud infrastructure (GCP, Docker, Coolify)",
         "ai": "<strong>AI Integration:</strong> Integrated OpenAI GPT-4, Claude AI, LangChain, RAGs, and vector databases for intelligent automation agents",
         "operations": "<strong>Business Operations:</strong> Handled all aspects: legal compliance (FTC regulations), payment processing (Paddle), marketing strategy, user acquisition, and customer support",
         "growth": "<strong>Growth:</strong> Achieved organic growth through content marketing, SEO optimization, and social media presence building",
@@ -210,14 +210,14 @@
       "degree": "B.Sc. Applied Computer Science (Angewandte Informatik)",
       "institution": "HTW Berlin - University of Applied Sciences",
       "date": "2017 - 2022",
-      "thesis": "<strong>Thesis:</strong> \"Design and Implementation of a Microservices Architecture for Healthcare Applications\" — Developed a scalable healthcare platform using Docker containerization, RESTful APIs, Django backend, and PostgreSQL database. Implemented HIPAA-compliant security measures and automated testing pipelines.",
+      "thesis": "<strong>Thesis:</strong> \"Design and Implementation of a Microservices Architecture for Healthcare Applications\". Developed a scalable healthcare platform using Docker containerization, RESTful APIs, Django backend, and PostgreSQL database. Implemented HIPAA-compliant security measures and automated testing pipelines.",
       "grade": "<strong>Grade:</strong> 2.4 (Good) | <strong>Focus Areas:</strong> Software Engineering, Database Systems, Web Technologies, Cloud Computing"
     },
     "tu": {
       "degree": "Industrial Engineering (Wirtschaftsingenieurwesen)",
       "institution": "Technical University Berlin (TU Berlin)",
       "date": "2012 - 2017",
-      "description1": "TU Berlin is a <strong>TU9 member</strong>—Germany's alliance of leading technical universities, ranked among the top engineering schools in Europe.",
+      "description1": "TU Berlin is a <strong>TU9 member</strong>. Germany's alliance of leading technical universities, ranked among the top engineering schools in Europe.",
       "description2": "<strong>Focus:</strong> Engineering fundamentals combined with Business Administration, Operations Research, and Production Management. This dual perspective enables me to understand both technical implementation and business value."
     }
   },
@@ -300,7 +300,7 @@
   "aiChat": {
     "title": "Ask About Sakhr",
     "close": "✕",
-    "welcome": "👋 <strong>Hello!</strong> I can tell you about Sakhr—a <strong>German citizen</strong>, <strong>Founder/CEO/CTO of AI Waverider</strong>, with 15+ years in Germany, relocating to Dubai.<br><br>Ask about his skills or use <strong>Job Match</strong>!",
+    "welcome": "👋 <strong>Hello!</strong> I can tell you about Sakhr. A <strong>German citizen</strong>, <strong>Founder/CEO/CTO of AI Waverider</strong>, with 15+ years in Germany, relocating to Dubai.<br><br>Ask about his skills or use <strong>Job Match</strong>!",
     "suggestions": {
       "background": "Background",
       "founder": "AI Waverider",
@@ -316,7 +316,7 @@
       },
       "founder": {
         "user": "Tell me about AI Waverider",
-        "bot": "<strong>AI Waverider — Founded & Built by Sakhr</strong><br><br>🚀 <strong>5,600+ AI agents</strong> & automation workflows<br>👨‍💼 <strong>Founder, CEO & CTO</strong><br>💻 Built <strong>entirely from scratch</strong> while working full-time<br>🔧 Full-stack: React, Node.js, Python, GCP, Docker<br>📈 Growing organic user base globally<br><br>Visit: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+        "bot": "<strong>AI Waverider. Founded & Built by Sakhr</strong><br><br>🚀 <strong>5,600+ AI agents</strong> & automation workflows<br>👨‍💼 <strong>Founder, CEO & CTO</strong><br>💻 Built <strong>entirely from scratch</strong> while working full-time<br>🔧 Full-stack: React, Node.js, Python, GCP, Docker<br>📈 Growing organic user base globally<br><br>Visit: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
       },
       "dubai": {
         "user": "Why is Sakhr moving to Dubai?",

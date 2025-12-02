@@ -20,7 +20,12 @@ function toggleTerminal() {
 }
 
 function handleTerminalInput(e) {
-    if (e.key !== 'Enter') return;
+    // Allow all keys including spaces - only process on Enter
+    if (e.key !== 'Enter') {
+        // Don't prevent default - allow normal typing including spaces
+        return;
+    }
+    e.preventDefault(); // Only prevent default on Enter
     const input = document.getElementById('terminalInput'),
         body = document.getElementById('terminalBody'),
         cmd = input.value.trim().toLowerCase();
@@ -73,7 +78,7 @@ function handleTerminalInput(e) {
             }, 300);
             break;
         case 'clear':
-            body.innerHTML = `<div class="terminal-input-line"><span class="terminal-prompt">sakhr@dubai:~$</span>&nbsp;<input type="text" class="terminal-input" id="terminalInput" placeholder="Type 'help'..." onkeypress="handleTerminalInput(event)"><span class="terminal-cursor">▋</span></div>`;
+            body.innerHTML = `<div class="terminal-input-line"><span class="terminal-prompt">sakhr@dubai:~$</span>&nbsp;<input type="text" class="terminal-input" id="terminalInput" placeholder="Type 'help'..." onkeydown="handleTerminalInput(event)"><span class="terminal-cursor">▋</span></div>`;
             return;
         default:
             // Check if it's a chat command with message

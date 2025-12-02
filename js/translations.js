@@ -1,6 +1,16 @@
 // Translation system
-let currentLanguage = 'en';
-let translations = {};
+// Prevent redeclaration if script is loaded multiple times
+// Check if already initialized
+if (typeof window.__translationsInitialized === 'undefined') {
+    window.__translationsInitialized = true;
+    
+    // Initialize window properties
+    window.currentLanguage = window.currentLanguage || 'en';
+    window.translations = window.translations || {};
+    
+    // Use local variables that reference window properties
+    let currentLanguage = window.currentLanguage;
+    let translations = window.translations;
 
 // Load translation file
 async function loadTranslation(lang) {
@@ -306,11 +316,28 @@ document.addEventListener('DOMContentLoaded', async () => {
     updateLangSwitcherDisplay(currentLanguage);
 });
 
-// Export for use in other scripts
-window.t = t;
-window.changeLanguage = changeLanguage;
-window.loadTranslation = loadTranslation;
-window.toggleLangDropdown = toggleLangDropdown;
-window.currentLanguage = currentLanguage;
-window.translations = translations;
+    // Export for use in other scripts
+    window.t = t;
+    window.changeLanguage = changeLanguage;
+    window.loadTranslation = loadTranslation;
+    window.toggleLangDropdown = toggleLangDropdown;
+    
+    // Keep window properties in sync with local variables
+    // Update window whenever local variables change
+    const updateWindowProps = () => {
+        window.currentLanguage = currentLanguage;
+        window.translations = translations;
+    };
+    
+    // Override loadTranslation to sync window properties
+    const originalLoadTranslation = loadTranslation;
+    window.loadTranslation = async function(lang) {
+        const result = await originalLoadTranslation(lang);
+        updateWindowProps();
+        return result;
+    };
+    
+    // Initial sync
+    updateWindowProps();
+}
 

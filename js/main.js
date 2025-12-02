@@ -90,8 +90,10 @@ function initHeroTerminal() {
     const content = document.getElementById('heroTermContent');
     
     if (input) {
-        input.addEventListener('keypress', function(e) {
+        input.addEventListener('keydown', function(e) {
+            // Allow all keys including spaces - only process on Enter
             if (e.key === 'Enter') {
+                e.preventDefault(); // Prevent form submission
                 const cmd = this.value.trim().toLowerCase();
                 this.value = '';
                 
