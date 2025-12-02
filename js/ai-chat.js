@@ -21,7 +21,7 @@ function handleSuggestion(type) {
         },
         interview: {
             user: "How can I contact Sakhr?",
-            bot: "<strong>Let's Connect!</strong><br><br>📅 Available <strong>Q1 2025</strong><br>✅ Open to: Full-time, Contract, Hybrid"
+            bot: "<strong>Let's Connect!</strong><br><br>📅 Available <strong>Q1 2026</strong><br>✅ Open to: Full-time, Contract, Hybrid"
         }
     };
     const r = responses[type];

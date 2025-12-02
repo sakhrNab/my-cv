@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "صخر العبسي | مواطن ألماني → دبي | مهندس Gen AI & Cloud | مهندس أنظمة الذكاء الاصطناعي",
-    "description": "خبير Gen AI ومهندس Cloud (GCP معتمد) مع 15+ سنة في ألمانيا. متخصص في RAGs، Fine Tuning، تكامل الذكاء الاصطناعي. مؤسس AI Waverider. 7+ سنوات خبرة مؤسسية. 5,600+ وكيل ذكاء اصطناعي. الانتقال إلى دبي."
+    "description": "خبير Gen AI ومهندس Cloud (GCP معتمد) مع 15+ سنة في ألمانيا. متخصص في RAGs، Fine Tuning، تكامل الذكاء الاصطناعي. مؤسس AI Waverider. 7+ سنوات خبرة مؤسسية. 5,600+ نظام ذكاء اصطناعي. الانتقال إلى دبي."
   },
   "nav": {
     "logo": "صخر العبسي",
@@ -51,7 +51,7 @@
     "lsAchievements": "ls achievements/",
     "achievements": "ai_waverider_founder/ 11_apps_built_2024/ global_hackathon_winner/ prompt_engineering_expert/",
     "catAiwaverider": "cat aiwaverider.txt",
-    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">مؤسس، الرئيس التنفيذي والرئيس التقني</span> | 5,600+ وكيل ذكاء اصطناعي | خبير Prompt Engineering",
+    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">مؤسس، الرئيس التنفيذي والرئيس التقني</span> | 5,600+ نظام ذكاء اصطناعي | خبير Prompt Engineering",
     "echoLanguages": "echo $LANGUAGES",
     "languagesOutput": "ألماني (C1) | إنجليزي (C1) | عربي (أصلي) | إسباني (B1)",
     "catStatus": "cat status.txt",
@@ -67,7 +67,7 @@
     "headline": "مهندس ألماني.",
     "headlineHighlight": "بناء المستقبل في دبي.",
     "staticRoleTitle": "مهندس Gen AI & Cloud | مهندس حلول ذكاء اصطناعي متكاملة",
-    "tagline": "<strong>الدقة الألمانية</strong> • <strong>التراث العربي</strong> • <strong>الطلاقة الإنجليزية</strong>",
+    "tagline": "<strong>الدقة الألمانية</strong> • <strong>التراث العربي</strong> • <strong>الطلاقة في الإنجليزية</strong>",
     "downloadCV": "تحميل السيرة الذاتية",
     "aiWaverider": "🚀 AI Waverider",
     "trustedBy": "موثوق من قبل",
@@ -82,7 +82,7 @@
       "yearsGermany": "سنوات في<br>ألمانيا",
       "corporateExcellence": "التميز<br>المؤسسي",
       "appsBuilt": "تطبيقات مبنية<br>هذا العام",
-      "aiAgents": "وكلاء ذكاء اصطناعي<br>منتقيين"
+      "aiAgents": "نظام ذكاء اصطناعي<br>منتقى"
     }
   },
   "cv": {
@@ -100,10 +100,10 @@
     "allCerts": "جميع الشهادات (ZIP)",
     "highlights": {
       "title": "النقاط الرئيسية",
-      "germanCitizen": "مواطن ألماني مع 15+ سنة في ألمانيا، متعلم في TU Berlin و HTW Berlin",
-      "founder": "مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider. 5,600+ سير عمل أتمتة ذكاء اصطناعي",
+      "germanCitizen": "مواطن ألماني مع 15+ سنة في ألمانيا، تخرج من TU Berlin و HTW Berlin",
+      "founder": "مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider. 5,600+ نظام ذكاء اصطناعي وسير عمل آلية",
       "corporate": "7+ سنوات خبرة مؤسسية في Accenture، BMG Rights Management، Innocean Europe",
-      "apps": "11 تطبيق مبني من الصفر هذا العام أثناء العمل بدوام كامل",
+      "apps": "بناء 11 تطبيقاً من الصفر هذا العام أثناء العمل بدوام كامل",
       "hackathon": "فاز بمسابقة ذكاء اصطناعي عالمية من خلال دمج Azure OpenAI",
       "languages": "ثلاثي اللغات: ألماني (C1)، إنجليزي (C1)، عربي (أصلي)",
       "available": "متاح Q1 2026 | مفتوح لـ: دوام كامل، عقد، هجين"
@@ -114,35 +114,35 @@
     "title": "الملف التنفيذي: مهندس الذكاء الاصطناعي الرائد",
     "hook": "<strong>\"انتهى عصر البرمجة التقليدية.\"</strong> أجمع 15+ سنة من الانضباط الهندسي الألماني مع تنسيق الذكاء الاصطناعي المتقدم لبناء أنظمة مؤسسية في أيام، وليس أشهر.",
     "paragraph1": "أنا <strong>مهندس أنظمة ذكاء اصطناعي متقدم</strong> و<strong>مواطن ألماني</strong> أنتقل إلى دبي. بخلفية مزدوجة في علوم الكمبيوتر والهندسة الصناعية من <strong>TU Berlin و HTW Berlin</strong>، أربط بين التنفيذ التقني المعقد والقيمة التجارية.",
-    "paragraph2": "حالياً، أعمل كمهندس برمجيات أول في <strong>Accenture ألمانيا</strong>، وأسلم حلولاً لعملاء Fortune 500 في القطاعين المصرفي والautomotive. في الوقت نفسه، كمؤسس <strong>AI Waverider</strong>، قمت بتصميم منصة تخدم آلاف المستخدمين مع أكثر من <strong>5,600+ وكيل ذكاء اصطناعي</strong>، متخصصاً في تقنيات Gen AI بما في ذلك RAGs، Fine Tuning، والتكامل السلس للذكاء الاصطناعي في تطبيقات الويب.",
-    "paragraph3": "<strong>ميزتي التنافسية:</strong> لا أكتب الكود فقط. أنسق حلولاً على مستوى المؤسسات. من خلال تعزيز الهندسة التقليدية بالذكاء الاصطناعي، أقلل دورات التطوير بنسبة 70%. أسلم أنظمة جاهزة للإنتاج بشكل أسرع دون التضحية بمعايير الجودة الألمانية التي تتطلبها أنظمتك. أجلب <strong>الدقة الألمانية، التراث العربي، والطلاقة التجارية الإنجليزية</strong> إلى سوق الإمارات.",
+    "paragraph2": "حالياً، أعمل كمهندس برمجيات أول في <strong>Accenture ألمانيا</strong>، وأُسلّم حلولاً لعملاء Fortune 500 في القطاعين المصرفي والسيارات. في الوقت نفسه، كمؤسس <strong>AI Waverider</strong>، قمت بتصميم منصة تخدم آلاف المستخدمين مع أكثر من <strong>5,600+ نظام ذكاء اصطناعي</strong>، متخصصاً في تقنيات Gen AI بما في ذلك RAGs، Fine Tuning، والتكامل السلس للذكاء الاصطناعي في تطبيقات الويب.",
+    "paragraph3": "<strong>ميزتي التنافسية:</strong> لا أكتب الكود فقط. أنسق حلولاً على مستوى المؤسسات. من خلال تعزيز الهندسة التقليدية بالذكاء الاصطناعي، أقلل دورات التطوير بنسبة 70%. أُسلّم أنظمة جاهزة للإنتاج بشكل أسرع دون التضحية بمعايير الجودة الألمانية التي تتطلبها أنظمتك. أجلب <strong>الدقة الألمانية، التراث العربي، والطلاقة في الإنجليزية</strong> إلى سوق الإمارات.",
     "whyDubai": "<strong>لماذا دبي؟</strong> أضع نفسي بين ألمع العقول في أحد أسرع مراكز التكنولوجيا نمواً في العالم. أنتقل إلى الإمارات للعمل مع المفكرين المبتكرين، والتعلم من الأفضل، وبناء حلول استثنائية معاً.",
     "impactTitle": "التأثير في لمحة",
     "impact": {
       "founder": "<strong>مؤسس ورئيس التقني لـ AI Waverider</strong>",
       "apps": "<strong>11 تطبيق مؤسسي</strong> مبني هذا العام",
-      "agents": "<strong>5,600+ وكيل ذكاء اصطناعي</strong> تم نشره",
+      "agents": "<strong>5,600+ نظام ذكاء اصطناعي</strong> تم نشره",
       "trilingual": "<strong>ثلاثي اللغات</strong> (DE/EN/AR)"
     }
   },
   "summary": {
     "title": "الملخص المهني",
-    "paragraph1": "<strong>مواطن ألماني</strong> ومهندس برمجيات أول مع 7+ سنوات في التطوير المؤسسي، متخصص في الخدمات المصغرة، تقنيات السحابة، وتكامل الذكاء الاصطناعي. متعلم في أفضل الجامعات الألمانية (TU Berlin، HTW Berlin) مع سجل حافل في التسليم لعملاء Fortune 500 في القطاعين المالي والautomotive.",
-    "paragraph2": "معروف بـ <strong>البراعة الاستثنائية</strong>. بنيت 11 تطبيقاً هذا العام أثناء العمل بدوام كامل في Accenture. نسقت فرقاً خارجية عبر 3 مناطق زمنية. حالياً <strong>المؤسس، الرئيس التنفيذي والرئيس التقني</strong> لـ <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. منصة تحتوي على 5,600+ وكيل ذكاء اصطناعي وسير عمل الأتمتة.",
-    "paragraph3": "<strong>القيمة الفريدة:</strong> الدقة الألمانية + التراث العربي + الطلاقة الإنجليزية. ثلاثي اللغات (ألماني C1، إنجليزي C1، عربي أصلي) أربط بين الثقافات الأوروبية والشرق الأوسطية."
+    "paragraph1": "<strong>مواطن ألماني</strong> ومهندس برمجيات أول مع 7+ سنوات في التطوير المؤسسي، متخصص في الخدمات المصغرة، تقنيات السحابة، وتكامل الذكاء الاصطناعي. خريج أفضل الجامعات الألمانية (TU Berlin، HTW Berlin) مع سجل حافل في التسليم لعملاء Fortune 500 في القطاعين المالي والسيارات.",
+    "paragraph2": "معروف بـ <strong>البراعة الاستثنائية</strong>. بنيت 11 تطبيقاً هذا العام أثناء العمل بدوام كامل في Accenture. نسقت فرقاً خارجية عبر 3 مناطق زمنية. حالياً <strong>المؤسس، الرئيس التنفيذي والرئيس التقني</strong> لـ <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. منصة تحتوي على 5,600+ نظام ذكاء اصطناعي وسير عمل آلية.",
+    "paragraph3": "<strong>القيمة الفريدة:</strong> الدقة الألمانية + التراث العربي + الطلاقة في الإنجليزية. ثلاثي اللغات (ألماني C1، إنجليزي C1، عربي أصلي) أربط بين الثقافات الأوروبية والشرق الأوسطية."
   },
   "experience": {
     "title": "الخبرة المهنية",
     "founder": {
       "role": "مؤسس، الرئيس التنفيذي والرئيس التقني",
-      "company": "AI Waverider. منصة أتمتة الذكاء الاصطناعي",
+      "company": "AI Waverider. منصة الذكاء الاصطناعي الآلية",
       "date": "2024 - الحاضر",
-      "highlight": "🚀 <strong>5,600+ وكيل ذكاء اصطناعي وسير عمل الأتمتة</strong> | قاعدة مستخدمين عالمية | منتقي",
-      "description": "أسست وانتقيت منصة أتمتة مدعومة بالذكاء الاصطناعي، جمعت ودمجت 5,600+ سير عمل ذكاء اصطناعي من جميع أنحاء الإنترنت بينما بنيت مكونات رئيسية. حافظت على التوظيف بدوام كامل في Accenture، مما يظهر إدارة وقت استثنائية ودفع ريادي.",
+      "highlight": "🚀 <strong>5,600+ نظام ذكاء اصطناعي وسير عمل آلية</strong> | قاعدة مستخدمين عالمية | منتقى",
+      "description": "أسست وانتقيت منصة ذكاء اصطناعي، جمعت ودمجت 5,600+ نظام ذكاء اصطناعي وسير عمل آلية من جميع أنحاء الإنترنت بينما بنيت مكونات رئيسية. حافظت على العمل بدوام كامل في Accenture، مما يُظهر إدارة وقت استثنائية وروح ريادية.",
       "points": {
-        "vision": "<strong>رؤية المنتج والاستراتيجية:</strong> تصورت، صممت، وأطلقت منصة تقدم 5,600+ سير عمل أتمتة ذكاء اصطناعي مجانية وقوالب n8n للشركات في جميع أنحاء العالم. دمجت أوامر متقدمة للفيديوهات والصور وتوليد النصوص. أنتقي وأدمج باستمرار أحدث أدوات وتقنيات الذكاء الاصطناعي من السوق لتقديم حلول متطورة",
+        "vision": "<strong>رؤية المنتج والاستراتيجية:</strong> تصورت، صممت، وأطلقت منصة تقدم 5,600+ نظام ذكاء اصطناعي وسير عمل آلية مجانية وقوالب n8n للشركات في جميع أنحاء العالم. دمجت أوامر متقدمة للفيديوهات والصور وتوليد النصوص. أنتقي وأدمج باستمرار أحدث أدوات وتقنيات الذكاء الاصطناعي من السوق لتقديم حلول متطورة",
         "development": "<strong>التطوير Full-Stack:</strong> هندست وبنيت المنصة بأكملها وحدي. الواجهة الأمامية (React/Vue)، الخلفية (Node.js/Python)، قاعدة البيانات (PostgreSQL/Supabase)، والبنية التحتية السحابية (GCP، Docker، Coolify)",
-        "ai": "<strong>تكامل Gen AI والهندسة:</strong> صممت ونشرت أنظمة Gen AI للإنتاج باستخدام RAGs (Retrieval-Augmented Generation)، Fine Tuning، وتكامل الذكاء الاصطناعي في تطبيقات الويب. دمجت OpenAI GPT-4، Claude AI، LangChain، قواعد البيانات المتجهة، ونماذج AI مخصصة. خبير في صياغة الأوامر عالية الأداء، تحسين أداء النماذج، وتوسيع نطاق حلول Gen AI لـ 5,600+ وكيل ذكاء اصطناعي في الإنتاج",
+        "ai": "<strong>تكامل Gen AI والهندسة:</strong> صممت ونشرت أنظمة Gen AI للإنتاج باستخدام RAGs (Retrieval-Augmented Generation)، Fine Tuning، وتكامل الذكاء الاصطناعي في تطبيقات الويب. دمجت OpenAI GPT-4، Claude AI، LangChain، قواعد البيانات المتجهة، ونماذج AI مخصصة. خبير في صياغة الأوامر عالية الأداء، تحسين أداء النماذج، وتوسيع نطاق حلول Gen AI لـ 5,600+ نظام ذكاء اصطناعي في الإنتاج",
         "operations": "<strong>العمليات التجارية:</strong> تعاملت مع جميع الجوانب: الامتثال القانوني (لوائح FTC)، معالجة المدفوعات (Paddle)، استراتيجية التسويق، اكتساب المستخدمين، ودعم العملاء",
         "growth": "<strong>النمو:</strong> حققت نمواً عضوياً من خلال تسويق المحتوى، تحسين SEO، وبناء وجود على وسائل التواصل الاجتماعي",
         "techStack": "<strong>المكدس التقني:</strong> React، Vue.js، Node.js، Python، PostgreSQL، Supabase، n8n، Docker، GCP، Coolify، Nginx، Linux VPS"
@@ -153,7 +153,7 @@
       "company": "Accenture GmbH، ألمانيا",
       "date": "أغسطس 2022 - الحاضر",
       "highlight": "🏦 <strong>عملاء Fortune 500:</strong> البنوك الألمانية الكبرى (أنظمة الدفع في الوقت الفعلي) وشركات السيارات المميزة (رقمنة سلسلة التوريد)",
-      "description": "أقود مبادرات التحول الرقمي لأعرق المؤسسات المالية ومصنعي السيارات في ألمانيا، وأسلم حلولاً على مستوى المؤسسات تعالج ملايين المعاملات.",
+      "description": "أقود مبادرات التحول الرقمي لأعرق المؤسسات المالية ومصنعي السيارات في ألمانيا، وأُسلّم حلولاً على مستوى المؤسسات تعالج ملايين المعاملات.",
       "points": {
         "architecture": "<strong>البنية السحابية الأصلية:</strong> هندست ونفذت خدمات مصغرة باستخدام Spring Boot 3.x، Java 17/21 لأنظمة معالجة الدفع في الوقت الفعلي عالية الحجم التي تتعامل مع 100K+ معاملة يومية",
         "platform": "<strong>هندسة المنصة:</strong> نشرت وأدرت التطبيقات على OpenShift و Google Cloud Platform مع SLA وقت تشغيل 99.9%، ونفذت خطوط أنابيب CI/CD شاملة مع Jenkins و GitLab",
@@ -173,7 +173,7 @@
         "sql": "<strong>تحسين SQL:</strong> حللت وحسنت استعلامات قاعدة البيانات المعقدة، مما حقق تحسين أداء بنسبة 40% في عمليات استرجاع البيانات",
         "lowCode": "<strong>تطوير Low Code:</strong> بنيت تطبيقات تجارية ديناميكية باستخدام منصة Low Code مملوكة، مما سرع دورات التطوير بنسبة 50%",
         "database": "<strong>تصميم قاعدة البيانات:</strong> صممت مخططات قاعدة بيانات فعالة ونفذت الإجراءات المخزنة للمنطق التجاري المعقد",
-        "collaboration": "<strong>تعاون العملاء:</strong> عملت مباشرة مع العملاء لجمع المتطلبات وترجمة الاحتياجات التجارية إلى حلول تقنية"
+        "collaboration": "<strong>التعاون مع العملاء:</strong> عملت مباشرة مع العملاء لجمع المتطلبات وترجمة الاحتياجات التجارية إلى حلول تقنية"
       }
     },
     "innocean": {
@@ -219,7 +219,7 @@
       "institution": "الجامعة التقنية في برلين (TU Berlin)",
       "date": "2012 - 2017",
       "description1": "TU Berlin هي <strong>عضو TU9</strong>. تحالف ألمانيا للجامعات التقنية الرائدة، مصنفة بين أفضل مدارس الهندسة في أوروبا.",
-      "description2": "<strong>التركيز:</strong> أساسيات الهندسة مجتمعة مع إدارة الأعمال، بحوث العمليات، وإدارة الإنتاج. هذه المنظور المزدوج يمكنني من فهم كل من التنفيذ التقني والقيمة التجارية."
+      "description2": "<strong>التركيز:</strong> أساسيات الهندسة مجتمعة مع إدارة الأعمال، بحوث العمليات، وإدارة الإنتاج. هذا المنظور المزدوج يمكنني من فهم كل من التنفيذ التقني والقيمة التجارية."
     }
   },
   "certifications": {
@@ -270,7 +270,7 @@
       "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
       "frameworks": ["Spring Boot 3.x", "الخدمات المصغرة", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
       "cloud": ["مهندس Cloud (GCP معتمد)", "GCP", "Compute Engine", "GKE", "Cloud Storage", "IAM", "Cloud Security", "Cloud Architecture", "Pub/Sub", "IaC", "Networking", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
-      "ai": ["Gen AI", "RAGs", "Fine Tuning", "تكامل الذكاء الاصطناعي", "OpenAI GPT", "Claude AI", "Prompt Engineering", "Azure OpenAI", "سير عمل n8n", "وكلاء الذكاء الاصطناعي", "LangChain"],
+      "ai": ["Gen AI", "RAGs", "Fine Tuning", "تكامل الذكاء الاصطناعي", "OpenAI GPT", "Claude AI", "Prompt Engineering", "Azure OpenAI", "سير عمل n8n", "أنظمة الذكاء الاصطناعي", "LangChain"],
       "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "قواعد البيانات المتجهة"],
       "domain": ["المالية والبنوك", "السيارات", "Agile/Scrum", "قيادة الفريق", "التنسيق الخارجي", "الاستشارات"]
     }
@@ -301,35 +301,35 @@
   "aiChat": {
     "title": "اسأل عن صخر",
     "close": "✕",
-    "welcome": "👋 <strong>مرحباً!</strong> يمكنني أن أخبرك عن صخر. <strong>مواطن ألماني</strong>، <strong>مؤسس/الرئيس التنفيذي/الرئيس التقني لـ AI Waverider</strong>، مع 15+ سنة في ألمانيا، ينتقل إلى دبي.<br><br>اسأل عن مهاراته أو استخدم <strong>Job Match</strong>!",
+    "welcome": "👋 <strong>مرحباً!</strong> يمكنني أن أخبرك عن صخر. <strong>مواطن ألماني</strong>، <strong>مؤسس/الرئيس التنفيذي/الرئيس التقني لـ AI Waverider</strong>، مع 15+ سنة في ألمانيا، ينتقل إلى دبي.<br><br>اسأل عن مهاراته أو استخدم خاصية <strong>مطابقة الوظائف</strong>!",
     "suggestions": {
       "background": "الخلفية",
       "founder": "AI Waverider",
       "dubai": "لماذا دبي؟",
       "contact": "اتصل",
-      "jobMatch": "Job Match"
+      "jobMatch": "مطابقة الوظائف"
     },
     "placeholder": "اسأل عن صخر...",
     "responses": {
       "background": {
         "user": "أخبرني عن خلفية صخر",
-        "bot": "<strong>مواطن ألماني ومؤسس</strong><br><br>🇩🇪 <strong>15+ سنة</strong> يعيش في ألمانيا<br>🎓 خريج <strong>TU Berlin و HTW Berlin</strong><br>💼 <strong>7+ سنوات</strong> في Accenture، BMG، Innocean<br>🚀 <strong>مؤسس، الرئيس التنفيذي والرئيس التقني</strong> لـ AI Waverider<br>🌍 تعاون مع 25+ بلد<br><br><strong>القيمة الفريدة:</strong> الدقة الألمانية + التراث العربي + الطلاقة الإنجليزية"
+        "bot": "<strong>مواطن ألماني ومؤسس</strong><br><br>🇩🇪 <strong>15+ سنة</strong> يعيش في ألمانيا<br>🎓 خريج <strong>TU Berlin و HTW Berlin</strong><br>💼 <strong>7+ سنوات</strong> في Accenture، BMG، Innocean<br>🚀 <strong>مؤسس، الرئيس التنفيذي والرئيس التقني</strong> لـ AI Waverider<br>🌍 تعاون مع 25+ بلد<br><br><strong>القيمة الفريدة:</strong> الدقة الألمانية + التراث العربي + الطلاقة في الإنجليزية"
       },
       "founder": {
         "user": "أخبرني عن AI Waverider",
-        "bot": "<strong>AI Waverider. تأسس وبناه صخر</strong><br><br>🚀 <strong>5,600+ وكيل ذكاء اصطناعي</strong> وسير عمل الأتمتة<br>🤖 <strong>مهندس Gen AI & Cloud</strong> - RAGs، Fine Tuning، تكامل الذكاء الاصطناعي<br>☁️ <strong>مهندس Cloud معتمد من GCP</strong><br>👨‍💼 <strong>مؤسس، الرئيس التنفيذي والرئيس التقني</strong><br>💻 مبني <strong>بالكامل من الصفر</strong> أثناء العمل بدوام كامل<br>🔧 Full-stack: React، Node.js، Python، GCP، Docker<br>📈 قاعدة مستخدمين عضوية متنامية عالمياً<br><br>زر: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+        "bot": "<strong>AI Waverider. أسسه وانتقاه صخر</strong><br><br>🚀 <strong>5,600+ نظام ذكاء اصطناعي</strong> وسير عمل آلية<br>🤖 <strong>مهندس Gen AI & Cloud</strong> - RAGs، Fine Tuning، تكامل الذكاء الاصطناعي<br>☁️ <strong>مهندس Cloud معتمد من GCP</strong><br>👨‍💼 <strong>مؤسس، الرئيس التنفيذي والرئيس التقني</strong><br>💻 <strong>منتقى ومُطوّر</strong> أثناء العمل بدوام كامل<br>🔧 Full-stack: React، Node.js، Python، GCP، Docker<br>📈 قاعدة مستخدمين متنامية عالمياً<br><br>زر: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
       },
       "dubai": {
         "user": "لماذا ينتقل صخر إلى دبي؟",
-        "bot": "<strong>لماذا دبي؟</strong><br><br>🚀 <strong>أسرع مركز تكنولوجيا نمواً</strong> في العالم<br>🌍 جسر مثالي بين الأسواق <strong>الأوروبية والشرق أوسطية</strong><br>💡 يسعى <strong>لشركات مبتكرة</strong> للبناء معها<br>🏆 يجلب خبرة مؤسسية <strong>Fortune 500</strong><br>🗣️ ثلاثي اللغات: ألماني، عربي وإنجليزي<br><br>جاهز للمساهمة في التحول الرقمي للإمارات!"
+        "bot": "<strong>لماذا دبي؟</strong><br><br>🚀 <strong>أسرع مركز تقني نمواً</strong> في العالم<br>🌍 جسر مثالي بين الأسواق <strong>الأوروبية والشرق الأوسطية</strong><br>💡 يسعى <strong>للعمل مع شركات مبتكرة</strong><br>🏆 يجلب خبرة مؤسسية <strong>من Fortune 500</strong><br>🗣️ ثلاثي اللغات: ألماني، عربي وإنجليزي<br><br>جاهز للمساهمة في التحول الرقمي للإمارات!"
       },
       "interview": {
         "user": "كيف يمكنني الاتصال بصخر؟",
-        "bot": "<strong>دعنا نتصل!</strong><br><br>📅 متاح <strong>Q1 2025</strong><br>✅ مفتوح لـ: دوام كامل، عقد، هجين"
+        "bot": "<strong>لنتواصل!</strong><br><br>📅 متاح <strong>Q1 2026</strong><br>✅ مفتوح لـ: دوام كامل، عقد، هجين"
       }
     },
     "jobMatch": {
-      "title": "🎯 Job Match بالذكاء الاصطناعي",
+    "title": "🎯 مطابقة الوظائف بالذكاء الاصطناعي",
       "description": "الصق وصف الوظيفة لترى مدى تطابق صخر:",
       "placeholder": "الصق متطلبات الوظيفة هنا...",
       "analyze": "تحليل التطابق",
@@ -338,26 +338,33 @@
       "highlyRecommended": "✓ مرشح موصى به بشدة!"
     },
     "localResponses": {
-      "founder": "<strong>مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider</strong><br><br>بنيت 5,600+ وكيل ذكاء اصطناعي وسير عمل الأتمتة أثناء العمل بدوام كامل في Accenture. منصة full-stack: React، Node.js، Python، GCP.",
-      "german": "<strong>مواطن ألماني</strong> مع 15+ سنة في ألمانيا. متعلم في TU Berlin و HTW Berlin. 7+ سنوات خبرة مؤسسية.",
-      "dubai": "ينتقل إلى دبي للانضمام إلى النظام البيئي التكنولوجي للإمارات. الدقة الألمانية + التراث العربي + الطلاقة الإنجليزية = جسر فريد.",
-      "ai": "فزت بمسابقة الذكاء الاصطناعي العالمية. بنيت AI Waverider مع 5,600+ وكيل. <strong>مهندس Gen AI & Cloud</strong> متخصص في RAGs (Retrieval-Augmented Generation)، Fine Tuning، وتكامل الذكاء الاصطناعي في تطبيقات الويب. خبير في صياغة الأوامر عالية الأداء، OpenAI، Claude، n8n، LangChain، وأنماط تصميم Gen AI الحديثة. مهندس Cloud معتمد من GCP.",
+      "founder": "<strong>مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider</strong><br><br>بنيت 5,600+ نظام ذكاء اصطناعي وسير عمل آلية أثناء العمل بدوام كامل في Accenture. منصة full-stack: React، Node.js، Python، GCP.",
+      "german": "<strong>مواطن ألماني</strong> مع 15+ سنة في ألمانيا. خريج TU Berlin و HTW Berlin. 7+ سنوات خبرة مؤسسية.",
+      "dubai": "ينتقل إلى دبي للانضمام إلى المنظومة التقنية في الإمارات. الدقة الألمانية + التراث العربي + الطلاقة في الإنجليزية = جسر فريد.",
+      "ai": "فزت بمسابقة الذكاء الاصطناعي العالمية. بنيت AI Waverider مع 5,600+ نظام. <strong>مهندس Gen AI & Cloud</strong> متخصص في RAGs (Retrieval-Augmented Generation)، Fine Tuning، وتكامل الذكاء الاصطناعي في تطبيقات الويب. خبير في صياغة الأوامر عالية الأداء، OpenAI، Claude، n8n، LangChain، وأنماط تصميم Gen AI الحديثة. مهندس Cloud معتمد من GCP.",
       "available": "<strong>متاح Q1 2026</strong>. مفتوح لـ دوام كامل، عقد، هجين في دبي.",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
-      "default": "يمكنني أن أخبرك عن خلفية صخر الألمانية، خبرته كـ <strong>مهندس Gen AI & Cloud</strong> (متخصص في RAGs، Fine Tuning، تكامل الذكاء الاصطناعي)، شركته الناشئة AI Waverider (هو مؤسس/الرئيس التنفيذي/الرئيس التقني)، المهارات التقنية، خطط دبي، أو المساعدة في job matching!"
+      "default": "يمكنني أن أخبرك عن خلفية صخر الألمانية، خبرته كـ <strong>مهندس Gen AI & Cloud</strong> (متخصص في RAGs، Fine Tuning، تكامل الذكاء الاصطناعي)، شركته الناشئة AI Waverider (هو مؤسس/الرئيس التنفيذي/الرئيس التقني)، المهارات التقنية، خطط دبي، أو المساعدة في مطابقة الوظائف!"
     }
   },
-  "terminalCommands": {
+    "terminalCommands": {
     "help": "الأوامر: help، play، chat، skills، prompt، contact، experience، education، aiwaverider، founder، download، clear<br>اكتب \"chat [رسالة]\" للتحدث مع الذكاء الاصطناعي",
-    "play": "بدء اللعبة...",
-    "chat": "فتح دردشة الذكاء الاصطناعي...",
+    "play": "جارِ بدء اللعبة...",
+    "chat": "جارِ فتح دردشة الذكاء الاصطناعي...",
     "clear": "",
     "notFound": "الأمر غير موجود: {cmd}. اكتب 'help' للأوامر المتاحة.",
-    "chatWithMessage": "فتح دردشة الذكاء الاصطناعي مع: \"{query}\"...",
+    "chatWithMessage": "جارِ فتح دردشة الذكاء الاصطناعي مع: \"{query}\"...",
     "heroHelp": "> الأوامر: play، chat، prompt، clear، help<br>> اكتب 'chat' للتحدث مع مساعد الذكاء الاصطناعي<br>> اكتب 'prompt' للتعرف على خبرة Prompt Engineering",
-    "heroPlay": "> بدء اللعبة...",
-    "heroChat": "> فتح دردشة الذكاء الاصطناعي...",
-    "heroNotFound": "> الأمر غير موجود. اكتب 'help' للأوامر."
+    "heroPlay": "> جارِ بدء اللعبة...",
+    "heroChat": "> جارِ فتح دردشة الذكاء الاصطناعي...",
+    "heroNotFound": "> الأمر غير موجود. اكتب 'help' للأوامر.",
+    "promptOutput": "> <strong>خبير Prompt Engineering</strong><br>> ✓ صياغة الأوامر عالية الأداء<br>> ✓ تحسين استجابات النماذج<br>> ✓ 5,600+ نظام ذكاء اصطناعي في الإنتاج<br>> ✓ تصميم أنماط الأوامر المتقدمة",
+    "skillsOutput": "<strong>المهارات التقنية</strong><br><br><strong>البرمجة:</strong> Java 17/21، Python، JavaScript، TypeScript<br><strong>الأطر:</strong> Spring Boot 3.x، Django، React، Vue.js<br><strong>السحابة:</strong> GCP (معتمد)، Azure، AWS، Docker، Kubernetes<br><strong>الذكاء الاصطناعي:</strong> Gen AI، RAGs، Fine Tuning، Prompt Engineering، OpenAI، Claude<br><strong>قواعد البيانات:</strong> PostgreSQL، MongoDB، Redis<br><br>اكتب 'prompt' لمزيد من التفاصيل حول Prompt Engineering",
+    "contactOutput": "📧 البريد الإلكتروني: sakhr270@gmail.com<br>📱 الهاتف: +49 1590 6455476 (WhatsApp)<br>🔗 LinkedIn: linkedin.com/in/sakhr-nabil-al-absi<br>🌐 الموقع: aiwaverider.com",
+    "experienceOutput": "<strong>الخبرة الرئيسية:</strong><br><br>🚀 مؤسس AI Waverider (2024-الحاضر)<br>💼 مهندس برمجيات أول، Accenture (2022-الحاضر)<br>🏢 خبرة سابقة: Scopeland، Innocean، BMG<br><br>15+ سنة في ألمانيا | 7+ سنوات مؤسسية",
+    "educationOutput": "🎓 <strong>التعليم:</strong><br><br>بكالوريوس علوم الكمبيوتر التطبيقية<br>HTW Berlin (2017-2022)<br><br>الهندسة الصناعية<br>TU Berlin (2012-2017)<br><br>كلاهما من أفضل الجامعات الألمانية",
+    "aiwaveriderOutput": "🚀 <strong>AI Waverider</strong><br><br>منصة الذكاء الاصطناعي الآلية<br>5,600+ نظام وسير عمل مجانية<br>مبنية بـ: React، Node.js، Python، GCP<br>قاعدة مستخدمين عالمية متنامية<br><br>زر: aiwaverider.com",
+    "downloadOutput": "جارِ إنشاء السيرة الذاتية بصيغة PDF..."
   },
   "typing": {
     "texts": ["مهندس Gen AI & Cloud", "مهندس أنظمة الذكاء الاصطناعي", "مهندس برمجيات أول", "خبير Java Full-Stack", "مطور أنظمة مؤسسية", "خبير Prompt Engineering"]
