@@ -64,8 +64,16 @@ const Game = {
     resize() {
         this.canvas.width = this.canvas.offsetWidth;
         this.canvas.height = this.canvas.offsetHeight;
-        this.ship.x = this.canvas.width / 2 - this.ship.w / 2;
-        this.ship.y = this.canvas.height - 60;
+        // Ensure minimum canvas size for playability
+        const minWidth = 280;
+        const minHeight = 200;
+        if (this.canvas.width < minWidth) this.canvas.width = minWidth;
+        if (this.canvas.height < minHeight) this.canvas.height = minHeight;
+        // Position ship with proper spacing from bottom (account for mobile controls)
+        // Buttons are at bottom: 20px, height: 56px (or 50px/48px on smaller), so need ~100-110px clearance
+        const bottomOffset = window.innerWidth <= 768 ? 110 : 60;
+        this.ship.x = Math.max(0, Math.min(this.canvas.width - this.ship.w, this.canvas.width / 2 - this.ship.w / 2));
+        this.ship.y = Math.max(0, this.canvas.height - bottomOffset);
     },
     setupMobile() {
         const l = document.getElementById('mobileLeft'),
@@ -108,7 +116,11 @@ const Game = {
         this.words = [];
         this.powerups = [];
         this.particles = [];
-        this.ship.x = this.canvas.width / 2 - this.ship.w / 2;
+        // Position ship with proper constraints (same as resize)
+        // Buttons are at bottom: 20px, height: 56px (or 50px/48px on smaller), so need ~100-110px clearance
+        const bottomOffset = window.innerWidth <= 768 ? 110 : 60;
+        this.ship.x = Math.max(0, Math.min(this.canvas.width - this.ship.w, this.canvas.width / 2 - this.ship.w / 2));
+        this.ship.y = Math.max(0, this.canvas.height - bottomOffset);
         this.requiredHits = 10 + (this.level - 1) * 3;
         this.wordRate = Math.max(800, 1800 - (this.level - 1) * 200);
         this.fireRate = this.weapons[Math.min(this.weaponLevel, this.weapons.length - 1)].fireRate;
@@ -220,12 +232,19 @@ const Game = {
         c.shadowBlur = 0;
         c.font = 'bold 15px Segoe UI';
         this.words.forEach(w => {
+            const rectX = w.x - 6;
+            const rectWidth = w.width + 12;
+            const rectCenterX = rectX + rectWidth / 2;
             c.fillStyle = w.correct ? 'rgba(0,255,0,0.15)' : 'rgba(255,0,0,0.15)';
-            c.fillRect(w.x - 6, w.y - 16, w.width + 12, 22);
+            c.fillRect(rectX, w.y - 16, rectWidth, 22);
             c.fillStyle = w.correct ? '#0f0' : '#f00';
             c.shadowColor = w.correct ? '#0f0' : '#f00';
             c.shadowBlur = 10;
-            c.fillText(w.text, w.x, w.y);
+            c.textAlign = 'center';
+            c.textBaseline = 'middle';
+            c.fillText(w.text, rectCenterX, w.y - 5);
+            c.textAlign = 'left';
+            c.textBaseline = 'alphabetic';
         });
         c.shadowBlur = 0;
         this.powerups.forEach(p => {
@@ -283,18 +302,26 @@ const Game = {
         const list = isC ? q.correct : q.wrong;
         const txt = list[Math.floor(Math.random() * list.length)];
         this.ctx.font = 'bold 15px Segoe UI';
+        const textWidth = this.ctx.measureText(txt).width + 12;
+        // Ensure words spawn within visible bounds, accounting for text width
+        const minX = Math.max(10, textWidth / 2);
+        const maxX = Math.min(this.canvas.width - textWidth / 2 - 10, this.canvas.width - 10);
+        const spawnX = Math.max(minX, Math.min(maxX, Math.random() * (maxX - minX) + minX));
         this.words.push({
             text: txt,
-            x: Math.random() * (this.canvas.width - 120) + 60,
+            x: spawnX,
             y: -25,
-            width: this.ctx.measureText(txt).width + 12,
+            width: textWidth,
             speed: 2.2 + Math.random() * 1.2 + (this.level - 1) * 0.4,
             correct: isC
         });
     },
     spawnPowerup() {
+        // Ensure powerups spawn within visible bounds
+        const minX = 30;
+        const maxX = Math.max(minX, this.canvas.width - 30);
         this.powerups.push({
-            x: Math.random() * (this.canvas.width - 60) + 30,
+            x: Math.max(minX, Math.min(maxX, Math.random() * (maxX - minX) + minX)),
             y: -25,
             type: Math.random() > 0.4 ? 'health' : 'bonus',
             rot: 0
@@ -374,4 +401,5 @@ const Game = {
         document.querySelectorAll('.game-screen').forEach(s => s.classList.remove('active'));
     }
 };
+
 
