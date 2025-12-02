@@ -111,11 +111,11 @@ function initHeroTerminal() {
                     setTimeout(() => Game.start(), 800);
                 } else if (cmd === 'help') {
                     const resp = document.createElement('div');
-                    resp.innerHTML = `> Commands: play, chat, prompt, clear, help<br>> Type 'chat' to talk with AI assistant<br>> Type 'prompt' to learn about prompt engineering expertise`;
+                    resp.innerHTML = `> Commands: play, chat, prompt, genai, clear, help<br>> Type 'chat' to talk with AI assistant<br>> Type 'prompt' or 'genai' to learn about Gen AI expertise`;
                     content.appendChild(resp);
-                } else if (cmd === 'prompt' || cmd === 'promptengineering') {
+                } else if (cmd === 'prompt' || cmd === 'promptengineering' || cmd === 'genai' || cmd === 'gen-ai') {
                     const resp = document.createElement('div');
-                    resp.innerHTML = `> 🎯 Expert Prompt Engineer<br>> → Crafted prompts for 5,600+ production AI agents<br>> → Optimized prompt strategies for Fortune 500 clients<br>> → Specialized in OpenAI GPT-4, Claude AI, Azure OpenAI`;
+                    resp.innerHTML = `> 🤖 Gen AI & Cloud Engineer<br>> → RAGs (Retrieval-Augmented Generation)<br>> → Fine Tuning for custom AI models<br>> → AI Integration into web applications<br>> → GCP Certified Cloud Engineer<br>> → 5,600+ production AI agents`;
                     resp.style.color = '#4ade80';
                     content.appendChild(resp);
                 } else if (cmd === 'chat' || cmd === 'ai') {

@@ -66,7 +66,7 @@
     "journeyText": "برلين → دبي",
     "headline": "مهندس ألماني.",
     "headlineHighlight": "بناء المستقبل في دبي.",
-    "staticRoleTitle": "مهندس هندسة الأوامر ومهندس حلول الذكاء الاصطناعي",
+    "staticRoleTitle": "مهندس Gen AI & Cloud | مهندس معماري Full Stack لحلول الذكاء الاصطناعي",
     "tagline": "<strong>الدقة الألمانية</strong> • <strong>التراث العربي</strong> • <strong>الطلاقة الإنجليزية</strong>",
     "downloadCV": "تحميل السيرة الذاتية",
     "aiWaverider": "🚀 AI Waverider",
@@ -76,7 +76,7 @@
     "innocean": "INNOCEAN",
     "banks": "البنوك",
     "profileName": "صخر العبسي",
-    "profileRole": "مهندس هندسة الأوامر ومهندس Full Stack",
+    "profileRole": "مهندس Gen AI & Cloud | مطور Full Stack",
     "scrollDown": "التمرير للأسفل",
     "stats": {
       "yearsGermany": "سنوات في<br>ألمانيا",
@@ -87,7 +87,7 @@
   },
   "cv": {
     "name": "صخر العبسي",
-    "title": "خبير في هندسة الأوامر ومهندس حلول الذكاء الاصطناعي | مهندس برمجيات أول | مؤسس، الرئيس التنفيذي والرئيس التقني",
+    "title": "مهندس Gen AI & Cloud (GCP معتمد) | مهندس معماري Full Stack لحلول الذكاء الاصطناعي | مهندس برمجيات أول | مؤسس، الرئيس التنفيذي والرئيس التقني",
     "badges": {
       "germanCitizen": "🇩🇪 مواطن ألماني",
       "yearsGermany": "15+ سنة في ألمانيا",
@@ -137,10 +137,10 @@
       "role": "مؤسس، الرئيس التنفيذي والرئيس التقني",
       "company": "AI Waverider. منصة أتمتة الذكاء الاصطناعي",
       "date": "2024 - الحاضر",
-      "highlight": "🚀 <strong>5,600+ وكيل ذكاء اصطناعي وسير عمل الأتمتة</strong> | قاعدة مستخدمين عالمية | مبني من الصفر",
-      "description": "أسست وبنيت منصة أتمتة مدعومة بالذكاء الاصطناعي من الصفر مع الحفاظ على التوظيف بدوام كامل في Accenture، مما يظهر إدارة وقت استثنائية ودفع ريادي.",
+      "highlight": "🚀 <strong>5,600+ وكيل ذكاء اصطناعي وسير عمل الأتمتة</strong> | قاعدة مستخدمين عالمية | منتقي",
+      "description": "أسست وانتقيت منصة أتمتة مدعومة بالذكاء الاصطناعي، جمعت ودمجت 5,600+ سير عمل ذكاء اصطناعي من جميع أنحاء الإنترنت بينما بنيت مكونات رئيسية. حافظت على التوظيف بدوام كامل في Accenture، مما يظهر إدارة وقت استثنائية ودفع ريادي.",
       "points": {
-        "vision": "<strong>رؤية المنتج والاستراتيجية:</strong> تصورت، صممت، وأطلقت منصة تقدم 5,600+ سير عمل أتمتة ذكاء اصطناعي مجانية وقوالب n8n للشركات في جميع أنحاء العالم",
+        "vision": "<strong>رؤية المنتج والاستراتيجية:</strong> تصورت، صممت، وأطلقت منصة تقدم 5,600+ سير عمل أتمتة ذكاء اصطناعي مجانية وقوالب n8n للشركات في جميع أنحاء العالم. دمجت أوامر متقدمة للفيديوهات والصور وتوليد النصوص. أنتقي وأدمج باستمرار أحدث أدوات وتقنيات الذكاء الاصطناعي من السوق لتقديم حلول متطورة",
         "development": "<strong>التطوير Full-Stack:</strong> هندست وبنيت المنصة بأكملها وحدي. الواجهة الأمامية (React/Vue)، الخلفية (Node.js/Python)، قاعدة البيانات (PostgreSQL/Supabase)، والبنية التحتية السحابية (GCP، Docker، Coolify)",
         "ai": "<strong>تكامل الذكاء الاصطناعي وهندسة الأوامر:</strong> دمجت OpenAI GPT-4، Claude AI، LangChain، RAGs، وقواعد البيانات المتجهة. خبير في إنشاء أوامر عالية الأداء لـ 5,600+ وكيل ذكاء اصطناعي في الإنتاج، وتحسين جودة الاستجابة وكفاءة النظام على نطاق واسع",
         "operations": "<strong>العمليات التجارية:</strong> تعاملت مع جميع الجوانب: الامتثال القانوني (لوائح FTC)، معالجة المدفوعات (Paddle)، استراتيجية التسويق، اكتساب المستخدمين، ودعم العملاء",
@@ -269,7 +269,7 @@
     "tags": {
       "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
       "frameworks": ["Spring Boot 3.x", "الخدمات المصغرة", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
-      "cloud": ["GCP (معتمد)", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
+      "cloud": ["مهندس Cloud (GCP معتمد)", "GCP", "Compute Engine", "GKE", "Cloud Storage", "IAM", "Cloud Security", "Cloud Architecture", "Pub/Sub", "IaC", "Networking", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
       "ai": ["OpenAI GPT", "Claude AI", "هندسة الأوامر (Prompt Engineering)", "Azure OpenAI", "سير عمل n8n", "RAGs", "وكلاء الذكاء الاصطناعي", "LangChain"],
       "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "قواعد البيانات المتجهة"],
       "domain": ["المالية والبنوك", "السيارات", "Agile/Scrum", "قيادة الفريق", "التنسيق الخارجي", "الاستشارات"]

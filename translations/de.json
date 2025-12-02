@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Sakhr AL-Absi | Deutscher Staatsbürger → Dubai | Prompt Engineer & KI-Lösungsarchitekt",
-    "description": "Experte für Prompt Engineering & Senior Software Engineer mit 15+ Jahren in Deutschland. Gründer von AI Waverider. 7+ Jahre Unternehmenserfahrung. 5.600+ KI-Agenten. Verlegt nach Dubai."
+    "title": "Sakhr AL-Absi | Deutscher Staatsbürger → Dubai | Gen AI & Cloud Engineer | KI-Lösungsarchitekt",
+    "description": "Gen AI Experte & Cloud Engineer (GCP zertifiziert) mit 15+ Jahren in Deutschland. Spezialisiert auf RAGs, Fine Tuning, KI-Integration. Gründer von AI Waverider. 7+ Jahre Unternehmenserfahrung. 5.600+ KI-Agenten. Verlegt nach Dubai."
   },
   "nav": {
     "logo": "Sakhr AL-Absi",
@@ -43,7 +43,7 @@
     "close": "✕",
     "closeTitle": "Terminal schließen",
     "whoami": "whoami",
-    "whoamiOutput": "🇩🇪 Deutscher Staatsbürger | Experte für Prompt Engineering | Senior Software Engineer | Gründer, CEO & CTO",
+    "whoamiOutput": "🇩🇪 Deutscher Staatsbürger | Gen AI & Cloud Engineer (GCP) | Experte für Prompt Engineering | Senior Software Engineer | Gründer, CEO & CTO",
     "catExperience": "cat experience.txt",
     "experience1": "→ <span class=\"terminal-highlight\">15+ Jahre</span> in Deutschland",
     "experience2": "→ <span class=\"terminal-highlight\">7+ Jahre</span> Unternehmen (Accenture, BMG, Innocean)",
@@ -66,7 +66,7 @@
     "journeyText": "Berlin → Dubai",
     "headline": "Deutscher Ingenieur.",
     "headlineHighlight": "Baue die Zukunft in Dubai.",
-    "staticRoleTitle": "Prompt Engineer & KI-Lösungsarchitekt",
+    "staticRoleTitle": "Gen AI & Cloud Engineer | Full Stack KI-Lösungsarchitekt",
     "tagline": "<strong>Deutsche Präzision</strong> • <strong>Arabisches Erbe</strong> • <strong>Englische Sprachgewandtheit</strong>",
     "downloadCV": "Lebenslauf herunterladen",
     "aiWaverider": "🚀 AI Waverider",
@@ -76,7 +76,7 @@
     "innocean": "INNOCEAN",
     "banks": "BANKEN",
     "profileName": "Sakhr AL-Absi",
-    "profileRole": "Prompt Engineer & Full Stack Architekt",
+    "profileRole": "Gen AI & Cloud Engineer | Full Stack Entwickler",
     "scrollDown": "NACH UNTEN SCROLLEN",
     "stats": {
       "yearsGermany": "Jahre in<br>Deutschland",
@@ -87,7 +87,7 @@
   },
   "cv": {
     "name": "Sakhr AL-Absi",
-    "title": "Experte für Prompt Engineering & KI-Lösungsarchitekt | Senior Software Engineer | Gründer, CEO & CTO",
+    "title": "Gen AI & Cloud Engineer (GCP zertifiziert) | Full Stack KI-Lösungsarchitekt | Senior Software Engineer | Gründer, CEO & CTO",
     "badges": {
       "germanCitizen": "🇩🇪 Deutscher Staatsbürger",
       "yearsGermany": "15+ Jahre in Deutschland",
@@ -114,7 +114,7 @@
     "title": "Executive Profil: Der KI-First Architekt",
     "hook": "<strong>\"Die Ära des traditionellen Programmierens ist vorbei.\"</strong> Ich kombiniere 15+ Jahre deutsche Ingenieursdisziplin mit modernster KI-Orchestrierung, um Unternehmenssysteme in Tagen statt Monaten zu bauen.",
     "paragraph1": "Ich bin ein <strong>Senior KI-Lösungsarchitekt</strong> und <strong>deutscher Staatsbürger</strong>, der nach Dubai umzieht. Mit einem dualen Hintergrund in Informatik und Wirtschaftsingenieurwesen von <strong>TU Berlin & HTW Berlin</strong> überbrücke ich die Lücke zwischen komplexer technischer Implementierung und Geschäftswert.",
-    "paragraph2": "Derzeit arbeite ich als Senior Software Engineer bei <strong>Accenture Deutschland</strong> und liefere für Fortune 500 Bank- und Automobilkunden. Gleichzeitig habe ich als Gründer von <strong>AI Waverider</strong> eine Plattform entwickelt, die Tausende von Benutzern mit über <strong>5.600+ KI-Agenten</strong> bedient und fortschrittliches Prompt Engineering im großen Maßstab meistert.",
+    "paragraph2": "Derzeit arbeite ich als Senior Software Engineer bei <strong>Accenture Deutschland</strong> und liefere für Fortune 500 Bank- und Automobilkunden. Gleichzeitig habe ich als Gründer von <strong>AI Waverider</strong> eine Plattform entwickelt, die Tausende von Benutzern mit über <strong>5.600+ KI-Agenten</strong> bedient, spezialisiert auf Gen AI Technologien einschließlich RAGs, Fine Tuning und nahtloser KI-Integration in Webanwendungen.",
     "paragraph3": "<strong>Mein Wettbewerbsvorteil:</strong> Ich schreibe nicht nur Code. Ich orchestriere unternehmensreife Lösungen. Durch die Ergänzung traditionellen Engineerings mit KI reduziere ich Entwicklungszyklen um 70%. Ich liefere produktionsreife Architekturen schneller, ohne die deutschen Qualitätsstandards zu opfern, die Ihre Systeme erfordern. Ich bringe <strong>deutsche Präzision, arabisches Erbe und englische Geschäftssprachgewandtheit</strong> auf den VAE-Markt.",
     "whyDubai": "<strong>Warum Dubai?</strong> Ich positioniere mich unter den klügsten Köpfen in einem der am schnellsten wachsenden Tech-Hubs der Welt. Ich ziehe in die VAE um, um mit innovativen Denkern zu arbeiten, von den Besten zu lernen und gemeinsam außergewöhnliche Lösungen zu entwickeln.",
     "impactTitle": "Auswirkungen auf einen Blick",
@@ -137,12 +137,12 @@
       "role": "Gründer, CEO & CTO",
       "company": "AI Waverider. KI-Automatisierungsplattform",
       "date": "2024 - Heute",
-      "highlight": "🚀 <strong>5.600+ KI-Agenten & Automatisierungsworkflows</strong> | Globale Nutzerbasis | Von Grund auf gebaut",
-      "description": "Gründete und baute eine KI-gestützte Automatisierungsplattform von Grund auf, während ich Vollzeit bei Accenture beschäftigt war, was außergewöhnliches Zeitmanagement und unternehmerischen Antrieb demonstriert.",
+      "highlight": "🚀 <strong>5.600+ KI-Agenten & Automatisierungsworkflows</strong> | Globale Nutzerbasis | Kuratiert",
+      "description": "Gründete und kuratierte eine KI-gestützte Automatisierungsplattform, sammelte und integrierte 5.600+ KI-Workflows aus dem Internet, während ich Schlüsselkomponenten baute. Während Vollzeitbeschäftigung bei Accenture, was außergewöhnliches Zeitmanagement und unternehmerischen Antrieb demonstriert.",
       "points": {
-        "vision": "<strong>Produktvision & Strategie:</strong> Konzipiert, entworfen und eine Plattform gestartet, die 5.600+ kostenlose KI-Automatisierungsworkflows und n8n-Vorlagen für Unternehmen weltweit anbietet",
-        "development": "<strong>Full-Stack-Entwicklung:</strong> Architekturiert und die gesamte Plattform allein gebaut. Frontend (React/Vue), Backend (Node.js/Python), Datenbank (PostgreSQL/Supabase) und Cloud-Infrastruktur (GCP, Docker, Coolify)",
-        "ai": "<strong>KI-Integration & Prompt Engineering:</strong> Integrierte OpenAI GPT-4, Claude AI, LangChain, RAGs und Vektordatenbanken. Experte in der Erstellung hochperformanter Prompts für 5.600+ produktive KI-Agenten, Optimierung der Antwortqualität und Systemeffizienz im großen Maßstab",
+        "vision": "<strong>Produktvision & Strategie:</strong> Konzipiert, entworfen und eine Plattform gestartet, die 5.600+ kostenlose KI-Automatisierungsworkflows und n8n-Vorlagen für Unternehmen weltweit anbietet. Integrierte fortgeschrittene Prompts für Videos, Bilder und Textgenerierung. Kontinuierliche Kuratierung und Integration der neuesten KI-Tools und Technologien vom Markt, um modernste Lösungen zu bieten",
+        "development": "<strong>Full-Stack-Entwicklung & Cloud Engineering:</strong> Architekturiert und die gesamte Plattform allein gebaut. Frontend (React/Vue), Backend (Node.js/Python), Datenbank (PostgreSQL/Supabase) und Cloud-Infrastruktur (GCP zertifiziert, Docker, Coolify). Integrierte Gen AI Fähigkeiten direkt in Webanwendungen mit nahtlosen Benutzererfahrungen",
+        "ai": "<strong>Gen AI Integration & Engineering:</strong> Architekturierte und implementierte produktive Gen AI Systeme mit RAGs (Retrieval-Augmented Generation), Fine Tuning und KI-Integration in Webanwendungen. Integrierte OpenAI GPT-4, Claude AI, LangChain, Vektordatenbanken und benutzerdefinierte KI-Modelle. Experte in der Erstellung hochperformanter Prompts, Optimierung der Modellleistung und Skalierung von Gen AI Lösungen für 5.600+ produktive KI-Agenten",
         "operations": "<strong>Geschäftsbetrieb:</strong> Behandelte alle Aspekte: rechtliche Compliance (FTC-Vorschriften), Zahlungsabwicklung (Paddle), Marketingstrategie, Nutzerakquise und Kundensupport",
         "growth": "<strong>Wachstum:</strong> Organisches Wachstum durch Content-Marketing, SEO-Optimierung und Aufbau von Social-Media-Präsenz erreicht",
         "techStack": "<strong>Tech-Stack:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS"
@@ -156,10 +156,10 @@
       "description": "Führe Digitalisierungsinitiativen für Deutschlands renommierteste Finanzinstitute und Automobilhersteller, liefere Unternehmenslösungen, die Millionen von Transaktionen verarbeiten.",
       "points": {
         "architecture": "<strong>Cloud-native Architektur:</strong> Architekturiert und implementiert Microservices mit Spring Boot 3.x, Java 17/21 für hochvolumige Echtzeit-Zahlungsverarbeitungssysteme mit 100K+ täglichen Transaktionen",
-        "platform": "<strong>Plattform-Engineering:</strong> Bereitgestellt und verwaltet Anwendungen auf OpenShift & Google Cloud Platform mit 99,9% Uptime-SLA, implementierte umfassende CI/CD-Pipelines mit Jenkins und GitLab",
+        "platform": "<strong>Cloud Engineering & Plattform:</strong> GCP zertifizierter Cloud Engineer. Bereitgestellt und verwaltet Cloud-native Anwendungen auf OpenShift & Google Cloud Platform mit 99,9% Uptime-SLA. Implementierte umfassende CI/CD-Pipelines, Containerisierungsstrategien und Cloud-Infrastruktur-Optimierung mit Jenkins und GitLab",
         "modernization": "<strong>Legacy-Modernisierung:</strong> Führte Monolith-zu-Microservices-Migration für Bankkunden durch, reduzierte Bereitstellungszeit um 60% und ermöglichte kontinuierliche Lieferpraktiken",
         "automotive": "<strong>Automobil-Digitalisierung:</strong> Optimierte Lieferkettenmanagementsysteme für Premium-OEM, steigerte operative Effizienz um 35% durch intelligente Automatisierung",
-        "ai": "<strong>KI-Innovation & Prompt Engineering:</strong> Gewann globalen Accenture KI-Hackathon durch Integration von Azure OpenAI-Diensten in Unternehmensworkflows mit fortgeschrittenen Prompt-Engineering-Techniken. Demonstrierte praktische KI-Anwendungen für Fortune 500 Kunden mit optimierten Prompt-Strategien",
+        "ai": "<strong>Gen AI Innovation & Integration:</strong> Gewann globalen Accenture KI-Hackathon durch Integration von Azure OpenAI-Diensten in Unternehmensworkflows. Implementierte Gen AI Lösungen mit RAGs, Fine Tuning und nahtloser KI-Integration in Webplattformen. Demonstrierte produktionsreife Gen AI Anwendungen für Fortune 500 Kunden, kombinierte fortgeschrittenes Prompt Engineering mit modernen KI-Architekturmustern",
         "coordination": "<strong>Globale Koordination:</strong> Verwaltete Offshore-Entwicklungsteams über 3 Zeitzonen (Deutschland, Indien, UK), gewährleistete nahtlose Zusammenarbeit und pünktliche Lieferung",
         "leadership": "<strong>Technische Führung:</strong> Betreute Junior-Entwickler, führte Code-Reviews durch und etablierte Best Practices für Microservices-Entwicklung"
       }
@@ -269,8 +269,8 @@
     "tags": {
       "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
       "frameworks": ["Spring Boot 3.x", "Microservices", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
-      "cloud": ["GCP (Zertifiziert)", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
-      "ai": ["OpenAI GPT", "Claude AI", "Prompt Engineering", "Azure OpenAI", "n8n Workflows", "RAGs", "KI-Agenten", "LangChain"],
+      "cloud": ["Cloud Engineer (GCP zertifiziert)", "GCP", "Compute Engine", "GKE", "Cloud Storage", "IAM", "Cloud Security", "Cloud Architecture", "Pub/Sub", "IaC", "Networking", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
+      "ai": ["Gen AI", "RAGs", "Fine Tuning", "KI-Integration", "OpenAI GPT", "Claude AI", "Prompt Engineering", "Azure OpenAI", "n8n Workflows", "KI-Agenten", "LangChain"],
       "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "Vektor-DBs"],
       "domain": ["Finanzen & Bankwesen", "Automobil", "Agile/Scrum", "Teamführung", "Offshore-Koordination", "Beratung"]
     }
@@ -317,7 +317,7 @@
       },
       "founder": {
         "user": "Erzählen Sie mir über AI Waverider",
-        "bot": "<strong>AI Waverider. Gegründet & gebaut von Sakhr</strong><br><br>🚀 <strong>5.600+ KI-Agenten</strong> & Automatisierungsworkflows<br>🎯 <strong>Experte für Prompt Engineering</strong> - Erstellung hochperformanter Prompts im großen Maßstab<br>👨‍💼 <strong>Gründer, CEO & CTO</strong><br>💻 <strong>Vollständig von Grund auf</strong> gebaut während Vollzeitbeschäftigung<br>🔧 Full-Stack: React, Node.js, Python, GCP, Docker<br>📈 Wachsende organische Nutzerbasis global<br><br>Besuchen: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+        "bot": "<strong>AI Waverider. Gegründet & gebaut von Sakhr</strong><br><br>🚀 <strong>5.600+ KI-Agenten</strong> & Automatisierungsworkflows<br>🤖 <strong>Gen AI & Cloud Engineer</strong> - RAGs, Fine Tuning, KI-Integration<br>☁️ <strong>GCP zertifizierter Cloud Engineer</strong><br>👨‍💼 <strong>Gründer, CEO & CTO</strong><br>💻 <strong>Vollständig von Grund auf</strong> gebaut während Vollzeitbeschäftigung<br>🔧 Full-Stack: React, Node.js, Python, GCP, Docker<br>📈 Wachsende organische Nutzerbasis global<br><br>Besuchen: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
       },
       "dubai": {
         "user": "Warum zieht Sakhr nach Dubai?",
@@ -341,10 +341,10 @@
       "founder": "<strong>Gründer, CEO & CTO von AI Waverider</strong><br><br>Gebaut 5.600+ KI-Agenten & Automatisierungsworkflows während Vollzeitbeschäftigung bei Accenture. Full-Stack-Plattform: React, Node.js, Python, GCP.",
       "german": "<strong>Deutscher Staatsbürger</strong> mit 15+ Jahren in Deutschland. Ausgebildet an TU Berlin & HTW Berlin. 7+ Jahre Unternehmenserfahrung.",
       "dubai": "Verlegt nach Dubai, um dem Tech-Ökosystem der VAE beizutreten. Deutsche Präzision + arabisches Erbe + englische Sprachgewandtheit = einzigartige Brücke.",
-      "ai": "Gewann globalen KI-Hackathon. Baute AI Waverider mit 5.600+ Agenten. <strong>Experte für Prompt Engineering</strong>, spezialisiert auf die Erstellung hochperformanter Prompts für produktive KI-Systeme. Experte in OpenAI, Claude, n8n, RAGs, LangChain und fortgeschrittenen Prompt-Optimierungstechniken.",
+      "ai": "Gewann globalen KI-Hackathon. Baute AI Waverider mit 5.600+ Agenten. <strong>Gen AI & Cloud Engineer</strong>, spezialisiert auf RAGs (Retrieval-Augmented Generation), Fine Tuning und KI-Integration in Webanwendungen. Experte in der Erstellung hochperformanter Prompts, OpenAI, Claude, n8n, LangChain und modernen Gen AI Architekturmustern. GCP zertifizierter Cloud Engineer.",
       "available": "<strong>Verfügbar Q1 2025</strong>. Offen für Vollzeit, Vertrag, Hybrid in Dubai.",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
-      "default": "Ich kann Ihnen über Sakhrs deutschen Hintergrund, seine Expertise als <strong>Prompt Engineer</strong>, sein AI Waverider Startup (er ist Gründer/CEO/CTO), technische Fähigkeiten, Dubai-Pläne erzählen oder bei Job-Matching helfen!"
+      "default": "Ich kann Ihnen über Sakhrs deutschen Hintergrund, seine Expertise als <strong>Gen AI & Cloud Engineer</strong> (spezialisiert auf RAGs, Fine Tuning, KI-Integration), sein AI Waverider Startup (er ist Gründer/CEO/CTO), technische Fähigkeiten, Dubai-Pläne erzählen oder bei Job-Matching helfen!"
     }
   },
   "terminalCommands": {
@@ -360,7 +360,7 @@
     "heroNotFound": "> Befehl nicht gefunden. Tippe 'help' für Befehle."
   },
   "typing": {
-    "texts": ["KI-Lösungsarchitekt", "Senior Software Engineer", "Full-Stack Java Experte", "Unternehmenssystem-Builder", "Experte für Prompt Engineering"]
+    "texts": ["Gen AI & Cloud Engineer", "KI-Lösungsarchitekt", "Senior Software Engineer", "Full-Stack Java Experte", "Unternehmenssystem-Builder", "Experte für Prompt Engineering"]
   },
   "email": {
     "subject": "Stellenangebot-Anfrage",

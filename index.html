@@ -7,6 +7,7 @@
     <meta name="description" content="German citizen & Senior Software Engineer with 15+ years in Germany. Founder of AI Waverider. 7+ years enterprise experience. Relocating to Dubai.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/translations.js"></script>
@@ -53,7 +54,7 @@
             <li><a href="#vision" data-i18n="nav.vision">Vision</a></li>
             <li><a href="#experience" data-i18n="nav.experience">Experience</a></li>
             <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
-            <li><a href="./assets/certs/all-certifications.zip" download class="nav-btn-secondary"><i class="fas fa-certificate"></i> <span data-i18n="nav.certs">Certs</span></a></li>
+            <li><a href="#" onclick="downloadAllCertifications(); return false;" class="nav-btn-secondary"><i class="fas fa-certificate"></i> <span data-i18n="nav.certs">Certs</span></a></li>
             <li class="lang-switcher-container">
                 <button class="lang-switcher-btn" id="langSwitcherBtn" onclick="toggleLangDropdown()" title="Change Language">
                     <i class="fas fa-globe"></i> <span id="currentLangDisplay">EN</span> <i class="fas fa-chevron-down"></i>
@@ -218,9 +219,9 @@
                 <div class="certs-download">
                     <h4><i class="fas fa-certificate"></i> <span data-i18n="cv.downloadCertifications">Download Certifications</span></h4>
                     <div class="cert-btns">
-                        <a href="./assets/certs/gcp-cloud-engineer.pdf" download class="cert-btn"><i class="fab fa-google"></i> <span data-i18n="cv.gcpCloudEngineer">GCP Cloud Engineer</span></a>
+                        <a href="./assets/certs/AssociateCloudEngineer20251202-31.pdf" download class="cert-btn"><i class="fab fa-google"></i> <span data-i18n="cv.gcpCloudEngineer">GCP Cloud Engineer</span></a>
                         <a href="./assets/certs/accenture-jumpstart.pdf" download class="cert-btn"><i class="fas fa-rocket"></i> <span data-i18n="cv.accentureProgram">Accenture Program</span></a>
-                        <a href="./assets/certs/all-certifications.zip" download class="cert-btn"><i class="fas fa-download"></i> <span data-i18n="cv.allCerts">All Certs (ZIP)</span></a>
+                        <a href="#" onclick="downloadAllCertifications(); return false;" class="cert-btn"><i class="fas fa-download"></i> <span data-i18n="cv.allCerts">All Certs (ZIP)</span></a>
                     </div>
                 </div>
             </div>
@@ -265,7 +266,7 @@
                         <div class="vision-stats">
                             <div class="vision-stat"><i class="fas fa-rocket"></i> <span data-i18n-html="executiveProfile.impact.founder"><strong>Founder & CTO of AI Waverider</strong></span></div>
                             <div class="vision-stat"><i class="fas fa-code"></i> <span data-i18n-html="executiveProfile.impact.apps"><strong>11 Enterprise Apps</strong> built this year</span></div>
-                            <div class="vision-stat"><i class="fas fa-robot"></i> <span data-i18n-html="executiveProfile.impact.agents"><strong>5,600+ AI Agents</strong> deployed</span></div>
+                            <div class="vision-stat"><i class="fas fa-robot"></i> <span data-i18n-html="executiveProfile.impact.agents"><strong>5,600+ AI Agents</strong> curated</span></div>
                             <div class="vision-stat"><i class="fas fa-globe-europe"></i> <span data-i18n-html="executiveProfile.impact.trilingual"><strong>Trilingual</strong> (DE/EN/AR)</span></div>
                         </div>
                     </div>
@@ -577,6 +578,7 @@
 <script src="js/game.js"></script>
 <script src="js/pdf-generator.js"></script>
 <script src="js/ai-chat.js"></script>
+<script src="js/cert-zip.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

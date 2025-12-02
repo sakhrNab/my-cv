@@ -66,7 +66,7 @@
     "journeyText": "Berlín → Dubai",
     "headline": "Ingeniero Alemán.",
     "headlineHighlight": "Construyendo el Futuro en Dubai.",
-    "staticRoleTitle": "Ingeniero de Prompts & Arquitecto de Soluciones de IA",
+    "staticRoleTitle": "Gen AI & Ingeniero Cloud | Arquitecto Full Stack de Soluciones IA",
     "tagline": "<strong>Precisión Alemana</strong> • <strong>Herencia Árabe</strong> • <strong>Fluidez en Inglés</strong>",
     "downloadCV": "Descargar CV",
     "aiWaverider": "🚀 AI Waverider",
@@ -76,7 +76,7 @@
     "innocean": "INNOCEAN",
     "banks": "BANCOS",
     "profileName": "Sakhr AL-Absi",
-    "profileRole": "Ingeniero de Prompts & Arquitecto Full Stack",
+    "profileRole": "Gen AI & Ingeniero Cloud | Desarrollador Full Stack",
     "scrollDown": "DESPLAZAR HACIA ABAJO",
     "stats": {
       "yearsGermany": "Años en<br>Alemania",
@@ -87,7 +87,7 @@
   },
   "cv": {
     "name": "Sakhr AL-Absi",
-    "title": "Experto en Ingeniería de Prompts & Arquitecto de Soluciones de IA | Ingeniero de Software Senior | Fundador, CEO y CTO",
+    "title": "Gen AI & Ingeniero Cloud (GCP Certificado) | Arquitecto Full Stack de Soluciones IA | Ingeniero de Software Senior | Fundador, CEO y CTO",
     "badges": {
       "germanCitizen": "🇩🇪 Ciudadano Alemán",
       "yearsGermany": "15+ Años en Alemania",
@@ -137,10 +137,10 @@
       "role": "Fundador, CEO y CTO",
       "company": "AI Waverider. Plataforma de Automatización de IA",
       "date": "2024 - Presente",
-      "highlight": "🚀 <strong>5,600+ Agentes de IA y Flujos de Trabajo de Automatización</strong> | Base de Usuarios Global | Construido Desde Cero",
-      "description": "Fundé y construí una plataforma de automatización impulsada por IA desde cero mientras mantenía empleo a tiempo completo en Accenture, demostrando gestión excepcional del tiempo e impulso empresarial.",
+      "highlight": "🚀 <strong>5,600+ Agentes de IA y Flujos de Trabajo de Automatización</strong> | Base de Usuarios Global | Curado",
+      "description": "Fundé y curé una plataforma de automatización impulsada por IA, reuniendo e integrando 5,600+ flujos de trabajo de IA de todo Internet mientras construía componentes clave. Mantuve empleo a tiempo completo en Accenture, demostrando gestión excepcional del tiempo e impulso empresarial.",
       "points": {
-        "vision": "<strong>Visión y Estrategia del Producto:</strong> Concebí, diseñé y lancé una plataforma que ofrece 5,600+ flujos de trabajo de automatización de IA gratuitos y plantillas n8n para empresas en todo el mundo",
+        "vision": "<strong>Visión y Estrategia del Producto:</strong> Concebí, diseñé y lancé una plataforma que ofrece 5,600+ flujos de trabajo de automatización de IA gratuitos y plantillas n8n para empresas en todo el mundo. Integré prompts avanzados para videos, imágenes y generación de texto. Curo e integro continuamente las últimas herramientas y tecnologías de IA del mercado para proporcionar soluciones de vanguardia",
         "development": "<strong>Desarrollo Full-Stack:</strong> Arquitecturé y construí toda la plataforma solo. Frontend (React/Vue), backend (Node.js/Python), base de datos (PostgreSQL/Supabase) e infraestructura en la nube (GCP, Docker, Coolify)",
         "ai": "<strong>Integración de IA & Ingeniería de Prompts:</strong> Integré OpenAI GPT-4, Claude AI, LangChain, RAGs y bases de datos vectoriales. Experto en crear prompts de alto rendimiento para 5,600+ agentes de IA en producción, optimizando la calidad de respuesta y eficiencia del sistema a escala",
         "operations": "<strong>Operaciones Comerciales:</strong> Manejé todos los aspectos: cumplimiento legal (regulaciones FTC), procesamiento de pagos (Paddle), estrategia de marketing, adquisición de usuarios y soporte al cliente",
@@ -269,7 +269,7 @@
     "tags": {
       "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
       "frameworks": ["Spring Boot 3.x", "Microservicios", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
-      "cloud": ["GCP (Certificado)", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
+      "cloud": ["Cloud Engineer (GCP Certificado)", "GCP", "Compute Engine", "GKE", "Cloud Storage", "IAM", "Cloud Security", "Cloud Architecture", "Pub/Sub", "IaC", "Networking", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
       "ai": ["OpenAI GPT", "Claude AI", "Ingeniería de Prompts", "Azure OpenAI", "Flujos de Trabajo n8n", "RAGs", "Agentes de IA", "LangChain"],
       "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "Bases de Datos Vectoriales"],
       "domain": ["Finanzas y Banca", "Automotriz", "Agile/Scrum", "Liderazgo de Equipo", "Coordinación Offshore", "Consultoría"]
