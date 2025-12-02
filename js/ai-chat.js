@@ -51,9 +51,9 @@ function analyzeJobMatch() {
         return;
     }
     const skills = {
-        'java': 95, 'spring': 95, 'microservices': 90, 'python': 85, 'javascript': 85, 'typescript': 80,
-        'react': 80, 'vue': 85, 'node': 80, 'docker': 90, 'kubernetes': 85, 'gcp': 90, 'azure': 85,
-        'aws': 75, 'cloud': 90, 'devops': 85, 'agile': 90, 'ai': 85, 'openai': 85, 'sql': 90,
+        'java': 95, 'spring': 95, 'microservices': 90, 'python': 85, 'javascript': 85,
+        'react': 80, 'vue': 85, 'node': 80, 'docker': 90, 'gcp': 90, 'azure': 85,
+        'cloud': 90, 'devops': 85, 'agile': 90, 'ai': 85, 'openai': 85, 'sql': 90,
         'german': 95, 'arabic': 100, 'english': 95, 'leadership': 85, 'finance': 85, 'banking': 85,
         'automotive': 85, 'n8n': 90, 'automation': 85, 'founder': 90, 'ceo': 90, 'cto': 90,
         'startup': 85, 'entrepreneur': 90

@@ -420,35 +420,80 @@ async function generatePDF() {
     // Certifications Section
     addSection(getT('certifications.title'));
     const certifications = [
-        `${stripHTML(getT('certifications.gcp.name'))} (${getT('certifications.gcp.date')})`,
-        `${stripHTML(getT('certifications.accenture.name'))} (${getT('certifications.accenture.date')})`,
-        `${stripHTML(getT('certifications.django.name'))} (${getT('certifications.django.date')})`,
-        `${stripHTML(getT('certifications.tdd.name'))} (${getT('certifications.tdd.date')})`,
-        `${stripHTML(getT('certifications.fullstack.name'))} (${getT('certifications.fullstack.date')})`,
-        `${stripHTML(getT('certifications.sql.name'))} (${getT('certifications.sql.date')})`
+        { 
+            name: `${stripHTML(getT('certifications.gcp.name'))} (${getT('certifications.gcp.date')})`,
+            desc: stripHTML(getT('certifications.gcp.description'))
+        },
+        { 
+            name: `${stripHTML(getT('certifications.accenture.name'))} (${getT('certifications.accenture.date')})`,
+            desc: stripHTML(getT('certifications.accenture.description'))
+        },
+        { 
+            name: `${stripHTML(getT('certifications.django.name'))} (${getT('certifications.django.date')})`,
+            desc: stripHTML(getT('certifications.django.description'))
+        },
+        { 
+            name: `${stripHTML(getT('certifications.tdd.name'))} (${getT('certifications.tdd.date')})`,
+            desc: stripHTML(getT('certifications.tdd.description'))
+        },
+        { 
+            name: `${stripHTML(getT('certifications.fullstack.name'))} (${getT('certifications.fullstack.date')})`,
+            desc: stripHTML(getT('certifications.fullstack.description'))
+        },
+        { 
+            name: `${stripHTML(getT('certifications.sql.name'))} (${getT('certifications.sql.date')})`,
+            desc: stripHTML(getT('certifications.sql.description'))
+        }
     ];
     
     // Layout certifications in 2 columns
     const colWidth = (pageW - margin * 2) / 2 - 5;
     certifications.forEach((c, index) => {
-        // Check space for a pair of rows
-        if (index % 2 === 0) checkSpace(10);
+        // Check space for a pair of rows (more space needed for description)
+        if (index % 2 === 0) checkSpace(20);
         
         const xPos = index % 2 === 0 ? margin : margin + colWidth + 5;
-        if (index % 2 === 0 && index > 0) y += 0; // Don't advance y yet for second column
+        let currentY = y; // Track Y position for this certification
         
         // Bullet
         doc.setFillColor(201, 162, 39);
-        doc.circle(xPos + 1, y - 1, 0.5, 'F');
+        doc.circle(xPos + 1, currentY - 1, 0.5, 'F');
         
+        // Certification name (bold)
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(10);
         doc.setTextColor(40, 40, 40);
-        const lines = doc.splitTextToSize(c, colWidth - 4);
-        doc.text(lines, xPos + 4, y);
+        const nameLines = doc.splitTextToSize(c.name, colWidth - 4);
+        doc.text(nameLines, xPos + 4, currentY);
+        currentY += nameLines.length * 4.5;
+        
+        // Certification description (normal, smaller, italic)
+        if (c.desc) {
+            doc.setFont("helvetica", "italic");
+            doc.setFontSize(8);
+            doc.setTextColor(80, 80, 80);
+            const descLines = doc.splitTextToSize(c.desc, colWidth - 4);
+            doc.text(descLines, xPos + 4, currentY);
+            currentY += descLines.length * 3.5 + 2; // Add spacing after description
+        }
         
         // Advance Y only after second column or last item
         if (index % 2 !== 0 || index === certifications.length - 1) {
-            // Find max height of the row
-            y += Math.max(lines.length, 1) * 5 + 3;
+            // Calculate max height of both certifications in this row
+            const rowStart = index % 2 === 0 ? index : index - 1;
+            const rowCerts = certifications.slice(rowStart, Math.min(rowStart + 2, certifications.length));
+            let maxHeight = 0;
+            rowCerts.forEach(cert => {
+                let h = 0;
+                const nameLines = doc.splitTextToSize(cert.name, colWidth - 4);
+                h += nameLines.length * 4.5;
+                if (cert.desc) {
+                    const descLines = doc.splitTextToSize(cert.desc, colWidth - 4);
+                    h += descLines.length * 3.5 + 2;
+                }
+                maxHeight = Math.max(maxHeight, h);
+            });
+            y += maxHeight + 3; // Add spacing between rows
         }
     });
     y += 6;
