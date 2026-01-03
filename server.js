@@ -54,7 +54,7 @@ When responding:
 
 Help visitors understand why Sakhr would be valuable to their organization. Be smart, think critically, and provide thoughtful answers.`;
 
-// Health check endpoint
+// Health check endpoints (for monitoring and Coolify)
 app.get('/health', (req, res) => {
     const uptime = process.uptime();
     res.status(200).json({
@@ -64,6 +64,11 @@ app.get('/health', (req, res) => {
         service: 'sakhr-cv',
         version: '1.0.0'
     });
+});
+
+// Simple health check (returns 200 OK - some systems prefer this)
+app.get('/healthz', (req, res) => {
+    res.status(200).send('OK');
 });
 
 app.post('/api/chat', async (req, res) => {
