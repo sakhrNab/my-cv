@@ -54,6 +54,18 @@ When responding:
 
 Help visitors understand why Sakhr would be valuable to their organization. Be smart, think critically, and provide thoughtful answers.`;
 
+// Health check endpoint
+app.get('/health', (req, res) => {
+    const uptime = process.uptime();
+    res.status(200).json({
+        status: 'healthy',
+        timestamp: new Date().toISOString(),
+        uptime: `${Math.floor(uptime)}s`,
+        service: 'sakhr-cv',
+        version: '1.0.0'
+    });
+});
+
 app.post('/api/chat', async (req, res) => {
     const { message, history = [] } = req.body;
 
