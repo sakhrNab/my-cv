@@ -8,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm ci --only=production
+RUN npm ci --omit=dev
 
 # Copy application files
 COPY . .
@@ -17,7 +17,7 @@ COPY . .
 EXPOSE 3011
 
 # Health check (uses PORT env var, defaults to 3011)
-HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+HEALTHCHECK --interval=30s --timeout=10s --start-period=30s --retries=3 \
   CMD node -e "const port = process.env.PORT || 3011; require('http').get(`http://localhost:${port}/health`, (r) => {process.exit(r.statusCode === 200 ? 0 : 1)}).on('error', () => process.exit(1))"
 
 # Start the application

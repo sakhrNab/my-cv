@@ -57,6 +57,7 @@ Help visitors understand why Sakhr would be valuable to their organization. Be s
 // Health check endpoints (for monitoring and Coolify)
 app.get('/health', (req, res) => {
     const uptime = process.uptime();
+    console.log(`[HEALTH] Check received at ${new Date().toISOString()} - uptime: ${Math.floor(uptime)}s`);
     res.status(200).json({
         status: 'healthy',
         timestamp: new Date().toISOString(),
@@ -134,7 +135,12 @@ app.get('*', (req, res) => {
 });
 
 app.listen(PORT, '0.0.0.0', () => {
-    console.log(`Server running on http://0.0.0.0:${PORT}`);
-    console.log(`Make sure OPENAPI_KEY is set in your environment variables`);
+    console.log('='.repeat(50));
+    console.log(`[STARTUP] Server running on http://0.0.0.0:${PORT}`);
+    console.log(`[STARTUP] Health check endpoint: http://0.0.0.0:${PORT}/health`);
+    console.log(`[STARTUP] OpenAI API Key configured: ${OPENAI_API_KEY ? 'Yes' : 'NO - MISSING!'}`);
+    console.log(`[STARTUP] Node version: ${process.version}`);
+    console.log(`[STARTUP] Started at: ${new Date().toISOString()}`);
+    console.log('='.repeat(50));
 });
 
