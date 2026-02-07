@@ -4,6 +4,7 @@
 
 services:
   cv-app:
+    init: true
     build:
       context: .
       dockerfile: Dockerfile
