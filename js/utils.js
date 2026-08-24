@@ -16,7 +16,15 @@ function filterSkills(v) {
 
 // Terminal functions
 function toggleTerminal() {
-    document.getElementById('terminalWindow').classList.toggle('open');
+    const win = document.getElementById('terminalWindow');
+    const isOpen = win.classList.toggle('open');
+    // Focus the prompt on open. Previously this only toggled a class, so the
+    // terminal appeared with focus still on <body> and typing went nowhere
+    // unless you happened to click the thin input line exactly.
+    if (isOpen) {
+        const input = document.getElementById('terminalInput');
+        if (input) setTimeout(() => input.focus(), 50);
+    }
 }
 
 function handleTerminalInput(e) {

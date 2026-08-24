@@ -126,14 +126,34 @@ async function sendAIMessage() {
         });
         const data = await res.json();
         document.getElementById('typing')?.remove();
-        body.innerHTML += `<div class="msg-bubble msg-bot">${data.response || getLocalResponse(txt)}</div>`;
-    } catch {
+        if (data.response) {
+            body.innerHTML += `<div class="msg-bubble msg-bot">${data.response}</div>`;
+        } else {
+            // The server answered but produced no completion - almost always a
+            // missing/invalid OPENAI_API_KEY. Previously this silently served a
+            // canned keyword answer, so a mis-configured server looked like a
+            // dumb bot instead of an unconfigured one.
+            body.innerHTML += offlineAnswer(txt, data.error);
+        }
+    } catch (err) {
         document.getElementById('typing')?.remove();
-        body.innerHTML += `<div class="msg-bubble msg-bot">${getLocalResponse(txt)}</div>`;
+        body.innerHTML += offlineAnswer(txt, err && err.message);
     }
     input.disabled = false;
     input.focus();
     body.scrollTop = body.scrollHeight;
+}
+
+
+// Renders the keyword-matched answer, but labelled so it is obvious the live
+// assistant is not running. Without the label a missing API key is
+// indistinguishable from a broken bot.
+function offlineAnswer(txt, reason) {
+    const note = /api key/i.test(reason || '')
+        ? 'Live assistant offline (no API key configured) - showing a preset answer.'
+        : 'Live assistant unavailable - showing a preset answer.';
+    return `<div class="ai-chat-offline">${note}</div>` +
+           `<div class="msg-bubble msg-bot">${getLocalResponse(txt)}</div>`;
 }
 
 function getLocalResponse(t) {

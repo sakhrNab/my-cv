@@ -854,3 +854,9 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: 
   transition: 0.25s; white-space: nowrap; }
 .integration-chip:hover { border-color: var(--secondary); color: var(--secondary); transform: translateY(-1px); }
 [data-theme="dark"] .integration-chip { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.14); color: #cbd5e1; }
+
+/* Terminal: the red traffic light is a real close control, not decoration */
+button.terminal-dot { padding: 0; border: none; cursor: pointer; appearance: none; }
+button.terminal-dot.red:hover { filter: brightness(1.25); box-shadow: 0 0 0 3px rgba(255,95,86,0.25); }
+button.terminal-dot:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.ai-chat-offline { font-size: 0.78em; opacity: 0.75; font-style: italic; margin: 6px 0 2px; }

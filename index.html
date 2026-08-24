@@ -74,11 +74,11 @@
     <button class="terminal-toggle" onclick="toggleTerminal()"><i class="fas fa-terminal"></i></button>
     <div class="terminal-window" id="terminalWindow">
         <div class="terminal-header">
-            <span class="terminal-dot red"></span>
+            <button class="terminal-dot red" onclick="toggleTerminal()" data-i18n-title="terminal.closeTitle" title="Close terminal" aria-label="Close terminal"></button>
             <span class="terminal-dot yellow"></span>
             <span class="terminal-dot green"></span>
             <span class="terminal-title" data-i18n="terminal.title">sakhr@berlin ~ bash</span>
-            <button class="terminal-close-btn" onclick="toggleTerminal()" data-i18n="terminal.closeTitle" title="Close terminal">✕</button>
+            <button class="terminal-close-btn" onclick="toggleTerminal()" data-i18n-title="terminal.closeTitle" title="Close terminal">✕</button>
         </div>
         <div class="terminal-body" id="terminalBody">
             <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@berlin:~$</span> <span class="terminal-command" data-i18n="terminal.whoami">whoami</span></div>
@@ -97,7 +97,7 @@
             <div class="terminal-line terminal-output" style="color:#0f0;" data-i18n-html="terminal.statusOutput">✓ EU citizen · Berlin (CET) | Open to remote &amp; hybrid roles EU-wide</div>
             <div class="terminal-input-line">
                 <span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@berlin:~$</span>&nbsp;
-                <input type="text" class="terminal-input" id="terminalInput" data-i18n="terminal.placeholder" placeholder="Type 'help' for commands..." onkeydown="handleTerminalInput(event)">
+                <input type="text" class="terminal-input" id="terminalInput" data-i18n-placeholder="terminal.placeholder" placeholder="Type 'help' for commands..." autocomplete="off" spellcheck="false" onkeydown="handleTerminalInput(event)">
                 <span class="terminal-cursor">▋</span>
             </div>
         </div>

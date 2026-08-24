@@ -1,3 +1,5 @@
+const TRANSLATIONS_VERSION = '2026-08-24-4';
+
 // Translation system
 // Prevent redeclaration if script is loaded multiple times
 // Check if already initialized
@@ -15,7 +17,10 @@ if (typeof window.__translationsInitialized === 'undefined') {
 // Load translation file
 async function loadTranslation(lang) {
     try {
-        const response = await fetch(`translations/${lang}.json`);
+        // Cache-bust: without this the browser serves a stale translations file and the
+        // page shows old copy (this is why the terminal kept showing the previous
+        // language levels after they had already been changed on disk).
+        const response = await fetch(`translations/${lang}.json?v=${TRANSLATIONS_VERSION}`);
         if (!response.ok) throw new Error(`Translation file not found: ${lang}.json`);
         translations[lang] = await response.json();
         currentLanguage = lang;
@@ -110,16 +115,25 @@ function applyTranslations() {
             } else {
                 element.placeholder = translation;
             }
-            // Only set textContent if it's not a placeholder-only input
-            if (!element.hasAttribute('data-i18n-placeholder') || element.value) {
-                element.textContent = translation;
-            }
+            // NOTE: never assign textContent to an <input>. It is a void element,
+            // so the assignment injects an illegal child text node. This is what put
+            // the string "Close terminal" where the terminal's X glyph should be.
         } else if (element.tagName === 'INPUT' && element.type === 'button') {
             element.value = translation;
         } else if (element.hasAttribute('data-i18n-html')) {
             element.innerHTML = translation;
         } else {
             element.textContent = translation;
+        }
+    });
+
+    // Tooltips: data-i18n-title sets the title attribute WITHOUT touching the
+    // element's visible content. Use this for icon buttons.
+    document.querySelectorAll('[data-i18n-title]').forEach(element => {
+        const value = t(element.getAttribute('data-i18n-title'));
+        if (typeof value === 'string') {
+            element.title = value;
+            if (!element.getAttribute('aria-label')) element.setAttribute('aria-label', value);
         }
     });
     
