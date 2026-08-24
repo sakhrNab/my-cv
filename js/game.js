@@ -363,9 +363,26 @@ const Game = {
         this.running = false;
         this.score += 150 * this.level;
         this.weaponLevel = Math.min(this.weaponLevel + 1, this.weapons.length - 1);
-        document.getElementById('completedLevel').textContent = this.level;
-        document.getElementById('levelScore').textContent = this.score;
-        document.getElementById('rewardText').textContent = `Weapon: ${this.weapons[Math.min(this.weaponLevel, this.weapons.length - 1)].name}!`;
+        // #completedLevel never existed in the markup - this threw and killed the
+        // run loop every time a level was cleared. The i18n string carries a
+        // {level} token, so substitute into the translated text and keep it localised.
+        const clearedEl = document.getElementById('levelClearedText');
+        if (clearedEl) {
+            const tpl = (typeof window.t === 'function' && window.t('game.levelCleared') !== 'game.levelCleared')
+                ? window.t('game.levelCleared')
+                : 'Level {level} cleared!';
+            clearedEl.textContent = tpl.replace('{level}', this.level);
+        }
+        const scoreEl = document.getElementById('levelScore');
+        if (scoreEl) scoreEl.textContent = this.score;
+        const rewardEl = document.getElementById('rewardText');
+        if (rewardEl) {
+            const weapon = this.weapons[Math.min(this.weaponLevel, this.weapons.length - 1)].name;
+            const label = (typeof window.t === 'function' && window.t('game.weaponUpgraded') !== 'game.weaponUpgraded')
+                ? window.t('game.weaponUpgraded')
+                : 'Weapon Upgraded!';
+            rewardEl.textContent = `${label} ${weapon}`;
+        }
         this.showScreen('levelCompleteScreen');
     },
     nextLevel() {

@@ -40,7 +40,7 @@
         <span class="tips" data-i18n="game.tips">💡 Each level unlocks weapon upgrades!</span>
     </div>
     <div class="mobile-game-controls"><button class="mobile-ctrl-btn" id="mobileLeft">◀</button><button class="mobile-ctrl-btn" id="mobileShoot">🔥</button><button class="mobile-ctrl-btn" id="mobileRight">▶</button></div>
-    <div class="game-screen level-complete" id="levelCompleteScreen"><h2 data-i18n="game.levelComplete">🏆 LEVEL COMPLETE!</h2><p><span data-i18n="game.levelCleared">Level {level} cleared!</span></p><p><span data-i18n="game.scoreLabel">Score:</span> <span id="levelScore" style="color:#ffd700;">0</span></p><div style="margin:18px 0;padding:14px;background:rgba(0,0,0,0.3);border-radius:10px;"><p style="color:#0ff;font-size:1.1em;">🎁 <span id="rewardText" data-i18n="game.weaponUpgraded">Weapon Upgraded!</span></p></div><button class="game-btn primary" onclick="Game.nextLevel()" data-i18n="game.nextLevel">Next Level →</button></div>
+    <div class="game-screen level-complete" id="levelCompleteScreen"><h2 data-i18n="game.levelComplete">🏆 LEVEL COMPLETE!</h2><p><span id="levelClearedText" data-i18n="game.levelCleared">Level {level} cleared!</span></p><p><span data-i18n="game.scoreLabel">Score:</span> <span id="levelScore" style="color:#ffd700;">0</span></p><div style="margin:18px 0;padding:14px;background:rgba(0,0,0,0.3);border-radius:10px;"><p style="color:#0ff;font-size:1.1em;">🎁 <span id="rewardText" data-i18n="game.weaponUpgraded">Weapon Upgraded!</span></p></div><button class="game-btn primary" onclick="Game.nextLevel()" data-i18n="game.nextLevel">Next Level →</button></div>
     <div class="game-screen game-over" id="gameOverScreen"><h2 data-i18n="game.gameOver">💀 GAME OVER</h2><p><span data-i18n="game.finalScore">Final Score:</span> <span id="finalScore" style="color:#ffd700;">0</span></p><p style="opacity:0.8;" data-i18n="game.tryAgain">Try again to master Sakhr's skills!</p><div style="margin-top:18px;"><button class="game-btn primary" onclick="Game.restart()" data-i18n="game.restart">🔄 Restart</button><button class="game-btn secondary" onclick="Game.close()" data-i18n="game.close">Close</button></div></div>
     <div class="game-screen victory" id="victoryScreen"><div style="font-size:50px;margin-bottom:10px;">🏆</div><h2 data-i18n="game.victory">CONGRATULATIONS!</h2><p><strong data-i18n="game.masteredSkills">You've mastered all skills!</strong></p><p><span data-i18n="game.scoreLabel">Score:</span> <span id="victoryScore" style="color:#1a365d;font-weight:700;">0</span></p><div style="margin-top:18px;"><button class="game-btn gold" onclick="generatePDF();Game.close();" data-i18n="game.downloadCV">📥 Download CV</button><button class="game-btn secondary" onclick="Game.close()" data-i18n="game.close">Close</button></div></div>
 </div>
@@ -824,7 +824,6 @@
     <button class="ai-btn-pulse" onclick="toggleAI()"><i class="fas fa-comment-dots"></i></button>
 </div>
 
-<script src="js/translations.js"></script>
 <script src="js/utils.js"></script>
 <script src="js/game.js"></script>
 <script src="js/pdf-generator.js"></script>

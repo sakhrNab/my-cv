@@ -1,4 +1,8 @@
-const TRANSLATIONS_VERSION = '2026-08-24-4';
+// var, not const: this file was being included twice, and a top-level const
+// throws 'Can't create duplicate variable' on the second parse, killing every
+// script that follows it. The duplicate include is gone, but this keeps a
+// future one from taking the page down.
+var TRANSLATIONS_VERSION = TRANSLATIONS_VERSION || '2026-08-24-4';
 
 // Translation system
 // Prevent redeclaration if script is loaded multiple times
