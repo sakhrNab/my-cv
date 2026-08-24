@@ -99,7 +99,7 @@ function initHeroTerminal() {
                 
                 // Add command to history
                 const cmdLine = document.createElement('div');
-                cmdLine.innerHTML = `<span>sakhr@dubai:~$</span> ${cmd}`;
+                cmdLine.innerHTML = `<span>sakhr@berlin:~$</span> ${cmd}`;
                 content.appendChild(cmdLine);
                 
                 // Process command

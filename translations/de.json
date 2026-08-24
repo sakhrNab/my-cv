@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Sakhr AL-Absi | Deutscher Staatsbürger → Dubai | Gen AI & Cloud Engineer | KI-Lösungsarchitekt",
-    "description": "Gen AI Experte & Cloud Engineer (GCP zertifiziert) mit 15+ Jahren in Deutschland. Spezialisiert auf RAGs, Fine Tuning, KI-Integration. Gründer von AI Waverider. 7+ Jahre Unternehmenserfahrung. 5.600+ KI-Agenten. Verlegt nach Dubai."
+    "title": "Sakhr AL-Absi | Senior Software Engineer & Gen-AI-Architekt | EU / Remote",
+    "description": "EU-Bürger (deutscher Pass) — Senior Software Engineer und Gen-AI-Architekt, remote in der gesamten EU. GCP-zertifiziert. Spring-Boot-/Java-Microservices für Fortune-500-Kunden aus Banking und Automotive bei Accenture sowie ein eigenes Portfolio produktiver Gen-AI-Systeme: RAG, Vektorsuche, Multi-Provider-LLM-Routing, agentische Pipelines, mandantenfähige SaaS. Englisch C1, Deutsch C1, Arabisch Muttersprache, Spanisch B1."
   },
   "nav": {
     "logo": "Sakhr AL-Absi",
@@ -19,7 +19,7 @@
     "hits": "✓",
     "weapon": "🔫",
     "basic": "Basis",
-    "close": "✕ Schließen",
+    "close": "Schließen",
     "question": "Warum Sakhr einstellen?",
     "hint": "Schieße auf <span class=\"correct\">GRÜNE</span> Fähigkeiten | Vermeide <span class=\"wrong\">ROTE</span> | Sammle ⭐ für Upgrades!",
     "controls": "← → oder A/D zum Bewegen | LEERTASTE oder KLICK zum Schießen",
@@ -33,39 +33,38 @@
     "finalScore": "Endpunktzahl:",
     "tryAgain": "Versuche es erneut, um Sakhrs Fähigkeiten zu meistern!",
     "restart": "🔄 Neustart",
-    "close": "Schließen",
     "victory": "GLÜCKWUNSCH!",
     "masteredSkills": "Du hast alle Fähigkeiten gemeistert!",
     "downloadCV": "📥 Lebenslauf herunterladen"
   },
   "terminal": {
-    "title": "sakhr@dubai ~ bash",
+    "title": "sakhr@berlin ~ bash",
     "close": "✕",
     "closeTitle": "Terminal schließen",
     "whoami": "whoami",
-    "whoamiOutput": "🇩🇪 Deutscher Staatsbürger | Gen AI & Cloud Engineer (GCP) | Experte für Prompt Engineering | Senior Software Engineer | Gründer, CEO & CTO",
+    "whoamiOutput": "🇪🇺 EU-Bürger (deutscher Pass) | Senior Software Engineer | Gründer, CEO & CTO",
     "catExperience": "cat experience.txt",
     "experience1": "→ <span class=\"terminal-highlight\">15+ Jahre</span> in Deutschland",
     "experience2": "→ <span class=\"terminal-highlight\">7+ Jahre</span> Unternehmen (Accenture, BMG, Innocean)",
     "experience3": "→ Fortune 500 Kunden: Deutsche Banken & Auto-OEMs",
     "lsAchievements": "ls achievements/",
-    "achievements": "ai_waverider_founder/ 11_apps_built_2024/ global_hackathon_winner/ prompt_engineering_expert/",
+    "achievements": "ai_waverider_founder/ production_ai_systems/ regulated_domain_delivery/",
     "catAiwaverider": "cat aiwaverider.txt",
-    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Gründer, CEO & CTO</span> | 5.600+ KI-Agenten | Experte für Prompt Engineering",
+    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Gründer, CEO & CTO</span> | 23 produktive Systeme | RAG · Vektorsuche · agentische Pipelines",
     "echoLanguages": "echo $LANGUAGES",
     "languagesOutput": "Deutsch (C1) | Englisch (C1) | Arabisch (Muttersprache) | Spanisch (B1)",
     "catStatus": "cat status.txt",
-    "statusOutput": "✓ Verfügbar Q1 2026 | Bereit für Dubai 🇦🇪",
+    "statusOutput": "✓ EU-Bürger · Berlin (MEZ) | Offen für Remote- und Hybrid-Rollen EU-weit",
     "placeholder": "Tippe 'help' für Befehle...",
     "heroInitializing": "> Portfolio wird initialisiert... OK",
     "heroPlay": "> tippe \"play\" für ein verstecktes Spiel",
-    "heroStatus": "> Status: <span style=\"color:#4ade80\">Verfügbar Q1 2026</span>",
-    "prompt": "sakhr@dubai:~$"
+    "heroStatus": "> status: <span style=\"color:#4ade80\">Offen für EU-Rollen — remote oder hybrid</span>",
+    "prompt": "sakhr@berlin:~$"
   },
   "hero": {
-    "journeyText": "Berlin → Dubai",
+    "journeyText": "Berlin → EU-weit",
     "headline": "Deutscher Ingenieur.",
-    "headlineHighlight": "Baue die Zukunft in Dubai.",
+    "headlineHighlight": "Produktive KI in ganz Europa.",
     "staticRoleTitle": "Gen AI & Cloud Engineer | Full Stack KI-Lösungsarchitekt",
     "tagline": "<strong>Deutsche Präzision</strong> • <strong>Arabisches Erbe</strong> • <strong>Englische Sprachgewandtheit</strong>",
     "downloadCV": "Lebenslauf herunterladen",
@@ -81,8 +80,8 @@
     "stats": {
       "yearsGermany": "Jahre in<br>Deutschland",
       "corporateExcellence": "Unternehmens-<br>Exzellenz",
-      "appsBuilt": "Apps gebaut<br>dieses Jahr",
-      "aiAgents": "KI-Agenten<br>kuratiert"
+      "appsBuilt": "Produktive<br>Systeme",
+      "aiAgents": "Workflows<br>kuratiert"
     }
   },
   "cv": {
@@ -91,7 +90,7 @@
     "badges": {
       "germanCitizen": "🇩🇪 Deutscher Staatsbürger",
       "yearsGermany": "15+ Jahre in Deutschland",
-      "relocating": "✈️ Verlegt nach Dubai"
+      "relocating": "EU-Bürger · remote oder Umzug innerhalb der EU"
     },
     "uploadPhoto": "Foto<br>hochladen",
     "downloadCertifications": "Zertifikate herunterladen",
@@ -101,27 +100,27 @@
     "highlights": {
       "title": "WICHTIGE HIGHLIGHTS",
       "germanCitizen": "Deutscher Staatsbürger mit 15+ Jahren in Deutschland, ausgebildet an TU Berlin und HTW Berlin",
-      "founder": "Gründer, CEO & CTO von AI Waverider. 5.600+ KI-Automatisierungsworkflows",
+      "founder": "Gründer, CEO & CTO von AI Waverider — 23 eigenentwickelte produktive Systeme",
       "corporate": "7+ Jahre Unternehmenserfahrung bei Accenture, BMG Rights Management, Innocean Europe",
-      "apps": "11 Anwendungen von Grund auf gebaut dieses Jahr während Vollzeitbeschäftigung",
+      "apps": "5.612 Commits im Portfolio, parallel zur Vollzeit-Enterprise-Tätigkeit entstanden",
       "hackathon": "Gewann globalen KI-Hackathon durch Integration von Azure OpenAI",
       "languages": "Dreisprachig: Deutsch (C1), Englisch (C1), Arabisch (Muttersprache)",
-      "available": "Verfügbar Q1 2026 | Offen für: Vollzeit, Vertrag, Hybrid"
+      "available": "EU-Bürger | Remote, hybrid oder vor Ort in der gesamten EU"
     },
-    "footer": "Seite {page}/{total} | Sakhr AL-Absi | Deutscher Staatsbürger | Gründer/CEO/CTO AI Waverider | Q1 2026"
+    "footer": "Seite {page}/{total} | Sakhr AL-Absi | Senior Software Engineer & Gen-AI-Architekt | EU / Remote"
   },
   "executiveProfile": {
     "title": "Executive Profil: Der KI-First Architekt",
-    "hook": "<strong>\"Die Ära des traditionellen Programmierens ist vorbei.\"</strong> Ich kombiniere 15+ Jahre deutsche Ingenieursdisziplin mit modernster KI-Orchestrierung, um Unternehmenssysteme in Tagen statt Monaten zu bauen.",
-    "paragraph1": "Ich bin ein <strong>Senior KI-Lösungsarchitekt</strong> und <strong>deutscher Staatsbürger</strong>, der nach Dubai umzieht. Mit einem dualen Hintergrund in Informatik und Wirtschaftsingenieurwesen von <strong>TU Berlin & HTW Berlin</strong> überbrücke ich die Lücke zwischen komplexer technischer Implementierung und Geschäftswert.",
-    "paragraph2": "Derzeit arbeite ich als Senior Software Engineer bei <strong>Accenture Deutschland</strong> und liefere für Fortune 500 Bank- und Automobilkunden. Gleichzeitig habe ich als Gründer von <strong>AI Waverider</strong> eine Plattform entwickelt, die Tausende von Benutzern mit über <strong>5.600+ KI-Agenten</strong> bedient, spezialisiert auf Gen AI Technologien einschließlich RAGs, Fine Tuning und nahtloser KI-Integration in Webanwendungen.",
-    "paragraph3": "<strong>Mein Wettbewerbsvorteil:</strong> Ich schreibe nicht nur Code. Ich orchestriere unternehmensreife Lösungen. Durch die Ergänzung traditionellen Engineerings mit KI reduziere ich Entwicklungszyklen um 70%. Ich liefere produktionsreife Architekturen schneller, ohne die deutschen Qualitätsstandards zu opfern, die Ihre Systeme erfordern. Ich bringe <strong>deutsche Präzision, arabisches Erbe und englische Geschäftssprachgewandtheit</strong> auf den VAE-Markt.",
-    "whyDubai": "<strong>Warum Dubai?</strong> Ich positioniere mich unter den klügsten Köpfen in einem der am schnellsten wachsenden Tech-Hubs der Welt. Ich ziehe in die VAE um, um mit innovativen Denkern zu arbeiten, von den Besten zu lernen und gemeinsam außergewöhnliche Lösungen zu entwickeln.",
+    "hook": "<strong>\"Die meiste KI erreicht nie den Produktivbetrieb.\"</strong> Ich bringe Systeme vom leeren Repository bis zum laufenden Dienst — Datenmodell, Queues, Auth, Mandantentrennung, Deployment, Kostenkontrolle — und schreibe die Fehleranalyse, wenn etwas kaputtgeht.",
+    "paragraph1": "Ich bin <strong>Senior Software Engineer und Gen-AI-Architekt</strong> sowie <strong>EU-Bürger</strong> (deutscher Pass), arbeite von Berlin aus und bin offen für Teams in der gesamten EU. Mit einem doppelten Hintergrund in Angewandter Informatik und Wirtschaftsingenieurwesen (<strong>HTW Berlin & TU Berlin</strong>) verbinde ich technische Umsetzung mit dem dahinterliegenden Geschäftsnutzen.",
+    "paragraph2": "Bei <strong>Accenture Deutschland</strong> entwickle ich Spring-Boot-/Java-Microservices für Fortune-500-Kunden aus Banking und Automotive auf OpenShift und Google Cloud. Parallel habe ich unter <strong>AI Waverider</strong> ein eigenes Portfolio produktiver Systeme entworfen, gebaut und betrieben: mandantenfähige SaaS auf Next.js, Prisma/PostgreSQL und BullMQ, mit RAG, Vektorsuche, Multi-Provider-LLM-Routing, agentischen Pipelines und Kostenerfassung pro Request.",
+    "paragraph3": "<strong>Was ich mitbringe:</strong> vollständige Verantwortung — Mandantentrennung, abgesichert durch vier unabhängige Mechanismen, ein achtsprachiges Lokalisierungssystem mit build-brechendem Vollständigkeits-Gate und das DSGVO-Recht auf Löschung als getestete User Journey. Meine Arbeitssprache ist Englisch; Deutsch C1 und Arabisch als Muttersprache kommen dazu, wo ein Team die Reichweite braucht.",
+    "whyDubai": "<strong>Wonach ich suche:</strong> eine Senior-, Architektur- oder Tech-Lead-Rolle in einem EU-Team — remote-first oder hybrid — das Gen-AI in echte Produkte bringt. Kein Visum, keine Sponsorship, kein Umzugspapierkram: mit einem deutschen Pass kann ich überall in der EU/im EWR sofort anfangen.",
     "impactTitle": "Auswirkungen auf einen Blick",
     "impact": {
       "founder": "<strong>Gründer & CTO von AI Waverider</strong>",
-      "apps": "<strong>11 Unternehmens-Apps</strong> dieses Jahr gebaut",
-      "agents": "<strong>5.600+ KI-Agenten</strong> eingesetzt",
+      "apps": "<strong>23 produktive Systeme</strong> end-to-end gebaut",
+      "agents": "<strong>5.600+ Workflows</strong> kuratiert & veröffentlicht",
       "trilingual": "<strong>Dreisprachig</strong> (DE/EN/AR)"
     }
   },
@@ -129,7 +128,7 @@
     "title": "Berufliche Zusammenfassung",
     "paragraph1": "<strong>Deutscher Staatsbürger</strong> und Senior Software Engineer mit 7+ Jahren in der Unternehmensentwicklung, spezialisiert auf Microservices, Cloud-Technologien und KI-Integration. Ausgebildet an Deutschlands Top-Universitäten (TU Berlin, HTW Berlin) mit nachgewiesener Erfolgsbilanz für Fortune 500 Finanz- und Automobilkunden.",
     "paragraph2": "Bekannt für <strong>außergewöhnliche Ressourcen</strong>. 11 Anwendungen dieses Jahr gebaut, während ich Vollzeit bei Accenture arbeitete. Koordinierte Offshore-Teams über 3 Zeitzonen. Derzeit <strong>Gründer, CEO & CTO</strong> von <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. Eine Plattform mit 5.600+ KI-Agenten und Automatisierungsworkflows.",
-    "paragraph3": "<strong>Einzigartiger Wert:</strong> Deutsche Präzision + arabisches Erbe + englische Sprachgewandtheit. Dreisprachig (Deutsch C1, Englisch C1, Arabisch Muttersprache) verbindet europäische und nahöstliche Kulturen."
+    "paragraph3": "<strong>Besonderer Wert:</strong> ein EU-Bürger, der regulierte, produktive Software ausliefert — DSGVO-Löschung als getestete Journey, achtsprachige Lokalisierung mit build-brechendem Gate und KI-Kostenerfassung pro Request. Dreisprachig (Deutsch C1, Englisch C1, Arabisch Muttersprache)."
   },
   "experience": {
     "title": "Berufserfahrung",
@@ -226,7 +225,7 @@
     "title": "Zertifikate",
     "gcp": {
       "name": "🌟 Google Associate Cloud Engineer",
-      "date": "Dezember 2024",
+      "date": "November 2024",
       "description": "Validierte Expertise in GCP-Diensten einschließlich Compute Engine, Kubernetes Engine, Cloud Storage, IAM-Sicherheitsrichtlinien und Überwachung mit Cloud Operations Suite"
     },
     "accenture": {
@@ -267,12 +266,76 @@
       "domain": "Bereich & Führung"
     },
     "tags": {
-      "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
-      "frameworks": ["Spring Boot 3.x", "Microservices", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
-      "cloud": ["Cloud Engineer (GCP zertifiziert)", "GCP", "Compute Engine", "GKE", "Cloud Storage", "IAM", "Cloud Security", "Cloud Architecture", "Pub/Sub", "IaC", "Networking", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
-      "ai": ["Gen AI", "RAGs", "Fine Tuning", "KI-Integration", "OpenAI GPT", "Claude AI", "Prompt Engineering", "Azure OpenAI", "n8n Workflows", "KI-Agenten", "LangChain"],
-      "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "Vektor-DBs"],
-      "domain": ["Finanzen & Bankwesen", "Automobil", "Agile/Scrum", "Teamführung", "Offshore-Koordination", "Beratung"]
+      "programming": [
+        "Java 17/21",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "SQL",
+        "Bash"
+      ],
+      "frameworks": [
+        "Spring Boot 3.x",
+        "Microservices",
+        "Django",
+        "Vue.js 3",
+        "React.js",
+        "REST APIs",
+        "GraphQL"
+      ],
+      "cloud": [
+        "Cloud Engineer (GCP zertifiziert)",
+        "GCP",
+        "Compute Engine",
+        "GKE",
+        "Cloud Storage",
+        "IAM",
+        "Cloud Security",
+        "Cloud Architecture",
+        "Pub/Sub",
+        "IaC",
+        "Networking",
+        "Azure",
+        "AWS",
+        "OpenShift",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "Coolify",
+        "Nginx",
+        "Linux/VPS"
+      ],
+      "ai": [
+        "Gen AI",
+        "RAGs",
+        "Fine Tuning",
+        "KI-Integration",
+        "OpenAI GPT",
+        "Claude AI",
+        "Prompt Engineering",
+        "Azure OpenAI",
+        "n8n Workflows",
+        "KI-Agenten",
+        "LangChain"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Firebase",
+        "Supabase",
+        "Vektor-DBs"
+      ],
+      "domain": [
+        "Finanzen & Bankwesen",
+        "Automobil",
+        "Agile/Scrum",
+        "Teamführung",
+        "Offshore-Koordination",
+        "Beratung"
+      ]
     }
   },
   "languages": {
@@ -296,16 +359,16 @@
     }
   },
   "footer": {
-    "text": "© 2025 Sakhr AL-Absi | 🇩🇪 Deutscher Staatsbürger • 15+ Jahre in Deutschland | Gründer, CEO & CTO von AI Waverider | Bereit für Dubai 🇦🇪"
+    "text": "© 2026 Sakhr AL-Absi | 🇪🇺 EU-Bürger • Berlin (MEZ) | Senior Software Engineer & Gen-AI-Architekt"
   },
   "aiChat": {
     "title": "Fragen Sie über Sakhr",
     "close": "✕",
-    "welcome": "👋 <strong>Hallo!</strong> Ich kann Ihnen über Sakhr erzählen. Ein <strong>deutscher Staatsbürger</strong>, <strong>Gründer/CEO/CTO von AI Waverider</strong>, mit 15+ Jahren in Deutschland, verlegt nach Dubai.<br><br>Fragen Sie nach seinen Fähigkeiten oder nutzen Sie <strong>Job Match</strong>!",
+    "welcome": "👋 <strong>Hallo!</strong> Ich erzähle Ihnen gern von Sakhr — <strong>EU-Bürger</strong> mit Sitz in Berlin, Senior Software Engineer bei Accenture und alleiniger Entwickler eines produktiven KI-Produktportfolios.<br><br>Fragen Sie nach seinem Stack, seinen Projekten, oder nutzen Sie <strong>Job Match</strong>!",
     "suggestions": {
       "background": "Hintergrund",
       "founder": "AI Waverider",
-      "dubai": "Warum Dubai?",
+      "dubai": "Wo er arbeiten kann",
       "contact": "Kontakt",
       "jobMatch": "Job Match"
     },
@@ -320,12 +383,12 @@
         "bot": "<strong>AI Waverider. Gegründet & gebaut von Sakhr</strong><br><br>🚀 <strong>5.600+ KI-Agenten</strong> & Automatisierungsworkflows<br>🤖 <strong>Gen AI & Cloud Engineer</strong> - RAGs, Fine Tuning, KI-Integration<br>☁️ <strong>GCP zertifizierter Cloud Engineer</strong><br>👨‍💼 <strong>Gründer, CEO & CTO</strong><br>💻 <strong>Vollständig von Grund auf</strong> gebaut während Vollzeitbeschäftigung<br>🔧 Full-Stack: React, Node.js, Python, GCP, Docker<br>📈 Wachsende organische Nutzerbasis global<br><br>Besuchen: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
       },
       "dubai": {
-        "user": "Warum zieht Sakhr nach Dubai?",
-        "bot": "<strong>Warum Dubai?</strong><br><br>🚀 <strong>Schnellst wachsender Tech-Hub</strong> der Welt<br>🌍 Perfekte Brücke zwischen <strong>europäischen & nahöstlichen</strong> Märkten<br>💡 Suche nach <strong>innovativen Unternehmen</strong> zum Aufbau<br>🏆 Bringt <strong>Fortune 500</strong> Unternehmenserfahrung mit<br>🗣️ Dreisprachig: Deutsch, Arabisch & Englisch<br><br>Bereit, zur digitalen Transformation der VAE beizutragen!"
+        "user": "Wo kann Sakhr arbeiten und was sucht er?",
+        "bot": "<strong>Wo er arbeiten kann</strong><br><br>🇪🇺 <strong>EU-Bürger</strong> (deutscher Pass) — kein Visum, keine Sponsorship in EU/EWR<br>🏠 <strong>Remote-first oder hybrid</strong>, Standort Berlin (MEZ)<br>🏗️ Senior Engineer, <strong>Solutions Architect</strong> oder Tech Lead<br>🤖 Teams, die <strong>Gen-AI in echte Produkte</strong> bringen<br>🗣️ Englisch C1 · Deutsch C1 · Arabisch Muttersprache · Spanisch B1<br><br>Umzug innerhalb der EU für das richtige Team möglich."
       },
       "interview": {
         "user": "Wie kann ich Sakhr kontaktieren?",
-        "bot": "<strong>Lass uns verbinden!</strong><br><br>📅 Verfügbar <strong>Q1 2025</strong><br>✅ Offen für: Vollzeit, Vertrag, Hybrid"
+        "bot": "<strong>Lassen Sie uns sprechen!</strong><br><br>📅 <strong>Offen für neue Rollen</strong> — remote, hybrid oder vor Ort in der gesamten EU<br>✅ Vollzeit oder Freelance · übliche deutsche Kündigungsfristen"
       }
     },
     "jobMatch": {
@@ -340,11 +403,11 @@
     "localResponses": {
       "founder": "<strong>Gründer, CEO & CTO von AI Waverider</strong><br><br>Gebaut 5.600+ KI-Agenten & Automatisierungsworkflows während Vollzeitbeschäftigung bei Accenture. Full-Stack-Plattform: React, Node.js, Python, GCP.",
       "german": "<strong>Deutscher Staatsbürger</strong> mit 15+ Jahren in Deutschland. Ausgebildet an TU Berlin & HTW Berlin. 7+ Jahre Unternehmenserfahrung.",
-      "dubai": "Verlegt nach Dubai, um dem Tech-Ökosystem der VAE beizutreten. Deutsche Präzision + arabisches Erbe + englische Sprachgewandtheit = einzigartige Brücke.",
+      "dubai": "Sakhr ist EU-Bürger mit Sitz in Berlin (MEZ). Er arbeitet remote in der gesamten EU und kann ohne Visum oder Sponsorship innerhalb der EU/des EWR umziehen.",
       "ai": "Gewann globalen KI-Hackathon. Baute AI Waverider mit 5.600+ Agenten. <strong>Gen AI & Cloud Engineer</strong>, spezialisiert auf RAGs (Retrieval-Augmented Generation), Fine Tuning und KI-Integration in Webanwendungen. Experte in der Erstellung hochperformanter Prompts, OpenAI, Claude, n8n, LangChain und modernen Gen AI Architekturmustern. GCP zertifizierter Cloud Engineer.",
-      "available": "<strong>Verfügbar Q1 2025</strong>. Offen für Vollzeit, Vertrag, Hybrid in Dubai.",
+      "available": "<strong>Offen für neue Rollen.</strong> Remote, hybrid oder vor Ort in der gesamten EU — Vollzeit oder Freelance. Unter Beachtung der üblichen deutschen Kündigungsfristen.",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
-      "default": "Ich kann Ihnen über Sakhrs deutschen Hintergrund, seine Expertise als <strong>Gen AI & Cloud Engineer</strong> (spezialisiert auf RAGs, Fine Tuning, KI-Integration), sein AI Waverider Startup (er ist Gründer/CEO/CTO), technische Fähigkeiten, Dubai-Pläne erzählen oder bei Job-Matching helfen!"
+      "default": "Ich kann Ihnen von Sakhrs Enterprise-Arbeit bei Accenture erzählen, von seinem eigenen Portfolio produktiver KI-Systeme (mandantenfähige SaaS, RAG, agentische Pipelines), von seinem Cloud- und DevOps-Stack, davon wo in der EU er arbeiten kann — oder beim Job-Matching helfen!"
     }
   },
   "terminalCommands": {
@@ -360,11 +423,17 @@
     "heroNotFound": "> Befehl nicht gefunden. Tippe 'help' für Befehle."
   },
   "typing": {
-    "texts": ["Gen AI & Cloud Engineer", "KI-Lösungsarchitekt", "Senior Software Engineer", "Full-Stack Java Experte", "Unternehmenssystem-Builder", "Experte für Prompt Engineering"]
+    "texts": [
+      "Gen AI & Cloud Engineer",
+      "KI-Lösungsarchitekt",
+      "Senior Software Engineer",
+      "Full-Stack Java Experte",
+      "Unternehmenssystem-Builder",
+      "Experte für Prompt Engineering"
+    ]
   },
   "email": {
     "subject": "Stellenangebot-Anfrage",
     "body": "Sehr geehrter Sakhr AL-Absi,\n\nIch bin auf Ihren Lebenslauf gestoßen und bin beeindruckt von Ihrer Expertise als Senior Software Engineer und KI-Lösungsarchitekt. Ich würde gerne eine mögliche Gelegenheit mit Ihnen besprechen.\n\nBitte lassen Sie mich Ihre Verfügbarkeit für ein Gespräch wissen.\n\nMit freundlichen Grüßen,\n[Ihr Name]\n[Ihre Position]\n[Ihr Unternehmen]"
   }
 }
-

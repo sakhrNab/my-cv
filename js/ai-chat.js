@@ -152,7 +152,7 @@ function getLocalResponse(t) {
     if (t.includes('german') || t.includes('citizen')) {
         return getT('aiChat.localResponses.german');
     }
-    if (t.includes('dubai') || t.includes('uae')) {
+    if (t.includes('dubai') || t.includes('uae') || t.includes('europe') || t.includes('eu') || t.includes('berlin') || t.includes('remote') || t.includes('relocat')) {
         return getT('aiChat.localResponses.dubai');
     }
     if (t.includes('ai') || t.includes('openai')) {

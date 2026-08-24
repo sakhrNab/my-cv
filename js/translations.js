@@ -195,31 +195,19 @@ function updateTerminalContent() {
     const terminalBody = document.getElementById('terminalBody');
     if (!terminalBody) return;
     
-    // Update existing terminal lines
-    const whoamiOutput = terminalBody.querySelector('.terminal-output');
-    if (whoamiOutput && whoamiOutput.textContent.includes('German Citizen')) {
-        whoamiOutput.innerHTML = t('terminal.whoamiOutput');
-    }
-    
-    // Update other terminal outputs
-    const terminalLines = terminalBody.querySelectorAll('.terminal-line.terminal-output');
-    terminalLines.forEach((line, index) => {
-        const text = line.textContent || line.innerText;
-        if (text.includes('15+ years')) {
-            line.innerHTML = t('terminal.experience1');
-        } else if (text.includes('7+ years')) {
-            line.innerHTML = t('terminal.experience2');
-        } else if (text.includes('Fortune 500')) {
-            line.innerHTML = t('terminal.experience3');
-        } else if (text.includes('ai_waverider_founder')) {
-            line.innerHTML = t('terminal.achievements');
-        } else if (text.includes('Founder, CEO & CTO')) {
-            line.innerHTML = t('terminal.aiwaveriderOutput');
-        } else if (text.includes('German (C1)')) {
-            line.innerHTML = t('terminal.languagesOutput');
-        } else if (text.includes('Available Q1')) {
-            line.innerHTML = t('terminal.statusOutput');
-        }
+    // Resolve each line from its OWN data-i18n / data-i18n-html attribute.
+    //
+    // This previously matched English literals ('German Citizen', 'Available Q1',
+    // 'Founder, CEO & CTO', ...). That coupled the translation layer to the exact
+    // English copy in index.html, so any wording change silently stopped the
+    // terminal translating in every language, with no error. Keying off the
+    // attribute the element already carries removes that whole class of bug.
+    terminalBody.querySelectorAll('[data-i18n-html], [data-i18n]').forEach((el) => {
+        const key = el.getAttribute('data-i18n-html') || el.getAttribute('data-i18n');
+        if (!key) return;
+        const value = t(key);
+        // t() returns the key itself when a translation is missing - don't blank the DOM.
+        if (value && value !== key) el.innerHTML = value;
     });
 }
 

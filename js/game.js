@@ -32,7 +32,7 @@ const Game = {
         { q: "What makes Sakhr ideal for AI?", correct: ["OpenAI", "Claude", "RAGs", "n8n", "Automation", "AI Agents", "LangChain", "5600+"], wrong: ["No AI", "Basic", "Limited"] },
         { q: "Why choose Sakhr for cloud?", correct: ["GCP", "Azure", "Kubernetes", "DevOps", "Docker", "CI/CD", "Coolify"], wrong: ["On-premise", "Old", "Manual"] },
         { q: "What shows leadership?", correct: ["Team Lead", "Agile", "Offshore", "CEO", "CTO", "Founder", "Mentoring"], wrong: ["Solo", "Junior", "Isolated"] },
-        { q: "Why perfect for Dubai?", correct: ["Arabic", "German", "English", "Multilingual", "Adaptable", "15+ Years"], wrong: ["Monolingual", "Rigid"] }
+        { q: "Why does he fit an EU-wide team?", correct: ["EU Citizen", "German C1", "English C1", "Arabic", "Remote", "CET"], wrong: ["Visa Needed", "Monolingual"] }
     ],
     currentQ: 0,
     start() {

@@ -33,7 +33,7 @@ function handleTerminalInput(e) {
     const inputLine = body.querySelector('.terminal-input-line');
     const newCmd = document.createElement('div');
     newCmd.className = 'terminal-line';
-    newCmd.innerHTML = `<span class="terminal-prompt">sakhr@dubai:~$</span> <span class="terminal-command">${cmd}</span>`;
+    newCmd.innerHTML = `<span class="terminal-prompt">sakhr@berlin:~$</span> <span class="terminal-command">${cmd}</span>`;
     body.insertBefore(newCmd, inputLine);
     let output = '';
     switch (cmd) {
@@ -84,7 +84,7 @@ function handleTerminalInput(e) {
             }, 300);
             break;
         case 'clear':
-            body.innerHTML = `<div class="terminal-input-line"><span class="terminal-prompt">sakhr@dubai:~$</span>&nbsp;<input type="text" class="terminal-input" id="terminalInput" placeholder="Type 'help'..." onkeydown="handleTerminalInput(event)"><span class="terminal-cursor">▋</span></div>`;
+            body.innerHTML = `<div class="terminal-input-line"><span class="terminal-prompt">sakhr@berlin:~$</span>&nbsp;<input type="text" class="terminal-input" id="terminalInput" placeholder="Type 'help'..." onkeydown="handleTerminalInput(event)"><span class="terminal-cursor">▋</span></div>`;
             return;
         default:
             // Check if it's a chat command with message

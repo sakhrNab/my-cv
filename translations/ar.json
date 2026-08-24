@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "صخر العبسي | مواطن ألماني → دبي | مهندس Gen AI & Cloud | مهندس أنظمة الذكاء الاصطناعي",
-    "description": "خبير Gen AI ومهندس Cloud (GCP معتمد) مع 15+ سنة في ألمانيا. متخصص في RAGs، Fine Tuning، تكامل الذكاء الاصطناعي. مؤسس AI Waverider. 7+ سنوات خبرة مؤسسية. 5,600+ نظام ذكاء اصطناعي. الانتقال إلى دبي."
+    "title": "صخر العبسي | مهندس برمجيات أول ومهندس حلول ذكاء اصطناعي توليدي | الاتحاد الأوروبي / عن بُعد",
+    "description": "مواطن في الاتحاد الأوروبي (جواز سفر ألماني) — مهندس برمجيات أول ومهندس حلول ذكاء اصطناعي توليدي، يعمل عن بُعد في جميع أنحاء الاتحاد الأوروبي. حاصل على اعتماد ⁦GCP⁩. يبني خدمات مصغّرة بـ⁦Spring Boot⁩/⁦Java⁩ لعملاء من ⁦Fortune 500⁩ في قطاعي المصارف والسيارات لدى ⁦Accenture⁩، إضافة إلى منظومة منتجات ذكاء اصطناعي إنتاجية بناها بنفسه. الإنجليزية ⁦C1⁩، الألمانية ⁦C1⁩، العربية لغة أم، الإسبانية ⁦B1⁩."
   },
   "nav": {
     "logo": "صخر العبسي",
@@ -19,7 +19,7 @@
     "hits": "✓",
     "weapon": "🔫",
     "basic": "أساسي",
-    "close": "✕ إغلاق",
+    "close": "إغلاق",
     "question": "لماذا توظف صخر؟",
     "hint": "اطلق على المهارات <span class=\"correct\">الخضراء</span> | تجنب <span class=\"wrong\">الحمراء</span> | اجمع ⭐ للترقيات!",
     "controls": "← → أو A/D للتحرك | SPACE أو CLICK لإطلاق النار",
@@ -33,39 +33,38 @@
     "finalScore": "النقاط النهائية:",
     "tryAgain": "حاول مرة أخرى لإتقان مهارات صخر!",
     "restart": "🔄 إعادة التشغيل",
-    "close": "إغلاق",
     "victory": "تهانينا!",
     "masteredSkills": "لقد أتقنت جميع المهارات!",
     "downloadCV": "📥 تحميل السيرة الذاتية"
   },
   "terminal": {
-    "title": "sakhr@dubai ~ bash",
+    "title": "sakhr@berlin ~ bash",
     "close": "✕",
     "closeTitle": "إغلاق الطرفية",
     "whoami": "whoami",
-    "whoamiOutput": "🇩🇪 مواطن ألماني | مهندس Gen AI & Cloud (GCP) | خبير Prompt Engineering | مهندس برمجيات أول | مؤسس، الرئيس التنفيذي والرئيس التقني",
+    "whoamiOutput": "⁧🇪🇺 مواطن أوروبي (جواز سفر ألماني) | مهندس برمجيات أول | مؤسس ورئيس تنفيذي ومدير تقني⁩",
     "catExperience": "cat experience.txt",
     "experience1": "→ <span class=\"terminal-highlight\">15+ سنة</span> في ألمانيا",
     "experience2": "→ <span class=\"terminal-highlight\">7+ سنوات</span> مؤسسية (Accenture، BMG، Innocean)",
     "experience3": "→ عملاء Fortune 500: البنوك الألمانية وشركات السيارات",
     "lsAchievements": "ls achievements/",
-    "achievements": "ai_waverider_founder/ 11_apps_built_2024/ global_hackathon_winner/ prompt_engineering_expert/",
+    "achievements": "ai_waverider_founder/ production_ai_systems/ regulated_domain_delivery/",
     "catAiwaverider": "cat aiwaverider.txt",
     "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">مؤسس، الرئيس التنفيذي والرئيس التقني</span> | 5,600+ نظام ذكاء اصطناعي | خبير Prompt Engineering",
     "echoLanguages": "echo $LANGUAGES",
     "languagesOutput": "ألماني (C1) | إنجليزي (C1) | عربي (أصلي) | إسباني (B1)",
     "catStatus": "cat status.txt",
-    "statusOutput": "✓ متاح Q1 2026 | جاهز لدبي 🇦🇪",
+    "statusOutput": "⁧✓ مواطن أوروبي · برلين (<bdi>CET</bdi>) | منفتح على أدوار عن بُعد ومختلطة في أنحاء الاتحاد الأوروبي⁩",
     "placeholder": "اكتب 'help' للأوامر...",
     "heroInitializing": "> تهيئة المحفظة... OK",
     "heroPlay": "> اكتب \"play\" للعبة مخفية",
-    "heroStatus": "> الحالة: <span style=\"color:#4ade80\">متاح Q1 2026</span>",
-    "prompt": "sakhr@dubai:~$"
+    "heroStatus": "> status: <span style=\"color:#4ade80\">⁧منفتح على أدوار أوروبية — عن بُعد أو مختلطة⁩</span>",
+    "prompt": "sakhr@berlin:~$"
   },
   "hero": {
-    "journeyText": "برلين → دبي",
+    "journeyText": "⁧برلين ← الاتحاد الأوروبي⁩",
     "headline": "مهندس ألماني.",
-    "headlineHighlight": "بناء المستقبل في دبي.",
+    "headlineHighlight": "ذكاء اصطناعي إنتاجي في أنحاء أوروبا.",
     "staticRoleTitle": "مهندس Gen AI & Cloud | مهندس حلول ذكاء اصطناعي متكاملة",
     "tagline": "<strong>الدقة الألمانية</strong> • <strong>التراث العربي</strong> • <strong>الطلاقة في الإنجليزية</strong>",
     "downloadCV": "تحميل السيرة الذاتية",
@@ -81,8 +80,8 @@
     "stats": {
       "yearsGermany": "سنوات في<br>ألمانيا",
       "corporateExcellence": "التميز<br>المؤسسي",
-      "appsBuilt": "تطبيقات مبنية<br>هذا العام",
-      "aiAgents": "نظام ذكاء اصطناعي<br>منتقى"
+      "appsBuilt": "أنظمة<br>إنتاجية",
+      "aiAgents": "مسارات عمل<br>مُنسّقة"
     }
   },
   "cv": {
@@ -91,7 +90,7 @@
     "badges": {
       "germanCitizen": "🇩🇪 مواطن ألماني",
       "yearsGermany": "15+ سنة في ألمانيا",
-      "relocating": "✈️ الانتقال إلى دبي"
+      "relocating": "مواطن أوروبي · عن بُعد أو انتقال داخل الاتحاد الأوروبي"
     },
     "uploadPhoto": "رفع<br>صورة",
     "downloadCertifications": "تحميل الشهادات",
@@ -106,22 +105,22 @@
       "apps": "بناء 11 تطبيقاً من الصفر هذا العام أثناء العمل بدوام كامل",
       "hackathon": "فاز بمسابقة ذكاء اصطناعي عالمية من خلال دمج Azure OpenAI",
       "languages": "ثلاثي اللغات: ألماني (C1)، إنجليزي (C1)، عربي (أصلي)",
-      "available": "متاح Q1 2026 | مفتوح لـ: دوام كامل، عقد، هجين"
+      "available": "مواطن أوروبي | عن بُعد أو مختلط أو حضورياً في أنحاء الاتحاد الأوروبي"
     },
     "footer": "صفحة {page}/{total} | صخر العبسي | مواطن ألماني | مؤسس/الرئيس التنفيذي/الرئيس التقني AI Waverider | Q1 2026"
   },
   "executiveProfile": {
     "title": "الملف التنفيذي: مهندس الذكاء الاصطناعي الرائد",
     "hook": "<strong>\"انتهى عصر البرمجة التقليدية.\"</strong> أجمع 15+ سنة من الانضباط الهندسي الألماني مع تنسيق الذكاء الاصطناعي المتقدم لبناء أنظمة مؤسسية في أيام، وليس أشهر.",
-    "paragraph1": "أنا <strong>مهندس أنظمة ذكاء اصطناعي متقدم</strong> و<strong>مواطن ألماني</strong> أنتقل إلى دبي. بخلفية مزدوجة في علوم الكمبيوتر والهندسة الصناعية من <strong>TU Berlin و HTW Berlin</strong>، أربط بين التنفيذ التقني المعقد والقيمة التجارية.",
-    "paragraph2": "حالياً، أعمل كمهندس برمجيات أول في <strong>Accenture ألمانيا</strong>، وأُسلّم حلولاً لعملاء Fortune 500 في القطاعين المصرفي والسيارات. في الوقت نفسه، كمؤسس <strong>AI Waverider</strong>، قمت بتصميم منصة تخدم آلاف المستخدمين مع أكثر من <strong>5,600+ نظام ذكاء اصطناعي</strong>، متخصصاً في تقنيات Gen AI بما في ذلك RAGs، Fine Tuning، والتكامل السلس للذكاء الاصطناعي في تطبيقات الويب.",
-    "paragraph3": "<strong>ميزتي التنافسية:</strong> لا أكتب الكود فقط. أنسق حلولاً على مستوى المؤسسات. من خلال تعزيز الهندسة التقليدية بالذكاء الاصطناعي، أقلل دورات التطوير بنسبة 70%. أُسلّم أنظمة جاهزة للإنتاج بشكل أسرع دون التضحية بمعايير الجودة الألمانية التي تتطلبها أنظمتك. أجلب <strong>الدقة الألمانية، التراث العربي، والطلاقة في الإنجليزية</strong> إلى سوق الإمارات.",
-    "whyDubai": "<strong>لماذا دبي؟</strong> أضع نفسي بين ألمع العقول في أحد أسرع مراكز التكنولوجيا نمواً في العالم. أنتقل إلى الإمارات للعمل مع المفكرين المبتكرين، والتعلم من الأفضل، وبناء حلول استثنائية معاً.",
+    "paragraph1": "أنا <strong>مهندس برمجيات أول ومهندس حلول ذكاء اصطناعي توليدي</strong>، و<strong>مواطن في الاتحاد الأوروبي</strong> (جواز سفر ألماني)، أعمل من برلين ومنفتح على فرق في أي بلد أوروبي. بخلفية مزدوجة في المعلوماتية التطبيقية والهندسة الصناعية من <strong><bdi>HTW Berlin</bdi> و<bdi>TU Berlin</bdi></strong>، أصل بين التنفيذ التقني والقيمة التجارية التي تقف خلفه.",
+    "paragraph2": "في <strong><bdi>Accenture</bdi> ألمانيا</strong> أبني خدمات مصغّرة بـ<bdi>Spring Boot</bdi>/<bdi>Java</bdi> لعملاء من <bdi>Fortune 500</bdi> في قطاعي المصارف والسيارات فوق <bdi>OpenShift</bdi> و<bdi>Google Cloud</bdi>. وبالتوازي صمّمت وبنيت وشغّلت تحت اسم <strong><bdi>AI Waverider</bdi></strong> منظومة أنظمة تعمل في الإنتاج: تطبيقات <bdi>SaaS</bdi> متعددة المستأجرين على <bdi>Next.js</bdi> و<bdi>Prisma/PostgreSQL</bdi> و<bdi>BullMQ</bdi>، مع استرجاع معزّز بالتوليد وبحث شعاعي وتوجيه نماذج لغوية متعدد المزوّدين وخطوط معالجة وكيلية ومحاسبة تكلفة لكل طلب.",
+    "paragraph3": "<strong>ما أقدّمه:</strong> ملكية كاملة من الطرف إلى الطرف — عزل بين المستأجرين تحميه أربع آليات مستقلة، ونظام توطين بثماني لغات مع بوابة اكتمال تُفشل عملية البناء، وحق المحو وفق اللائحة الأوروبية لحماية البيانات كمسار مستخدم مُختبَر. لغة عملي اليومية هي الإنجليزية، وتنضم إليها الألمانية بمستوى <bdi>C1</bdi> والعربية كلغة أم حين يحتاج الفريق إلى هذا المدى.",
+    "whyDubai": "<strong>ما أبحث عنه:</strong> دور هندسي أول أو معماري أو قيادة تقنية داخل فريق أوروبي — يعمل عن بُعد أساساً أو بنظام مختلط — يُدخل الذكاء الاصطناعي التوليدي في منتجات حقيقية. لا تأشيرة ولا كفالة ولا معاملات انتقال: جواز السفر الألماني يتيح لي البدء في أي بلد داخل الاتحاد الأوروبي أو المنطقة الاقتصادية الأوروبية.",
     "impactTitle": "التأثير في لمحة",
     "impact": {
       "founder": "<strong>مؤسس ورئيس التقني لـ AI Waverider</strong>",
-      "apps": "<strong>11 تطبيق مؤسسي</strong> مبني هذا العام",
-      "agents": "<strong>5,600+ نظام ذكاء اصطناعي</strong> تم نشره",
+      "apps": "<strong>23 نظاماً إنتاجياً</strong> بُنيت من الطرف إلى الطرف",
+      "agents": "<strong>أكثر من 5,600 مسار عمل</strong> جرى تنسيقها ونشرها",
       "trilingual": "<strong>ثلاثي اللغات</strong> (DE/EN/AR)"
     }
   },
@@ -226,7 +225,7 @@
     "title": "الشهادات",
     "gcp": {
       "name": "🌟 Google Associate Cloud Engineer",
-      "date": "ديسمبر 2024",
+      "date": "نوفمبر 2024",
       "description": "خبرة معتمدة في خدمات GCP بما في ذلك Compute Engine، Kubernetes Engine، Cloud Storage، سياسات أمان IAM، والمراقبة مع Cloud Operations Suite"
     },
     "accenture": {
@@ -267,12 +266,76 @@
       "domain": "المجال والقيادة"
     },
     "tags": {
-      "programming": ["Java 17/21", "Python", "JavaScript", "TypeScript", "Node.js", "SQL", "Bash"],
-      "frameworks": ["Spring Boot 3.x", "الخدمات المصغرة", "Django", "Vue.js 3", "React.js", "REST APIs", "GraphQL"],
-      "cloud": ["مهندس Cloud (GCP معتمد)", "GCP", "Compute Engine", "GKE", "Cloud Storage", "IAM", "Cloud Security", "Cloud Architecture", "Pub/Sub", "IaC", "Networking", "Azure", "AWS", "OpenShift", "Docker", "Kubernetes", "CI/CD", "Coolify", "Nginx", "Linux/VPS"],
-      "ai": ["Gen AI", "RAGs", "Fine Tuning", "تكامل الذكاء الاصطناعي", "OpenAI GPT", "Claude AI", "Prompt Engineering", "Azure OpenAI", "سير عمل n8n", "أنظمة الذكاء الاصطناعي", "LangChain"],
-      "databases": ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Firebase", "Supabase", "قواعد البيانات المتجهة"],
-      "domain": ["المالية والبنوك", "السيارات", "Agile/Scrum", "قيادة الفريق", "التنسيق الخارجي", "الاستشارات"]
+      "programming": [
+        "Java 17/21",
+        "Python",
+        "JavaScript",
+        "TypeScript",
+        "Node.js",
+        "SQL",
+        "Bash"
+      ],
+      "frameworks": [
+        "Spring Boot 3.x",
+        "الخدمات المصغرة",
+        "Django",
+        "Vue.js 3",
+        "React.js",
+        "REST APIs",
+        "GraphQL"
+      ],
+      "cloud": [
+        "مهندس Cloud (GCP معتمد)",
+        "GCP",
+        "Compute Engine",
+        "GKE",
+        "Cloud Storage",
+        "IAM",
+        "Cloud Security",
+        "Cloud Architecture",
+        "Pub/Sub",
+        "IaC",
+        "Networking",
+        "Azure",
+        "AWS",
+        "OpenShift",
+        "Docker",
+        "Kubernetes",
+        "CI/CD",
+        "Coolify",
+        "Nginx",
+        "Linux/VPS"
+      ],
+      "ai": [
+        "Gen AI",
+        "RAGs",
+        "Fine Tuning",
+        "تكامل الذكاء الاصطناعي",
+        "OpenAI GPT",
+        "Claude AI",
+        "Prompt Engineering",
+        "Azure OpenAI",
+        "سير عمل n8n",
+        "أنظمة الذكاء الاصطناعي",
+        "LangChain"
+      ],
+      "databases": [
+        "PostgreSQL",
+        "MySQL",
+        "MongoDB",
+        "Redis",
+        "Firebase",
+        "Supabase",
+        "قواعد البيانات المتجهة"
+      ],
+      "domain": [
+        "المالية والبنوك",
+        "السيارات",
+        "Agile/Scrum",
+        "قيادة الفريق",
+        "التنسيق الخارجي",
+        "الاستشارات"
+      ]
     }
   },
   "languages": {
@@ -296,16 +359,16 @@
     }
   },
   "footer": {
-    "text": "© 2025 صخر العبسي | 🇩🇪 مواطن ألماني • 15+ سنة في ألمانيا | مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider | جاهز لدبي 🇦🇪"
+    "text": "⁧© 2026 صخر العبسي | 🇪🇺 مواطن أوروبي • برلين | مهندس برمجيات أول ومهندس حلول ذكاء اصطناعي توليدي⁩"
   },
   "aiChat": {
     "title": "اسأل عن صخر",
     "close": "✕",
-    "welcome": "👋 <strong>مرحباً!</strong> يمكنني أن أخبرك عن صخر. <strong>مواطن ألماني</strong>، <strong>مؤسس/الرئيس التنفيذي/الرئيس التقني لـ AI Waverider</strong>، مع 15+ سنة في ألمانيا، ينتقل إلى دبي.<br><br>اسأل عن مهاراته أو استخدم خاصية <strong>مطابقة الوظائف</strong>!",
+    "welcome": "⁧👋 <strong>مرحباً!</strong> يسعدني أن أحدّثك عن صخر — <strong>مواطن أوروبي</strong> مقيم في برلين، مهندس برمجيات أول لدى <bdi>Accenture</bdi> والمطوّر الوحيد لمنظومة منتجات ذكاء اصطناعي تعمل في الإنتاج.<br><br>اسأل عن أدواته التقنية أو مشاريعه، أو جرّب <strong>مطابقة الوظائف</strong>!⁩",
     "suggestions": {
       "background": "الخلفية",
       "founder": "AI Waverider",
-      "dubai": "لماذا دبي؟",
+      "dubai": "أين يمكنه العمل",
       "contact": "اتصل",
       "jobMatch": "مطابقة الوظائف"
     },
@@ -320,8 +383,8 @@
         "bot": "<strong>AI Waverider. أسسه وانتقاه صخر</strong><br><br>🚀 <strong>5,600+ نظام ذكاء اصطناعي</strong> وسير عمل آلية<br>🤖 <strong>مهندس Gen AI & Cloud</strong> - RAGs، Fine Tuning، تكامل الذكاء الاصطناعي<br>☁️ <strong>مهندس Cloud معتمد من GCP</strong><br>👨‍💼 <strong>مؤسس، الرئيس التنفيذي والرئيس التقني</strong><br>💻 <strong>منتقى ومُطوّر</strong> أثناء العمل بدوام كامل<br>🔧 Full-stack: React، Node.js، Python، GCP، Docker<br>📈 قاعدة مستخدمين متنامية عالمياً<br><br>زر: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
       },
       "dubai": {
-        "user": "لماذا ينتقل صخر إلى دبي؟",
-        "bot": "<strong>لماذا دبي؟</strong><br><br>🚀 <strong>أسرع مركز تقني نمواً</strong> في العالم<br>🌍 جسر مثالي بين الأسواق <strong>الأوروبية والشرق الأوسطية</strong><br>💡 يسعى <strong>للعمل مع شركات مبتكرة</strong><br>🏆 يجلب خبرة مؤسسية <strong>من Fortune 500</strong><br>🗣️ ثلاثي اللغات: ألماني، عربي وإنجليزي<br><br>جاهز للمساهمة في التحول الرقمي للإمارات!"
+        "user": "⁧أين يمكن لصخر أن يعمل، وما الذي يبحث عنه؟⁩",
+        "bot": "⁧<strong>أين يمكنه العمل</strong><br><br>🇪🇺 <strong>مواطن أوروبي</strong> (جواز سفر ألماني) — دون تأشيرة أو كفالة في الاتحاد الأوروبي والمنطقة الاقتصادية الأوروبية<br>🏠 <strong>عن بُعد أساساً أو بنظام مختلط</strong>، مقيم في برلين<br>🏗️ مهندس أول أو <strong>مهندس حلول</strong> أو قائد تقني<br>🤖 فرق تُدخل <strong>الذكاء الاصطناعي التوليدي في منتجات حقيقية</strong><br>🗣️ الإنجليزية <bdi>C1</bdi> · الألمانية <bdi>C1</bdi> · العربية لغة أم · الإسبانية <bdi>B1</bdi><br><br>منفتح على الانتقال داخل الاتحاد الأوروبي للفريق المناسب.⁩"
       },
       "interview": {
         "user": "كيف يمكنني الاتصال بصخر؟",
@@ -329,7 +392,7 @@
       }
     },
     "jobMatch": {
-    "title": "🎯 مطابقة الوظائف بالذكاء الاصطناعي",
+      "title": "🎯 مطابقة الوظائف بالذكاء الاصطناعي",
       "description": "الصق وصف الوظيفة لترى مدى تطابق صخر:",
       "placeholder": "الصق متطلبات الوظيفة هنا...",
       "analyze": "تحليل التطابق",
@@ -340,14 +403,14 @@
     "localResponses": {
       "founder": "<strong>مؤسس، الرئيس التنفيذي والرئيس التقني لـ AI Waverider</strong><br><br>بنيت 5,600+ نظام ذكاء اصطناعي وسير عمل آلية أثناء العمل بدوام كامل في Accenture. منصة full-stack: React، Node.js، Python، GCP.",
       "german": "<strong>مواطن ألماني</strong> مع 15+ سنة في ألمانيا. خريج TU Berlin و HTW Berlin. 7+ سنوات خبرة مؤسسية.",
-      "dubai": "ينتقل إلى دبي للانضمام إلى المنظومة التقنية في الإمارات. الدقة الألمانية + التراث العربي + الطلاقة في الإنجليزية = جسر فريد.",
+      "dubai": "⁧صخر مواطن في الاتحاد الأوروبي ومقيم في برلين. يعمل عن بُعد في جميع أنحاء الاتحاد الأوروبي ويمكنه الانتقال داخله دون تأشيرة أو كفالة.⁩",
       "ai": "فزت بمسابقة الذكاء الاصطناعي العالمية. بنيت AI Waverider مع 5,600+ نظام. <strong>مهندس Gen AI & Cloud</strong> متخصص في RAGs (Retrieval-Augmented Generation)، Fine Tuning، وتكامل الذكاء الاصطناعي في تطبيقات الويب. خبير في صياغة الأوامر عالية الأداء، OpenAI، Claude، n8n، LangChain، وأنماط تصميم Gen AI الحديثة. مهندس Cloud معتمد من GCP.",
-      "available": "<strong>متاح Q1 2026</strong>. مفتوح لـ دوام كامل، عقد، هجين في دبي.",
+      "available": "⁧<strong>منفتح على فرص جديدة.</strong> عن بُعد أو بنظام مختلط أو حضورياً في أي بلد أوروبي — دوام كامل أو تعاقد، مع مراعاة مُهل الإنهاء الألمانية.⁩",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
       "default": "يمكنني أن أخبرك عن خلفية صخر الألمانية، خبرته كـ <strong>مهندس Gen AI & Cloud</strong> (متخصص في RAGs، Fine Tuning، تكامل الذكاء الاصطناعي)، شركته الناشئة AI Waverider (هو مؤسس/الرئيس التنفيذي/الرئيس التقني)، المهارات التقنية، خطط دبي، أو المساعدة في مطابقة الوظائف!"
     }
   },
-    "terminalCommands": {
+  "terminalCommands": {
     "help": "الأوامر: help، play، chat، skills، prompt، contact، experience، education، aiwaverider، founder، download، clear<br>اكتب \"chat [رسالة]\" للتحدث مع الذكاء الاصطناعي",
     "play": "جارِ بدء اللعبة...",
     "chat": "جارِ فتح دردشة الذكاء الاصطناعي...",
@@ -367,11 +430,17 @@
     "downloadOutput": "جارِ إنشاء السيرة الذاتية بصيغة PDF..."
   },
   "typing": {
-    "texts": ["مهندس Gen AI & Cloud", "مهندس أنظمة الذكاء الاصطناعي", "مهندس برمجيات أول", "خبير Java Full-Stack", "مطور أنظمة مؤسسية", "خبير Prompt Engineering"]
+    "texts": [
+      "مهندس Gen AI & Cloud",
+      "مهندس أنظمة الذكاء الاصطناعي",
+      "مهندس برمجيات أول",
+      "خبير Java Full-Stack",
+      "مطور أنظمة مؤسسية",
+      "خبير Prompt Engineering"
+    ]
   },
   "email": {
     "subject": "استفسار فرصة عمل",
     "body": "عزيزي صخر العبسي،\n\nصادفت سيرتك الذاتية وأنا معجب بخبرتك كمهندس برمجيات أول ومهندس أنظمة الذكاء الاصطناعي. أود مناقشة فرصة محتملة معك.\n\nيرجى إعلامي بمدى توفرك لمحادثة.\n\nمع أطيب التحيات،\n[اسمك]\n[منصبك]\n[شركتك]"
   }
 }
-

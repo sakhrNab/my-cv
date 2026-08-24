@@ -26,7 +26,7 @@ async function generatePDF() {
         let cleaned = str.replace(/<[^>]*>/g, '').replace(/&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&lt;/g, '<').replace(/&gt;/g, '>');
         
         // Replace specific emojis with text equivalents before removing all emojis
-        cleaned = cleaned.replace(/🇩🇪/g, '[DE]').replace(/🇦🇪/g, '[AE]').replace(/🇬🇧/g, '[GB]').replace(/🇸🇦/g, '[SA]').replace(/🇪🇸/g, '[ES]');
+        cleaned = cleaned.replace(/🇪🇺/g, '[EU]').replace(/🇩🇪/g, '[DE]').replace(/🇦🇪/g, '[AE]').replace(/🇬🇧/g, '[GB]').replace(/🇸🇦/g, '[SA]').replace(/🇪🇸/g, '[ES]');
         
         // Remove all emojis (comprehensive Unicode emoji ranges)
         // This covers: Emoticons, Miscellaneous Symbols, Dingbats, Transport, Flags, etc.

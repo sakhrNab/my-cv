@@ -24,16 +24,16 @@ async function downloadAllCertifications() {
         
         // List of certificate files in assets/certs/
         // These files are automatically discovered from the assets/certs/ directory
+        // CERTIFICATIONS ONLY.
+        // Employment references (Arbeitszeugnisse) are deliberately NOT bundled here:
+        // they carry third-party signatories' names and titles, which must not be
+        // distributed via a public one-click download. Share those on request instead.
         const certFiles = [
-            'BMG Rights & Management Employment Reference.pdf',
-            'Bosch-Employment Reference.pdf',
+            'AssociateCloudEngineer20251202-31.pdf',
+            'AccentureCertification.pdf',
             'CertificateOfCompletion_HtmlEssentialTraining.pdf',
             'CertificateOfCompletion_LearningSqlProgramming.pdf',
-            'CertificateOfCompletion_MakingVideo2TeachSomething(1).pdf',
-            'Innocean Employment Reference1.jpg',
-            'Innocean Employment Reference2.jpg',
-            'YCCC-Bescheinigug.pdf',
-            'Yuma-Employment Reference.pdf'
+            'CertificateOfCompletion_MakingVideo2TeachSomething(1).pdf'
         ];
 
         let filesAdded = 0;
