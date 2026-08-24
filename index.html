@@ -56,21 +56,8 @@
             <li><a href="#products" data-i18n="nav.products">Products</a></li>
             <li><a href="#education" data-i18n="nav.education">Education</a></li>
             <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
-            <li><a href="#" onclick="downloadAllCertifications(); return false;" class="nav-btn-secondary"><i class="fas fa-certificate"></i> <span data-i18n="nav.certs">Certs</span></a></li>
-            <li class="lang-switcher-container">
-                <button class="lang-switcher-btn" id="langSwitcherBtn" onclick="toggleLangDropdown()" title="Change Language">
-                    <i class="fas fa-globe"></i> <span id="currentLangDisplay">EN</span> <i class="fas fa-chevron-down"></i>
-                </button>
-                <div class="lang-dropdown" id="langDropdown">
-                    <a href="#" onclick="changeLanguage('en'); return false;" class="lang-option" data-lang="en"><span class="lang-flag">🇬🇧</span> English</a>
-                    <a href="#" onclick="changeLanguage('de'); return false;" class="lang-option" data-lang="de"><span class="lang-flag">🇩🇪</span> Deutsch</a>
-                    <a href="#" onclick="changeLanguage('es'); return false;" class="lang-option" data-lang="es"><span class="lang-flag">🇪🇸</span> Español</a>
-                    <a href="#" onclick="changeLanguage('ar'); return false;" class="lang-option" data-lang="ar"><span class="lang-flag">🇸🇦</span> العربية</a>
-                </div>
-            </li>
-            <li><button onclick="toggleTheme()" class="theme-toggle">🌙</button></li>
-            <li><button onclick="generatePDF()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> <span data-i18n="nav.downloadCV">Download CV</span></button></li>
-        </ul>
+            <li><a href="#integrations" data-i18n="nav.integrations">Integrations</a></li>
+            <li><a href="#" onclick="downloadAllCertifications(); return false;" class="nav-btn-secondary"><i class="fas fa-certificate"></i> <span data-i18n="nav.certs">Certs</span></a></li><li><button onclick="toggleTheme()" class="theme-toggle">🌙</button></li><li><button onclick="generatePDF()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> <span data-i18n="nav.downloadCV">Download CV</span></button></li></ul>
     </div>
 </nav>
 
@@ -475,45 +462,6 @@
                 </div>
             </div>
 
-            <div class="section" id="integrations">
-                <h2><i class="fas fa-plug"></i> <span data-i18n="integrations.title">Integrations & AI Infrastructure</span></h2>
-                <p class="section-subtitle" data-i18n="integrations.subtitle"></p>
-                <div class="integration-list">
-                    <div class="integration-row">
-                        <div class="integration-label" data-i18n="integrations.google.label"></div>
-                        <div class="integration-items" data-i18n="integrations.google.items"></div>
-                    </div>
-                    <div class="integration-row">
-                        <div class="integration-label" data-i18n="integrations.meta.label"></div>
-                        <div class="integration-items" data-i18n="integrations.meta.items"></div>
-                    </div>
-                    <div class="integration-row">
-                        <div class="integration-label" data-i18n="integrations.llm.label"></div>
-                        <div class="integration-items" data-i18n="integrations.llm.items"></div>
-                    </div>
-                    <div class="integration-row">
-                        <div class="integration-label" data-i18n="integrations.rag.label"></div>
-                        <div class="integration-items" data-i18n="integrations.rag.items"></div>
-                    </div>
-                    <div class="integration-row">
-                        <div class="integration-label" data-i18n="integrations.voice.label"></div>
-                        <div class="integration-items" data-i18n="integrations.voice.items"></div>
-                    </div>
-                    <div class="integration-row">
-                        <div class="integration-label" data-i18n="integrations.data.label"></div>
-                        <div class="integration-items" data-i18n="integrations.data.items"></div>
-                    </div>
-                    <div class="integration-row">
-                        <div class="integration-label" data-i18n="integrations.commerce.label"></div>
-                        <div class="integration-items" data-i18n="integrations.commerce.items"></div>
-                    </div>
-                    <div class="integration-row">
-                        <div class="integration-label" data-i18n="integrations.agentic.label"></div>
-                        <div class="integration-items" data-i18n="integrations.agentic.items"></div>
-                    </div>
-                </div>
-            </div>
-
             <div class="section" id="education">
                 <h2><i class="fas fa-graduation-cap"></i> <span data-i18n="education.title">Education (German Universities)</span></h2>
                 <div class="education-item">
@@ -580,70 +528,224 @@
                 <div class="skills-grid">
                     <div class="skill-category">
                         <h4 data-i18n="skills.categories.programming">Programming Languages</h4>
-                        <span class="skill-tag" data-i18n="skills.tags.programming.0">Java 17/21</span>
-                        <span class="skill-tag" data-i18n="skills.tags.programming.1">Python</span>
-                        <span class="skill-tag" data-i18n="skills.tags.programming.2">JavaScript</span>
-                        <span class="skill-tag" data-i18n="skills.tags.programming.3">TypeScript</span>
-                        <span class="skill-tag" data-i18n="skills.tags.programming.4">Node.js</span>
-                        <span class="skill-tag" data-i18n="skills.tags.programming.5">SQL</span>
-                        <span class="skill-tag" data-i18n="skills.tags.programming.6">Bash</span>
+                                                <span class="skill-tag" data-i18n="skills.tags.programming.0">TypeScript</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.1">Java 17/21</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.2">Python</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.3">Rust</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.4">C++17</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.5">Swift</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.6">Dart</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.7">Kotlin</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.8">SQL</span>
+                        <span class="skill-tag" data-i18n="skills.tags.programming.9">Bash</span>
                     </div>
                     <div class="skill-category">
                         <h4 data-i18n="skills.categories.frameworks">Frameworks & Libraries</h4>
-                        <span class="skill-tag" data-i18n="skills.tags.frameworks.0">Spring Boot 3.x</span>
-                        <span class="skill-tag" data-i18n="skills.tags.frameworks.1">Microservices</span>
-                        <span class="skill-tag" data-i18n="skills.tags.frameworks.2">Django</span>
-                        <span class="skill-tag" data-i18n="skills.tags.frameworks.3">Vue.js 3</span>
-                        <span class="skill-tag" data-i18n="skills.tags.frameworks.4">React.js</span>
-                        <span class="skill-tag" data-i18n="skills.tags.frameworks.5">REST APIs</span>
-                        <span class="skill-tag" data-i18n="skills.tags.frameworks.6">GraphQL</span>
+                                                <span class="skill-tag" data-i18n="skills.tags.frameworks.0">Next.js</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.1">React</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.2">Vue 3</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.3">NestJS</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.4">Spring Boot 3.x</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.5">Django</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.6">Tauri</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.7">Flutter</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.8">Remotion</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.9">Prisma</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.10">REST / GraphQL</span>
+                        <span class="skill-tag" data-i18n="skills.tags.frameworks.11">Microservices</span>
                     </div>
                     <div class="skill-category">
                         <h4 data-i18n="skills.categories.cloud">Cloud & DevOps</h4>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.0">GCP (Certified)</span>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.1">Azure</span>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.2">AWS</span>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.3">OpenShift</span>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.4">Docker</span>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.5">Kubernetes</span>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.6">CI/CD</span>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.7">Coolify</span>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.8">Nginx</span>
-                        <span class="skill-tag" data-i18n="skills.tags.cloud.9">Linux/VPS</span>
+                                                <span class="skill-tag" data-i18n="skills.tags.cloud.0">GCP (Certified ACE)</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.1">GKE</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.2">Pub/Sub</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.3">IAM</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.4">Azure</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.5">AWS</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.6">OpenShift</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.7">Docker</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.8">Kubernetes</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.9">CI/CD</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.10">Coolify</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.11">Traefik</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.12">Nginx</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.13">Linux / VPS</span>
+                        <span class="skill-tag" data-i18n="skills.tags.cloud.14">IaC</span>
                     </div>
                     <div class="skill-category gold-border">
                         <h4 data-i18n="skills.categories.ai">AI & Automation</h4>
-                        <span class="skill-tag ai" data-i18n="skills.tags.ai.0">OpenAI GPT</span>
-                        <span class="skill-tag ai" data-i18n="skills.tags.ai.1">Claude AI</span>
-                        <span class="skill-tag ai" data-i18n="skills.tags.ai.2">Azure OpenAI</span>
-                        <span class="skill-tag ai" data-i18n="skills.tags.ai.3">n8n Workflows</span>
-                        <span class="skill-tag ai" data-i18n="skills.tags.ai.4">RAGs</span>
-                        <span class="skill-tag ai" data-i18n="skills.tags.ai.5">AI Agents</span>
-                        <span class="skill-tag ai" data-i18n="skills.tags.ai.6">LangChain</span>
+                                                <span class="skill-tag" data-i18n="skills.tags.ai.0">RAG</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.1">Vector search</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.2">Embeddings</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.3">Chunking strategy</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.4">Agentic pipelines</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.5">Multi-provider LLM routing</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.6">MCP servers</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.7">On-device inference (Ollama)</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.8">GPU Whisper</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.9">Fine tuning</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.10">Prompt engineering</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.11">Eval & cost control</span>
+                        <span class="skill-tag" data-i18n="skills.tags.ai.12">n8n</span>
                     </div>
                     <div class="skill-category">
                         <h4 data-i18n="skills.categories.databases">Databases & Storage</h4>
-                        <span class="skill-tag" data-i18n="skills.tags.databases.0">PostgreSQL</span>
-                        <span class="skill-tag" data-i18n="skills.tags.databases.1">MySQL</span>
-                        <span class="skill-tag" data-i18n="skills.tags.databases.2">MongoDB</span>
-                        <span class="skill-tag" data-i18n="skills.tags.databases.3">Redis</span>
-                        <span class="skill-tag" data-i18n="skills.tags.databases.4">Firebase</span>
-                        <span class="skill-tag" data-i18n="skills.tags.databases.5">Supabase</span>
-                        <span class="skill-tag" data-i18n="skills.tags.databases.6">Vector DBs</span>
+                                                <span class="skill-tag" data-i18n="skills.tags.databases.0">PostgreSQL</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.1">Qdrant</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.2">Meilisearch</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.3">Redis / BullMQ</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.4">Supabase</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.5">MongoDB</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.6">Neo4j</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.7">PostGIS</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.8">MinIO / S3</span>
+                        <span class="skill-tag" data-i18n="skills.tags.databases.9">Drizzle</span>
                     </div>
                     <div class="skill-category">
                         <h4 data-i18n="skills.categories.domain">Domain & Leadership</h4>
-                        <span class="skill-tag" data-i18n="skills.tags.domain.0">Finance & Banking</span>
+                                                <span class="skill-tag" data-i18n="skills.tags.domain.0">Finance & Banking</span>
                         <span class="skill-tag" data-i18n="skills.tags.domain.1">Automotive</span>
-                        <span class="skill-tag" data-i18n="skills.tags.domain.2">Agile/Scrum</span>
-                        <span class="skill-tag" data-i18n="skills.tags.domain.3">Team Leadership</span>
-                        <span class="skill-tag" data-i18n="skills.tags.domain.4">Offshore Coordination</span>
-                        <span class="skill-tag" data-i18n="skills.tags.domain.5">Consulting</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.2">Healthcare (regulated)</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.3">GDPR / DSGVO</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.4">Marketplace & E-commerce</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.5">Agile / Scrum</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.6">Team Leadership</span>
+                        <span class="skill-tag" data-i18n="skills.tags.domain.7">Offshore Coordination</span>
                     </div>
                 </div>
             </div>
 
             <!-- LANGUAGES -->
+            <div class="section" id="integrations">
+                <h2><i class="fas fa-plug"></i> <span data-i18n="integrations.title">Integrations & AI Infrastructure</span></h2>
+                <p class="section-subtitle" data-i18n="integrations.subtitle"></p>
+                <div class="integration-list">
+                    <div class="integration-row">
+                        <div class="integration-label" data-i18n="integrations.google.label"></div>
+                        <div class="integration-items">
+                                <span class="integration-chip" data-i18n="integrations.google.items.0"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.1"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.2"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.3"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.4"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.5"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.6"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.7"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.8"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.9"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.10"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.11"></span>
+                                <span class="integration-chip" data-i18n="integrations.google.items.12"></span>
+                        </div>
+                    </div>
+                    <div class="integration-row">
+                        <div class="integration-label" data-i18n="integrations.meta.label"></div>
+                        <div class="integration-items">
+                                <span class="integration-chip" data-i18n="integrations.meta.items.0"></span>
+                                <span class="integration-chip" data-i18n="integrations.meta.items.1"></span>
+                                <span class="integration-chip" data-i18n="integrations.meta.items.2"></span>
+                                <span class="integration-chip" data-i18n="integrations.meta.items.3"></span>
+                        </div>
+                    </div>
+                    <div class="integration-row">
+                        <div class="integration-label" data-i18n="integrations.llm.label"></div>
+                        <div class="integration-items">
+                                <span class="integration-chip" data-i18n="integrations.llm.items.0"></span>
+                                <span class="integration-chip" data-i18n="integrations.llm.items.1"></span>
+                                <span class="integration-chip" data-i18n="integrations.llm.items.2"></span>
+                                <span class="integration-chip" data-i18n="integrations.llm.items.3"></span>
+                                <span class="integration-chip" data-i18n="integrations.llm.items.4"></span>
+                                <span class="integration-chip" data-i18n="integrations.llm.items.5"></span>
+                                <span class="integration-chip" data-i18n="integrations.llm.items.6"></span>
+                                <span class="integration-chip" data-i18n="integrations.llm.items.7"></span>
+                        </div>
+                    </div>
+                    <div class="integration-row">
+                        <div class="integration-label" data-i18n="integrations.rag.label"></div>
+                        <div class="integration-items">
+                                <span class="integration-chip" data-i18n="integrations.rag.items.0"></span>
+                                <span class="integration-chip" data-i18n="integrations.rag.items.1"></span>
+                                <span class="integration-chip" data-i18n="integrations.rag.items.2"></span>
+                                <span class="integration-chip" data-i18n="integrations.rag.items.3"></span>
+                                <span class="integration-chip" data-i18n="integrations.rag.items.4"></span>
+                                <span class="integration-chip" data-i18n="integrations.rag.items.5"></span>
+                                <span class="integration-chip" data-i18n="integrations.rag.items.6"></span>
+                                <span class="integration-chip" data-i18n="integrations.rag.items.7"></span>
+                        </div>
+                    </div>
+                    <div class="integration-row">
+                        <div class="integration-label" data-i18n="integrations.voice.label"></div>
+                        <div class="integration-items">
+                                <span class="integration-chip" data-i18n="integrations.voice.items.0"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.1"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.2"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.3"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.4"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.5"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.6"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.7"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.8"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.9"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.10"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.11"></span>
+                                <span class="integration-chip" data-i18n="integrations.voice.items.12"></span>
+                        </div>
+                    </div>
+                    <div class="integration-row">
+                        <div class="integration-label" data-i18n="integrations.data.label"></div>
+                        <div class="integration-items">
+                                <span class="integration-chip" data-i18n="integrations.data.items.0"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.1"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.2"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.3"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.4"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.5"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.6"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.7"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.8"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.9"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.10"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.11"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.12"></span>
+                                <span class="integration-chip" data-i18n="integrations.data.items.13"></span>
+                        </div>
+                    </div>
+                    <div class="integration-row">
+                        <div class="integration-label" data-i18n="integrations.commerce.label"></div>
+                        <div class="integration-items">
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.0"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.1"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.2"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.3"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.4"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.5"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.6"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.7"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.8"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.9"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.10"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.11"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.12"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.13"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.14"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.15"></span>
+                                <span class="integration-chip" data-i18n="integrations.commerce.items.16"></span>
+                        </div>
+                    </div>
+                    <div class="integration-row">
+                        <div class="integration-label" data-i18n="integrations.agentic.label"></div>
+                        <div class="integration-items">
+                                <span class="integration-chip" data-i18n="integrations.agentic.items.0"></span>
+                                <span class="integration-chip" data-i18n="integrations.agentic.items.1"></span>
+                                <span class="integration-chip" data-i18n="integrations.agentic.items.2"></span>
+                                <span class="integration-chip" data-i18n="integrations.agentic.items.3"></span>
+                                <span class="integration-chip" data-i18n="integrations.agentic.items.4"></span>
+                                <span class="integration-chip" data-i18n="integrations.agentic.items.5"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div class="section">
                 <h2><i class="fas fa-globe"></i> <span data-i18n="languages.title">Languages</span></h2>
                 <p class="lang-hint" style="font-size: 0.85em; color: var(--text-light); margin-bottom: 15px; font-style: italic;" data-i18n-html="languages.hint">

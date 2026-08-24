@@ -409,29 +409,6 @@ async function generatePDF() {
     });
     y += 6;
 
-    // ---- Integrations & AI Infrastructure ----
-    addSection(getT('integrations.title') || 'INTEGRATIONS & AI INFRASTRUCTURE');
-    ['google','meta','llm','rag','voice','data','commerce','agentic'].forEach(ik => {
-        const lb = stripHTML(getT('integrations.' + ik + '.label'));
-        if (!lb || lb.indexOf('integrations.') === 0) return;
-        const it = stripHTML(getT('integrations.' + ik + '.items'));
-        const iLines = doc.splitTextToSize(it, pageW - margin * 2 - 6);
-        checkSpace(8 + iLines.length * 3.8);
-        doc.setFont("helvetica", "bold");
-        doc.setFontSize(9);
-        doc.setTextColor(150, 120, 30);
-        doc.text(lb, margin, y);
-        y += 4;
-        doc.setFont("helvetica", "normal");
-        doc.setFontSize(8);
-        doc.setTextColor(55, 55, 55);
-        doc.text(iLines, margin + 3, y);
-        y += iLines.length * 3.8 + 4;
-        doc.setFontSize(10);
-        doc.setTextColor(40, 40, 40);
-    });
-    y += 8;
-
     addSection(getT('education.title'));
     const educations = [
         { 
@@ -614,6 +591,30 @@ async function generatePDF() {
     y += 4;
     
     // Languages Section
+    // ---- Integrations & AI Infrastructure ----
+    addSection(getT('integrations.title') || 'INTEGRATIONS & AI INFRASTRUCTURE');
+    ['google','meta','llm','rag','voice','data','commerce','agentic'].forEach(ik => {
+        const lb = stripHTML(getT('integrations.' + ik + '.label'));
+        if (!lb || lb.indexOf('integrations.') === 0) return;
+        const rawIt = getT('integrations.' + ik + '.items');
+        const it = stripHTML(Array.isArray(rawIt) ? rawIt.join('  \u00B7  ') : rawIt);
+        const iLines = doc.splitTextToSize(it, pageW - margin * 2 - 6);
+        checkSpace(8 + iLines.length * 3.8);
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(9);
+        doc.setTextColor(150, 120, 30);
+        doc.text(lb, margin, y);
+        y += 4;
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(8);
+        doc.setTextColor(55, 55, 55);
+        doc.text(iLines, margin + 3, y);
+        y += iLines.length * 3.8 + 4;
+        doc.setFontSize(10);
+        doc.setTextColor(40, 40, 40);
+    });
+    y += 8;
+
     addSection(getT('languages.title'));
     const langs = [
         `${getT('languages.german.name')}: ${getT('languages.german.level')}`,

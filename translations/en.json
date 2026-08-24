@@ -12,7 +12,8 @@
     "certs": "Certs",
     "downloadCV": "Download CV",
     "products": "Products",
-    "education": "Education"
+    "education": "Education",
+    "integrations": "Integrations"
   },
   "game": {
     "title": "🚀 SAKHR'S SKILL CHALLENGE",
@@ -263,41 +264,42 @@
       "programming": "Programming Languages",
       "frameworks": "Frameworks & Libraries",
       "cloud": "Cloud & DevOps",
-      "ai": "AI & Automation",
-      "databases": "Databases & Storage",
+      "ai": "AI Engineering",
+      "databases": "Data & Storage",
       "domain": "Domain & Leadership"
     },
     "tags": {
       "programming": [
+        "TypeScript",
         "Java 17/21",
         "Python",
-        "JavaScript",
-        "TypeScript",
-        "Node.js",
+        "Rust",
+        "C++17",
+        "Swift",
+        "Dart",
+        "Kotlin",
         "SQL",
         "Bash"
       ],
       "frameworks": [
+        "Next.js",
+        "React",
+        "Vue 3",
+        "NestJS",
         "Spring Boot 3.x",
-        "Microservices",
         "Django",
-        "Vue.js 3",
-        "React.js",
-        "REST APIs",
-        "GraphQL"
+        "Tauri",
+        "Flutter",
+        "Remotion",
+        "Prisma",
+        "REST / GraphQL",
+        "Microservices"
       ],
       "cloud": [
-        "Cloud Engineer (GCP Certified)",
-        "GCP",
-        "Compute Engine",
+        "GCP (Certified ACE)",
         "GKE",
-        "Cloud Storage",
-        "IAM",
-        "Cloud Security",
-        "Cloud Architecture",
         "Pub/Sub",
-        "IaC",
-        "Networking",
+        "IAM",
         "Azure",
         "AWS",
         "OpenShift",
@@ -305,38 +307,47 @@
         "Kubernetes",
         "CI/CD",
         "Coolify",
+        "Traefik",
         "Nginx",
-        "Linux/VPS"
+        "Linux / VPS",
+        "IaC"
       ],
       "ai": [
-        "Gen AI",
-        "RAGs",
-        "Fine Tuning",
-        "AI Integration",
-        "OpenAI GPT",
-        "Claude AI",
-        "Prompt Engineering",
-        "Azure OpenAI",
-        "n8n Workflows",
-        "AI Agents",
-        "LangChain"
+        "RAG",
+        "Vector search",
+        "Embeddings",
+        "Chunking strategy",
+        "Agentic pipelines",
+        "Multi-provider LLM routing",
+        "MCP servers",
+        "On-device inference (Ollama)",
+        "GPU Whisper",
+        "Fine tuning",
+        "Prompt engineering",
+        "Eval & cost control",
+        "n8n"
       ],
       "databases": [
         "PostgreSQL",
-        "MySQL",
-        "MongoDB",
-        "Redis",
-        "Firebase",
+        "Qdrant",
+        "Meilisearch",
+        "Redis / BullMQ",
         "Supabase",
-        "Vector DBs"
+        "MongoDB",
+        "Neo4j",
+        "PostGIS",
+        "MinIO / S3",
+        "Drizzle"
       ],
       "domain": [
         "Finance & Banking",
         "Automotive",
-        "Agile/Scrum",
+        "Healthcare (regulated)",
+        "GDPR / DSGVO",
+        "Marketplace & E-commerce",
+        "Agile / Scrum",
         "Team Leadership",
-        "Offshore Coordination",
-        "Consulting"
+        "Offshore Coordination"
       ]
     }
   },
@@ -448,7 +459,7 @@
       "stack": "Rust · Tauri · Swift · whisper.cpp · Deepgram · ScreenCaptureKit · Vision OCR"
     },
     "emailai": {
-      "name": "EmailAI",
+      "name": "Reply Autopilot",
       "tag": "Multi-tenant SaaS",
       "desc": "Multi-tenant email automation: 108 data models, 172 migrations and 20+ BullMQ workers. Tenant isolation is enforced by four independent mechanisms — a runtime query guard, an ESLint rule, a static audit script and a dedicated CI job. Ships a full deliverability control plane: SPF/DKIM/DMARC checking, DMARC aggregate-report ingestion with p=none→quarantine→reject escalation, Google Postmaster and Microsoft SNDS reputation, mailbox warmup and a reversible per-domain cutover.",
       "stack": "Next.js · PostgreSQL/Prisma · BullMQ/Redis · Qdrant · Gmail API · Microsoft Graph · IMAP/SMTP"
@@ -519,35 +530,126 @@
     "subtitle": "APIs and infrastructure wired into production systems, not tutorials.",
     "google": {
       "label": "Google",
-      "items": "Gmail API · Pub/Sub push · YouTube Data API + hand-rolled resumable upload · Google Places · Vertex AI (Gemini · Imagen) · OAuth2 · Calendar · Drive · Sheets · Postmaster Tools · GCP (GKE · IAM)"
+      "items": [
+        "Gmail API",
+        "Pub/Sub push",
+        "YouTube Data API + hand-rolled resumable upload",
+        "Google Places",
+        "Vertex AI (Gemini",
+        "Imagen)",
+        "OAuth2",
+        "Calendar",
+        "Drive",
+        "Sheets",
+        "Postmaster Tools",
+        "GCP (GKE",
+        "IAM)"
+      ]
     },
     "meta": {
       "label": "Meta",
-      "items": "Instagram Graph API (container-create → media-publish) · Facebook · Meta Ads OAuth · Instagram scanning & budget metering"
+      "items": [
+        "Instagram Graph API (container-create → media-publish)",
+        "Facebook",
+        "Meta Ads OAuth",
+        "Instagram scanning & budget metering"
+      ]
     },
     "llm": {
       "label": "LLM providers",
-      "items": "OpenAI · Anthropic Claude · Google Gemini · DeepSeek · Moonshot Kimi · Zhipu GLM · Qwen · Ollama (local, on-device)"
+      "items": [
+        "OpenAI",
+        "Anthropic Claude",
+        "Google Gemini",
+        "DeepSeek",
+        "Moonshot Kimi",
+        "Zhipu GLM",
+        "Qwen",
+        "Ollama (local, on-device)"
+      ]
     },
     "rag": {
       "label": "RAG & vector search",
-      "items": "Qdrant (named vectors · int8 quantization) · Meilisearch · hybrid search fused with Reciprocal Rank Fusion · paragraph-aware chunking with overlap · L2-normalised cosine · multi-provider embeddings chosen from a measured MRR benchmark · circuit breaker + blue-green index switch"
+      "items": [
+        "Qdrant (named vectors",
+        "int8 quantization)",
+        "Meilisearch",
+        "hybrid search fused with Reciprocal Rank Fusion",
+        "paragraph-aware chunking with overlap",
+        "L2-normalised cosine",
+        "multi-provider embeddings chosen from a measured MRR benchmark",
+        "circuit breaker + blue-green index switch"
+      ]
     },
     "voice": {
       "label": "Voice, video & media",
-      "items": "ElevenLabs (TTS · voice cloning · dubbing) · HeyGen avatars · Deepgram (streaming STT · Voice Agent) · Whisper (local GPU) · Twilio · Vapi · LiveKit · Remotion · FFmpeg C API · GSAP"
+      "items": [
+        "ElevenLabs (TTS",
+        "voice cloning",
+        "dubbing)",
+        "HeyGen avatars",
+        "Deepgram (streaming STT",
+        "Voice Agent)",
+        "Whisper (local GPU)",
+        "Twilio",
+        "Vapi",
+        "LiveKit",
+        "Remotion",
+        "FFmpeg C API",
+        "GSAP"
+      ]
     },
     "data": {
       "label": "Data & infrastructure",
-      "items": "PostgreSQL (Prisma · Drizzle · RLS) · Redis + BullMQ · Supabase · MongoDB · Neo4j · MinIO/S3 · ClamAV · pgBackRest PITR · Docker · Coolify · OpenShift · Kubernetes"
+      "items": [
+        "PostgreSQL (Prisma",
+        "Drizzle",
+        "RLS)",
+        "Redis + BullMQ",
+        "Supabase",
+        "MongoDB",
+        "Neo4j",
+        "MinIO/S3",
+        "ClamAV",
+        "pgBackRest PITR",
+        "Docker",
+        "Coolify",
+        "OpenShift",
+        "Kubernetes"
+      ]
     },
     "commerce": {
       "label": "Commerce & CRM",
-      "items": "Stripe (+ Connect) · PayPal · Paddle · Paymob · Apollo · Hunter · ZeroBounce · Instantly · EmailBison · Close CRM · HubSpot · GoHighLevel · Calendly · Typeform · Slack · Unipile · n8n"
+      "items": [
+        "Stripe (+ Connect)",
+        "PayPal",
+        "Paddle",
+        "Paymob",
+        "Apollo",
+        "Hunter",
+        "ZeroBounce",
+        "Instantly",
+        "EmailBison",
+        "Close CRM",
+        "HubSpot",
+        "GoHighLevel",
+        "Calendly",
+        "Typeform",
+        "Slack",
+        "Unipile",
+        "n8n"
+      ]
     },
     "agentic": {
       "label": "Agentic & protocol",
-      "items": "Model Context Protocol servers (stdio + Streamable HTTP) · Agent Client Protocol · Claude Agent SDK · tool-calling loops with approval gates · subagent fan-out · proof-receipt verification"
+      "items": [
+        "Model Context Protocol servers (stdio + Streamable HTTP)",
+        "Agent Client Protocol",
+        "Claude Agent SDK",
+        "tool-calling loops with approval gates",
+        "subagent fan-out",
+        "proof-receipt verification"
+      ]
     }
   }
 }
