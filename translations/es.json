@@ -150,7 +150,7 @@
     "close": "✕",
     "closeTitle": "Cerrar terminal",
     "whoami": "whoami",
-    "whoamiOutput": "Ingeniero de Software Senior | Arquitecto Gen-AI | Fundador, CEO y CTO",
+    "whoamiOutput": "Senior Software Engineer | Arquitecto Gen-AI | Fundador, AI Waverider",
     "catExperience": "cat experience.txt",
     "experience1": "→ <span class=\"terminal-highlight\">Berlín</span>, Alemania · Alemán C2",
     "experience2": "→ <span class=\"terminal-highlight\">7+ años</span> corporativo (Accenture, BMG, Innocean)",
@@ -158,7 +158,7 @@
     "lsAchievements": "ls achievements/",
     "achievements": "ai_waverider_founder/ production_ai_systems/ regulated_domain_delivery/",
     "catAiwaverider": "cat aiwaverider.txt",
-    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Fundador, CEO y CTO</span> | 23 sistemas en producción | RAG · búsqueda vectorial · pipelines agénticos",
+    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Fundador, AI Waverider</span> | 23 sistemas en producción | 5.600+ flujos curados",
     "echoLanguages": "echo $LANGUAGES",
     "languagesOutput": "Alemán (C2) | Inglés (fluido) | Árabe (Nativo) | Español (B1)",
     "catStatus": "cat status.txt",
@@ -173,7 +173,7 @@
     "journeyText": "Berlín → Toda la UE",
     "headline": "Ingeniero Enterprise.",
     "headlineHighlight": "IA en producción por toda Europa.",
-    "staticRoleTitle": "Gen AI & Ingeniero Cloud | Arquitecto Full Stack de Soluciones IA",
+    "staticRoleTitle": "Senior Software Engineer y Arquitecto de Soluciones Gen-AI",
     "tagline": "<strong>Sistemas Gen-AI</strong> • <strong>Arquitectura Cloud</strong> • <strong>Entregado de punta a punta</strong>",
     "downloadCV": "Descargar CV",
     "aiWaverider": "🚀 AI Waverider",
@@ -183,7 +183,7 @@
     "innocean": "INNOCEAN",
     "banks": "BANCOS",
     "profileName": "Sakhr AL-Absi",
-    "profileRole": "Gen AI & Ingeniero Cloud | Desarrollador Full Stack",
+    "profileRole": "Senior Software Engineer y Arquitecto Gen-AI",
     "scrollDown": "DESPLAZAR HACIA ABAJO",
     "stats": {
       "yearsGermany": "Años en<br>Alemania",
@@ -194,7 +194,7 @@
   },
   "cv": {
     "name": "Sakhr AL-Absi",
-    "title": "Gen AI & Ingeniero Cloud (GCP Certificado) | Arquitecto Full Stack de Soluciones IA | Ingeniero de Software Senior | Fundador, CEO y CTO",
+    "title": "Senior Software Engineer y Arquitecto de Soluciones Gen-AI | Ingeniero Cloud certificado por GCP | Fundador de AI Waverider",
     "badges": {
       "germanCitizen": "📍 Berlín, Alemania",
       "yearsGermany": "Alemán C2 · Inglés fluido",
@@ -210,7 +210,7 @@
       "germanCitizen": "Con base en Berlín · formado en TU Berlin y HTW Berlin · GCP Certified Cloud Engineer",
       "founder": "Fundador, CEO y CTO de AI Waverider — 23 sistemas en producción propios",
       "corporate": "7+ años de experiencia corporativa en Accenture, BMG Rights Management, Innocean Europe",
-      "apps": "5.900 commits en el portafolio, construidos en paralelo a la entrega empresarial a tiempo completo",
+      "apps": "Ingeniería nativa de IA como práctica diaria — Claude Code & Agent SDK, servidores MCP, bucles de programación autónomos, modelos offline",
       "hackathon": "Ganó hackathon global de IA integrando Azure OpenAI",
       "languages": "Trilingüe: Alemán (C2), Inglés (fluido), Árabe (Nativo)",
       "available": "Ciudadano de la UE | Remoto, híbrido o presencial en toda la UE"
@@ -235,8 +235,8 @@
   "summary": {
     "title": "Resumen Profesional",
     "paragraph1": "<strong>Ciudadano alemán</strong> e Ingeniero de Software Senior con 7+ años en desarrollo empresarial, especializado en microservicios, tecnologías en la nube e integración de IA. Educado en las mejores universidades de Alemania (TU Berlin, HTW Berlin) con historial comprobado entregando para clientes Fortune 500 en finanzas y automotriz.",
-    "paragraph2": "Conocido por su <strong>responsabilidad de punta a punta</strong>. Diseñó, construyó y operó 23 sistemas en producción propios, en paralelo a su trabajo empresarial a tiempo completo. Coordinó equipos offshore en 3 husos horarios. Fundador, CEO y CTO de <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>, un escaparate que publica una biblioteca curada de más de 5.600 flujos de automatización n8n.",
-    "paragraph3": "<strong>Valor único:</strong> un ingeniero que entrega software regulado y en producción — supresión RGPD como recorrido probado, localización en ocho idiomas con una verificación que rompe la compilación, y contabilidad de costes de IA por petición. Trilingüe (alemán C2, inglés fluido, árabe nativo)."
+    "paragraph2": "Conocido por la <strong>responsabilidad de punta a punta</strong>. Diseñé, construí y operé 23 sistemas en producción propios en paralelo a la entrega enterprise a tiempo completo. Coordiné equipos offshore en 3 zonas horarias. Fundador de <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>, una plataforma de automatización con IA y escaparate de productos.",
+    "paragraph3": "<strong>Valor único:</strong> fundador de una empresa de IA (AI Waverider) que entrega software regulado y en producción — supresión RGPD como recorrido probado, localización en ocho idiomas con una verificación que rompe la compilación, y contabilidad de costes de IA por petición — combinado con un dominio diario y profundo de las herramientas modernas de IA: Claude Code & Agent SDK, Codex, modelos offline (Ollama), skills personalizadas, servidores MCP y bucles de programación autónomos. Trilingüe (alemán C2, inglés fluido, árabe nativo)."
   },
   "experience": {
     "title": "Experiencia Profesional",
@@ -247,9 +247,9 @@
       "highlight": "🚀 <strong>Sistemas de IA en producción, construidos de punta a punta</strong> | 23 sistemas propios | Biblioteca de flujos curada",
       "description": "Fundé y curé una plataforma de automatización impulsada por IA, reuniendo e integrando 5,600+ flujos de trabajo de IA de todo Internet mientras construía componentes clave. Mantuve empleo a tiempo completo en Accenture, demostrando gestión excepcional del tiempo e impulso empresarial.",
       "points": {
-        "vision": "<strong>Visión y Estrategia del Producto:</strong> Concebí, diseñé y lancé una plataforma que ofrece 5,600+ flujos de trabajo de automatización de IA gratuitos y plantillas n8n para empresas en todo el mundo. Integré prompts avanzados para videos, imágenes y generación de texto. Curo e integro continuamente las últimas herramientas y tecnologías de IA del mercado para proporcionar soluciones de vanguardia",
+        "vision": "<strong>Visión de Producto y Estrategia:</strong> Concebí, diseñé y lancé una plataforma de automatización con IA y escaparate para empresas de todo el mundo — productos, una biblioteca curada de flujos y pipelines de contenido — integrando continuamente las últimas herramientas de IA del mercado",
         "development": "<strong>Desarrollo Full-Stack:</strong> Arquitecturé y construí toda la plataforma solo. Frontend (React/Vue), backend (Node.js/Python), base de datos (PostgreSQL/Supabase) e infraestructura en la nube (GCP, Docker, Coolify)",
-        "ai": "<strong>Ingeniería Gen-AI:</strong> Diseñé y desplegué sistemas Gen-AI en producción — RAG con búsqueda vectorial (Qdrant), troceado con solapamiento, embeddings elegidos a partir de un benchmark medido, enrutado multiproveedor de LLM, pipelines agénticos con puertas de aprobación e inferencia en dispositivo vía Ollama y GPU Whisper, con contabilidad de costes por petición.",
+        "ai": "<strong>Integración e Ingeniería Gen-AI:</strong> Arquitecté y operé sistemas Gen-AI en producción — pipelines RAG con búsqueda vectorial (Qdrant), enrutamiento LLM multiproveedor (OpenAI, Anthropic Claude, Gemini, modelos locales vía Ollama), flujos agénticos con puertas de aprobación, servidores MCP y contabilidad de costes por petición",
         "operations": "<strong>Operaciones Comerciales:</strong> Manejé todos los aspectos: cumplimiento legal (RGPD), procesamiento de pagos (Paddle), estrategia de marketing, adquisición de usuarios y soporte al cliente",
         "growth": "<strong>Crecimiento:</strong> Logré crecimiento orgánico a través de marketing de contenido, optimización SEO y construcción de presencia en redes sociales",
         "techStack": "<strong>Stack Tecnológico:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS"
@@ -266,7 +266,7 @@
         "platform": "<strong>Ingeniería de Plataforma:</strong> Desplegué y gestioné aplicaciones en OpenShift y Google Cloud Platform con SLA de tiempo de actividad del 99.9%, implementando pipelines CI/CD integrales con Jenkins y GitLab",
         "modernization": "<strong>Modernización Legacy:</strong> Lideré la migración de monolito a microservicios para cliente bancario, reduciendo el tiempo de despliegue en 60% y habilitando prácticas de entrega continua",
         "automotive": "<strong>Digitalización Automotriz:</strong> Optimicé sistemas de gestión de cadena de suministro para OEM premium, aumentando la eficiencia operativa en 35% a través de automatización inteligente",
-        "ai": "<strong>Innovación de IA & Ingeniería de Prompts:</strong> Gané hackathon global de IA de Accenture integrando servicios Azure OpenAI en flujos de trabajo empresariales usando técnicas avanzadas de ingeniería de prompts. Demostré aplicaciones prácticas de IA para clientes Fortune 500 con estrategias de prompts optimizadas",
+        "ai": "<strong>Innovación e Integración Gen-AI:</strong> Gané el hackathon global de IA de Accenture integrando Azure OpenAI en flujos empresariales y demostré patrones RAG y agénticos listos para producción para clientes Fortune 500",
         "coordination": "<strong>Coordinación Global:</strong> Gestioné equipos de desarrollo offshore en 3 zonas horarias (Alemania, India, UK), asegurando colaboración fluida y entrega puntual",
         "leadership": "<strong>Liderazgo Técnico:</strong> Mentoré desarrolladores junior, realicé revisiones de código y establecí mejores prácticas para desarrollo de microservicios"
       }
@@ -289,12 +289,9 @@
       "date": "Marzo 2020 - Marzo 2022",
       "description": "Gestioné infraestructura IT completa para sede europea de agencia publicitaria global, asegurando operaciones fluidas para 89 empleados en múltiples departamentos.",
       "points": {
-        "infrastructure": "<strong>Gestión de Infraestructura:</strong> Responsabilidad total de operaciones IT sirviendo a 89 empleados, manteniendo 99.8% de tiempo de actividad del sistema",
-        "windows": "<strong>Migración Windows:</strong> Lideré migración exitosa de Windows 10 empresarial con endurecimiento de seguridad integral y cero interrupción comercial",
-        "ad": "<strong>Active Directory:</strong> Administré entorno AD incluyendo gestión de usuarios, Políticas de Grupo y configuraciones de seguridad",
-        "network": "<strong>Administración de Red:</strong> Gestioné infraestructura de red, configuraciones VPN y reglas de firewall para acceso remoto seguro",
-        "vendor": "<strong>Gestión de Proveedores:</strong> Coordiné con proveedores externos para adquisición de hardware, licencias de software y contratos de soporte",
-        "documentation": "<strong>Documentación:</strong> Creé documentación IT integral y guías de usuario, reduciendo tickets de soporte en 30%"
+        "responsibility": "<strong>Responsabilidad Única:</strong> Propiedad total de las operaciones de TI de la sede europea — 89 empleados, 99,8 % de disponibilidad y una migración enterprise a Windows 10 sin interrupciones",
+        "network": "<strong>Red e Identidad:</strong> Administré la infraestructura de red de punta a punta — VPN, reglas de firewall, Active Directory y directivas de grupo para acceso remoto seguro",
+        "analysis": "<strong>Análisis de Incidencias:</strong> Identifiqué la causa raíz de problemas recurrentes y documenté las soluciones — la documentación integral de TI redujo los tickets de soporte un 30 %"
       }
     },
     "bmg": {
@@ -303,12 +300,9 @@
       "date": "Julio 2018 - Enero 2020",
       "description": "Proporcioné soporte IT empresarial para empresa global de gestión de derechos musicales, apoyando usuarios en 6 países y múltiples zonas horarias.",
       "points": {
-        "international": "<strong>Soporte Internacional:</strong> Entregué soporte IT en 6 países (USA, UK, España, Suecia, Países Bajos, Francia) en inglés y alemán",
-        "enterprise": "<strong>Sistemas Empresariales:</strong> Administré SCCM para despliegue de software, gestioné Active Directory para 500+ usuarios en oficinas globales",
-        "identity": "<strong>Gestión de Identidad:</strong> Implementé y gestioné integración OKTA SSO, optimizando autenticación en 20+ aplicaciones empresariales",
-        "collaboration": "<strong>Herramientas de Colaboración:</strong> Administré entornos JIRA, Confluence y Office 365, optimizando flujos de trabajo para equipos creativos y comerciales",
-        "training": "<strong>Capacitación de Usuarios:</strong> Realicé sesiones de capacitación para nuevos sistemas y herramientas, mejorando tasas de adopción de usuarios en 40%",
-        "incident": "<strong>Gestión de Incidentes:</strong> Gestioné sistema de tickets ServiceNow, logrando tasa de resolución en primera llamada del 95%"
+        "responsibility": "<strong>Responsabilidad Global:</strong> Punto de contacto único para usuarios en 6 países y varias zonas horarias, con soporte en inglés y alemán",
+        "enterprise": "<strong>Sistemas Enterprise:</strong> Despliegue de software con SCCM, Active Directory para 500+ usuarios y OKTA SSO desplegado en 20+ aplicaciones",
+        "analysis": "<strong>Análisis de Incidencias:</strong> Diagnostiqué y resolví incidencias en ServiceNow con un 95 % de resolución en la primera llamada"
       }
     }
   },
@@ -343,23 +337,19 @@
     },
     "django": {
       "name": "🐍 Desarrollo Avanzado Django",
-      "date": "Mayo 2021",
-      "description": "Desarrollo Python full-stack con Django REST Framework, sistemas de autenticación, optimización de base de datos y estrategias de despliegue"
+      "date": "Mayo 2021"
     },
     "tdd": {
       "name": "🧪 Desarrollo Guiado por Pruebas",
-      "date": "Mayo 2021",
-      "description": "Metodología TDD, mejores prácticas de pruebas unitarias, pruebas de integración y configuración de pipeline de integración continua"
+      "date": "Mayo 2021"
     },
     "fullstack": {
       "name": "💻 Desarrollo Web Full Stack",
-      "date": "Febrero 2021",
-      "description": "Entrenamiento integral en React.js, Node.js, Express, MongoDB y prácticas modernas de desarrollo JavaScript"
+      "date": "Febrero 2021"
     },
     "sql": {
       "name": "🗄️ Programación SQL Avanzada",
-      "date": "Marzo 2018",
-      "description": "Optimización de consultas complejas, procedimientos almacenados, patrones de diseño de base de datos y ajuste de rendimiento"
+      "date": "Marzo 2018"
     }
   },
   "skills": {

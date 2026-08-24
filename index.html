@@ -6,7 +6,6 @@
     <title data-i18n="meta.title">Sakhr AL-Absi | Senior Software Engineer & Gen-AI Architect | EU / Remote</title>
     <meta name="description" content="Berlin-based Senior Software Engineer and Gen-AI architect, working remotely across the EU. GCP-certified. Enterprise Java/Spring microservices for Fortune 500 banking and automotive clients at Accenture, plus a self-built portfolio of production Gen-AI systems: RAG, vector search, multi-provider LLM routing, agentic pipelines, multi-tenant SaaS. English fluent, German C2, Arabic native, Spanish B1.">
     <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -42,7 +41,7 @@
     <div class="mobile-game-controls"><button class="mobile-ctrl-btn" id="mobileLeft">◀</button><button class="mobile-ctrl-btn" id="mobileShoot">🔥</button><button class="mobile-ctrl-btn" id="mobileRight">▶</button></div>
     <div class="game-screen level-complete" id="levelCompleteScreen"><h2 data-i18n="game.levelComplete">🏆 LEVEL COMPLETE!</h2><p><span id="levelClearedText" data-i18n="game.levelCleared">Level {level} cleared!</span></p><p><span data-i18n="game.scoreLabel">Score:</span> <span id="levelScore" style="color:#ffd700;">0</span></p><div style="margin:18px 0;padding:14px;background:rgba(0,0,0,0.3);border-radius:10px;"><p style="color:#0ff;font-size:1.1em;"><span id="rewardText" data-i18n="game.weaponUpgraded">Weapon Upgraded!</span></p></div><button class="game-btn primary" onclick="Game.nextLevel()" data-i18n="game.nextLevel">Next Level →</button></div>
     <div class="game-screen game-over" id="gameOverScreen"><h2 data-i18n="game.gameOver">💀 GAME OVER</h2><p><span data-i18n="game.finalScore">Final Score:</span> <span id="finalScore" style="color:#ffd700;">0</span></p><p style="opacity:0.8;" data-i18n="game.tryAgain">Try again to master Sakhr's skills!</p><div style="margin-top:18px;"><button class="game-btn primary" onclick="Game.restart()" data-i18n="game.restart">🔄 Restart</button><button class="game-btn secondary" onclick="Game.close()" data-i18n="game.close">Close</button></div></div>
-    <div class="game-screen victory" id="victoryScreen"><div style="font-size:50px;margin-bottom:10px;">🏆</div><h2 data-i18n="game.victory">CONGRATULATIONS!</h2><p><strong data-i18n="game.masteredSkills">You've mastered all skills!</strong></p><p><span data-i18n="game.scoreLabel">Score:</span> <span id="victoryScore" style="color:#1a365d;font-weight:700;">0</span></p><div style="margin-top:18px;"><button class="game-btn gold" onclick="generatePDF();Game.close();" data-i18n="game.downloadCV">📥 Download CV</button><button class="game-btn secondary" onclick="Game.close()" data-i18n="game.close">Close</button></div></div>
+    <div class="game-screen victory" id="victoryScreen"><div style="font-size:50px;margin-bottom:10px;">🏆</div><h2 data-i18n="game.victory">CONGRATULATIONS!</h2><p><strong data-i18n="game.masteredSkills">You've mastered all skills!</strong></p><p><span data-i18n="game.scoreLabel">Score:</span> <span id="victoryScore" style="color:#1a365d;font-weight:700;">0</span></p><div style="margin-top:18px;"><button class="game-btn gold" onclick="downloadCV();Game.close();" data-i18n="game.downloadCV">📥 Download CV</button><button class="game-btn secondary" onclick="Game.close()" data-i18n="game.close">Close</button></div></div>
 </div>
 
 <nav class="nav">
@@ -70,7 +69,7 @@
                 </div>
             </li>
             <li><button onclick="toggleTheme()" class="theme-toggle">🌙</button></li>
-            <li><button onclick="generatePDF()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> <span data-i18n="nav.downloadCV">Download CV</span></button></li></ul>
+            <li><button onclick="downloadCV()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> <span data-i18n="nav.downloadCV">Download CV</span></button></li></ul>
     </div>
 </nav>
 
@@ -94,7 +93,7 @@
         </div>
         <div class="terminal-body" id="terminalBody">
             <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@berlin:~$</span> <span class="terminal-command" data-i18n="terminal.whoami">whoami</span></div>
-            <div class="terminal-line terminal-output" data-i18n-html="terminal.whoamiOutput">Senior Software Engineer | Gen-AI Architect | Founder, CEO & CTO</div>
+            <div class="terminal-line terminal-output" data-i18n-html="terminal.whoamiOutput">Senior Software Engineer | Gen-AI Architect | Founder, AI Waverider</div>
             <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@berlin:~$</span> <span class="terminal-command" data-i18n="terminal.catExperience">cat experience.txt</span></div>
             <div class="terminal-line terminal-output" data-i18n-html="terminal.experience1">→ <span class="terminal-highlight">15+ years</span> in Germany</div>
             <div class="terminal-line terminal-output" data-i18n-html="terminal.experience2">→ <span class="terminal-highlight">7+ years</span> corporate (Accenture, BMG, Innocean)</div>
@@ -102,7 +101,7 @@
             <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@berlin:~$</span> <span class="terminal-command" data-i18n="terminal.lsAchievements">ls achievements/</span></div>
             <div class="terminal-line terminal-output" data-i18n="terminal.achievements">ai_waverider_founder/ production_ai_systems/ regulated_domain_delivery/</div>
             <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@berlin:~$</span> <span class="terminal-command" data-i18n="terminal.catAiwaverider">cat aiwaverider.txt</span></div>
-            <div class="terminal-line terminal-output" data-i18n-html="terminal.aiwaveriderOutput">🚀 <span class="terminal-highlight">Founder, CEO & CTO</span> | 5,600+ AI agents</div>
+            <div class="terminal-line terminal-output" data-i18n-html="terminal.aiwaveriderOutput">🚀 <span class="terminal-highlight">Founder, AI Waverider</span> | 23 production systems | 5,600+ workflows curated</div>
             <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@berlin:~$</span> <span class="terminal-command" data-i18n="terminal.echoLanguages">echo $LANGUAGES</span></div>
             <div class="terminal-line terminal-output" data-i18n="terminal.languagesOutput">German (C2) | English (Fluent) | Arabic (Native) | Spanish (B1)</div>
             <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@berlin:~$</span> <span class="terminal-command" data-i18n="terminal.catStatus">cat status.txt</span></div>
@@ -133,7 +132,7 @@
         <h1><span data-i18n="hero.headline">Enterprise Engineer.</span><br><span class="highlight" data-i18n="hero.headlineHighlight">Building Production AI Across Europe.</span></h1>
     </div>
 
-            <h2 class="static-role-title" data-i18n="hero.staticRoleTitle">AI Solutions Architect & Senior Software Engineer</h2>
+            <h2 class="static-role-title" data-i18n="hero.staticRoleTitle">Senior Software Engineer & Gen-AI Solutions Architect</h2>
 
             <!-- Typing Text (Design 2) -->
             <span class="typing-text" id="typing"></span>
@@ -143,7 +142,7 @@
 
             <!-- CTA Buttons -->
             <div class="hero-cta">
-                <button onclick="generatePDF()" class="btn btn-primary"><i class="fas fa-file-download"></i> <span data-i18n="hero.downloadCV">Download CV</span></button>
+                <button onclick="downloadCV()" class="btn btn-primary"><i class="fas fa-file-download"></i> <span data-i18n="hero.downloadCV">Download CV</span></button>
                 <a href="https://www.aiwaverider.com" target="_blank" class="btn btn-outline"><span data-i18n="hero.aiWaverider">🚀 AI Waverider</span></a>
     </div>
 
@@ -166,7 +165,7 @@
                     <img src="./assets/profilepic.jpg" alt="Sakhr" onerror="this.parentElement.innerHTML='👤'">
                 </div>
                 <h3 data-i18n="hero.profileName">Sakhr AL-Absi</h3>
-                <span data-i18n="hero.profileRole">Full Stack Architect</span>
+                <span data-i18n="hero.profileRole">Senior Software Engineer & Gen-AI Architect</span>
     </div>
 
             <div class="mini-terminal" id="heroTerminal" onclick="document.getElementById('heroTermInput').focus()">
@@ -206,7 +205,7 @@
                     <input type="file" class="file-input" id="fileInput" accept="image/*">
                 </div>
                 <h1 data-i18n="cv.name">Sakhr AL-Absi</h1>
-                <div class="title" data-i18n="cv.title">Senior Software Engineer & AI Solutions Architect | Founder, CEO & CTO</div>
+                <div class="title" data-i18n="cv.title">Senior Software Engineer & Gen-AI Solutions Architect | GCP Certified Cloud Engineer | Founder of AI Waverider</div>
                 <div class="header-badges">
                     <span class="header-badge" data-i18n="cv.badges.germanCitizen">📍 Berlin, Germany</span>
                     <span class="header-badge" data-i18n="cv.badges.yearsGermany">Deutsch C2 · English fluent</span>
@@ -283,13 +282,13 @@
                     <h3 data-i18n="experience.founder.role">Founder, CEO & CTO</h3>
                     <div class="company" data-i18n="experience.founder.company">AI Waverider. AI Automation Platform</div>
                     <div class="date" data-i18n="experience.founder.date">2025 - Present</div>
-                    <div class="client-highlight" data-i18n-html="experience.founder.highlight">🚀 <strong>5,600+ AI Agents & Automation Workflows</strong> | Global User Base | Built From Scratch</div>
+                    <div class="client-highlight" data-i18n-html="experience.founder.highlight">🚀 <strong>Production AI systems, built end-to-end</strong> | 23 self-authored systems | Curated workflow library</div>
                     <div class="description">
                         <p data-i18n="experience.founder.description">Founded and built an AI-powered automation platform from the ground up while maintaining full-time employment at Accenture, demonstrating exceptional time management and entrepreneurial drive.</p>
                         <ul>
-                            <li data-i18n-html="experience.founder.points.vision"><strong>Product Vision & Strategy:</strong> Conceived, designed, and launched a platform offering 5,600+ free AI automation workflows and n8n templates for businesses worldwide</li>
+                            <li data-i18n-html="experience.founder.points.vision"><strong>Product Vision & Strategy:</strong> Conceived, designed and launched an AI automation platform and storefront for businesses worldwide — products, a curated workflow library and content pipelines — continuously integrating the latest AI tools from the market</li>
                             <li data-i18n-html="experience.founder.points.development"><strong>Full-Stack Development:</strong> Architected and built the entire platform solo. Frontend (React/Vue), backend (Node.js/Python), database (PostgreSQL/Supabase), and cloud infrastructure (GCP, Docker, Coolify)</li>
-                            <li data-i18n-html="experience.founder.points.ai"><strong>AI Integration:</strong> Integrated OpenAI GPT-4, Claude AI, LangChain, RAGs, and vector databases for intelligent automation agents</li>
+                            <li data-i18n-html="experience.founder.points.ai"><strong>Gen AI Integration & Engineering:</strong> Architected and operated production Gen-AI systems — RAG pipelines with vector search (Qdrant), multi-provider LLM routing (OpenAI, Anthropic Claude, Gemini, local models via Ollama), agentic workflows with approval gates, MCP servers, and per-request cost accounting</li>
                             <li data-i18n-html="experience.founder.points.operations"><strong>Business Operations:</strong> Handled all aspects: legal compliance (FTC regulations), payment processing (Paddle), marketing strategy, user acquisition, and customer support</li>
                             <li data-i18n-html="experience.founder.points.growth"><strong>Growth:</strong> Achieved organic growth through content marketing, SEO optimization, and social media presence building</li>
                             <li data-i18n-html="experience.founder.points.techStack"><strong>Tech Stack:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS</li>
@@ -310,7 +309,7 @@
                             <li data-i18n-html="experience.accenture.points.platform"><strong>Platform Engineering:</strong> Deployed and managed applications on OpenShift & Google Cloud Platform with 99.9% uptime SLA, implementing comprehensive CI/CD pipelines with Jenkins and GitLab</li>
                             <li data-i18n-html="experience.accenture.points.modernization"><strong>Legacy Modernization:</strong> Led monolith-to-microservices migration for banking client, reducing deployment time by 60% and enabling continuous delivery practices</li>
                             <li data-i18n-html="experience.accenture.points.automotive"><strong>Automotive Digitalization:</strong> Optimized supply chain management systems for premium OEM, increasing operational efficiency by 35% through intelligent automation</li>
-                            <li data-i18n-html="experience.accenture.points.ai"><strong>AI Innovation:</strong> Won global Accenture AI hackathon by integrating Azure OpenAI services into enterprise workflows, demonstrating practical AI applications for Fortune 500 clients</li>
+                            <li data-i18n-html="experience.accenture.points.ai"><strong>Gen AI Innovation & Integration:</strong> Won the global Accenture AI hackathon by integrating Azure OpenAI into enterprise workflows, and demonstrated production-ready RAG and agentic patterns for Fortune 500 clients</li>
                             <li data-i18n-html="experience.accenture.points.coordination"><strong>Global Coordination:</strong> Managed offshore development teams across 3 time zones (Germany, India, UK), ensuring seamless collaboration and on-time delivery</li>
                             <li data-i18n-html="experience.accenture.points.leadership"><strong>Technical Leadership:</strong> Mentored junior developers, conducted code reviews, and established best practices for microservices development</li>
                         </ul>
@@ -341,12 +340,9 @@
                     <div class="description">
                         <p data-i18n="experience.innocean.description">Managed complete IT infrastructure for European headquarters of global advertising agency, ensuring seamless operations for 89 employees across multiple departments.</p>
                         <ul>
-                            <li data-i18n-html="experience.innocean.points.infrastructure"><strong>Infrastructure Management:</strong> Full responsibility for IT operations serving 89 employees, maintaining 99.8% system uptime</li>
-                            <li data-i18n-html="experience.innocean.points.windows"><strong>Windows Migration:</strong> Led successful Windows 10 enterprise migration with comprehensive security hardening and zero business disruption</li>
-                            <li data-i18n-html="experience.innocean.points.ad"><strong>Active Directory:</strong> Administered AD environment including user management, Group Policies, and security configurations</li>
-                            <li data-i18n-html="experience.innocean.points.network"><strong>Network Administration:</strong> Managed network infrastructure, VPN configurations, and firewall rules for secure remote access</li>
-                            <li data-i18n-html="experience.innocean.points.vendor"><strong>Vendor Management:</strong> Coordinated with external vendors for hardware procurement, software licensing, and support contracts</li>
-                            <li data-i18n-html="experience.innocean.points.documentation"><strong>Documentation:</strong> Created comprehensive IT documentation and user guides, reducing support tickets by 30%</li>
+                            <li data-i18n-html="experience.innocean.points.responsibility"><strong>Sole Responsibility:</strong> Full ownership of IT operations for the European HQ — 89 employees, 99.8% system uptime, and a zero-disruption Windows 10 enterprise migration</li>
+                            <li data-i18n-html="experience.innocean.points.network"><strong>Network & Identity:</strong> Administered the network infrastructure end to end — VPN, firewall rules, Active Directory and Group Policies for secure remote access</li>
+                            <li data-i18n-html="experience.innocean.points.analysis"><strong>Issue Analysis:</strong> Root-caused recurring problems and documented the fixes — comprehensive IT documentation cut support tickets by 30%</li>
                         </ul>
                     </div>
                 </div>
@@ -359,12 +355,9 @@
                     <div class="description">
                         <p data-i18n="experience.bmg.description">Provided enterprise IT support for global music rights management company, supporting users across 6 countries and multiple time zones.</p>
                         <ul>
-                            <li data-i18n-html="experience.bmg.points.international"><strong>International Support:</strong> Delivered IT support across 6 countries (USA, UK, Spain, Sweden, Netherlands, France) in English and German</li>
-                            <li data-i18n-html="experience.bmg.points.enterprise"><strong>Enterprise Systems:</strong> Administered SCCM for software deployment, managed Active Directory for 500+ users across global offices</li>
-                            <li data-i18n-html="experience.bmg.points.identity"><strong>Identity Management:</strong> Implemented and managed OKTA SSO integration, streamlining authentication across 20+ enterprise applications</li>
-                            <li data-i18n-html="experience.bmg.points.collaboration"><strong>Collaboration Tools:</strong> Administered JIRA, Confluence, and Office 365 environments, optimizing workflows for creative and business teams</li>
-                            <li data-i18n-html="experience.bmg.points.training"><strong>User Training:</strong> Conducted training sessions for new systems and tools, improving user adoption rates by 40%</li>
-                            <li data-i18n-html="experience.bmg.points.incident"><strong>Incident Management:</strong> Managed ServiceNow ticketing system, achieving 95% first-call resolution rate</li>
+                            <li data-i18n-html="experience.bmg.points.responsibility"><strong>Global Responsibility:</strong> Sole point of contact for users across 6 countries and multiple time zones, supporting in English and German</li>
+                            <li data-i18n-html="experience.bmg.points.enterprise"><strong>Enterprise Systems:</strong> SCCM software deployment, Active Directory for 500+ users, and OKTA SSO rolled out across 20+ applications</li>
+                            <li data-i18n-html="experience.bmg.points.analysis"><strong>Issue Analysis:</strong> Diagnosed and resolved incidents in ServiceNow with a 95% first-call resolution rate</li>
                         </ul>
                     </div>
                 </div>
@@ -513,22 +506,18 @@
                     <div class="cert-item">
                         <h4 data-i18n="certifications.django.name">🐍 Advanced Django Development</h4>
                         <div class="date" data-i18n="certifications.django.date">May 2021</div>
-                        <div class="description" data-i18n="certifications.django.description">Full-stack Python development with Django REST Framework, authentication systems, database optimization, and deployment strategies</div>
                     </div>
                     <div class="cert-item">
                         <h4 data-i18n="certifications.tdd.name">🧪 Test-Driven Development</h4>
                         <div class="date" data-i18n="certifications.tdd.date">May 2021</div>
-                        <div class="description" data-i18n="certifications.tdd.description">TDD methodology, unit testing best practices, integration testing, and continuous integration pipeline setup</div>
                     </div>
                     <div class="cert-item">
                         <h4 data-i18n="certifications.fullstack.name">💻 Full Stack Web Development</h4>
                         <div class="date" data-i18n="certifications.fullstack.date">February 2021</div>
-                        <div class="description" data-i18n="certifications.fullstack.description">Comprehensive training in React.js, Node.js, Express, MongoDB, and modern JavaScript development practices</div>
                     </div>
                     <div class="cert-item">
                         <h4 data-i18n="certifications.sql.name">🗄️ Advanced SQL Programming</h4>
                         <div class="date" data-i18n="certifications.sql.date">March 2018</div>
-                        <div class="description" data-i18n="certifications.sql.description">Complex query optimization, stored procedures, database design patterns, and performance tuning</div>
                     </div>
                 </div>
             </div>
@@ -839,7 +828,6 @@
 
 <script src="js/utils.js"></script>
 <script src="js/game.js"></script>
-<script src="js/pdf-generator.js"></script>
 <script src="js/ai-chat.js"></script>
 <script src="js/cert-zip.js"></script>
 <script src="js/main.js"></script>

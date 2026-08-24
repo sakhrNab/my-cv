@@ -150,7 +150,7 @@
     "close": "✕",
     "closeTitle": "Close terminal",
     "whoami": "whoami",
-    "whoamiOutput": "Senior Software Engineer | Gen-AI Architect | Founder, CEO & CTO",
+    "whoamiOutput": "Senior Software Engineer | Gen-AI Architect | Founder, AI Waverider",
     "catExperience": "cat experience.txt",
     "experience1": "→ <span class=\"terminal-highlight\">Berlin</span>, Germany · Deutsch C2",
     "experience2": "→ <span class=\"terminal-highlight\">7+ years</span> corporate (Accenture, BMG, Innocean)",
@@ -158,7 +158,7 @@
     "lsAchievements": "ls achievements/",
     "achievements": "ai_waverider_founder/ production_ai_systems/ regulated_domain_delivery/",
     "catAiwaverider": "cat aiwaverider.txt",
-    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Founder, CEO & CTO</span> | 23 production systems | RAG · vector search · agentic pipelines",
+    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Founder, AI Waverider</span> | 23 production systems | 5,600+ workflows curated",
     "echoLanguages": "echo $LANGUAGES",
     "languagesOutput": "German (C2) | English (Fluent) | Arabic (Native) | Spanish (B1)",
     "catStatus": "cat status.txt",
@@ -173,7 +173,7 @@
     "journeyText": "Berlin → Anywhere in the EU",
     "headline": "Enterprise Engineer.",
     "headlineHighlight": "Building Production AI Across Europe.",
-    "staticRoleTitle": "Gen AI & Cloud Engineer | Full Stack AI Solutions Architect",
+    "staticRoleTitle": "Senior Software Engineer & Gen-AI Solutions Architect",
     "tagline": "<strong>Gen-AI Systems</strong> • <strong>Cloud Architecture</strong> • <strong>Shipped End-to-End</strong>",
     "downloadCV": "Download CV",
     "aiWaverider": "🚀 AI Waverider",
@@ -183,7 +183,7 @@
     "innocean": "INNOCEAN",
     "banks": "BANKS",
     "profileName": "Sakhr AL-Absi",
-    "profileRole": "Gen AI & Cloud Engineer | Full Stack Developer",
+    "profileRole": "Senior Software Engineer & Gen-AI Architect",
     "scrollDown": "SCROLL DOWN",
     "stats": {
       "yearsGermany": "Years in<br>Germany",
@@ -194,7 +194,7 @@
   },
   "cv": {
     "name": "Sakhr AL-Absi",
-    "title": "Gen AI & Cloud Engineer (GCP Certified) | Full Stack AI Solutions Architect | Senior Software Engineer | Founder, CEO & CTO",
+    "title": "Senior Software Engineer & Gen-AI Solutions Architect | GCP Certified Cloud Engineer | Founder of AI Waverider",
     "badges": {
       "germanCitizen": "📍 Berlin, Germany",
       "yearsGermany": "Deutsch C2 · English fluent",
@@ -210,7 +210,7 @@
       "germanCitizen": "Based in Berlin · educated at TU Berlin and HTW Berlin · GCP Certified Cloud Engineer",
       "founder": "Founder, CEO & CTO of AI Waverider — 23 self-authored production systems",
       "corporate": "7+ years corporate experience at Accenture, BMG Rights Management, Innocean Europe",
-      "apps": "~5,900 commits across the portfolio, built alongside full-time enterprise delivery",
+      "apps": "AI-native engineering as daily practice — Claude Code & Agent SDK, MCP servers, autonomous coding loops, offline models",
       "hackathon": "Won global AI hackathon integrating Azure OpenAI",
       "languages": "Trilingual: German (C2), English (Fluent), Arabic (Native)",
       "available": "EU citizen | Remote, hybrid or on-site across the EU"
@@ -235,8 +235,8 @@
   "summary": {
     "title": "Professional Summary",
     "paragraph1": "Senior Software Engineer based in Berlin with 7+ years in enterprise development, specializing in microservices, cloud-native architecture and production Gen-AI systems.",
-    "paragraph2": "Known for <strong>end-to-end ownership</strong>. Designed, built and operated 23 self-authored production systems alongside full-time enterprise delivery. Coordinated offshore teams across 3 time zones. Founder, CEO & CTO of <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>, a storefront publishing a curated library of 5,600+ n8n automation workflows.",
-    "paragraph3": "<strong>Unique value:</strong> an EU citizen who ships regulated, production software — GDPR erasure as a tested journey, 8-language localisation with a build-failing gate, and per-request AI cost accounting. Trilingual (German C2, English fluent, Arabic native)."
+    "paragraph2": "Known for <strong>end-to-end ownership</strong>. Designed, built and operated 23 self-authored production systems alongside full-time enterprise delivery. Coordinated offshore teams across 3 time zones. Founder of <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>, an AI automation platform and storefront.",
+    "paragraph3": "<strong>Unique value:</strong> founder of an AI company (AI Waverider) who ships regulated, production software — GDPR erasure as a tested journey, 8-language localisation with a build-failing gate, and per-request AI cost accounting — combined with daily, deep fluency in the modern AI toolchain: Claude Code & Agent SDK, Codex, offline models (Ollama), custom skills, MCP servers and autonomous coding loops. Trilingual (German C2, English fluent, Arabic native)."
   },
   "experience": {
     "title": "Professional Experience",
@@ -247,9 +247,9 @@
       "highlight": "🚀 <strong>Production AI systems, built end-to-end</strong> | 23 self-authored systems | Curated workflow library",
       "description": "Founded and curated an AI-powered automation platform, gathering and integrating 5,600+ AI workflows from across the internet while building key components. Maintained full-time employment at Accenture, demonstrating exceptional time management and entrepreneurial drive.",
       "points": {
-        "vision": "<strong>Product Vision & Strategy:</strong> Conceived, designed, and launched a platform offering 5,600+ free AI automation workflows and n8n templates for businesses worldwide. Integrated advanced prompts for videos, images, and text generation. Continuously curate and integrate the latest AI tools and technologies from the market to provide cutting-edge solutions",
+        "vision": "<strong>Product Vision & Strategy:</strong> Conceived, designed and launched an AI automation platform and storefront for businesses worldwide — products, a curated workflow library and content pipelines — continuously integrating the latest AI tools from the market",
         "development": "<strong>Full-Stack Development & Cloud Engineering:</strong> Architected and built the entire platform solo. Frontend (React/Vue), backend (Node.js/Python), database (PostgreSQL/Supabase), and cloud infrastructure (GCP Certified, Docker, Coolify). Integrated Gen AI capabilities directly into web applications with seamless user experiences",
-        "ai": "<strong>Gen AI Integration & Engineering:</strong> Architected and deployed production Gen AI systems using RAGs (Retrieval-Augmented Generation), Fine Tuning, and AI integration into web applications. Integrated OpenAI GPT-4, Claude AI, LangChain, vector databases, and custom AI models. Expert in crafting high-performance prompts, optimizing model performance, and scaling Gen AI solutions for 5,600+ production AI agents",
+        "ai": "<strong>Gen AI Integration & Engineering:</strong> Architected and operated production Gen-AI systems — RAG pipelines with vector search (Qdrant), multi-provider LLM routing (OpenAI, Anthropic Claude, Gemini, local models via Ollama), agentic workflows with approval gates, MCP servers, and per-request cost accounting",
         "operations": "<strong>Business Operations:</strong> Handled all aspects: legal compliance (GDPR/DSGVO), payment processing (Paddle), marketing strategy, user acquisition, and customer support",
         "growth": "<strong>Growth:</strong> Achieved organic growth through content marketing, SEO optimization, and social media presence building",
         "techStack": "<strong>Tech Stack:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS"
@@ -266,7 +266,7 @@
         "platform": "<strong>Cloud Engineering & Platform:</strong> GCP Certified Cloud Engineer. Deployed and managed cloud-native applications on OpenShift & Google Cloud Platform with 99.9% uptime SLA. Implemented comprehensive CI/CD pipelines, containerization strategies, and cloud infrastructure optimization with Jenkins and GitLab",
         "modernization": "<strong>Legacy Modernization:</strong> Led monolith-to-microservices migration for banking client, reducing deployment time by 60% and enabling continuous delivery practices",
         "automotive": "<strong>Automotive Digitalization:</strong> Optimized supply chain management systems for premium OEM, increasing operational efficiency by 35% through intelligent automation",
-        "ai": "<strong>Gen AI Innovation & Integration:</strong> Won global Accenture AI hackathon by integrating Azure OpenAI services into enterprise workflows. Implemented Gen AI solutions using RAGs, Fine Tuning, and seamless AI integration into web platforms. Demonstrated production-ready Gen AI applications for Fortune 500 clients, combining advanced prompt engineering with modern AI architecture patterns",
+        "ai": "<strong>Gen AI Innovation & Integration:</strong> Won the global Accenture AI hackathon by integrating Azure OpenAI into enterprise workflows, and demonstrated production-ready RAG and agentic patterns for Fortune 500 clients",
         "coordination": "<strong>Global Coordination:</strong> Managed offshore development teams across 3 time zones (Germany, India, UK), ensuring seamless collaboration and on-time delivery",
         "leadership": "<strong>Technical Leadership:</strong> Mentored junior developers, conducted code reviews, and established best practices for microservices development"
       }
@@ -289,12 +289,9 @@
       "date": "March 2020 - March 2022",
       "description": "Managed complete IT infrastructure for European headquarters of global advertising agency, ensuring seamless operations for 89 employees across multiple departments.",
       "points": {
-        "infrastructure": "<strong>Infrastructure Management:</strong> Full responsibility for IT operations serving 89 employees, maintaining 99.8% system uptime",
-        "windows": "<strong>Windows Migration:</strong> Led successful Windows 10 enterprise migration with comprehensive security hardening and zero business disruption",
-        "ad": "<strong>Active Directory:</strong> Administered AD environment including user management, Group Policies, and security configurations",
-        "network": "<strong>Network Administration:</strong> Managed network infrastructure, VPN configurations, and firewall rules for secure remote access",
-        "vendor": "<strong>Vendor Management:</strong> Coordinated with external vendors for hardware procurement, software licensing, and support contracts",
-        "documentation": "<strong>Documentation:</strong> Created comprehensive IT documentation and user guides, reducing support tickets by 30%"
+        "responsibility": "<strong>Sole Responsibility:</strong> Full ownership of IT operations for the European HQ — 89 employees, 99.8% system uptime, and a zero-disruption Windows 10 enterprise migration",
+        "network": "<strong>Network & Identity:</strong> Administered the network infrastructure end to end — VPN, firewall rules, Active Directory and Group Policies for secure remote access",
+        "analysis": "<strong>Issue Analysis:</strong> Root-caused recurring problems and documented the fixes — comprehensive IT documentation cut support tickets by 30%"
       }
     },
     "bmg": {
@@ -303,12 +300,9 @@
       "date": "July 2018 - January 2020",
       "description": "Provided enterprise IT support for global music rights management company, supporting users across 6 countries and multiple time zones.",
       "points": {
-        "international": "<strong>International Support:</strong> Delivered IT support across 6 countries (USA, UK, Spain, Sweden, Netherlands, France) in English and German",
-        "enterprise": "<strong>Enterprise Systems:</strong> Administered SCCM for software deployment, managed Active Directory for 500+ users across global offices",
-        "identity": "<strong>Identity Management:</strong> Implemented and managed OKTA SSO integration, streamlining authentication across 20+ enterprise applications",
-        "collaboration": "<strong>Collaboration Tools:</strong> Administered JIRA, Confluence, and Office 365 environments, optimizing workflows for creative and business teams",
-        "training": "<strong>User Training:</strong> Conducted training sessions for new systems and tools, improving user adoption rates by 40%",
-        "incident": "<strong>Incident Management:</strong> Managed ServiceNow ticketing system, achieving 95% first-call resolution rate"
+        "responsibility": "<strong>Global Responsibility:</strong> Sole point of contact for users across 6 countries and multiple time zones, supporting in English and German",
+        "enterprise": "<strong>Enterprise Systems:</strong> SCCM software deployment, Active Directory for 500+ users, and OKTA SSO rolled out across 20+ applications",
+        "analysis": "<strong>Issue Analysis:</strong> Diagnosed and resolved incidents in ServiceNow with a 95% first-call resolution rate"
       }
     }
   },
@@ -343,23 +337,19 @@
     },
     "django": {
       "name": "🐍 Advanced Django Development",
-      "date": "May 2021",
-      "description": "Full-stack Python development with Django REST Framework, authentication systems, database optimization, and deployment strategies"
+      "date": "May 2021"
     },
     "tdd": {
       "name": "🧪 Test-Driven Development",
-      "date": "May 2021",
-      "description": "TDD methodology, unit testing best practices, integration testing, and continuous integration pipeline setup"
+      "date": "May 2021"
     },
     "fullstack": {
       "name": "💻 Full Stack Web Development",
-      "date": "February 2021",
-      "description": "Comprehensive training in React.js, Node.js, Express, MongoDB, and modern JavaScript development practices"
+      "date": "February 2021"
     },
     "sql": {
       "name": "🗄️ Advanced SQL Programming",
-      "date": "March 2018",
-      "description": "Complex query optimization, stored procedures, database design patterns, and performance tuning"
+      "date": "March 2018"
     }
   },
   "skills": {

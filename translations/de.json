@@ -150,7 +150,7 @@
     "close": "✕",
     "closeTitle": "Terminal schließen",
     "whoami": "whoami",
-    "whoamiOutput": "Senior Software Engineer | Gen-AI-Architekt | Gründer, CEO & CTO",
+    "whoamiOutput": "Senior Software Engineer | Gen-AI-Architekt | Gründer, AI Waverider",
     "catExperience": "cat experience.txt",
     "experience1": "→ <span class=\"terminal-highlight\">Berlin</span>, Deutschland · Deutsch C2",
     "experience2": "→ <span class=\"terminal-highlight\">7+ Jahre</span> Unternehmen (Accenture, BMG, Innocean)",
@@ -158,7 +158,7 @@
     "lsAchievements": "ls achievements/",
     "achievements": "ai_waverider_founder/ production_ai_systems/ regulated_domain_delivery/",
     "catAiwaverider": "cat aiwaverider.txt",
-    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Gründer, CEO & CTO</span> | 23 produktive Systeme | RAG · Vektorsuche · agentische Pipelines",
+    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Gründer, AI Waverider</span> | 23 Produktionssysteme | 5.600+ kuratierte Workflows",
     "echoLanguages": "echo $LANGUAGES",
     "languagesOutput": "Deutsch (C2) | Englisch (fließend) | Arabisch (Muttersprache) | Spanisch (B1)",
     "catStatus": "cat status.txt",
@@ -173,7 +173,7 @@
     "journeyText": "Berlin → EU-weit",
     "headline": "Enterprise-Engineer.",
     "headlineHighlight": "Produktive KI in ganz Europa.",
-    "staticRoleTitle": "Gen AI & Cloud Engineer | Full Stack KI-Lösungsarchitekt",
+    "staticRoleTitle": "Senior Software Engineer & Gen-AI Solutions Architect",
     "tagline": "<strong>Gen-AI-Systeme</strong> • <strong>Cloud-Architektur</strong> • <strong>End-to-End ausgeliefert</strong>",
     "downloadCV": "Lebenslauf herunterladen",
     "aiWaverider": "🚀 AI Waverider",
@@ -183,7 +183,7 @@
     "innocean": "INNOCEAN",
     "banks": "BANKEN",
     "profileName": "Sakhr AL-Absi",
-    "profileRole": "Gen AI & Cloud Engineer | Full Stack Entwickler",
+    "profileRole": "Senior Software Engineer & Gen-AI-Architekt",
     "scrollDown": "NACH UNTEN SCROLLEN",
     "stats": {
       "yearsGermany": "Jahre in<br>Deutschland",
@@ -194,7 +194,7 @@
   },
   "cv": {
     "name": "Sakhr AL-Absi",
-    "title": "Gen AI & Cloud Engineer (GCP zertifiziert) | Full Stack KI-Lösungsarchitekt | Senior Software Engineer | Gründer, CEO & CTO",
+    "title": "Senior Software Engineer & Gen-AI Solutions Architect | GCP-zertifizierter Cloud Engineer | Gründer von AI Waverider",
     "badges": {
       "germanCitizen": "📍 Berlin, Deutschland",
       "yearsGermany": "Deutsch C2 · Englisch fließend",
@@ -210,7 +210,7 @@
       "germanCitizen": "Standort Berlin · Studium an der TU Berlin und HTW Berlin · GCP Certified Cloud Engineer",
       "founder": "Gründer, CEO & CTO von AI Waverider — 23 eigenentwickelte produktive Systeme",
       "corporate": "7+ Jahre Unternehmenserfahrung bei Accenture, BMG Rights Management, Innocean Europe",
-      "apps": "~5.900 Commits im Portfolio, parallel zur Vollzeit-Enterprise-Tätigkeit entstanden",
+      "apps": "KI-natives Engineering als tägliche Praxis — Claude Code & Agent SDK, MCP-Server, autonome Coding-Loops, Offline-Modelle",
       "hackathon": "Gewann globalen KI-Hackathon durch Integration von Azure OpenAI",
       "languages": "Dreisprachig: Deutsch (C2), Englisch (fließend), Arabisch (Muttersprache)",
       "available": "EU-Bürger | Remote, hybrid oder vor Ort in der gesamten EU"
@@ -235,8 +235,8 @@
   "summary": {
     "title": "Berufliche Zusammenfassung",
     "paragraph1": "<strong>Deutscher Staatsbürger</strong> und Senior Software Engineer mit 7+ Jahren in der Unternehmensentwicklung, spezialisiert auf Microservices, Cloud-Technologien und KI-Integration. Ausgebildet an Deutschlands Top-Universitäten (TU Berlin, HTW Berlin) mit nachgewiesener Erfolgsbilanz für Fortune 500 Finanz- und Automobilkunden.",
-    "paragraph2": "Bekannt für <strong>durchgängige Verantwortung</strong>. 23 eigenentwickelte produktive Systeme entworfen, gebaut und betrieben – parallel zur Vollzeit-Enterprise-Tätigkeit. Offshore-Teams über 3 Zeitzonen koordiniert. Gründer, CEO & CTO von <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>, einem Storefront, der eine kuratierte Bibliothek von über 5.600 n8n-Automatisierungs-Workflows veröffentlicht.",
-    "paragraph3": "<strong>Besonderer Wert:</strong> ein EU-Bürger, der regulierte, produktive Software ausliefert — DSGVO-Löschung als getestete Journey, achtsprachige Lokalisierung mit build-brechendem Gate und KI-Kostenerfassung pro Request. Dreisprachig (Deutsch C2, Englisch fließend, Arabisch Muttersprache)."
+    "paragraph2": "Bekannt für <strong>durchgängige Verantwortung</strong>. 23 eigenentwickelte produktive Systeme entworfen, gebaut und betrieben – parallel zur Vollzeit-Enterprise-Tätigkeit. Offshore-Teams über 3 Zeitzonen koordiniert. Gründer von <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>, einer KI-Automatisierungsplattform mit Storefront.",
+    "paragraph3": "<strong>Besonderer Wert:</strong> Gründer eines KI-Unternehmens (AI Waverider), der regulierte, produktive Software ausliefert — DSGVO-Löschung als getestete Journey, achtsprachige Lokalisierung mit build-brechendem Gate und KI-Kostenerfassung pro Request — kombiniert mit tiefer, täglicher Praxis in der modernen KI-Toolchain: Claude Code & Agent SDK, Codex, Offline-Modelle (Ollama), eigene Skills, MCP-Server und autonome Coding-Loops. Dreisprachig (Deutsch C2, Englisch fließend, Arabisch Muttersprache)."
   },
   "experience": {
     "title": "Berufserfahrung",
@@ -247,9 +247,9 @@
       "highlight": "🚀 <strong>Produktive KI-Systeme, end-to-end gebaut</strong> | 23 eigenentwickelte Systeme | Kuratierte Workflow-Bibliothek",
       "description": "Gründete und kuratierte eine KI-gestützte Automatisierungsplattform, sammelte und integrierte 5.600+ KI-Workflows aus dem Internet, während ich Schlüsselkomponenten baute. Während Vollzeitbeschäftigung bei Accenture, was außergewöhnliches Zeitmanagement und unternehmerischen Antrieb demonstriert.",
       "points": {
-        "vision": "<strong>Produktvision & Strategie:</strong> Konzipiert, entworfen und eine Plattform gestartet, die 5.600+ kostenlose KI-Automatisierungsworkflows und n8n-Vorlagen für Unternehmen weltweit anbietet. Integrierte fortgeschrittene Prompts für Videos, Bilder und Textgenerierung. Kontinuierliche Kuratierung und Integration der neuesten KI-Tools und Technologien vom Markt, um modernste Lösungen zu bieten",
+        "vision": "<strong>Produktvision & Strategie:</strong> Eine KI-Automatisierungsplattform mit Storefront für Unternehmen weltweit konzipiert, gestaltet und gestartet — Produkte, eine kuratierte Workflow-Bibliothek und Content-Pipelines — unter laufender Integration der neuesten KI-Tools am Markt",
         "development": "<strong>Full-Stack-Entwicklung & Cloud Engineering:</strong> Architekturiert und die gesamte Plattform allein gebaut. Frontend (React/Vue), Backend (Node.js/Python), Datenbank (PostgreSQL/Supabase) und Cloud-Infrastruktur (GCP zertifiziert, Docker, Coolify). Integrierte Gen AI Fähigkeiten direkt in Webanwendungen mit nahtlosen Benutzererfahrungen",
-        "ai": "<strong>Gen AI Integration & Engineering:</strong> Architekturierte und implementierte produktive Gen AI Systeme mit RAGs (Retrieval-Augmented Generation), Fine Tuning und KI-Integration in Webanwendungen. Integrierte OpenAI GPT-4, Claude AI, LangChain, Vektordatenbanken und benutzerdefinierte KI-Modelle. Experte in der Erstellung hochperformanter Prompts, Optimierung der Modellleistung und Skalierung von Gen AI Lösungen für 5.600+ produktive KI-Agenten",
+        "ai": "<strong>Gen-AI-Integration & Engineering:</strong> Produktive Gen-AI-Systeme entworfen und betrieben — RAG-Pipelines mit Vektorsuche (Qdrant), Multi-Provider-LLM-Routing (OpenAI, Anthropic Claude, Gemini, lokale Modelle via Ollama), agentische Workflows mit Freigabe-Gates, MCP-Server und Kostenerfassung pro Request",
         "operations": "<strong>Geschäftsbetrieb:</strong> Behandelte alle Aspekte: rechtliche Compliance (DSGVO), Zahlungsabwicklung (Paddle), Marketingstrategie, Nutzerakquise und Kundensupport",
         "growth": "<strong>Wachstum:</strong> Organisches Wachstum durch Content-Marketing, SEO-Optimierung und Aufbau von Social-Media-Präsenz erreicht",
         "techStack": "<strong>Tech-Stack:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS"
@@ -266,7 +266,7 @@
         "platform": "<strong>Cloud Engineering & Plattform:</strong> GCP zertifizierter Cloud Engineer. Bereitgestellt und verwaltet Cloud-native Anwendungen auf OpenShift & Google Cloud Platform mit 99,9% Uptime-SLA. Implementierte umfassende CI/CD-Pipelines, Containerisierungsstrategien und Cloud-Infrastruktur-Optimierung mit Jenkins und GitLab",
         "modernization": "<strong>Legacy-Modernisierung:</strong> Führte Monolith-zu-Microservices-Migration für Bankkunden durch, reduzierte Bereitstellungszeit um 60% und ermöglichte kontinuierliche Lieferpraktiken",
         "automotive": "<strong>Automobil-Digitalisierung:</strong> Optimierte Lieferkettenmanagementsysteme für Premium-OEM, steigerte operative Effizienz um 35% durch intelligente Automatisierung",
-        "ai": "<strong>Gen AI Innovation & Integration:</strong> Gewann globalen Accenture KI-Hackathon durch Integration von Azure OpenAI-Diensten in Unternehmensworkflows. Implementierte Gen AI Lösungen mit RAGs, Fine Tuning und nahtloser KI-Integration in Webplattformen. Demonstrierte produktionsreife Gen AI Anwendungen für Fortune 500 Kunden, kombinierte fortgeschrittenes Prompt Engineering mit modernen KI-Architekturmustern",
+        "ai": "<strong>Gen-AI-Innovation & Integration:</strong> Den globalen Accenture-AI-Hackathon durch Integration von Azure OpenAI in Enterprise-Workflows gewonnen und produktionsreife RAG- und Agentic-Patterns für Fortune-500-Kunden demonstriert",
         "coordination": "<strong>Globale Koordination:</strong> Verwaltete Offshore-Entwicklungsteams über 3 Zeitzonen (Deutschland, Indien, UK), gewährleistete nahtlose Zusammenarbeit und pünktliche Lieferung",
         "leadership": "<strong>Technische Führung:</strong> Betreute Junior-Entwickler, führte Code-Reviews durch und etablierte Best Practices für Microservices-Entwicklung"
       }
@@ -289,12 +289,9 @@
       "date": "März 2020 - März 2022",
       "description": "Verwaltete komplette IT-Infrastruktur für europäische Zentrale der globalen Werbeagentur, gewährleistete nahtlose Betriebe für 89 Mitarbeiter über mehrere Abteilungen.",
       "points": {
-        "infrastructure": "<strong>Infrastrukturmanagement:</strong> Vollverantwortung für IT-Betriebe für 89 Mitarbeiter, Aufrechterhaltung von 99,8% Systemverfügbarkeit",
-        "windows": "<strong>Windows-Migration:</strong> Führte erfolgreiche Windows 10 Unternehmensmigration mit umfassender Sicherheitshärtung und null Geschäftsunterbrechung durch",
-        "ad": "<strong>Active Directory:</strong> Verwaltete AD-Umgebung einschließlich Benutzerverwaltung, Gruppenrichtlinien und Sicherheitskonfigurationen",
-        "network": "<strong>Netzwerkadministration:</strong> Verwaltete Netzwerkinfrastruktur, VPN-Konfigurationen und Firewall-Regeln für sicheren Remote-Zugriff",
-        "vendor": "<strong>Lieferantenmanagement:</strong> Koordinierte mit externen Lieferanten für Hardwarebeschaffung, Softwarelizenzierung und Supportverträge",
-        "documentation": "<strong>Dokumentation:</strong> Erstellte umfassende IT-Dokumentation und Benutzerhandbücher, reduzierte Support-Tickets um 30%"
+        "responsibility": "<strong>Alleinverantwortung:</strong> Volle Verantwortung für den IT-Betrieb der Europa-Zentrale — 89 Mitarbeitende, 99,8 % Systemverfügbarkeit und eine unterbrechungsfreie Windows-10-Enterprise-Migration",
+        "network": "<strong>Netzwerk & Identität:</strong> Die Netzwerkinfrastruktur durchgängig administriert — VPN, Firewall-Regeln, Active Directory und Gruppenrichtlinien für sicheren Remote-Zugriff",
+        "analysis": "<strong>Problemanalyse:</strong> Wiederkehrende Probleme auf ihre Ursache zurückgeführt und die Lösungen dokumentiert — umfassende IT-Dokumentation senkte Support-Tickets um 30 %"
       }
     },
     "bmg": {
@@ -303,12 +300,9 @@
       "date": "Juli 2018 - Januar 2020",
       "description": "Bereitgestellt Unternehmens-IT-Support für globales Musikrechteverwaltungsunternehmen, unterstützte Benutzer über 6 Länder und mehrere Zeitzonen.",
       "points": {
-        "international": "<strong>Internationaler Support:</strong> Bereitgestellt IT-Support über 6 Länder (USA, UK, Spanien, Schweden, Niederlande, Frankreich) auf Englisch und Deutsch",
-        "enterprise": "<strong>Unternehmenssysteme:</strong> Verwaltete SCCM für Softwarebereitstellung, verwaltete Active Directory für 500+ Benutzer über globale Büros",
-        "identity": "<strong>Identitätsmanagement:</strong> Implementiert und verwaltete OKTA SSO-Integration, optimierte Authentifizierung über 20+ Unternehmensanwendungen",
-        "collaboration": "<strong>Kollaborationstools:</strong> Verwaltete JIRA, Confluence und Office 365 Umgebungen, optimierte Workflows für kreative und Geschäftsteams",
-        "training": "<strong>Benutzerschulung:</strong> Durchgeführt Schulungssitzungen für neue Systeme und Tools, verbesserte Benutzerakzeptanzraten um 40%",
-        "incident": "<strong>Incident-Management:</strong> Verwaltete ServiceNow-Ticket-System, erreichte 95% Erstkontakt-Lösungsrate"
+        "responsibility": "<strong>Globale Verantwortung:</strong> Zentrale Anlaufstelle für Nutzer in 6 Ländern und mehreren Zeitzonen, Support auf Englisch und Deutsch",
+        "enterprise": "<strong>Enterprise-Systeme:</strong> SCCM-Softwareverteilung, Active Directory für 500+ Nutzer und OKTA-SSO-Rollout über 20+ Anwendungen",
+        "analysis": "<strong>Problemanalyse:</strong> Vorfälle in ServiceNow diagnostiziert und gelöst — 95 % Erstlösungsquote"
       }
     }
   },
@@ -343,23 +337,19 @@
     },
     "django": {
       "name": "🐍 Erweiterte Django-Entwicklung",
-      "date": "Mai 2021",
-      "description": "Full-Stack Python-Entwicklung mit Django REST Framework, Authentifizierungssystemen, Datenbankoptimierung und Bereitstellungsstrategien"
+      "date": "Mai 2021"
     },
     "tdd": {
       "name": "🧪 Testgetriebene Entwicklung",
-      "date": "Mai 2021",
-      "description": "TDD-Methodik, Unit-Testing-Best-Practices, Integrationstests und Continuous-Integration-Pipeline-Setup"
+      "date": "Mai 2021"
     },
     "fullstack": {
       "name": "💻 Full Stack Web-Entwicklung",
-      "date": "Februar 2021",
-      "description": "Umfassendes Training in React.js, Node.js, Express, MongoDB und modernen JavaScript-Entwicklungspraktiken"
+      "date": "Februar 2021"
     },
     "sql": {
       "name": "🗄️ Erweiterte SQL-Programmierung",
-      "date": "März 2018",
-      "description": "Komplexe Abfrageoptimierung, gespeicherte Prozeduren, Datenbankdesign-Muster und Leistungstuning"
+      "date": "März 2018"
     }
   },
   "skills": {

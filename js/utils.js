@@ -9,6 +9,31 @@ function tt(key, fallback) {
     return fallback;
 }
 
+// Download the pre-designed CV PDF for the current language (built by
+// scripts/build-pdfs.mjs into assets/pdf/). Replaces the old jsPDF generator.
+function downloadCV() {
+    const lang = window.currentLanguage || localStorage.getItem('preferredLanguage') || 'en';
+    const files = {
+        en: 'assets/pdf/Sakhr_AL-Absi_CV_EN.pdf',
+        de: 'assets/pdf/Sakhr_AL-Absi_Lebenslauf_DE.pdf',
+        es: 'assets/pdf/Sakhr_AL-Absi_CV_ES.pdf',
+        ar: 'assets/pdf/Sakhr_AL-Absi_CV_AR.pdf'
+    };
+    const names = {
+        en: 'Sakhr_AL-Absi_CV.pdf',
+        de: 'Sakhr_AL-Absi_Lebenslauf.pdf',
+        es: 'Sakhr_AL-Absi_CV.pdf',
+        ar: 'صخر_العبسي_السيرة_الذاتية.pdf'
+    };
+    const a = document.createElement('a');
+    a.href = files[lang] || files.en;
+    a.download = names[lang] || names.en;
+    document.body.appendChild(a);
+    a.click();
+    a.remove();
+}
+window.downloadCV = downloadCV;
+
 // Theme toggle
 function toggleTheme() {
     const c = document.documentElement.getAttribute('data-theme');
@@ -79,11 +104,11 @@ function handleTerminalInput(e) {
             break;
         case 'aiwaverider':
         case 'founder':
-            output = tt('terminalCommands.founderOutput', '🚀 <span class="terminal-highlight">Founder, CEO & CTO</span> | 23 production systems | RAG · vector search · agentic pipelines');
+            output = tt('terminalCommands.founderOutput', '🚀 <span class="terminal-highlight">Founder, AI Waverider</span> | 23 production systems | RAG · vector search · agentic pipelines');
             break;
         case 'download':
-            output = 'Generating CV... ✓';
-            setTimeout(() => generatePDF(), 500);
+            output = 'Downloading CV... ✓';
+            setTimeout(() => downloadCV(), 500);
             break;
         case 'play':
         case 'game':
