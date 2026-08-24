@@ -130,7 +130,7 @@
   "summary": {
     "title": "Berufliche Zusammenfassung",
     "paragraph1": "<strong>Deutscher Staatsbürger</strong> und Senior Software Engineer mit 7+ Jahren in der Unternehmensentwicklung, spezialisiert auf Microservices, Cloud-Technologien und KI-Integration. Ausgebildet an Deutschlands Top-Universitäten (TU Berlin, HTW Berlin) mit nachgewiesener Erfolgsbilanz für Fortune 500 Finanz- und Automobilkunden.",
-    "paragraph2": "Bekannt für <strong>außergewöhnliche Ressourcen</strong>. 11 Anwendungen dieses Jahr gebaut, während ich Vollzeit bei Accenture arbeitete. Koordinierte Offshore-Teams über 3 Zeitzonen. Derzeit <strong>Gründer, CEO & CTO</strong> von <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. Eine Plattform mit 5.600+ KI-Agenten und Automatisierungsworkflows.",
+    "paragraph2": "Bekannt für <strong>durchgängige Verantwortung</strong>. 23 eigenentwickelte produktive Systeme entworfen, gebaut und betrieben – parallel zur Vollzeit-Enterprise-Tätigkeit. Offshore-Teams über 3 Zeitzonen koordiniert. Gründer, CEO & CTO von <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>, einem Storefront, der eine kuratierte Bibliothek von über 5.600 n8n-Automatisierungs-Workflows veröffentlicht.",
     "paragraph3": "<strong>Besonderer Wert:</strong> ein EU-Bürger, der regulierte, produktive Software ausliefert — DSGVO-Löschung als getestete Journey, achtsprachige Lokalisierung mit build-brechendem Gate und KI-Kostenerfassung pro Request. Dreisprachig (Deutsch C2, Englisch fließend, Arabisch Muttersprache)."
   },
   "experience": {
@@ -138,14 +138,14 @@
     "founder": {
       "role": "Gründer, CEO & CTO",
       "company": "AI Waverider. KI-Automatisierungsplattform",
-      "date": "2024 - Heute",
-      "highlight": "🚀 <strong>5.600+ KI-Agenten & Automatisierungsworkflows</strong> | Globale Nutzerbasis | Kuratiert",
+      "date": "2025 – Heute",
+      "highlight": "🚀 <strong>Produktive KI-Systeme, end-to-end gebaut</strong> | 23 eigenentwickelte Systeme | Kuratierte Workflow-Bibliothek",
       "description": "Gründete und kuratierte eine KI-gestützte Automatisierungsplattform, sammelte und integrierte 5.600+ KI-Workflows aus dem Internet, während ich Schlüsselkomponenten baute. Während Vollzeitbeschäftigung bei Accenture, was außergewöhnliches Zeitmanagement und unternehmerischen Antrieb demonstriert.",
       "points": {
         "vision": "<strong>Produktvision & Strategie:</strong> Konzipiert, entworfen und eine Plattform gestartet, die 5.600+ kostenlose KI-Automatisierungsworkflows und n8n-Vorlagen für Unternehmen weltweit anbietet. Integrierte fortgeschrittene Prompts für Videos, Bilder und Textgenerierung. Kontinuierliche Kuratierung und Integration der neuesten KI-Tools und Technologien vom Markt, um modernste Lösungen zu bieten",
         "development": "<strong>Full-Stack-Entwicklung & Cloud Engineering:</strong> Architekturiert und die gesamte Plattform allein gebaut. Frontend (React/Vue), Backend (Node.js/Python), Datenbank (PostgreSQL/Supabase) und Cloud-Infrastruktur (GCP zertifiziert, Docker, Coolify). Integrierte Gen AI Fähigkeiten direkt in Webanwendungen mit nahtlosen Benutzererfahrungen",
         "ai": "<strong>Gen AI Integration & Engineering:</strong> Architekturierte und implementierte produktive Gen AI Systeme mit RAGs (Retrieval-Augmented Generation), Fine Tuning und KI-Integration in Webanwendungen. Integrierte OpenAI GPT-4, Claude AI, LangChain, Vektordatenbanken und benutzerdefinierte KI-Modelle. Experte in der Erstellung hochperformanter Prompts, Optimierung der Modellleistung und Skalierung von Gen AI Lösungen für 5.600+ produktive KI-Agenten",
-        "operations": "<strong>Geschäftsbetrieb:</strong> Behandelte alle Aspekte: rechtliche Compliance (FTC-Vorschriften), Zahlungsabwicklung (Paddle), Marketingstrategie, Nutzerakquise und Kundensupport",
+        "operations": "<strong>Geschäftsbetrieb:</strong> Behandelte alle Aspekte: rechtliche Compliance (DSGVO), Zahlungsabwicklung (Paddle), Marketingstrategie, Nutzerakquise und Kundensupport",
         "growth": "<strong>Wachstum:</strong> Organisches Wachstum durch Content-Marketing, SEO-Optimierung und Aufbau von Social-Media-Präsenz erreicht",
         "techStack": "<strong>Tech-Stack:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS"
       }
@@ -393,7 +393,7 @@
       },
       "founder": {
         "user": "Erzählen Sie mir über AI Waverider",
-        "bot": "<strong>AI Waverider. Gegründet & gebaut von Sakhr</strong><br><br>🚀 <strong>5.600+ KI-Agenten</strong> & Automatisierungsworkflows<br>🤖 <strong>Gen AI & Cloud Engineer</strong> - RAGs, Fine Tuning, KI-Integration<br>☁️ <strong>GCP zertifizierter Cloud Engineer</strong><br>👨‍💼 <strong>Gründer, CEO & CTO</strong><br>💻 <strong>Vollständig von Grund auf</strong> gebaut während Vollzeitbeschäftigung<br>🔧 Full-Stack: React, Node.js, Python, GCP, Docker<br>📈 Wachsende organische Nutzerbasis global<br><br>Besuchen: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+        "bot": "<strong>Gründer, CEO & CTO von AI Waverider</strong><br><br>23 eigenentwickelte produktive Systeme – mandantenfähige SaaS, RAG-Pipelines, Desktop-Apps und eine autonome Coding-Schleife – parallel zur Vollzeit-Enterprise-Tätigkeit bei Accenture entstanden."
       },
       "dubai": {
         "user": "Wo kann Sakhr arbeiten und was sucht er?",
@@ -414,10 +414,10 @@
       "highlyRecommended": "✓ Sehr empfohlener Kandidat!"
     },
     "localResponses": {
-      "founder": "<strong>Gründer, CEO & CTO von AI Waverider</strong><br><br>Gebaut 5.600+ KI-Agenten & Automatisierungsworkflows während Vollzeitbeschäftigung bei Accenture. Full-Stack-Plattform: React, Node.js, Python, GCP.",
+      "founder": "<strong>Gründer, CEO & CTO von AI Waverider</strong><br><br>23 eigenentwickelte produktive Systeme (~5.900 Commits), parallel zur Vollzeitarbeit bei Accenture. Stack: Next.js, Node.js, Python, Rust, PostgreSQL, GCP.",
       "german": "Standort Berlin, Studium an der TU Berlin und HTW Berlin, 7+ Jahre Enterprise-Delivery bei Accenture Deutschland. Arbeitssprachen Deutsch (C2) und Englisch (fließend).",
       "dubai": "Sakhr ist EU-Bürger mit Sitz in Berlin (MEZ). Er arbeitet remote in der gesamten EU und kann ohne Visum oder Sponsorship innerhalb der EU/des EWR umziehen.",
-      "ai": "Gewann globalen KI-Hackathon. Baute AI Waverider mit 5.600+ Agenten. <strong>Gen AI & Cloud Engineer</strong>, spezialisiert auf RAGs (Retrieval-Augmented Generation), Fine Tuning und KI-Integration in Webanwendungen. Experte in der Erstellung hochperformanter Prompts, OpenAI, Claude, n8n, LangChain und modernen Gen AI Architekturmustern. GCP zertifizierter Cloud Engineer.",
+      "ai": "<strong>Gen-AI- & Cloud-Engineer.</strong> Produktives RAG mit Vektorsuche (Qdrant), Multi-Provider-LLM-Routing über 7 Anbieter, agentische Pipelines und geräteseitige Inferenz per Ollama und GPU-Whisper. Chunking- und Embedding-Strategie aus einem gemessenen Benchmark gewählt, nicht geraten. GCP Certified Cloud Engineer.",
       "available": "<strong>Offen für neue Rollen.</strong> Remote, hybrid oder vor Ort in der gesamten EU — Vollzeit oder Freelance. Unter Beachtung der üblichen deutschen Kündigungsfristen.",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
       "default": "Ich kann Ihnen von Sakhrs Enterprise-Arbeit bei Accenture erzählen, von seinem eigenen Portfolio produktiver KI-Systeme (mandantenfähige SaaS, RAG, agentische Pipelines), von seinem Cloud- und DevOps-Stack, davon wo in der EU er arbeiten kann — oder beim Job-Matching helfen!"
@@ -455,13 +455,13 @@
     "omnalu": {
       "name": "Omnalu (FlowState)",
       "tag": "Desktop · Rust",
-      "desc": "Offline-first Desktop-KI: GPU-Whisper-Transkription mit zur Laufzeit gewähltem Metal-/CUDA-/Vulkan-Backend, System-Audio-Aufnahme über ScreenCaptureKit (beide Gesprächsseiten auch mit Kopfhörern), eine Swift-Vision-OCR-Bildschirmzeitleiste, über ein handgeschriebenes C-ABI in die Rust-Binary gelinkt, sowie Meeting-Export als DOCX oder Foliensatz. Enthält ein gepatchtes Upstream-Crate via [patch.crates-io] gegen einen Nullzeiger-Absturz beim Aufwachen des Displays.",
+      "desc": "Desktop-KI, bei der Audio und Bildschirm-Index das Gerät nie verlassen: GPU-Whisper-Transkription mit zur Laufzeit gewähltem Metal-/CUDA-/Vulkan-Backend, System-Audio-Aufnahme über ScreenCaptureKit (beide Gesprächsseiten auch mit Kopfhörern), eine Swift-Vision-OCR-Bildschirmzeitleiste, über ein handgeschriebenes C-ABI in die Rust-Binary gelinkt, sowie Meeting-Export als DOCX oder Foliensatz. Enthält ein gepatchtes Upstream-Crate via [patch.crates-io] gegen einen Nullzeiger-Absturz beim Aufwachen des Displays.",
       "stack": "Rust · Tauri · Swift · whisper.cpp · Deepgram · ScreenCaptureKit · Vision OCR"
     },
     "emailai": {
       "name": "Reply Autopilot",
       "tag": "Multi-tenant SaaS",
-      "desc": "Mandantenfähige E-Mail-Automatisierung: 108 Datenmodelle, 172 Migrationen und über 20 BullMQ-Worker. Die Mandantentrennung ist durch vier unabhängige Mechanismen abgesichert — Laufzeit-Query-Guard, ESLint-Regel, statisches Audit-Skript und ein eigener CI-Job. Enthält eine vollständige Zustellbarkeits-Steuerebene: SPF/DKIM/DMARC-Prüfung, Auswertung von DMARC-Aggregatberichten mit Eskalation p=none→quarantine→reject, Reputationsdaten von Google Postmaster und Microsoft SNDS, Mailbox-Warmup und eine umkehrbare Domain-Umstellung.",
+      "desc": "Mandantenfähige E-Mail-Automatisierung: 108 Datenmodelle, 171 Migrationen und über 20 BullMQ-Worker. Die Mandantentrennung ist durch vier unabhängige Mechanismen abgesichert — Laufzeit-Query-Guard, ESLint-Regel, statisches Audit-Skript und ein eigener CI-Job. Enthält eine vollständige Zustellbarkeits-Steuerebene: SPF/DKIM/DMARC-Prüfung, Auswertung von DMARC-Aggregatberichten mit Eskalation p=none→quarantine→reject, Reputationsdaten von Google Postmaster und Microsoft SNDS, Mailbox-Warmup und eine umkehrbare Domain-Umstellung.",
       "stack": "Next.js · PostgreSQL/Prisma · BullMQ/Redis · Qdrant · Gmail API · Microsoft Graph · IMAP/SMTP"
     },
     "leadoutbound": {
@@ -485,31 +485,31 @@
     "zelavi": {
       "name": "Zelavi",
       "tag": "Regulated marketplace",
-      "desc": "Tele-Therapie-Marktplatz nach reguliertem Standard. Contract-first: 85 OpenAPI-Operationen bilden 1:1 auf Routen und auf einen generierten Dart-Client ab, und der Typecheck schlägt fehl, sobald sie auseinanderlaufen. Schlüssel pro Konversation werden per HKDF als AES-256-GCM abgeleitet; die API besitzt bewusst keine Entschlüsselungsfunktion. Das DSGVO-Recht auf Löschung ist als getestete End-to-End-User-Journey umgesetzt. Die geräteseitige Personensegmentierung für Videoanrufe schließt im Fehlerfall — ohne Maske wird das gesamte Bild unscharf.",
+      "desc": "Tele-Therapie-Marktplatz nach reguliertem Standard. Contract-first: 96 OpenAPI-Operationen bilden 1:1 auf Routen und auf einen generierten Dart-Client ab, und der Typecheck schlägt fehl, sobald sie auseinanderlaufen. Schlüssel pro Konversation werden per HKDF als AES-256-GCM abgeleitet; die API besitzt bewusst keine Entschlüsselungsfunktion. Das DSGVO-Recht auf Löschung ist als getestete End-to-End-User-Journey umgesetzt. Die geräteseitige Personensegmentierung für Videoanrufe schließt im Fehlerfall — ohne Maske wird das gesamte Bild unscharf.",
       "stack": "NestJS · PostgreSQL/PostGIS · Flutter · LiveKit · Stripe Connect · 8 languages, 2 RTL"
     },
     "wavecode": {
       "name": "Wavecode",
-      "tag": "Agentic IDE",
-      "desc": "Eine agentische Coding-IDE für mehrere Anbieter: sieben Provider und 26 Modelle hinter einer einzigen Tool-Schleife, mit eingebettetem Browser, den der Agent über nummerierte Element-Badges statt geratener Pixel steuert. Fähigkeiten lokaler Modelle werden zur Laufzeit von Ollama gelesen statt aus dem Modellnamen abgeleitet, und der Kontext-Regler berechnet den KV-Cache-RAM pro Token, bevor ein Modell überhaupt geladen wird. Vier stille Modell-Substitutionen wurden gefunden und beseitigt.",
+      "tag": "Agentischer Coding-Client",
+      "desc": "Ein agentischer Coding-Client für mehrere Anbieter: acht Provider und 27 Modelle hinter einer einzigen Tool-Schleife, mit eingebettetem Browser, den der Agent über nummerierte Element-Badges statt geratener Pixel steuert. Fähigkeiten lokaler Modelle werden zur Laufzeit von Ollama gelesen statt aus dem Modellnamen abgeleitet, und der Kontext-Regler berechnet den KV-Cache-RAM pro Token, bevor ein Modell überhaupt geladen wird. Vier stille Modell-Substitutionen wurden gefunden und beseitigt.",
       "stack": "Rust · Tauri 2 · Ollama · MCP · ACP · OpenAI · Anthropic · DeepSeek · Kimi · GLM · Qwen"
     },
     "wavecut": {
       "name": "AI WaveCut",
       "tag": "Desktop · shipped",
-      "desc": "KI-Videoschnitt-Studio, ausgeliefert als signierter macOS-Installer, mit gestuftem Lizenz- und Geräteaktivierungssystem: HMAC-signierte Schlüssel, Gerätelimits je Stufe, PBKDF2-Schlüsselableitung aus einem Geräte-Fingerabdruck und Remote-Aktivierung. Eine parallele C++17/Qt6-Neuentwicklung steuert FFmpeg über dessen C-API statt per Subprozess, mit 15 handgeschriebenen GLSL-Shadern, darunter acht Übergänge.",
+      "desc": "KI-Videoschnitt-Studio, ausgeliefert als signierter macOS-Installer, mit gestuftem Lizenz- und Geräteaktivierungssystem: HMAC-signierte Schlüssel, Gerätelimits je Stufe, PBKDF2-Schlüsselableitung aus einem Geräte-Fingerabdruck und Remote-Aktivierung. Eine parallele C++17/Qt6-Neuentwicklung — 15 handgeschriebene GLSL-Shader, darunter acht Übergänge, und FFmpeg über dessen C-API eingebunden statt per Subprozess. Ausgeliefert als Code und schriftliches Migrations-Audit; der Qt-Build ist noch nicht paketiert.",
       "stack": "Tauri · React · Python · C++17/Qt6 · FFmpeg C API · GLSL · faster-whisper"
     },
     "translatepro": {
       "name": "Social-Automation-Plattform",
       "tag": "Multi-App · social.aiwaverider.com",
-      "desc": "Eine Plattform aus mehreren Anwendungen, kein Einzeltool: eine Instagram-Automatisierungs-Suite (Keyword-Trigger, Konversationsflüsse, Workflows, A/B-Tests, Interaktionen und Analytics — 11 Module), eine KI-Übersetzungs-Pipeline mit wortgenauen Zeitstempeln sowie getrennte Musik-, Video- und Thumbnail-Generierung über einer Google-Drive-Ingestion-Pipeline. Veröffentlicht wird auf YouTube und Instagram — das YouTube-Resumable-Upload-Protokoll ist handimplementiert (Sitzungsinitiierung, Chunk-Übertragung, Abfrage des Verarbeitungsstatus) statt aus einem SDK übernommen. 39 registrierte Module, 18 Queues, Stripe-Abrechnung, mit React-Web-Client und Expo-Mobile-App.",
+      "desc": "Eine Plattform aus mehreren Anwendungen, kein Einzeltool: eine Instagram-Automatisierungs-Suite (Keyword-Trigger, Konversationsflüsse, Workflows, A/B-Tests, Interaktionen und Analytics — 11 Module), eine KI-Übersetzungs-Pipeline mit wortgenauen Zeitstempeln sowie getrennte Musik-, Video- und Thumbnail-Generierung über einer Google-Drive-Ingestion-Pipeline. Veröffentlicht wird auf YouTube und Instagram — das YouTube-Resumable-Upload-Protokoll ist handimplementiert (Sitzungsinitiierung, Chunk-Übertragung, Abfrage des Verarbeitungsstatus) statt aus einem SDK übernommen. 40 registrierte Module, 18 Queues, Stripe-Abrechnung, mit React-Web-Client und Expo-Mobile-App.",
       "stack": "NestJS · BullMQ · PostgreSQL · Instagram Graph API · YouTube Data API · Whisper · Stripe · React · Expo"
     },
     "storefront": {
       "name": "aiwaverider.com",
       "tag": "Storefront",
-      "desc": "Kommerzieller Storefront und Content-Plattform: zwei Zahlungswege (Stripe und PayPal), ein RAG-Chatbot, der über einen Qdrant-Index aus dem Live-Katalog antwortet, zwölf Transaktions-E-Mail-Vorlagen, automatisierte Video-Übernahme von YouTube und TikTok per Cron, eigene Analytics und eine dokumentierte Migration von Firestore nach PostgreSQL mit acht nummerierten SQL-Migrationen. Veröffentlicht eine kuratierte Bibliothek von über 5.600 n8n-Automatisierungs-Workflows.",
+      "desc": "Storefront und Content-Plattform: zwei Zahlungswege (Stripe und PayPal), ein RAG-Chatbot, der über einen Qdrant-Index aus dem Live-Katalog antwortet, zwölf Transaktions-E-Mail-Vorlagen, automatisierte Video-Übernahme von YouTube und TikTok per Cron, eigene Analytics und eine dokumentierte Migration von Firestore nach PostgreSQL mit acht nummerierten SQL-Migrationen. Veröffentlicht eine kuratierte Bibliothek von über 5.600 n8n-Automatisierungs-Workflows.",
       "stack": "React · Node.js/Express · PostgreSQL · Redis · Qdrant · Stripe · PayPal · Firebase"
     },
     "clinicai": {

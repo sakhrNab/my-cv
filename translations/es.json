@@ -47,13 +47,13 @@
     "whoami": "whoami",
     "whoamiOutput": "Ingeniero de Software Senior | Arquitecto Gen-AI | Fundador, CEO y CTO",
     "catExperience": "cat experience.txt",
-    "experience1": "→ <span class=\"terminal-highlight\">15+ años</span> en Alemania",
+    "experience1": "→ <span class=\"terminal-highlight\">Berlín</span>, Alemania · Alemán C2",
     "experience2": "→ <span class=\"terminal-highlight\">7+ años</span> corporativo (Accenture, BMG, Innocean)",
     "experience3": "→ Clientes Fortune 500: bancos alemanes y OEMs automotrices",
     "lsAchievements": "ls achievements/",
     "achievements": "ai_waverider_founder/ production_ai_systems/ regulated_domain_delivery/",
     "catAiwaverider": "cat aiwaverider.txt",
-    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Fundador, CEO y CTO</span> | 5,600+ agentes de IA | Experto en Ingeniería de Prompts",
+    "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Fundador, CEO y CTO</span> | 23 sistemas en producción | RAG · búsqueda vectorial · pipelines agénticos",
     "echoLanguages": "echo $LANGUAGES",
     "languagesOutput": "Alemán (C2) | Inglés (fluido) | Árabe (Nativo) | Español (B1)",
     "catStatus": "cat status.txt",
@@ -102,10 +102,10 @@
     "allCerts": "Todos los Certificados (ZIP)",
     "highlights": {
       "title": "PUNTOS CLAVE",
-      "germanCitizen": "Ciudadano alemán con 15+ años en Alemania, educado en TU Berlin y HTW Berlin",
-      "founder": "Fundador, CEO y CTO de AI Waverider. 5,600+ flujos de trabajo de automatización de IA",
+      "germanCitizen": "Con base en Berlín · formado en TU Berlin y HTW Berlin · GCP Certified Cloud Engineer",
+      "founder": "Fundador, CEO y CTO de AI Waverider — 23 sistemas en producción propios",
       "corporate": "7+ años de experiencia corporativa en Accenture, BMG Rights Management, Innocean Europe",
-      "apps": "11 aplicaciones construidas desde cero este año mientras trabajaba a tiempo completo",
+      "apps": "5.900 commits en el portafolio, construidos en paralelo a la entrega empresarial a tiempo completo",
       "hackathon": "Ganó hackathon global de IA integrando Azure OpenAI",
       "languages": "Trilingüe: Alemán (C2), Inglés (fluido), Árabe (Nativo)",
       "available": "Ciudadano de la UE | Remoto, híbrido o presencial en toda la UE"
@@ -114,7 +114,7 @@
   },
   "executiveProfile": {
     "title": "Perfil Ejecutivo: El Arquitecto AI-First",
-    "hook": "<strong>\"La era de la programación tradicional ha terminado.\"</strong> Combino 15+ años de disciplina de ingeniería alemana con orquestación de IA de vanguardia para construir sistemas empresariales en días, no meses.",
+    "hook": "<strong>\"La mayor parte de la IA nunca llega a producción.\"</strong> Llevo los sistemas de un repositorio vacío a un servicio en marcha — esquema, colas, autenticación, aislamiento de inquilinos, despliegue, control de costes — y escribo el postmortem cuando fallan.",
     "paragraph1": "Soy <strong>Ingeniero de Software Senior y Arquitecto Gen-AI</strong> con base en <strong>Berlín</strong> y trabajo con equipos de toda la UE. Con una doble formación en Informática Aplicada e Ingeniería Industrial (<strong>HTW Berlin y TU Berlin</strong>), conecto la ejecución técnica con el caso de negocio que la respalda.",
     "paragraph2": "En <strong>Accenture Alemania</strong> desarrollo microservicios Spring Boot/Java para clientes Fortune 500 de banca y automoción sobre OpenShift y Google Cloud. En paralelo, bajo <strong>AI Waverider</strong>, he diseñado, construido y operado mi propio portafolio de sistemas en producción: SaaS multiinquilino con Next.js, Prisma/PostgreSQL y BullMQ, con RAG, búsqueda vectorial, enrutado multiproveedor de LLM, pipelines agénticos y contabilidad de costes por petición.",
     "paragraph3": "<strong>Lo que aporto:</strong> responsabilidad completa de punta a punta — aislamiento de inquilinos protegido por cuatro mecanismos independientes, un sistema de localización en ocho idiomas con una verificación de completitud que rompe la compilación, y el derecho de supresión del RGPD como recorrido de usuario probado. Mi idioma de trabajo es el inglés; el alemán C2 y el árabe nativo se suman cuando un equipo necesita ese alcance.",
@@ -130,7 +130,7 @@
   "summary": {
     "title": "Resumen Profesional",
     "paragraph1": "<strong>Ciudadano alemán</strong> e Ingeniero de Software Senior con 7+ años en desarrollo empresarial, especializado en microservicios, tecnologías en la nube e integración de IA. Educado en las mejores universidades de Alemania (TU Berlin, HTW Berlin) con historial comprobado entregando para clientes Fortune 500 en finanzas y automotriz.",
-    "paragraph2": "Conocido por <strong>excepcional ingenio</strong>. Construí 11 aplicaciones este año mientras trabajaba a tiempo completo en Accenture. Coordiné equipos offshore en 3 zonas horarias. Actualmente el <strong>Fundador, CEO y CTO</strong> de <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. Una plataforma con 5,600+ agentes de IA y flujos de trabajo de automatización.",
+    "paragraph2": "Conocido por su <strong>responsabilidad de punta a punta</strong>. Diseñó, construyó y operó 23 sistemas en producción propios, en paralelo a su trabajo empresarial a tiempo completo. Coordinó equipos offshore en 3 husos horarios. Fundador, CEO y CTO de <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>, un escaparate que publica una biblioteca curada de más de 5.600 flujos de automatización n8n.",
     "paragraph3": "<strong>Valor único:</strong> un ingeniero que entrega software regulado y en producción — supresión RGPD como recorrido probado, localización en ocho idiomas con una verificación que rompe la compilación, y contabilidad de costes de IA por petición. Trilingüe (alemán C2, inglés fluido, árabe nativo)."
   },
   "experience": {
@@ -139,13 +139,13 @@
       "role": "Fundador, CEO y CTO",
       "company": "AI Waverider. Plataforma de Automatización de IA",
       "date": "2025 - Presente",
-      "highlight": "🚀 <strong>5,600+ Agentes de IA y Flujos de Trabajo de Automatización</strong> | Base de Usuarios Global | Curado",
+      "highlight": "🚀 <strong>Sistemas de IA en producción, construidos de punta a punta</strong> | 23 sistemas propios | Biblioteca de flujos curada",
       "description": "Fundé y curé una plataforma de automatización impulsada por IA, reuniendo e integrando 5,600+ flujos de trabajo de IA de todo Internet mientras construía componentes clave. Mantuve empleo a tiempo completo en Accenture, demostrando gestión excepcional del tiempo e impulso empresarial.",
       "points": {
         "vision": "<strong>Visión y Estrategia del Producto:</strong> Concebí, diseñé y lancé una plataforma que ofrece 5,600+ flujos de trabajo de automatización de IA gratuitos y plantillas n8n para empresas en todo el mundo. Integré prompts avanzados para videos, imágenes y generación de texto. Curo e integro continuamente las últimas herramientas y tecnologías de IA del mercado para proporcionar soluciones de vanguardia",
         "development": "<strong>Desarrollo Full-Stack:</strong> Arquitecturé y construí toda la plataforma solo. Frontend (React/Vue), backend (Node.js/Python), base de datos (PostgreSQL/Supabase) e infraestructura en la nube (GCP, Docker, Coolify)",
-        "ai": "<strong>Integración de IA & Ingeniería de Prompts:</strong> Integré OpenAI GPT-4, Claude AI, LangChain, RAGs y bases de datos vectoriales. Experto en crear prompts de alto rendimiento para 5,600+ agentes de IA en producción, optimizando la calidad de respuesta y eficiencia del sistema a escala",
-        "operations": "<strong>Operaciones Comerciales:</strong> Manejé todos los aspectos: cumplimiento legal (regulaciones FTC), procesamiento de pagos (Paddle), estrategia de marketing, adquisición de usuarios y soporte al cliente",
+        "ai": "<strong>Ingeniería Gen-AI:</strong> Diseñé y desplegué sistemas Gen-AI en producción — RAG con búsqueda vectorial (Qdrant), troceado con solapamiento, embeddings elegidos a partir de un benchmark medido, enrutado multiproveedor de LLM, pipelines agénticos con puertas de aprobación e inferencia en dispositivo vía Ollama y GPU Whisper, con contabilidad de costes por petición.",
+        "operations": "<strong>Operaciones Comerciales:</strong> Manejé todos los aspectos: cumplimiento legal (RGPD), procesamiento de pagos (Paddle), estrategia de marketing, adquisición de usuarios y soporte al cliente",
         "growth": "<strong>Crecimiento:</strong> Logré crecimiento orgánico a través de marketing de contenido, optimización SEO y construcción de presencia en redes sociales",
         "techStack": "<strong>Stack Tecnológico:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS"
       }
@@ -389,11 +389,11 @@
     "responses": {
       "background": {
         "user": "Cuéntame sobre los antecedentes de Sakhr",
-        "bot": "<strong>Ciudadano Alemán y Fundador</strong><br><br>🇩🇪 <strong>15+ años</strong> viviendo en Alemania<br>🎓 Graduado de <strong>TU Berlin y HTW Berlin</strong><br>💼 <strong>7+ años</strong> en Accenture, BMG, Innocean<br>🚀 <strong>Fundador, CEO y CTO</strong> de AI Waverider<br>🌍 Colaboró con 25+ países<br><br><strong>Valor Único:</strong> Precisión alemana + herencia árabe + fluidez en inglés"
+        "bot": "<strong>Ingeniero senior y constructor</strong><br><br>🏢 <strong>Accenture Alemania</strong> — banca y automoción Fortune 500<br>🎓 <strong>TU Berlin</strong> y <strong>HTW Berlin</strong><br>📍 Con base en <strong>Berlín</strong><br>🗣️ Alemán C2 · Inglés fluido · Árabe nativo"
       },
       "founder": {
         "user": "Cuéntame sobre AI Waverider",
-        "bot": "<strong>AI Waverider. Fundado y Construido por Sakhr</strong><br><br>🚀 <strong>5,600+ agentes de IA</strong> y flujos de trabajo de automatización<br>🎯 <strong>Experto en Ingeniería de Prompts</strong> - Creando prompts de alto rendimiento a escala<br>👨‍💼 <strong>Fundador, CEO y CTO</strong><br>💻 Construido <strong>completamente desde cero</strong> mientras trabajaba a tiempo completo<br>🔧 Full-stack: React, Node.js, Python, GCP, Docker<br>📈 Base de usuarios orgánica creciendo globalmente<br><br>Visita: <a href='https://aiwaverider.com' target='_blank' style='color:var(--gold);'>aiwaverider.com</a>"
+        "bot": "<strong>Fundador, CEO y CTO de AI Waverider</strong><br><br>23 sistemas en producción propios — SaaS multiinquilino, pipelines RAG, apps de escritorio y un bucle de codificación autónoma — construidos en paralelo a la entrega empresarial a tiempo completo en Accenture."
       },
       "dubai": {
         "user": "¿Dónde puede trabajar Sakhr y qué busca?",
@@ -401,7 +401,7 @@
       },
       "interview": {
         "user": "¿Cómo puedo contactar a Sakhr?",
-        "bot": "<strong>¡Conectemos!</strong><br><br>📅 Disponible <strong>Q1 2025</strong><br>✅ Abierto a: Tiempo completo, Contrato, Híbrido"
+        "bot": "<strong>¡Hablemos!</strong><br><br>📅 <strong>Abierto a nuevos puestos</strong> — remoto, híbrido o presencial en toda la UE<br>✅ Jornada completa o contrato · se aplican los plazos de preaviso alemanes"
       }
     },
     "jobMatch": {
@@ -414,13 +414,13 @@
       "highlyRecommended": "✓ ¡Candidato altamente recomendado!"
     },
     "localResponses": {
-      "founder": "<strong>Fundador, CEO y CTO de AI Waverider</strong><br><br>Construí 5,600+ agentes de IA y flujos de trabajo de automatización mientras trabajaba a tiempo completo en Accenture. Plataforma full-stack: React, Node.js, Python, GCP.",
-      "german": "<strong>Ciudadano alemán</strong> con 15+ años en Alemania. Educado en TU Berlin y HTW Berlin. 7+ años de experiencia corporativa.",
+      "founder": "<strong>Fundador, CEO y CTO de AI Waverider</strong><br><br>23 sistemas en producción propios (~5.900 commits) construidos en paralelo al trabajo a tiempo completo en Accenture. Stack: Next.js, Node.js, Python, Rust, PostgreSQL, GCP.",
+      "german": "Con base en Berlín, formado en TU Berlin y HTW Berlin, con más de 7 años de entrega empresarial en Accenture Alemania. Trabaja en alemán (C2) e inglés (fluido).",
       "dubai": "Sakhr es ciudadano de la UE con base en Berlín (CET). Trabaja en remoto por toda la UE y puede trasladarse dentro de la UE/EEE sin visado ni patrocinio.",
-      "ai": "Gané hackathon global de IA. Construí AI Waverider con 5,600+ agentes. Experto en OpenAI, Claude, n8n, RAGs, LangChain.",
+      "ai": "<strong>Ingeniero de Gen-AI y Cloud.</strong> RAG en producción con búsqueda vectorial (Qdrant), enrutado multiproveedor de LLM entre 7 proveedores, pipelines agénticos e inferencia en dispositivo vía Ollama y GPU Whisper. La estrategia de troceado y embeddings se eligió a partir de un benchmark medido, no de una suposición. GCP Certified Cloud Engineer.",
       "available": "<strong>Abierto a nuevos puestos.</strong> Remoto, híbrido o presencial en cualquier país de la UE — jornada completa o contrato. Con los plazos de preaviso alemanes.",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
-      "default": "¡Puedo contarte sobre los antecedentes alemanes de Sakhr, su experiencia como <strong>Ingeniero de Prompts</strong>, su startup AI Waverider (él es Fundador/CEO/CTO), habilidades técnicas, planes de Dubai o ayudar con job matching!"
+      "default": "¡Puedo contarte sobre el trabajo empresarial de Sakhr en Accenture, su portafolio propio de sistemas de IA en producción (SaaS multiinquilino, RAG, pipelines agénticos), su stack de cloud y DevOps, dónde puede trabajar en la UE, o ayudarte con el job matching!"
     }
   },
   "terminalCommands": {
@@ -441,7 +441,8 @@
       "Ingeniero de Software Senior",
       "Experto Java Full-Stack",
       "Constructor de Sistemas Empresariales",
-      "Experto en Ingeniería de Prompts"
+      "Experto en Ingeniería de Prompts",
+      "Ingeniero de RAG y búsqueda vectorial"
     ]
   },
   "email": {
@@ -460,7 +461,7 @@
     "emailai": {
       "name": "Reply Autopilot",
       "tag": "Multi-tenant SaaS",
-      "desc": "Automatización de correo multiinquilino: 108 modelos de datos, 172 migraciones y más de 20 workers BullMQ. El aislamiento entre inquilinos se impone con cuatro mecanismos independientes — guard en tiempo de ejecución, regla ESLint, script de auditoría estática y un job de CI dedicado. Incluye un plano de control de entregabilidad completo: verificación SPF/DKIM/DMARC, ingesta de informes agregados DMARC con escalado p=none→quarantine→reject, reputación de Google Postmaster y Microsoft SNDS, calentamiento de buzones y una migración reversible por dominio.",
+      "desc": "Automatización de correo multiinquilino: 108 modelos de datos, 171 migraciones y más de 20 workers BullMQ. El aislamiento entre inquilinos se impone con cuatro mecanismos independientes — guard en tiempo de ejecución, regla ESLint, script de auditoría estática y un job de CI dedicado. Incluye un plano de control de entregabilidad completo: verificación SPF/DKIM/DMARC, ingesta de informes agregados DMARC con escalado p=none→quarantine→reject, reputación de Google Postmaster y Microsoft SNDS, calentamiento de buzones y una migración reversible por dominio.",
       "stack": "Next.js · PostgreSQL/Prisma · BullMQ/Redis · Qdrant · Gmail API · Microsoft Graph · IMAP/SMTP"
     },
     "leadoutbound": {
@@ -484,13 +485,13 @@
     "zelavi": {
       "name": "Zelavi",
       "tag": "Regulated marketplace",
-      "desc": "Marketplace de teleterapia construido con estándar regulado. Contract-first: 85 operaciones OpenAPI mapean uno a uno con rutas y con un cliente Dart generado, y el propio typecheck falla si divergen. Las claves por conversación se derivan con HKDF (AES-256-GCM) y la API no tiene función de descifrado por diseño. El derecho de supresión del RGPD está implementado como recorrido de usuario probado de extremo a extremo. El desenfoque por segmentación de personas en el dispositivo falla en cerrado.",
+      "desc": "Marketplace de teleterapia construido con estándar regulado. Contract-first: 96 operaciones OpenAPI mapean uno a uno con rutas y con un cliente Dart generado, y el propio typecheck falla si divergen. Las claves por conversación se derivan con HKDF (AES-256-GCM) y la API no tiene función de descifrado por diseño. El derecho de supresión del RGPD está implementado como recorrido de usuario probado de extremo a extremo. El desenfoque por segmentación de personas en el dispositivo falla en cerrado.",
       "stack": "NestJS · PostgreSQL/PostGIS · Flutter · LiveKit · Stripe Connect · 8 languages, 2 RTL"
     },
     "wavecode": {
       "name": "Wavecode",
-      "tag": "Agentic IDE",
-      "desc": "IDE de codificación agéntica multiproveedor: siete proveedores y 26 modelos tras un único bucle de herramientas, con un navegador embebido que el agente maneja mediante insignias numeradas en lugar de píxeles adivinados. Las capacidades de los modelos locales se leen de Ollama en tiempo de ejecución en vez de inferirse del nombre, y el control de contexto calcula la RAM de caché KV por token antes de cargar el modelo. Se detectaron y eliminaron cuatro sustituciones silenciosas de modelo.",
+      "tag": "Cliente de codificación agéntica",
+      "desc": "Cliente de codificación agéntica multiproveedor: ocho proveedores y 27 modelos tras un único bucle de herramientas, con un navegador embebido que el agente maneja mediante insignias numeradas en lugar de píxeles adivinados. Las capacidades de los modelos locales se leen de Ollama en tiempo de ejecución en vez de inferirse del nombre, y el control de contexto calcula la RAM de caché KV por token antes de cargar el modelo. Se detectaron y eliminaron cuatro sustituciones silenciosas de modelo.",
       "stack": "Rust · Tauri 2 · Ollama · MCP · ACP · OpenAI · Anthropic · DeepSeek · Kimi · GLM · Qwen"
     },
     "wavecut": {
@@ -502,13 +503,13 @@
     "translatepro": {
       "name": "Plataforma de Automatización Social",
       "tag": "Multi-app · social.aiwaverider.com",
-      "desc": "Una plataforma de varias aplicaciones, no una sola herramienta: una suite de automatización de Instagram (disparadores por palabra clave, flujos de conversación, workflows, pruebas A/B, interacciones y analítica — 11 módulos), un pipeline de traducción con IA y marcas de tiempo por palabra, y generación separada de música, vídeo y miniaturas sobre un pipeline de ingesta desde Google Drive. La publicación va a YouTube e Instagram — el protocolo de subida reanudable de YouTube está implementado a mano (inicio de sesión, transferencia por fragmentos, sondeo del estado) en lugar de envolver un SDK. 39 módulos registrados, 18 colas, facturación con Stripe, con cliente web React y app móvil Expo.",
+      "desc": "Una plataforma de varias aplicaciones, no una sola herramienta: una suite de automatización de Instagram (disparadores por palabra clave, flujos de conversación, workflows, pruebas A/B, interacciones y analítica — 11 módulos), un pipeline de traducción con IA y marcas de tiempo por palabra, y generación separada de música, vídeo y miniaturas sobre un pipeline de ingesta desde Google Drive. La publicación va a YouTube e Instagram — el protocolo de subida reanudable de YouTube está implementado a mano (inicio de sesión, transferencia por fragmentos, sondeo del estado) en lugar de envolver un SDK. 40 módulos registrados, 18 colas, facturación con Stripe, con cliente web React y app móvil Expo.",
       "stack": "NestJS · BullMQ · PostgreSQL · Instagram Graph API · YouTube Data API · Whisper · Stripe · React · Expo"
     },
     "storefront": {
       "name": "aiwaverider.com",
-      "tag": "Storefront",
-      "desc": "Escaparate comercial y plataforma de contenido: dos vías de pago (Stripe y PayPal), un chatbot RAG que responde desde el catálogo en vivo sobre un índice Qdrant, doce plantillas de correo transaccional, ingesta automática de vídeo desde YouTube y TikTok por cron, analítica propia y una migración documentada de Firestore a PostgreSQL con ocho migraciones SQL numeradas. Publica una biblioteca curada de más de 5.600 flujos de automatización n8n.",
+      "tag": "Escaparate",
+      "desc": "Escaparate y plataforma de contenido: dos vías de pago (Stripe y PayPal), un chatbot RAG que responde desde el catálogo en vivo sobre un índice Qdrant, doce plantillas de correo transaccional, ingesta automática de vídeo desde YouTube y TikTok por cron, analítica propia y una migración documentada de Firestore a PostgreSQL con ocho migraciones SQL numeradas. Publica una biblioteca curada de más de 5.600 flujos de automatización n8n.",
       "stack": "React · Node.js/Express · PostgreSQL · Redis · Qdrant · Stripe · PayPal · Firebase"
     },
     "clinicai": {

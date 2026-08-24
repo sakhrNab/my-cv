@@ -558,7 +558,11 @@ async function generatePDF() {
         { cat: getT('skills.categories.frameworks'), tags: Array.isArray(frameworksTags) ? frameworksTags.join(', ') : frameworksTags },
         { cat: getT('skills.categories.cloud'), tags: Array.isArray(cloudTags) ? cloudTags.join(', ') : cloudTags },
         { cat: getT('skills.categories.ai'), tags: Array.isArray(aiTags) ? aiTags.join(', ') : aiTags },
-        { cat: getT('skills.categories.databases'), tags: Array.isArray(databasesTags) ? databasesTags.join(', ') : databasesTags }
+        { cat: getT('skills.categories.databases'), tags: Array.isArray(databasesTags) ? databasesTags.join(', ') : databasesTags },
+        // Domain & Leadership was omitted here, so the PDF silently dropped every
+        // domain and leadership signal (regulated healthcare, GDPR, team leadership)
+        // for roles that explicitly include Tech Lead.
+        { cat: getT('skills.categories.domain'), tags: (() => { const v = getT('skills.tags.domain'); return Array.isArray(v) ? v.join(', ') : v; })() }
     ];
     
     skills.forEach(s => {
@@ -635,7 +639,7 @@ async function generatePDF() {
     
     // Footer
     const total = doc.internal.getNumberOfPages();
-    const footerTemplate = getT('cv.footer') || 'Page {page}/{total} | Sakhr AL-Absi | German Citizen | Founder/CEO/CTO AI Waverider | Q1 2026';
+    const footerTemplate = getT('cv.footer') || 'Page {page}/{total} | Sakhr AL-Absi | Senior Software Engineer & Gen-AI Architect';
     for (let i = 1; i <= total; i++) {
         doc.setPage(i);
         doc.setFontSize(8);

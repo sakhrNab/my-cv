@@ -139,13 +139,13 @@
       "role": "Founder, CEO & CTO",
       "company": "AI Waverider. AI Automation Platform",
       "date": "2025 - Present",
-      "highlight": "🚀 <strong>5,600+ AI Agents & Automation Workflows</strong> | Global User Base | Curated",
+      "highlight": "🚀 <strong>Production AI systems, built end-to-end</strong> | 23 self-authored systems | Curated workflow library",
       "description": "Founded and curated an AI-powered automation platform, gathering and integrating 5,600+ AI workflows from across the internet while building key components. Maintained full-time employment at Accenture, demonstrating exceptional time management and entrepreneurial drive.",
       "points": {
         "vision": "<strong>Product Vision & Strategy:</strong> Conceived, designed, and launched a platform offering 5,600+ free AI automation workflows and n8n templates for businesses worldwide. Integrated advanced prompts for videos, images, and text generation. Continuously curate and integrate the latest AI tools and technologies from the market to provide cutting-edge solutions",
         "development": "<strong>Full-Stack Development & Cloud Engineering:</strong> Architected and built the entire platform solo. Frontend (React/Vue), backend (Node.js/Python), database (PostgreSQL/Supabase), and cloud infrastructure (GCP Certified, Docker, Coolify). Integrated Gen AI capabilities directly into web applications with seamless user experiences",
         "ai": "<strong>Gen AI Integration & Engineering:</strong> Architected and deployed production Gen AI systems using RAGs (Retrieval-Augmented Generation), Fine Tuning, and AI integration into web applications. Integrated OpenAI GPT-4, Claude AI, LangChain, vector databases, and custom AI models. Expert in crafting high-performance prompts, optimizing model performance, and scaling Gen AI solutions for 5,600+ production AI agents",
-        "operations": "<strong>Business Operations:</strong> Handled all aspects: legal compliance (FTC regulations), payment processing (Paddle), marketing strategy, user acquisition, and customer support",
+        "operations": "<strong>Business Operations:</strong> Handled all aspects: legal compliance (GDPR/DSGVO), payment processing (Paddle), marketing strategy, user acquisition, and customer support",
         "growth": "<strong>Growth:</strong> Achieved organic growth through content marketing, SEO optimization, and social media presence building",
         "techStack": "<strong>Tech Stack:</strong> React, Vue.js, Node.js, Python, PostgreSQL, Supabase, n8n, Docker, GCP, Coolify, Nginx, Linux VPS"
       }
@@ -455,13 +455,13 @@
     "omnalu": {
       "name": "Omnalu (FlowState)",
       "tag": "Desktop · Rust",
-      "desc": "Offline-first desktop AI: GPU Whisper transcription with Metal/CUDA/Vulkan backends chosen at runtime, ScreenCaptureKit system-audio capture so both sides of a call are transcribed on headphones, a Swift Vision-OCR screen timeline linked into the Rust binary over a hand-written C ABI, and meeting output exported as DOCX or slides. Includes a patched upstream crate applied via [patch.crates-io] to kill a nil-pointer panic on display wake.",
+      "desc": "Desktop AI where the audio and the screen index never leave the machine: GPU Whisper transcription with Metal/CUDA/Vulkan backends chosen at runtime, ScreenCaptureKit system-audio capture so both sides of a call are transcribed on headphones, a Swift Vision-OCR screen timeline linked into the Rust binary over a hand-written C ABI, and meeting output exported as DOCX or slides. Includes a patched upstream crate applied via [patch.crates-io] to kill a nil-pointer panic on display wake.",
       "stack": "Rust · Tauri · Swift · whisper.cpp · Deepgram · ScreenCaptureKit · Vision OCR"
     },
     "emailai": {
       "name": "Reply Autopilot",
       "tag": "Multi-tenant SaaS",
-      "desc": "Multi-tenant email automation: 108 data models, 172 migrations and 20+ BullMQ workers. Tenant isolation is enforced by four independent mechanisms — a runtime query guard, an ESLint rule, a static audit script and a dedicated CI job. Ships a full deliverability control plane: SPF/DKIM/DMARC checking, DMARC aggregate-report ingestion with p=none→quarantine→reject escalation, Google Postmaster and Microsoft SNDS reputation, mailbox warmup and a reversible per-domain cutover.",
+      "desc": "Multi-tenant email automation: 108 data models, 171 migrations and 20+ BullMQ workers. Tenant isolation is enforced by four independent mechanisms — a runtime query guard, an ESLint rule, a static audit script and a dedicated CI job. Ships a full deliverability control plane: SPF/DKIM/DMARC checking, DMARC aggregate-report ingestion with p=none→quarantine→reject escalation, Google Postmaster and Microsoft SNDS reputation, mailbox warmup and a reversible per-domain cutover.",
       "stack": "Next.js · PostgreSQL/Prisma · BullMQ/Redis · Qdrant · Gmail API · Microsoft Graph · IMAP/SMTP"
     },
     "leadoutbound": {
@@ -485,31 +485,31 @@
     "zelavi": {
       "name": "Zelavi",
       "tag": "Regulated marketplace",
-      "desc": "Tele-therapy marketplace built to a regulated standard. Contract-first: 85 OpenAPI operations map one-to-one to routes and to a generated Dart client, and the typecheck itself fails if they drift. Per-conversation AES-256-GCM keys are derived with HKDF and the API has no decrypt function by design. GDPR right-to-erasure is implemented as a tested end-to-end user journey. On-device person-segmentation blur for video calls fails closed — no mask means the whole frame blurs.",
+      "desc": "Tele-therapy marketplace built to a regulated standard. Contract-first: 96 OpenAPI operations map one-to-one to routes and to a generated Dart client, and the typecheck itself fails if they drift. Per-conversation AES-256-GCM keys are derived with HKDF and the API has no decrypt function by design. GDPR right-to-erasure is implemented as a tested end-to-end user journey. On-device person-segmentation blur for video calls fails closed — no mask means the whole frame blurs.",
       "stack": "NestJS · PostgreSQL/PostGIS · Flutter · LiveKit · Stripe Connect · 8 languages, 2 RTL"
     },
     "wavecode": {
       "name": "Wavecode",
-      "tag": "Agentic IDE",
-      "desc": "A multi-provider agentic coding IDE: seven providers and 26 models behind one tool loop, with an embedded browser the agent drives by numbered element badges rather than guessed pixels. Local-model capabilities are read from Ollama at runtime instead of inferred from the model name, and the context slider computes per-token KV-cache RAM before a model is ever loaded. Four silent model substitutions were found and killed, each locked out by a mutation-checked test.",
+      "tag": "Agentic coding client",
+      "desc": "A multi-provider agentic coding client: eight providers and 27 models behind one tool loop, with an embedded browser the agent drives by numbered element badges rather than guessed pixels. Local-model capabilities are read from Ollama at runtime instead of inferred from the model name, and the context slider computes per-token KV-cache RAM before a model is ever loaded. Four silent model substitutions were found and killed, each locked out by a mutation-checked test.",
       "stack": "Rust · Tauri 2 · Ollama · MCP · ACP · OpenAI · Anthropic · DeepSeek · Kimi · GLM · Qwen"
     },
     "wavecut": {
       "name": "AI WaveCut",
       "tag": "Desktop · shipped",
-      "desc": "AI video-editing studio shipped as a signed macOS installer, with a tiered licensing and device-activation system: HMAC-signed keys, per-tier device limits, PBKDF2 key derivation from a device fingerprint and remote activation. A parallel C++17/Qt6 rewrite drives FFmpeg through its C API rather than shelling out, with 15 hand-written GLSL shaders including eight transitions.",
+      "desc": "AI video-editing studio shipped as a signed macOS installer, with a tiered licensing and device-activation system: HMAC-signed keys, per-tier device limits, PBKDF2 key derivation from a device fingerprint and remote activation. A parallel C++17/Qt6 rewrite — 15 hand-written GLSL shaders including eight transitions, and FFmpeg linked through its C API rather than shelled out. Shipped as code and a written migration audit; the Qt build is not yet packaged.",
       "stack": "Tauri · React · Python · C++17/Qt6 · FFmpeg C API · GLSL · faster-whisper"
     },
     "translatepro": {
       "name": "Social Automation Platform",
       "tag": "Multi-app · social.aiwaverider.com",
-      "desc": "A multi-app platform, not a single tool: an Instagram automation suite (keyword triggers, conversation flows, workflows, A/B tests, interactions and analytics — 11 modules), an AI translation pipeline with word-level timestamps, and separate music, video and thumbnail generation, over a Google Drive ingestion pipeline. Publishing goes to YouTube and Instagram — the YouTube resumable-upload protocol is implemented by hand (session initiation, chunked transfer, processing-status polling) rather than wrapped from an SDK. 39 registered modules, 18 queues, Stripe billing, with a React web client and an Expo mobile app.",
+      "desc": "A multi-app platform, not a single tool: an Instagram automation suite (keyword triggers, conversation flows, workflows, A/B tests, interactions and analytics — 11 modules), an AI translation pipeline with word-level timestamps, and separate music, video and thumbnail generation, over a Google Drive ingestion pipeline. Publishing goes to YouTube and Instagram — the YouTube resumable-upload protocol is implemented by hand (session initiation, chunked transfer, processing-status polling) rather than wrapped from an SDK. 40 registered modules, 18 queues, Stripe billing, with a React web client and an Expo mobile app.",
       "stack": "NestJS · BullMQ · PostgreSQL · Instagram Graph API · YouTube Data API · Whisper · Stripe · React · Expo"
     },
     "storefront": {
       "name": "aiwaverider.com",
       "tag": "Storefront",
-      "desc": "Commercial storefront and content platform: dual payment rails (Stripe and PayPal), a RAG chatbot answering from the live catalogue over a Qdrant index, twelve transactional email templates, automated video ingestion from YouTube and TikTok on a cron schedule, first-party analytics, and a documented Firestore-to-PostgreSQL migration with eight numbered SQL migrations. Publishes a curated library of 5,600+ n8n automation workflows.",
+      "desc": "Storefront and content platform: dual payment rails (Stripe and PayPal), a RAG chatbot answering from the live catalogue over a Qdrant index, twelve transactional email templates, automated video ingestion from YouTube and TikTok on a cron schedule, first-party analytics, and a documented Firestore-to-PostgreSQL migration with eight numbered SQL migrations. Publishes a curated library of 5,600+ n8n automation workflows.",
       "stack": "React · Node.js/Express · PostgreSQL · Redis · Qdrant · Stripe · PayPal · Firebase"
     },
     "clinicai": {

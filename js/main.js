@@ -111,11 +111,11 @@ function initHeroTerminal() {
                     setTimeout(() => Game.start(), 800);
                 } else if (cmd === 'help') {
                     const resp = document.createElement('div');
-                    resp.innerHTML = `> Commands: play, chat, prompt, genai, clear, help<br>> Type 'chat' to talk with AI assistant<br>> Type 'prompt' or 'genai' to learn about Gen AI expertise`;
+                    resp.innerHTML = `> Commands: play, chat, ai, clear, help<br>> Type 'chat' to talk with the AI assistant<br>> Type 'ai' for Gen-AI engineering detail`;
                     content.appendChild(resp);
                 } else if (cmd === 'prompt' || cmd === 'promptengineering' || cmd === 'genai' || cmd === 'gen-ai') {
                     const resp = document.createElement('div');
-                    resp.innerHTML = `> 🤖 Gen AI & Cloud Engineer<br>> → RAGs (Retrieval-Augmented Generation)<br>> → Fine Tuning for custom AI models<br>> → AI Integration into web applications<br>> → GCP Certified Cloud Engineer<br>> → 5,600+ production AI agents`;
+                    resp.innerHTML = `> 🤖 Gen-AI Engineering<br>> → RAG with vector search (Qdrant)<br>> → Multi-provider LLM routing, 7 providers<br>> → Agentic pipelines with proof-receipt verification<br>> → On-device inference: Ollama, GPU Whisper<br>> → GCP Certified Cloud Engineer`;
                     resp.style.color = '#4ade80';
                     content.appendChild(resp);
                 } else if (cmd === 'chat' || cmd === 'ai') {

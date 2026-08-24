@@ -28,8 +28,8 @@ const Game = {
         { name: 'Rapid Fire', bullets: 3, spread: 15, fireRate: 80 }
     ],
     questions: [
-        { q: "Why hire Sakhr?", correct: ["Java", "Spring Boot", "Cloud", "AI", "Docker", "Microservices", "German", "Founder", "CEO"], wrong: ["Outdated", "Legacy", "Slow"] },
-        { q: "What makes Sakhr ideal for AI?", correct: ["OpenAI", "Claude", "RAGs", "n8n", "Automation", "AI Agents", "LangChain", "5600+"], wrong: ["No AI", "Basic", "Limited"] },
+        { q: "Why hire Sakhr?", correct: ["Java", "Spring Boot", "Rust", "Cloud", "Docker", "Microservices", "Founder", "CTO"], wrong: ["Outdated", "Legacy", "Slow"] },
+        { q: "What makes Sakhr ideal for AI?", correct: ["RAG", "Vector search", "Qdrant", "Agentic", "Ollama", "Embeddings", "LLM routing", "MCP"], wrong: ["No AI", "Basic", "Limited"] },
         { q: "Why choose Sakhr for cloud?", correct: ["GCP", "Azure", "Kubernetes", "DevOps", "Docker", "CI/CD", "Coolify"], wrong: ["On-premise", "Old", "Manual"] },
         { q: "What shows leadership?", correct: ["Team Lead", "Agile", "Offshore", "CEO", "CTO", "Founder", "Mentoring"], wrong: ["Solo", "Junior", "Isolated"] },
         { q: "Why does he fit an EU-wide team?", correct: ["EU Citizen", "German C2", "English fluent", "Arabic", "Remote", "CET"], wrong: ["Visa Needed", "Monolingual"] }

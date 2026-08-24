@@ -166,23 +166,31 @@ function getLocalResponse(t) {
     };
     
     t = t.toLowerCase();
-    if (t.includes('founder') || t.includes('ceo') || t.includes('cto') || t.includes('waverider')) {
-        return getT('aiChat.localResponses.founder');
-    }
-    if (t.includes('german') || t.includes('citizen')) {
-        return getT('aiChat.localResponses.german');
-    }
-    if (t.includes('dubai') || t.includes('uae') || t.includes('europe') || t.includes('eu') || t.includes('berlin') || t.includes('remote') || t.includes('relocat')) {
-        return getT('aiChat.localResponses.dubai');
-    }
-    if (t.includes('ai') || t.includes('openai')) {
-        return getT('aiChat.localResponses.ai');
-    }
-    if (t.includes('available') || t.includes('start')) {
+
+    // Word-boundary matching, most specific first.
+    // Previously this used substring includes() in the wrong order: "available"
+    // contains "ai", so "is he available?" - the question a recruiter is most
+    // likely to type - always returned the Gen-AI blurb and never the
+    // availability answer. "eu" likewise matched revenue, queue, measure, Europe.
+    const has = (...words) => words.some(w => new RegExp(`\\b${w}`, 'i').test(t));
+
+    if (has('available', 'availability', 'start', 'notice', 'verf[uü]gbar')) {
         return getT('aiChat.localResponses.available');
     }
-    if (t.includes('contact') || t.includes('interview')) {
+    if (has('contact', 'email', 'reach', 'hire', 'kontakt')) {
         return getT('aiChat.localResponses.contact');
+    }
+    if (has('where', 'relocat', 'remote', 'berlin', 'europe', 'eu\\b', 'visa', 'sponsor')) {
+        return getT('aiChat.localResponses.dubai');
+    }
+    if (has('founder', 'waverider', 'company', 'startup', 'ceo', 'cto')) {
+        return getT('aiChat.localResponses.founder');
+    }
+    if (has('german', 'deutsch', 'language', 'sprach', 'citizen')) {
+        return getT('aiChat.localResponses.german');
+    }
+    if (has('ai\\b', 'genai', 'gen-ai', 'openai', 'rag', 'llm', 'vector', 'agent', 'ml\\b')) {
+        return getT('aiChat.localResponses.ai');
     }
     return getT('aiChat.localResponses.default');
 }

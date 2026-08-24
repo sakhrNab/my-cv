@@ -1,3 +1,14 @@
+// Terminal copy was hardcoded English and pre-retarget (it still said
+// "5,600+ AI agents", "2024-Present" and the hackathon line, in every language).
+// tt() reads the i18n value and falls back to the literal only if the key is absent.
+function tt(key, fallback) {
+    if (typeof window.t === 'function') {
+        const v = window.t(key);
+        if (typeof v === 'string' && v !== key) return v;
+    }
+    return fallback;
+}
+
 // Theme toggle
 function toggleTheme() {
     const c = document.documentElement.getAttribute('data-theme');
@@ -46,29 +57,29 @@ function handleTerminalInput(e) {
     let output = '';
     switch (cmd) {
         case 'help':
-            output = 'Commands: help, play, chat, skills, prompt, contact, experience, education, aiwaverider, founder, download, clear<br>Type "chat [message]" to talk with AI';
+            output = tt('terminalCommands.help', 'Commands: help, play, chat, skills, ai, contact, experience, education, products, founder, download, clear<br>Type "chat [message]" to talk with AI');
             break;
         case 'skills':
-            output = 'Gen AI • RAGs • Fine Tuning • AI Integration • Cloud Engineer (GCP) • Java • Spring Boot • Python • Prompt Engineering • Docker • K8s • OpenAI • n8n • React • Vue.js';
+            output = tt('terminalCommands.skillsOutput', 'TypeScript • Java 17/21 • Python • Rust • C++17 • Swift • Next.js • NestJS • Spring Boot • Tauri • Flutter • Remotion • RAG • vector search • agentic pipelines • Qdrant • Ollama • GCP (certified) • Docker • Kubernetes');
             break;
         case 'prompt':
         case 'promptengineering':
         case 'genai':
         case 'gen-ai':
-            output = '🤖 <span class="terminal-highlight">Gen AI & Cloud Engineer</span><br>→ RAGs (Retrieval-Augmented Generation) implementation<br>→ Fine Tuning for custom AI models<br>→ AI Integration into web applications<br>→ Crafted prompts for 5,600+ production AI agents<br>→ GCP Certified Cloud Engineer<br>→ Specialized in OpenAI GPT-4, Claude AI, Azure OpenAI<br>→ Advanced techniques: RAGs, LangChain, vector databases<br>→ Won global AI hackathon with Gen AI excellence';
+            output = tt('terminalCommands.aiOutput', '🤖 <span class="terminal-highlight">Gen-AI Engineering</span><br>→ RAG with vector search (Qdrant) and hybrid retrieval<br>→ Paragraph-aware chunking, embeddings chosen from a measured benchmark<br>→ Multi-provider LLM routing across 7 providers<br>→ Agentic pipelines with approval gates and proof-receipt verification<br>→ On-device inference: Ollama, GPU Whisper<br>→ Per-request cost accounting<br>→ GCP Certified Cloud Engineer');
             break;
         case 'contact':
             output = '📧 sakhr270@gmail.com | 📱 +49 1590 6455476 | 🌐 aiwaverider.com';
             break;
         case 'experience':
-            output = '→ Founder/CEO/CTO: AI Waverider (2024-Present)\n→ Senior Dev: Accenture (2022-Present)\n→ BMG, Innocean, Scopeland';
+            output = tt('terminalCommands.experienceOutput', '→ Founder, CEO & CTO: AI Waverider (2025-Present)<br>→ Senior Software Engineer: Accenture (2022-Present)<br>→ Scopeland, Innocean, BMG Rights Management');
             break;
         case 'education':
-            output = '🎓 HTW Berlin: B.Sc. Computer Science\n🎓 TU Berlin: Industrial Engineering';
+            output = tt('terminalCommands.educationOutput', '🎓 HTW Berlin: B.Sc. Applied Computer Science<br>🎓 TU Berlin: Industrial Engineering');
             break;
         case 'aiwaverider':
         case 'founder':
-            output = '🚀 <span class="terminal-highlight">Founder, CEO & CTO</span> | 5,600+ AI Agents | aiwaverider.com';
+            output = tt('terminalCommands.founderOutput', '🚀 <span class="terminal-highlight">Founder, CEO & CTO</span> | 23 production systems | RAG · vector search · agentic pipelines');
             break;
         case 'download':
             output = 'Generating CV... ✓';
