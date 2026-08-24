@@ -439,7 +439,7 @@
     "body": "Dear Sakhr AL-Absi,\n\nI came across your CV and I'm impressed by your expertise as a Senior Software Engineer and AI Solutions Architect. I would like to discuss a potential opportunity with you.\n\nPlease let me know your availability for a conversation.\n\nBest regards,\n[Your Name]\n[Your Position]\n[Your Company]"
   },
   "products": {
-    "title": "Selected Products &amp; Platforms",
+    "title": "Selected Products & Platforms",
     "subtitle": "Designed, built and operated end-to-end — 23 self-authored production systems, 5,612 commits.",
     "omnalu": {
       "name": "Omnalu (FlowState)",
@@ -515,7 +515,7 @@
     }
   },
   "integrations": {
-    "title": "Integrations &amp; AI Infrastructure",
+    "title": "Integrations & AI Infrastructure",
     "subtitle": "APIs and infrastructure wired into production systems, not tutorials.",
     "google": {
       "label": "Google",

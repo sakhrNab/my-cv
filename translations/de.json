@@ -439,7 +439,7 @@
     "body": "Sehr geehrter Sakhr AL-Absi,\n\nIch bin auf Ihren Lebenslauf gestoßen und bin beeindruckt von Ihrer Expertise als Senior Software Engineer und KI-Lösungsarchitekt. Ich würde gerne eine mögliche Gelegenheit mit Ihnen besprechen.\n\nBitte lassen Sie mich Ihre Verfügbarkeit für ein Gespräch wissen.\n\nMit freundlichen Grüßen,\n[Ihr Name]\n[Ihre Position]\n[Ihr Unternehmen]"
   },
   "products": {
-    "title": "Ausgewählte Produkte &amp; Plattformen",
+    "title": "Ausgewählte Produkte & Plattformen",
     "subtitle": "End-to-end entworfen, gebaut und betrieben — 23 eigenentwickelte produktive Systeme, 5.612 Commits.",
     "omnalu": {
       "name": "Omnalu (FlowState)",
@@ -515,7 +515,7 @@
     }
   },
   "integrations": {
-    "title": "Integrationen &amp; KI-Infrastruktur",
+    "title": "Integrationen & KI-Infrastruktur",
     "subtitle": "APIs und Infrastruktur, verdrahtet in produktiven Systemen — nicht in Tutorials.",
     "google": {
       "label": "Google",
