@@ -154,8 +154,6 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: 
 .terminal-window.open { display: block; animation: terminalOpen 0.3s ease; }
 @keyframes terminalOpen { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
 .terminal-header { background: #161b22; padding: 10px 15px; display: flex; align-items: center; gap: 8px; border-bottom: 1px solid #30363d; position: relative; }
-.terminal-close-btn { position: absolute; right: 10px; background: transparent; border: none; color: #fff; cursor: pointer; font-size: 1.2em; padding: 5px 10px; border-radius: 4px; transition: 0.3s; opacity: 0.7; }
-.terminal-close-btn:hover { opacity: 1; background: rgba(255,255,255,0.1); }
 .terminal-dot { width: 12px; height: 12px; border-radius: 50%; }
 .terminal-dot.red { background: #ff5f56; }
 .terminal-dot.yellow { background: #ffbd2e; }
@@ -856,7 +854,19 @@ body { font-family: 'Segoe UI', system-ui, sans-serif; line-height: 1.6; color: 
 [data-theme="dark"] .integration-chip { background: rgba(255,255,255,0.04); border-color: rgba(255,255,255,0.14); color: #cbd5e1; }
 
 /* Terminal: the red traffic light is a real close control, not decoration */
-button.terminal-dot { padding: 0; border: none; cursor: pointer; appearance: none; }
-button.terminal-dot.red:hover { filter: brightness(1.25); box-shadow: 0 0 0 3px rgba(255,95,86,0.25); }
+/* The terminal is styled as a macOS window, so the red traffic light IS the close
+   control - exactly as it is on macOS. A separate X on the right was redundant and
+   made two things look like the close button. macOS solves discoverability by
+   revealing the glyph inside the dot on hover; this does the same. */
+button.terminal-dot { padding: 0; border: none; appearance: none; cursor: pointer;
+  display: inline-flex; align-items: center; justify-content: center;
+  line-height: 1; position: relative; }
+button.terminal-dot.red::after { content: '✕'; font-size: 9px; font-weight: 700;
+  color: #6d0900; opacity: 0; transition: opacity 0.15s ease; }
+.terminal-header:hover button.terminal-dot.red::after,
+button.terminal-dot.red:focus-visible::after { opacity: 1; }
+button.terminal-dot.red:hover { filter: brightness(1.12); }
 button.terminal-dot:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+/* Yellow and green are decorative only - never read as interactive. */
+span.terminal-dot { cursor: default; }
 .ai-chat-offline { font-size: 0.78em; opacity: 0.75; font-style: italic; margin: 6px 0 2px; }

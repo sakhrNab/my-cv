@@ -75,10 +75,9 @@
     <div class="terminal-window" id="terminalWindow">
         <div class="terminal-header">
             <button class="terminal-dot red" onclick="toggleTerminal()" data-i18n-title="terminal.closeTitle" title="Close terminal" aria-label="Close terminal"></button>
-            <span class="terminal-dot yellow"></span>
-            <span class="terminal-dot green"></span>
+            <span class="terminal-dot yellow" aria-hidden="true"></span>
+            <span class="terminal-dot green" aria-hidden="true"></span>
             <span class="terminal-title" data-i18n="terminal.title">sakhr@berlin ~ bash</span>
-            <button class="terminal-close-btn" onclick="toggleTerminal()" data-i18n-title="terminal.closeTitle" title="Close terminal">✕</button>
         </div>
         <div class="terminal-body" id="terminalBody">
             <div class="terminal-line"><span class="terminal-prompt" data-i18n="terminal.prompt">sakhr@berlin:~$</span> <span class="terminal-command" data-i18n="terminal.whoami">whoami</span></div>
