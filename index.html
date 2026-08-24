@@ -57,7 +57,20 @@
             <li><a href="#education" data-i18n="nav.education">Education</a></li>
             <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
             <li><a href="#integrations" data-i18n="nav.integrations">Integrations</a></li>
-            <li><a href="#" onclick="downloadAllCertifications(); return false;" class="nav-btn-secondary"><i class="fas fa-certificate"></i> <span data-i18n="nav.certs">Certs</span></a></li><li><button onclick="toggleTheme()" class="theme-toggle">🌙</button></li><li><button onclick="generatePDF()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> <span data-i18n="nav.downloadCV">Download CV</span></button></li></ul>
+            <li><a href="#" onclick="downloadAllCertifications(); return false;" class="nav-btn-secondary"><i class="fas fa-certificate"></i> <span data-i18n="nav.certs">Certs</span></a></li>
+            <li class="lang-switcher-container">
+                <button class="lang-switcher-btn" id="langSwitcherBtn" onclick="toggleLangDropdown()" title="Change Language">
+                    <i class="fas fa-globe"></i> <span id="currentLangDisplay">EN</span> <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="lang-dropdown" id="langDropdown">
+                    <a href="#" onclick="changeLanguage('en'); return false;" class="lang-option" data-lang="en"><span class="lang-flag">🇬🇧</span> English</a>
+                    <a href="#" onclick="changeLanguage('de'); return false;" class="lang-option" data-lang="de"><span class="lang-flag">🇩🇪</span> Deutsch</a>
+                    <a href="#" onclick="changeLanguage('es'); return false;" class="lang-option" data-lang="es"><span class="lang-flag">🇪🇸</span> Español</a>
+                    <a href="#" onclick="changeLanguage('ar'); return false;" class="lang-option" data-lang="ar"><span class="lang-flag">🇸🇦</span> العربية</a>
+                </div>
+            </li>
+            <li><button onclick="toggleTheme()" class="theme-toggle">🌙</button></li>
+            <li><button onclick="generatePDF()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> <span data-i18n="nav.downloadCV">Download CV</span></button></li><li><button onclick="toggleTheme()" class="theme-toggle">🌙</button></li><li><button onclick="generatePDF()" class="nav-download-btn"><i class="fas fa-file-pdf"></i> <span data-i18n="nav.downloadCV">Download CV</span></button></li></ul>
     </div>
 </nav>
 
