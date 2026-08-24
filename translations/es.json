@@ -23,14 +23,13 @@
     "weapon": "🔫",
     "basic": "Básico",
     "close": "Cerrar",
-    "question": "¿Por qué contratar a Sakhr?",
     "hint": "Dispara habilidades <span class=\"correct\">VERDES</span> | Evita <span class=\"wrong\">ROJAS</span> | ¡Recolecta ⭐ para mejoras!",
     "controls": "← → o A/D para mover | ESPACIO o CLIC para disparar",
     "tips": "💡 ¡Cada nivel desbloquea mejoras de armas!",
     "levelComplete": "🏆 ¡NIVEL COMPLETADO!",
     "levelCleared": "¡Nivel {level} completado!",
     "scoreLabel": "Puntuación:",
-    "weaponUpgraded": "🎁 ¡Arma mejorada!",
+    "weaponUpgraded": "¡Arma mejorada!",
     "nextLevel": "Siguiente Nivel →",
     "gameOver": "💀 JUEGO TERMINADO",
     "finalScore": "Puntuación Final:",
@@ -38,7 +37,113 @@
     "restart": "🔄 Reiniciar",
     "victory": "¡FELICITACIONES!",
     "masteredSkills": "¡Has dominado todas las habilidades!",
-    "downloadCV": "📥 Descargar CV"
+    "downloadCV": "📥 Descargar CV",
+    "levels": [
+      {
+        "q": "¿Con qué construye?",
+        "correct": [
+          "TypeScript",
+          "Java 17/21",
+          "Rust",
+          "Python",
+          "Next.js",
+          "Spring Boot",
+          "NestJS",
+          "Tauri",
+          "PostgreSQL",
+          "Swift"
+        ],
+        "wrong": [
+          "Ruby on Rails",
+          "PHP / Laravel",
+          ".NET MAUI"
+        ]
+      },
+      {
+        "q": "¿Cómo construye sistemas de IA?",
+        "correct": [
+          "RAG",
+          "Qdrant",
+          "Hybrid search (RRF)",
+          "Chunking with overlap",
+          "Multi-provider LLM routing",
+          "MCP servers",
+          "Ollama",
+          "GPU Whisper",
+          "Per-request cost accounting",
+          "Approval gates"
+        ],
+        "wrong": [
+          "LangChain",
+          "AutoGPT",
+          "Pinecone"
+        ]
+      },
+      {
+        "q": "¿Dónde se ejecuta?",
+        "correct": [
+          "GCP (Certified ACE)",
+          "GKE",
+          "OpenShift",
+          "Kubernetes",
+          "Docker",
+          "Coolify",
+          "Traefik",
+          "Row-level security",
+          "On-premise",
+          "On-device"
+        ],
+        "wrong": [
+          "Heroku",
+          "Vercel-only",
+          "No CI"
+        ]
+      },
+      {
+        "q": "¿Cómo mantiene la honestidad del sistema?",
+        "correct": [
+          "Tenant isolation ×4",
+          "Proof receipts",
+          "Quality ratchet",
+          "Circuit breakers",
+          "Send governance gate",
+          "GDPR erasure",
+          "Cost caps",
+          "Render-parity test",
+          "CI guard script"
+        ],
+        "wrong": [
+          "Trust the model",
+          "Ship and hope",
+          "No rollback"
+        ]
+      },
+      {
+        "q": "¿Qué se ha entregado de verdad?",
+        "correct": [
+          "23 production systems",
+          "~5,900 commits",
+          "Live users",
+          "Signed macOS DMG",
+          "346-commit app",
+          "8 languages, 2 RTL",
+          "Real billing bug found",
+          "Solo, end-to-end"
+        ],
+        "wrong": [
+          "Prototype only",
+          "Never deployed",
+          "Demo data"
+        ]
+      }
+    ],
+    "weapons": [
+      "Básico",
+      "Disparo doble",
+      "Triple",
+      "Dispersión",
+      "Fuego rápido"
+    ]
   },
   "terminal": {
     "title": "sakhr@berlin ~ bash",

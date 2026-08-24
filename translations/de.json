@@ -16,21 +16,20 @@
     "integrations": "Integrationen"
   },
   "game": {
-    "title": "🚀 SAKHRS FÄHIGKEITS-HERAUFORDERUNG",
+    "title": "🚀 SAKHRS FÄHIGKEITS-HERAUSFORDERUNG",
     "score": "⭐",
     "level": "🎯 Level",
     "hits": "✓",
     "weapon": "🔫",
     "basic": "Basis",
     "close": "Schließen",
-    "question": "Warum Sakhr einstellen?",
     "hint": "Schieße auf <span class=\"correct\">GRÜNE</span> Fähigkeiten | Vermeide <span class=\"wrong\">ROTE</span> | Sammle ⭐ für Upgrades!",
     "controls": "← → oder A/D zum Bewegen | LEERTASTE oder KLICK zum Schießen",
     "tips": "💡 Jedes Level schaltet Waffen-Upgrades frei!",
     "levelComplete": "🏆 LEVEL GESCHAFFT!",
     "levelCleared": "Level {level} geschafft!",
     "scoreLabel": "Punkte:",
-    "weaponUpgraded": "🎁 Waffe verbessert!",
+    "weaponUpgraded": "Waffe verbessert!",
     "nextLevel": "Nächstes Level →",
     "gameOver": "💀 SPIEL VORBEI",
     "finalScore": "Endpunktzahl:",
@@ -38,7 +37,113 @@
     "restart": "🔄 Neustart",
     "victory": "GLÜCKWUNSCH!",
     "masteredSkills": "Du hast alle Fähigkeiten gemeistert!",
-    "downloadCV": "📥 Lebenslauf herunterladen"
+    "downloadCV": "📥 Lebenslauf herunterladen",
+    "levels": [
+      {
+        "q": "Womit baut er?",
+        "correct": [
+          "TypeScript",
+          "Java 17/21",
+          "Rust",
+          "Python",
+          "Next.js",
+          "Spring Boot",
+          "NestJS",
+          "Tauri",
+          "PostgreSQL",
+          "Swift"
+        ],
+        "wrong": [
+          "Ruby on Rails",
+          "PHP / Laravel",
+          ".NET MAUI"
+        ]
+      },
+      {
+        "q": "Wie baut er KI-Systeme?",
+        "correct": [
+          "RAG",
+          "Qdrant",
+          "Hybrid search (RRF)",
+          "Chunking with overlap",
+          "Multi-provider LLM routing",
+          "MCP servers",
+          "Ollama",
+          "GPU Whisper",
+          "Per-request cost accounting",
+          "Approval gates"
+        ],
+        "wrong": [
+          "LangChain",
+          "AutoGPT",
+          "Pinecone"
+        ]
+      },
+      {
+        "q": "Wo läuft es?",
+        "correct": [
+          "GCP (Certified ACE)",
+          "GKE",
+          "OpenShift",
+          "Kubernetes",
+          "Docker",
+          "Coolify",
+          "Traefik",
+          "Row-level security",
+          "On-premise",
+          "On-device"
+        ],
+        "wrong": [
+          "Heroku",
+          "Vercel-only",
+          "No CI"
+        ]
+      },
+      {
+        "q": "Wie hält er es ehrlich?",
+        "correct": [
+          "Tenant isolation ×4",
+          "Proof receipts",
+          "Quality ratchet",
+          "Circuit breakers",
+          "Send governance gate",
+          "GDPR erasure",
+          "Cost caps",
+          "Render-parity test",
+          "CI guard script"
+        ],
+        "wrong": [
+          "Trust the model",
+          "Ship and hope",
+          "No rollback"
+        ]
+      },
+      {
+        "q": "Was ist tatsächlich ausgeliefert?",
+        "correct": [
+          "23 production systems",
+          "~5,900 commits",
+          "Live users",
+          "Signed macOS DMG",
+          "346-commit app",
+          "8 languages, 2 RTL",
+          "Real billing bug found",
+          "Solo, end-to-end"
+        ],
+        "wrong": [
+          "Prototype only",
+          "Never deployed",
+          "Demo data"
+        ]
+      }
+    ],
+    "weapons": [
+      "Basis",
+      "Doppelschuss",
+      "Dreifach",
+      "Streuung",
+      "Schnellfeuer"
+    ]
   },
   "terminal": {
     "title": "sakhr@berlin ~ bash",

@@ -253,6 +253,18 @@ function updateAIChatContent() {
 }
 
 // Change language
+// Re-sync any live UI that i18n cannot express declaratively. The game holds
+// state (current level's question, current weapon) that data-i18n attributes
+// used to overwrite with level-1 defaults on every language change.
+function refreshDynamicUI() {
+    try {
+        if (typeof Game !== 'undefined' && Game && Game.running) {
+            if (typeof Game.updateQuestion === 'function') Game.updateQuestion();
+            if (typeof Game.updateUI === 'function') Game.updateUI();
+        }
+    } catch (e) { /* never let a re-render break language switching */ }
+}
+
 async function changeLanguage(lang) {
     await loadTranslation(lang);
     // Update HTML lang attribute
@@ -270,6 +282,7 @@ async function changeLanguage(lang) {
     // Close dropdown if open
     const dropdown = document.getElementById('langDropdown');
     if (dropdown) dropdown.classList.remove('show');
+    refreshDynamicUI();
 }
 
 // Update language switcher display

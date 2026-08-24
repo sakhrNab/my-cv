@@ -20,20 +20,33 @@ const Game = {
     wordRate: 1800,
     fireRate: 150,
     weaponLevel: 0,
-    weapons: [
+    get weapons() {
+        const names = (typeof window.t === 'function') ? window.t('game.weapons') : null;
+        return this.weaponsBase.map((w, i) =>
+            (Array.isArray(names) && names[i]) ? { ...w, name: names[i] } : w);
+    },
+    weaponsBase: [
         { name: 'Basic', bullets: 1, spread: 0, fireRate: 150 },
         { name: 'Dual Shot', bullets: 2, spread: 15, fireRate: 140 },
         { name: 'Triple', bullets: 3, spread: 20, fireRate: 130 },
         { name: 'Spread', bullets: 5, spread: 30, fireRate: 120 },
         { name: 'Rapid Fire', bullets: 3, spread: 15, fireRate: 80 }
     ],
-    questions: [
-        { q: "Why hire Sakhr?", correct: ["Java", "Spring Boot", "Rust", "Cloud", "Docker", "Microservices", "Founder", "CTO"], wrong: ["Outdated", "Legacy", "Slow"] },
-        { q: "What makes Sakhr ideal for AI?", correct: ["RAG", "Vector search", "Qdrant", "Agentic", "Ollama", "Embeddings", "LLM routing", "MCP"], wrong: ["No AI", "Basic", "Limited"] },
-        { q: "Why choose Sakhr for cloud?", correct: ["GCP", "Azure", "Kubernetes", "DevOps", "Docker", "CI/CD", "Coolify"], wrong: ["On-premise", "Old", "Manual"] },
-        { q: "What shows leadership?", correct: ["Team Lead", "Agile", "Offshore", "CEO", "CTO", "Founder", "Mentoring"], wrong: ["Solo", "Junior", "Isolated"] },
-        { q: "Why does he fit an EU-wide team?", correct: ["EU Citizen", "German C2", "English fluent", "Arabic", "Remote", "CET"], wrong: ["Visa Needed", "Monolingual"] }
+    // Content lives in translations/*.json under game.levels[] so it is
+    // translatable. These English sets are the fallback when i18n has not loaded.
+    // Previously the questions and all 62 chips were hardcoded here, so German,
+    // Spanish and Arabic players saw English regardless of the selected language.
+    questionsFallback: [
+        { q: "What does he build with?", correct: ["TypeScript","Java 17/21","Rust","Python","Next.js","Spring Boot","NestJS","Tauri","PostgreSQL","Swift"], wrong: ["Ruby on Rails","PHP / Laravel",".NET MAUI"] },
+        { q: "How does he build AI systems?", correct: ["RAG","Qdrant","Hybrid search (RRF)","Chunking with overlap","Multi-provider LLM routing","MCP servers","Ollama","GPU Whisper","Per-request cost accounting","Approval gates"], wrong: ["LangChain","AutoGPT","Pinecone"] },
+        { q: "Where does it run?", correct: ["GCP (Certified ACE)","GKE","OpenShift","Kubernetes","Docker","Coolify","Traefik","Row-level security","On-premise","On-device"], wrong: ["Heroku","Vercel-only","No CI"] },
+        { q: "How does he keep it honest?", correct: ["Tenant isolation x4","Proof receipts","Quality ratchet","Circuit breakers","Send governance gate","GDPR erasure","Cost caps","Render-parity test","CI guard script"], wrong: ["Trust the model","Ship and hope","No rollback"] },
+        { q: "What has actually shipped?", correct: ["23 production systems","~5,900 commits","Live users","Signed macOS DMG","346-commit app","8 languages, 2 RTL","Real billing bug found","Solo, end-to-end"], wrong: ["Prototype only","Never deployed","Demo data"] }
     ],
+    get questions() {
+        const v = (typeof window.t === 'function') ? window.t('game.levels') : null;
+        return (Array.isArray(v) && v.length) ? v : this.questionsFallback;
+    },
     currentQ: 0,
     start() {
         document.getElementById('gameOverlay').classList.add('active');
@@ -44,15 +57,33 @@ const Game = {
         this.running = false;
         if (this.raf) cancelAnimationFrame(this.raf);
         this.hideScreens();
+        this.teardown();
+    },
+    // init() attached window-level keydown/keyup/resize and never removed them, so
+    // after one play a handler permanently called preventDefault() on every Space
+    // keydown on the page, and Escape anywhere closed the game. Each launch added
+    // another copy. Bound references are kept so they can actually be detached.
+    teardown() {
+        if (!this._bound) return;
+        window.removeEventListener('resize', this._bound.resize);
+        window.removeEventListener('keydown', this._bound.keydown);
+        window.removeEventListener('keyup', this._bound.keyup);
+        this._bound = null;
     },
     init() {
         this.canvas = document.getElementById('gameCanvas');
         this.ctx = this.canvas.getContext('2d');
         this.resize();
         this.reset(true);
-        window.addEventListener('resize', () => this.resize());
-        window.addEventListener('keydown', e => this.keyDown(e));
-        window.addEventListener('keyup', e => this.keys[e.key] = false);
+        this.teardown();
+        this._bound = {
+            resize: () => this.resize(),
+            keydown: e => this.keyDown(e),
+            keyup: e => { this.keys[e.key] = false; }
+        };
+        window.addEventListener('resize', this._bound.resize);
+        window.addEventListener('keydown', this._bound.keydown);
+        window.addEventListener('keyup', this._bound.keyup);
         this.canvas.addEventListener('mousemove', e => {
             const r = this.canvas.getBoundingClientRect();
             this.mouseX = e.clientX - r.left;
@@ -297,6 +328,8 @@ const Game = {
         }
     },
     spawnWord() {
+        // Guard: currentQ can sit past the last level after victory.
+        if (!this.questions[this.currentQ]) return;
         const q = this.questions[this.currentQ];
         const isC = Math.random() > 0.35;
         const list = isC ? q.correct : q.wrong;
@@ -376,7 +409,8 @@ const Game = {
         const scoreEl = document.getElementById('levelScore');
         if (scoreEl) scoreEl.textContent = this.score;
         const rewardEl = document.getElementById('rewardText');
-        if (rewardEl) {
+        const maxed = this.weaponLevel >= this.weapons.length - 1;
+        if (rewardEl && !maxed) {
             const weapon = this.weapons[Math.min(this.weaponLevel, this.weapons.length - 1)].name;
             const label = (typeof window.t === 'function' && window.t('game.weaponUpgraded') !== 'game.weaponUpgraded')
                 ? window.t('game.weaponUpgraded')

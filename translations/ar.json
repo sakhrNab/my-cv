@@ -23,14 +23,13 @@
     "weapon": "🔫",
     "basic": "أساسي",
     "close": "إغلاق",
-    "question": "لماذا توظف صخر؟",
     "hint": "اطلق على المهارات <span class=\"correct\">الخضراء</span> | تجنب <span class=\"wrong\">الحمراء</span> | اجمع ⭐ للترقيات!",
-    "controls": "← → أو A/D للتحرك | SPACE أو CLICK لإطلاق النار",
+    "controls": "⁨← →⁩ أو ⁨A/D⁩ للتحرك | ⁨SPACE⁩ أو ⁨CLICK⁩ لإطلاق النار",
     "tips": "💡 كل مستوى يفتح ترقيات الأسلحة!",
     "levelComplete": "🏆 اكتمل المستوى!",
     "levelCleared": "تم إكمال المستوى {level}!",
     "scoreLabel": "النقاط:",
-    "weaponUpgraded": "🎁 تم ترقية السلاح!",
+    "weaponUpgraded": "تم ترقية السلاح!",
     "nextLevel": "المستوى التالي →",
     "gameOver": "💀 انتهت اللعبة",
     "finalScore": "النقاط النهائية:",
@@ -38,7 +37,113 @@
     "restart": "🔄 إعادة التشغيل",
     "victory": "تهانينا!",
     "masteredSkills": "لقد أتقنت جميع المهارات!",
-    "downloadCV": "📥 تحميل السيرة الذاتية"
+    "downloadCV": "📥 تحميل السيرة الذاتية",
+    "levels": [
+      {
+        "q": "بماذا يبني؟",
+        "correct": [
+          "TypeScript",
+          "Java 17/21",
+          "Rust",
+          "Python",
+          "Next.js",
+          "Spring Boot",
+          "NestJS",
+          "Tauri",
+          "PostgreSQL",
+          "Swift"
+        ],
+        "wrong": [
+          "Ruby on Rails",
+          "PHP / Laravel",
+          ".NET MAUI"
+        ]
+      },
+      {
+        "q": "كيف يبني أنظمة الذكاء الاصطناعي؟",
+        "correct": [
+          "RAG",
+          "Qdrant",
+          "Hybrid search (RRF)",
+          "Chunking with overlap",
+          "Multi-provider LLM routing",
+          "MCP servers",
+          "Ollama",
+          "GPU Whisper",
+          "Per-request cost accounting",
+          "Approval gates"
+        ],
+        "wrong": [
+          "LangChain",
+          "AutoGPT",
+          "Pinecone"
+        ]
+      },
+      {
+        "q": "أين يعمل؟",
+        "correct": [
+          "GCP (Certified ACE)",
+          "GKE",
+          "OpenShift",
+          "Kubernetes",
+          "Docker",
+          "Coolify",
+          "Traefik",
+          "Row-level security",
+          "On-premise",
+          "On-device"
+        ],
+        "wrong": [
+          "Heroku",
+          "Vercel-only",
+          "No CI"
+        ]
+      },
+      {
+        "q": "كيف يضمن صدق النظام؟",
+        "correct": [
+          "Tenant isolation ×4",
+          "Proof receipts",
+          "Quality ratchet",
+          "Circuit breakers",
+          "Send governance gate",
+          "GDPR erasure",
+          "Cost caps",
+          "Render-parity test",
+          "CI guard script"
+        ],
+        "wrong": [
+          "Trust the model",
+          "Ship and hope",
+          "No rollback"
+        ]
+      },
+      {
+        "q": "ما الذي جرى تسليمه فعلياً؟",
+        "correct": [
+          "23 production systems",
+          "~5,900 commits",
+          "Live users",
+          "Signed macOS DMG",
+          "346-commit app",
+          "8 languages, 2 RTL",
+          "Real billing bug found",
+          "Solo, end-to-end"
+        ],
+        "wrong": [
+          "Prototype only",
+          "Never deployed",
+          "Demo data"
+        ]
+      }
+    ],
+    "weapons": [
+      "أساسي",
+      "طلقة مزدوجة",
+      "ثلاثية",
+      "انتشار",
+      "نيران سريعة"
+    ]
   },
   "terminal": {
     "title": "sakhr@berlin ~ bash",
