@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sakhr AL-Absi | Ingeniero de Software Senior y Arquitecto Gen-AI | UE / Remoto",
-    "description": "Ingeniero de software senior y arquitecto Gen-AI con base en Berlín, en remoto por toda la UE. Certificado en GCP. Microservicios Spring Boot/Java para clientes Fortune 500 de banca y automoción en Accenture, además de un portafolio propio de sistemas Gen-AI en producción. Inglés C1, alemán C1, árabe nativo, español B1."
+    "description": "Ingeniero de software senior y arquitecto Gen-AI con base en Berlín, en remoto por toda la UE. Certificado en GCP. Microservicios Spring Boot/Java para clientes Fortune 500 de banca y automoción en Accenture, además de un portafolio propio de sistemas Gen-AI en producción. Inglés fluido, alemán C2, árabe nativo, español B1."
   },
   "nav": {
     "logo": "Sakhr AL-Absi",
@@ -55,7 +55,7 @@
     "catAiwaverider": "cat aiwaverider.txt",
     "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Fundador, CEO y CTO</span> | 5,600+ agentes de IA | Experto en Ingeniería de Prompts",
     "echoLanguages": "echo $LANGUAGES",
-    "languagesOutput": "Alemán (C1) | Inglés (C1) | Árabe (Nativo) | Español (B1)",
+    "languagesOutput": "Alemán (C2) | Inglés (fluido) | Árabe (Nativo) | Español (B1)",
     "catStatus": "cat status.txt",
     "statusOutput": "✓ Ciudadano de la UE · Berlín (CET) | Abierto a puestos remotos e híbridos en toda la UE",
     "placeholder": "Escribe 'help' para comandos...",
@@ -92,7 +92,7 @@
     "title": "Gen AI & Ingeniero Cloud (GCP Certificado) | Arquitecto Full Stack de Soluciones IA | Ingeniero de Software Senior | Fundador, CEO y CTO",
     "badges": {
       "germanCitizen": "📍 Berlín, Alemania",
-      "yearsGermany": "Alemán C1 · Inglés C1",
+      "yearsGermany": "Alemán C2 · Inglés fluido",
       "relocating": "Ciudadano de la UE · remoto o traslado dentro de la UE"
     },
     "uploadPhoto": "Subir<br>Foto",
@@ -107,7 +107,7 @@
       "corporate": "7+ años de experiencia corporativa en Accenture, BMG Rights Management, Innocean Europe",
       "apps": "11 aplicaciones construidas desde cero este año mientras trabajaba a tiempo completo",
       "hackathon": "Ganó hackathon global de IA integrando Azure OpenAI",
-      "languages": "Trilingüe: Alemán (C1), Inglés (C1), Árabe (Nativo)",
+      "languages": "Trilingüe: Alemán (C2), Inglés (fluido), Árabe (Nativo)",
       "available": "Ciudadano de la UE | Remoto, híbrido o presencial en toda la UE"
     },
     "footer": "Página {page}/{total} | Sakhr AL-Absi | Ingeniero de Software Senior y Arquitecto Gen-AI | UE / Remoto"
@@ -117,7 +117,7 @@
     "hook": "<strong>\"La era de la programación tradicional ha terminado.\"</strong> Combino 15+ años de disciplina de ingeniería alemana con orquestación de IA de vanguardia para construir sistemas empresariales en días, no meses.",
     "paragraph1": "Soy <strong>Ingeniero de Software Senior y Arquitecto Gen-AI</strong> con base en <strong>Berlín</strong> y trabajo con equipos de toda la UE. Con una doble formación en Informática Aplicada e Ingeniería Industrial (<strong>HTW Berlin y TU Berlin</strong>), conecto la ejecución técnica con el caso de negocio que la respalda.",
     "paragraph2": "En <strong>Accenture Alemania</strong> desarrollo microservicios Spring Boot/Java para clientes Fortune 500 de banca y automoción sobre OpenShift y Google Cloud. En paralelo, bajo <strong>AI Waverider</strong>, he diseñado, construido y operado mi propio portafolio de sistemas en producción: SaaS multiinquilino con Next.js, Prisma/PostgreSQL y BullMQ, con RAG, búsqueda vectorial, enrutado multiproveedor de LLM, pipelines agénticos y contabilidad de costes por petición.",
-    "paragraph3": "<strong>Lo que aporto:</strong> responsabilidad completa de punta a punta — aislamiento de inquilinos protegido por cuatro mecanismos independientes, un sistema de localización en ocho idiomas con una verificación de completitud que rompe la compilación, y el derecho de supresión del RGPD como recorrido de usuario probado. Mi idioma de trabajo es el inglés; el alemán C1 y el árabe nativo se suman cuando un equipo necesita ese alcance.",
+    "paragraph3": "<strong>Lo que aporto:</strong> responsabilidad completa de punta a punta — aislamiento de inquilinos protegido por cuatro mecanismos independientes, un sistema de localización en ocho idiomas con una verificación de completitud que rompe la compilación, y el derecho de supresión del RGPD como recorrido de usuario probado. Mi idioma de trabajo es el inglés; el alemán C2 y el árabe nativo se suman cuando un equipo necesita ese alcance.",
     "whyDubai": "<strong>Lo que busco:</strong> un puesto senior, de arquitectura o tech lead en un equipo de la UE — remote-first o híbrido — que esté llevando la Gen-AI a productos reales. Sin visado, sin patrocinio y sin papeleo de traslado: con pasaporte alemán puedo empezar en cualquier país de la UE/EEE.",
     "impactTitle": "Impacto de un Vistazo",
     "impact": {
@@ -131,7 +131,7 @@
     "title": "Resumen Profesional",
     "paragraph1": "<strong>Ciudadano alemán</strong> e Ingeniero de Software Senior con 7+ años en desarrollo empresarial, especializado en microservicios, tecnologías en la nube e integración de IA. Educado en las mejores universidades de Alemania (TU Berlin, HTW Berlin) con historial comprobado entregando para clientes Fortune 500 en finanzas y automotriz.",
     "paragraph2": "Conocido por <strong>excepcional ingenio</strong>. Construí 11 aplicaciones este año mientras trabajaba a tiempo completo en Accenture. Coordiné equipos offshore en 3 zonas horarias. Actualmente el <strong>Fundador, CEO y CTO</strong> de <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. Una plataforma con 5,600+ agentes de IA y flujos de trabajo de automatización.",
-    "paragraph3": "<strong>Valor Único:</strong> Precisión alemana + herencia árabe + fluidez en inglés. Trilingüe (Alemán C1, Inglés C1, Árabe Nativo) uniendo culturas europeas y del Medio Oriente."
+    "paragraph3": "<strong>Valor único:</strong> un ingeniero que entrega software regulado y en producción — supresión RGPD como recorrido probado, localización en ocho idiomas con una verificación que rompe la compilación, y contabilidad de costes de IA por petición. Trilingüe (alemán C2, inglés fluido, árabe nativo)."
   },
   "experience": {
     "title": "Experiencia Profesional",
@@ -356,7 +356,7 @@
     "hint": "<i class=\"fas fa-mouse-pointer\"></i> Haz clic en un idioma para cambiar el idioma del sitio web",
     "german": {
       "name": "Alemán",
-      "level": "C1 · Fluido"
+      "level": "C2 · Fluido"
     },
     "english": {
       "name": "Inglés",
@@ -397,7 +397,7 @@
       },
       "dubai": {
         "user": "¿Dónde puede trabajar Sakhr y qué busca?",
-        "bot": "<strong>Dónde puede trabajar</strong><br><br>🇪🇺 <strong>Ciudadano de la UE</strong> (pasaporte alemán) — sin visado ni patrocinio en la UE/EEE<br>🏠 <strong>Remote-first o híbrido</strong>, con base en Berlín (CET)<br>🏗️ Ingeniero senior, <strong>arquitecto de soluciones</strong> o tech lead<br>🤖 Equipos que llevan <strong>Gen-AI a productos reales</strong><br>🗣️ Inglés C1 · Alemán C1 · Árabe nativo · Español B1<br><br>Abierto a trasladarse dentro de la UE por el equipo adecuado."
+        "bot": "<strong>Dónde puede trabajar</strong><br><br>🇪🇺 <strong>Ciudadano de la UE</strong> (pasaporte alemán) — sin visado ni patrocinio en la UE/EEE<br>🏠 <strong>Remote-first o híbrido</strong>, con base en Berlín (CET)<br>🏗️ Ingeniero senior, <strong>arquitecto de soluciones</strong> o tech lead<br>🤖 Equipos que llevan <strong>Gen-AI a productos reales</strong><br>🗣️ Inglés fluido · Alemán C2 · Árabe nativo · Español B1<br><br>Abierto a trasladarse dentro de la UE por el equipo adecuado."
       },
       "interview": {
         "user": "¿Cómo puedo contactar a Sakhr?",

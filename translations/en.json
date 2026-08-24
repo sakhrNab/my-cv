@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sakhr AL-Absi | Senior Software Engineer & Gen-AI Architect | EU / Remote",
-    "description": "Berlin-based Senior Software Engineer and Gen-AI architect, working remotely across the EU. GCP-certified. Enterprise Java/Spring microservices for Fortune 500 banking and automotive clients at Accenture, plus a self-built portfolio of production Gen-AI systems: RAG, vector search, multi-provider LLM routing, agentic pipelines, multi-tenant SaaS. English C1, German C1, Arabic native, Spanish B1."
+    "description": "Berlin-based Senior Software Engineer and Gen-AI architect, working remotely across the EU. GCP-certified. Enterprise Java/Spring microservices for Fortune 500 banking and automotive clients at Accenture, plus a self-built portfolio of production Gen-AI systems: RAG, vector search, multi-provider LLM routing, agentic pipelines, multi-tenant SaaS. English fluent, German C2, Arabic native, Spanish B1."
   },
   "nav": {
     "logo": "Sakhr AL-Absi",
@@ -47,7 +47,7 @@
     "whoami": "whoami",
     "whoamiOutput": "Senior Software Engineer | Gen-AI Architect | Founder, CEO & CTO",
     "catExperience": "cat experience.txt",
-    "experience1": "→ <span class=\"terminal-highlight\">Berlin</span>, Germany · Deutsch C1",
+    "experience1": "→ <span class=\"terminal-highlight\">Berlin</span>, Germany · Deutsch C2",
     "experience2": "→ <span class=\"terminal-highlight\">7+ years</span> corporate (Accenture, BMG, Innocean)",
     "experience3": "→ Fortune 500 clients: German banks & auto OEMs",
     "lsAchievements": "ls achievements/",
@@ -55,7 +55,7 @@
     "catAiwaverider": "cat aiwaverider.txt",
     "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Founder, CEO & CTO</span> | 23 production systems | RAG · vector search · agentic pipelines",
     "echoLanguages": "echo $LANGUAGES",
-    "languagesOutput": "German (C1) | English (C1) | Arabic (Native) | Spanish (B1)",
+    "languagesOutput": "German (C2) | English (Fluent) | Arabic (Native) | Spanish (B1)",
     "catStatus": "cat status.txt",
     "statusOutput": "✓ EU citizen · Berlin (CET) | Open to remote & hybrid roles EU-wide",
     "placeholder": "Type 'help' for commands...",
@@ -92,7 +92,7 @@
     "title": "Gen AI & Cloud Engineer (GCP Certified) | Full Stack AI Solutions Architect | Senior Software Engineer | Founder, CEO & CTO",
     "badges": {
       "germanCitizen": "📍 Berlin, Germany",
-      "yearsGermany": "Deutsch C1 · English C1",
+      "yearsGermany": "Deutsch C2 · English fluent",
       "relocating": "EU Citizen · Remote or relocating within the EU"
     },
     "uploadPhoto": "Upload<br>Photo",
@@ -107,7 +107,7 @@
       "corporate": "7+ years corporate experience at Accenture, BMG Rights Management, Innocean Europe",
       "apps": "5,612 commits across the portfolio, built alongside full-time enterprise delivery",
       "hackathon": "Won global AI hackathon integrating Azure OpenAI",
-      "languages": "Trilingual: German (C1), English (C1), Arabic (Native)",
+      "languages": "Trilingual: German (C2), English (Fluent), Arabic (Native)",
       "available": "EU citizen | Remote, hybrid or on-site across the EU"
     },
     "footer": "Page {page}/{total} | Sakhr AL-Absi | Senior Software Engineer & Gen-AI Architect | EU / Remote"
@@ -117,7 +117,7 @@
     "hook": "<strong>\"Most AI never reaches production.\"</strong> I take systems from an empty repository to a running service — schema, queues, auth, tenant isolation, deployment, cost control — and I write the postmortem when they break.",
     "paragraph1": "I am a <strong>Senior Software Engineer and Gen-AI Architect</strong> based in <strong>Berlin</strong>, working with teams across the EU. With a dual background in Applied Computer Science and Industrial Engineering from <strong>HTW Berlin & TU Berlin</strong>, I bridge technical delivery and the business case behind it.",
     "paragraph2": "At <strong>Accenture Germany</strong> I build Spring Boot / Java microservices for Fortune 500 banking and automotive clients on OpenShift and Google Cloud. In parallel, under <strong>AI Waverider</strong>, I have designed, built and operated my own portfolio of production systems — multi-tenant SaaS on Next.js, Prisma/PostgreSQL and BullMQ, with RAG, vector search, multi-provider LLM routing, agentic pipelines and per-request cost accounting.",
-    "paragraph3": "<strong>What I bring:</strong> full end-to-end ownership — tenant isolation guarded by four independent mechanisms, an 8-language localisation system with a build-failing completeness gate, and GDPR right-to-erasure implemented as a tested user journey. I work in English day to day, and add <strong>German C1 and native Arabic</strong> where a team needs the reach.",
+    "paragraph3": "<strong>What I bring:</strong> full end-to-end ownership — tenant isolation guarded by four independent mechanisms, an 8-language localisation system with a build-failing completeness gate, and GDPR right-to-erasure implemented as a tested user journey. I work in English day to day, and add <strong>German C2 and native Arabic</strong> where a team needs the reach.",
     "whyDubai": "<strong>What I'm looking for:</strong> a senior engineering, architecture or tech-lead role with an EU-based team — remote-first or hybrid — that is putting Gen-AI into real products. No visa, no sponsorship, no relocation paperwork: a German passport means I can start anywhere in the EU/EEA.",
     "impactTitle": "Impact at a Glance",
     "impact": {
@@ -131,7 +131,7 @@
     "title": "Professional Summary",
     "paragraph1": "Senior Software Engineer based in Berlin with 7+ years in enterprise development, specializing in microservices, cloud-native architecture and production Gen-AI systems.",
     "paragraph2": "Known for <strong>end-to-end ownership</strong>. Designed, built and operated 23 self-authored production systems alongside full-time enterprise delivery. Coordinated offshore teams across 3 time zones. Founder, CEO & CTO of <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>, a storefront publishing a curated library of 5,600+ n8n automation workflows.",
-    "paragraph3": "<strong>Unique value:</strong> an EU citizen who ships regulated, production software — GDPR erasure as a tested journey, 8-language localisation with a build-failing gate, and per-request AI cost accounting. Trilingual (German C1, English C1, Arabic native)."
+    "paragraph3": "<strong>Unique value:</strong> an EU citizen who ships regulated, production software — GDPR erasure as a tested journey, 8-language localisation with a build-failing gate, and per-request AI cost accounting. Trilingual (German C2, English fluent, Arabic native)."
   },
   "experience": {
     "title": "Professional Experience",
@@ -356,7 +356,7 @@
     "hint": "<i class=\"fas fa-mouse-pointer\"></i> Click on a language to change the website language",
     "german": {
       "name": "German",
-      "level": "C1 · Fluent"
+      "level": "C2 · Fluent"
     },
     "english": {
       "name": "English",
@@ -389,7 +389,7 @@
     "responses": {
       "background": {
         "user": "Tell me about Sakhr's background",
-        "bot": "<strong>Senior Engineer & Builder</strong><br><br>🏢 <strong>Accenture Germany</strong> — Fortune 500 banking & automotive<br>🎓 <strong>TU Berlin</strong> & <strong>HTW Berlin</strong><br>📍 Based in <strong>Berlin</strong><br>🗣️ Deutsch C1 · English C1 · Arabic native"
+        "bot": "<strong>Senior Engineer & Builder</strong><br><br>🏢 <strong>Accenture Germany</strong> — Fortune 500 banking & automotive<br>🎓 <strong>TU Berlin</strong> & <strong>HTW Berlin</strong><br>📍 Based in <strong>Berlin</strong><br>🗣️ Deutsch C2 · English fluent · Arabic native"
       },
       "founder": {
         "user": "Tell me about AI Waverider",
@@ -397,7 +397,7 @@
       },
       "dubai": {
         "user": "Where can Sakhr work, and what is he looking for?",
-        "bot": "<strong>Where he can work</strong><br><br>🇪🇺 <strong>EU citizen</strong> (German passport) — no visa or sponsorship anywhere in the EU/EEA<br>🏠 <strong>Remote-first or hybrid</strong>, based in Berlin (CET)<br>🏗️ Senior engineer, <strong>solutions architect</strong> or tech lead<br>🤖 Teams shipping <strong>Gen-AI into real products</strong><br>🗣️ English C1 · German C1 · Arabic native · Spanish B1<br><br>Open to relocation within the EU for the right team."
+        "bot": "<strong>Where he can work</strong><br><br>🇪🇺 <strong>EU citizen</strong> (German passport) — no visa or sponsorship anywhere in the EU/EEA<br>🏠 <strong>Remote-first or hybrid</strong>, based in Berlin (CET)<br>🏗️ Senior engineer, <strong>solutions architect</strong> or tech lead<br>🤖 Teams shipping <strong>Gen-AI into real products</strong><br>🗣️ English fluent · German C2 · Arabic native · Spanish B1<br><br>Open to relocation within the EU for the right team."
       },
       "interview": {
         "user": "How can I contact Sakhr?",
@@ -415,7 +415,7 @@
     },
     "localResponses": {
       "founder": "<strong>Founder, CEO & CTO of AI Waverider</strong><br><br>23 self-authored production systems (5,612 commits) built alongside full-time work at Accenture. Stack: Next.js, Node.js, Python, Rust, PostgreSQL, GCP.",
-      "german": "Based in Berlin, educated at TU Berlin and HTW Berlin, with 7+ years of enterprise delivery at Accenture Germany. Works in German (C1) and English (C1).",
+      "german": "Based in Berlin, educated at TU Berlin and HTW Berlin, with 7+ years of enterprise delivery at Accenture Germany. Works in German (C2) and English (Fluent).",
       "dubai": "Sakhr is an EU citizen based in Berlin (CET). He works remotely across the EU and can relocate within the EU/EEA without a visa or sponsorship.",
       "ai": "<strong>Gen AI & Cloud Engineer.</strong> Production RAG with vector search (Qdrant), multi-provider LLM routing across 7 providers, agentic pipelines, and offline on-device inference via Ollama and GPU Whisper. Chunking and embedding strategy chosen from a measured benchmark, not a guess. GCP Certified Cloud Engineer.",
       "available": "<strong>Open to new roles.</strong> Remote, hybrid or on-site anywhere in the EU — full-time or contract. Standard German notice periods apply.",

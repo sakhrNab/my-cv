@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sakhr AL-Absi | Senior Software Engineer & Gen-AI-Architekt | EU / Remote",
-    "description": "Senior Software Engineer und Gen-AI-Architekt mit Sitz in Berlin, remote in der gesamten EU. GCP-zertifiziert. Spring-Boot-/Java-Microservices für Fortune-500-Kunden aus Banking und Automotive bei Accenture sowie ein eigenes Portfolio produktiver Gen-AI-Systeme: RAG, Vektorsuche, Multi-Provider-LLM-Routing, agentische Pipelines, mandantenfähige SaaS. Englisch C1, Deutsch C1, Arabisch Muttersprache, Spanisch B1."
+    "description": "Senior Software Engineer und Gen-AI-Architekt mit Sitz in Berlin, remote in der gesamten EU. GCP-zertifiziert. Spring-Boot-/Java-Microservices für Fortune-500-Kunden aus Banking und Automotive bei Accenture sowie ein eigenes Portfolio produktiver Gen-AI-Systeme: RAG, Vektorsuche, Multi-Provider-LLM-Routing, agentische Pipelines, mandantenfähige SaaS. Englisch fließend, Deutsch C2, Arabisch Muttersprache, Spanisch B1."
   },
   "nav": {
     "logo": "Sakhr AL-Absi",
@@ -47,7 +47,7 @@
     "whoami": "whoami",
     "whoamiOutput": "Senior Software Engineer | Gen-AI-Architekt | Gründer, CEO & CTO",
     "catExperience": "cat experience.txt",
-    "experience1": "→ <span class=\"terminal-highlight\">Berlin</span>, Deutschland · Deutsch C1",
+    "experience1": "→ <span class=\"terminal-highlight\">Berlin</span>, Deutschland · Deutsch C2",
     "experience2": "→ <span class=\"terminal-highlight\">7+ Jahre</span> Unternehmen (Accenture, BMG, Innocean)",
     "experience3": "→ Fortune 500 Kunden: Deutsche Banken & Auto-OEMs",
     "lsAchievements": "ls achievements/",
@@ -55,7 +55,7 @@
     "catAiwaverider": "cat aiwaverider.txt",
     "aiwaveriderOutput": "🚀 <span class=\"terminal-highlight\">Gründer, CEO & CTO</span> | 23 produktive Systeme | RAG · Vektorsuche · agentische Pipelines",
     "echoLanguages": "echo $LANGUAGES",
-    "languagesOutput": "Deutsch (C1) | Englisch (C1) | Arabisch (Muttersprache) | Spanisch (B1)",
+    "languagesOutput": "Deutsch (C2) | Englisch (fließend) | Arabisch (Muttersprache) | Spanisch (B1)",
     "catStatus": "cat status.txt",
     "statusOutput": "✓ EU-Bürger · Berlin (MEZ) | Offen für Remote- und Hybrid-Rollen EU-weit",
     "placeholder": "Tippe 'help' für Befehle...",
@@ -92,7 +92,7 @@
     "title": "Gen AI & Cloud Engineer (GCP zertifiziert) | Full Stack KI-Lösungsarchitekt | Senior Software Engineer | Gründer, CEO & CTO",
     "badges": {
       "germanCitizen": "📍 Berlin, Deutschland",
-      "yearsGermany": "Deutsch C1 · Englisch C1",
+      "yearsGermany": "Deutsch C2 · Englisch fließend",
       "relocating": "EU-Bürger · remote oder Umzug innerhalb der EU"
     },
     "uploadPhoto": "Foto<br>hochladen",
@@ -107,7 +107,7 @@
       "corporate": "7+ Jahre Unternehmenserfahrung bei Accenture, BMG Rights Management, Innocean Europe",
       "apps": "5.612 Commits im Portfolio, parallel zur Vollzeit-Enterprise-Tätigkeit entstanden",
       "hackathon": "Gewann globalen KI-Hackathon durch Integration von Azure OpenAI",
-      "languages": "Dreisprachig: Deutsch (C1), Englisch (C1), Arabisch (Muttersprache)",
+      "languages": "Dreisprachig: Deutsch (C2), Englisch (fließend), Arabisch (Muttersprache)",
       "available": "EU-Bürger | Remote, hybrid oder vor Ort in der gesamten EU"
     },
     "footer": "Seite {page}/{total} | Sakhr AL-Absi | Senior Software Engineer & Gen-AI-Architekt | EU / Remote"
@@ -117,7 +117,7 @@
     "hook": "<strong>\"Die meiste KI erreicht nie den Produktivbetrieb.\"</strong> Ich bringe Systeme vom leeren Repository bis zum laufenden Dienst — Datenmodell, Queues, Auth, Mandantentrennung, Deployment, Kostenkontrolle — und schreibe die Fehleranalyse, wenn etwas kaputtgeht.",
     "paragraph1": "Ich bin <strong>Senior Software Engineer und Gen-AI-Architekt</strong> mit Sitz in <strong>Berlin</strong> und arbeite mit Teams in der gesamten EU. Mit einem doppelten Hintergrund in Angewandter Informatik und Wirtschaftsingenieurwesen (<strong>HTW Berlin & TU Berlin</strong>) verbinde ich technische Umsetzung mit dem dahinterliegenden Geschäftsnutzen.",
     "paragraph2": "Bei <strong>Accenture Deutschland</strong> entwickle ich Spring-Boot-/Java-Microservices für Fortune-500-Kunden aus Banking und Automotive auf OpenShift und Google Cloud. Parallel habe ich unter <strong>AI Waverider</strong> ein eigenes Portfolio produktiver Systeme entworfen, gebaut und betrieben: mandantenfähige SaaS auf Next.js, Prisma/PostgreSQL und BullMQ, mit RAG, Vektorsuche, Multi-Provider-LLM-Routing, agentischen Pipelines und Kostenerfassung pro Request.",
-    "paragraph3": "<strong>Was ich mitbringe:</strong> vollständige Verantwortung — Mandantentrennung, abgesichert durch vier unabhängige Mechanismen, ein achtsprachiges Lokalisierungssystem mit build-brechendem Vollständigkeits-Gate und das DSGVO-Recht auf Löschung als getestete User Journey. Meine Arbeitssprache ist Englisch; Deutsch C1 und Arabisch als Muttersprache kommen dazu, wo ein Team die Reichweite braucht.",
+    "paragraph3": "<strong>Was ich mitbringe:</strong> vollständige Verantwortung — Mandantentrennung, abgesichert durch vier unabhängige Mechanismen, ein achtsprachiges Lokalisierungssystem mit build-brechendem Vollständigkeits-Gate und das DSGVO-Recht auf Löschung als getestete User Journey. Meine Arbeitssprache ist Englisch; Deutsch C2 und Arabisch als Muttersprache kommen dazu, wo ein Team die Reichweite braucht.",
     "whyDubai": "<strong>Wonach ich suche:</strong> eine Senior-, Architektur- oder Tech-Lead-Rolle in einem EU-Team — remote-first oder hybrid — das Gen-AI in echte Produkte bringt. Kein Visum, keine Sponsorship, kein Umzugspapierkram: mit einem deutschen Pass kann ich überall in der EU/im EWR sofort anfangen.",
     "impactTitle": "Auswirkungen auf einen Blick",
     "impact": {
@@ -131,7 +131,7 @@
     "title": "Berufliche Zusammenfassung",
     "paragraph1": "<strong>Deutscher Staatsbürger</strong> und Senior Software Engineer mit 7+ Jahren in der Unternehmensentwicklung, spezialisiert auf Microservices, Cloud-Technologien und KI-Integration. Ausgebildet an Deutschlands Top-Universitäten (TU Berlin, HTW Berlin) mit nachgewiesener Erfolgsbilanz für Fortune 500 Finanz- und Automobilkunden.",
     "paragraph2": "Bekannt für <strong>außergewöhnliche Ressourcen</strong>. 11 Anwendungen dieses Jahr gebaut, während ich Vollzeit bei Accenture arbeitete. Koordinierte Offshore-Teams über 3 Zeitzonen. Derzeit <strong>Gründer, CEO & CTO</strong> von <a href=\"https://www.aiwaverider.com\" target=\"_blank\" class=\"business-link\">AI Waverider</a>. Eine Plattform mit 5.600+ KI-Agenten und Automatisierungsworkflows.",
-    "paragraph3": "<strong>Besonderer Wert:</strong> ein EU-Bürger, der regulierte, produktive Software ausliefert — DSGVO-Löschung als getestete Journey, achtsprachige Lokalisierung mit build-brechendem Gate und KI-Kostenerfassung pro Request. Dreisprachig (Deutsch C1, Englisch C1, Arabisch Muttersprache)."
+    "paragraph3": "<strong>Besonderer Wert:</strong> ein EU-Bürger, der regulierte, produktive Software ausliefert — DSGVO-Löschung als getestete Journey, achtsprachige Lokalisierung mit build-brechendem Gate und KI-Kostenerfassung pro Request. Dreisprachig (Deutsch C2, Englisch fließend, Arabisch Muttersprache)."
   },
   "experience": {
     "title": "Berufserfahrung",
@@ -356,7 +356,7 @@
     "hint": "<i class=\"fas fa-mouse-pointer\"></i> Klicken Sie auf eine Sprache, um die Website-Sprache zu ändern",
     "german": {
       "name": "Deutsch",
-      "level": "C1 · Verhandlungssicher"
+      "level": "C2 · Verhandlungssicher"
     },
     "english": {
       "name": "Englisch",
@@ -389,7 +389,7 @@
     "responses": {
       "background": {
         "user": "Erzählen Sie mir über Sakhrs Hintergrund",
-        "bot": "<strong>Senior Engineer & Entwickler</strong><br><br>🏢 <strong>Accenture Deutschland</strong> — Fortune-500-Kunden aus Banking & Automotive<br>🎓 <strong>TU Berlin</strong> & <strong>HTW Berlin</strong><br>📍 Standort <strong>Berlin</strong><br>🗣️ Deutsch C1 · Englisch C1 · Arabisch Muttersprache"
+        "bot": "<strong>Senior Engineer & Entwickler</strong><br><br>🏢 <strong>Accenture Deutschland</strong> — Fortune-500-Kunden aus Banking & Automotive<br>🎓 <strong>TU Berlin</strong> & <strong>HTW Berlin</strong><br>📍 Standort <strong>Berlin</strong><br>🗣️ Deutsch C2 · Englisch fließend · Arabisch Muttersprache"
       },
       "founder": {
         "user": "Erzählen Sie mir über AI Waverider",
@@ -397,7 +397,7 @@
       },
       "dubai": {
         "user": "Wo kann Sakhr arbeiten und was sucht er?",
-        "bot": "<strong>Wo er arbeiten kann</strong><br><br>🇪🇺 <strong>EU-Bürger</strong> (deutscher Pass) — kein Visum, keine Sponsorship in EU/EWR<br>🏠 <strong>Remote-first oder hybrid</strong>, Standort Berlin (MEZ)<br>🏗️ Senior Engineer, <strong>Solutions Architect</strong> oder Tech Lead<br>🤖 Teams, die <strong>Gen-AI in echte Produkte</strong> bringen<br>🗣️ Englisch C1 · Deutsch C1 · Arabisch Muttersprache · Spanisch B1<br><br>Umzug innerhalb der EU für das richtige Team möglich."
+        "bot": "<strong>Wo er arbeiten kann</strong><br><br>🇪🇺 <strong>EU-Bürger</strong> (deutscher Pass) — kein Visum, keine Sponsorship in EU/EWR<br>🏠 <strong>Remote-first oder hybrid</strong>, Standort Berlin (MEZ)<br>🏗️ Senior Engineer, <strong>Solutions Architect</strong> oder Tech Lead<br>🤖 Teams, die <strong>Gen-AI in echte Produkte</strong> bringen<br>🗣️ Englisch fließend · Deutsch C2 · Arabisch Muttersprache · Spanisch B1<br><br>Umzug innerhalb der EU für das richtige Team möglich."
       },
       "interview": {
         "user": "Wie kann ich Sakhr kontaktieren?",
@@ -415,7 +415,7 @@
     },
     "localResponses": {
       "founder": "<strong>Gründer, CEO & CTO von AI Waverider</strong><br><br>Gebaut 5.600+ KI-Agenten & Automatisierungsworkflows während Vollzeitbeschäftigung bei Accenture. Full-Stack-Plattform: React, Node.js, Python, GCP.",
-      "german": "Standort Berlin, Studium an der TU Berlin und HTW Berlin, 7+ Jahre Enterprise-Delivery bei Accenture Deutschland. Arbeitssprachen Deutsch (C1) und Englisch (C1).",
+      "german": "Standort Berlin, Studium an der TU Berlin und HTW Berlin, 7+ Jahre Enterprise-Delivery bei Accenture Deutschland. Arbeitssprachen Deutsch (C2) und Englisch (fließend).",
       "dubai": "Sakhr ist EU-Bürger mit Sitz in Berlin (MEZ). Er arbeitet remote in der gesamten EU und kann ohne Visum oder Sponsorship innerhalb der EU/des EWR umziehen.",
       "ai": "Gewann globalen KI-Hackathon. Baute AI Waverider mit 5.600+ Agenten. <strong>Gen AI & Cloud Engineer</strong>, spezialisiert auf RAGs (Retrieval-Augmented Generation), Fine Tuning und KI-Integration in Webanwendungen. Experte in der Erstellung hochperformanter Prompts, OpenAI, Claude, n8n, LangChain und modernen Gen AI Architekturmustern. GCP zertifizierter Cloud Engineer.",
       "available": "<strong>Offen für neue Rollen.</strong> Remote, hybrid oder vor Ort in der gesamten EU — Vollzeit oder Freelance. Unter Beachtung der üblichen deutschen Kündigungsfristen.",

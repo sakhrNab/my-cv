@@ -53,7 +53,7 @@ Key points about Sakhr:
 - Built AI Waverider platform with 5,600+ free AI agents
 - Led digital transformation projects for Fortune 500 companies in finance and automotive sectors
 - Optimized systems increasing efficiency by 35%
-- Fluent in German (C1), English (C1), Arabic (Native), Spanish (B1)
+- German (C2), English (Fluent), Arabic (Native), Spanish (B1)
 - Based in Berlin, Germany - experienced with German companies and culture
 - Currently at Accenture GmbH, open to new opportunities
 - Contact: sakhr270@gmail.com, +49 1590 6455476, Berlin, Germany
