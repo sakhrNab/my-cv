@@ -10,7 +10,8 @@
     "experience": "الخبرة",
     "skills": "المهارات",
     "certs": "الشهادات",
-    "downloadCV": "تحميل السيرة الذاتية"
+    "downloadCV": "تحميل السيرة الذاتية",
+    "products": "المنتجات"
   },
   "game": {
     "title": "🚀 تحدي مهارات صخر",
@@ -442,5 +443,117 @@
   "email": {
     "subject": "استفسار فرصة عمل",
     "body": "عزيزي صخر العبسي،\n\nصادفت سيرتك الذاتية وأنا معجب بخبرتك كمهندس برمجيات أول ومهندس أنظمة الذكاء الاصطناعي. أود مناقشة فرصة محتملة معك.\n\nيرجى إعلامي بمدى توفرك لمحادثة.\n\nمع أطيب التحيات،\n[اسمك]\n[منصبك]\n[شركتك]"
+  },
+  "products": {
+    "title": "منتجات ومنصّات مختارة",
+    "subtitle": "صُمِّمت وبُنيت وشُغِّلت من الطرف إلى الطرف — 23 نظاماً إنتاجياً من تأليفي، و5,612 إيداعاً.",
+    "omnalu": {
+      "name": "Omnalu (FlowState)",
+      "tag": "Desktop · Rust",
+      "desc": "ذكاء اصطناعي مكتبي يعمل دون اتصال أولاً: تفريغ صوتي عبر <bdi>Whisper</bdi> على وحدة المعالجة الرسومية مع اختيار خلفية <bdi>Metal/CUDA/Vulkan</bdi> أثناء التشغيل، والتقاط صوت النظام عبر <bdi>ScreenCaptureKit</bdi> لتفريغ طرفَي المكالمة حتى مع السماعات، وخط زمني للشاشة بتقنية <bdi>Vision OCR</bdi> بلغة <bdi>Swift</bdi> مرتبط بثنائية <bdi>Rust</bdi> عبر واجهة <bdi>C ABI</bdi> مكتوبة يدوياً، وتصدير نتائج الاجتماع إلى <bdi>DOCX</bdi> أو شرائح عرض.",
+      "stack": "Rust · Tauri · Swift · whisper.cpp · Deepgram · ScreenCaptureKit · Vision OCR"
+    },
+    "emailai": {
+      "name": "EmailAI",
+      "tag": "Multi-tenant SaaS",
+      "desc": "أتمتة بريد إلكتروني متعددة المستأجرين: 108 نماذج بيانات و172 ترحيلاً وأكثر من 20 عاملاً على <bdi>BullMQ</bdi>. يُفرَض العزل بين المستأجرين عبر أربع آليات مستقلة — حارس استعلامات أثناء التشغيل، وقاعدة <bdi>ESLint</bdi>، وبرنامج تدقيق ساكن، ومهمة تكامل مستمر مخصّصة. ويتضمّن مستوى تحكّم كاملاً بقابلية التسليم: فحص <bdi>SPF/DKIM/DMARC</bdi>، واستيعاب تقارير <bdi>DMARC</bdi> المجمّعة مع تصعيد، وبيانات السمعة من <bdi>Google Postmaster</bdi> و<bdi>Microsoft SNDS</bdi>، وتسخين صناديق البريد، وتحويل قابل للتراجع لكل نطاق.",
+      "stack": "Next.js · PostgreSQL/Prisma · BullMQ/Redis · Qdrant · Gmail API · Microsoft Graph · IMAP/SMTP"
+    },
+    "leadoutbound": {
+      "name": "Lead Outbound AI",
+      "tag": "Live · real users",
+      "desc": "منصّة توليد عملاء محتملين تعمل في الإنتاج. خمسة مزوّدين — <bdi>Apollo</bdi> و<bdi>Hunter</bdi> و<bdi>Google Places</bdi> و<bdi>OpenStreetMap</bdi> و<bdi>Instantly</bdi> — جرى توحيدهم خلف نوع واحد للعميل المحتمل، مع إثراء مشروط بالتقييم يرفض إنفاق الرصيد على العملاء منخفضي القيمة. وكشفت محاسبة التكلفة بالدولار لكل مزوّد خطأ فوترة حقيقياً. ويُفرَض تعدد المستأجرين عبر 32 سياسة أمان على مستوى الصف في <bdi>Postgres</bdi>.",
+      "stack": "Next.js · Supabase/PostgreSQL RLS · Apollo · Hunter · Google Places · Gemini grounding"
+    },
+    "contentfactory": {
+      "name": "Content Factory",
+      "tag": "Multi-brand platform",
+      "desc": "منصّة إنتاج محتوى متعددة المستأجرين. يُصيّر <bdi>Remotion</bdi> الفيديو برمجياً، ويقود التعليق الصوتي من <bdi>ElevenLabs</bdi> التوقيت على مستوى المقطع بحيث تقع القطعات عند حدود الجمل، ويوفّر <bdi>HeyGen</bdi> الشخصيات الرمزية لكل مقطع، ويولّد <bdi>Vertex AI</bdi> الصور الثابتة. وترفض ثلاث بوابات جودة أي مخرجات معطوبة، مع بيانات اعتماد مشفّرة لكل علامة تجارية وسقوف إنفاق واختبار تطابق تصيير على مستوى البايت.",
+      "stack": "Remotion · Node.js · ElevenLabs · HeyGen · Vertex AI · MinIO/S3 · PostgreSQL"
+    },
+    "ralph": {
+      "name": "Ralph — Autonomous Coding Loop",
+      "tag": "Agentic AI",
+      "desc": "مستوى تحكّم للبرمجة الذاتية لا يستطيع فيه الوكيل اعتماد عمله بنفسه. اختيار المهام حتميّ وتملكه الصدفة البرمجية لا النموذج؛ ولا تُعتبر المهمة ناجحة إلا بإيصال إثبات قابل للتحقق آلياً؛ وسقّاطة جودة تجعل تراجع عدد المهام الناجحة مستحيلاً حسابياً؛ وأربعة قواطع دارة مصنّفة توقف الإنفاق الجامح؛ وتُصعَّد التشغيلات المحجوبة إلى صندوق قرارات بشري. أوصل 114 مهمة إلى 112 ناجحة وأنتج تطبيقاً إنتاجياً بـ346 إيداعاً.",
+      "stack": "Bash · Node.js · Claude Agent SDK · SSE · proof receipts · quality ratchet"
+    },
+    "zelavi": {
+      "name": "Zelavi",
+      "tag": "Regulated marketplace",
+      "desc": "سوق للعلاج النفسي عن بُعد مبنيّ وفق معيار تنظيمي. النهج قائم على العقد: 85 عملية <bdi>OpenAPI</bdi> تقابل المسارات وعميل <bdi>Dart</bdi> المولّد واحداً لواحد، ويفشل فحص الأنواع نفسه عند أي انحراف. تُشتق مفاتيح كل محادثة عبر <bdi>HKDF</bdi> بخوارزمية <bdi>AES-256-GCM</bdi>، ولا تملك الواجهة البرمجية دالة فك تشفير بحكم التصميم. وحق المحو وفق اللائحة الأوروبية مُنفَّذ كمسار مستخدم مُختبَر بالكامل.",
+      "stack": "NestJS · PostgreSQL/PostGIS · Flutter · LiveKit · Stripe Connect · 8 languages, 2 RTL"
+    },
+    "wavecode": {
+      "name": "Wavecode",
+      "tag": "Agentic IDE",
+      "desc": "بيئة تطوير برمجية وكيلية متعددة المزوّدين: سبعة مزوّدين و26 نموذجاً خلف حلقة أدوات واحدة، مع متصفّح مدمج يقوده الوكيل عبر شارات عناصر مرقّمة بدل تخمين المواضع. تُقرأ قدرات النماذج المحلية من <bdi>Ollama</bdi> أثناء التشغيل بدل استنتاجها من اسم النموذج، ويحسب منزلق السياق ذاكرة <bdi>KV-cache</bdi> لكل رمز قبل تحميل النموذج.",
+      "stack": "Rust · Tauri 2 · Ollama · MCP · ACP · OpenAI · Anthropic · DeepSeek · Kimi · GLM · Qwen"
+    },
+    "wavecut": {
+      "name": "AI WaveCut",
+      "tag": "Desktop · shipped",
+      "desc": "استوديو تحرير فيديو بالذكاء الاصطناعي يُوزَّع كمثبّت <bdi>macOS</bdi> موقّع، مع نظام ترخيص متدرّج وتفعيل لكل جهاز: مفاتيح موقّعة بـ<bdi>HMAC</bdi>، وحدود أجهزة لكل مستوى، واشتقاق مفاتيح <bdi>PBKDF2</bdi> من بصمة الجهاز، وتفعيل عن بُعد. وتقود إعادة كتابة موازية بلغة <bdi>C++17/Qt6</bdi> مكتبة <bdi>FFmpeg</bdi> عبر واجهتها البرمجية بلغة <bdi>C</bdi>، مع 15 مظلّل <bdi>GLSL</bdi> مكتوبة يدوياً.",
+      "stack": "Tauri · React · Python · C++17/Qt6 · FFmpeg C API · GLSL · faster-whisper"
+    },
+    "translatepro": {
+      "name": "TranslatePro — social.aiwaverider.com",
+      "tag": "Pipeline",
+      "desc": "مسار ترجمة بالذكاء الاصطناعي ونشر متعدد المنصات. بروتوكول الرفع القابل للاستئناف في <bdi>YouTube</bdi> مُنفَّذ يدوياً — بدء الجلسة، والنقل على أجزاء، واستطلاع حالة المعالجة — بدل الاعتماد على حزمة تطوير، ويجري النشر على <bdi>Instagram</bdi> عبر تدفّق <bdi>Graph API</bdi>. وتنقل ثمانية عشر طابوراً وعمّال مجدولون الفيديو من المصدر حتى النشر المجدول.",
+      "stack": "NestJS · BullMQ · PostgreSQL · YouTube Data API · Instagram Graph API · Whisper · Stripe"
+    },
+    "storefront": {
+      "name": "aiwaverider.com",
+      "tag": "Storefront",
+      "desc": "واجهة متجر تجارية ومنصّة محتوى: مساران للدفع (<bdi>Stripe</bdi> و<bdi>PayPal</bdi>)، وروبوت محادثة قائم على الاسترجاع المعزّز يجيب من الكتالوج الحيّ عبر فهرس <bdi>Qdrant</bdi>، واثنتا عشرة قالب بريد معاملات، واستيعاب فيديو آلي من <bdi>YouTube</bdi> و<bdi>TikTok</bdi>، وتحليلات خاصة، وترحيل موثّق من <bdi>Firestore</bdi> إلى <bdi>PostgreSQL</bdi>.",
+      "stack": "React · Node.js/Express · PostgreSQL · Redis · Qdrant · Stripe · PayPal · Firebase"
+    },
+    "clinicai": {
+      "name": "ClinicAI",
+      "tag": "Offline RAG",
+      "desc": "نظام استرجاع سريري يعمل دون اتصال بالكامل — كل نداء شبكي في الشيفرة يتجه إلى المضيف المحلي، ولا توجد أي حزمة تطوير لمزوّد ذكاء اصطناعي في المشروع. تُعالَج المستندات بالتعرّف الضوئي عبر <bdi>Tesseract</bdi>، وتُقطَّع وفق الفقرات عند 700 محرف مع تداخل 120 محرفاً، وتُضمَّن محلياً وتُخزَّن مطبَّعة، فيصبح الجداء القياسي مساوياً لتشابه جيب التمام. وتتدفّق الإجابات رمزاً برمز من نموذج محلي مع استشهادات قابلة للنقر.",
+      "stack": "Python · FastAPI · Ollama (gemma3 · nomic-embed-text) · Tesseract · NumPy · WeasyPrint"
+    },
+    "laborsynopse": {
+      "name": "Laborsynopse",
+      "tag": "Clinical · German",
+      "desc": "تحليل نتائج المختبرات السريرية باللغة الألمانية. خمسة مزوّدي نماذج لغوية خلف وسيط واحد مع تدقيق للتكلفة والرموز لكل نداء، ومسار مسح لا يُسمح فيه للنموذج بإجراء أي حساب: تُحلّ الوحدات والنطاقات المرجعية حتمياً من إشارتين مستقلتين يجب أن تتطابقا، وإلا وُسِم السطر بدل التخمين. وتُفحص المراجع العلمية بحثاً عن التراجعات مقابل مصدرين مستقلين. والمخرجات مصاغة عمداً بوصفها تشخيصاً مشتبهاً به لا تشخيصاً نهائياً.",
+      "stack": "Next.js · PostgreSQL/Prisma · OpenAI · Anthropic · Kimi · DeepSeek · GLM · PubMed · Crossref"
+    }
+  },
+  "integrations": {
+    "title": "التكاملات والبنية التحتية للذكاء الاصطناعي",
+    "subtitle": "واجهات برمجية وبنية تحتية مدمجة في أنظمة إنتاجية، لا في دروس تعليمية.",
+    "google": {
+      "label": "Google",
+      "items": "Gmail API · Pub/Sub push · YouTube Data API + hand-rolled resumable upload · Google Places · Vertex AI (Gemini · Imagen) · OAuth2 · Calendar · Drive · Sheets · Postmaster Tools · GCP (GKE · IAM)"
+    },
+    "meta": {
+      "label": "Meta",
+      "items": "Instagram Graph API (container-create → media-publish) · Facebook · Meta Ads OAuth · Instagram scanning & budget metering"
+    },
+    "llm": {
+      "label": "مزوّدو النماذج اللغوية",
+      "items": "OpenAI · Anthropic Claude · Google Gemini · DeepSeek · Moonshot Kimi · Zhipu GLM · Qwen · Ollama (local, on-device)"
+    },
+    "rag": {
+      "label": "الاسترجاع المعزّز والبحث الشعاعي",
+      "items": "Qdrant (named vectors · int8 quantization) · Meilisearch · hybrid search fused with Reciprocal Rank Fusion · paragraph-aware chunking with overlap · L2-normalised cosine · multi-provider embeddings chosen from a measured MRR benchmark · circuit breaker + blue-green index switch"
+    },
+    "voice": {
+      "label": "الصوت والفيديو والوسائط",
+      "items": "ElevenLabs (TTS · voice cloning · dubbing) · HeyGen avatars · Deepgram (streaming STT · Voice Agent) · Whisper (local GPU) · Twilio · Vapi · LiveKit · Remotion · FFmpeg C API · GSAP"
+    },
+    "data": {
+      "label": "البيانات والبنية التحتية",
+      "items": "PostgreSQL (Prisma · Drizzle · RLS) · Redis + BullMQ · Supabase · MongoDB · Neo4j · MinIO/S3 · ClamAV · pgBackRest PITR · Docker · Coolify · OpenShift · Kubernetes"
+    },
+    "commerce": {
+      "label": "التجارة وإدارة العملاء",
+      "items": "Stripe (+ Connect) · PayPal · Paddle · Paymob · Apollo · Hunter · ZeroBounce · Instantly · EmailBison · Close CRM · HubSpot · GoHighLevel · Calendly · Typeform · Slack · Unipile · n8n"
+    },
+    "agentic": {
+      "label": "الوكلاء والبروتوكولات",
+      "items": "Model Context Protocol servers (stdio + Streamable HTTP) · Agent Client Protocol · Claude Agent SDK · tool-calling loops with approval gates · subagent fan-out · proof-receipt verification"
+    }
   }
 }

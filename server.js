@@ -10,7 +10,31 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3011;
 
-app.use(cors());
+// Restrict to the site's own origin(s). A bare cors() let any page on the
+// internet drive this OpenAI proxy from a visitor's browser.
+const ALLOWED_ORIGINS = (process.env.ALLOWED_ORIGINS ||
+    'https://cv.aiwaverider.com,http://localhost:3011').split(',').map(o => o.trim());
+app.use(cors({
+    origin: (origin, cb) => cb(null, !origin || ALLOWED_ORIGINS.includes(origin))
+}));
+
+// Fixed-window rate limit, no dependency. The chat route spends real money per
+// call, so an unauthenticated endpoint without one is a billing risk.
+const RATE = { windowMs: 60_000, max: 12, hits: new Map() };
+function rateLimit(req, res, next) {
+    const ip = (req.headers['x-forwarded-for'] || req.socket.remoteAddress || 'unknown')
+        .toString().split(',')[0].trim();
+    const now = Date.now();
+    const rec = RATE.hits.get(ip);
+    if (!rec || now > rec.reset) RATE.hits.set(ip, { n: 1, reset: now + RATE.windowMs });
+    else if (++rec.n > RATE.max) {
+        return res.status(429).json({ error: 'Too many requests. Please wait a minute.' });
+    }
+    if (RATE.hits.size > 5000) {
+        for (const [k, v] of RATE.hits) if (now > v.reset) RATE.hits.delete(k);
+    }
+    next();
+}
 app.use(express.json());
 app.use(express.static('.'));
 
@@ -73,7 +97,20 @@ app.get('/healthz', (req, res) => {
 });
 
 app.post('/api/chat', async (req, res) => {
-    const { message, history = [] } = req.body;
+    const { message, history: rawHistory = [] } = req.body;
+
+    // Sanitise the client-supplied history. Previously this was spread verbatim
+    // into the messages array, so a visitor could forge 'system' and 'assistant'
+    // turns and make the CV bot assert anything, then screenshot it.
+    const history = (Array.isArray(rawHistory) ? rawHistory : [])
+        .filter(m => m && typeof m.content === 'string')
+        .filter(m => m.role === 'user' || m.role === 'assistant')   // never 'system'
+        .slice(-10)                                                  // bounded context
+        .map(m => ({ role: m.role, content: m.content.slice(0, 2000) }));
+
+    if (typeof message !== 'string' || !message.trim() || message.length > 2000) {
+        return res.status(400).json({ error: 'Invalid message.' });
+    }
 
     if (!message) {
         return res.status(400).json({ error: 'Message is required' });

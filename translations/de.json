@@ -10,7 +10,8 @@
     "experience": "Erfahrung",
     "skills": "Fähigkeiten",
     "certs": "Zertifikate",
-    "downloadCV": "Lebenslauf herunterladen"
+    "downloadCV": "Lebenslauf herunterladen",
+    "products": "Produkte"
   },
   "game": {
     "title": "🚀 SAKHRS FÄHIGKEITS-HERAUFORDERUNG",
@@ -435,5 +436,117 @@
   "email": {
     "subject": "Stellenangebot-Anfrage",
     "body": "Sehr geehrter Sakhr AL-Absi,\n\nIch bin auf Ihren Lebenslauf gestoßen und bin beeindruckt von Ihrer Expertise als Senior Software Engineer und KI-Lösungsarchitekt. Ich würde gerne eine mögliche Gelegenheit mit Ihnen besprechen.\n\nBitte lassen Sie mich Ihre Verfügbarkeit für ein Gespräch wissen.\n\nMit freundlichen Grüßen,\n[Ihr Name]\n[Ihre Position]\n[Ihr Unternehmen]"
+  },
+  "products": {
+    "title": "Ausgewählte Produkte &amp; Plattformen",
+    "subtitle": "End-to-end entworfen, gebaut und betrieben — 23 eigenentwickelte produktive Systeme, 5.612 Commits.",
+    "omnalu": {
+      "name": "Omnalu (FlowState)",
+      "tag": "Desktop · Rust",
+      "desc": "Offline-first Desktop-KI: GPU-Whisper-Transkription mit zur Laufzeit gewähltem Metal-/CUDA-/Vulkan-Backend, System-Audio-Aufnahme über ScreenCaptureKit (beide Gesprächsseiten auch mit Kopfhörern), eine Swift-Vision-OCR-Bildschirmzeitleiste, über ein handgeschriebenes C-ABI in die Rust-Binary gelinkt, sowie Meeting-Export als DOCX oder Foliensatz. Enthält ein gepatchtes Upstream-Crate via [patch.crates-io] gegen einen Nullzeiger-Absturz beim Aufwachen des Displays.",
+      "stack": "Rust · Tauri · Swift · whisper.cpp · Deepgram · ScreenCaptureKit · Vision OCR"
+    },
+    "emailai": {
+      "name": "EmailAI",
+      "tag": "Multi-tenant SaaS",
+      "desc": "Mandantenfähige E-Mail-Automatisierung: 108 Datenmodelle, 172 Migrationen und über 20 BullMQ-Worker. Die Mandantentrennung ist durch vier unabhängige Mechanismen abgesichert — Laufzeit-Query-Guard, ESLint-Regel, statisches Audit-Skript und ein eigener CI-Job. Enthält eine vollständige Zustellbarkeits-Steuerebene: SPF/DKIM/DMARC-Prüfung, Auswertung von DMARC-Aggregatberichten mit Eskalation p=none→quarantine→reject, Reputationsdaten von Google Postmaster und Microsoft SNDS, Mailbox-Warmup und eine umkehrbare Domain-Umstellung.",
+      "stack": "Next.js · PostgreSQL/Prisma · BullMQ/Redis · Qdrant · Gmail API · Microsoft Graph · IMAP/SMTP"
+    },
+    "leadoutbound": {
+      "name": "Lead Outbound AI",
+      "tag": "Live · real users",
+      "desc": "Live-Plattform für Leadgenerierung. Fünf Quellen — Apollo, Hunter, Google Places, OpenStreetMap und Instantly — hinter einem einheitlichen Lead-Typ normalisiert, mit score-gesteuerter Anreicherung, die Credits für geringwertige Leads verweigert. Die Kostenrechnung pro Anbieter in USD deckte einen echten Abrechnungsfehler auf (Hunter berechnet pro zurückgegebener E-Mail, nicht pro Aufruf). Die KI-Firmenrecherche nutzt Gemini mit Live-Google-Search-Grounding. Die Mandantentrennung erfolgt über 32 Postgres-Row-Level-Security-Policies statt im Anwendungscode.",
+      "stack": "Next.js · Supabase/PostgreSQL RLS · Apollo · Hunter · Google Places · Gemini grounding"
+    },
+    "contentfactory": {
+      "name": "Content Factory",
+      "tag": "Multi-brand platform",
+      "desc": "Mandantenfähige Plattform für Content-Produktion. Remotion rendert Video programmatisch, ElevenLabs-Voiceover steuert das Timing auf Beat-Ebene, sodass Schnitte auf Satzgrenzen fallen, HeyGen liefert Avatare pro Beat und Vertex AI erzeugt Standbilder. Drei Qualitäts-Gates verweigern fehlerhafte Ausgaben — eine ffprobe-Prüfung auf Audio und Drift sowie ein Vision-Modell, das Aufnahmen mit Cookie-Bannern oder Paywalls ablehnt. Verschlüsselte Zugangsdaten je Marke, Ausgabenlimits und ein Render-Paritätstest auf Byte-Ebene.",
+      "stack": "Remotion · Node.js · ElevenLabs · HeyGen · Vertex AI · MinIO/S3 · PostgreSQL"
+    },
+    "ralph": {
+      "name": "Ralph — Autonomous Coding Loop",
+      "tag": "Agentic AI",
+      "desc": "Eine autonome Coding-Steuerebene, in der der Agent seine eigene Arbeit nicht abnehmen kann. Die Story-Auswahl ist deterministisch und liegt bei der Shell, nicht beim Modell; eine Story gilt nur mit maschinell prüfbarem Nachweis als bestanden; eine Qualitätsratsche macht ein Absinken der bestandenen Stories rechnerisch unmöglich; vier typisierte Circuit Breaker stoppen ausufernde Kosten; blockierte Läufe landen in einem menschlichen Entscheidungs-Posteingang. Ergebnis: 112 von 114 Stories bestanden und eine produktive Anwendung mit 346 Commits.",
+      "stack": "Bash · Node.js · Claude Agent SDK · SSE · proof receipts · quality ratchet"
+    },
+    "zelavi": {
+      "name": "Zelavi",
+      "tag": "Regulated marketplace",
+      "desc": "Tele-Therapie-Marktplatz nach reguliertem Standard. Contract-first: 85 OpenAPI-Operationen bilden 1:1 auf Routen und auf einen generierten Dart-Client ab, und der Typecheck schlägt fehl, sobald sie auseinanderlaufen. Schlüssel pro Konversation werden per HKDF als AES-256-GCM abgeleitet; die API besitzt bewusst keine Entschlüsselungsfunktion. Das DSGVO-Recht auf Löschung ist als getestete End-to-End-User-Journey umgesetzt. Die geräteseitige Personensegmentierung für Videoanrufe schließt im Fehlerfall — ohne Maske wird das gesamte Bild unscharf.",
+      "stack": "NestJS · PostgreSQL/PostGIS · Flutter · LiveKit · Stripe Connect · 8 languages, 2 RTL"
+    },
+    "wavecode": {
+      "name": "Wavecode",
+      "tag": "Agentic IDE",
+      "desc": "Eine agentische Coding-IDE für mehrere Anbieter: sieben Provider und 26 Modelle hinter einer einzigen Tool-Schleife, mit eingebettetem Browser, den der Agent über nummerierte Element-Badges statt geratener Pixel steuert. Fähigkeiten lokaler Modelle werden zur Laufzeit von Ollama gelesen statt aus dem Modellnamen abgeleitet, und der Kontext-Regler berechnet den KV-Cache-RAM pro Token, bevor ein Modell überhaupt geladen wird. Vier stille Modell-Substitutionen wurden gefunden und beseitigt.",
+      "stack": "Rust · Tauri 2 · Ollama · MCP · ACP · OpenAI · Anthropic · DeepSeek · Kimi · GLM · Qwen"
+    },
+    "wavecut": {
+      "name": "AI WaveCut",
+      "tag": "Desktop · shipped",
+      "desc": "KI-Videoschnitt-Studio, ausgeliefert als signierter macOS-Installer, mit gestuftem Lizenz- und Geräteaktivierungssystem: HMAC-signierte Schlüssel, Gerätelimits je Stufe, PBKDF2-Schlüsselableitung aus einem Geräte-Fingerabdruck und Remote-Aktivierung. Eine parallele C++17/Qt6-Neuentwicklung steuert FFmpeg über dessen C-API statt per Subprozess, mit 15 handgeschriebenen GLSL-Shadern, darunter acht Übergänge.",
+      "stack": "Tauri · React · Python · C++17/Qt6 · FFmpeg C API · GLSL · faster-whisper"
+    },
+    "translatepro": {
+      "name": "TranslatePro — social.aiwaverider.com",
+      "tag": "Pipeline",
+      "desc": "KI-Übersetzungs- und Multi-Plattform-Publishing-Pipeline. Das YouTube-Resumable-Upload-Protokoll ist handimplementiert — Sitzungsinitiierung, Chunk-Übertragung und Abfrage des Verarbeitungsstatus — statt aus einem SDK übernommen; das Instagram-Publishing läuft über den Graph-API-Fluss Container-Create und anschließendes Media-Publish. Achtzehn Queues und Cron-gesteuerte Worker führen ein Video von der Quelle über Transkription und Übersetzung bis zur geplanten Veröffentlichung.",
+      "stack": "NestJS · BullMQ · PostgreSQL · YouTube Data API · Instagram Graph API · Whisper · Stripe"
+    },
+    "storefront": {
+      "name": "aiwaverider.com",
+      "tag": "Storefront",
+      "desc": "Kommerzieller Storefront und Content-Plattform: zwei Zahlungswege (Stripe und PayPal), ein RAG-Chatbot, der über einen Qdrant-Index aus dem Live-Katalog antwortet, zwölf Transaktions-E-Mail-Vorlagen, automatisierte Video-Übernahme von YouTube und TikTok per Cron, eigene Analytics und eine dokumentierte Migration von Firestore nach PostgreSQL mit acht nummerierten SQL-Migrationen. Veröffentlicht eine kuratierte Bibliothek von über 5.600 n8n-Automatisierungs-Workflows.",
+      "stack": "React · Node.js/Express · PostgreSQL · Redis · Qdrant · Stripe · PayPal · Firebase"
+    },
+    "clinicai": {
+      "name": "ClinicAI",
+      "tag": "Offline RAG",
+      "desc": "Ein vollständig offline arbeitendes klinisches Retrieval-System — jeder Netzwerkaufruf im Code geht an localhost, und es existiert kein KI-Anbieter-SDK im Projekt. Dokumente werden mit Tesseract per OCR erfasst, absatzbewusst in 700-Zeichen-Blöcke mit 120 Zeichen Überlappung zerlegt, lokal eingebettet und L2-normalisiert gespeichert, sodass ein Skalarprodukt der Kosinus-Ähnlichkeit entspricht. Antworten streamen Token für Token aus einem lokalen Modell, mit klickbaren Zitaten auf den exakten Quelltext.",
+      "stack": "Python · FastAPI · Ollama (gemma3 · nomic-embed-text) · Tesseract · NumPy · WeasyPrint"
+    },
+    "laborsynopse": {
+      "name": "Laborsynopse",
+      "tag": "Clinical · German",
+      "desc": "Klinische Laborwert-Analyse in deutscher Sprache. Fünf LLM-Anbieter hinter einem Proxy mit Kosten- und Token-Audit pro Aufruf sowie eine Scan-Pipeline, in der ein Modell niemals rechnet: Einheiten und Referenzbereiche werden deterministisch aus zwei unabhängigen Signalen aufgelöst, die übereinstimmen müssen — andernfalls wird die Zeile markiert statt geraten. Literatur wird gegen zwei unabhängige Quellen auf Retraktionen geprüft und schließt im Zweifel. Die Ausgabe ist bewusst als Verdachtsdiagnose gefasst, nie als Diagnose.",
+      "stack": "Next.js · PostgreSQL/Prisma · OpenAI · Anthropic · Kimi · DeepSeek · GLM · PubMed · Crossref"
+    }
+  },
+  "integrations": {
+    "title": "Integrationen &amp; KI-Infrastruktur",
+    "subtitle": "APIs und Infrastruktur, verdrahtet in produktiven Systemen — nicht in Tutorials.",
+    "google": {
+      "label": "Google",
+      "items": "Gmail API · Pub/Sub push · YouTube Data API + hand-rolled resumable upload · Google Places · Vertex AI (Gemini · Imagen) · OAuth2 · Calendar · Drive · Sheets · Postmaster Tools · GCP (GKE · IAM)"
+    },
+    "meta": {
+      "label": "Meta",
+      "items": "Instagram Graph API (container-create → media-publish) · Facebook · Meta Ads OAuth · Instagram scanning & budget metering"
+    },
+    "llm": {
+      "label": "LLM-Anbieter",
+      "items": "OpenAI · Anthropic Claude · Google Gemini · DeepSeek · Moonshot Kimi · Zhipu GLM · Qwen · Ollama (local, on-device)"
+    },
+    "rag": {
+      "label": "RAG & Vektorsuche",
+      "items": "Qdrant (named vectors · int8 quantization) · Meilisearch · hybrid search fused with Reciprocal Rank Fusion · paragraph-aware chunking with overlap · L2-normalised cosine · multi-provider embeddings chosen from a measured MRR benchmark · circuit breaker + blue-green index switch"
+    },
+    "voice": {
+      "label": "Sprache, Video & Medien",
+      "items": "ElevenLabs (TTS · voice cloning · dubbing) · HeyGen avatars · Deepgram (streaming STT · Voice Agent) · Whisper (local GPU) · Twilio · Vapi · LiveKit · Remotion · FFmpeg C API · GSAP"
+    },
+    "data": {
+      "label": "Daten & Infrastruktur",
+      "items": "PostgreSQL (Prisma · Drizzle · RLS) · Redis + BullMQ · Supabase · MongoDB · Neo4j · MinIO/S3 · ClamAV · pgBackRest PITR · Docker · Coolify · OpenShift · Kubernetes"
+    },
+    "commerce": {
+      "label": "Commerce & CRM",
+      "items": "Stripe (+ Connect) · PayPal · Paddle · Paymob · Apollo · Hunter · ZeroBounce · Instantly · EmailBison · Close CRM · HubSpot · GoHighLevel · Calendly · Typeform · Slack · Unipile · n8n"
+    },
+    "agentic": {
+      "label": "Agentik & Protokolle",
+      "items": "Model Context Protocol servers (stdio + Streamable HTTP) · Agent Client Protocol · Claude Agent SDK · tool-calling loops with approval gates · subagent fan-out · proof-receipt verification"
+    }
   }
 }

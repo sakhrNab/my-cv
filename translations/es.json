@@ -10,7 +10,8 @@
     "experience": "Experiencia",
     "skills": "Habilidades",
     "certs": "Certificados",
-    "downloadCV": "Descargar CV"
+    "downloadCV": "Descargar CV",
+    "products": "Productos"
   },
   "game": {
     "title": "🚀 DESAFÍO DE HABILIDADES DE SAKHR",
@@ -431,5 +432,117 @@
   "email": {
     "subject": "Consulta de Oportunidad Laboral",
     "body": "Estimado Sakhr AL-Absi,\n\nMe encontré con su CV y estoy impresionado por su experiencia como Ingeniero de Software Senior y Arquitecto de Soluciones de IA. Me gustaría discutir una oportunidad potencial con usted.\n\nPor favor, hágame saber su disponibilidad para una conversación.\n\nSaludos cordiales,\n[Su Nombre]\n[Su Posición]\n[Su Empresa]"
+  },
+  "products": {
+    "title": "Productos y plataformas seleccionados",
+    "subtitle": "Diseñados, construidos y operados de punta a punta — 23 sistemas en producción propios, 5.612 commits.",
+    "omnalu": {
+      "name": "Omnalu (FlowState)",
+      "tag": "Desktop · Rust",
+      "desc": "IA de escritorio offline-first: transcripción GPU Whisper con backends Metal/CUDA/Vulkan elegidos en tiempo de ejecución, captura de audio del sistema vía ScreenCaptureKit (ambos lados de una llamada con auriculares), una línea temporal de pantalla con Vision OCR en Swift enlazada al binario Rust mediante una C ABI escrita a mano, y exportación de reuniones a DOCX o diapositivas. Incluye un crate upstream parcheado vía [patch.crates-io].",
+      "stack": "Rust · Tauri · Swift · whisper.cpp · Deepgram · ScreenCaptureKit · Vision OCR"
+    },
+    "emailai": {
+      "name": "EmailAI",
+      "tag": "Multi-tenant SaaS",
+      "desc": "Automatización de correo multiinquilino: 108 modelos de datos, 172 migraciones y más de 20 workers BullMQ. El aislamiento entre inquilinos se impone con cuatro mecanismos independientes — guard en tiempo de ejecución, regla ESLint, script de auditoría estática y un job de CI dedicado. Incluye un plano de control de entregabilidad completo: verificación SPF/DKIM/DMARC, ingesta de informes agregados DMARC con escalado p=none→quarantine→reject, reputación de Google Postmaster y Microsoft SNDS, calentamiento de buzones y una migración reversible por dominio.",
+      "stack": "Next.js · PostgreSQL/Prisma · BullMQ/Redis · Qdrant · Gmail API · Microsoft Graph · IMAP/SMTP"
+    },
+    "leadoutbound": {
+      "name": "Lead Outbound AI",
+      "tag": "Live · real users",
+      "desc": "Plataforma de generación de leads en producción. Cinco proveedores — Apollo, Hunter, Google Places, OpenStreetMap e Instantly — normalizados tras un único tipo de lead, con enriquecimiento condicionado por puntuación que se niega a gastar créditos en leads de bajo valor. La contabilidad de costes por proveedor en USD detectó un error de facturación real (Hunter cobra por correo devuelto, no por llamada). La investigación de empresas usa Gemini con grounding en búsqueda de Google. La multiinquilinidad se impone con 32 políticas RLS de Postgres, no en el código.",
+      "stack": "Next.js · Supabase/PostgreSQL RLS · Apollo · Hunter · Google Places · Gemini grounding"
+    },
+    "contentfactory": {
+      "name": "Content Factory",
+      "tag": "Multi-brand platform",
+      "desc": "Plataforma multiinquilino de producción de contenido. Remotion renderiza vídeo programáticamente, la locución de ElevenLabs marca el ritmo para que los cortes caigan en límites de frase, HeyGen aporta avatares por beat y Vertex AI genera imágenes. Tres controles de calidad rechazan salidas defectuosas — una comprobación ffprobe de audio y desfase, y un modelo de visión que descarta capturas con banners de cookies o muros de pago. Credenciales cifradas por marca, límites de gasto y una prueba de paridad de render a nivel de byte.",
+      "stack": "Remotion · Node.js · ElevenLabs · HeyGen · Vertex AI · MinIO/S3 · PostgreSQL"
+    },
+    "ralph": {
+      "name": "Ralph — Autonomous Coding Loop",
+      "tag": "Agentic AI",
+      "desc": "Un plano de control de codificación autónoma donde el agente no puede certificar su propio trabajo. La selección de historias es determinista y la controla el shell, no el modelo; una historia solo pasa con un recibo de prueba verificable por máquina; un trinquete de calidad hace matemáticamente imposible que baje el número de historias aprobadas; cuatro cortacircuitos tipados detienen el gasto descontrolado; y las ejecuciones bloqueadas escalan a una bandeja de decisión humana. Llevó 114 historias a 112 aprobadas y produjo una aplicación en producción con 346 commits.",
+      "stack": "Bash · Node.js · Claude Agent SDK · SSE · proof receipts · quality ratchet"
+    },
+    "zelavi": {
+      "name": "Zelavi",
+      "tag": "Regulated marketplace",
+      "desc": "Marketplace de teleterapia construido con estándar regulado. Contract-first: 85 operaciones OpenAPI mapean uno a uno con rutas y con un cliente Dart generado, y el propio typecheck falla si divergen. Las claves por conversación se derivan con HKDF (AES-256-GCM) y la API no tiene función de descifrado por diseño. El derecho de supresión del RGPD está implementado como recorrido de usuario probado de extremo a extremo. El desenfoque por segmentación de personas en el dispositivo falla en cerrado.",
+      "stack": "NestJS · PostgreSQL/PostGIS · Flutter · LiveKit · Stripe Connect · 8 languages, 2 RTL"
+    },
+    "wavecode": {
+      "name": "Wavecode",
+      "tag": "Agentic IDE",
+      "desc": "IDE de codificación agéntica multiproveedor: siete proveedores y 26 modelos tras un único bucle de herramientas, con un navegador embebido que el agente maneja mediante insignias numeradas en lugar de píxeles adivinados. Las capacidades de los modelos locales se leen de Ollama en tiempo de ejecución en vez de inferirse del nombre, y el control de contexto calcula la RAM de caché KV por token antes de cargar el modelo. Se detectaron y eliminaron cuatro sustituciones silenciosas de modelo.",
+      "stack": "Rust · Tauri 2 · Ollama · MCP · ACP · OpenAI · Anthropic · DeepSeek · Kimi · GLM · Qwen"
+    },
+    "wavecut": {
+      "name": "AI WaveCut",
+      "tag": "Desktop · shipped",
+      "desc": "Estudio de edición de vídeo con IA distribuido como instalador firmado de macOS, con licenciamiento por niveles y activación por dispositivo: claves firmadas con HMAC, límites de dispositivos por nivel, derivación PBKDF2 desde una huella del dispositivo y activación remota. Una reescritura paralela en C++17/Qt6 usa FFmpeg por su API C en vez de invocarlo como proceso, con 15 shaders GLSL escritos a mano.",
+      "stack": "Tauri · React · Python · C++17/Qt6 · FFmpeg C API · GLSL · faster-whisper"
+    },
+    "translatepro": {
+      "name": "TranslatePro — social.aiwaverider.com",
+      "tag": "Pipeline",
+      "desc": "Pipeline de traducción con IA y publicación multiplataforma. El protocolo de subida reanudable de YouTube está implementado a mano — inicio de sesión, transferencia por fragmentos y sondeo del estado de procesamiento — en lugar de envolver un SDK, y la publicación en Instagram usa el flujo de la Graph API de crear contenedor y luego publicar. Dieciocho colas y workers por cron llevan un vídeo desde el origen hasta la publicación programada.",
+      "stack": "NestJS · BullMQ · PostgreSQL · YouTube Data API · Instagram Graph API · Whisper · Stripe"
+    },
+    "storefront": {
+      "name": "aiwaverider.com",
+      "tag": "Storefront",
+      "desc": "Escaparate comercial y plataforma de contenido: dos vías de pago (Stripe y PayPal), un chatbot RAG que responde desde el catálogo en vivo sobre un índice Qdrant, doce plantillas de correo transaccional, ingesta automática de vídeo desde YouTube y TikTok por cron, analítica propia y una migración documentada de Firestore a PostgreSQL con ocho migraciones SQL numeradas. Publica una biblioteca curada de más de 5.600 flujos de automatización n8n.",
+      "stack": "React · Node.js/Express · PostgreSQL · Redis · Qdrant · Stripe · PayPal · Firebase"
+    },
+    "clinicai": {
+      "name": "ClinicAI",
+      "tag": "Offline RAG",
+      "desc": "Un sistema de recuperación clínica totalmente offline — cada llamada de red del código va a localhost y no existe ningún SDK de proveedor de IA en el árbol. Los documentos se procesan con OCR Tesseract, se trocean por párrafos a 700 caracteres con 120 de solapamiento, se incrustan localmente y se guardan normalizados en L2, de modo que el producto escalar es la similitud coseno. Las respuestas llegan token a token desde un modelo local con citas clicables al texto fuente exacto.",
+      "stack": "Python · FastAPI · Ollama (gemma3 · nomic-embed-text) · Tesseract · NumPy · WeasyPrint"
+    },
+    "laborsynopse": {
+      "name": "Laborsynopse",
+      "tag": "Clinical · German",
+      "desc": "Análisis clínico de laboratorio en alemán. Cinco proveedores de LLM tras un proxy con auditoría de coste y tokens por llamada, y un pipeline de escaneo donde el modelo nunca hace aritmética: unidades y rangos de referencia se resuelven de forma determinista a partir de dos señales independientes que deben coincidir; si no, la fila se marca en lugar de adivinarse. La literatura se re-verifica contra retractaciones en dos fuentes independientes y falla en cerrado. La salida se enmarca deliberadamente como Verdachtsdiagnose, nunca como diagnóstico.",
+      "stack": "Next.js · PostgreSQL/Prisma · OpenAI · Anthropic · Kimi · DeepSeek · GLM · PubMed · Crossref"
+    }
+  },
+  "integrations": {
+    "title": "Integraciones e infraestructura de IA",
+    "subtitle": "APIs e infraestructura integradas en sistemas en producción, no en tutoriales.",
+    "google": {
+      "label": "Google",
+      "items": "Gmail API · Pub/Sub push · YouTube Data API + hand-rolled resumable upload · Google Places · Vertex AI (Gemini · Imagen) · OAuth2 · Calendar · Drive · Sheets · Postmaster Tools · GCP (GKE · IAM)"
+    },
+    "meta": {
+      "label": "Meta",
+      "items": "Instagram Graph API (container-create → media-publish) · Facebook · Meta Ads OAuth · Instagram scanning & budget metering"
+    },
+    "llm": {
+      "label": "Proveedores LLM",
+      "items": "OpenAI · Anthropic Claude · Google Gemini · DeepSeek · Moonshot Kimi · Zhipu GLM · Qwen · Ollama (local, on-device)"
+    },
+    "rag": {
+      "label": "RAG y búsqueda vectorial",
+      "items": "Qdrant (named vectors · int8 quantization) · Meilisearch · hybrid search fused with Reciprocal Rank Fusion · paragraph-aware chunking with overlap · L2-normalised cosine · multi-provider embeddings chosen from a measured MRR benchmark · circuit breaker + blue-green index switch"
+    },
+    "voice": {
+      "label": "Voz, vídeo y medios",
+      "items": "ElevenLabs (TTS · voice cloning · dubbing) · HeyGen avatars · Deepgram (streaming STT · Voice Agent) · Whisper (local GPU) · Twilio · Vapi · LiveKit · Remotion · FFmpeg C API · GSAP"
+    },
+    "data": {
+      "label": "Datos e infraestructura",
+      "items": "PostgreSQL (Prisma · Drizzle · RLS) · Redis + BullMQ · Supabase · MongoDB · Neo4j · MinIO/S3 · ClamAV · pgBackRest PITR · Docker · Coolify · OpenShift · Kubernetes"
+    },
+    "commerce": {
+      "label": "Comercio y CRM",
+      "items": "Stripe (+ Connect) · PayPal · Paddle · Paymob · Apollo · Hunter · ZeroBounce · Instantly · EmailBison · Close CRM · HubSpot · GoHighLevel · Calendly · Typeform · Slack · Unipile · n8n"
+    },
+    "agentic": {
+      "label": "Agéntico y protocolos",
+      "items": "Model Context Protocol servers (stdio + Streamable HTTP) · Agent Client Protocol · Claude Agent SDK · tool-calling loops with approval gates · subagent fan-out · proof-receipt verification"
+    }
   }
 }
