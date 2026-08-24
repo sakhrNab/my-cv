@@ -105,7 +105,7 @@
       "germanCitizen": "Based in Berlin · educated at TU Berlin and HTW Berlin · GCP Certified Cloud Engineer",
       "founder": "Founder, CEO & CTO of AI Waverider — 23 self-authored production systems",
       "corporate": "7+ years corporate experience at Accenture, BMG Rights Management, Innocean Europe",
-      "apps": "5,612 commits across the portfolio, built alongside full-time enterprise delivery",
+      "apps": "~5,900 commits across the portfolio, built alongside full-time enterprise delivery",
       "hackathon": "Won global AI hackathon integrating Azure OpenAI",
       "languages": "Trilingual: German (C2), English (Fluent), Arabic (Native)",
       "available": "EU citizen | Remote, hybrid or on-site across the EU"
@@ -414,10 +414,10 @@
       "highlyRecommended": "✓ Highly recommended candidate!"
     },
     "localResponses": {
-      "founder": "<strong>Founder, CEO & CTO of AI Waverider</strong><br><br>23 self-authored production systems (5,612 commits) built alongside full-time work at Accenture. Stack: Next.js, Node.js, Python, Rust, PostgreSQL, GCP.",
+      "founder": "<strong>Founder, CEO & CTO of AI Waverider</strong><br><br>23 self-authored production systems (~5,900 commits) built alongside full-time work at Accenture. Stack: Next.js, Node.js, Python, Rust, PostgreSQL, GCP.",
       "german": "Based in Berlin, educated at TU Berlin and HTW Berlin, with 7+ years of enterprise delivery at Accenture Germany. Works in German (C2) and English (Fluent).",
       "dubai": "Sakhr is an EU citizen based in Berlin (CET). He works remotely across the EU and can relocate within the EU/EEA without a visa or sponsorship.",
-      "ai": "<strong>Gen AI & Cloud Engineer.</strong> Production RAG with vector search (Qdrant), multi-provider LLM routing across 7 providers, agentic pipelines, and offline on-device inference via Ollama and GPU Whisper. Chunking and embedding strategy chosen from a measured benchmark, not a guess. GCP Certified Cloud Engineer.",
+      "ai": "<strong>Gen-AI & Cloud Engineer.</strong> Production RAG with vector search (Qdrant), hybrid retrieval with reciprocal rank fusion, multi-provider LLM routing across eight providers, agentic pipelines with approval gates, and on-device inference via Ollama and GPU Whisper. Chunking and embedding strategy chosen from a measured benchmark, not a guess. GCP Certified Cloud Engineer.",
       "available": "<strong>Open to new roles.</strong> Remote, hybrid or on-site anywhere in the EU — full-time or contract. Standard German notice periods apply.",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
       "default": "I can tell you about Sakhr's enterprise work at Accenture, his own portfolio of production AI systems (multi-tenant SaaS, RAG, agentic pipelines), his cloud and DevOps stack, where in the EU he can work, or help with job matching!"
@@ -451,7 +451,7 @@
   },
   "products": {
     "title": "Selected Products & Platforms",
-    "subtitle": "Designed, built and operated end-to-end — 23 self-authored production systems, 5,612 commits.",
+    "subtitle": "Designed, built and operated end-to-end — 23 self-authored production systems, ~5,900 commits.",
     "omnalu": {
       "name": "Omnalu (FlowState)",
       "tag": "Desktop · Rust",

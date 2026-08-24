@@ -84,12 +84,33 @@ function analyzeJobMatch() {
         return;
     }
     const skills = {
-        'java': 95, 'spring': 95, 'microservices': 90, 'python': 85, 'javascript': 85,
-        'react': 80, 'vue': 85, 'node': 80, 'docker': 90, 'gcp': 90, 'azure': 85,
-        'cloud': 90, 'devops': 85, 'agile': 90, 'ai': 85, 'openai': 85, 'sql': 90,
-        'german': 95, 'arabic': 100, 'english': 95, 'leadership': 85, 'finance': 85, 'banking': 85,
-        'automotive': 85, 'n8n': 90, 'automation': 85, 'founder': 90, 'ceo': 90, 'cto': 90,
-        'startup': 85, 'entrepreneur': 90
+        // Weighted by demonstrable evidence, not by identity. The previous table
+        // scored 'arabic' at 100 - higher than any engineering skill - and 'n8n'
+        // above 'ai', while omitting Rust, TypeScript, Next.js, Kubernetes, RAG,
+        // vector search and everything else the portfolio actually demonstrates.
+        // Languages still count, but as skills rather than as the top signal.
+        'typescript': 95, 'java': 95, 'spring': 95, 'python': 90, 'rust': 90,
+        'javascript': 85, 'c++': 80, 'go': 60, 'sql': 90, 'bash': 75,
+        'next.js': 95, 'nextjs': 95, 'react': 90, 'nestjs': 90, 'node': 90,
+        'vue': 85, 'django': 80, 'flutter': 80, 'tauri': 85, 'prisma': 85,
+        'microservices': 95, 'architecture': 90, 'distributed': 85, 'api': 85,
+        'rag': 100, 'llm': 95, 'genai': 95, 'gen-ai': 95, 'vector': 95,
+        'qdrant': 95, 'embedding': 90, 'agentic': 95, 'agent': 90, 'mcp': 90,
+        'openai': 90, 'anthropic': 90, 'claude': 90, 'ollama': 85, 'langchain': 80,
+        'ai': 90, 'machine learning': 75, 'nlp': 75, 'prompt': 80,
+        'gcp': 95, 'google cloud': 95, 'kubernetes': 90, 'docker': 90,
+        'openshift': 90, 'azure': 85, 'aws': 80, 'terraform': 70, 'ci/cd': 90,
+        'devops': 85, 'cloud': 90, 'observability': 75,
+        'postgres': 95, 'postgresql': 95, 'redis': 90, 'mongodb': 80,
+        'supabase': 85, 'elasticsearch': 70, 'multi-tenant': 95, 'saas': 90,
+        'gdpr': 95, 'dsgvo': 95, 'compliance': 85, 'security': 85,
+        'fintech': 90, 'banking': 90, 'finance': 85, 'automotive': 85,
+        'healthcare': 85, 'regulated': 90, 'marketplace': 85, 'e-commerce': 80,
+        'agile': 85, 'scrum': 80, 'leadership': 90, 'tech lead': 95, 'mentoring': 85,
+        'stakeholder': 80, 'offshore': 80,
+        'german': 85, 'deutsch': 85, 'english': 85, 'arabic': 75,
+        'founder': 85, 'cto': 90, 'startup': 80, 'entrepreneur': 80,
+        'testing': 85, 'automation': 80, 'n8n': 70
     };
     let matched = [], total = 0, count = 0;
     for (const [skill, score] of Object.entries(skills)) {

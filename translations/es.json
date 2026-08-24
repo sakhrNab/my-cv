@@ -417,7 +417,7 @@
       "founder": "<strong>Fundador, CEO y CTO de AI Waverider</strong><br><br>23 sistemas en producción propios (~5.900 commits) construidos en paralelo al trabajo a tiempo completo en Accenture. Stack: Next.js, Node.js, Python, Rust, PostgreSQL, GCP.",
       "german": "Con base en Berlín, formado en TU Berlin y HTW Berlin, con más de 7 años de entrega empresarial en Accenture Alemania. Trabaja en alemán (C2) e inglés (fluido).",
       "dubai": "Sakhr es ciudadano de la UE con base en Berlín (CET). Trabaja en remoto por toda la UE y puede trasladarse dentro de la UE/EEE sin visado ni patrocinio.",
-      "ai": "<strong>Ingeniero de Gen-AI y Cloud.</strong> RAG en producción con búsqueda vectorial (Qdrant), enrutado multiproveedor de LLM entre 7 proveedores, pipelines agénticos e inferencia en dispositivo vía Ollama y GPU Whisper. La estrategia de troceado y embeddings se eligió a partir de un benchmark medido, no de una suposición. GCP Certified Cloud Engineer.",
+      "ai": "<strong>Ingeniero de Gen-AI y Cloud.</strong> RAG en producción con búsqueda vectorial (Qdrant), búsqueda híbrida con reciprocal rank fusion, enrutado multiproveedor de LLM entre ocho proveedores, pipelines agénticos con puertas de aprobación e inferencia en dispositivo vía Ollama y GPU Whisper. Estrategia de troceado y embeddings elegida a partir de un benchmark medido. GCP Certified Cloud Engineer.",
       "available": "<strong>Abierto a nuevos puestos.</strong> Remoto, híbrido o presencial en cualquier país de la UE — jornada completa o contrato. Con los plazos de preaviso alemanes.",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
       "default": "¡Puedo contarte sobre el trabajo empresarial de Sakhr en Accenture, su portafolio propio de sistemas de IA en producción (SaaS multiinquilino, RAG, pipelines agénticos), su stack de cloud y DevOps, dónde puede trabajar en la UE, o ayudarte con el job matching!"
@@ -451,7 +451,7 @@
   },
   "products": {
     "title": "Productos y plataformas seleccionados",
-    "subtitle": "Diseñados, construidos y operados de punta a punta — 23 sistemas en producción propios, 5.612 commits.",
+    "subtitle": "Diseñados, construidos y operados de punta a punta — 23 sistemas en producción propios, ~5.900 commits.",
     "omnalu": {
       "name": "Omnalu (FlowState)",
       "tag": "Desktop · Rust",

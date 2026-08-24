@@ -105,7 +105,7 @@
       "germanCitizen": "Standort Berlin · Studium an der TU Berlin und HTW Berlin · GCP Certified Cloud Engineer",
       "founder": "Gründer, CEO & CTO von AI Waverider — 23 eigenentwickelte produktive Systeme",
       "corporate": "7+ Jahre Unternehmenserfahrung bei Accenture, BMG Rights Management, Innocean Europe",
-      "apps": "5.612 Commits im Portfolio, parallel zur Vollzeit-Enterprise-Tätigkeit entstanden",
+      "apps": "~5.900 Commits im Portfolio, parallel zur Vollzeit-Enterprise-Tätigkeit entstanden",
       "hackathon": "Gewann globalen KI-Hackathon durch Integration von Azure OpenAI",
       "languages": "Dreisprachig: Deutsch (C2), Englisch (fließend), Arabisch (Muttersprache)",
       "available": "EU-Bürger | Remote, hybrid oder vor Ort in der gesamten EU"
@@ -417,7 +417,7 @@
       "founder": "<strong>Gründer, CEO & CTO von AI Waverider</strong><br><br>23 eigenentwickelte produktive Systeme (~5.900 Commits), parallel zur Vollzeitarbeit bei Accenture. Stack: Next.js, Node.js, Python, Rust, PostgreSQL, GCP.",
       "german": "Standort Berlin, Studium an der TU Berlin und HTW Berlin, 7+ Jahre Enterprise-Delivery bei Accenture Deutschland. Arbeitssprachen Deutsch (C2) und Englisch (fließend).",
       "dubai": "Sakhr ist EU-Bürger mit Sitz in Berlin (MEZ). Er arbeitet remote in der gesamten EU und kann ohne Visum oder Sponsorship innerhalb der EU/des EWR umziehen.",
-      "ai": "<strong>Gen-AI- & Cloud-Engineer.</strong> Produktives RAG mit Vektorsuche (Qdrant), Multi-Provider-LLM-Routing über 7 Anbieter, agentische Pipelines und geräteseitige Inferenz per Ollama und GPU-Whisper. Chunking- und Embedding-Strategie aus einem gemessenen Benchmark gewählt, nicht geraten. GCP Certified Cloud Engineer.",
+      "ai": "<strong>Gen-AI- & Cloud-Engineer.</strong> Produktives RAG mit Vektorsuche (Qdrant), hybride Suche mit Reciprocal Rank Fusion, Multi-Provider-LLM-Routing über acht Anbieter, agentische Pipelines mit Freigabe-Gates und geräteseitige Inferenz per Ollama und GPU-Whisper. Chunking- und Embedding-Strategie aus einem gemessenen Benchmark gewählt, nicht geraten. GCP Certified Cloud Engineer.",
       "available": "<strong>Offen für neue Rollen.</strong> Remote, hybrid oder vor Ort in der gesamten EU — Vollzeit oder Freelance. Unter Beachtung der üblichen deutschen Kündigungsfristen.",
       "contact": "📧 sakhr270@gmail.com<br>📱 +49 1590 6455476 (WhatsApp)<br>🔗 linkedin.com/in/sakhr-nabil-al-absi",
       "default": "Ich kann Ihnen von Sakhrs Enterprise-Arbeit bei Accenture erzählen, von seinem eigenen Portfolio produktiver KI-Systeme (mandantenfähige SaaS, RAG, agentische Pipelines), von seinem Cloud- und DevOps-Stack, davon wo in der EU er arbeiten kann — oder beim Job-Matching helfen!"
@@ -451,7 +451,7 @@
   },
   "products": {
     "title": "Ausgewählte Produkte & Plattformen",
-    "subtitle": "End-to-end entworfen, gebaut und betrieben — 23 eigenentwickelte produktive Systeme, 5.612 Commits.",
+    "subtitle": "End-to-end entworfen, gebaut und betrieben — 23 eigenentwickelte produktive Systeme, ~5.900 Commits.",
     "omnalu": {
       "name": "Omnalu (FlowState)",
       "tag": "Desktop · Rust",
