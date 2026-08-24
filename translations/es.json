@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sakhr AL-Absi | Ingeniero de Software Senior y Arquitecto Gen-AI | UE / Remoto",
-    "description": "Ciudadano de la UE (pasaporte alemán) — ingeniero de software senior y arquitecto Gen-AI, en remoto por toda la UE. Certificado en GCP. Microservicios Spring Boot/Java para clientes Fortune 500 de banca y automoción en Accenture, además de un portafolio propio de sistemas Gen-AI en producción: RAG, búsqueda vectorial, enrutado multiproveedor de LLM, pipelines agénticos, SaaS multiinquilino. Inglés C1, alemán C1, árabe nativo, español B1."
+    "description": "Ingeniero de software senior y arquitecto Gen-AI con base en Berlín, en remoto por toda la UE. Certificado en GCP. Microservicios Spring Boot/Java para clientes Fortune 500 de banca y automoción en Accenture, además de un portafolio propio de sistemas Gen-AI en producción. Inglés C1, alemán C1, árabe nativo, español B1."
   },
   "nav": {
     "logo": "Sakhr AL-Absi",
@@ -45,7 +45,7 @@
     "close": "✕",
     "closeTitle": "Cerrar terminal",
     "whoami": "whoami",
-    "whoamiOutput": "🇪🇺 Ciudadano de la UE (pasaporte alemán) | Ingeniero de Software Senior | Fundador, CEO y CTO",
+    "whoamiOutput": "Ingeniero de Software Senior | Arquitecto Gen-AI | Fundador, CEO y CTO",
     "catExperience": "cat experience.txt",
     "experience1": "→ <span class=\"terminal-highlight\">15+ años</span> en Alemania",
     "experience2": "→ <span class=\"terminal-highlight\">7+ años</span> corporativo (Accenture, BMG, Innocean)",
@@ -66,7 +66,7 @@
   },
   "hero": {
     "journeyText": "Berlín → Toda la UE",
-    "headline": "Ingeniero Alemán.",
+    "headline": "Ingeniero Enterprise.",
     "headlineHighlight": "IA en producción por toda Europa.",
     "staticRoleTitle": "Gen AI & Ingeniero Cloud | Arquitecto Full Stack de Soluciones IA",
     "tagline": "<strong>Precisión Alemana</strong> • <strong>Herencia Árabe</strong> • <strong>Fluidez en Inglés</strong>",
@@ -91,8 +91,8 @@
     "name": "Sakhr AL-Absi",
     "title": "Gen AI & Ingeniero Cloud (GCP Certificado) | Arquitecto Full Stack de Soluciones IA | Ingeniero de Software Senior | Fundador, CEO y CTO",
     "badges": {
-      "germanCitizen": "🇩🇪 Ciudadano Alemán",
-      "yearsGermany": "15+ Años en Alemania",
+      "germanCitizen": "📍 Berlín, Alemania",
+      "yearsGermany": "Alemán C1 · Inglés C1",
       "relocating": "Ciudadano de la UE · remoto o traslado dentro de la UE"
     },
     "uploadPhoto": "Subir<br>Foto",
@@ -115,7 +115,7 @@
   "executiveProfile": {
     "title": "Perfil Ejecutivo: El Arquitecto AI-First",
     "hook": "<strong>\"La era de la programación tradicional ha terminado.\"</strong> Combino 15+ años de disciplina de ingeniería alemana con orquestación de IA de vanguardia para construir sistemas empresariales en días, no meses.",
-    "paragraph1": "Soy <strong>Ingeniero de Software Senior y Arquitecto Gen-AI</strong> y <strong>ciudadano de la UE</strong> (pasaporte alemán); trabajo desde Berlín y estoy abierto a equipos en cualquier país de la UE. Con una doble formación en Informática Aplicada e Ingeniería Industrial (<strong>HTW Berlin y TU Berlin</strong>), conecto la ejecución técnica con el caso de negocio que la respalda.",
+    "paragraph1": "Soy <strong>Ingeniero de Software Senior y Arquitecto Gen-AI</strong> con base en <strong>Berlín</strong> y trabajo con equipos de toda la UE. Con una doble formación en Informática Aplicada e Ingeniería Industrial (<strong>HTW Berlin y TU Berlin</strong>), conecto la ejecución técnica con el caso de negocio que la respalda.",
     "paragraph2": "En <strong>Accenture Alemania</strong> desarrollo microservicios Spring Boot/Java para clientes Fortune 500 de banca y automoción sobre OpenShift y Google Cloud. En paralelo, bajo <strong>AI Waverider</strong>, he diseñado, construido y operado mi propio portafolio de sistemas en producción: SaaS multiinquilino con Next.js, Prisma/PostgreSQL y BullMQ, con RAG, búsqueda vectorial, enrutado multiproveedor de LLM, pipelines agénticos y contabilidad de costes por petición.",
     "paragraph3": "<strong>Lo que aporto:</strong> responsabilidad completa de punta a punta — aislamiento de inquilinos protegido por cuatro mecanismos independientes, un sistema de localización en ocho idiomas con una verificación de completitud que rompe la compilación, y el derecho de supresión del RGPD como recorrido de usuario probado. Mi idioma de trabajo es el inglés; el alemán C1 y el árabe nativo se suman cuando un equipo necesita ese alcance.",
     "whyDubai": "<strong>Lo que busco:</strong> un puesto senior, de arquitectura o tech lead en un equipo de la UE — remote-first o híbrido — que esté llevando la Gen-AI a productos reales. Sin visado, sin patrocinio y sin papeleo de traslado: con pasaporte alemán puedo empezar en cualquier país de la UE/EEE.",
@@ -356,7 +356,7 @@
     "hint": "<i class=\"fas fa-mouse-pointer\"></i> Haz clic en un idioma para cambiar el idioma del sitio web",
     "german": {
       "name": "Alemán",
-      "level": "Fluido • 15+ años"
+      "level": "C1 · Fluido"
     },
     "english": {
       "name": "Inglés",
@@ -532,26 +532,27 @@
       "items": [
         "Gmail API",
         "Pub/Sub push",
-        "YouTube Data API + hand-rolled resumable upload",
+        "YouTube Data API",
+        "Resumable upload (hand-rolled)",
         "Google Places",
-        "Vertex AI (Gemini",
-        "Imagen)",
+        "Vertex AI (Gemini · Imagen)",
         "OAuth2",
         "Calendar",
         "Drive",
         "Sheets",
         "Postmaster Tools",
-        "GCP (GKE",
-        "IAM)"
+        "GCP (GKE · IAM)"
       ]
     },
     "meta": {
       "label": "Meta",
       "items": [
-        "Instagram Graph API (container-create → media-publish)",
+        "Instagram Graph API",
+        "Container-create → media-publish",
         "Facebook",
         "Meta Ads OAuth",
-        "Instagram scanning & budget metering"
+        "Instagram scanning",
+        "Budget metering"
       ]
     },
     "llm": {
@@ -564,31 +565,34 @@
         "Moonshot Kimi",
         "Zhipu GLM",
         "Qwen",
-        "Ollama (local, on-device)"
+        "Ollama (on-device)"
       ]
     },
     "rag": {
       "label": "RAG y búsqueda vectorial",
       "items": [
-        "Qdrant (named vectors",
-        "int8 quantization)",
+        "Qdrant",
         "Meilisearch",
-        "hybrid search fused with Reciprocal Rank Fusion",
-        "paragraph-aware chunking with overlap",
+        "Named vectors",
+        "int8 quantization",
+        "Hybrid search (RRF)",
+        "Chunking with overlap",
         "L2-normalised cosine",
-        "multi-provider embeddings chosen from a measured MRR benchmark",
-        "circuit breaker + blue-green index switch"
+        "Multi-provider embeddings",
+        "MRR-benchmarked selection",
+        "Circuit breaker",
+        "Blue-green reindex"
       ]
     },
     "voice": {
       "label": "Voz, vídeo y medios",
       "items": [
-        "ElevenLabs (TTS",
-        "voice cloning",
-        "dubbing)",
+        "ElevenLabs TTS",
+        "Voice cloning",
+        "Dubbing",
         "HeyGen avatars",
-        "Deepgram (streaming STT",
-        "Voice Agent)",
+        "Deepgram streaming STT",
+        "Deepgram Voice Agent",
         "Whisper (local GPU)",
         "Twilio",
         "Vapi",
@@ -601,14 +605,16 @@
     "data": {
       "label": "Datos e infraestructura",
       "items": [
-        "PostgreSQL (Prisma",
+        "PostgreSQL",
+        "Prisma",
         "Drizzle",
-        "RLS)",
+        "Row-level security",
         "Redis + BullMQ",
         "Supabase",
         "MongoDB",
         "Neo4j",
-        "MinIO/S3",
+        "PostGIS",
+        "MinIO / S3",
         "ClamAV",
         "pgBackRest PITR",
         "Docker",
@@ -620,9 +626,9 @@
     "commerce": {
       "label": "Comercio y CRM",
       "items": [
-        "Stripe (+ Connect)",
+        "Stripe",
+        "Stripe Connect",
         "PayPal",
-        "Paddle",
         "Paymob",
         "Apollo",
         "Hunter",
@@ -631,23 +637,23 @@
         "EmailBison",
         "Close CRM",
         "HubSpot",
-        "GoHighLevel",
         "Calendly",
         "Typeform",
         "Slack",
-        "Unipile",
         "n8n"
       ]
     },
     "agentic": {
       "label": "Agéntico y protocolos",
       "items": [
-        "Model Context Protocol servers (stdio + Streamable HTTP)",
+        "MCP servers",
+        "stdio + Streamable HTTP",
         "Agent Client Protocol",
         "Claude Agent SDK",
-        "tool-calling loops with approval gates",
-        "subagent fan-out",
-        "proof-receipt verification"
+        "Tool-calling loops",
+        "Approval gates",
+        "Subagent fan-out",
+        "Proof-receipt verification"
       ]
     }
   }

@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "Sakhr AL-Absi | Senior Software Engineer & Gen-AI-Architekt | EU / Remote",
-    "description": "EU-Bürger (deutscher Pass) — Senior Software Engineer und Gen-AI-Architekt, remote in der gesamten EU. GCP-zertifiziert. Spring-Boot-/Java-Microservices für Fortune-500-Kunden aus Banking und Automotive bei Accenture sowie ein eigenes Portfolio produktiver Gen-AI-Systeme: RAG, Vektorsuche, Multi-Provider-LLM-Routing, agentische Pipelines, mandantenfähige SaaS. Englisch C1, Deutsch C1, Arabisch Muttersprache, Spanisch B1."
+    "description": "Senior Software Engineer und Gen-AI-Architekt mit Sitz in Berlin, remote in der gesamten EU. GCP-zertifiziert. Spring-Boot-/Java-Microservices für Fortune-500-Kunden aus Banking und Automotive bei Accenture sowie ein eigenes Portfolio produktiver Gen-AI-Systeme: RAG, Vektorsuche, Multi-Provider-LLM-Routing, agentische Pipelines, mandantenfähige SaaS. Englisch C1, Deutsch C1, Arabisch Muttersprache, Spanisch B1."
   },
   "nav": {
     "logo": "Sakhr AL-Absi",
@@ -45,9 +45,9 @@
     "close": "✕",
     "closeTitle": "Terminal schließen",
     "whoami": "whoami",
-    "whoamiOutput": "🇪🇺 EU-Bürger (deutscher Pass) | Senior Software Engineer | Gründer, CEO & CTO",
+    "whoamiOutput": "Senior Software Engineer | Gen-AI-Architekt | Gründer, CEO & CTO",
     "catExperience": "cat experience.txt",
-    "experience1": "→ <span class=\"terminal-highlight\">15+ Jahre</span> in Deutschland",
+    "experience1": "→ <span class=\"terminal-highlight\">Berlin</span>, Deutschland · Deutsch C1",
     "experience2": "→ <span class=\"terminal-highlight\">7+ Jahre</span> Unternehmen (Accenture, BMG, Innocean)",
     "experience3": "→ Fortune 500 Kunden: Deutsche Banken & Auto-OEMs",
     "lsAchievements": "ls achievements/",
@@ -66,7 +66,7 @@
   },
   "hero": {
     "journeyText": "Berlin → EU-weit",
-    "headline": "Deutscher Ingenieur.",
+    "headline": "Enterprise-Engineer.",
     "headlineHighlight": "Produktive KI in ganz Europa.",
     "staticRoleTitle": "Gen AI & Cloud Engineer | Full Stack KI-Lösungsarchitekt",
     "tagline": "<strong>Deutsche Präzision</strong> • <strong>Arabisches Erbe</strong> • <strong>Englische Sprachgewandtheit</strong>",
@@ -91,8 +91,8 @@
     "name": "Sakhr AL-Absi",
     "title": "Gen AI & Cloud Engineer (GCP zertifiziert) | Full Stack KI-Lösungsarchitekt | Senior Software Engineer | Gründer, CEO & CTO",
     "badges": {
-      "germanCitizen": "🇩🇪 Deutscher Staatsbürger",
-      "yearsGermany": "15+ Jahre in Deutschland",
+      "germanCitizen": "📍 Berlin, Deutschland",
+      "yearsGermany": "Deutsch C1 · Englisch C1",
       "relocating": "EU-Bürger · remote oder Umzug innerhalb der EU"
     },
     "uploadPhoto": "Foto<br>hochladen",
@@ -102,7 +102,7 @@
     "allCerts": "Alle Zertifikate (ZIP)",
     "highlights": {
       "title": "WICHTIGE HIGHLIGHTS",
-      "germanCitizen": "Deutscher Staatsbürger mit 15+ Jahren in Deutschland, ausgebildet an TU Berlin und HTW Berlin",
+      "germanCitizen": "Standort Berlin · Studium an der TU Berlin und HTW Berlin · GCP Certified Cloud Engineer",
       "founder": "Gründer, CEO & CTO von AI Waverider — 23 eigenentwickelte produktive Systeme",
       "corporate": "7+ Jahre Unternehmenserfahrung bei Accenture, BMG Rights Management, Innocean Europe",
       "apps": "5.612 Commits im Portfolio, parallel zur Vollzeit-Enterprise-Tätigkeit entstanden",
@@ -115,7 +115,7 @@
   "executiveProfile": {
     "title": "Executive Profil: Der KI-First Architekt",
     "hook": "<strong>\"Die meiste KI erreicht nie den Produktivbetrieb.\"</strong> Ich bringe Systeme vom leeren Repository bis zum laufenden Dienst — Datenmodell, Queues, Auth, Mandantentrennung, Deployment, Kostenkontrolle — und schreibe die Fehleranalyse, wenn etwas kaputtgeht.",
-    "paragraph1": "Ich bin <strong>Senior Software Engineer und Gen-AI-Architekt</strong> sowie <strong>EU-Bürger</strong> (deutscher Pass), arbeite von Berlin aus und bin offen für Teams in der gesamten EU. Mit einem doppelten Hintergrund in Angewandter Informatik und Wirtschaftsingenieurwesen (<strong>HTW Berlin & TU Berlin</strong>) verbinde ich technische Umsetzung mit dem dahinterliegenden Geschäftsnutzen.",
+    "paragraph1": "Ich bin <strong>Senior Software Engineer und Gen-AI-Architekt</strong> mit Sitz in <strong>Berlin</strong> und arbeite mit Teams in der gesamten EU. Mit einem doppelten Hintergrund in Angewandter Informatik und Wirtschaftsingenieurwesen (<strong>HTW Berlin & TU Berlin</strong>) verbinde ich technische Umsetzung mit dem dahinterliegenden Geschäftsnutzen.",
     "paragraph2": "Bei <strong>Accenture Deutschland</strong> entwickle ich Spring-Boot-/Java-Microservices für Fortune-500-Kunden aus Banking und Automotive auf OpenShift und Google Cloud. Parallel habe ich unter <strong>AI Waverider</strong> ein eigenes Portfolio produktiver Systeme entworfen, gebaut und betrieben: mandantenfähige SaaS auf Next.js, Prisma/PostgreSQL und BullMQ, mit RAG, Vektorsuche, Multi-Provider-LLM-Routing, agentischen Pipelines und Kostenerfassung pro Request.",
     "paragraph3": "<strong>Was ich mitbringe:</strong> vollständige Verantwortung — Mandantentrennung, abgesichert durch vier unabhängige Mechanismen, ein achtsprachiges Lokalisierungssystem mit build-brechendem Vollständigkeits-Gate und das DSGVO-Recht auf Löschung als getestete User Journey. Meine Arbeitssprache ist Englisch; Deutsch C1 und Arabisch als Muttersprache kommen dazu, wo ein Team die Reichweite braucht.",
     "whyDubai": "<strong>Wonach ich suche:</strong> eine Senior-, Architektur- oder Tech-Lead-Rolle in einem EU-Team — remote-first oder hybrid — das Gen-AI in echte Produkte bringt. Kein Visum, keine Sponsorship, kein Umzugspapierkram: mit einem deutschen Pass kann ich überall in der EU/im EWR sofort anfangen.",
@@ -356,7 +356,7 @@
     "hint": "<i class=\"fas fa-mouse-pointer\"></i> Klicken Sie auf eine Sprache, um die Website-Sprache zu ändern",
     "german": {
       "name": "Deutsch",
-      "level": "Fließend • 15+ Jahre"
+      "level": "C1 · Verhandlungssicher"
     },
     "english": {
       "name": "Englisch",
@@ -389,7 +389,7 @@
     "responses": {
       "background": {
         "user": "Erzählen Sie mir über Sakhrs Hintergrund",
-        "bot": "<strong>Deutscher Staatsbürger & Gründer</strong><br><br>🇩🇪 <strong>15+ Jahre</strong> in Deutschland<br>🎓 <strong>TU Berlin & HTW Berlin</strong> Absolvent<br>💼 <strong>7+ Jahre</strong> bei Accenture, BMG, Innocean<br>🚀 <strong>Gründer, CEO & CTO</strong> von AI Waverider<br>🌍 Zusammenarbeit mit 25+ Ländern<br><br><strong>Einzigartiger Wert:</strong> Deutsche Präzision + arabisches Erbe + englische Sprachgewandtheit"
+        "bot": "<strong>Senior Engineer & Entwickler</strong><br><br>🏢 <strong>Accenture Deutschland</strong> — Fortune-500-Kunden aus Banking & Automotive<br>🎓 <strong>TU Berlin</strong> & <strong>HTW Berlin</strong><br>📍 Standort <strong>Berlin</strong><br>🗣️ Deutsch C1 · Englisch C1 · Arabisch Muttersprache"
       },
       "founder": {
         "user": "Erzählen Sie mir über AI Waverider",
@@ -415,7 +415,7 @@
     },
     "localResponses": {
       "founder": "<strong>Gründer, CEO & CTO von AI Waverider</strong><br><br>Gebaut 5.600+ KI-Agenten & Automatisierungsworkflows während Vollzeitbeschäftigung bei Accenture. Full-Stack-Plattform: React, Node.js, Python, GCP.",
-      "german": "<strong>Deutscher Staatsbürger</strong> mit 15+ Jahren in Deutschland. Ausgebildet an TU Berlin & HTW Berlin. 7+ Jahre Unternehmenserfahrung.",
+      "german": "Standort Berlin, Studium an der TU Berlin und HTW Berlin, 7+ Jahre Enterprise-Delivery bei Accenture Deutschland. Arbeitssprachen Deutsch (C1) und Englisch (C1).",
       "dubai": "Sakhr ist EU-Bürger mit Sitz in Berlin (MEZ). Er arbeitet remote in der gesamten EU und kann ohne Visum oder Sponsorship innerhalb der EU/des EWR umziehen.",
       "ai": "Gewann globalen KI-Hackathon. Baute AI Waverider mit 5.600+ Agenten. <strong>Gen AI & Cloud Engineer</strong>, spezialisiert auf RAGs (Retrieval-Augmented Generation), Fine Tuning und KI-Integration in Webanwendungen. Experte in der Erstellung hochperformanter Prompts, OpenAI, Claude, n8n, LangChain und modernen Gen AI Architekturmustern. GCP zertifizierter Cloud Engineer.",
       "available": "<strong>Offen für neue Rollen.</strong> Remote, hybrid oder vor Ort in der gesamten EU — Vollzeit oder Freelance. Unter Beachtung der üblichen deutschen Kündigungsfristen.",
@@ -533,26 +533,27 @@
       "items": [
         "Gmail API",
         "Pub/Sub push",
-        "YouTube Data API + hand-rolled resumable upload",
+        "YouTube Data API",
+        "Resumable upload (hand-rolled)",
         "Google Places",
-        "Vertex AI (Gemini",
-        "Imagen)",
+        "Vertex AI (Gemini · Imagen)",
         "OAuth2",
         "Calendar",
         "Drive",
         "Sheets",
         "Postmaster Tools",
-        "GCP (GKE",
-        "IAM)"
+        "GCP (GKE · IAM)"
       ]
     },
     "meta": {
       "label": "Meta",
       "items": [
-        "Instagram Graph API (container-create → media-publish)",
+        "Instagram Graph API",
+        "Container-create → media-publish",
         "Facebook",
         "Meta Ads OAuth",
-        "Instagram scanning & budget metering"
+        "Instagram scanning",
+        "Budget metering"
       ]
     },
     "llm": {
@@ -565,31 +566,34 @@
         "Moonshot Kimi",
         "Zhipu GLM",
         "Qwen",
-        "Ollama (local, on-device)"
+        "Ollama (on-device)"
       ]
     },
     "rag": {
       "label": "RAG & Vektorsuche",
       "items": [
-        "Qdrant (named vectors",
-        "int8 quantization)",
+        "Qdrant",
         "Meilisearch",
-        "hybrid search fused with Reciprocal Rank Fusion",
-        "paragraph-aware chunking with overlap",
+        "Named vectors",
+        "int8 quantization",
+        "Hybrid search (RRF)",
+        "Chunking with overlap",
         "L2-normalised cosine",
-        "multi-provider embeddings chosen from a measured MRR benchmark",
-        "circuit breaker + blue-green index switch"
+        "Multi-provider embeddings",
+        "MRR-benchmarked selection",
+        "Circuit breaker",
+        "Blue-green reindex"
       ]
     },
     "voice": {
       "label": "Sprache, Video & Medien",
       "items": [
-        "ElevenLabs (TTS",
-        "voice cloning",
-        "dubbing)",
+        "ElevenLabs TTS",
+        "Voice cloning",
+        "Dubbing",
         "HeyGen avatars",
-        "Deepgram (streaming STT",
-        "Voice Agent)",
+        "Deepgram streaming STT",
+        "Deepgram Voice Agent",
         "Whisper (local GPU)",
         "Twilio",
         "Vapi",
@@ -602,14 +606,16 @@
     "data": {
       "label": "Daten & Infrastruktur",
       "items": [
-        "PostgreSQL (Prisma",
+        "PostgreSQL",
+        "Prisma",
         "Drizzle",
-        "RLS)",
+        "Row-level security",
         "Redis + BullMQ",
         "Supabase",
         "MongoDB",
         "Neo4j",
-        "MinIO/S3",
+        "PostGIS",
+        "MinIO / S3",
         "ClamAV",
         "pgBackRest PITR",
         "Docker",
@@ -621,9 +627,9 @@
     "commerce": {
       "label": "Commerce & CRM",
       "items": [
-        "Stripe (+ Connect)",
+        "Stripe",
+        "Stripe Connect",
         "PayPal",
-        "Paddle",
         "Paymob",
         "Apollo",
         "Hunter",
@@ -632,23 +638,23 @@
         "EmailBison",
         "Close CRM",
         "HubSpot",
-        "GoHighLevel",
         "Calendly",
         "Typeform",
         "Slack",
-        "Unipile",
         "n8n"
       ]
     },
     "agentic": {
       "label": "Agentik & Protokolle",
       "items": [
-        "Model Context Protocol servers (stdio + Streamable HTTP)",
+        "MCP servers",
+        "stdio + Streamable HTTP",
         "Agent Client Protocol",
         "Claude Agent SDK",
-        "tool-calling loops with approval gates",
-        "subagent fan-out",
-        "proof-receipt verification"
+        "Tool-calling loops",
+        "Approval gates",
+        "Subagent fan-out",
+        "Proof-receipt verification"
       ]
     }
   }

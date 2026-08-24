@@ -1,7 +1,7 @@
 {
   "meta": {
     "title": "صخر العبسي | مهندس برمجيات أول ومهندس حلول ذكاء اصطناعي توليدي | الاتحاد الأوروبي / عن بُعد",
-    "description": "مواطن في الاتحاد الأوروبي (جواز سفر ألماني) — مهندس برمجيات أول ومهندس حلول ذكاء اصطناعي توليدي، يعمل عن بُعد في جميع أنحاء الاتحاد الأوروبي. حاصل على اعتماد ⁦GCP⁩. يبني خدمات مصغّرة بـ⁦Spring Boot⁩/⁦Java⁩ لعملاء من ⁦Fortune 500⁩ في قطاعي المصارف والسيارات لدى ⁦Accenture⁩، إضافة إلى منظومة منتجات ذكاء اصطناعي إنتاجية بناها بنفسه. الإنجليزية ⁦C1⁩، الألمانية ⁦C1⁩، العربية لغة أم، الإسبانية ⁦B1⁩."
+    "description": "مهندس برمجيات أول ومهندس حلول ذكاء اصطناعي توليدي مقيم في برلين، يعمل عن بُعد في جميع أنحاء الاتحاد الأوروبي. حاصل على اعتماد ⁦GCP⁩. يبني خدمات مصغّرة بـ⁦Spring Boot⁩/⁦Java⁩ لعملاء من ⁦Fortune 500⁩ لدى ⁦Accenture⁩، إضافة إلى منظومة منتجات ذكاء اصطناعي إنتاجية بناها بنفسه. الإنجليزية ⁦C1⁩، الألمانية ⁦C1⁩، العربية لغة أم، الإسبانية ⁦B1⁩."
   },
   "nav": {
     "logo": "صخر العبسي",
@@ -45,7 +45,7 @@
     "close": "✕",
     "closeTitle": "إغلاق الطرفية",
     "whoami": "whoami",
-    "whoamiOutput": "⁧🇪🇺 مواطن أوروبي (جواز سفر ألماني) | مهندس برمجيات أول | مؤسس ورئيس تنفيذي ومدير تقني⁩",
+    "whoamiOutput": "مهندس برمجيات أول | مهندس حلول ذكاء اصطناعي توليدي | مؤسس ورئيس تنفيذي ومدير تقني",
     "catExperience": "cat experience.txt",
     "experience1": "→ <span class=\"terminal-highlight\">15+ سنة</span> في ألمانيا",
     "experience2": "→ <span class=\"terminal-highlight\">7+ سنوات</span> مؤسسية (Accenture، BMG، Innocean)",
@@ -66,7 +66,7 @@
   },
   "hero": {
     "journeyText": "⁧برلين ← الاتحاد الأوروبي⁩",
-    "headline": "مهندس ألماني.",
+    "headline": "مهندس أنظمة مؤسسية.",
     "headlineHighlight": "ذكاء اصطناعي إنتاجي في أنحاء أوروبا.",
     "staticRoleTitle": "مهندس Gen AI & Cloud | مهندس حلول ذكاء اصطناعي متكاملة",
     "tagline": "<strong>الدقة الألمانية</strong> • <strong>التراث العربي</strong> • <strong>الطلاقة في الإنجليزية</strong>",
@@ -91,8 +91,8 @@
     "name": "صخر العبسي",
     "title": "مهندس Gen AI & Cloud (GCP معتمد) | مهندس حلول ذكاء اصطناعي متكاملة | مهندس برمجيات أول | مؤسس، الرئيس التنفيذي والرئيس التقني",
     "badges": {
-      "germanCitizen": "🇩🇪 مواطن ألماني",
-      "yearsGermany": "15+ سنة في ألمانيا",
+      "germanCitizen": "📍 برلين، ألمانيا",
+      "yearsGermany": "الألمانية C1 · الإنجليزية C1",
       "relocating": "مواطن أوروبي · عن بُعد أو انتقال داخل الاتحاد الأوروبي"
     },
     "uploadPhoto": "رفع<br>صورة",
@@ -115,7 +115,7 @@
   "executiveProfile": {
     "title": "الملف التنفيذي: مهندس الذكاء الاصطناعي الرائد",
     "hook": "<strong>\"انتهى عصر البرمجة التقليدية.\"</strong> أجمع 15+ سنة من الانضباط الهندسي الألماني مع تنسيق الذكاء الاصطناعي المتقدم لبناء أنظمة مؤسسية في أيام، وليس أشهر.",
-    "paragraph1": "أنا <strong>مهندس برمجيات أول ومهندس حلول ذكاء اصطناعي توليدي</strong>، و<strong>مواطن في الاتحاد الأوروبي</strong> (جواز سفر ألماني)، أعمل من برلين ومنفتح على فرق في أي بلد أوروبي. بخلفية مزدوجة في المعلوماتية التطبيقية والهندسة الصناعية من <strong><bdi>HTW Berlin</bdi> و<bdi>TU Berlin</bdi></strong>، أصل بين التنفيذ التقني والقيمة التجارية التي تقف خلفه.",
+    "paragraph1": "أنا <strong>مهندس برمجيات أول ومهندس حلول ذكاء اصطناعي توليدي</strong> مقيم في <strong>برلين</strong>، وأعمل مع فرق في مختلف أنحاء الاتحاد الأوروبي. بخلفية مزدوجة في المعلوماتية التطبيقية والهندسة الصناعية من <strong><bdi>HTW Berlin</bdi> و<bdi>TU Berlin</bdi></strong>، أصل بين التنفيذ التقني والقيمة التجارية التي تقف خلفه.",
     "paragraph2": "في <strong><bdi>Accenture</bdi> ألمانيا</strong> أبني خدمات مصغّرة بـ<bdi>Spring Boot</bdi>/<bdi>Java</bdi> لعملاء من <bdi>Fortune 500</bdi> في قطاعي المصارف والسيارات فوق <bdi>OpenShift</bdi> و<bdi>Google Cloud</bdi>. وبالتوازي صمّمت وبنيت وشغّلت تحت اسم <strong><bdi>AI Waverider</bdi></strong> منظومة أنظمة تعمل في الإنتاج: تطبيقات <bdi>SaaS</bdi> متعددة المستأجرين على <bdi>Next.js</bdi> و<bdi>Prisma/PostgreSQL</bdi> و<bdi>BullMQ</bdi>، مع استرجاع معزّز بالتوليد وبحث شعاعي وتوجيه نماذج لغوية متعدد المزوّدين وخطوط معالجة وكيلية ومحاسبة تكلفة لكل طلب.",
     "paragraph3": "<strong>ما أقدّمه:</strong> ملكية كاملة من الطرف إلى الطرف — عزل بين المستأجرين تحميه أربع آليات مستقلة، ونظام توطين بثماني لغات مع بوابة اكتمال تُفشل عملية البناء، وحق المحو وفق اللائحة الأوروبية لحماية البيانات كمسار مستخدم مُختبَر. لغة عملي اليومية هي الإنجليزية، وتنضم إليها الألمانية بمستوى <bdi>C1</bdi> والعربية كلغة أم حين يحتاج الفريق إلى هذا المدى.",
     "whyDubai": "<strong>ما أبحث عنه:</strong> دور هندسي أول أو معماري أو قيادة تقنية داخل فريق أوروبي — يعمل عن بُعد أساساً أو بنظام مختلط — يُدخل الذكاء الاصطناعي التوليدي في منتجات حقيقية. لا تأشيرة ولا كفالة ولا معاملات انتقال: جواز السفر الألماني يتيح لي البدء في أي بلد داخل الاتحاد الأوروبي أو المنطقة الاقتصادية الأوروبية.",
@@ -356,7 +356,7 @@
     "hint": "<i class=\"fas fa-mouse-pointer\"></i> انقر على لغة لتغيير لغة الموقع",
     "german": {
       "name": "الألمانية",
-      "level": "طلاقة • 15+ سنة"
+      "level": "C1 · بطلاقة"
     },
     "english": {
       "name": "الإنجليزية",
@@ -540,26 +540,27 @@
       "items": [
         "Gmail API",
         "Pub/Sub push",
-        "YouTube Data API + hand-rolled resumable upload",
+        "YouTube Data API",
+        "Resumable upload (hand-rolled)",
         "Google Places",
-        "Vertex AI (Gemini",
-        "Imagen)",
+        "Vertex AI (Gemini · Imagen)",
         "OAuth2",
         "Calendar",
         "Drive",
         "Sheets",
         "Postmaster Tools",
-        "GCP (GKE",
-        "IAM)"
+        "GCP (GKE · IAM)"
       ]
     },
     "meta": {
       "label": "Meta",
       "items": [
-        "Instagram Graph API (container-create → media-publish)",
+        "Instagram Graph API",
+        "Container-create → media-publish",
         "Facebook",
         "Meta Ads OAuth",
-        "Instagram scanning & budget metering"
+        "Instagram scanning",
+        "Budget metering"
       ]
     },
     "llm": {
@@ -572,31 +573,34 @@
         "Moonshot Kimi",
         "Zhipu GLM",
         "Qwen",
-        "Ollama (local, on-device)"
+        "Ollama (on-device)"
       ]
     },
     "rag": {
       "label": "الاسترجاع المعزّز والبحث الشعاعي",
       "items": [
-        "Qdrant (named vectors",
-        "int8 quantization)",
+        "Qdrant",
         "Meilisearch",
-        "hybrid search fused with Reciprocal Rank Fusion",
-        "paragraph-aware chunking with overlap",
+        "Named vectors",
+        "int8 quantization",
+        "Hybrid search (RRF)",
+        "Chunking with overlap",
         "L2-normalised cosine",
-        "multi-provider embeddings chosen from a measured MRR benchmark",
-        "circuit breaker + blue-green index switch"
+        "Multi-provider embeddings",
+        "MRR-benchmarked selection",
+        "Circuit breaker",
+        "Blue-green reindex"
       ]
     },
     "voice": {
       "label": "الصوت والفيديو والوسائط",
       "items": [
-        "ElevenLabs (TTS",
-        "voice cloning",
-        "dubbing)",
+        "ElevenLabs TTS",
+        "Voice cloning",
+        "Dubbing",
         "HeyGen avatars",
-        "Deepgram (streaming STT",
-        "Voice Agent)",
+        "Deepgram streaming STT",
+        "Deepgram Voice Agent",
         "Whisper (local GPU)",
         "Twilio",
         "Vapi",
@@ -609,14 +613,16 @@
     "data": {
       "label": "البيانات والبنية التحتية",
       "items": [
-        "PostgreSQL (Prisma",
+        "PostgreSQL",
+        "Prisma",
         "Drizzle",
-        "RLS)",
+        "Row-level security",
         "Redis + BullMQ",
         "Supabase",
         "MongoDB",
         "Neo4j",
-        "MinIO/S3",
+        "PostGIS",
+        "MinIO / S3",
         "ClamAV",
         "pgBackRest PITR",
         "Docker",
@@ -628,9 +634,9 @@
     "commerce": {
       "label": "التجارة وإدارة العملاء",
       "items": [
-        "Stripe (+ Connect)",
+        "Stripe",
+        "Stripe Connect",
         "PayPal",
-        "Paddle",
         "Paymob",
         "Apollo",
         "Hunter",
@@ -639,23 +645,23 @@
         "EmailBison",
         "Close CRM",
         "HubSpot",
-        "GoHighLevel",
         "Calendly",
         "Typeform",
         "Slack",
-        "Unipile",
         "n8n"
       ]
     },
     "agentic": {
       "label": "الوكلاء والبروتوكولات",
       "items": [
-        "Model Context Protocol servers (stdio + Streamable HTTP)",
+        "MCP servers",
+        "stdio + Streamable HTTP",
         "Agent Client Protocol",
         "Claude Agent SDK",
-        "tool-calling loops with approval gates",
-        "subagent fan-out",
-        "proof-receipt verification"
+        "Tool-calling loops",
+        "Approval gates",
+        "Subagent fan-out",
+        "Proof-receipt verification"
       ]
     }
   }
