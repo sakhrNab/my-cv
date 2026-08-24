@@ -11,7 +11,8 @@
     "skills": "Skills",
     "certs": "Certs",
     "downloadCV": "Download CV",
-    "products": "Products"
+    "products": "Products",
+    "education": "Education"
   },
   "game": {
     "title": "🚀 SAKHR'S SKILL CHALLENGE",
@@ -206,7 +207,7 @@
     }
   },
   "education": {
-    "title": "Education (German Universities)",
+    "title": "Education",
     "htw": {
       "degree": "B.Sc. Applied Computer Science (Angewandte Informatik)",
       "institution": "HTW Berlin - University of Applied Sciences",
@@ -489,10 +490,10 @@
       "stack": "Tauri · React · Python · C++17/Qt6 · FFmpeg C API · GLSL · faster-whisper"
     },
     "translatepro": {
-      "name": "TranslatePro — social.aiwaverider.com",
-      "tag": "Pipeline",
-      "desc": "AI translation and multi-platform publishing pipeline. The YouTube resumable-upload protocol is implemented by hand — session initiation, chunked transfer and processing-status polling — rather than wrapped from an SDK, and Instagram publishing goes through the Graph API container-create then media-publish flow. Eighteen queues and cron-driven workers move a video from source through transcription, translation and scheduled publication.",
-      "stack": "NestJS · BullMQ · PostgreSQL · YouTube Data API · Instagram Graph API · Whisper · Stripe"
+      "name": "Social Automation Platform",
+      "tag": "Multi-app · social.aiwaverider.com",
+      "desc": "A multi-app platform, not a single tool: an Instagram automation suite (keyword triggers, conversation flows, workflows, A/B tests, interactions and analytics — 11 modules), an AI translation pipeline with word-level timestamps, and separate music, video and thumbnail generation, over a Google Drive ingestion pipeline. Publishing goes to YouTube and Instagram — the YouTube resumable-upload protocol is implemented by hand (session initiation, chunked transfer, processing-status polling) rather than wrapped from an SDK. 39 registered modules, 18 queues, Stripe billing, with a React web client and an Expo mobile app.",
+      "stack": "NestJS · BullMQ · PostgreSQL · Instagram Graph API · YouTube Data API · Whisper · Stripe · React · Expo"
     },
     "storefront": {
       "name": "aiwaverider.com",

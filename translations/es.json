@@ -11,7 +11,8 @@
     "skills": "Habilidades",
     "certs": "Certificados",
     "downloadCV": "Descargar CV",
-    "products": "Productos"
+    "products": "Productos",
+    "education": "Formación"
   },
   "game": {
     "title": "🚀 DESAFÍO DE HABILIDADES DE SAKHR",
@@ -206,7 +207,7 @@
     }
   },
   "education": {
-    "title": "Educación (Universidades Alemanas)",
+    "title": "Formación",
     "htw": {
       "degree": "B.Sc. Ciencias de la Computación Aplicadas (Angewandte Informatik)",
       "institution": "HTW Berlin - Universidad de Ciencias Aplicadas",
@@ -485,10 +486,10 @@
       "stack": "Tauri · React · Python · C++17/Qt6 · FFmpeg C API · GLSL · faster-whisper"
     },
     "translatepro": {
-      "name": "TranslatePro — social.aiwaverider.com",
-      "tag": "Pipeline",
-      "desc": "Pipeline de traducción con IA y publicación multiplataforma. El protocolo de subida reanudable de YouTube está implementado a mano — inicio de sesión, transferencia por fragmentos y sondeo del estado de procesamiento — en lugar de envolver un SDK, y la publicación en Instagram usa el flujo de la Graph API de crear contenedor y luego publicar. Dieciocho colas y workers por cron llevan un vídeo desde el origen hasta la publicación programada.",
-      "stack": "NestJS · BullMQ · PostgreSQL · YouTube Data API · Instagram Graph API · Whisper · Stripe"
+      "name": "Plataforma de Automatización Social",
+      "tag": "Multi-app · social.aiwaverider.com",
+      "desc": "Una plataforma de varias aplicaciones, no una sola herramienta: una suite de automatización de Instagram (disparadores por palabra clave, flujos de conversación, workflows, pruebas A/B, interacciones y analítica — 11 módulos), un pipeline de traducción con IA y marcas de tiempo por palabra, y generación separada de música, vídeo y miniaturas sobre un pipeline de ingesta desde Google Drive. La publicación va a YouTube e Instagram — el protocolo de subida reanudable de YouTube está implementado a mano (inicio de sesión, transferencia por fragmentos, sondeo del estado) en lugar de envolver un SDK. 39 módulos registrados, 18 colas, facturación con Stripe, con cliente web React y app móvil Expo.",
+      "stack": "NestJS · BullMQ · PostgreSQL · Instagram Graph API · YouTube Data API · Whisper · Stripe · React · Expo"
     },
     "storefront": {
       "name": "aiwaverider.com",

@@ -11,7 +11,8 @@
     "skills": "المهارات",
     "certs": "الشهادات",
     "downloadCV": "تحميل السيرة الذاتية",
-    "products": "المنتجات"
+    "products": "المنتجات",
+    "education": "التعليم"
   },
   "game": {
     "title": "🚀 تحدي مهارات صخر",
@@ -206,7 +207,7 @@
     }
   },
   "education": {
-    "title": "التعليم (الجامعات الألمانية)",
+    "title": "التعليم",
     "htw": {
       "degree": "بكالوريوس علوم الكمبيوتر التطبيقية (Angewandte Informatik)",
       "institution": "HTW Berlin - جامعة العلوم التطبيقية",
@@ -496,10 +497,10 @@
       "stack": "Tauri · React · Python · C++17/Qt6 · FFmpeg C API · GLSL · faster-whisper"
     },
     "translatepro": {
-      "name": "TranslatePro — social.aiwaverider.com",
-      "tag": "Pipeline",
-      "desc": "مسار ترجمة بالذكاء الاصطناعي ونشر متعدد المنصات. بروتوكول الرفع القابل للاستئناف في <bdi>YouTube</bdi> مُنفَّذ يدوياً — بدء الجلسة، والنقل على أجزاء، واستطلاع حالة المعالجة — بدل الاعتماد على حزمة تطوير، ويجري النشر على <bdi>Instagram</bdi> عبر تدفّق <bdi>Graph API</bdi>. وتنقل ثمانية عشر طابوراً وعمّال مجدولون الفيديو من المصدر حتى النشر المجدول.",
-      "stack": "NestJS · BullMQ · PostgreSQL · YouTube Data API · Instagram Graph API · Whisper · Stripe"
+      "name": "منصّة أتمتة التواصل الاجتماعي",
+      "tag": "متعددة التطبيقات · social.aiwaverider.com",
+      "desc": "منصّة تضم تطبيقات متعددة، لا أداة واحدة: حزمة أتمتة لـ<bdi>Instagram</bdi> (مُشغّلات بالكلمات المفتاحية، ومسارات محادثة، وسير عمل، واختبارات <bdi>A/B</bdi>، وتفاعلات وتحليلات — 11 وحدة)، ومسار ترجمة بالذكاء الاصطناعي مع طوابع زمنية على مستوى الكلمة، وتوليد منفصل للموسيقى والفيديو والصور المصغّرة، فوق مسار استيعاب من <bdi>Google Drive</bdi>. ويجري النشر على <bdi>YouTube</bdi> و<bdi>Instagram</bdi> — وبروتوكول الرفع القابل للاستئناف في <bdi>YouTube</bdi> مُنفَّذ يدوياً بدل الاعتماد على حزمة تطوير. 39 وحدة مسجّلة، و18 طابوراً، وفوترة عبر <bdi>Stripe</bdi>، مع عميل ويب بـ<bdi>React</bdi> وتطبيق جوال بـ<bdi>Expo</bdi>.",
+      "stack": "NestJS · BullMQ · PostgreSQL · Instagram Graph API · YouTube Data API · Whisper · Stripe · React · Expo"
     },
     "storefront": {
       "name": "aiwaverider.com",

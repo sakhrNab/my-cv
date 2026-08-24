@@ -248,75 +248,6 @@ async function generatePDF() {
     y += 10; // Final spacing after summary section
     
 
-    // ---- Selected Products & Platforms (europe branch) ----
-    addSection(getT('products.title') || 'SELECTED PRODUCTS & PLATFORMS');
-    const productSub = stripHTML(getT('products.subtitle'));
-    if (productSub && productSub !== 'products.subtitle') {
-        doc.setFontSize(9);
-        doc.setTextColor(90, 90, 90);
-        const sl = doc.splitTextToSize(productSub, pageW - margin * 2);
-        doc.text(sl, margin, y);
-        y += sl.length * 4 + 4;
-        doc.setFontSize(10);
-        doc.setTextColor(40, 40, 40);
-    }
-    ['omnalu','emailai','leadoutbound','contentfactory','ralph','zelavi','wavecode','wavecut','translatepro','storefront','clinicai','laborsynopse'].forEach(pk => {
-        const nm = stripHTML(getT('products.' + pk + '.name'));
-        if (!nm || nm.indexOf('products.') === 0) return;
-        const tag = stripHTML(getT('products.' + pk + '.tag'));
-        const ds = stripHTML(getT('products.' + pk + '.desc'));
-        const st = stripHTML(getT('products.' + pk + '.stack'));
-        const dLines = doc.splitTextToSize(ds, pageW - margin * 2 - 4);
-        const sLines = doc.splitTextToSize(st, pageW - margin * 2 - 4);
-        checkSpace(12 + dLines.length * 4 + sLines.length * 3.6);
-        doc.setFont("helvetica", "bold");
-        doc.setFontSize(10.5);
-        doc.setTextColor(26, 54, 93);
-        doc.text(nm, margin, y);
-        if (tag && tag.indexOf('products.') !== 0) {
-            doc.setFont("helvetica", "normal");
-            doc.setFontSize(8);
-            doc.setTextColor(150, 120, 30);
-            doc.text(tag, pageW - margin, y, { align: 'right' });
-        }
-        y += 4.5;
-        doc.setFont("helvetica", "normal");
-        doc.setFontSize(9);
-        doc.setTextColor(45, 45, 45);
-        doc.text(dLines, margin + 2, y);
-        y += dLines.length * 4 + 1.5;
-        doc.setFontSize(7.6);
-        doc.setTextColor(115, 115, 115);
-        doc.text(sLines, margin + 2, y);
-        y += sLines.length * 3.6 + 5;
-        doc.setFontSize(10);
-        doc.setTextColor(40, 40, 40);
-    });
-    y += 6;
-
-    // ---- Integrations & AI Infrastructure ----
-    addSection(getT('integrations.title') || 'INTEGRATIONS & AI INFRASTRUCTURE');
-    ['google','meta','llm','rag','voice','data','commerce','agentic'].forEach(ik => {
-        const lb = stripHTML(getT('integrations.' + ik + '.label'));
-        if (!lb || lb.indexOf('integrations.') === 0) return;
-        const it = stripHTML(getT('integrations.' + ik + '.items'));
-        const iLines = doc.splitTextToSize(it, pageW - margin * 2 - 6);
-        checkSpace(8 + iLines.length * 3.8);
-        doc.setFont("helvetica", "bold");
-        doc.setFontSize(9);
-        doc.setTextColor(150, 120, 30);
-        doc.text(lb, margin, y);
-        y += 4;
-        doc.setFont("helvetica", "normal");
-        doc.setFontSize(8);
-        doc.setTextColor(55, 55, 55);
-        doc.text(iLines, margin + 3, y);
-        y += iLines.length * 3.8 + 4;
-        doc.setFontSize(10);
-        doc.setTextColor(40, 40, 40);
-    });
-    y += 8;
-
     addSection(getT('experience.title'));
     const experiences = [
         { 
@@ -432,6 +363,75 @@ async function generatePDF() {
     });
     
     // Education Section
+    // ---- Selected Products & Platforms (europe branch) ----
+    addSection(getT('products.title') || 'SELECTED PRODUCTS & PLATFORMS');
+    const productSub = stripHTML(getT('products.subtitle'));
+    if (productSub && productSub !== 'products.subtitle') {
+        doc.setFontSize(9);
+        doc.setTextColor(90, 90, 90);
+        const sl = doc.splitTextToSize(productSub, pageW - margin * 2);
+        doc.text(sl, margin, y);
+        y += sl.length * 4 + 4;
+        doc.setFontSize(10);
+        doc.setTextColor(40, 40, 40);
+    }
+    ['omnalu','emailai','leadoutbound','contentfactory','ralph','zelavi','wavecode','wavecut','translatepro','storefront','clinicai','laborsynopse'].forEach(pk => {
+        const nm = stripHTML(getT('products.' + pk + '.name'));
+        if (!nm || nm.indexOf('products.') === 0) return;
+        const tag = stripHTML(getT('products.' + pk + '.tag'));
+        const ds = stripHTML(getT('products.' + pk + '.desc'));
+        const st = stripHTML(getT('products.' + pk + '.stack'));
+        const dLines = doc.splitTextToSize(ds, pageW - margin * 2 - 4);
+        const sLines = doc.splitTextToSize(st, pageW - margin * 2 - 4);
+        checkSpace(12 + dLines.length * 4 + sLines.length * 3.6);
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(10.5);
+        doc.setTextColor(26, 54, 93);
+        doc.text(nm, margin, y);
+        if (tag && tag.indexOf('products.') !== 0) {
+            doc.setFont("helvetica", "normal");
+            doc.setFontSize(8);
+            doc.setTextColor(150, 120, 30);
+            doc.text(tag, pageW - margin, y, { align: 'right' });
+        }
+        y += 4.5;
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(9);
+        doc.setTextColor(45, 45, 45);
+        doc.text(dLines, margin + 2, y);
+        y += dLines.length * 4 + 1.5;
+        doc.setFontSize(7.6);
+        doc.setTextColor(115, 115, 115);
+        doc.text(sLines, margin + 2, y);
+        y += sLines.length * 3.6 + 5;
+        doc.setFontSize(10);
+        doc.setTextColor(40, 40, 40);
+    });
+    y += 6;
+
+    // ---- Integrations & AI Infrastructure ----
+    addSection(getT('integrations.title') || 'INTEGRATIONS & AI INFRASTRUCTURE');
+    ['google','meta','llm','rag','voice','data','commerce','agentic'].forEach(ik => {
+        const lb = stripHTML(getT('integrations.' + ik + '.label'));
+        if (!lb || lb.indexOf('integrations.') === 0) return;
+        const it = stripHTML(getT('integrations.' + ik + '.items'));
+        const iLines = doc.splitTextToSize(it, pageW - margin * 2 - 6);
+        checkSpace(8 + iLines.length * 3.8);
+        doc.setFont("helvetica", "bold");
+        doc.setFontSize(9);
+        doc.setTextColor(150, 120, 30);
+        doc.text(lb, margin, y);
+        y += 4;
+        doc.setFont("helvetica", "normal");
+        doc.setFontSize(8);
+        doc.setTextColor(55, 55, 55);
+        doc.text(iLines, margin + 3, y);
+        y += iLines.length * 3.8 + 4;
+        doc.setFontSize(10);
+        doc.setTextColor(40, 40, 40);
+    });
+    y += 8;
+
     addSection(getT('education.title'));
     const educations = [
         { 

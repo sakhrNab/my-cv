@@ -11,7 +11,8 @@
     "skills": "Fähigkeiten",
     "certs": "Zertifikate",
     "downloadCV": "Lebenslauf herunterladen",
-    "products": "Produkte"
+    "products": "Produkte",
+    "education": "Ausbildung"
   },
   "game": {
     "title": "🚀 SAKHRS FÄHIGKEITS-HERAUFORDERUNG",
@@ -206,7 +207,7 @@
     }
   },
   "education": {
-    "title": "Bildung (Deutsche Universitäten)",
+    "title": "Ausbildung",
     "htw": {
       "degree": "B.Sc. Angewandte Informatik",
       "institution": "HTW Berlin - Hochschule für Technik und Wirtschaft",
@@ -489,10 +490,10 @@
       "stack": "Tauri · React · Python · C++17/Qt6 · FFmpeg C API · GLSL · faster-whisper"
     },
     "translatepro": {
-      "name": "TranslatePro — social.aiwaverider.com",
-      "tag": "Pipeline",
-      "desc": "KI-Übersetzungs- und Multi-Plattform-Publishing-Pipeline. Das YouTube-Resumable-Upload-Protokoll ist handimplementiert — Sitzungsinitiierung, Chunk-Übertragung und Abfrage des Verarbeitungsstatus — statt aus einem SDK übernommen; das Instagram-Publishing läuft über den Graph-API-Fluss Container-Create und anschließendes Media-Publish. Achtzehn Queues und Cron-gesteuerte Worker führen ein Video von der Quelle über Transkription und Übersetzung bis zur geplanten Veröffentlichung.",
-      "stack": "NestJS · BullMQ · PostgreSQL · YouTube Data API · Instagram Graph API · Whisper · Stripe"
+      "name": "Social-Automation-Plattform",
+      "tag": "Multi-App · social.aiwaverider.com",
+      "desc": "Eine Plattform aus mehreren Anwendungen, kein Einzeltool: eine Instagram-Automatisierungs-Suite (Keyword-Trigger, Konversationsflüsse, Workflows, A/B-Tests, Interaktionen und Analytics — 11 Module), eine KI-Übersetzungs-Pipeline mit wortgenauen Zeitstempeln sowie getrennte Musik-, Video- und Thumbnail-Generierung über einer Google-Drive-Ingestion-Pipeline. Veröffentlicht wird auf YouTube und Instagram — das YouTube-Resumable-Upload-Protokoll ist handimplementiert (Sitzungsinitiierung, Chunk-Übertragung, Abfrage des Verarbeitungsstatus) statt aus einem SDK übernommen. 39 registrierte Module, 18 Queues, Stripe-Abrechnung, mit React-Web-Client und Expo-Mobile-App.",
+      "stack": "NestJS · BullMQ · PostgreSQL · Instagram Graph API · YouTube Data API · Whisper · Stripe · React · Expo"
     },
     "storefront": {
       "name": "aiwaverider.com",
