@@ -2,6 +2,12 @@
 // self-contained A4 HTML document for Chromium PDF export (scripts/build-pdfs.mjs).
 // Design system: Playfair Display + Inter (Amiri + IBM Plex Sans Arabic for ar),
 // navy #1A365D / gold #C9A227 brand, logical CSS properties so ar mirrors itself.
+//
+// Two modes: full portfolio CV (profile = null), and 2-page application variant
+// (profile from pdf/profiles.mjs — selects headline, bullets, products, skills;
+// all content still comes from the translations).
+
+import { EARLIER_ROLES_LABEL } from './profiles.mjs';
 
 const EMOJI = /[\u{1F000}-\u{1FAFF}\u{2600}-\u{27BF}\u{2B00}-\u{2BFF}\u{FE0F}\u{200D}]/gu;
 
@@ -28,7 +34,7 @@ const CONTACTS = [
     { icon: 'linkedin', text: 'linkedin.com/in/sakhr-nabil-al-absi', href: 'https://www.linkedin.com/in/sakhr-nabil-al-absi' }
 ];
 
-export function renderCV(t, lang, { photoDataUri }) {
+export function renderCV(t, lang, { photoDataUri, profile = null }) {
     const rtl = lang === 'ar';
     const dir = rtl ? 'rtl' : 'ltr';
     const g = (path, fallback = '') => {
@@ -42,7 +48,8 @@ export function renderCV(t, lang, { photoDataUri }) {
     const displayFont = rtl ? "'Amiri','Playfair Display',serif" : "'Playfair Display','Amiri',serif";
     const bodyFont = rtl ? "'IBM Plex Sans Arabic','Inter',sans-serif" : "'Inter',sans-serif";
 
-    const roleParts = clean(g('cv.title')).split(/\s*[|｜]\s*/).filter(Boolean);
+    const titleStr = clean(profile?.title?.[lang] || g('cv.title'));
+    const roleParts = titleStr.split(/\s*[|｜]\s*/).filter(Boolean);
     const roles = roleParts.map(esc).join('<span class="role-sep">◆</span>');
 
     const badges = ['germanCitizen', 'yearsGermany', 'relocating']
@@ -56,47 +63,81 @@ export function renderCV(t, lang, { photoDataUri }) {
     const section = (title, extra = '') =>
         `<h2 class="sec"><span class="t">${esc(title)}</span></h2>${extra}`;
 
-    const highlights = Object.entries(g('cv.highlights', {}))
+    const highlightEntries = Object.entries(g('cv.highlights', {}))
         .filter(([k, v]) => k !== 'title' && clean(v))
+        .filter(([k]) => !profile || profile.highlights.includes(k));
+    const highlights = highlightEntries
         .map(([, v]) => `<div class="hl">${rich(v)}</div>`).join('');
 
-    const summary = ['paragraph1', 'paragraph2', 'paragraph3']
+    const summaryKeys = profile ? ['paragraph1', 'paragraph3'] : ['paragraph1', 'paragraph2', 'paragraph3'];
+    const summary = summaryKeys
         .map(k => rich(g(`summary.${k}`))).filter(Boolean)
         .map(p => `<p class="sum">${p}</p>`).join('');
 
-    const experience = Object.entries(g('experience', {}))
-        .filter(([, v]) => v && typeof v === 'object' && v.role)
-        .map(([, e]) => {
-            const points = Object.values(e.points || {}).map(rich).filter(Boolean)
-                .map(p => `<li>${p}</li>`).join('');
-            return `<article class="xp">
-              <div class="xp-lede">
-                <div class="xp-head">
-                  <h3 class="xp-role">${esc(e.role)}</h3>
-                  <span class="date-chip">${esc(e.date)}</span>
-                </div>
-                <div class="xp-co">${esc(e.company)}</div>
-                ${clean(e.highlight) ? `<div class="xp-hl">${rich(e.highlight)}</div>` : ''}
-                ${clean(e.description) ? `<p class="xp-desc">${rich(e.description)}</p>` : ''}
-              </div>
-              <ul class="pts">${points}</ul>
-            </article>`;
-        }).join('');
+    const xpArticle = (e, pointKeys = null) => {
+        const pts = pointKeys
+            ? pointKeys.map(k => e.points?.[k]).map(rich).filter(Boolean)
+            : Object.values(e.points || {}).map(rich).filter(Boolean);
+        const points = pts.map(p => `<li>${p}</li>`).join('');
+        return `<article class="xp">
+          <div class="xp-lede">
+            <div class="xp-head">
+              <h3 class="xp-role">${esc(e.role)}</h3>
+              <span class="date-chip">${esc(e.date)}</span>
+            </div>
+            <div class="xp-co">${esc(e.company)}</div>
+            ${!profile && clean(e.highlight) ? `<div class="xp-hl">${rich(e.highlight)}</div>` : ''}
+            ${!profile && clean(e.description) ? `<p class="xp-desc">${rich(e.description)}</p>` : ''}
+          </div>
+          <ul class="pts">${points}</ul>
+        </article>`;
+    };
+
+    let experience;
+    if (profile) {
+        // Application variant: employment story first, founder second,
+        // early career compressed to one line per role.
+        const earlier = ['scopeland', 'innocean', 'bmg']
+            .map(k => g(`experience.${k}`, null)).filter(Boolean)
+            .map(e => `<div class="earlier-row">
+                <span class="earlier-role">${esc(e.role)}</span>
+                <span class="earlier-co">${esc(e.company)}</span>
+                <span class="earlier-date">${esc(e.date)}</span>
+              </div>`).join('');
+        experience = xpArticle(g('experience.accenture'), profile.accentureBullets)
+            + xpArticle(g('experience.founder'), profile.founderBullets)
+            + `<div class="earlier">
+                <div class="earlier-label">${esc(EARLIER_ROLES_LABEL[lang] || EARLIER_ROLES_LABEL.en)}</div>
+                ${earlier}
+              </div>`;
+    } else {
+        experience = Object.entries(g('experience', {}))
+            .filter(([, v]) => v && typeof v === 'object' && v.role)
+            .map(([, e]) => xpArticle(e)).join('');
+    }
 
     const products = Object.entries(g('products', {}))
         .filter(([, v]) => v && typeof v === 'object' && v.name)
+        .filter(([k]) => !profile || profile.products.includes(k))
         .map(([, p]) => `<div class="card">
             <div class="card-head">
               <span class="card-name"><bdi>${esc(p.name)}</bdi></span>
               ${clean(p.tag) ? `<span class="tag">${esc(p.tag)}</span>` : ''}
             </div>
             <div class="card-desc">${rich(p.desc)}</div>
-            <div class="card-stack"><bdi>${esc(p.stack)}</bdi></div>
+            ${profile ? '' : `<div class="card-stack"><bdi>${esc(p.stack)}</bdi></div>`}
           </div>`).join('');
 
     const education = ['htw', 'tu'].map(k => {
         const e = g(`education.${k}`, null);
         if (!e) return '';
+        if (profile) {
+            return `<div class="earlier-row">
+                <span class="earlier-role">${esc(e.degree)}</span>
+                <span class="earlier-co">${esc(e.institution)}</span>
+                <span class="earlier-date">${esc(e.date)}</span>
+              </div>`;
+        }
         const det = [e.thesis, e.grade, e.description1, e.description2]
             .map(rich).filter(Boolean).map(d => `<li>${d}</li>`).join('');
         return `<article class="xp edu">
@@ -113,20 +154,24 @@ export function renderCV(t, lang, { photoDataUri }) {
 
     const certifications = Object.entries(g('certifications', {}))
         .filter(([, v]) => v && typeof v === 'object' && v.name)
+        .filter(([k]) => !profile || ['gcp', 'accenture'].includes(k))
         .map(([, c]) => `<div class="cert">
             <div class="cert-name">${esc(c.name)} <span class="cert-date">· ${esc(c.date)}</span></div>
-            ${clean(c.description) ? `<div class="cert-desc">${rich(c.description)}</div>` : ''}
+            ${!profile && clean(c.description) ? `<div class="cert-desc">${rich(c.description)}</div>` : ''}
           </div>`).join('');
 
-    const skills = Object.entries(g('skills.categories', {})).map(([k, cat]) => {
-        const raw = g(`skills.tags.${k}`, []);
-        const tags = Array.isArray(raw) ? raw : String(raw).split(',');
-        const chips = tags.map(clean).filter(Boolean)
-            .map(x => `<span class="chip"><bdi>${esc(x)}</bdi></span>`).join('');
-        return chips ? `<div class="skill-row"><div class="skill-cat">${esc(cat)}</div><div class="chips">${chips}</div></div>` : '';
-    }).join('');
+    const skills = Object.entries(g('skills.categories', {}))
+        .filter(([k]) => !profile || profile.skillCats.includes(k))
+        .map(([k, cat]) => {
+            const raw = g(`skills.tags.${k}`, []);
+            let tags = Array.isArray(raw) ? raw : String(raw).split(',');
+            if (profile) tags = tags.slice(0, 9);
+            const chips = tags.map(clean).filter(Boolean)
+                .map(x => `<span class="chip"><bdi>${esc(x)}</bdi></span>`).join('');
+            return chips ? `<div class="skill-row"><div class="skill-cat">${esc(cat)}</div><div class="chips">${chips}</div></div>` : '';
+        }).join('');
 
-    const integrations = Object.entries(g('integrations', {}))
+    const integrations = profile ? '' : Object.entries(g('integrations', {}))
         .filter(([, v]) => v && typeof v === 'object' && v.label)
         .map(([, i]) => {
             const items = (Array.isArray(i.items) ? i.items : [i.items])
@@ -135,10 +180,22 @@ export function renderCV(t, lang, { photoDataUri }) {
             return `<div class="int-label">${esc(i.label)}</div><div class="int-items">${items}</div>`;
         }).join('');
 
-    const languages = ['german', 'english', 'arabic', 'spanish'].map(k => {
-        const l = g(`languages.${k}`, null);
-        return l ? `<div class="lang"><div class="lang-name">${esc(l.name)}</div><div class="lang-level">${esc(l.level)}</div></div>` : '';
-    }).join('');
+    const languages = profile
+        ? `<div class="lang-line">${['german', 'english', 'arabic', 'spanish']
+            .map(k => g(`languages.${k}`, null)).filter(Boolean)
+            .map(l => `<strong>${esc(l.name)}</strong> ${esc(l.level)}`)
+            .join('<span class="dot"> · </span>')}</div>`
+        : ['german', 'english', 'arabic', 'spanish'].map(k => {
+            const l = g(`languages.${k}`, null);
+            return l ? `<div class="lang"><div class="lang-name">${esc(l.name)}</div><div class="lang-level">${esc(l.level)}</div></div>` : '';
+        }).join('');
+
+    const productsNote = !profile && clean(g('products.subtitle'))
+        ? `<p class="sec-note">${rich(g('products.subtitle'))}</p>` : '';
+    const integrationsSection = profile ? '' : `
+${section(g('integrations.title', 'Integrations & AI Infrastructure'),
+        clean(g('integrations.subtitle')) ? `<p class="sec-note">${rich(g('integrations.subtitle'))}</p>` : '')}
+<div class="int-grid">${integrations}</div>`;
 
     return `<!DOCTYPE html>
 <html lang="${lang}" dir="${dir}">
@@ -230,6 +287,15 @@ strong{color:var(--navy);font-weight:600}
   background:var(--gold);transform:rotate(45deg);border-radius:.3mm}
 .edu{margin-bottom:3mm}
 
+/* ---------- earlier roles (compact variant) ---------- */
+.earlier{break-inside:avoid;margin-top:1mm}
+.earlier-label{font-size:8pt;font-weight:700;text-transform:uppercase;letter-spacing:.1em;
+  color:var(--navy);margin-bottom:1.4mm}
+.earlier-row{display:flex;align-items:baseline;gap:3mm;margin-bottom:1.2mm;font-size:8.6pt}
+.earlier-role{font-weight:600;color:var(--ink)}
+.earlier-co{color:var(--muted);flex:1}
+.earlier-date{color:var(--faint);font-size:7.6pt;white-space:nowrap}
+
 /* ---------- products ---------- */
 .grid2{display:grid;grid-template-columns:1fr 1fr;gap:2.8mm}
 .card{break-inside:avoid;border:1px solid var(--line);border-radius:3mm;padding:2.7mm 3.4mm;
@@ -269,12 +335,21 @@ strong{color:var(--navy);font-weight:600}
 .lang-name{font-weight:700;font-size:8.8pt;color:var(--navy)}
 .lang-level{margin-top:.5mm;font-size:7.5pt;color:var(--muted)}
 
+/* ---------- compact (application variant) ---------- */
+body.compact .sec{margin:3.6mm 0 2.2mm}
+body.compact .hero{padding:7mm 8.5mm 0}
+body.compact .portrait img{width:29mm;height:29mm}
+body.compact .xp{margin-bottom:2.8mm}
+body.compact .pts li{margin-bottom:.8mm}
+body.compact .contact-bar{margin-top:4mm;padding:2.3mm 8.5mm}
+.lang-line{font-size:8.6pt;color:#333B48}
+
 /* Arabic: letter-spacing breaks cursive joining — neutralise it everywhere. */
 [dir="rtl"] .roles,[dir="rtl"] .sec .t,[dir="rtl"] .date-chip,[dir="rtl"] .tag,
-[dir="rtl"] .skill-cat,[dir="rtl"] .int-label{letter-spacing:0}
+[dir="rtl"] .skill-cat,[dir="rtl"] .int-label,[dir="rtl"] .earlier-label{letter-spacing:0}
 </style>
 </head>
-<body>
+<body class="${profile ? 'compact' : ''}">
 <header class="hero">
   <div class="hero-grid">
     <div class="hero-main">
@@ -296,8 +371,7 @@ ${summary}
 ${section(g('experience.title', 'Professional Experience'))}
 ${experience}
 
-${section(g('products.title', 'Selected Products & Platforms'),
-    clean(g('products.subtitle')) ? `<p class="sec-note">${rich(g('products.subtitle'))}</p>` : '')}
+${section(g('products.title', 'Selected Products & Platforms'), productsNote)}
 <div class="grid2">${products}</div>
 
 ${section(g('education.title', 'Education'))}
@@ -308,13 +382,12 @@ ${section(g('certifications.title', 'Certifications'))}
 
 ${section(g('skills.title', 'Technical Expertise'))}
 ${skills}
+${integrationsSection}
 
-${section(g('integrations.title', 'Integrations & AI Infrastructure'),
-    clean(g('integrations.subtitle')) ? `<p class="sec-note">${rich(g('integrations.subtitle'))}</p>` : '')}
-<div class="int-grid">${integrations}</div>
-
-${section(g('languages.title', 'Languages'))}
-<div class="lang-grid">${languages}</div>
+${profile
+        ? `<div class="skill-row"><div class="skill-cat">${esc(g('languages.title', 'Languages'))}</div>${languages}</div>`
+        : `${section(g('languages.title', 'Languages'))}
+<div class="lang-grid">${languages}</div>`}
 </body>
 </html>`;
 }
